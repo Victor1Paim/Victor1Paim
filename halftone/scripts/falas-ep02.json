@@ -1,0 +1,13 @@
+[
+ {"id":"b1","who":"bia","text":"Eu conheço esse toque."},
+ {"id":"b2","who":"bia","text":"Caio? Me mostra onde você tá."},
+ {"id":"x1","who":"multidao","text":"Moça, desliga isso! Tá todo mundo olhando pra cá."},
+ {"id":"e1","who":"narrador","text":"Ela viu o nome na tela. O resto, eu não podia saber."},
+ {"id":"e2","who":"narrador","text":"Quando o toque parou, o mar cobriu tudo de novo. Por uns segundos, ninguém olhava pra ela."},
+ {"id":"bp1","who":"bia_pensa","text":"Se eu atender, ele me encontra. Se eu não atender... talvez eu nunca mais encontre ele."},
+ {"id":"a1","who":"ambulante","text":"Moça... aquele cara ali tá te encarando desde que tocou."},
+ {"id":"b3","who":"bia","text":"Desculpa, Caio."},
+ {"id":"e3","who":"narrador","text":"Naquela noite, desculpa não era uma rota."},
+ {"id":"bp2","who":"bia_pensa","text":"Três piscadas. Luz não faz barulho. Ele sabe o que significa."},
+ {"id":"e4","who":"narrador","text":"Nessa situação... o que você faria?"}
+]
