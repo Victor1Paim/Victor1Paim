@@ -1,0 +1,4 @@
+[submodule "ferramentas/OpenMontage"]
+	path = ferramentas/OpenMontage
+	url = https://github.com/calesthio/OpenMontage.git
+	shallow = true
