@@ -11,6 +11,7 @@ import {Episodio} from './compositions/Episodio';
 import {Trailer} from './compositions/Trailer';
 import {DURACAO_TESTE_MOTION, TesteMotion} from './motion/TesteMotion';
 import {DURACAO_TESTE_LAYOUT, TesteLayout} from './estilo2/TesteLayout';
+import {DURACAO_EP01, Ep01} from './ep01/Ep01';
 import {QUADRO} from './theme/layout';
 import type {Episodio as EpisodioT} from './tipos';
 
@@ -46,6 +47,7 @@ export const Root: React.FC = () => (
     ))}
     <Composition id="AnoZero-TesteMotion" component={TesteMotion} width={1080} height={1920} fps={30} durationInFrames={DURACAO_TESTE_MOTION} />
     <Composition id="AnoZero-TesteLayout" component={TesteLayout} width={1080} height={1920} fps={30} durationInFrames={DURACAO_TESTE_LAYOUT} />
+    <Composition id="AnoZero-T1-Ep01-Motion" component={Ep01} width={1080} height={1920} fps={30} durationInFrames={DURACAO_EP01} />
     <Composition id="AnoZero-Trailer" component={Trailer} width={1080} height={1920} fps={30} durationInFrames={25 * 30} />
     <Still id="Avatar" component={Avatar} width={1080} height={1080} defaultProps={{simplificado: false}} />
     <Still id="Avatar-Simplificado" component={Avatar} width={1080} height={1080} defaultProps={{simplificado: true}} />

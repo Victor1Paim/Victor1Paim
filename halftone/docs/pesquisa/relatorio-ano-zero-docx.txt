@@ -1,0 +1,901 @@
+ANO ZERO · A VIRADA — pesquisa aplicada e pacote de revisão
+Halftone (@halftone.tv1) · corte da pesquisa: 24/10/2026 · idioma: português brasileiro
+
+1. Resumo executivo: 15 mudanças prioritárias
+Não tirar “FICÇÃO” do primeiro quadro. O rótulo “DIA 1 · DA INFECÇÃO” isolado pode parecer registro de uma crise real, sobretudo com hora, praia conhecida e multidão. Use uma linha pequena, legível e persistente — FICÇÃO · UNIVERSO HALFTONE — acima do relógio. O cartão final e a legenda continuam reforçando a ficção; eles não substituem o contexto inicial. Isto é uma salvaguarda editorial, não uma exigência universal expressa em política. [C/H]
+Manter o rótulo nativo de IA ligado, como já planejado, mas não tratá-lo como salvo-conduto. As regras pedem disclosure em certos usos de mídia realista gerada/alterada por IA e continuam proibindo conteúdo enganoso de crise. A arte vetorial estilizada descrita no briefing não é automaticamente uma simulação fotorrealista; verificar a regra da plataforma na hora de publicar. [C] 5 6 7
+Reconciliar o relógio biológico antes de animar. Rafa mordido às 23:02 pode começar a tremor febril a partir de 23:12; não deve ser um eco completo no reflexo às 23:16. Lurdes mordida às 23:00 ainda está febril às 23:25; não deve parar de respirar ali e só virar eco às 23:35, porque o estágio de silêncio é de 2–5 minutos. Ajuste o início do silêncio para 23:31 e a reanimação para 23:34, mostrada no Ep. 11. [H]
+Corrigir a rota de Davi. No mapa inicial ele já chegou ao prédio no Ep. 4 às 23:16, mas ainda está bloqueado na barreira no Ep. 9 às 23:15, sacrifica a moto no Ep. 10 às 23:25 e só chega para tocar o interfone no Ep. 11 às 23:35. No mapa revisado, Bia e Rafa chegam a pé ao lado de fora do prédio no Ep. 4; Davi permanece na rota e chega às 23:35. [H]
+Abrir o Ep. 1 com o vínculo, não com a criatura. Primeiro quadro: a mão de Bia vazia e a fitinha vermelha de Caio desaparecendo na multidão; primeira frase: “Eu soltei primeiro. Não ele.” Mostrar o eco só depois de estabelecer o conflito entre proteção e autonomia. [H]
+Trocar exposição por evidência visual. Ensinar a regra com fonte sonora identificável, padrão que se repete, reação corporal sincronizada e contraste com ruído contínuo. Não fazer o narrador explicar o que o anel vermelho já mostra. [H]
+Fixar as três demonstrações sem mudar o cânone: Ep. 1 batida, Ep. 2 toque, Ep. 5 buzina. Cada uma deve acrescentar um dado: atração; mascaramento pelo ruído contínuo; e seleção de um padrão abrupto repetido mesmo em outro ponto de vista. O Ep. 10 paga a promessa quando Davi usa a buzina de propósito. [H]
+Especificar o que Caio percebe sem pressupor audição residual. Em sua sessão, mostrar linha de visão, vibração que ele pode perceber por contato somente quando estabelecida, telas e a reação dos outros. A legenda azul traduz Libras; não desenhar sinais inventados. A surdez não o torna imune nem sobrenaturalmente sensível. [C/H] 31 32 33
+Dar uma tarefa dramática a cada plano. Para 70–80 s, começar testando 22–26 planos, em média 3 s cada, mas deixar a duração variar com a ação. Cortar por gesto, olhar, som ou consequência; pan e zoom sem causa não contam como mudança de cena. [H]
+Separar a pergunta ao público do gancho narrativo. Primeiro fechar o beat da história; depois mostrar A/B por 1,5–2 s. O voto não muda o cânone e isso deve ficar claro. Não substituir o cliffhanger por “comenta/segue” genérico. [H]
+Usar um CTA ligado ao risco específico do episódio. “Atender ou perder o irmão?” funciona melhor para o Ep. 2 do que “o que você achou?”. Peça uma escolha e, se houver espaço, o motivo. Não prometer participação na trama se a votação não altera o roteiro. [H]
+Medir primeiro a abertura e a conclusão com dados nativos. No YouTube Shorts há métricas de “escolheu assistir”, tempo assistido e retenção; TikTok lista assistir até o fim ou pular entre os sinais de recomendação. Isso permite testar peças, não deduzir uma fórmula de algoritmo. [C] 14 20
+Não tratar 20h, seg/qua/sex ou três posts semanais como horário mágico. Os benchmarks publicados são agregados e não demonstram um recorte de terror seriado brasileiro em dezembro. Mantenha o horário como hipótese e compare com Insights próprios. [E/H] 21 22
+Não misturar Creator Rewards com a oferta paga TikTok Series. A página oficial informa que vídeo vinculado a Series não é elegível ao Rewards; confirme disponibilidade brasileira e elegibilidade dentro do TikTok Studio antes de planejar venda. [C] 1 2 3
+Fazer duas revisões de pré-lançamento: uma de segurança/plataforma e outra de representação/acessibilidade. Revalidar diretrizes em dezembro; testar o primeiro episódio sem áudio; revisar contraste/captions; e convidar leitores/consultores surdos brasileiros se Caio usar Libras. [H] 5 7 9 30 31 32 33
+
+2. Achados por tópico — A1 a F17
+Legenda: [C] confirmado por fonte primária; [E] relato, benchmark ou observação pública; [H] hipótese criativa a testar. Datas de acesso das fontes são 24/10/2026, salvo quando indicado. A janela “últimos 12 meses” termina em 24/10/2026; material anterior é identificado como fundamento histórico, não como atualização recente.
+
+A. Plataforma e atualizações
+A1. TikTok Creator Rewards, IA, playlists e TikTok Series
+[C] O TikTok Creator Academy lista o Brasil entre os países elegíveis. Os requisitos publicados incluem conta Personal em boa situação, idade mínima de 18 anos, pelo menos 10 mil seguidores e 100 mil visualizações nos últimos 30 dias. Para ser elegível, cada vídeo deve ser original, de alta qualidade, ter mais de 1 minuto e alcançar pelo menos mil visualizações qualificadas no feed Para Você. A página indicava atualização em 10/09/2026. Os episódios previstos de 70–80 s passam o limiar de duração, mas isso não garante elegibilidade, retenção ou pagamento. 1 2
+
+[C] A página de suporte define conteúdo original como concebido, filmado e produzido pelo criador; lista conteúdos excluídos, incluindo Duet, Stitch, Photo Mode, anúncios/patrocínios e vídeos vinculados a TikTok Series. Visualizações pagas, artificiais e assistidas por menos de cinco segundos não entram nas qualificadas. A página consultada não esclarece se animação vetorial produzida por código e TTS, por si só, satisfaz o critério de originalidade. Não afirmar elegibilidade automática: guardar arquivos de projeto, autoria do roteiro, licenças e provas de produção. 2
+
+[C] TikTok Series é um produto de conteúdo pago, não sinônimo de uma série gratuita numerada. A página oficial descreve até 80 vídeos por coleção, de 30 segundos a 20 minutos, e critérios próprios de conta/atividade. A disponibilidade no Brasil não foi confirmada na página consultada. Além disso, vídeos vinculados a Series não contam para Creator Rewards. [H] Para Halftone, priorizar a temporada pública de descoberta; só estudar paywall em trilha separada, após conferir elegibilidade e disponibilidade no TikTok Studio. 2 3
+
+[C] Playlists nativas do TikTok organizam vídeos por tema e podem levar da peça à coleção; a Creator Academy consultada indica acesso para criadores com mais de 10 mil seguidores e atualização em 18/08/2026. Isso pode coincidir com o marco de seguidores do objetivo de Rewards, mas não cria garantia de recomendação. [H] Quando habilitada, criar uma playlist “ANO ZERO · T1 A VIRADA”, ordenada pelo número e com nomes consistentes; manter a numeração no vídeo para quem chega fora de ordem. 4
+
+[C] TikTok exige rótulo para conteúdo realista gerado por IA em determinadas circunstâncias; a configuração do rótulo, por si só, não reduz distribuição quando a peça cumpre as regras. As diretrizes publicadas em 25/08/2026, em vigor desde 24/09/2026, proíbem AIGC que atribua falsamente informação a fonte autoritativa ou apresente falsamente um evento de crise. 5 6
+
+A2. Ficção que simula crise, terror, rótulo de IA e selo do topo
+[C] Meta diz que conteúdo orgânico fotorrealista em vídeo ou áudio realista criado/alterado digitalmente exige disclosure via ferramenta própria; os rótulos “AI info” podem ser aplicados por sinais técnicos ou autodeclaração. Conteúdo rotulado ainda precisa cumprir as demais regras. As atualizações sobre rótulos foram publicadas em 05/04/2024, com revisões em 01/07 e 12/09/2024. 7 O briefing prevê retícula e silhuetas vetoriais, não pessoas fotorrealistas; ainda assim, manter o rótulo nativo ligado como política conservadora da marca, se a plataforma o disponibilizar, e indicar ficção no quadro e na legenda.
+
+[C] A política não cria uma exceção geral para “é ficção”. O TikTok proíbe apresentação enganosa de crise ou autoridade; Meta remove desinformação que possa contribuir diretamente para dano físico iminente e também pode restringir ou rotular conteúdo violento/gráfico. Proteções para adolescentes são mais estritas. Terror estilizado não é automaticamente proibido, mas gore e uma falsa aparência de notícia aumentariam o risco de restrição, remoção ou recomendação limitada. 5 8 9
+
+[H] Decisão para o selo: não publicar apenas DIA 1 · DA INFECÇÃO no topo, nem apresentar sirenes, ticker, “URGENTE”, brasões, nomes de órgãos ou interfaces que imitem alerta oficial. Usar em todas as peças, já no primeiro quadro: FICÇÃO · HALFTONE em corpo pequeno porém legível; abaixo, ANO ZERO · 23:00 · FALTAM 60 MIN. O marcador “DIA 1” pode entrar depois, subordinado a “FICÇÃO”. Repetir no cartão final e na legenda. Isso preserva imersão sem ocultar o enquadramento fictício.
+
+[H] A cidade real pode continuar identificada como Copacabana, mas a abertura deve deixar claro que se trata de universo ficcional: mapa estilizado sem selo municipal, alerta ou instituição real. O cenário de Réveillon deve ser tratado como festa e tradição — branco, mar e práticas culturais são contexto, não presságios. O perigo vem da regra ficcional dos ecos.
+
+A3. Recursos, frequência e horário em Instagram/TikTok
+[C] Instagram Trial Reels permite testar primeiro com não seguidores e consultar resultados iniciais, sujeito a elegibilidade/disponibilidade da conta. Stories têm stickers de Poll/Question em superfícies compatíveis; carrossel, Notes, LIVE e Collabs têm funções nativas próprias. A Meta esclarece que recursos podem não estar disponíveis em todas as contas/regiões/formats. TikTok Playlists organiza vídeos e TikTok Series é pago; não encontrei confirmação de uma playlist serial permanente equivalente no Instagram. 4 12 15 16 17 18 19
+
+[C] Instagram explica sinais diferentes por superfície. Para Reels, a probabilidade de assistir até o fim, compartilhar, curtir ou visitar o áudio está entre as previsões relevantes; isso não significa que um cliffhanger específico cause distribuição. TikTok cita assistir até o fim ou pular, comentários/compartilhamentos e informações do conteúdo; os pesos variam e mudam com o tempo. 11 14
+
+[E] O estudo Sprout Social de 2026 usou quase 2 bilhões de interações em cerca de 307 mil perfis e mostrou faixas globais por hora local; não isolou audiência brasileira de horror nem dezembro. Buffer publicou um agregado de 7,1 milhões de posts TikTok com diferentes slots fortes, também sem recorte local de Halftone. São referências para montar testes, não prova de horário ideal. 21 22
+
+[H] Preservar seg/qua/sex às 20h como hipótese inicial — a consistência facilita comparação — e testar uma janela diferente em apenas um dos dias, por exemplo qua 18h vs. 20h, por blocos de quatro semanas. Não mudar dia, duração, gancho e CTA simultaneamente. Se os Insights mostrarem atividade real da audiência, dar preferência aos dados próprios, especialmente no mês de festas.
+
+B. Gancho e estrutura de episódio
+B4. Ganchos de 0–3 s: padrões úteis e exemplos observáveis
+[E] Não há fonte confiável que estabeleça uma fórmula universal de retenção orgânica para ficção/terror vertical. O TikTok Ads recomenda capturar atenção nos primeiros seis segundos e apresentar a proposta nos primeiros três, mas é orientação para anúncios, não prova de algoritmo orgânico. Meta Creators também recomenda capturar atenção nos primeiros três segundos. 13 23
+
+[E] Em exemplos jornalísticos de horror curto, a mudança de contexto pode transformar um gesto cotidiano em ameaça: TIME descreveu Riley Bona começando com uma receita aparentemente acolhedora e virando o tom por música/cortes; a legenda inicial era “Keep your mind off things with this stunning strawberry pie recipe!”. A matéria também comenta vídeos de piscina e mar em que o quadro inicial já carrega algo errado. São exemplos datados de 2020, não dados recentes de performance. 26
+
+[E] O canal animado Eddsworld começa o episódio “Surf &amp; Turf Wars pt. 1” com marca e situação cotidiana do grupo, e encerra com “TO BE CONTINUED”; “The Lizzie Bennet Diaries” abre com uma apresentação em primeira pessoa. Esses exemplos são webseries mais longas e servem como referência de apresentação/continuidade, não como prova de que o mesmo formato vence em 3 segundos. 43 44
+
+[H] Para ANO ZERO, abrir por um destes princípios: contradição visual (“a mão escapa antes do corte para o passado”); objeto que dá a pista (tela de chamada acende sem mostrar ainda os ecos); ou escolha pessoal (“Eu soltei primeiro. Não ele.”). Primeiro quadro e primeira fala precisam ser compreensíveis no mudo e não revelar a criatura completa.
+
+B5. Estrutura de microcapítulo de 70–80 s
+[H] Modelo de 75 s para ensaio, não fórmula validada: 0–3 s imagem/pergunta; 3–10 s desejo e relação; 10–18 s pista de ameaça; 18–27 s primeira escolha; 27–35 s virada que muda a hipótese; 35–43 s falso alívio curto; 43–55 s preço/complicação; 55–65 s decisão irreversível; 65–70 s consequência local; 70–75 s cliffhanger concreto. Ajustar para 70 ou 80 s tirando/estendendo reação, não acrescentando explicação.
+
+A regra de montagem é: um capítulo entrega uma mudança local e deixa uma pergunta específica aberta. Exemplo no Ep. 2: a pergunta “Caio está vivo?” ganha uma pequena resposta quando a chamada aparece; o novo problema é que o toque pode denunciar Bia. [H] A/B de duração (70/75/80 s), abertura e encerramento devem ser testados com dados próprios. YouTube mostra métricas de “escolheu assistir”, watch time e retenção para Shorts; comparar quedas por momento, não só view count. 20
+
+B6. Ensinar e pagar a regra sonora
+[H] Use o mesmo código visual em todas as demonstrações: fonte do som identificável; um pulso vermelho por repetição abrupta; cabeças/ombros dos ecos viram em sincronia; o ruído contínuo de mar/multidão apaga temporariamente os anéis quando mascara o padrão. Não use anéis como ornamento constante.
+
+Ep. 1 — descoberta: o homem no estágio de eco alinha a cabeça à batida recorrente; o som contínuo da praia mascara outros movimentos. Não verbalizar a regra.
+Ep. 2 — custo: toque de celular em ciclos faz corpos virarem para a origem; Bia precisa escolher entre atender e continuar invisível no ruído ambiente.
+Ep. 5 — confirmação pelo POV de Caio: ele observa a massa ignorar o mar contínuo e virar para a buzina repetida. Caio lê a mudança pelo movimento e pela reação de quem está perto; não “ouve melhor” que os outros.
+Ep. 10 — payoff: Davi deliberadamente cria o padrão em ciclos, se afasta da moto e compra uma rota para a porta. Ele aplica uma regra já mostrada três vezes, pagando com a moto e a rota de trabalho.
+
+Se a regra não ficar clara sem voz explicativa, refazer a relação causa–efeito no quadro. Não inserir uma nova condição no Ep. 10.
+
+C. Copy e narração
+C7. Narração, subtexto e porteiro como narrador não confiável
+[C/E] BBC Radio recomenda que rádio-drama use voz, efeitos, música e silêncio para contar ação; vozes distintas devem se diferenciar por maneirismos, e a narração deve evitar repetir informação que personagens já conhecem. O conto de Poe “The Cask of Amontillado” demonstra ironia entre a cortesia do narrador e sua intenção; CRAFT Literary discute como gesto e silêncio podem carregar mais que a explicação. São referências de escrita, não benchmarks de retenção social. 24 25 28
+
+[H] Edson deve narrar fatos que poderia conhecer por câmera/interfone e admitir inferências: “Na câmera, os dois se afastaram. O motivo eu inventei depois.” Faça-o trocar uma conclusão por outra (“eu disse que a porta ficou trancada; a gravação mostra a mão no trinco”). Não lhe dê acesso mágico ao pensamento dos outros. Pensamentos de Bia/Davi podem ser convenção de dramatização — diferenciar por cor/voz e não atribuí-los literalmente ao que Edson ouviu.
+
+Exemplo de subtexto:
+
+BIA: “Eu perguntei quem entrou.”EDSON: “A janela está fechada.”
+
+A evasão mostra Edson protegendo o controle da portaria, sem uma fala expositiva sobre sua personalidade.
+
+C8. Diálogos curtos, pânico específico e Caio em Libras
+[C/E] O guia do Center for Fiction recomenda que diálogo caracterize, mova a trama e transmita informação sem preenchimento. FENEIS e INES tratam Libras como língua e modalidade visual-espacial; a NAD recomenda representação autêntica e não transformar pessoas surdas em vítimas ou figuras extraordinárias. A NAD fala principalmente da comunidade e língua dos EUA, então não substitui consultoria brasileira. 25 31 32 33
+
+[H] Dar a cada voz uma tática: Bia faz pergunta e define posição; Caio responde com autonomia e plano próprio; Davi transforma relação em custo/rota; Edson desvia; Lurdes minimiza o ferimento. Pânico sem grito genérico: “A chave. Me dá. Não, a outra — a da rua.” O tropeço é uma ação que muda a tentativa.
+
+[H] Caio só se expressa em Libras; a legenda fica numa caixa azul de leitura estável. Não inventar sinais ou desenhar mãos configurando sinais. Em produção final, a tradução deve passar por pessoa fluente/consultora de Libras e pela pessoa intérprete/ator, se houver. A sequência visual precisa respeitar acesso ao rosto, iluminação e posição do interlocutor. O briefing não especifica audição residual, aparelho ou leitura labial; não presumir nenhum desses recursos.
+
+D. Suspense e emoção
+D9. Relógio, ironia dramática, pausa, POV e som
+[E] Final Draft recomenda tornar objetivo, ameaça e stakes legíveis, escalar obstáculos e alternar tensão com alívio; Bordwell analisa o princípio hitchcockiano de informação assimétrica; a Los Angeles Film School explica que silêncio pode retirar música/fala e destacar respiração/ambiente sem eliminar todo room tone. São fundamentos profissionais, não prova empírica para um capítulo de 75 s. 27 28
+
+[H] No Ep. 1, fazer o relógio expressar perda de controle: HUD 23:00, salto visível para 23:02 e chamada entrando às 23:05. Não manter a contagem regressiva ocupando todos os quadros. A cada retorno, acrescentar consequência. Antes do primeiro movimento do eco, tirar a trilha por 1–2 s e preservar um ruído ambiente fino; o silêncio é preparação, não susto automático.
+
+Mapa de tensão proposto para o Ep. 1, escala 0–10: 0–3 s: 4 (mão se solta, frase de culpa); 3–10: 2 (rebobina, vínculo); 10–20: 3 (desejo de Caio e controle de Bia); 20–32: 4 (decisão de ir ao outro palco); 32–42: 5 (homem cai, explicação comum); 42–51: 6 (ritmo continua sem reação); 51–58: 8 (pausa e salto de relógio); 58–66: 9 (movimento no ritmo); 66–71: 7 (corrida/escape e orientação perdida); 71–75: 9 (chamada cíclica de Caio). A nota é uma régua interna de montagem [H], não dado de audiência.
+
+D10. Fazer o público se importar rápido
+[H] Em até 12 s, mostrar o desejo imediato e a falha do protagonista numa ação: Bia quer manter Caio seguro e controla a decisão; Caio quer ir por conta própria e omite risco para preservar autonomia; Davi quer quitar a moto e contabiliza pessoas como custo de rota. Em seguida, mostrar o preço da falha: a mão se perde, a chamada não é atendida ou alguém fica para trás. Uma frase de biografia não substitui esse comportamento.
+
+Para um capítulo curto, a pergunta emocional deve ser menor do que “vão sobreviver?”: “Bia consegue confiar no plano de Caio por dez segundos?”; “Davi abre mão da moto?”; “Edson aceita que a câmera não o torna responsável por tudo?” Essa pergunta permite um beat satisfatório mesmo com cliffhanger.
+
+E. CTA e comunidade
+E11. CTA, comentário fixado, enquete e numeração
+[C] Meta diz que compartilhamentos e probabilidade de assistir até o fim estão entre sinais usados para Reels; TikTok lista assistir até o fim, pular e comentar entre sinais do Para Você. Nenhuma página oficial consultada promete aumento de alcance por cliffhanger, pergunta, hashtag ou comentário fixado. 11 14
+
+[C/E] Stories podem ter enquetes/perguntas, sujeito à disponibilidade; Instagram Collabs distribui um post conjunto se o convidado aceitar. Instagram pin de comentário próprio foi reportado por imprensa em 2025, mas não encontrei documentação primária que confirme disponibilidade em toda conta; TikTok não documentou pin de comentário em post regular nas páginas consultadas. Não fazer o plano depender desses pins: usar legenda, primeiro comentário ou tela A/B como alternativa. 18 19 34
+
+[H] Padronizar a escolha A/B por episódio: congelamento de 1,5–2 s, opções curtas e plausíveis, pergunta “Nessa situação, o que você faria?”, e comentário fixado no capítulo seguinte com o resultado observado. A votação não reescreve o cânone. Evitar CTAs de “comente qualquer coisa” ou comandos repetitivos sem relação com a narrativa. Numeração EP. 03/12 é navegação humana, não promessa algorítmica.
+
+E12. Benchmarks de ficção seriada — dez projetos
+Os números públicos citados são snapshots observados em 24/10/2026, podem mudar e não são métricas de retenção. Vários players ou perfis limitaram a inspeção; “não verificável” não deve virar conclusão sobre o conteúdo. Copiar somente princípios estruturais, nunca expressão protegida. 35–44
+
+Projeto
+ | Formato e evidência observável
+ | Abertura, fechamento e identidade
+ | O que Halftone pode adaptar / limite
+ | 
+AT PLUS — Minha Primeira Vez (BR) 35
+ | Romance vertical; produtor anunciou 60 episódios, 10 gratuitos e acesso pago ao restante; posts públicos em Instagram, YouTube e Facebook.
+ | CTA de “último ep gratuito/assine”; visual promocional rosa/roxo. Os episódios não tocaram em algumas superfícies; cliffhanger narrativo e cadência real não confirmados.
+ | [H] Arquitetura de distribuição e CTA claro; não copiar trama, marca ou identidade.
+ | 
+UOL Flash — Além do Toque (BR) 36
+ | Mininovela vertical live-action, 21 capítulos anunciados em matéria de 02/07/2025; página Flash exigia celular.
+ | Post promocional convida a ver três primeiros episódios; duração individual e encerramentos não verificáveis.
+ | [H] Experiência pensada para celular e amostra de entrada; não presumir que o modelo pago ou a oferta ainda esteja ativa.
+ | 
+Mini Novela — Nó (BR) 37
+ | Reels creditam Jorge Beirigo e @mininovela.oficial; há numeração de episódios e frases de posicionamento.
+ | Legendas mostram “Tempo + história” e indicam “próximo episódio”; vídeos não tocaram, logo gancho visual, duração e frequência não confirmados.
+ | [H] Numeração, créditos claros e assinatura verbal própria; não inferir estética do material indisponível.
+ | 
+Júnior e Cézar — Cheiro de Culpado (BR) 38
+ | Projeto musical de seis episódios com três músicas, divulgado por perfil oficial e compilado no YouTube.
+ | Legenda do final pergunta se o público esperava o desfecho e direciona à compilação. Datas exibidas sem ano em alguns Reels; métricas públicas são snapshots.
+ | [H] Amarrar música/trama e escolher CTA coerente com a etapa; composição, história e ativos devem ser originais.
+ | 
+ANIMAFLIX — Passado da Hora (BR) 39
+ | Página do estúdio descreve animação 3D: seis episódios de 13 min e 30 pílulas de 1 min.
+ | Exemplos usam dupla recorrente, objetos/mapas/imagens para contextualizar; não há cadência confirmada.
+ | [H] Cenário-base recorrente e inserts visuais econômicos; produzir design/personagens próprios.
+ | 
+Carmilla — KindaTV (CA) 40
+ | Webserial LGBTQ+ em episódios no YouTube, organizada em playlists; exemplos públicos de 2014–2016.
+ | Primeiro episódio em vlog; temporada 2 abre com cartão/ambiente gótico; telas finais convidam à continuidade. Não usar como benchmark de duração vertical.
+ | [H] POV diegético, temporadas e pequenos avanços por episódio; universo e iconografia próprios.
+ | 
+The Lizzie Bennet Diaries (EUA) 41
+ | Releitura serial em vlog, com arquivo oficial numerado; episódio 1 de 2012 tem 3:36, final de 2013 tem 12:27.
+ | Primeira pessoa e personagens recorrentes; carta não lida no ep. 61 como gancho emocional.
+ | [H] Fazer o público conhecer a pessoa pela forma de contar; não adaptar obra/personagens/frases.
+ | 
+Salad Fingers — David Firth (RU, país não confirmado pela página oficial) 42
+ | Animação surreal sombria com episódios numerados e protagonista recorrente; ep. 14 publicado em 2025.
+ | Ep. 1 abre com “Hello; I like rusty spoons”; nem todo final depende de cliffhanger.
+ | [H] Mundo reconhecível e incidentes focais; não copiar personagem, objeto, design, fala ou música.
+ | 
+Eddsworld (RU, origem do canal) 43
+ | Comédia animada 2D com elenco recorrente e arcos; episódio de 2022 observado.
+ | Marca de abertura, conflito cotidiano e “TO BE CONTINUED”; créditos incluem convite comunitário.
+ | [H] Misturar situação episódica e fio serial; desenhar uma assinatura reticulada que não imite o logo/estilo.
+ | 
+The Guild (EUA) 44
+ | Webcomédia live-action de episódios curtos no YouTube, com webcam/confessional e coleção por temporada.
+ | Abertura dá objetivo/estado da protagonista; ep. 1 introduz visitante inesperado; interações viram continuidade.
+ | [H] Ponto de vista com motivo para câmera e relações recorrentes; não copiar personagens, trama ou elementos de RPG.
+ | 
+Leitura do conjunto [E/H]: não há uma única fórmula. Alguns projetos vendem acesso, outros constroem arquivo gratuito; alguns fecham cada incidente, outros deixam questão aberta; animação pode sustentar personagem e cenário recorrentes sem exigir troca de locação. Para Halftone, teste serialização e identidade visual próprias. Os números de views/likes consultados em plataformas não são comparáveis entre gêneros, datas, duração, superfícies ou bases de seguidores.
+
+F. Design, cenários e edição em motion graphics
+F13. Gramática de planos e câmera 2.5D
+[C] Camadas 3D em After Effects continuam planas, mas podem ser posicionadas em profundidade Z para câmera e parallax; deslocamento relativo pode separar primeiro plano, personagem e fundo. 37 [H] Para 70–80 s, testar 22–26 unidades de plano/quadros; misturar geral de orientação, médio de ação, close de relação, detalhe de objeto, POV de celular e reflexo. Usar push-in quando a atenção estreita; pan quando a ação revela direção; plongée para geometria da multidão/rota; contra-plongée para porta/ameaça; reflexo no vidro para informação que Bia vê antes de Caio.
+
+F14. Transições com causa
+[E/H] Fluxo de painel, ponto de entrada/saída e sobreposição podem guiar ou confundir a leitura; transição deve corresponder a um beat, não apenas ornamentar. 40 Escolhas para Halftone:
+
+Match cut de forma: anel de som vira aro de lanterna; usar quando a causa visual se mantém.
+Corte no som: tocar uma vez e cortar para reação; reservar para informação nova.
+Corte na batida: para eco/repetição, sempre no mesmo intervalo rítmico.
+Wipe por vidro/porta: quando personagem cruza a soleira ou a visão é bloqueada.
+Rebobina tipográfica: somente em troca de sessão/ponto de vista, máximo uma vez no começo da sequência.
+Dip para preto: pausa de respiração/silêncio, não transição padrão.
+Iris de painel: revelar apenas detalhe ainda não visto; usar raramente.
+Glitch de tela: falha de vídeo/interfone, não como sinônimo genérico de terror.
+Split de tempo: mostrar chamada e reação simultâneas quando a informação precisa ser comparada.
+Objeto-match: fitinha vermelha ou caixa térmica conduz para a próxima cena, sem criar equivalência mística.
+
+[H] Limitar a 3–5 transições expressivas por episódio; os demais cortes podem ser secos e motivados. Como exemplo de orçamento para 24 planos: 16 cortes, 3 match cuts, 2 divisões de painel, 1 wipe de porta, 1 dip e 1 glitch funcional. Ajustar pelo storyboard.
+
+F15. Retícula, quadros, cor e variedade de cenários
+[H] Criar textura de retícula em sombra, fumaça e multidão; preservar rosto, mão, legenda e contorno em área mais limpa. Variar o tamanho da retícula por distância, não por “efeito de filtro” constante. Painéis podem dividir o quadro para chamada/monitor/reflexo, mas estabelecer uma ordem de leitura fixa. Usar congelamento de 1,5–2 s apenas no Momento Decisão; contar esse freeze como pausa, não como novo plano.
+
+Paletas funcionais: base #07090D e #EDE6D6; vermelho #E0413A reservado ao motivo sonoro/risco e ao ponto do logotipo; cinza #8A949C para ambiente/estrutura. Sessão Bia: âmbar #F2B544 em luz e interface. Caio: azul #7FB8D6 na caixa de tradução e reflexos frios, sem sugerir que todo mundo surdo percebe o som como azul. Davi: verde #3DDC97 só em rota/entrega/moto. Cor não deve ser o único código; usar também forma, posição, padrão e legenda. 36
+
+Cenários econômicos, diferenciados por composição:
+
+Cenário do briefing
+ | Assinatura de enquadramento/luz
+ | Camadas a reaproveitar
+ | 
+Areia diante do palco
+ | Contra-plongée de caixas de som, recortes quentes; massa escura em primeiro plano.
+ | Silhuetas, palco, cones de luz, retícula de sombra.
+ | 
+Beira-mar
+ | Plano geral baixo, linha horizontal do mar; reflexo sem transformar o mar em presságio.
+ | Horizonte, espuma vetorial, brilho de lua/luzes.
+ | 
+Calçadão de ondas
+ | Plano lateral com repetição geométrica do piso; conduzir o olhar por linhas.
+ | Textura de mosaico abstrata, postes, guarda-corpo.
+ | 
+Barreira da avenida
+ | Plongée/diagonal, compressão de camadas e moto interrompendo o fluxo.
+ | Grades, placas fictícias neutras, rodas/caixa.
+ | 
+Fachada do prédio
+ | Verticalidade e janela repetida; silhueta atrás do vidro.
+ | Fachada em tiles, reflexos, lâmpadas.
+ | 
+Portaria com 6 monitores
+ | Quadro simétrico; telas como seis janelas de POV, cada uma com crop/paleta.
+ | Bancada, moldura de monitores, LEDs.
+ | 
+Laboratório em flashback
+ | Linhas retas, branco sujo/cinza e um acento de emergência não noticioso.
+ | Prateleiras, caixa fria, crachá fictício genérico.
+ | 
+Rua transversal
+ | Perspectiva longa e pouca luz; a moto vira ponto focal móvel.
+ | Fachadas em silhueta, postes, faixa de luz.
+ | 
+Elevador
+ | Simetria frontal, contador de andares; pouco movimento até o “plim”.
+ | Portas, painel, espelho sem pessoa realista.
+ | 
+A lista é do briefing recebido; cenários não precisam ser construídos como fundos inteiros — use fundo, plano intermediário e objeto focal, com variantes de crop, hora/luz e reflexo.
+
+F16. Som, silêncio e sessão de Caio
+[C/E] Silêncio pode reduzir música/fala sem apagar room tone e dar destaque a respiração/gesto; captions devem incluir fala, identificação do falante e sons relevantes para entender a ação. 28 30
+
+[H] Trilha deve perder camada antes de revelar causa; manter vento/multidão baixo; desenhar toque, buzina, batida e interfone com timbres diferentes, mas mesma lógica temporal de repetição. Para o mudo, colocar a origem em quadro, repetir a ação visualmente, e legendar sons narrativamente importantes — por exemplo, [TOQUE: três pulsos iguais]. Anéis vermelhos identificam a regra do mundo, não a audição subjetiva de Caio.
+
+Na sessão de Caio, não eliminar todo o som como se fosse retrato universal da surdez. Priorizar a informação que ele tem pela visão, pela conversa em Libras e por vibração de objeto somente quando a cena a estabelecer. O áudio pode ser reduzido subjetivamente por instantes; a narrativa não deve depender de ele detectar uma buzina sem base diegética.
+
+F17. Legenda palavra a palavra e legibilidade no mudo
+[C] WCAG descreve captions pré-gravadas como sincronizadas com fala, identidade de quem fala e informação não verbal relevante. Contraste mínimo de texto comum é 4,5:1 e cor não deve ser o único meio de indicar informação. O guia Netflix é uma referência de temporização editorial, não regra universal para TikTok. 30 36 40
+
+[H] Destacar uma palavra por vez dentro da frase completa, sem flashes que impeçam leitura. Usar duas linhas no máximo para a fala, caixa azul reservada à tradução de Caio, nomes/sons em posição previsível e margem segura inferior. Revisar em tela pequena e em reprodução sem áudio. Não colocar legenda sobre retícula de alta frequência, textura móvel ou os anéis principais.
+
+3. Bíblia revisada — somente o que muda
+Logline de série, ajustada: “Na noite de Réveillon, padrões sonoros repetidos fazem desconhecidos se virarem uns contra os outros. Uma intérprete de Libras, seu irmão surdo e um entregador têm até a meia-noite para chegar ao apartamento 1201 — sem saber por que a caixa refrigerada precisa ser entregue.” [H]
+Promessa dramática: “Cada episódio mostra uma escolha que parece pequena até o som se repetir.” Evitar vender a série como “surto real” ou notícia.
+Selo permanente: FICÇÃO · UNIVERSO HALFTONE; abaixo, relógio narrativo (23:05 · faltam 55 min). “DIA 1 · DA INFECÇÃO” não aparece isolado. No post: “série de ficção”. Usar disclosure nativo de IA conforme interface e política vigente. [C/H]
+Regra dos ecos: distinguir três camadas: ruído contínuo mascara; padrão abrupto que se repete chama atenção; eco repete corporalmente o último padrão após o estágio de silêncio. A atração não significa que todo som cause ataque. O vermelho só acompanha a fonte do padrão ativo. [H]
+Contagem dos estágios: mordida → febre do ritmo após 10–30 min → silêncio 2–5 min → eco. Para Lurdes: mordida 23:00; febre a partir de 23:10; silêncio às 23:31; eco às 23:34. Para Rafa: mordida por volta de 23:02; febre a partir de 23:12; não chamá-lo de eco em 23:16. [H]
+Ponto de vista do narrador: Edson pode selecionar e errar, mas não conhece pensamentos privados. Vozes interiores são convenção de dramatização, não o que a câmera gravou. A revelação do Ep. 12 deve reinterpretar sua afirmação de testemunha, não invalidar a informação objetiva que o público viu.
+Caio: manter agência, humor e planos próprios; não criar imunidade, superpoder, leitura labial infalível nem “detecção sonora” sem estabelecer perfil. Libras apenas com tradução revisada; nenhum sinal desenhado/inventado. [H]
+Davi: sua escolha de usar a moto como isca deve ser o payoff da mudança de “pessoa como custo de rota” para “bem material sacrificável”; mostrar o custo em ação, não narrar como redenção completa. [H]
+
+4. Mapa da temporada revisado — 12 episódios
+A/B é enquete do público; a história mantém a decisão já escrita. O voto é comentado no episódio seguinte. Oito episódios com Momento Decisão: 2, 3, 6, 7, 8, 9, 10 e 11. [H]
+
+Ep. · hora
+ | Título
+ | Gancho 0–3 s: quadro + primeira frase
+ | Virada
+ | Momento Decisão (A/B)
+ | Cliffhanger final
+ | CTA específico
+ | 
+1 · 23:00–23:05
+ | A mão
+ | Close da mão vazia; fitinha vermelha some na massa. Bia: “Eu soltei primeiro. Não ele.”
+ | O homem que cai já está imóvel; após silêncio e salto de relógio, levanta marcando a batida. A repetição corporal não é acidente.
+ | —
+ | Em 23:05 entra a chamada de Caio; o toque começa a repetir.
+ | “No próximo: atender o irmão ou proteger a própria posição?”
+ | 
+2 · 23:05
+ | O toque
+ | Tela de chamada “Caio”; o ringtone repete e duas cabeças viram no fundo. Bia: “Eu conheço esse toque.”
+ | Ela entende que o toque torna sua posição visível; o som contínuo da praia mascara os movimentos quando o padrão para.
+ | A: atender; B: silenciar e procurar outra rota. Cânone: ela recusa e perde contato.
+ | A tela mostra chamada perdida; corte para Caio vendo “CHAMADA RECUSADA”.
+ | “A ou B — qual risco você aceitaria para não perder o irmão?”
+ | 
+3 · 23:12
+ | O Rafa
+ | Dedos de Rafa tamborilam sem ele notar. Rafa: “Não olha pra minha mão.”
+ | Bia vê tremor febril começando dez minutos após a mordida; Davi está preso na barreira com moto e caixa.
+ | A: carregar Rafa; B: seguir a entrega. Cânone: Bia tenta levar Rafa a pé; Davi segue a rota com a caixa.
+ | Visor: 3,8 °C · ENTREGAR ATÉ 00:00 · APTO 1201.
+ | “A/B: você carregaria alguém sem saber se ele está piorando?”
+ | 
+4 · 23:16
+ | O vidro
+ | Um reflexo mostra alguém atrás de Bia antes que ela se vire. Bia: “Caio?”
+ | Ela e Rafa chegam a pé à fachada; Caio está dentro, de costas para a janela. Rafa está febril, mas lúcido. Davi ainda não chegou.
+ | —
+ | Rafa repete involuntariamente, com os dedos, o ritmo do toque; não é ainda o estágio eco.
+ | “Qual pista você teria visto primeiro: o reflexo ou a mão?”
+ | 
+5 · 23:05 · REBOBINA
+ | O que passa
+ | Vemos o toque pelo campo visual de Caio: tela acende; corpos mudam de direção. Caio (legenda azul): “Eles viraram antes de eu olhar.”
+ | Ele observa que o mar contínuo não os move, mas a buzina repetida sim; terceira demonstração da regra, agora sem depender da audição dele.
+ | —
+ | No telefone: CHAMADA RECUSADA. O mesmo instante do Ep. 2 ganha o outro lado.
+ | “Que detalhe provou a regra sem ninguém explicá-la?”
+ | 
+6 · 23:10
+ | A Dinda
+ | Canga cai um pouco; Lurdes segura o antebraço e muda de assunto. Bia: “Dinda, olha pra mim.”
+ | Lurdes admite em Libras/legenda que foi mordida às 23:00 e pede para não contarem. A febre pode começar agora.
+ | A: levar Lurdes; B: chamar Edson primeiro. Cânone: Caio tenta levá-la.
+ | Edson bloqueia a porta: “Depois das 22h, ninguém entra.”
+ | “A/B — você protegeria o segredo dela ou avisaria o porteiro?”
+ | 
+7 · 23:19
+ | A regra
+ | Três flashes da lanterna aparecem atrás de Caio; ele está olhando o interfone, não os vê. Caio: “Ele não abriu.”
+ | Bia está do lado de fora; a vibração febril de Lurdes acompanha o padrão do interfone, mas ela ainda está lúcida.
+ | A: dizer a Edson da mordida; B: pedir entrada sem revelar. Cânone: Bia revela a mordida.
+ | A porta cede; o padrão do interfone se repete no corpo de Lurdes.
+ | “A ou B? O que mudaria na sua confiança, não no cânone?”
+ | 
+8 · 23:25
+ | O 1201
+ | Monitor mostra a luz do 1201 piscando; Edson: “O entregador ainda não chegou.”
+ | No monitor, Caio vê Bia e Rafa no lado de fora; Lurdes continua respirando, mas o tremor para por um intervalo curto.
+ | A: chamar ajuda agora; B: manter todos em silêncio. Cânone: Edson manda aguardar e vigia a câmera.
+ | A respiração de Lurdes falha por um instante; ela abre os olhos sem responder. Não declarar parada respiratória ainda.
+ | “A/B — qual sinal bastaria para você agir?”
+ | 
+9 · 23:15 · REBOBINA
+ | A coleta
+ | Caixa térmica balança; o lacre diz ABAIXO DE 4 °C. Davi: “Entrega tripla. Uma rota.”
+ | Flashback das 22:40 no laboratório: técnico com crachá igual ao do homem do palco; alertas fictícios chegam em fusos diferentes. Davi escolhe continuar a entrega após ver Tuca mordido.
+ | A: voltar com Tuca; B: salvar a carga e seguir. Cânone: Davi vai sozinho, ainda calculando a rota.
+ | Mensagem do cliente: “O prédio é o da esquina. Ande.”
+ | “A ou B — você priorizaria a entrega ou a pessoa?”
+ | 
+10 · 23:25
+ | A moto
+ | Tuca estende a mão mordida para a chave. Tuca: “Me dá a moto. Minha filha tá sozinha.”
+ | Davi recusa emprestar; ao reconhecer o padrão sonoro, decide usar a própria moto como isca. A regra ensinada nos eps. 1, 2 e 5 paga aqui.
+ | A: entregar a moto; B: guardar para a rota. Cânone: Davi a sacrifica como distração, não como empréstimo.
+ | Moto caída, buzina em ciclo; ecos repetem o padrão ao redor.
+ | “A/B — entregar a ferramenta ou usá-la para abrir caminho?”
+ | 
+11 · 23:35
+ | A porta
+ | Caixa bate no vidro. Davi: “O 1201 está esperando isso.”
+ | Interfone: Arnaldo manda abrir. Edson tem dez segundos. Lurdes já se levantou como eco às 23:34, após três minutos de silêncio iniciado às 23:31.
+ | A: abrir; B: manter trancado. Cânone: Edson abre.
+ | Caio está de costas; Bia vê Lurdes levantar atrás dele.
+ | “A/B — o que pesaria mais: a ordem do morador ou o risco no saguão?”
+ | 
+12 · 23:59
+ | A virada
+ | Contagem regressiva sem música; contador do elevador cai um andar por vez. Edson: “Eu achei que a câmera bastava.”
+ | Arnaldo desce para buscar a caixa; todos ficam imóveis no saguão. A caixa continua abaixo de 4 °C, mas o propósito não é explicado.
+ | —
+ | 00:00, primeiro clarão; sombras na praia viram juntas. Corte antes da resolução.
+ | “Qual detalhe você quer rever antes da próxima temporada?”
+ | 
+Nota de cronologia: o Ep. 4 mostra a fachada, não a chegada de Davi. O Ep. 8 mantém Lurdes na fase febril/limiar; silêncio às 23:31 e eco às 23:34 fecham a regra de 2–5 min. O salto de relógio do Ep. 1 deve deixar claro que o eco surge após, no mínimo, dois minutos de silêncio. [H]
+
+5. Ep. 1 — roteiro completo e decupado, 75 s
+Contagem de fala: 136 palavras faladas: narrador Edson 34; pensamento de Bia 31; diálogos falados 71. A legenda de Caio em Libras tem 5 palavras e não entra na contagem de fala. Pausas e tempo de leitura estão previstos no corte. [H]
+
+Tempo
+ | Plano/câmera
+ | Cenário
+ | Ação
+ | Fala (quem diz o quê)
+ | Legenda
+ | Som
+ | Transição
+ | 
+0–4 s
+ | Extreme close; push-in curto na mão vazia
+ | Areia diante do palco
+ | A fita vermelha desaparece entre silhuetas. Não mostrar eco.
+ | Bia, pensamento: “Eu soltei primeiro. Não ele.”
+ | Caixa de fala discreta; selo fixo FICÇÃO · HALFTONE; HUD 23:00.
+ | Multidão e mar; o grave da música some por meio segundo.
+ | Match cut da fita para um traço de retícula que “rebobina”.
+ | 
+4–9 s
+ | Plano geral frontal; recuo e rebobina tipográfica
+ | Palco / areia
+ | O mesmo instante volta 20 s; pessoas continuam em branco, em clima de festa.
+ | Edson: “Eu passei anos dizendo que a multidão separou os dois. É uma versão limpa.”
+ | Legenda branca; REBOBINA · 20 s.
+ | Trilha invertida muito curta, sem sirene.
+ | Corte seco no primeiro pulso da música.
+ | 
+9–15 s
+ | Plano médio, sobre-ombro de Bia; câmera estável
+ | Calçadão
+ | Caio quer ir ao palco menor com Rafa; Bia ocupa o caminho e controla a escolha. Evitar desenhar sinais.
+ | Caio, Libras (tradução): “O palco menor tá livre. Vou com o Rafa.”
+ | Caixa azul de Libras; tradução revisada.
+ | Som ambiente contínuo.
+ | Olhar de Bia leva ao próximo plano.
+ | 
+15–20 s
+ | Close no rosto de Bia; rack focus para o ombro de Rafa
+ | Calçadão
+ | A expressão de Bia contrasta com a mão que aperta a própria lanterna.
+ | Edson: “A câmera não gravou o que a Bia pensava; só registrou o segundo em que ela escolheu para onde olhar.”
+ | Legenda sem duplicar o rosto; HUD 23:00.
+ | Música distante, abafada pela multidão.
+ | Pan motivado pelo gesto de Rafa.
+ | 
+20–27 s
+ | Plano americano, lateral; leve parallax
+ | Caminho para o palco menor
+ | Bia cede, mas define a posição; Rafa tenta pedir sem puxá-la.
+ | Bia: “Vocês dois ficam do meu lado. A avenida tá fechada.” Rafa: “Eu sei. Por isso tô te pedindo, não te puxando.”
+ | Legendas palavra a palavra; nomes consistentes.
+ | Passos e mar.
+ | Match cut da lanterna para a fitinha no pulso de Caio.
+ | 
+27–32 s
+ | Plano médio de frente para Caio; sem close em mão configurando sinais
+ | Beira-mar
+ | Caio confirma o código de reencontro; o quadro o mantém como agente da decisão.
+ | Bia: “Caio, se a gente se perder?” Caio, Libras (tradução): “Prédio da Dinda. Eu lembro.”
+ | Caixa azul apenas para Caio; Bia mantém legenda normal.
+ | Ondas contínuas cobrem sons abruptos.
+ | Whip pan suave acompanha um transeunte que cruza.
+ | 
+32–38 s
+ | Plano geral alto, descendo para altura humana
+ | Areia diante do palco
+ | Multidão deixa ver um segurança com crachá fictício do laboratório cambaleando; primeiro sinal de que alguém precisa de ajuda.
+ | Bia: “Eu também lembro. Só não some sem me avisar.”
+ | Legenda; crachá sem nome de órgão real.
+ | Música de palco e aplausos curtos.
+ | Corte no gesto de Rafa indicando o homem.
+ | 
+38–44 s
+ | Close no crachá e depois detalhe dos dedos
+ | Frente do palco
+ | O homem cai sem gore. A batida e a multidão continuam; ninguém sabe se foi queda comum.
+ | Rafa: “Bia, olha. O segurança caiu. Vou chamar alguém.” Pessoa na multidão: “Dá espaço! Ele tá respirando?”
+ | Legendas; sem texto “urgente” ou ticker.
+ | A multidão vira ruído contínuo; a batida se repete ao fundo.
+ | Corte no último pulso audível.
+ | 
+44–50 s
+ | Close lateral, sem movimento de câmera
+ | Frente do palco
+ | O corpo permanece imóvel; mãos e peito sem movimento legível. HUD marca 23:00 → 23:02.
+ | Edson: “A gravação ficou muda por dois minutos. Eu achei que tinha acabado.”
+ | 23:02; legendas permanecem legíveis.
+ | Quase silêncio; só room tone baixo.
+ | Dip curto para preto no fim do intervalo.
+ | 
+50–57 s
+ | Plano detalhe da caixa de som; rack focus para o ombro do homem
+ | Palco
+ | A batida volta no mesmo padrão. O homem se levanta em uma rajada e a cabeça marca o ritmo; mostrar reação, não anatomia.
+ | Bia: “Ninguém encosta. Repara: a batida parou.”
+ | Legenda; anéis vermelhos nascem só da fonte sonora.
+ | Padrão rítmico seco; sem grito.
+ | Corte na batida repetida, não em glitch.
+ | 
+57–63 s
+ | Plano médio com profundidade em camadas
+ | Frente do palco
+ | Algumas silhuetas viram para a fonte; ruído do mar mascara o padrão quando ele cessa.
+ | Rafa: “Então por que a cabeça dele ainda marca o tempo?”
+ | Legenda integral; não repetir visualmente a fala.
+ | Batida interrompe; mar volta à frente.
+ | Whip pan motivado pela onda da multidão.
+ | 
+63–69 s
+ | Plano geral diagonal, leve câmera na mão simulada
+ | Barreira da avenida
+ | A multidão se abre e fecha; Bia procura Caio, mas Rafa fica fora do campo por um segundo.
+ | Bia, pensamento: “Eu queria dizer que era por causa da multidão, mas estava irritada porque ele decidiu sem mim. Quando a mão escapou, eu chamei aquilo de cuidado.”
+ | Caixa de pensamento identificada como dramatização; palavra destacada sem cobrir rosto.
+ | Respiração curta; música distante.
+ | Corte pelo ombro de um transeunte.
+ | 
+69–72 s
+ | Close da lanterna; três pulsos enquadrados
+ | Borda do calçadão
+ | Bia faz o código de três piscadas; não recebe resposta visível.
+ | Edson: (pausa; sem fala)
+ | Sem nova legenda.
+ | Clique mecânico da lanterna; mar contínuo.
+ | Corte seco para tela de celular.
+ | 
+72–75 s
+ | Insert de celular e reação fora de foco
+ | Calçadão, POV de Bia
+ | Às 23:05 aparece chamada de Caio; o primeiro toque começa, sem mostrar ainda a reação dos ecos.
+ | Bia: (respira; sem fala)
+ | Tela: CAIO · chamada de vídeo; HUD 23:05.
+ | Toque em ciclos, cortado antes da segunda repetição completa.
+ | Corte para preto no segundo pulso; entra no Ep. 2.
+ | 
+Nota de TTS/edição: manter 136 palavras em ritmo moderado; não acelerar para acomodar exposição. As falas de Caio são tradução de Libras, não voz de Caio. A narração subjetiva de Bia é reconstrução dramática, não informação que Edson recebeu da câmera. O código de três flashes é mostrado com lanterna, sem desenho de sinais manuais.
+
+6. Episódios 2–4 — roteiros resumidos
+Ep. 2 · “O toque” · 23:05 · 75 s
+Tempo
+ | Plano/câmera
+ | Cenário
+ | Ação
+ | Fala
+ | Legenda
+ | Som
+ | Transição
+ | 
+0–3
+ | Insert de celular, push-in
+ | Calçadão
+ | CAIO · chamada de vídeo; silhueta ao fundo vira.
+ | Bia: “Eu conheço esse toque.”
+ | Selo FICÇÃO · HALFTONE; HUD 23:05.
+ | Toque repetido.
+ | Corte no pulso.
+ | 
+3–12
+ | Close e plano aberto
+ | Praia
+ | Bia tenta achar Caio; mais cabeças orientam para o telefone.
+ | Bia: “Caio? Me mostra onde você tá.”
+ | Legenda limpa.
+ | Toque/ambiente em contraste.
+ | Pan seguindo o olhar.
+ | 
+12–24
+ | Plano médio, POV por trás
+ | Barreira de gente
+ | Bia quase atende; a multidão abafa a própria chamada quando o padrão para.
+ | Edson: “Ela viu o nome. O resto eu não podia saber.”
+ | Identificar inferência de Edson pela montagem.
+ | Toque corta; mar cobre.
+ | Dip curto para preto.
+ | 
+24–39
+ | Close na tela e mão
+ | Calçadão
+ | O dedo paira, chamada ainda ativa; Bia se lembra do código de três flashes.
+ | Bia, pensamento: “Se eu atender, ele me encontra. Se eu não atender, talvez não consiga.”
+ | Pensamento separado de Edson.
+ | Vibração baixa, sem música.
+ | Match cut tela/lanterna.
+ | 
+39–53
+ | Quadro dividido em dois
+ | Praia / fachada distante
+ | Ela recusa; do outro lado, o visor de Caio registra a recusa.
+ | Bia: “Desculpa.”
+ | CHAMADA RECUSADA.
+ | Clique, ambiente contínuo.
+ | Split fecha no lado de Caio.
+ | 
+53–68
+ | Plano geral e close
+ | Praia
+ | Dois ecos se orientam para a origem do último toque; Bia se move contra o fluxo.
+ | Edson: “Naquela noite, desculpa não era uma rota.”
+ | Legenda.
+ | Um pulso; depois silêncio parcial.
+ | Corte por silhueta.
+ | 
+68–75
+ | Freeze de 1,5 s e tela A/B
+ | Calçadão
+ | A pergunta aparece; a história mantém a recusa.
+ | Edson: “Nessa situação, o que você faria?”
+ | A atender / B recusar.
+ | Toque termina abruptamente.
+ | Gancho: chamada perdida no POV de Caio.
+ | 
+Ep. 3 · “O Rafa” · 23:12 · 75 s
+Tempo
+ | Plano/câmera
+ | Cenário
+ | Ação
+ | Fala
+ | Legenda
+ | Som
+ | Transição
+ | 
+0–4
+ | Macro dos dedos
+ | Calçadão
+ | Dedos de Rafa tamborilam; ele os esconde.
+ | Rafa: “Não olha pra minha mão.”
+ | HUD 23:12; ficção.
+ | Batida seca dos dedos.
+ | Match cut para mão de Bia.
+ | 
+4–16
+ | Plano médio em movimento
+ | Calçadão
+ | Bia vê a mordida no ombro; Rafa ainda lúcido.
+ | Bia: “Desde quando?” Rafa: “Foi só um arranhão.”
+ | Não mostrar sangue/gore; ferimento coberto.
+ | Mar/multidão.
+ | Corte para grade.
+ | 
+16–29
+ | Plano geral com plongée
+ | Barreira da avenida
+ | Davi e moto com a caixa térmica estão presos; ele calcula passagem.
+ | Davi: “Se eu perder a janela, perco o triplo.”
+ | Etiqueta da caixa legível.
+ | Motor falha em pulsos curtos.
+ | Whip pan da roda à caixa.
+ | 
+29–43
+ | Close alternado
+ | Barreira
+ | Rafa treme no ritmo da batida distante; Bia o segura.
+ | Rafa: “Eu consigo ir.” Bia: “Não precisa provar isso pra mim.”
+ | Legendas sincronizadas.
+ | Música distante, não amplificar tremor como som sobrenatural.
+ | Corte no visor.
+ | 
+43–56
+ | Insert do visor
+ | Barreira
+ | 3,8 °C · APTO 1201 · PRAZO 00:00; o entregador separa rota e pessoa.
+ | Davi: “O prédio é da esquina. Eu vou.”
+ | Caixa de texto sem UI de marca real.
+ | Bip único.
+ | Match cut de número 1201 para janela.
+ | 
+56–67
+ | Plano geral, saídas em direções opostas
+ | Barreira / calçadão
+ | Cânone: Bia acompanha Rafa a pé; Davi segue pela rota.
+ | Bia: “Fica comigo. Um passo de cada vez.” Davi: “Não me espera.”
+ | Legendas.
+ | Crowd contínua.
+ | Divisão em painéis.
+ | 
+67–75
+ | Freeze A/B
+ | Barreira
+ | A decisão é moral, não muda o que acontece no cânone.
+ | Edson: “Você leva o Rafa ou protege a própria saída?”
+ | A levar / B seguir.
+ | Som cai durante o voto.
+ | Gancho: reflexo no vidro do prédio.
+ | 
+Ep. 4 · “O vidro” · 23:16 · 75 s
+Tempo
+ | Plano/câmera
+ | Cenário
+ | Ação
+ | Fala
+ | Legenda
+ | Som
+ | Transição
+ | 
+0–4
+ | Reflexo em vidro, foco alternado
+ | Fachada do prédio
+ | A imagem de uma pessoa surge atrás de Bia no reflexo.
+ | Bia: “Caio?”
+ | Selo de ficção; HUD 23:16.
+ | Mar abafado pela fachada.
+ | Rack focus para o lado de dentro.
+ | 
+4–14
+ | Plano por fora do vidro
+ | Fachada / saguão
+ | Caio, de costas, discute em Libras com Edson; traduzir apenas com texto azul validado.
+ | Caio, Libras: “Você viu a chamada.”
+ | Caixa azul.
+ | Sem efeito de “som abafado” sobre Libras; Bia está do lado de fora.
+ | Wipe pelo caixilho.
+ | 
+14–25
+ | Close na lanterna
+ | Fachada
+ | Bia dá três flashes; Caio olha para o monitor, não vê.
+ | Bia: “Caio, olha pra janela.”
+ | Legenda normal.
+ | Três cliques.
+ | Corte no reflexo.
+ | 
+25–40
+ | Plano médio de Rafa
+ | Calçada
+ | Rafa está febril, lúcido; os dedos repetem sem querer o ritmo do toque.
+ | Rafa: “Eu tô bem. Só não me deixa sozinho.”
+ | Evitar classificá-lo como eco.
+ | Mar e passos; sem reforço musical.
+ | Match cut dedos/ritmo anterior.
+ | 
+40–55
+ | Plano geral da rua e barreira ao fundo
+ | Rua transversal
+ | Davi não está ali; farol da moto some ao longe, sua rota segue fora de quadro.
+ | Edson: “Eu achei que ele já tinha chegado.”
+ | Legenda atribui erro do narrador.
+ | Motor distante some.
+ | Dip de um quadro.
+ | 
+55–68
+ | Close no reflexo de Bia
+ | Vidro
+ | Atrás dela, Rafa inclina a cabeça e repete o ritmo; ela percebe no reflexo, não por audição especial.
+ | Bia: “Rafa… olha pra mim.”
+ | Legenda.
+ | O mesmo padrão do telefone, baixo.
+ | Corte para o rosto de Bia.
+ | 
+68–75
+ | Freeze A/B
+ | Fachada
+ | Pergunta moral de confiança e cuidado.
+ | Edson: “Você chamaria isso de febre ou de mentira?”
+ | A febre / B ele esconde algo.
+ | Som corta.
+ | Gancho para a sessão de Caio no Ep. 5.
+ | 
+7. Banco de ganchos — 15 aberturas reaproveitáveis
+Cada frase vem com um primeiro quadro que carrega a informação mesmo sem som. São [H], para testar, não frases de benchmark.
+
+“Eu soltei primeiro. Não ele.” — mão vazia, fita vermelha entre silhuetas.
+“Esse toque só toca quando alguém já está procurando por você.” — celular acende sem nome; um rosto no fundo vira.
+“O Rafa pediu pra eu não olhar pra mão dele.” — dedos batendo em ritmo sob a mesa.
+“Caio estava do outro lado do vidro. Eu estava olhando para o reflexo.” — reflexo revela pessoa antes do plano real.
+“Eles não viraram quando o mar subiu.” — onda contínua; silhuetas imóveis; buzina ao longe.
+“A Dinda amarrou a canga duas vezes.” — nó apertado no antebraço; ela troca de assunto.
+“O interfone tocou. O corpo dela respondeu.” — LED do interfone e dedos tremendo em sincronia.
+“A câmera mostra a porta fechada. Não mostra quem segurou a maçaneta.” — imagem de monitor com mão entrando pelo limite do quadro.
+“Essa caixa não podia passar de quatro graus.” — visor 3,9 °C; alguém bate na tampa do lado de fora.
+“Tuca não pediu dinheiro. Pediu a chave.” — mão mordida aberta ao lado da chave da moto.
+“Davi sabia que o som ia atrair todos eles.” — roda começa a girar; anel vermelho ainda não aparece.
+“O elevador parou entre dois andares. O ‘plim’ continuou.” — contador imóvel, luz do botão pulsa.
+“Seu Arnaldo mandou abrir antes de dizer o que tinha na caixa.” — telefone/interfone aceso, rosto de Edson fora de foco.
+“Às 23:59, ninguém no saguão estava respirando alto.” — relógio, peito de silhueta quase imóvel; não sugerir morte real.
+“O primeiro clarão não iluminou a praia. Iluminou as sombras.” — praia escura, sombras orientadas na direção errada.
+
+8. CTAs, comentários e legenda de post
+Dez finais de episódio
+Ep. 1: “No próximo, o nome dele aparece na tela. Você atende ou protege a rota?”
+Ep. 2: “A ou B: você atenderia sabendo que o toque pode chamar atenção? Diga o motivo.”
+Ep. 3: “Você levaria o Rafa ou seguiria para o prédio? A decisão do episódio não muda com o voto.”
+Ep. 4: “O reflexo mostrou o Rafa antes do vidro. Você percebeu o que mudou nele?”
+Ep. 5: “Qual evidência confirmou a regra: mar, buzina ou reação das pessoas?”
+Ep. 6: “Você contaria ao Edson que a Dinda foi mordida, mesmo com ela pedindo segredo?”
+Ep. 7: “A porta abre. Você diz a verdade agora ou espera mais uma prova?”
+Ep. 8: “Qual sinal bastaria para você chamar ajuda: febre, pausa ou silêncio?”
+Ep. 9: “Você voltaria com Tuca ou protegeria a caixa? Vote A/B e explique a prioridade.”
+Ep. 10–12: “A moto virou isca. O que Davi perdeu além da moto?” / “Você abriria a porta por ordem do morador?” / “Qual detalhe da virada você quer rever?”
+
+Cinco comentários para fixar, conforme disponibilidade da plataforma
+“Momento Decisão: A atende / B recusa. O voto não altera o cânone; queremos saber qual risco você escolheria.”
+“A regra até aqui: padrão abrupto repetido chama; ruído contínuo mascara. Qual cena provou isso melhor?”
+“O narrador só sabe o que as câmeras e o interfone permitiram. Qual fala do Edson você não comprou?”
+“Caio não ouviu a conversa: ele viu [pista do episódio]. Que informação passou por ele sem que os outros percebessem?”
+“Resumo sem spoiler: episódio [n] continua às [dia/hora]. Playlist/perfil no link disponível; se não aparecer, veja a grade fixada.”
+
+Uso: testar pin próprio no Instagram apenas se a opção estiver visível; no TikTok, usar legenda/primeiro comentário/tela até confirmar pin de comentário em vídeo regular. Não insistir em comentários copiados nem prometer mudança de roteiro.
+
+Modelo de legenda
+FICÇÃO · ANO ZERO: A VIRADA — EP. 03/1223:12. Rafa diz que está bem. A mão dele conta outra história.Momento Decisão: A levar o Rafa / B seguir para o prédio. O voto não muda o cânone; conte qual risco você aceitaria.Próximo capítulo: sexta, 20h (BRT).#Halftone #AnoZero #AFirada #ficcao #terrorbrasileiro #serievertical
+
+Corrigir #AFirada para #AVirada antes de publicar — exemplo intencional de revisão: não deixar erro de título escapar. Sugestão final: #Halftone #AnoZero #AVirada #ficcao #terrorbrasileiro #serievertical. Usar 3–6 hashtags relevantes como ponto de partida, não como número mágico. Não usar hashtags de tragédia real, alerta público ou órgão real.
+
+9. Guia de direção visual e montagem
+Lista rápida de planos
+Plano geral: orientar geografia e densidade; usar pouco, para que a praia não pareça o mesmo quadro toda vez.
+Plano médio: decisão e relação; deixar espaço para a legenda de Libras.
+Close: gesto, respiração, culpa, sinal corporal; evitar repetir close sem informação nova.
+Detalhe/insert: fita, crachá, visor da caixa, tela de chamada, chave, interfone.
+POV: sessão de Caio, telefone e monitores; limitar informação ao que o ponto de vista pode saber.
+Plongée: rota, multidão e barreira; contra-plongée: palco, porta e ameaça.
+Reflexo no vidro: informação vista por Bia antes do reverse shot; o foco deve deixar inequívoco o que é reflexo.
+Split/painel: chamada de Caio e reação de Bia, ou monitor e sala, somente quando a comparação importa.
+
+Paleta, legenda e grafismo
+Manter preto #07090D, papel #EDE6D6, vermelho #E0413A, cinza #8A949C; cores de sessão âmbar, azul e verde conforme bíblia. Fundo de texto opaco; retícula não atravessa olhos nem captions. Caixa azul é tradução de Libras de Caio, não balão que represente sinais desenhados. Usar palavra-a-palavra com frase completa legível, identidade do falante e efeitos relevantes. Verificar contraste em tela de celular. 30 36
+
+Dez transições — regra de uso
+Corte seco motivado: padrão para ação e diálogo.
+Match cut de objeto: pista passa de mão/tela para cenário.
+Corte na batida: somente na regra sonora; manter cadência consistente.
+Rebobina: troca de sessão/POV; evitar toda vez que há flashback.
+Dip para preto: silêncio de 2–5 min do estágio, com HUD indicando passagem.
+Wipe por porta/vidro: entrada física ou mudança de campo de visão.
+Split de tela: simultaneidade telefônica/monitor.
+Glitch de tela: falha diegética do dispositivo; sem glitch decorativo em cada ameaça.
+Iris/painel que se fecha: congelar para Momento Decisão; manter opções legíveis por 1,5–2 s.
+Whip pan: só quando personagem, som ou olhar conduz a câmera; limitar a um ou dois por episódio.
+
+Efeitos permitidos / a evitar
+Permitidos: retícula, tinta, grão controlado, parallax, sombra projetada, anéis vermelhos do motivo sonoro, deformação discreta de silhueta, split, congelamento de decisão, tremor de câmera pontual, ruído de tela diegético, corte de música e silêncio de ambiente.
+
+Evitar: gore, sangue, noticiário, ticker, “URGENTE”, logos reais, uniforme identificável de órgão, mapa/alerta oficial, flashes estroboscópicos rápidos, glitch constante, cor como único código, sinais manuais de Libras não validados, anéis de som sobre toda cena e trechos musicais sem licença. Para Shorts acima de um minuto, o YouTube informa que uma reivindicação ativa de copyright de terceiros pode bloquear o vídeo globalmente. 24
+
+10. Checklist de conformidade — corte 24/10/2026, revisar em dezembro
+FICÇÃO · HALFTONE visível desde o primeiro quadro; “série de ficção” na legenda/cartão final.
+Título DIA 1 · DA INFECÇÃO nunca aparece sozinho ou em layout de alerta real.
+Ligar disclosure nativo de IA conforme plataforma e mídia efetivamente usada; não confiar no rótulo para legitimar falsa crise.
+Não imitar órgão, emissora, interface de emergência ou comunicado oficial; nomes de laboratório/app fictícios e visual próprio.
+Não representar a ficção como evento em andamento; usar HUD como relógio narrativo, não ticker de notícia.
+Evitar gore, ferida gráfica e thumbnail chocante; rever restrições de idade e recomendação.
+Trilha, SFX, fontes, assets, templates e vozes têm licença; não clonar voz de pessoa real sem autorização.
+TikTok Rewards: conta Personal, idade/país, 10k seguidores, 100k visualizações em 30 dias e demais critérios; verificar vídeo original de alta qualidade, mais de 1 minuto, views qualificadas. Não contar vídeo vinculado a Series. 1 2 3
+TikTok playlist e Stories/Trial Reels/Collab só anunciados quando disponíveis na conta.
+Caio: Libras revisada, tradução fiel, sem sinais inventados/desenhados; não presumir perfil auditivo nem superpoder.
+Legendas cobrem fala, falante e efeitos essenciais; funcionam no mudo e em tela pequena; contraste verificado. 30 36
+Rever cronologia da infecção: mordida, febre, silêncio, eco; HUD nunca salta sem informar.
+Rever a rota de Davi: fora do prédio até 23:35; a caixa mantém &lt;4 °C; prazo 00:00.
+CTA A/B não promete alterar cânone; evitar pedido de comentário vazio, resposta automatizada ou spam.
+Sem localização ou número de público apresentado como alerta factual. “Dois milhões” só usar como diálogo claramente ficcional, não como dado factual não verificado.
+Reabrir páginas oficiais e rever políticas no início de dezembro de 2026 e antes do primeiro post; não há como antecipar mudanças posteriores a 24/10/2026.
+
+11. Riscos e o que testar primeiro
+Riscos narrativos e de produção
+Confusão de crise real: cidade reconhecível + relógio + “infecção” + crowd. Mitigação: selo de ficção já no quadro 1, interface não-noticiosa, arte explicitamente estilizada. [C/H]
+Regra percebida como incoerente: estágio do eco e tempo de Lurdes/Rafa. Mitigação: folha de continuidade minuto a minuto e exibição do HUD nos saltos. [H]
+Ponto de vista contraditório: Edson relata pensamentos que câmera não vê. Mitigação: marcar pensamento como convenção subjetiva e deixar Edson reconhecer inferências. [H]
+Surdez como “poder”: Caio parece ouvir padrões ou percebe perigo sem informação acessível. Mitigação: acesso visual, comunicação e revisão com pessoas surdas brasileiras; somente mostrar vibração quando a ação a estabelecer. [C/H]
+Plano de renda sobre recurso indisponível: Series não confirmado no Brasil; Rewards tem requisitos e exclusões. Mitigação: conteúdo público como estratégia base; revisar TikTok Studio. [C]
+Retícula/captions ilegíveis: reduzir textura atrás de legendas, verificar WCAG e assistir sem som. [C/H]
+Benchmarks não comparáveis: duração, gênero, plataforma, data e base variam; muitos dados de retenção não são públicos. Usar apenas como exemplos de estrutura, nunca como meta de views.
+
+Sequência de testes prioritários
+Prioridade
+ | Teste A/B
+ | Variável única
+ | Métricas
+ | Critério de decisão
+ | 
+1
+ | Quadro 1: mão vazia vs. tela do toque
+ | Imagem inicial, mesma fala
+ | retenção 1–3 s, tempo médio, conclusão
+ | Escolher pelo padrão em vários posts, não por um único vídeo.
+ | 
+2
+ | Primeira frase: “Eu soltei primeiro” vs. frase de observação do narrador
+ | Linha inicial, mesmo corte
+ | retenção inicial e comentários que entendem o vínculo
+ | Manter frase que cria curiosidade sem revelar o eco cedo.
+ | 
+3
+ | Cliffhanger: chamada entrando vs. eco completo em quadro
+ | Informação final
+ | conclusão + continuidade Ep. 1→2
+ | Preferir a versão que segura a pergunta sem confundir a regra.
+ | 
+4
+ | CTA de escolha A/B vs. pergunta aberta de interpretação
+ | CTA, mesmo episódio
+ | comentários relevantes por mil views, compartilhamentos
+ | Não escolher pelo volume bruto se gerar respostas vazias.
+ | 
+5
+ | 70 vs. 75 vs. 80 s
+ | Duração, roteiro equivalente
+ | tempo médio, retenção por trecho, conclusão
+ | Usar tempo mínimo que preserve clareza/emoção, sem extrapolar dado local.
+ | 
+6
+ | Som completo vs. mix reduzido com pistas visuais
+ | Mix, mesmas imagens/captions
+ | compreensão em teste mudo, conclusão e comentários de confusão
+ | A versão muda precisa transmitir causa e risco.
+ | 
+7
+ | HUD 20h vs. outra faixa em um dia
+ | Horário de publicação
+ | alcance qualificado, tempo assistido, interação por público ativo
+ | Comparar quatro semanas; manter seg/qua/sex fixo no restante.
+ | 
+8
+ | Selo FICÇÃO · HALFTONE pequeno persistente vs. selo maior no quadro 1
+ | Tamanho/posição, nunca remover ficção
+ | compreensão em comentário/teste interno, retenção
+ | Clareza de ficção é requisito editorial acima de um ganho marginal de retenção.
+ | 
+Para um teste simples, trocar uma variável de cada vez e registrar data, plataforma, versão, duração e métricas nativas. Não comparar views totais entre Instagram e TikTok como se fossem a mesma base; separar orgânico, Trial Reels e posts normais.
+
+Referências

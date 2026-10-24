@@ -12,7 +12,7 @@ export type BonecoProps = {
   pele?: string;
   camisa?: string;
   calca?: string;
-  cabelo?: 'curto' | 'cacheado' | 'grisalho' | 'calvo';
+  cabelo?: 'curto' | 'cacheado' | 'grisalho' | 'calvo' | 'rabo' | 'ondulado';
   corCabelo?: string;
   bigode?: boolean;
   oculos?: boolean;
@@ -26,20 +26,37 @@ export type BonecoProps = {
   bracoE?: number; // graus (0 = pendurado)
   bracoD?: number;
   inclina?: number;
+  cabeca?: number; // rotação só da cabeça (tique do eco)
+  oculosCabeca?: boolean;
+  bermuda?: boolean;
+  regata?: boolean;
+  eco?: boolean;
+  costas?: boolean;
+  lanterna?: number; // 0 apagada, 1 acesa (na mão direita)
+  sobrancelha?: 'neutra' | 'brava' | 'triste';
 };
 
 export const Boneco: React.FC<BonecoProps> = ({
   x, y, escala = 1, pele = '#C68B62', camisa = '#2F4F86', calca = '#1D2740', cabelo = 'curto', corCabelo = '#14100E',
   bigode, oculos, cracha, fitinha, vestido, sentado, boca = 'reta', olhar = 0, piscar, bracoE = 12, bracoD = -12, inclina = 0,
+  cabeca = 0, oculosCabeca, bermuda, regata, eco, costas, lanterna, sobrancelha = 'neutra',
 }) => {
+  if (eco) pele = '#9A9F9B';
   const traco = {stroke: TINTA, strokeWidth: 9, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
   const quadril = sentado ? -230 : -330;
   const braco = (lado: number, ang: number) => (
     <g transform={`translate(${lado * 108} ${quadril - 250}) rotate(${ang})`}>
       <path d={`M0,0 L${lado * 18},210`} stroke={TINTA} strokeWidth={66} strokeLinecap="round" />
-      <path d={`M0,0 L${lado * 18},210`} stroke={camisa} strokeWidth={48} strokeLinecap="round" />
+      <path d={`M0,0 L${lado * 18},210`} stroke={regata ? pele : camisa} strokeWidth={48} strokeLinecap="round" />
+      {regata ? null : <path d={`M0,0 L${lado * 6},70`} stroke={camisa} strokeWidth={50} strokeLinecap="round" />}
       {fitinha && lado === -1 ? <path d={`M${lado * 6},170 L${lado * 30},178`} stroke="#E0413A" strokeWidth={16} /> : null}
       <circle cx={lado * 20} cy={236} r={30} fill={pele} {...traco} />
+      {lado === 1 && lanterna !== undefined ? (
+        <g transform="translate(20 236)">
+          <rect x={-22} y={-10} width={44} height={74} rx={8} fill="#1A1D24" stroke={TINTA} strokeWidth={5} />
+          {lanterna > 0 ? <circle cx={0} cy={60} r={18} fill="#FFF6D8" opacity={lanterna} /> : null}
+        </g>
+      ) : null}
     </g>
   );
   return (
@@ -58,6 +75,7 @@ export const Boneco: React.FC<BonecoProps> = ({
           <g key={l}>
             <path d={`M${l * 48},${quadril} L${l * 52},-40`} stroke={TINTA} strokeWidth={80} strokeLinecap="round" />
             <path d={`M${l * 48},${quadril} L${l * 52},-40`} stroke={vestido ? pele : calca} strokeWidth={62} strokeLinecap="round" />
+            {bermuda ? <path d={`M${l * 50},${quadril + 160} L${l * 52},-40`} stroke={pele} strokeWidth={60} strokeLinecap="round" /> : null}
             <ellipse cx={l * 62} cy={-22} rx={58} ry={28} fill="#E9E6DF" {...traco} />
           </g>
         ))
@@ -77,7 +95,9 @@ export const Boneco: React.FC<BonecoProps> = ({
       {braco(-1, bracoE)}
       {braco(1, bracoD)}
       {/* cabeça */}
-      <g transform={`translate(0 ${quadril - 300})`}>
+      <g transform={`translate(0 ${quadril - 300}) rotate(${cabeca} 0 -20)`}>
+        {cabelo === 'ondulado' ? <path d="M-170,-170 Q-190,40 -120,70 L120,70 Q190,40 170,-170 Z" fill={corCabelo} {...traco} /> : null}
+        {cabelo === 'rabo' ? <>{[[0,-330,58],[44,-372,40],[-40,-376,36],[10,-410,34]].map(([cx,cy,r],i) => <circle key={i} cx={cx} cy={cy} r={r} fill={corCabelo} {...traco} strokeWidth={6} />)}</> : null}
         <circle cx={0} cy={-150} r={162} fill={pele} {...traco} />
         <path d="M-150,-90 Q0,10 150,-90 Q120,10 0,10 Q-120,10 -150,-90 Z" fill="#000" opacity={0.1} />
         {cabelo === 'curto' ? <path d="M-158,-170 Q-150,-318 0,-316 Q150,-318 158,-170 Q120,-236 0,-236 Q-120,-236 -158,-170 Z" fill={corCabelo} {...traco} /> : null}
@@ -87,8 +107,23 @@ export const Boneco: React.FC<BonecoProps> = ({
               <circle key={i} cx={cx} cy={-270 + (i % 2) * 18 + (i > 5 ? 70 : 0)} r={46} fill={corCabelo} {...traco} strokeWidth={6} />
             ))
           : null}
+        {cabelo === 'rabo' || cabelo === 'ondulado' ? <path d="M-158,-170 Q-150,-318 0,-316 Q150,-318 158,-170 Q120,-246 0,-246 Q-120,-246 -158,-170 Z" fill={corCabelo} {...traco} /> : null}
+        {oculosCabeca ? (
+          <g transform="translate(0 -262)">
+            <rect x={-120} y={-26} width={104} height={50} rx={22} fill="#F2B544" {...traco} strokeWidth={6} />
+            <rect x={16} y={-26} width={104} height={50} rx={22} fill="#3DDC97" {...traco} strokeWidth={6} />
+          </g>
+        ) : null}
+        {costas ? (
+          <circle cx={0} cy={-150} r={150} fill={cabelo === 'cacheado' || cabelo === 'curto' || cabelo === 'rabo' ? corCabelo : pele} opacity={0.92} />
+        ) : null}
         {/* olhos */}
-        {piscar ? (
+        {costas ? null : eco ? (
+          <>
+            <ellipse cx={-42} cy={-150} rx={26} ry={26} fill="#E6EEF0" {...traco} strokeWidth={6} />
+            <ellipse cx={42} cy={-150} rx={26} ry={26} fill="#E6EEF0" {...traco} strokeWidth={6} />
+          </>
+        ) : piscar ? (
           <>
             <path d={`M${-62 + olhar * 16},-150 h40`} {...traco} />
             <path d={`M${22 + olhar * 16},-150 h40`} {...traco} />
@@ -99,6 +134,8 @@ export const Boneco: React.FC<BonecoProps> = ({
             <ellipse cx={42 + olhar * 16} cy={-150} rx={17} ry={26} fill={TINTA} />
           </>
         )}
+        {!costas && sobrancelha === 'brava' ? <><path d="M-74,-196 L-20,-182" {...traco} /><path d="M74,-196 L20,-182" {...traco} /></> : null}
+        {!costas && sobrancelha === 'triste' ? <><path d="M-70,-182 L-20,-198" {...traco} /><path d="M70,-182 L20,-198" {...traco} /></> : null}
         {oculos ? (
           <g fill="none" stroke={TINTA} strokeWidth={7}>
             <circle cx={-42} cy={-150} r={40} />
@@ -106,11 +143,11 @@ export const Boneco: React.FC<BonecoProps> = ({
             <path d="M-2,-150 h4" />
           </g>
         ) : null}
-        {bigode ? <path d="M-58,-78 Q-30,-104 0,-86 Q30,-104 58,-78 Q30,-70 0,-76 Q-30,-70 -58,-78 Z" fill="#E9E6DF" {...traco} strokeWidth={6} /> : null}
-        {boca === 'reta' ? <path d="M-24,-60 h48" {...traco} /> : null}
-        {boca === 'sorriso' ? <path d="M-34,-66 Q0,-34 34,-66" fill="none" {...traco} /> : null}
-        {boca === 'preocupado' ? <path d="M-34,-50 Q0,-78 34,-50" fill="none" {...traco} /> : null}
-        {boca === 'aberta' ? <ellipse cx={0} cy={-56} rx={24} ry={30} fill={TINTA} /> : null}
+        {!costas && bigode ? <path d="M-58,-78 Q-30,-104 0,-86 Q30,-104 58,-78 Q30,-70 0,-76 Q-30,-70 -58,-78 Z" fill="#E9E6DF" {...traco} strokeWidth={6} /> : null}
+        {!costas && boca === 'reta' ? <path d="M-24,-60 h48" {...traco} /> : null}
+        {!costas && boca === 'sorriso' ? <path d="M-34,-66 Q0,-34 34,-66" fill="none" {...traco} /> : null}
+        {!costas && boca === 'preocupado' ? <path d="M-34,-50 Q0,-78 34,-50" fill="none" {...traco} /> : null}
+        {!costas && boca === 'aberta' ? <ellipse cx={0} cy={-56} rx={24} ry={30} fill={TINTA} /> : null}
       </g>
     </g>
   );

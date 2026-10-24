@@ -1,0 +1,15 @@
+[
+ {"id":"bp1","who":"bia_pensa","text":"Eu soltei primeiro. Não ele."},
+ {"id":"e1","who":"narrador","text":"Eu passei anos dizendo que a multidão separou os dois. É uma versão limpa."},
+ {"id":"e2","who":"narrador","text":"A câmera não gravou o que a Bia pensava. Só o segundo em que ela escolheu pra onde olhar."},
+ {"id":"b1","who":"bia","text":"Vocês dois ficam do meu lado. A avenida tá fechada."},
+ {"id":"r1","who":"rafa","text":"Eu sei. Por isso tô te pedindo, não te puxando."},
+ {"id":"b2","who":"bia","text":"Caio, se a gente se perder?"},
+ {"id":"b3","who":"bia","text":"Eu também lembro. Só não some sem me avisar."},
+ {"id":"r2","who":"rafa","text":"Bia, olha. O segurança caiu. Vou chamar alguém."},
+ {"id":"x1","who":"multidao","text":"Dá espaço! Ele tá respirando?"},
+ {"id":"e3","who":"narrador","text":"A gravação ficou muda por dois minutos. Eu achei que tinha acabado."},
+ {"id":"b4","who":"bia","text":"Ninguém encosta nele."},
+ {"id":"r3","who":"rafa","text":"Então por que a cabeça dele ainda marca a batida?"},
+ {"id":"bp2","who":"bia_pensa","text":"Eu chamei aquilo de cuidado. Era raiva, porque ele decidiu sem mim."}
+]
