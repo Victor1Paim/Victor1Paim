@@ -1,0 +1,129 @@
+{
+  "serie": "ano-zero",
+  "temporada": 1,
+  "episodio": 0,
+  "titulo": "Teste técnico",
+  "sessao": "caio",
+  "horaInicio": "23:05",
+  "duracaoAlvoSeg": 15,
+  "cartaoSessao": false,
+  "apresentaEm": 3,
+  "cenas": [
+    {
+      "id": "c1",
+      "inicio": 0,
+      "fim": 3,
+      "beat": "gancho",
+      "placas": [
+        "beira-mar/fundo",
+        "ecos/grupo-de-costas",
+        "caio/pose-observando"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.0,
+        "para": 1.1
+      },
+      "luz": {
+        "tipo": "poste-sodio",
+        "tremulacao": true
+      },
+      "nevoa": true,
+      "som": [
+        {
+          "tipo": "padrao",
+          "fonte": "buzina-ciclo",
+          "aneis": true,
+          "x": 0.78,
+          "y": 0.42,
+          "bpm": 80
+        }
+      ],
+      "tiqueEco": {
+        "camada": 1,
+        "bpm": 80
+      },
+      "legendas": [
+        {
+          "tipo": "pensamento",
+          "personagem": "caio",
+          "texto": "Eles não estão indo pro mar."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "inicio": 4,
+      "fim": 9.5,
+      "beat": "desenvolvimento",
+      "placas": [
+        "calcadao-noite/fundo",
+        "lurdes/pose-canga",
+        "caio/pose-libras-costas"
+      ],
+      "camera": {
+        "movimento": "panoramica"
+      },
+      "luz": {
+        "tipo": "poste-sodio"
+      },
+      "particulas": true,
+      "legendas": [
+        {
+          "tipo": "libras",
+          "personagem": "lurdes",
+          "texto": "Me leva pra casa. E não conta pra ninguém.",
+          "inicio": 0,
+          "fim": 3
+        },
+        {
+          "tipo": "libras",
+          "personagem": "caio",
+          "texto": "Dinda, o que aconteceu com seu braço?",
+          "inicio": 3
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "inicio": 9.5,
+      "fim": 12.5,
+      "beat": "decisao",
+      "placas": [
+        "calcadao-noite/fundo",
+        "caio/pose-celular"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.05,
+        "para": 1.15
+      },
+      "luz": {
+        "tipo": "tela-celular"
+      },
+      "celular": {
+        "tipo": "chamada-recusada",
+        "de": "BIA",
+        "bateria": 4
+      },
+      "legendas": [
+        {
+          "tipo": "som",
+          "texto": "celular vibra",
+          "inicio": 0,
+          "fim": 1.2
+        }
+      ]
+    }
+  ],
+  "momentoDecisao": {
+    "inicio": 10.5,
+    "duracao": 2,
+    "pergunta": "Nessa situação, o que você faria?",
+    "opcoes": {
+      "A": "Levar a Dinda",
+      "B": "Procurar a Bia"
+    }
+  },
+  "cta": "Ep. 6 quarta, às 20h"
+}

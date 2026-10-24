@@ -1,0 +1,351 @@
+{
+  "serie": "ano-zero",
+  "temporada": 1,
+  "episodio": 1,
+  "titulo": "A mão",
+  "sessao": "bia",
+  "horaInicio": "23:00",
+  "duracaoAlvoSeg": 76,
+  "cartaoSessao": true,
+  "apresentaEm": 3,
+  "cenas": [
+    {
+      "id": "c1",
+      "inicio": 0,
+      "fim": 3,
+      "beat": "gancho",
+      "placas": [
+        "multidao-branco/fundo",
+        "caio/mao-fitinha",
+        "bia/mao-estendida"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.0,
+        "para": 1.12
+      },
+      "luz": {
+        "tipo": "palco"
+      },
+      "particulas": true,
+      "som": [
+        {
+          "tipo": "padrao",
+          "fonte": "batida-festa",
+          "aneis": true,
+          "x": 0.5,
+          "y": 0.22,
+          "bpm": 120
+        }
+      ],
+      "legendas": [
+        {
+          "tipo": "dialogo",
+          "personagem": "bia",
+          "texto": "Caio!",
+          "inicio": 1.2
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "inicio": 5.5,
+      "fim": 12,
+      "beat": "desenvolvimento",
+      "placas": [
+        "areia-palco/fundo",
+        "multidao-branco/meio",
+        "bia/pose-multidao"
+      ],
+      "camera": {
+        "movimento": "afastamento",
+        "de": 1.1,
+        "para": 1.0
+      },
+      "luz": {
+        "tipo": "palco"
+      },
+      "particulas": true,
+      "legendas": [
+        {
+          "tipo": "narrador",
+          "texto": "Trinta e um de dezembro. Copacabana de branco, esperando os fogos."
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "inicio": 12,
+      "fim": 30,
+      "beat": "desenvolvimento",
+      "marcador": "20 S ANTES",
+      "placas": [
+        "areia-palco/fundo",
+        "multidao-branco/meio",
+        "caio/pose-libras-costas",
+        "bia/pose-libras-frente",
+        "rafa/pose-festa"
+      ],
+      "camera": {
+        "movimento": "panoramica"
+      },
+      "luz": {
+        "tipo": "palco"
+      },
+      "legendas": [
+        {
+          "tipo": "libras",
+          "personagem": "caio",
+          "texto": "O Rafa vai pro outro palco. Eu vou com ele.",
+          "inicio": 0,
+          "fim": 3.3
+        },
+        {
+          "tipo": "libras",
+          "personagem": "bia",
+          "texto": "Não. Hoje a gente fica junto.",
+          "inicio": 3.3,
+          "fim": 5.5
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "rafa",
+          "texto": "Deixa ele, Bia. Eu cuido dele, juro.",
+          "inicio": 5.5,
+          "fim": 8
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "bia",
+          "texto": "Você não cuida nem do seu celular, Rafa.",
+          "inicio": 8,
+          "fim": 10.8
+        },
+        {
+          "tipo": "libras",
+          "personagem": "caio",
+          "texto": "Eu tenho vinte e dois anos, Bia.",
+          "inicio": 10.8,
+          "fim": 13.2
+        },
+        {
+          "tipo": "libras",
+          "personagem": "caio",
+          "texto": "Volto antes da meia-noite. Prometo.",
+          "inicio": 13.2,
+          "fim": 15
+        },
+        {
+          "tipo": "pensamento",
+          "personagem": "bia",
+          "texto": "Ele sempre acha que eu tô mandando nele.",
+          "inicio": 15
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "inicio": 30,
+      "fim": 37,
+      "beat": "virada",
+      "placas": [
+        "areia-palco/fundo",
+        "multidao-branco/meio",
+        "homem-cracha/caido"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.0,
+        "para": 1.15
+      },
+      "luz": {
+        "tipo": "palco",
+        "tremulacao": true
+      },
+      "legendas": [
+        {
+          "tipo": "som",
+          "texto": "música para",
+          "inicio": 0,
+          "fim": 1.5
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "rafa",
+          "texto": "Caramba, o cara apagou.",
+          "inicio": 1.5,
+          "fim": 3.3
+        },
+        {
+          "tipo": "narrador",
+          "texto": "Perto do palco, um homem caiu. Ninguém estranhou.",
+          "inicio": 3.5
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "inicio": 37,
+      "fim": 46,
+      "beat": "virada",
+      "placas": [
+        "areia-palco/fundo",
+        "multidao-branco/meio",
+        "homem-cracha/levantando"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.05,
+        "para": 1.2
+      },
+      "luz": {
+        "tipo": "palco",
+        "tremulacao": true
+      },
+      "nevoa": true,
+      "som": [
+        {
+          "tipo": "padrao",
+          "fonte": "batida-festa",
+          "aneis": true,
+          "x": 0.22,
+          "y": 0.3,
+          "bpm": 120
+        }
+      ],
+      "tiqueEco": {
+        "camada": 2,
+        "bpm": 120
+      },
+      "legendas": [
+        {
+          "tipo": "narrador",
+          "texto": "Aí a batida voltou. E ele levantou junto.",
+          "inicio": 0,
+          "fim": 4
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "rafa",
+          "texto": "Gente… ele tá dançando?",
+          "inicio": 4,
+          "fim": 6
+        },
+        {
+          "tipo": "pensamento",
+          "personagem": "bia",
+          "texto": "Isso não é bebida.",
+          "inicio": 6.3
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "inicio": 46,
+      "fim": 58,
+      "beat": "virada",
+      "placas": [
+        "multidao-branco/fundo",
+        "multidao-branco/correndo",
+        "rafa/pose-ombro"
+      ],
+      "camera": {
+        "movimento": "tremor"
+      },
+      "luz": {
+        "tipo": "flash-vermelho"
+      },
+      "particulas": true,
+      "legendas": [
+        {
+          "tipo": "som",
+          "texto": "gritos",
+          "inicio": 0,
+          "fim": 1.5
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "rafa",
+          "texto": "Bia! Meu ombro…",
+          "inicio": 1.5,
+          "fim": 4
+        },
+        {
+          "tipo": "dialogo",
+          "personagem": "bia",
+          "texto": "Caio! Segura a minha mão! Não solta!",
+          "inicio": 4.5,
+          "fim": 7.8
+        },
+        {
+          "tipo": "pensamento",
+          "personagem": "bia",
+          "texto": "Ele não escuta. Ele não escuta grito.",
+          "inicio": 8
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "inicio": 58,
+      "fim": 64,
+      "beat": "virada",
+      "placas": [
+        "multidao-branco/fundo",
+        "caio/mao-fitinha",
+        "bia/mao-estendida"
+      ],
+      "camera": {
+        "movimento": "aproximacao",
+        "de": 1.0,
+        "para": 1.12
+      },
+      "luz": {
+        "tipo": "flash-vermelho"
+      },
+      "legendas": [
+        {
+          "tipo": "dialogo",
+          "personagem": "bia",
+          "texto": "Caio!",
+          "inicio": 2
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "inicio": 64,
+      "fim": 73.5,
+      "beat": "final",
+      "placas": [
+        "multidao-branco/fundo",
+        "multidao-branco/meio",
+        "bia/pose-sozinha-lanterna"
+      ],
+      "camera": {
+        "movimento": "afastamento",
+        "de": 1.15,
+        "para": 1.0
+      },
+      "luz": {
+        "tipo": "tela-celular"
+      },
+      "nevoa": true,
+      "legendas": [
+        {
+          "tipo": "narrador",
+          "texto": "Faltavam sessenta minutos para a virada. E a Bia tinha perdido o irmão.",
+          "inicio": 0,
+          "fim": 5.8
+        },
+        {
+          "tipo": "pensamento",
+          "personagem": "bia",
+          "texto": "Três piscadas. Ele vai ver. Ele sempre vê.",
+          "inicio": 6
+        }
+      ]
+    }
+  ],
+  "cta": "Ep. 2 segunda, às 20h"
+}
