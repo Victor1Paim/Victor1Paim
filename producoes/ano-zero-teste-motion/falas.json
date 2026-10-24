@@ -1,0 +1,14 @@
+[
+ {"id":"n01","who":"narrador","text":"Trinta e um de dezembro. Onze da noite. Dois milhões de pessoas de branco em Copacabana, esperando os fogos."},
+ {"id":"r01","who":"rafa","text":"Bia, relaxa! É Réveillon!"},
+ {"id":"b01","who":"bia","text":"Rafa, não tira o olho do Caio."},
+ {"id":"n02","who":"narrador","text":"Perto do palco, um homem com crachá de laboratório tremia. Os dedos batiam sozinhos, no ritmo da música."},
+ {"id":"a01","who":"ambulante","text":"Ô, meu amigo, tá passando mal?"},
+ {"id":"n03","who":"narrador","text":"Aí o DJ cortou o som. E o homem parou de respirar."},
+ {"id":"b02","who":"bia","text":"Alguém chama um médico!"},
+ {"id":"n04","who":"narrador","text":"Quando a batida voltou... ele levantou junto com ela."},
+ {"id":"r02","who":"rafa","text":"Gente... ele tá dançando?"},
+ {"id":"n05","who":"narrador","text":"Ele virou a cabeça. No ritmo."},
+ {"id":"b03","who":"bia","text":"Rafa, sai daí!"},
+ {"id":"n06","who":"narrador","text":"Faltavam cinquenta e oito minutos para a virada. E ninguém sabia o que tinha acabado de acordar."}
+]

@@ -9,6 +9,7 @@ import {Capa} from './compositions/Capa';
 import {DestaqueIG} from './compositions/DestaqueIG';
 import {Episodio} from './compositions/Episodio';
 import {Trailer} from './compositions/Trailer';
+import {DURACAO_TESTE_MOTION, TesteMotion} from './motion/TesteMotion';
 import {QUADRO} from './theme/layout';
 import type {Episodio as EpisodioT} from './tipos';
 
@@ -42,6 +43,7 @@ export const Root: React.FC = () => (
         <Still id={`${id}-Capa`} component={Capa} width={1080} height={1920} defaultProps={{ep, arte: `series/ano-zero/t1/ep${String(ep.episodio).padStart(2, '0')}/capa-arte.png`}} />
       </React.Fragment>
     ))}
+    <Composition id="AnoZero-TesteMotion" component={TesteMotion} width={1080} height={1920} fps={30} durationInFrames={DURACAO_TESTE_MOTION} />
     <Composition id="AnoZero-Trailer" component={Trailer} width={1080} height={1920} fps={30} durationInFrames={25 * 30} />
     <Still id="Avatar" component={Avatar} width={1080} height={1080} defaultProps={{simplificado: false}} />
     <Still id="Avatar-Simplificado" component={Avatar} width={1080} height={1080} defaultProps={{simplificado: true}} />
