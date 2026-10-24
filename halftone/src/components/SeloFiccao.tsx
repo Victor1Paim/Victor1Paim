@@ -3,8 +3,9 @@ import {marca} from '../../marca/marca';
 import {fontes} from '../theme/fontes';
 import {SEGURA} from '../theme/layout';
 
-// Marca "FICÇÃO · HALFTONE", sempre visível no vídeo. Na capa, só "FICÇÃO".
-export const SeloFiccao: React.FC<{capa?: boolean}> = ({capa}) => (
+// Selo do topo, sempre visível no vídeo. Padrão "FICÇÃO · HALFTONE" (na capa, só "FICÇÃO");
+// `texto` troca por um rótulo da série, ex.: "DIA 1 · DA INFECÇÃO".
+export const SeloFiccao: React.FC<{capa?: boolean; texto?: string}> = ({capa, texto}) => (
   <div
     style={{
       position: 'absolute',
@@ -26,6 +27,6 @@ export const SeloFiccao: React.FC<{capa?: boolean}> = ({capa}) => (
     }}
   >
     <span style={{width: 10, height: 10, borderRadius: '50%', background: marca.cores.vermelho}} />
-    {capa ? 'FICÇÃO' : 'FICÇÃO · HALFTONE'}
+    {texto ?? (capa ? 'FICÇÃO' : 'FICÇÃO · HALFTONE')}
   </div>
 );

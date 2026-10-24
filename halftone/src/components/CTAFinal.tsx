@@ -5,7 +5,7 @@ import {fontes} from '../theme/fontes';
 import {SimboloHalftone} from './SimboloHalftone';
 
 // Cartão final: próximo episódio e convite para seguir.
-export const CTAFinal: React.FC<{texto: string; serie: string}> = ({texto, serie}) => {
+export const CTAFinal: React.FC<{texto: string; serie: string; nota?: string}> = ({texto, serie, nota}) => {
   const frame = useCurrentFrame();
   const op = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
   return (
@@ -18,6 +18,9 @@ export const CTAFinal: React.FC<{texto: string; serie: string}> = ({texto, serie
       <div style={{marginTop: 30, fontFamily: fontes.mono, fontSize: 30, letterSpacing: 4, color: marca.cores.vermelho}}>
         ● SIGA {marca.handle.toUpperCase()}
       </div>
+      {nota ? (
+        <div style={{marginTop: 26, fontFamily: fontes.mono, fontSize: 24, letterSpacing: 4, color: marca.cores.cinza}}>{nota}</div>
+      ) : null}
     </AbsoluteFill>
   );
 };

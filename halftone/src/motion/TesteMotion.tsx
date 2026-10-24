@@ -152,9 +152,9 @@ export const TesteMotion: React.FC = () => {
         <HalftoneApresenta serie="Ano Zero" temporada="T1 · A Virada" />
       </Sequence>
       <Sequence from={Math.round(EV.cta * fps)} name="CTA">
-        <CTAFinal texto="Estreia 04/12 · 20h" serie="Ano Zero · teste" />
+        <CTAFinal texto="Estreia 04/12 · 20h" serie="Ano Zero · teste" nota="SÉRIE DE FICÇÃO · HALFTONE" />
       </Sequence>
-      <SeloFiccao />
+      <SeloFiccao texto="DIA 1 · DA INFECÇÃO" />
 
       <Audio src={staticFile(TL.trilha)} volume={0.55} />
       {TL.linhas.map((l) => (
