@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "style_playbook": "halftone-ano-zero",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "animation",
+      "description": "Beira-mar: grupo de ecos de costas para o mar vira a cabeça no ritmo de uma buzina (anéis vermelhos à direita); Caio em primeiro plano de costas, fitinha vermelha. Push-in + parallax 3 camadas, névoa, tique seco nos ecos.",
+      "start_seconds": 0,
+      "end_seconds": 3
+    },
+    {
+      "id": "s2",
+      "type": "text_card",
+      "description": "Halftone apresenta: símbolo de pontos revela, ANO ZERO.",
+      "start_seconds": 3,
+      "end_seconds": 4
+    },
+    {
+      "id": "s3",
+      "type": "animation",
+      "description": "Calçadão de ondas: Dona Lurdes tremendo, canga no antebraço, flores brancas; Caio de costas (mãos fora do quadro). Pan lateral com parallax; caixas LIBRAS.",
+      "start_seconds": 4,
+      "end_seconds": 9
+    },
+    {
+      "id": "s4",
+      "type": "animation",
+      "description": "Close frio do Caio iluminado pelo celular; UI do celular CHAMADA RECUSADA BIA 4%; aos 10,5 s congela 2 s com Momento Decisão A/B.",
+      "start_seconds": 9,
+      "end_seconds": 12.5
+    },
+    {
+      "id": "s5",
+      "type": "text_card",
+      "description": "Cartão final com símbolo e CTA.",
+      "start_seconds": 12.5,
+      "end_seconds": 15
+    }
+  ]
+}

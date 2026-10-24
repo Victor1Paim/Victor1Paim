@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "project_id": "ano-zero-teste-tecnico",
+  "decisions": [
+    {
+      "decision_id": "d1",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime",
+      "options_considered": [
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames",
+          "score": 0.9,
+          "reason": "HTML/GSAP, melhor para motion design"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.75,
+          "reason": "reaproveita componentes Halftone"
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg",
+          "score": 0.2,
+          "reason": "sem composição"
+        }
+      ],
+      "selected": "hyperframes",
+      "reason": "escolha do usuário"
+    },
+    {
+      "decision_id": "d2",
+      "stage": "proposal",
+      "category": "composition_mode",
+      "subject": "Authoring mode",
+      "options_considered": [
+        {
+          "option_id": "atelier",
+          "label": "Atelier",
+          "score": 0.9,
+          "reason": "peça-piloto da marca"
+        },
+        {
+          "option_id": "templated",
+          "label": "Templated",
+          "score": 0.4,
+          "reason": "visual genérico"
+        }
+      ],
+      "selected": "atelier",
+      "reason": "teste que define a linguagem do canal"
+    },
+    {
+      "decision_id": "d3",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "Image provider",
+      "options_considered": [
+        {
+          "option_id": "google_imagen:gemini-3-pro-image",
+          "label": "Gemini 3 Pro Image",
+          "score": 0.9,
+          "reason": "estilo aprovado"
+        },
+        {
+          "option_id": "openai_image",
+          "label": "OpenAI",
+          "score": 0.0,
+          "reason": "api.openai.com bloqueado na rede"
+        }
+      ],
+      "selected": "google_imagen:gemini-3-pro-image",
+      "reason": "único disponível e aprovado"
+    },
+    {
+      "decision_id": "d4",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "Narration TTS provider",
+      "options_considered": [
+        {
+          "option_id": "gemini_tts",
+          "label": "Gemini TTS",
+          "score": 0.85,
+          "reason": "voz expressiva, direção por prompt"
+        },
+        {
+          "option_id": "google_tts",
+          "label": "Google Cloud TTS",
+          "score": 0.6,
+          "reason": "menos controle de atuação"
+        }
+      ],
+      "selected": "gemini_tts",
+      "reason": "melhor atuação para o narrador"
+    }
+  ]
+}

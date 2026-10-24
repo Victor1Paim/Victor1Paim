@@ -1,0 +1,3 @@
+modelo: gemini-3-pro-image
+
+Edit this painting: remove every firework burst from the sky and horizon so the night sky is dark and calm; keep the dark fireworks barges on the horizon as unlit silhouettes with a few small work lights. Keep everything else exactly the same, same style, full-bleed. No text, no letters, no numbers, no logos, no gore, no blood, no photorealism.

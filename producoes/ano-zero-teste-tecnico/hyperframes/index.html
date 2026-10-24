@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/js/gsap.min.js"></script>
+    <style>
+    @font-face { font-family: 'Anton Local'; src: url('assets/fonts/anton-latin-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter Italic Local'; font-style: italic; font-weight: 600; src: url('assets/fonts/inter-latin-600-italic.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter Semi Local'; font-weight: 600; src: url('assets/fonts/inter-latin-600-normal.woff2') format('woff2'); }
+
+      :root{--preto:#07090D;--papel:#EDE6D6;--cinza:#8A949C;--vermelho:#E0413A;--azul:#7FB8D6;}
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #07090D; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #ui-ret { position: absolute; inset: 0; z-index: 20; pointer-events: none; opacity: .10; mix-blend-mode: overlay;
+        background-image: radial-gradient(circle at 50% 50%, #000 32%, transparent 34%); background-size: 7px 7px; }
+      #ui-selo { position: absolute; top: 186px; left: 56px; z-index: 30; display: flex; align-items: center; gap: 12px;
+        font-family: 'IBM Plex Mono'; font-weight: 500; font-size: 28px; letter-spacing: 4px; color: #EDE6D6;
+        padding: 8px 14px; border: 1.5px solid rgba(237,230,214,.35); border-radius: 4px; background: rgba(7,9,13,.55); }
+      #ui-selo i { width: 10px; height: 10px; border-radius: 50%; background: #E0413A; display: inline-block; }
+      #ui-rel { position: absolute; top: 180px; right: 56px; z-index: 30; text-align: right; font-family: 'IBM Plex Mono';
+        color: #EDE6D6; text-shadow: 0 2px 12px rgba(0,0,0,.85); }
+      #ui-rel .h { font-size: 46px; font-weight: 500; letter-spacing: 2px; }
+      #ui-rel .f { font-size: 28px; letter-spacing: 4px; color: #7FB8D6; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="17" data-width="1080" data-height="1920">
+      <div id="praia" data-composition-id="praia" data-composition-src="compositions/praia.html" data-start="0" data-duration="3" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="apresenta" data-composition-id="apresenta" data-composition-src="compositions/apresenta.html" data-start="3" data-duration="1" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="calcadao" data-composition-id="calcadao" data-composition-src="compositions/calcadao.html" data-start="4" data-duration="5.6" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:3"></div>
+      <div id="decisao" data-composition-id="decisao" data-composition-src="compositions/decisao.html" data-start="9.6" data-duration="4.4" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:4"></div>
+      <div id="cta" data-composition-id="cta" data-composition-src="compositions/cta.html" data-start="14" data-duration="3" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:5"></div>
+      <div id="ui-ret" class="clip" data-start="0" data-duration="17" data-track-index="2" data-track-kind="graphics" data-layout-ignore></div>
+      <div id="ui-rel" class="clip" data-start="0" data-duration="14" data-track-index="3" data-track-kind="graphics"><div class="h">23:05</div><div class="f">FALTAM 55 MIN</div></div>
+      <div id="ui-selo" class="clip" data-start="0" data-duration="17" data-track-index="4" data-track-kind="graphics"><i></i>FICÇÃO · HALFTONE</div>
+      <audio id="amb-1" class="clip" src="assets/audio/ambiente-abafado.wav" data-start="0" data-duration="11.8" data-volume="0.9" data-fade-out="0.04" data-track-index="5"></audio>
+      <audio id="amb-2" class="clip" src="assets/audio/ambiente-abafado.wav" data-start="14" data-duration="3" data-media-start="14" data-volume="0.7" data-fade-in="0.3" data-fade-out="0.5" data-track-index="5"></audio>
+      <audio id="narr-1" class="clip" src="assets/audio/narrador-1.wav" data-start="9.7" data-duration="2.14" data-volume="1" data-track-index="6"></audio>
+      <audio id="narr-2" class="clip" src="assets/audio/narrador-2.wav" data-start="11.9" data-duration="2.3" data-volume="1" data-track-index="6"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

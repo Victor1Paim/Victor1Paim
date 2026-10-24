@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "render_runtime": "hyperframes",
+  "composition_mode": "atelier",
+  "renderer_family": "animation-first",
+  "bespoke": {
+    "entry": "hyperframes/index.html",
+    "composition_id": "main",
+    "art_direction": "motion comic 2.5D Halftone"
+  },
+  "cuts": [
+    {
+      "id": "praia",
+      "source": "hyperframes/compositions/praia.html",
+      "in_seconds": 0,
+      "out_seconds": 3
+    },
+    {
+      "id": "apresenta",
+      "source": "hyperframes/compositions/apresenta.html",
+      "in_seconds": 3,
+      "out_seconds": 4
+    },
+    {
+      "id": "calcadao",
+      "source": "hyperframes/compositions/calcadao.html",
+      "in_seconds": 4,
+      "out_seconds": 9.6
+    },
+    {
+      "id": "decisao",
+      "source": "hyperframes/compositions/decisao.html",
+      "in_seconds": 9.6,
+      "out_seconds": 14
+    },
+    {
+      "id": "cta",
+      "source": "hyperframes/compositions/cta.html",
+      "in_seconds": 14,
+      "out_seconds": 17
+    }
+  ],
+  "metadata": {
+    "duracao_final": 17,
+    "mudanca": "15 s → 17 s: tempo de leitura das legendas de Libras e da pergunta do narrador"
+  }
+}

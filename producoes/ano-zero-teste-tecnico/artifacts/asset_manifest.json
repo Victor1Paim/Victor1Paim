@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "beira-mar-fundo",
+      "type": "image",
+      "path": "assets/images/camadas/beira-mar-fundo.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s1"
+    },
+    {
+      "id": "ecos-grupo",
+      "type": "image",
+      "path": "assets/images/camadas/ecos-grupo.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s1"
+    },
+    {
+      "id": "caio-costas",
+      "type": "image",
+      "path": "assets/images/camadas/caio-costas.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s1"
+    },
+    {
+      "id": "calcadao-fundo",
+      "type": "image",
+      "path": "assets/images/camadas/calcadao-fundo.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s3"
+    },
+    {
+      "id": "lurdes",
+      "type": "image",
+      "path": "assets/images/camadas/lurdes.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s3"
+    },
+    {
+      "id": "caio-celular",
+      "type": "image",
+      "path": "assets/images/camadas/caio-celular.png",
+      "source_tool": "google_imagen",
+      "scene_id": "s4"
+    },
+    {
+      "id": "narrador",
+      "type": "narration",
+      "path": "assets/audio/narrador-decisao.wav",
+      "source_tool": "gemini_tts",
+      "scene_id": "s4"
+    },
+    {
+      "id": "ambiente",
+      "type": "music",
+      "path": "assets/music/ambiente.mp3",
+      "source_tool": "google_music",
+      "scene_id": "s1"
+    }
+  ],
+  "total_cost_usd": 1.52,
+  "metadata": {
+    "custo_detalhado": {
+      "imagens_geradas": 11,
+      "imagens_usd_est": 1.47,
+      "tts_usd_est": 0.01,
+      "lyria_usd_est": 0.04,
+      "render_usd": 0
+    },
+    "observacao": "Estimativas [E] a partir da tabela pública do Google; o Gemini não devolveu o valor cobrado (cost_status=unquoted). Conferir no faturamento do Google AI Studio. 11 imagens = 6 placas + 3 camadas refeitas sem referência + 2 edições removendo fogos."
+  }
+}

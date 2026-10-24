@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/final.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 17
+    },
+    {
+      "path": "renders/final-entrega.mp4",
+      "format": "mp4 h264/aac crf20",
+      "resolution": "1080x1920",
+      "duration_seconds": 17
+    }
+  ],
+  "render_time_seconds": 92,
+  "render_grammar": "animation-first",
+  "decision_log_ref": "artifacts/decision_log.json",
+  "verification_notes": [
+    "hyperframes check ok (1 aviso: estrutura do relógio)",
+    "loudness integrado -17.1 LUFS",
+    "quadros revisados em 0.1/2/3.5/5/7.7/10.7/13/16 s"
+  ],
+  "warnings": [
+    "som medido, não ouvido"
+  ]
+}

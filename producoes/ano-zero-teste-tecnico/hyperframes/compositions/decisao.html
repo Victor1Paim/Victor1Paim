@@ -1,0 +1,64 @@
+<template>
+  <style>
+    @font-face { font-family: 'Anton Local'; src: url('assets/fonts/anton-latin-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter Italic Local'; font-style: italic; font-weight: 600; src: url('assets/fonts/inter-latin-600-italic.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter Semi Local'; font-weight: 600; src: url('assets/fonts/inter-latin-600-normal.woff2') format('woff2'); }
+
+    #root { position: absolute; inset: 0; overflow: hidden; background: #07090D; }
+    .layer{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:50% 60%;} .layer img{width:100%;height:100%;object-fit:cover;display:block;}
+    #de-phone{position:absolute;left:190px;width:560px;top:1010px;background:rgba(12,15,20,.94);border:2px solid rgba(138,148,156,.45);border-radius:40px;padding:28px 36px 34px;color:#EDE6D6;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 90px rgba(150,190,255,.18);}
+    #de-phone .top{display:flex;justify-content:space-between;font-family:'IBM Plex Mono';font-size:28px;color:#8A949C;}
+    #de-phone .bat{color:#E0413A;}
+    #de-phone .st{margin-top:22px;font-family:'IBM Plex Mono';font-size:30px;letter-spacing:5px;color:#E0413A;}
+    #de-phone .nm{margin-top:4px;font-family:'Anton Local';font-size:110px;line-height:1.05;}
+    #de-dim{position:absolute;inset:0;background:#07090D;opacity:0;}
+    #de-box{position:absolute;left:70px;right:150px;top:560px;display:flex;flex-direction:column;align-items:center;gap:26px;}
+    #de-lbl{font-family:'IBM Plex Mono';font-size:28px;letter-spacing:9px;color:#7FB8D6;}
+    #de-q{font-family:'Anton Local';font-size:92px;line-height:1.06;text-align:center;color:#EDE6D6;}
+    #de-q span{display:inline-block;margin:0 .1em;}
+    .opt{display:flex;align-items:center;gap:26px;width:100%;background:rgba(7,9,13,.88);border:2px solid rgba(237,230,214,.25);border-radius:14px;padding:22px 30px;}
+    .opt b{font-family:'Anton Local';font-weight:400;font-size:84px;line-height:1;color:#7FB8D6;}
+    .opt span{font-family:'Inter Semi Local';font-weight:600;font-size:48px;color:#EDE6D6;}
+    #de-bar{width:100%;height:8px;background:rgba(237,230,214,.15);} #de-bar-in{height:100%;background:#E0413A;transform-origin:0 50%;}
+
+  </style>
+  <div id="root" data-composition-id="decisao" data-width="1080" data-height="1920" data-duration="4.4">
+
+    <div class="layer" id="de-bg"><img src="assets/img/caio-celular.png" alt=""/></div>
+    <div id="de-phone" data-layout-allow-occlusion><div class="top"><span>Réveillon</span><span class="bat">4%</span></div><div class="st">CHAMADA RECUSADA</div><div class="nm">BIA</div></div>
+    <div id="de-dim"></div>
+    <div id="de-box">
+      <div id="de-lbl">MOMENTO DECISÃO</div>
+      <div id="de-q"><span>Nessa</span><span>situação,</span><span>o</span><span>que</span><span>você</span><span>faria?</span></div>
+      <div class="opt" id="de-a"><b>A</b><span>Levar a Dinda</span></div>
+      <div class="opt" id="de-b"><b>B</b><span>Procurar a Bia</span></div>
+      <div id="de-bar"><div id="de-bar-in"></div></div>
+    </div>
+
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+
+      const F = 2.2; // congelamento
+      tl.fromTo("#de-bg img", {scale:1.04}, {scale:1.12, duration:F, ease:"power2.inOut"}, 0);
+      // celular vibra: tremor de câmera curto
+      for (let k = 0; k < 8; k++) tl.to("#de-bg", {x:(k % 2 ? 5 : -5), duration:0.035, ease:"none"}, 0.05 + k * 0.07);
+      tl.to("#de-bg", {x:0, duration:0.05}, 0.62);
+      tl.fromTo("#de-phone", {opacity:0, y:70, filter:"blur(8px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.35, ease:"expo.out"}, 0.1);
+      for (let k = 0; k < 6; k++) tl.to("#de-phone", {x:(k % 2 ? 7 : -7), duration:0.04, ease:"none"}, 0.5 + k * 0.08);
+      tl.to("#de-phone", {x:0, duration:0.05}, 0.98);
+      // congela: escurece, pergunta, opções, contagem
+      tl.fromTo("#de-dim", {opacity:0}, {opacity:0.78, duration:0.12, ease:"power2.out"}, F);
+      tl.to("#de-phone", {opacity:0, duration:0.1}, F);
+      tl.fromTo("#de-lbl", {opacity:0}, {opacity:1, duration:0.12}, F + 0.02);
+      tl.fromTo("#de-q span", {opacity:0, filter:"blur(6px)"}, {opacity:1, filter:"blur(0px)", duration:0.13, stagger:0.07, ease:"power3.out"}, F + 0.08);
+      tl.fromTo("#de-a", {opacity:0, y:24}, {opacity:1, y:0, duration:0.22, ease:"expo.out"}, F + 0.5);
+      tl.fromTo("#de-b", {opacity:0, y:24}, {opacity:1, y:0, duration:0.22, ease:"expo.out"}, F + 0.62);
+      tl.fromTo("#de-bar", {opacity:0}, {opacity:1, duration:0.1}, F + 0.5);
+      tl.fromTo("#de-bar-in", {scaleX:1}, {scaleX:0, duration:4.4 - F - 0.55, ease:"none"}, F + 0.55);
+
+      window.__timelines["decisao"] = tl;
+    })();
+  </script>
+</template>

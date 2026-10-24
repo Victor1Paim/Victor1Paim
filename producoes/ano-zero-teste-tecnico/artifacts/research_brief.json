@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "topic": "Ano Zero T1 — teste técnico de 15 s (motion graphics 2.5D, sessão do Caio)",
+  "research_date": "2026-10-24",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Exodus — interactive motion comic",
+        "url": "https://submarinechannel.com/motioncomics/exodus-interactive-comic-jasper-rietman/",
+        "source": "Submarine Channel",
+        "angle": "motion comic com parallax 2.5D",
+        "what_it_covers": "camadas ilustradas e animação sutil para imersão",
+        "what_it_misses": "formato vertical curto e som como elemento narrativo"
+      },
+      {
+        "title": "Joe Fellows — 2.5D photography",
+        "url": "https://thecreatorsproject.vice.com/blog/joe-fellows-teaches-us-how-to-master-25D-photography",
+        "source": "The Creators Project",
+        "angle": "efeito 'Kid Stays in the Picture'",
+        "what_it_covers": "separar still em camadas e mover câmera virtual",
+        "what_it_misses": "ilustração pintada e terror"
+      },
+      {
+        "title": "2.5D animation glossary",
+        "url": "https://videobolt.net/motion-graphics-glossary/2.5d-animation",
+        "source": "Videobolt",
+        "angle": "definição técnica",
+        "what_it_covers": "camadas 2D no eixo Z",
+        "what_it_misses": "direção de suspense"
+      }
+    ],
+    "saturated_angles": [
+      "slideshow de imagens IA com zoom lento",
+      "legenda karaokê genérica"
+    ],
+    "underserved_gaps": [
+      "terror em capítulos vertical onde o SOM é o monstro e a interface (anéis, relógio, Libras) é parte da narrativa"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "Ecos se orientam por padrões de som repetidos; ruído contínuo mascara",
+      "source_url": "halftone/series/ano-zero/biblia.md#3.2",
+      "source_name": "Bíblia Ano Zero v2",
+      "credibility": "primary_source",
+      "usable_as": "regra visual dos anéis vermelhos"
+    },
+    {
+      "claim": "Caio é surdo; sessões dele têm mixagem abafada e imagem mais fria; anéis aparecem só para o público",
+      "source_url": "halftone/series/ano-zero/biblia.md#9.4",
+      "source_name": "Bíblia Ano Zero v2",
+      "credibility": "primary_source",
+      "usable_as": "tratamento de som e cor"
+    },
+    {
+      "claim": "Libras só em legenda (caixa LIBRAS, texto azul), mãos nunca desenhadas",
+      "source_url": "halftone/series/ano-zero/biblia.md#6.2",
+      "source_name": "Bíblia Ano Zero v2",
+      "credibility": "primary_source",
+      "usable_as": "componente de legenda"
+    },
+    {
+      "claim": "Creator Rewards exige vídeo original de 1 min ou mais; ilustração animada é original",
+      "source_url": "halftone/docs/plano-mestre-novela-tiktok.md#1.1",
+      "source_name": "Plano-mestre v4",
+      "credibility": "primary_source",
+      "usable_as": "restrição de formato"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "O que são os ecos?",
+      "Por que o Caio não percebe?",
+      "O que a caixa tem?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Libras pode ser desenhada pela IA",
+        "reality": "sinais inventados são errados e ofensivos; usar só legenda",
+        "source": "biblia 6.2"
+      }
+    ],
+    "knowledge_level": "público geral de TikTok, 18-34, fã de terror e séries",
+    "pain_points": [
+      "vídeos de IA genéricos e sem continuidade"
+    ]
+  },
+  "angles_discovered": [
+    {
+      "name": "Motion comic 2.5D",
+      "hook": "placas pintadas em camadas com câmera e parallax",
+      "type": "narrative",
+      "why_now": "estilo aprovado no teste de estilo",
+      "grounded_in": [
+        "Exodus",
+        "Joe Fellows"
+      ]
+    },
+    {
+      "name": "Clipes de vídeo gerado",
+      "hook": "movimento real gerado por IA",
+      "type": "trending",
+      "why_now": "Gemini Omni disponível na chave",
+      "grounded_in": [
+        "preflight"
+      ]
+    },
+    {
+      "name": "HUD/tipografia como protagonista",
+      "hook": "interface (relógio, celular, anéis) conta a história com pouca arte",
+      "type": "evergreen",
+      "why_now": "barato e muito reutilizável",
+      "grounded_in": [
+        "biblia 9.4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "halftone/series/ano-zero/biblia.md",
+      "title": "Bíblia Ano Zero v2",
+      "used_for": "regras, personagens, visual",
+      "reliability": "primary"
+    },
+    {
+      "url": "halftone/docs/plano-mestre-novela-tiktok.md",
+      "title": "Plano-mestre v4",
+      "used_for": "formato, conformidade",
+      "reliability": "primary"
+    },
+    {
+      "url": "https://submarinechannel.com/motioncomics/exodus-interactive-comic-jasper-rietman/",
+      "title": "Exodus motion comic",
+      "used_for": "referência de técnica",
+      "reliability": "secondary"
+    },
+    {
+      "url": "https://thecreatorsproject.vice.com/blog/joe-fellows-teaches-us-how-to-master-25D-photography",
+      "title": "Joe Fellows 2.5D",
+      "used_for": "referência de técnica",
+      "reliability": "secondary"
+    },
+    {
+      "url": "https://nalena.com/2-5d/",
+      "title": "What Is 2.5D Animation",
+      "used_for": "definição",
+      "reliability": "secondary"
+    },
+    {
+      "url": "https://repozitorij.grf.unizg.hr/islandora/object/grf:3181/datastream/PDF/view",
+      "title": "Parallax in illustration (tese)",
+      "used_for": "ilustração em camadas exige pintar o fundo oculto",
+      "reliability": "secondary"
+    }
+  ],
+  "research_summary": "Conteúdo vem da bíblia; técnica: motion comic 2.5D com camadas pintadas separáveis, câmera virtual e interface narrativa (anéis, relógio, Libras, celular)."
+}
