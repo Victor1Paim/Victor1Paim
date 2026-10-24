@@ -1,0 +1,3 @@
+modelo: gemini-3-pro-image
+
+Edit this painting: remove the black letterbox bars at the top and bottom and extend the painted scene to fill the entire vertical frame (more night sky and glowing haze above, more sand and crowd feet below). Replace any numbers or characters on the giant stage screens with abstract glowing light, no readable content. Keep the woman, the crowd, the lighting and the painting style exactly the same. Full-bleed image filling the whole frame edge to edge, no black bars, no borders. No text, no letters, no numbers, no logos, no gore, no blood, no photorealism.
