@@ -15,6 +15,7 @@ Para atualizar, clone o repositório de novo e copie a pasta da skill por cima.
 | Vincentwei1021/mg-styles-15 (`49052d8`) | mg-styles-15 (repositório não é skill: `SKILL.md` escrito aqui; prompts, rubrica, template e `harness/` copiados; demos de ~1 GB ficam de fora) |
 | JohnHeibel/ClaudeAnimationBase (`0ac8bf2`) | claude-animation-base (repositório não é skill: `SKILL.md` escrito aqui; guia, `src/`, `render.mjs` e fichas de modelo copiados) |
 | debpalash/VoiceStudio (`ac821cb`) | voicestudio (`skills/voicestudio/SKILL.md` do repositório, mais uma seção "Notes for this repo" no fim; licença AGPL-3.0, o aplicativo não é copiado: roda no computador do usuário) |
+| cheaper-inference/OmniRoute (`a2b7934c`, espelho de diegosouzapw/OmniRoute) | omniroute (`SKILL.md` escrito aqui; 10 das 47 skills do repositório copiadas como referências em `references/`, sem aparecer na lista de skills; o servidor não é copiado) |
 
 Deixadas de fora: skills internas de desenvolvimento de cada repositório, as que dependem de contas
 de nuvem (Caveman Cloud, Browser Use Cloud, x402) e `remotion-saas`/`remotion-maps`.
