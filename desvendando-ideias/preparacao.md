@@ -33,6 +33,12 @@ A sessão do Claude na nuvem não alcança o `localhost` do seu computador. Esco
 
 Caminho escolhido: _(preencher)_
 
+**Tentativa de instalar na nuvem (28/10/2026):** o backend (`node scripts/setup-api.mjs`, versão CPU) parou porque a rede
+do ambiente bloqueou `download-r2.pytorch.org`. `huggingface.co`, de onde vêm os pesos das vozes, também está bloqueado.
+Para instalar no ambiente da nuvem, é preciso liberar esses domínios em *Network access* (Allowed domains) e depois
+repetir. Mesmo liberado, o servidor some quando a sessão termina e roda só em CPU, então o app no seu computador
+continua sendo o caminho principal.
+
 ## 4. Teste final (5 min)
 
 - [ ] Gerar 20s de narração com o perfil do canal.
