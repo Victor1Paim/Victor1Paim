@@ -27,6 +27,9 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 13 | Catálogo de 12 hooks do Grok adotado como ponto de partida; a ficha de comportamento de cada um precisa ser completada |
 | 14 | Calendário inicial: engenharia (dias 1–5), finanças (6–10), saúde (11–15), construção (16–20), depois misto pelo que reteve. Não matar um tema antes de 5–7 vídeos |
 | 15 | Regras de teste do Grok como ponto de partida: trocar hook se saída em 3 s < 30% em 5 vídeos; focar tema se shares > 2% e > 0,5 seguidor por vídeo em 7 vídeos |
+| 17 | **Troca visual a cada 2 s, no máximo** (cenário, aproximação ou ângulo; 2D, 2,5D ou 3D): ~38–45 planos por vídeo de 70–85 s. Detalhes em `producao/regra-troca-a-cada-2s.md` | Resposta do usuário |
+| 18 | Padrão de explicação "problema → solução → novo problema" (exemplo do telhado) para vídeos de engenharia e construção. `producao/padrao-cadeia-problema-solucao.md` | Resposta do usuário |
+| 19 | Piloto: vídeo 001 "Quantas Terras cabem no Sol" (`roteiros/001-quantas-terras-cabem-no-sol.md`) | Resposta do usuário |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa
