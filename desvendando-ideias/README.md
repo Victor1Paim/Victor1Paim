@@ -6,6 +6,8 @@ TikTok e Instagram: @desvendandoideias.ofc · YouTube: mesmo @ com o número 1 n
 - Curtos (TikTok, Reels, Shorts): 30s a 2m30.
 - Longos (YouTube): 10 a 16 min.
 
+Decisões vigentes (valem sobre o plano): [`decisoes.md`](decisoes.md). Pesquisa de temas e hooks: [`pesquisa/prompt-pesquisa-temas-hooks.md`](pesquisa/prompt-pesquisa-temas-hooks.md).
+
 Plano completo: [`plano-do-canal.md`](plano-do-canal.md). Preparação (VoiceStudio e voz do canal): [`preparacao.md`](preparacao.md).
 
 Pastas (criadas conforme o uso): `pautas/`, `roteiros/`, `producoes/`.
