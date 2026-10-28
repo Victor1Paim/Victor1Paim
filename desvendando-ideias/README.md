@@ -10,4 +10,6 @@ Decisões vigentes (valem sobre o plano): [`decisoes.md`](decisoes.md). Pesquisa
 
 Plano completo: [`plano-do-canal.md`](plano-do-canal.md). Preparação (VoiceStudio e voz do canal): [`preparacao.md`](preparacao.md).
 
+Produção: [`producao/dicionario-de-movimento.md`](producao/dicionario-de-movimento.md) (movimentos e transições) e [`producao/fluxo-por-video.md`](producao/fluxo-por-video.md) (passo a passo, rascunho).
+
 Pastas (criadas conforme o uso): `pautas/`, `roteiros/`, `producoes/`.
