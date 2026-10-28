@@ -14,6 +14,7 @@ Para atualizar, clone o repositório de novo e copie a pasta da skill por cima.
 | lemomo-ai/lemo-opuscar (`413a6bd`) | lemo-opuscar (`SKILL.md` e `scripts/setup.sh` do plugin; a biblioteca de 59 estilos é baixada por `setup.sh` em `~/lemo-opuscar`, clone esparso da `main`) |
 | Vincentwei1021/mg-styles-15 (`49052d8`) | mg-styles-15 (repositório não é skill: `SKILL.md` escrito aqui; prompts, rubrica, template e `harness/` copiados; demos de ~1 GB ficam de fora) |
 | JohnHeibel/ClaudeAnimationBase (`0ac8bf2`) | claude-animation-base (repositório não é skill: `SKILL.md` escrito aqui; guia, `src/`, `render.mjs` e fichas de modelo copiados) |
+| debpalash/VoiceStudio (`ac821cb`) | voicestudio (`skills/voicestudio/SKILL.md` do repositório, mais uma seção "Notes for this repo" no fim; licença AGPL-3.0, o aplicativo não é copiado: roda no computador do usuário) |
 
 Deixadas de fora: skills internas de desenvolvimento de cada repositório, as que dependem de contas
 de nuvem (Caveman Cloud, Browser Use Cloud, x402) e `remotion-saas`/`remotion-maps`.
