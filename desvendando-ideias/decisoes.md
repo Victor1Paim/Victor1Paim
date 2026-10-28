@@ -12,7 +12,35 @@ Resultado da rodada de perguntas ("grill me"). **Onde houver conflito, este arqu
 | 6 | Gasto: **o mínimo possível**, apoiado nas skills (visual por código, voz no modelo mais barato ou local). Sem teto fixo em reais; acompanhar com `gemini-midia usage` | Resposta do usuário |
 | 7 | Visual padrão: **tipografia animada + infográficos em código** (Remotion/mg-styles), sem rosto, sem stock | Resposta do usuário |
 | 8 | Temas: engenharia, saúde, curiosidades de finanças/economia/construção e outros a definir por pesquisa. **O diferencial é o hook**, e cada hook e cada tema terão uma ficha de comportamento | Resposta do usuário |
-| 9 | Próximo passo: rodar a pesquisa em `pesquisa/prompt-pesquisa-temas-hooks.md` no Grok e trazer o resultado | Resposta do usuário |
+| 9 | Pesquisa em `pesquisa/prompt-pesquisa-temas-hooks.md` rodada no Grok em 28/10/2026 (resultado abaixo) | Resposta do usuário |
+
+## Resultado da pesquisa (Grok, 28/10/2026)
+
+Texto completo em [`pesquisa/resultado-grok-2026-10-28.md`](pesquisa/resultado-grok-2026-10-28.md). As marcações de "confirmado" são do Grok;
+nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no app/TikTok Studio** o que vira regra.
+
+| # | Decisão adotada a partir da pesquisa |
+|---|---|
+| 10 | Duração-alvo **70–85 s** (nunca abaixo de 61 s). Os termos dizem "pelo menos 1 minuto" e outras páginas "mais de 1 minuto"; 61 s atende às duas leituras |
+| 11 | Rótulo de conteúdo gerado por IA **sempre ligado** (voz sintética) |
+| 12 | Saúde e finanças: **2 fontes primárias oficiais** por afirmação (OMS, Ministério da Saúde, Anvisa, Banco Central, IBGE, Receita), fonte na tela por 2–3 s, linguagem "segundo X". Proibido: "cura", "garantido", "enriqueça rápido", "ninguém te conta o segredo" |
+| 13 | Catálogo de 12 hooks do Grok adotado como ponto de partida; a ficha de comportamento de cada um precisa ser completada |
+| 14 | Calendário inicial: engenharia (dias 1–5), finanças (6–10), saúde (11–15), construção (16–20), depois misto pelo que reteve. Não matar um tema antes de 5–7 vídeos |
+| 15 | Regras de teste do Grok como ponto de partida: trocar hook se saída em 3 s < 30% em 5 vídeos; focar tema se shares > 2% e > 0,5 seguidor por vídeo em 7 vídeos |
+| 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
+
+### Riscos e lacunas da pesquisa
+
+1. **Risco principal: nosso visual pode ser lido como "só texto".** A lista de conteúdo que não conta inclui "slideshows" e "só texto overlays".
+   Tipografia animada sem movimento real de infográfico, diagrama e transformação de números cairia nisso. O modelo de vídeo precisa ter
+   **animação de dados e diagramas de verdade** e narração com roteiro próprio; teste com os primeiros 10 vídeos e ver se entram em "For You".
+   O próprio Grok listou isso como não confirmado.
+2. **Tabela de 60 temas incompleta:** vieram 5 linhas e um "...". Falta pedir de novo.
+3. **Contas de referência sem verificação** (sem links, sem métricas). Conferir no app.
+4. **Hooks sem exemplos reais com link e sem dados de retenção**, que o prompt pedia. As aberturas prontas em português só aparecem para um dos 12.
+5. **Contradições leves:** "pelo menos 1 minuto" vs "mais de 1 minuto" (resolvido usando 61 s); limites de upload citados (TikTok 60 min, Reels 20 min, Shorts 3 min) não foram confirmados e não afetam o plano.
+6. **RPM Brasil** (US$ 0,15–0,50 por mil views) é relato, não dado oficial. Em 100 mil views seriam algo entre US$ 15 e US$ 50. Para planejar, tratar a receita inicial como baixa.
+7. O Grok chamou de "dado oficial" a regra de que a conta precisa ter 1.000 views no For You por vídeo; conferir.
 
 ## Consequências para o trabalho
 
