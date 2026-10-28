@@ -1,0 +1,8 @@
+# Segredos: nunca versionar
+.env
+.env.*
+*.key
+
+# Cache e registro de chamadas pagas (skill gemini-midia)
+producoes/.cache-gemini/
+**/.cache-gemini/

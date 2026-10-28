@@ -29,6 +29,7 @@ A sessão do Claude na nuvem não alcança o `localhost` do seu computador. Esco
 
 - **A. Você gera no app (mais simples):** cola o texto do roteiro, gera `.wav` e coloca em `desvendando-ideias/producoes/<video>/voz.wav` (commit/push ou envio na conversa). Eu faço o resto (legenda, montagem).
 - **B. Endereço acessível:** se você expuser o servidor por um endereço que a sessão alcance, eu chamo a API direto. Só faça isso com autenticação ligada; não exponha o servidor aberto na internet.
+- **D. Gemini (configurado):** a voz é gerada pela API do Gemini com a skill `gemini-midia`, direto da sessão na nuvem, sem depender do seu computador. A chave fica só em variável de ambiente (`GEMINI_API_KEY`). Mantém o VoiceStudio como opção grátis e local quando você instalar.
 - **C. Sessão local:** usar o Claude Code instalado no seu computador, onde `localhost:3900` existe.
 
 Caminho escolhido: _(preencher)_
