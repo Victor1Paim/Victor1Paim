@@ -30,6 +30,9 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 17 | **Troca visual a cada 2 s, no máximo** (cenário, aproximação ou ângulo; 2D, 2,5D ou 3D): ~38–45 planos por vídeo de 70–85 s. Detalhes em `producao/regra-troca-a-cada-2s.md` | Resposta do usuário |
 | 18 | Padrão de explicação "problema → solução → novo problema" (exemplo do telhado) para vídeos de engenharia e construção. `producao/padrao-cadeia-problema-solucao.md` | Resposta do usuário |
 | 19 | Piloto: vídeo 001 "Quantas Terras cabem no Sol" (`roteiros/001-quantas-terras-cabem-no-sol.md`) | Resposta do usuário |
+| 20 | **Portões de decisão:** hook, ordem das cenas, CTA, mensagem final e tema do próximo vídeo são escolhas do usuário, uma pergunta por portão; o Claude não segue sem resposta (`producao/fluxo-por-video.md`) | Resposta do usuário (29/10) |
+| 21 | Vídeo 001: hook A (adivinhar), ordem "escala primeiro", CTA "Seguir", fecho "pergunta com cubos". **Próximo tema em aberto** | Resposta do usuário (29/10) |
+| 22 | Produção em **HyperFrames** (HTML + GSAP), vertical 1080×1920, estilo não fixado (mistura 2D, 2,5D e 3D por plano); 3D só em CSS porque o ambiente não tem WebGL | Resposta do usuário (28/10) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa

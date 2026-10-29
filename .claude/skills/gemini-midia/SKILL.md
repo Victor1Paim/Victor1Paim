@@ -24,7 +24,7 @@ Script único, sem dependências: `scripts/gemini.mjs` (Node 20+). A chave vem *
 
 ```sh
 node .claude/skills/gemini-midia/scripts/gemini.mjs models            # modelos de voz/imagem que a conta enxerga
-node .claude/skills/gemini-midia/scripts/gemini.mjs tts --text-file roteiro.txt --out voz.wav --voice Kore --style "Fale em português do Brasil, tom curioso e claro"
+node .claude/skills/gemini-midia/scripts/gemini.mjs tts --text-file roteiro.txt --out voz.wav --voice Kore
 node .claude/skills/gemini-midia/scripts/gemini.mjs tts ... --go      # chama de verdade
 node .claude/skills/gemini-midia/scripts/gemini.mjs image --prompt-file p.txt --out img.png --aspect 9:16 --go
 node .claude/skills/gemini-midia/scripts/gemini.mjs usage             # soma das chamadas feitas
@@ -39,6 +39,11 @@ Vistos na conta do usuário em 28/10/2026 (`models`): voz `gemini-3.8-flash-lite
 Os "Lite" são a primeira tentativa para gastar menos: comparar com uma frase de teste e subir de modelo só se a
 qualidade (pronúncia em pt-BR, ritmo) não servir. Teste de 41 caracteres com `gemini-3.8-flash-lite-tts`: 22 tokens de
 entrada, 213 de saída, 8,6 s de áudio WAV 24 kHz mono. A estimativa de duração do modo simulação é grosseira.
+**Não usar `--style`.** O texto de estilo vai junto com a fala e o modelo o **lê em voz alta** (teste de 28/10/2026: 72 caracteres sem estilo = 5,8 s;
+41 caracteres com estilo = 8,6 s). Para controlar o tom, escolher a voz (`--voice`) e a pontuação do texto.
+
+**Um arquivo por beat (3 a 4 frases), não por frase:** soa natural e cabe bem na regra de cache. Ritmo medido com o modelo Lite: cerca de 13 caracteres
+por segundo (≈ 2,4 palavras/s); 158 palavras de roteiro deram 66 s de fala.
 A saída de voz é WAV mono (o Gemini devolve PCM 16 bits, normalmente 24 kHz).
 
 ## Como gastar o mínimo

@@ -1,0 +1,821 @@
+{
+ "titulo": "001 · Quantas Terras cabem no Sol",
+ "beats": [
+  {
+   "audio": "assets/voz/beat0.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat1.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat2.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat3.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat4.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat5.wav",
+   "gap": 0.15
+  },
+  {
+   "audio": "assets/voz/beat6.wav",
+   "gap": 1.4
+  }
+ ],
+ "shots": [
+  {
+   "b": 0,
+   "t": "Quantas Terras cabem",
+   "k": "sun",
+   "cam": [
+    "pushInBig"
+   ],
+   "bg": "space",
+   "st": "3D",
+   "o": {
+    "w": 860,
+    "cy": 760,
+    "ov": [
+     {
+      "text": "QUANTAS TERRAS?",
+      "y": 200,
+      "size": 120
+     }
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "dentro do Sol?",
+   "k": "earthSun",
+   "cam": [
+    "panR"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "ov": [
+     {
+      "text": "CABEM NO SOL?",
+      "y": 220,
+      "size": 110
+     }
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "Pensa num número",
+   "k": "bigq",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "PENSA NUM NÚMERO",
+      "y": 200,
+      "size": 100
+     }
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "antes que eu fale.",
+   "k": "stamp",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "text": "CHUTA!"
+   }
+  },
+  {
+   "b": 0,
+   "silent": true,
+   "dur": 1.8,
+   "t": "",
+   "k": "guess",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 1,
+   "t": "Primeiro, o tamanho.",
+   "k": "ruler",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "TAMANHO",
+      "y": 330,
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "Se o Sol fosse",
+   "k": "ball",
+   "cam": [
+    "tilt"
+   ],
+   "bg": "warm",
+   "st": "3D",
+   "o": {
+    "ov": [
+     {
+      "text": "SOL = BASQUETE",
+      "y": 270,
+      "size": 96
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "uma bola de basquete,",
+   "k": "ball",
+   "cam": [
+    "orbit"
+   ],
+   "bg": "warm",
+   "st": "3D",
+   "o": {
+    "rot": true
+   }
+  },
+  {
+   "b": 1,
+   "t": "a Terra seria do tamanho",
+   "k": "macro",
+   "cam": [],
+   "bg": "warm",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 1,
+   "t": "da cabeça de um alfinete.",
+   "k": "pin",
+   "cam": [
+    "panR"
+   ],
+   "bg": "mint",
+   "st": "2.5D",
+   "o": {
+    "ov": [
+     {
+      "text": "≈ 2 mm",
+      "y": 300,
+      "size": 150,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "Na vida real, o Sol é",
+   "k": "earthSun",
+   "cam": [
+    "panL"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "flip": true
+   }
+  },
+  {
+   "b": 1,
+   "t": "cerca de cento e nove vezes",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1,
+     "to": 109,
+     "suffix": "×",
+     "y": 560,
+     "size": 300,
+     "dur": 0.9
+    },
+    "label": "MAIS LARGO"
+   }
+  },
+  {
+   "b": 1,
+   "t": "mais largo que a Terra.",
+   "k": "earthsRow",
+   "cam": [
+    "pushInBig"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 2,
+   "t": "Mas volume não cresce",
+   "k": "lineSquare",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "VOLUME",
+      "y": 270,
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "em linha reta,",
+   "k": "straightLine",
+   "cam": [
+    "panL"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "LINHA RETA",
+      "y": 270,
+      "size": 110
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "cresce ao cubo.",
+   "k": "cube",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "mint",
+   "st": "3D",
+   "o": {
+    "rot": [
+     -20,
+     60
+    ],
+    "ov": [
+     {
+      "text": "AO CUBO",
+      "y": 200,
+      "size": 130,
+      "color": "mint"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "Cento e nove vezes",
+   "k": "cube",
+   "cam": [
+    "orbit"
+   ],
+   "bg": "mint",
+   "st": "3D",
+   "o": {
+    "rot": [
+     60,
+     140
+    ],
+    "ov": [
+     {
+      "text": "LARGURA: 109",
+      "y": 1010,
+      "size": 90,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "mais largo, mais alto",
+   "k": "cube",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "3D",
+   "o": {
+    "rot": [
+     140,
+     200
+    ],
+    "ov": [
+     {
+      "text": "ALTURA: 109",
+      "y": 1010,
+      "size": 90,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "e mais fundo dá cerca",
+   "k": "cube",
+   "cam": [
+    "tilt"
+   ],
+   "bg": "mint",
+   "st": "3D",
+   "o": {
+    "rot": [
+     200,
+     260
+    ],
+    "ov": [
+     {
+      "text": "PROFUNDIDADE: 109",
+      "y": 1010,
+      "size": 80,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "de um milhão e trezentas mil",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 1.1
+    },
+    "label": "TERRAS"
+   }
+  },
+  {
+   "b": 2,
+   "t": "Terras. Se você chutou",
+   "k": "bigNum",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "TERRAS",
+    "source": "Fonte: NASA"
+   }
+  },
+  {
+   "b": 2,
+   "t": "por aí, acertou.",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "text": "ACERTOU!",
+    "color": "mint"
+   }
+  },
+  {
+   "b": 2,
+   "t": "Mas tem uma pegadinha.",
+   "k": "stamp",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "text": "PEGADINHA"
+   }
+  },
+  {
+   "b": 3,
+   "t": "Essa conta vale",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "text": "SÓ SE..."
+   }
+  },
+  {
+   "b": 3,
+   "t": "se você derretesse",
+   "k": "meltEarth",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {}
+  },
+  {
+   "b": 3,
+   "t": "as Terras e enchesse",
+   "k": "sunFill",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "3D",
+   "o": {
+    "fill": [
+     0.05,
+     0.55
+    ]
+   }
+  },
+  {
+   "b": 3,
+   "t": "o Sol como água.",
+   "k": "sunFill",
+   "cam": [
+    "tilt"
+   ],
+   "bg": "space",
+   "st": "3D",
+   "o": {
+    "fill": [
+     0.55,
+     1.0
+    ]
+   }
+  },
+  {
+   "b": 3,
+   "t": "Mas a Terra é uma bola.",
+   "k": "earthSolo",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "UMA BOLA",
+      "y": 270,
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "b": 3,
+   "t": "E bola não encaixa",
+   "k": "spherePile",
+   "cam": [
+    "tilt"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "rows": 3
+   }
+  },
+  {
+   "b": 3,
+   "t": "sem deixar vãos.",
+   "k": "gaps",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "VÃOS",
+      "y": 190,
+      "size": 150,
+      "color": "coral"
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "Empilhando esferas",
+   "k": "spherePile",
+   "cam": [
+    "orbit"
+   ],
+   "bg": "space",
+   "st": "3D",
+   "o": {
+    "rows": 5
+   }
+  },
+  {
+   "b": 4,
+   "t": "do jeito mais eficiente",
+   "k": "spherePile",
+   "cam": [
+    "panL"
+   ],
+   "bg": "mint",
+   "st": "2.5D",
+   "o": {
+    "rows": 5
+   }
+  },
+  {
+   "b": 4,
+   "t": "que existe, só setenta",
+   "k": "barFill",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "to": 0.74,
+    "mode": "grow"
+   }
+  },
+  {
+   "b": 4,
+   "t": "e quatro por cento",
+   "k": "barFill",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "to": 0.74,
+    "mode": "pct"
+   }
+  },
+  {
+   "b": 4,
+   "t": "do espaço é ocupado.",
+   "k": "barFill",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "to": 0.74,
+    "mode": "empty"
+   }
+  },
+  {
+   "b": 5,
+   "t": "Então, com Terras inteiras,",
+   "k": "bigNum",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "TERRAS (VOLUME)"
+   }
+  },
+  {
+   "b": 5,
+   "t": "cabem no máximo",
+   "k": "bigNum",
+   "cam": [
+    "panR"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "× 0,74",
+    "labelColor": "amber"
+   }
+  },
+  {
+   "b": 5,
+   "t": "cerca de novecentas",
+   "k": "bigNum",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 962000,
+     "y": 560,
+     "size": 170,
+     "dur": 1.2
+    },
+    "label": "TERRAS"
+   }
+  },
+  {
+   "b": 5,
+   "t": "e sessenta mil.",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 962000,
+     "to": 962000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "NO MÁXIMO"
+   }
+  },
+  {
+   "b": 6,
+   "t": "E se a Terra fosse um cubo?",
+   "k": "cube",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "mint",
+   "st": "3D",
+   "o": {
+    "rot": [
+     -30,
+     40
+    ],
+    "tone": "blue",
+    "ov": [
+     {
+      "text": "E SE FOSSE CUBO?",
+      "y": 200,
+      "size": 100
+     }
+    ]
+   }
+  },
+  {
+   "b": 6,
+   "t": "Sem vãos,",
+   "k": "squares",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "ov": [
+     {
+      "text": "SEM VÃOS",
+      "y": 190,
+      "size": 140,
+      "color": "mint"
+     }
+    ]
+   }
+  },
+  {
+   "b": 6,
+   "t": "cabem quase um milhão",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 1.1
+    },
+    "label": "TERRAS CÚBICAS"
+   }
+  },
+  {
+   "b": 6,
+   "t": "e trezentas mil.",
+   "k": "bigNum",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "SEM VÃOS"
+   }
+  },
+  {
+   "b": 6,
+   "t": "Segue para descobrir",
+   "k": "endcard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "big": "SEGUE"
+   }
+  },
+  {
+   "b": 6,
+   "t": "mais curiosidades.",
+   "k": "endcard",
+   "cam": [
+    "panL"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "big": "SEGUE",
+    "sub": "MAIS CURIOSIDADES",
+    "handle": true
+   }
+  }
+ ]
+}

@@ -12,6 +12,8 @@ Plano completo: [`plano-do-canal.md`](plano-do-canal.md). Preparação (VoiceStu
 
 Produção: [`producao/dicionario-de-movimento.md`](producao/dicionario-de-movimento.md) (movimentos e transições) e [`producao/fluxo-por-video.md`](producao/fluxo-por-video.md) (passo a passo, rascunho) e [`producao/ideias-de-teste.md`](producao/ideias-de-teste.md) (lote 1 de 10 vídeos de teste), [`producao/padrao-cadeia-problema-solucao.md`](producao/padrao-cadeia-problema-solucao.md) (comportamento de vídeos de explicação) e [`producao/regra-troca-a-cada-2s.md`](producao/regra-troca-a-cada-2s.md) (ritmo visual).
 
+Produção em andamento: [`producoes/001-sol/`](producoes/001-sol/) (projeto HyperFrames do vídeo 001).
+
 Roteiros: [`roteiros/001-quantas-terras-cabem-no-sol.md`](roteiros/001-quantas-terras-cabem-no-sol.md) (piloto).
 
 Pastas (criadas conforme o uso): `pautas/`, `roteiros/`, `producoes/`.
