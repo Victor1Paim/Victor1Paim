@@ -50,7 +50,8 @@ A saída de voz é WAV mono (o Gemini devolve PCM 16 bits, normalmente 24 kHz).
 
 1. **Ordem de preferência para voz:** VoiceStudio local (grátis, se estiver acessível) → Gemini → ElevenLabs.
 2. **Ordem de preferência para imagem:** código (Remotion, SVG, `mg-styles-15`, `claude-animation-base`) e material
-   próprio → Gemini imagem, só quando nenhuma skill resolve. Imagem de vídeo longo: gerar só as que carregam a
+   próprio → Gemini imagem, só quando nenhuma skill resolve. Se o usuário adicionar `OPENAI_API_KEY` (opcional, decisão 32),
+   a OpenAI entra depois do Gemini, com as mesmas regras (simulação, cache, limite por chamada). Imagem de vídeo longo: gerar só as que carregam a
    explicação; reutilizar entre cenas.
 3. **Sempre simulação primeiro.** Sem `--go` o script mostra modelo, tamanho e se há cache, sem chamar a API.
 4. **Cache por conteúdo** (`producoes/.cache-gemini/`, fora do git). Mesmo texto, voz, estilo e modelo = zero custo.

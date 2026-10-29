@@ -42,6 +42,7 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 29 | **CTA padrão do canal:** pedir dúvida nos comentários + like + seguir ("Ficou com alguma dúvida? Comenta aqui. E deixa o like e segue pra não perder nenhuma curiosidade."). Vale para os próximos vídeos; o 001 fica como está ("Segue para descobrir mais curiosidades") | Resposta do usuário (29/10/2026) |
 | 30 | **Sempre 5 opções de hook e 5 de CTA final** por vídeo, para o usuário escolher (portões 2 e 4) | Resposta do usuário (29/10/2026) |
 | 31 | **Vídeo 001 aprovado** (Cosmos, 75 s, 27 planos): "ficou excelente… o andamento do vídeo ficou perfeito". Ritmo de 2–3 s vira o padrão | Resposta do usuário (29/10/2026) |
+| 32 | **Chave da OpenAI (opcional, futura) para imagem:** entra só como variável de ambiente `OPENAI_API_KEY` nas configurações do ambiente (nunca no chat), com o domínio `api.openai.com` liberado. Ordem para imagem: código → Gemini imagem → OpenAI, sempre com simulação e cache antes de gastar | Resposta do usuário (29/10/2026) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa
