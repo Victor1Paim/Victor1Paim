@@ -1,7 +1,7 @@
 # 001 · Quantas Terras cabem no Sol
 
 Tema: curiosidades (escala) · Duração: ~75 s (voz 66 s + 1,4 s de pausa final + planos sem fala) · Planos de 2–3 s (`../producao/regra-troca-a-cada-2s.md`, revisada)
-Status: **aprovado pelo usuário (29/10/2026): "ficou excelente… o andamento do vídeo ficou perfeito"** · render final `renders/001-sol-final.mp4` (Cosmos, 75,1 s, 27 planos) · Projeto: `../producoes/001-sol/` (HyperFrames, 1080×1920)
+Status: **publicado** (informado pelo usuário em 29/10/2026; capa já no ar, sem reposicionar) · **aprovado pelo usuário (29/10/2026): "ficou excelente… o andamento do vídeo ficou perfeito"** · render final `renders/001-sol-final.mp4` (Cosmos, 75,1 s, 27 planos) · Projeto: `../producoes/001-sol/` (HyperFrames, 1080×1920)
 
 ## Decisões (portões do fluxo, 29/10/2026)
 

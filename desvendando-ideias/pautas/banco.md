@@ -1,6 +1,6 @@
 # Banco de pautas (candidatas, **nenhuma decidida**)
 
-O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 24 candidatas; faltam cerca de 20 (só 1 em Mistérios/história), que saem das sessões de pauta
+O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 29 candidatas; faltam cerca de 20 (só 1 em Mistérios/história), que saem das sessões de pauta
 (portão 1 do fluxo: o Claude traz 3 ângulos por tema, você escolhe). Uma pauta só vira vídeo depois do portão 1.
 
 Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido (só sugestão) · risco.
@@ -31,6 +31,11 @@ Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido
 | P21 | Como um navio de aço flutua | Engenharia/Construção | "Uma pedra afunda. Um navio de milhares de toneladas, não" | Princípio de Arquimedes (2 fontes) | Contradição | Baixo | Candidata |
 | P22 | Por que os fios de energia ficam "caídos" | Engenharia/Construção | "Fio esticado arrebenta" | Concessionária/norma de linhas aéreas + física da dilatação | Consequência antes da causa | Baixo | Candidata |
 | P23 | Por que tem pedra embaixo dos trilhos | Engenharia/Construção | "Essas pedras não estão aí à toa" | DNIT/ANTT ou manual ferroviário | Pergunta com lacuna | Baixo | Candidata |
+| P24 | Estalar os dedos causa artrite? | Saúde | "Estalar os dedos estraga as juntas." Não é bem assim | Estudos sobre estalo e artrite (ex.: Unger, 1998; Castellanos & Axelrod, 1990) + fonte médica | Você aprendeu errado | Baixo | Candidata |
+| P25 | Açúcar deixa criança agitada? | Saúde | "Criança com doce fica elétrica": os estudos dizem outra coisa | Meta-análise Wolraich et al., JAMA 1995 + fonte pediátrica | Você aprendeu errado | Baixo (não dar conselho de dieta) | Candidata |
+| P26 | A gente perde a maior parte do calor pela cabeça? | Saúde | "Põe a touca que o calor sai pela cabeça" | Fonte de fisiologia (perda de calor proporcional à área exposta) + BMJ 2008 | Você aprendeu errado | Baixo | Candidata |
+| P27 | Ler no escuro estraga a vista? | Saúde | "Vai ficar cego lendo no escuro" | Academia Americana de Oftalmologia + 1 fonte | Você aprendeu errado | Baixo | Candidata |
+| P28 | Precisa beber 2 litros de água por dia? | Saúde | "2 litros" contando o quê? | EFSA (ingestão total de água) + 1 fonte oficial | Você aprendeu errado | Médio (não dar meta individual) | Candidata |
 
 ## Como chegar a 30
 
