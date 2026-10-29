@@ -1,7 +1,7 @@
 # 002 · A nota de R$ 100 encolheu
 
-Pilar: Finanças/Economia · Hook (tipo): Contradição (dia 2 do plano) · Pele: _(a decidir: plano diz Neo-brutalismo; 001 usou Cosmos)_ · Duração-alvo: 70–85 s · Criado em 2026-10-29
-Status: **portões 1, 2 e 4 decididos; aguardando ordem das cenas (3) e pele** · Projeto: `../producoes/002-inflacao/`
+Pilar: Finanças/Economia · Hook (tipo): Contradição (dia 2 do plano) · Pele: **Neo-brutalismo** (escolha do usuário, 29/10/2026; Cosmos e Blueprint ficaram de fora) · Duração-alvo: 70–85 s · Criado em 2026-10-29
+Status: **portões 1, 2 e 4 decididos; pele decidida; aguardando ordem das cenas (3)** · Projeto: `../producoes/002-inflacao/`
 
 ## Decisões (portões do fluxo)
 
