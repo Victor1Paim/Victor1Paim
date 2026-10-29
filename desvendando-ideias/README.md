@@ -14,6 +14,8 @@ Produção: [`producao/dicionario-de-movimento.md`](producao/dicionario-de-movim
 
 Direção de arte (análise do relatório do Manus e adaptação, com decisões pendentes): [`producao/direcao-de-arte.md`](producao/direcao-de-arte.md).
 
+Som e efeitos por cena: [`producao/som.md`](producao/som.md).
+
 Produção em andamento: [`producoes/001-sol/`](producoes/001-sol/) (projeto HyperFrames do vídeo 001).
 
 Roteiros: [`roteiros/001-quantas-terras-cabem-no-sol.md`](roteiros/001-quantas-terras-cabem-no-sol.md) (piloto).

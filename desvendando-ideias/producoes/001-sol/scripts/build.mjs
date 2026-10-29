@@ -96,7 +96,8 @@ beats.forEach((B) => B.shots.forEach((s) => {
 }));
 if (FULL) fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por scripts/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
 
-if (FULL) fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, shots: beats.flatMap((B) => B.shots.map((s) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur }))) }, null, 1));
+if (FULL) { const AN = ['pop', 'blur', 'slide', 'rise'];
+  fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, beats: beats.map((B) => ({ i: B.i, G: B.G, dur: B.dur })), shots: beats.flatMap((B) => B.shots.map((s, idx) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur, cam: s.cam || [], o: s.o || {}, anims: ((s.o || {}).ov || []).map((_, i) => AN[(B.i + idx + i) % AN.length]) }))) }, null, 1)); }
 if (FULL) spawnSync('python3', ['-I', path.join(ROOT, 'scripts/sfx.py')], { cwd: ROOT, stdio: 'inherit' });
 
 // ---------- visuais ----------
@@ -514,7 +515,7 @@ window.__timelines["captions"] = tl;
 {
   const hosts = beats.map((B) => `<div id="beat${B.i}" data-composition-id="beat${B.i}" data-composition-src="compositions/beat${B.i}.html" data-start="${B.G}" data-duration="${B.dur}" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>`);
   const sfxOn = FULL && fs.existsSync(path.join(ROOT, 'assets/sfx/sfx-mix.wav'));
-  const audios = (sfxOn ? [`<audio id="sfx" src="assets/sfx/sfx-mix.wav" data-start="0" data-duration="${TOTAL}" data-track-index="6" data-volume="0.9"></audio>`] : []).concat(beats.map((B) => `<audio id="voz${B.i}" src="${B.audio.replace('assets/voz/', 'assets/voz/proc/')}" data-start="${B.G}" data-duration="${r3(B.audioDur)}" data-track-index="5" data-volume="1"></audio>`));
+  const audios = (sfxOn ? [`<audio id="sfx" src="assets/sfx/sfx-mix.wav" data-start="0" data-duration="${TOTAL}" data-track-index="6" data-volume="1"></audio>`] : []).concat(beats.map((B) => `<audio id="voz${B.i}" src="${B.audio.replace('assets/voz/', 'assets/voz/proc/')}" data-start="${B.G}" data-duration="${r3(B.audioDur)}" data-track-index="5" data-volume="1"></audio>`));
   fs.writeFileSync(path.join(OUT, 'index.html'), `<!doctype html>
 <html lang="pt-BR" data-resolution="portrait">
   <head>

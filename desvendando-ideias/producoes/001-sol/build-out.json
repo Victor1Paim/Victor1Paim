@@ -1,320 +1,895 @@
 {
  "total": 73.189,
+ "beats": [
+  {
+   "i": 0,
+   "G": 0,
+   "dur": 7.117
+  },
+  {
+   "i": 1,
+   "G": 7.117,
+   "dur": 12.837
+  },
+  {
+   "i": 2,
+   "G": 19.954,
+   "dur": 18.437
+  },
+  {
+   "i": 3,
+   "G": 38.391,
+   "dur": 10.237
+  },
+  {
+   "i": 4,
+   "G": 48.628,
+   "dur": 7.117
+  },
+  {
+   "i": 5,
+   "G": 55.745,
+   "dur": 5.957
+  },
+  {
+   "i": 6,
+   "G": 61.702,
+   "dur": 11.487
+  }
+ ],
  "shots": [
   {
    "id": "b0s1",
    "k": "sun",
    "silent": false,
    "start": 0,
-   "dur": 1.42
+   "dur": 1.42,
+   "cam": [
+    "pushInBig"
+   ],
+   "o": {
+    "w": 860,
+    "cy": 760,
+    "ov": [
+     {
+      "text": "QUANTAS TERRAS?",
+      "y": 200,
+      "size": 120
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
   },
   {
    "id": "b0s2",
    "k": "earthSun",
    "silent": false,
    "start": 1.42,
-   "dur": 1.272
+   "dur": 1.272,
+   "cam": [
+    "panR"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "CABEM NO SOL?",
+      "y": 220,
+      "size": 110
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
   },
   {
    "id": "b0s3",
    "k": "quiz",
    "silent": false,
    "start": 2.692,
-   "dur": 1.236
+   "dur": 1.236,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "in"
+   },
+   "anims": []
   },
   {
    "id": "b0s4",
    "k": "quiz",
    "silent": false,
    "start": 3.928,
-   "dur": 1.389
+   "dur": 1.389,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "timer"
+   },
+   "anims": []
   },
   {
    "id": "b0s5",
    "k": "guess",
    "silent": true,
    "start": 5.317,
-   "dur": 1.8
+   "dur": 1.8,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
   },
   {
    "id": "b1s1",
    "k": "ruler",
    "silent": false,
    "start": 7.117,
-   "dur": 1.911
+   "dur": 1.911,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "TAMANHO",
+      "y": 330,
+      "size": 130
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
   },
   {
    "id": "b1s2",
    "k": "ball",
    "silent": false,
    "start": 9.028,
-   "dur": 1.071
+   "dur": 1.071,
+   "cam": [
+    "tilt"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "SOL = BASQUETE",
+      "y": 270,
+      "size": 96
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
   },
   {
    "id": "b1s3",
    "k": "ball",
    "silent": false,
    "start": 10.099,
-   "dur": 1.645
+   "dur": 1.645,
+   "cam": [
+    "orbit"
+   ],
+   "o": {
+    "rot": true
+   },
+   "anims": []
   },
   {
    "id": "b1s4",
    "k": "macro",
    "silent": false,
    "start": 11.744,
-   "dur": 1.275
+   "dur": 1.275,
+   "cam": [],
+   "o": {},
+   "anims": []
   },
   {
    "id": "b1s5",
    "k": "pin",
    "silent": false,
    "start": 13.019,
-   "dur": 1.575
+   "dur": 1.575,
+   "cam": [
+    "panR"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "≈ 2 mm",
+      "y": 300,
+      "size": 150,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
   },
   {
    "id": "b1s6",
    "k": "earthSun",
    "silent": false,
    "start": 14.594,
-   "dur": 1.87
+   "dur": 1.87,
+   "cam": [
+    "panL"
+   ],
+   "o": {
+    "flip": true
+   },
+   "anims": []
   },
   {
    "id": "b1s7",
    "k": "bigNum",
    "silent": false,
    "start": 16.464,
-   "dur": 1.636
+   "dur": 1.636,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 1,
+     "to": 109,
+     "suffix": "×",
+     "y": 560,
+     "size": 300,
+     "dur": 0.9
+    },
+    "label": "MAIS LARGO"
+   },
+   "anims": []
   },
   {
    "id": "b1s8",
    "k": "earthsRow",
    "silent": false,
    "start": 18.1,
-   "dur": 1.854
+   "dur": 1.854,
+   "cam": [
+    "pushInBig"
+   ],
+   "o": {},
+   "anims": []
   },
   {
    "id": "b2s1",
    "k": "lineSquare",
    "silent": false,
    "start": 19.954,
-   "dur": 1.884
+   "dur": 1.884,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "VOLUME",
+      "y": 270,
+      "size": 130
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
   },
   {
    "id": "b2s2",
    "k": "straightLine",
    "silent": false,
    "start": 21.838,
-   "dur": 1.25
+   "dur": 1.25,
+   "cam": [
+    "panL"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "LINHA RETA",
+      "y": 270,
+      "size": 110
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
   },
   {
    "id": "b2s3",
    "k": "cube",
    "silent": false,
    "start": 23.088,
-   "dur": 1.854
+   "dur": 1.854,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "rot": [
+     -20,
+     60
+    ],
+    "ov": [
+     {
+      "text": "AO CUBO",
+      "y": 200,
+      "size": 130,
+      "color": "mint"
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
   },
   {
    "id": "b2s4",
    "k": "cube",
    "silent": false,
    "start": 24.942,
-   "dur": 1.205
+   "dur": 1.205,
+   "cam": [
+    "orbit"
+   ],
+   "o": {
+    "rot": [
+     60,
+     140
+    ],
+    "ov": [
+     {
+      "text": "LARGURA: 109",
+      "y": 1010,
+      "size": 90,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
   },
   {
    "id": "b2s5",
    "k": "cube",
    "silent": false,
    "start": 26.147,
-   "dur": 1.603
+   "dur": 1.603,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "rot": [
+     140,
+     200
+    ],
+    "ov": [
+     {
+      "text": "ALTURA: 109",
+      "y": 1010,
+      "size": 90,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
   },
   {
    "id": "b2s6",
    "k": "cube",
    "silent": false,
    "start": 27.75,
-   "dur": 1.793
+   "dur": 1.793,
+   "cam": [
+    "tilt"
+   ],
+   "o": {
+    "rot": [
+     200,
+     260
+    ],
+    "ov": [
+     {
+      "text": "PROFUNDIDADE: 109",
+      "y": 1010,
+      "size": 80,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
   },
   {
    "id": "b2s7",
    "k": "bigNum",
    "silent": false,
    "start": 29.543,
-   "dur": 3.149
+   "dur": 3.149,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 1.1
+    },
+    "label": "TERRAS"
+   },
+   "anims": []
   },
   {
    "id": "b2s8",
    "k": "bigNum",
    "silent": false,
    "start": 32.692,
-   "dur": 0.977
+   "dur": 0.977,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "TERRAS",
+    "source": "Fonte: NASA"
+   },
+   "anims": []
   },
   {
    "id": "b2s9",
    "k": "quiz",
    "silent": false,
    "start": 33.669,
-   "dur": 2.097
+   "dur": 2.097,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "mode": "answer",
+    "answer": "C"
+   },
+   "anims": []
   },
   {
    "id": "b2s10",
    "k": "stamp",
    "silent": false,
    "start": 35.766,
-   "dur": 2.625
+   "dur": 2.625,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "PEGADINHA"
+   },
+   "anims": []
   },
   {
    "id": "b3s1",
    "k": "flash",
    "silent": false,
    "start": 38.391,
-   "dur": 1.316
+   "dur": 1.316,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "SÓ SE..."
+   },
+   "anims": []
   },
   {
    "id": "b3s2",
    "k": "meltEarth",
    "silent": false,
    "start": 39.707,
-   "dur": 1.284
+   "dur": 1.284,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
   },
   {
    "id": "b3s3",
    "k": "sunFill",
    "silent": false,
    "start": 40.991,
-   "dur": 1.42
+   "dur": 1.42,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "fill": [
+     0.05,
+     0.55
+    ]
+   },
+   "anims": []
   },
   {
    "id": "b3s4",
    "k": "sunFill",
    "silent": false,
    "start": 42.411,
-   "dur": 1.528
+   "dur": 1.528,
+   "cam": [
+    "tilt"
+   ],
+   "o": {
+    "fill": [
+     0.55,
+     1
+    ]
+   },
+   "anims": []
   },
   {
    "id": "b3s5",
    "k": "earthSolo",
    "silent": false,
    "start": 43.939,
-   "dur": 1.586
+   "dur": 1.586,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "UMA BOLA",
+      "y": 270,
+      "size": 130
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
   },
   {
    "id": "b3s6",
    "k": "spherePile",
    "silent": false,
    "start": 45.525,
-   "dur": 1.491
+   "dur": 1.491,
+   "cam": [
+    "tilt"
+   ],
+   "o": {
+    "rows": 3
+   },
+   "anims": []
   },
   {
    "id": "b3s7",
    "k": "gaps",
    "silent": false,
    "start": 47.016,
-   "dur": 1.612
+   "dur": 1.612,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "VÃOS",
+      "y": 190,
+      "size": 150,
+      "color": "coral"
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
   },
   {
    "id": "b4s1",
    "k": "spherePile",
    "silent": false,
    "start": 48.628,
-   "dur": 1.381
+   "dur": 1.381,
+   "cam": [
+    "orbit"
+   ],
+   "o": {
+    "rows": 5
+   },
+   "anims": []
   },
   {
    "id": "b4s2",
    "k": "spherePile",
    "silent": false,
    "start": 50.009,
-   "dur": 1.436
+   "dur": 1.436,
+   "cam": [
+    "panL"
+   ],
+   "o": {
+    "rows": 5
+   },
+   "anims": []
   },
   {
    "id": "b4s3",
    "k": "barFill",
    "silent": false,
    "start": 51.445,
-   "dur": 1.377
+   "dur": 1.377,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "to": 0.74,
+    "mode": "grow"
+   },
+   "anims": []
   },
   {
    "id": "b4s4",
    "k": "barFill",
    "silent": false,
    "start": 52.822,
-   "dur": 1.137
+   "dur": 1.137,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "to": 0.74,
+    "mode": "pct"
+   },
+   "anims": []
   },
   {
    "id": "b4s5",
    "k": "barFill",
    "silent": false,
    "start": 53.959,
-   "dur": 1.786
+   "dur": 1.786,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "to": 0.74,
+    "mode": "empty"
+   },
+   "anims": []
   },
   {
    "id": "b5s1",
    "k": "bigNum",
    "silent": false,
    "start": 55.745,
-   "dur": 2.279
+   "dur": 2.279,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "TERRAS (VOLUME)"
+   },
+   "anims": []
   },
   {
    "id": "b5s2",
    "k": "bigNum",
    "silent": false,
    "start": 58.024,
-   "dur": 1.018
+   "dur": 1.018,
+   "cam": [
+    "panR"
+   ],
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "× 0,74",
+    "labelColor": "amber"
+   },
+   "anims": []
   },
   {
    "id": "b5s3",
    "k": "bigNum",
    "silent": false,
    "start": 59.042,
-   "dur": 1.256
+   "dur": 1.256,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 962000,
+     "y": 560,
+     "size": 170,
+     "dur": 1.2
+    },
+    "label": "TERRAS"
+   },
+   "anims": []
   },
   {
    "id": "b5s4",
    "k": "bigNum",
    "silent": false,
    "start": 60.298,
-   "dur": 1.404
+   "dur": 1.404,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 962000,
+     "to": 962000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "NO MÁXIMO"
+   },
+   "anims": []
   },
   {
    "id": "b6s1",
    "k": "cube",
    "silent": false,
    "start": 61.702,
-   "dur": 2.309
+   "dur": 2.309,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "rot": [
+     -30,
+     40
+    ],
+    "tone": "blue",
+    "ov": [
+     {
+      "text": "E SE FOSSE CUBO?",
+      "y": 200,
+      "size": 100
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
   },
   {
    "id": "b6s2",
    "k": "squares",
    "silent": false,
    "start": 64.011,
-   "dur": 1.498
+   "dur": 1.498,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "SEM VÃOS",
+      "y": 190,
+      "size": 140,
+      "color": "mint"
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
   },
   {
    "id": "b6s3",
    "k": "bigNum",
    "silent": false,
    "start": 65.509,
-   "dur": 1.008
+   "dur": 1.008,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 1.1
+    },
+    "label": "TERRAS CÚBICAS"
+   },
+   "anims": []
   },
   {
    "id": "b6s4",
    "k": "bigNum",
    "silent": false,
    "start": 66.517,
-   "dur": 2.11
+   "dur": 2.11,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "num": {
+     "from": 1300000,
+     "to": 1300000,
+     "prefix": "≈ ",
+     "y": 560,
+     "size": 170,
+     "dur": 0.01
+    },
+    "label": "SEM VÃOS"
+   },
+   "anims": []
   },
   {
    "id": "b6s5",
    "k": "endcard",
    "silent": false,
    "start": 68.627,
-   "dur": 1.653
+   "dur": 1.653,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "big": "SEGUE"
+   },
+   "anims": []
   },
   {
    "id": "b6s6",
    "k": "endcard",
    "silent": false,
    "start": 70.28,
-   "dur": 2.909
+   "dur": 2.909,
+   "cam": [
+    "panL"
+   ],
+   "o": {
+    "big": "SEGUE",
+    "sub": "MAIS CURIOSIDADES",
+    "handle": true
+   },
+   "anims": []
   }
  ]
 }

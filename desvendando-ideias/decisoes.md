@@ -35,6 +35,7 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 22 | Produção em **HyperFrames** (HTML + GSAP), vertical 1080×1920, estilo não fixado (mistura 2D, 2,5D e 3D por plano); 3D só em CSS porque o ambiente não tem WebGL | Resposta do usuário (28/10) |
 | 23 | Vídeo 001 recebe **pergunta de múltipla escolha** no hook (A 1 mil, B 100 mil, C 1 milhão, D 1 bilhão) e **som de cronômetro** (tique-taque + bipe), com sino na revelação | Resposta do usuário (29/10) |
 | 24 | **Direção de arte:** regras fixas + pele por tema, sem estilo único. Peles a testar: neo-brutalismo, blueprint e isométrico 2.5D (Cosmos de referência). **Cores não são regra fixa:** cada pele tem a sua paleta (`producao/direcao-de-arte.md`) | Resposta do usuário (29/10) |
+| 25 | **Efeitos sonoros adaptados a cada cena** (contagem de números, cronômetro do quiz, objetos passando, líquido, impactos): planejados por tipo de plano em `producoes/001-sol/scripts/sfx.py`; ver `producao/som.md` | Resposta do usuário (29/10) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa
