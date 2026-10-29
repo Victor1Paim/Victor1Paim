@@ -1,10 +1,460 @@
 {
-  "titulo": "003 · O lagarto por trás do Ozempic",
-  "beats": [
-    {
-      "audio": "assets/voz/beat0.wav",
-      "gap": 0.15
-    }
-  ],
-  "shots": []
+ "titulo": "003 · O lagarto por trás do Ozempic",
+ "beats": [
+  {
+   "audio": "assets/voz/beat0.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat1.wav",
+   "gap": 0.4
+  },
+  {
+   "audio": "assets/voz/beat2.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat3.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat4.wav",
+   "gap": 0.4
+  },
+  {
+   "audio": "assets/voz/beat5.wav",
+   "gap": 1.8
+  }
+ ],
+ "shots": [
+  {
+   "b": 0,
+   "t": "Em 1992, um médico foi estudar veneno de lagarto.",
+   "k": "lizard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {
+    "venom": true,
+    "ov": [
+     {
+      "text": "1992",
+      "y": 230,
+      "size": 180,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "E acabou mudando o tratamento do diabetes.",
+   "k": "pen",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "label": "DIABETES"
+   }
+  },
+  {
+   "b": 1,
+   "t": "Depois que você come, o intestino solta",
+   "k": "gut",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {}
+  },
+  {
+   "b": 1,
+   "t": "um hormônio chamado GLP-1.",
+   "k": "gut",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "glp": true,
+    "ov": [
+     {
+      "text": "GLP-1",
+      "y": 230,
+      "size": 160,
+      "color": "blue"
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "Ele avisa o corpo que chegou comida:",
+   "k": "typewriter",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "text": "CHEGOU COMIDA!",
+    "size": 120,
+    "color": "amber"
+   }
+  },
+  {
+   "b": 1,
+   "t": "ajuda a controlar o açúcar no sangue",
+   "k": "effect",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "alert",
+   "st": "2.5D",
+   "o": {
+    "kind": "acucar"
+   }
+  },
+  {
+   "b": 1,
+   "t": "e dá a sensação de saciedade.",
+   "k": "effect",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "2.5D",
+   "o": {
+    "kind": "saciedade"
+   }
+  },
+  {
+   "b": 1,
+   "t": "O problema: ele dura só uns dois minutos no sangue.",
+   "k": "stopwatch",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "secs": 120,
+    "ov": [
+     {
+      "text": "O PROBLEMA",
+      "y": 200,
+      "size": 110,
+      "color": "coral"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "Uma enzima do corpo destrói esse hormônio",
+   "k": "enzyme",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "mode": "cut",
+    "at": 1.2
+   }
+  },
+  {
+   "b": 2,
+   "t": "quase na hora.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 2,
+   "t": "Então, como fazer um remédio com ele?",
+   "k": "bigq",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 2,
+   "t": "O médico John Eng achou a resposta",
+   "k": "lizard",
+   "cam": [
+    "panR"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {
+    "ov": [
+     {
+      "text": "JOHN ENG",
+      "y": 230,
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "no veneno do monstro-de-gila:",
+   "k": "lizard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {
+    "venom": true,
+    "ov": [
+     {
+      "text": "MONSTRO-DE-GILA",
+      "y": 230,
+      "size": 110,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "uma molécula parecida,",
+   "k": "textSwap",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": "GLP-1",
+    "to": "EXENDINA-4",
+    "fromLabel": "DO CORPO",
+    "toLabel": "DO LAGARTO",
+    "fromColor": "blue",
+    "toColor": "amber",
+    "at": 0.5
+   }
+  },
+  {
+   "b": 2,
+   "t": "que o corpo não conseguia destruir tão rápido.",
+   "k": "enzyme",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "mode": "resist"
+   }
+  },
+  {
+   "b": 3,
+   "t": "Ela durava horas, não minutos.",
+   "k": "vsBars",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 3,
+   "t": "Virou o primeiro remédio dessa família,",
+   "k": "pen",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "label": "1º REMÉDIO"
+   }
+  },
+  {
+   "b": 3,
+   "t": "aprovado nos Estados Unidos em 2005, para diabetes.",
+   "k": "timeline",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": 1992,
+    "to": 2005,
+    "ticks": [
+     1992,
+     1996,
+     2000,
+     2005
+    ],
+    "lastLabel": "2005",
+    "ov": [
+     {
+      "text": "APROVADO NOS EUA",
+      "y": 230,
+      "size": 100
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "Mas tem uma pegadinha.",
+   "k": "stamp",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "text": "PEGADINHA"
+   }
+  },
+  {
+   "b": 4,
+   "t": "O Ozempic não tem veneno de lagarto.",
+   "k": "lizard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {
+    "cross": true,
+    "ov": [
+     {
+      "text": "SEM VENENO",
+      "y": 230,
+      "size": 130,
+      "color": "coral"
+     }
+    ],
+    "enter": "wipe"
+   }
+  },
+  {
+   "b": 4,
+   "t": "Ele foi feito a partir do hormônio humano,",
+   "k": "textSwap",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": "LAGARTO",
+    "to": "HUMANO",
+    "fromLabel": "NÃO VEM DO",
+    "toLabel": "VEM DO HORMÔNIO",
+    "fromColor": "coral",
+    "toColor": "mint",
+    "at": 1.4
+   }
+  },
+  {
+   "b": 4,
+   "t": "modificado em laboratório",
+   "k": "enzyme",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2.5D",
+   "o": {
+    "mode": "resist",
+    "beadColor": "#2DD4BF",
+    "label": "SEMAGLUTIDA"
+   }
+  },
+  {
+   "b": 4,
+   "t": "para durar cerca de uma semana.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 4,
+   "t": "Por isso, é uma injeção por semana.",
+   "k": "calendar",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "mode": "once"
+   }
+  },
+  {
+   "b": 4,
+   "t": "O lagarto mostrou que era possível.",
+   "k": "lizard",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "warm",
+   "st": "2.5D",
+   "o": {
+    "badge": "MOSTROU O CAMINHO"
+   }
+  },
+  {
+   "b": 5,
+   "t": "Comenta: de qual outro remédio",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "text": "COMENTA",
+    "color": "amber"
+   }
+  },
+  {
+   "b": 5,
+   "t": "você quer saber a origem?",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "Deixa o like e segue",
+   "k": "endcard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "big": "SEGUE",
+    "sub": "DEIXA O LIKE",
+    "handle": true,
+    "subAt": 0.1,
+    "handleAt": 1.0,
+    "note": "Não use sem prescrição. Converse com seu médico."
+   },
+   "hold": true
+  },
+  {
+   "b": 5,
+   "t": "pra mais curiosidades.",
+   "k": "-",
+   "cont": true
+  }
+ ]
 }

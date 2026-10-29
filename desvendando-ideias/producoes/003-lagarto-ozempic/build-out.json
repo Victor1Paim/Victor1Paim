@@ -1,0 +1,505 @@
+{
+ "total": 74.622,
+ "beats": [
+  {
+   "i": 0,
+   "G": 0,
+   "dur": 7.507
+  },
+  {
+   "i": 1,
+   "G": 7.507,
+   "dur": 15.687
+  },
+  {
+   "i": 2,
+   "G": 23.194,
+   "dur": 17.987
+  },
+  {
+   "i": 3,
+   "G": 41.181,
+   "dur": 9.627
+  },
+  {
+   "i": 4,
+   "G": 50.808,
+   "dur": 15.847
+  },
+  {
+   "i": 5,
+   "G": 66.655,
+   "dur": 7.967
+  }
+ ],
+ "shots": [
+  {
+   "id": "b0s1",
+   "k": "lizard",
+   "silent": false,
+   "hold": false,
+   "start": 0,
+   "dur": 3.628,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "venom": true,
+    "ov": [
+     {
+      "text": "1992",
+      "y": 230,
+      "size": 180,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b0s2",
+   "k": "pen",
+   "silent": false,
+   "hold": false,
+   "start": 3.628,
+   "dur": 3.879,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "label": "DIABETES"
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s1",
+   "k": "gut",
+   "silent": false,
+   "hold": false,
+   "start": 7.507,
+   "dur": 2.718,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b1s2",
+   "k": "gut",
+   "silent": false,
+   "hold": false,
+   "start": 10.225,
+   "dur": 2.238,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "glp": true,
+    "ov": [
+     {
+      "text": "GLP-1",
+      "y": 230,
+      "size": 160,
+      "color": "blue"
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b1s3",
+   "k": "typewriter",
+   "silent": false,
+   "hold": false,
+   "start": 12.463,
+   "dur": 2.009,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "text": "CHEGOU COMIDA!",
+    "size": 120,
+    "color": "amber"
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s4",
+   "k": "effect",
+   "silent": false,
+   "hold": false,
+   "start": 14.472,
+   "dur": 2.298,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "kind": "acucar"
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s5",
+   "k": "effect",
+   "silent": false,
+   "hold": false,
+   "start": 16.77,
+   "dur": 1.779,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "kind": "saciedade"
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s6",
+   "k": "stopwatch",
+   "silent": false,
+   "hold": false,
+   "start": 18.549,
+   "dur": 4.645,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "secs": 120,
+    "ov": [
+     {
+      "text": "O PROBLEMA",
+      "y": 200,
+      "size": 110,
+      "color": "coral"
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b2s1",
+   "k": "enzyme",
+   "silent": false,
+   "hold": false,
+   "start": 23.194,
+   "dur": 4.874,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "cut",
+    "at": 1.2
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s2",
+   "k": "bigq",
+   "silent": false,
+   "hold": false,
+   "start": 28.068,
+   "dur": 3.136,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b2s3",
+   "k": "lizard",
+   "silent": false,
+   "hold": false,
+   "start": 31.204,
+   "dur": 2.423,
+   "cam": [
+    "panR"
+   ],
+   "o": {
+    "ov": [
+     {
+      "text": "JOHN ENG",
+      "y": 230,
+      "size": 130
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b2s4",
+   "k": "lizard",
+   "silent": false,
+   "hold": false,
+   "start": 33.627,
+   "dur": 2.085,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "venom": true,
+    "ov": [
+     {
+      "text": "MONSTRO-DE-GILA",
+      "y": 230,
+      "size": 110,
+      "color": "amber"
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b2s5",
+   "k": "textSwap",
+   "silent": false,
+   "hold": false,
+   "start": 35.712,
+   "dur": 2.041,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "from": "GLP-1",
+    "to": "EXENDINA-4",
+    "fromLabel": "DO CORPO",
+    "toLabel": "DO LAGARTO",
+    "fromColor": "blue",
+    "toColor": "amber",
+    "at": 0.5
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s6",
+   "k": "enzyme",
+   "silent": false,
+   "hold": false,
+   "start": 37.753,
+   "dur": 3.428,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "resist"
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s1",
+   "k": "vsBars",
+   "silent": false,
+   "hold": false,
+   "start": 41.181,
+   "dur": 2.886,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b3s2",
+   "k": "pen",
+   "silent": false,
+   "hold": false,
+   "start": 44.067,
+   "dur": 2.478,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "label": "1º REMÉDIO"
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s3",
+   "k": "timeline",
+   "silent": false,
+   "hold": false,
+   "start": 46.545,
+   "dur": 4.263,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "from": 1992,
+    "to": 2005,
+    "ticks": [
+     1992,
+     1996,
+     2000,
+     2005
+    ],
+    "lastLabel": "2005",
+    "ov": [
+     {
+      "text": "APROVADO NOS EUA",
+      "y": 230,
+      "size": 100
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b4s1",
+   "k": "stamp",
+   "silent": false,
+   "hold": false,
+   "start": 50.808,
+   "dur": 1.778,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "PEGADINHA"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s2",
+   "k": "lizard",
+   "silent": false,
+   "hold": false,
+   "start": 52.586,
+   "dur": 2.497,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "cross": true,
+    "ov": [
+     {
+      "text": "SEM VENENO",
+      "y": 230,
+      "size": 130,
+      "color": "coral"
+     }
+    ],
+    "enter": "wipe"
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b4s3",
+   "k": "textSwap",
+   "silent": false,
+   "hold": false,
+   "start": 55.083,
+   "dur": 2.793,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "from": "LAGARTO",
+    "to": "HUMANO",
+    "fromLabel": "NÃO VEM DO",
+    "toLabel": "VEM DO HORMÔNIO",
+    "fromColor": "coral",
+    "toColor": "mint",
+    "at": 1.4
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s4",
+   "k": "enzyme",
+   "silent": false,
+   "hold": false,
+   "start": 57.876,
+   "dur": 3.345,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "resist",
+    "beadColor": "#2DD4BF",
+    "label": "SEMAGLUTIDA"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s5",
+   "k": "calendar",
+   "silent": false,
+   "hold": false,
+   "start": 61.221,
+   "dur": 2.248,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "once"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s6",
+   "k": "lizard",
+   "silent": false,
+   "hold": false,
+   "start": 63.469,
+   "dur": 3.186,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "badge": "MOSTROU O CAMINHO"
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s1",
+   "k": "flash",
+   "silent": false,
+   "hold": false,
+   "start": 66.655,
+   "dur": 3.106,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "COMENTA",
+    "color": "amber"
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s2",
+   "k": "endcard",
+   "silent": false,
+   "hold": true,
+   "start": 69.761,
+   "dur": 4.861,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "big": "SEGUE",
+    "sub": "DEIXA O LIKE",
+    "handle": true,
+    "subAt": 0.1,
+    "handleAt": 1,
+    "note": "Não use sem prescrição. Converse com seu médico."
+   },
+   "anims": []
+  }
+ ]
+}

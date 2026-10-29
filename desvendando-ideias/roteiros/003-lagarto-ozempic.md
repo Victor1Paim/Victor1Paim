@@ -1,7 +1,7 @@
 # 003 · O lagarto por trás do Ozempic
 
 Pilar: Saúde · Hook (tipo): história/consequência (escolha do usuário; o plano pedia "você aprendeu errado" no dia 3, a mudança fica anotada para o quadrado latino) · Pele: **Isométrico 2.5D** (escolha do usuário, 29/10/2026: completar a pele para todos os planos usados) · Duração-alvo: 70–85 s · Criado em 2026-10-29
-Status: **roteiro aguardando aprovação (portão 6)** · Projeto: `../producoes/003-lagarto-ozempic/`
+Status: **vídeo renderizado** (`renders/003-lagarto-ozempic.mp4`, 74,6 s, 25 planos, Isométrico 2.5D); aguardando corte de teste (portão 7) · Projeto: `../producoes/003-lagarto-ozempic/`
 
 ## Decisões (portões do fluxo)
 
@@ -12,7 +12,7 @@ Status: **roteiro aguardando aprovação (portão 6)** · Projeto: `../producoes
 | 3. Ordem das cenas | **C · Problema → solução:** hormônio dura 2 min → enzima destrói → lagarto tinha versão que resiste → 2005 → pegadinha: Ozempic não tem veneno, dura 1 semana → CTA (29/10/2026) | A história em ordem, B pegadinha cedo |
 | 4. CTA | **2 · "Comenta: de qual outro remédio você quer saber a origem? Deixa o like e segue pra mais curiosidades."** + aviso fixo "Não use sem prescrição. Converse com seu médico." (29/10/2026) | 1 dúvida + like + seguir, 3 "conhecia essa história?", 4 "qual animal vai virar remédio", 5 dúvida sobre remédios |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
-| 6. Roteiro aprovado | _(pendente)_ | |
+| 6. Roteiro aprovado | **Aprovado** (29/10/2026), 174 palavras | — |
 | 7. Corte de teste | _(pendente)_ | |
 | 8. Publicação (legenda, capa, hashtags, horário) | _(pendente)_ | |
 
@@ -67,3 +67,52 @@ Regras: 2 fontes primárias para saúde e finanças; fonte na tela por 2–3 s; 
 - Planos e som: `shots.json` e `motor/sfx.py`. Rodar `node ../../motor/checar.mjs --full` antes de entregar.
 - Rótulo de conteúdo gerado por IA ligado na publicação.
 - Métricas: registrar em `../metricas/videos.csv` após 24 h e 7 dias, sempre anotando a idade do vídeo.
+
+## Publicação (portão 8) · legendas por plataforma
+
+Rótulo de conteúdo gerado por IA ligado nas três. Aviso médico sempre na legenda.
+
+### TikTok
+```
+Em 1992, um médico foi estudar veneno de lagarto 🦎
+E isso mudou o tratamento do diabetes.
+Spoiler: o Ozempic NÃO tem veneno de lagarto 👀
+
+Comenta: de qual outro remédio você quer saber a origem? 💊
+Deixa o like e segue pra mais curiosidades.
+
+⚠️ Conteúdo informativo. Não use sem prescrição. Converse com seu médico.
+
+#curiosidades #ciencia #saude #diabetes #ozempic
+```
+
+### YouTube Shorts
+Título:
+```
+O lagarto venenoso por trás do Ozempic #shorts
+```
+Descrição:
+```
+O hormônio GLP-1 dura só uns 2 minutos no sangue. Em 1992, o médico John Eng achou no veneno do monstro-de-gila uma molécula parecida, que o corpo não destruía tão rápido. Ela virou o primeiro remédio dessa família, aprovado nos EUA em 2005. O Ozempic não tem veneno: foi feito a partir do hormônio humano, modificado para durar cerca de uma semana.
+
+Comenta: de qual outro remédio você quer saber a origem? Deixa o like e se inscreve pra mais curiosidades.
+
+Conteúdo informativo, não é recomendação médica. Não use sem prescrição. Converse com seu médico.
+
+#shorts #curiosidades #ciencia #saude
+```
+
+### Instagram (Reels)
+```
+Um lagarto venenoso ajudou a criar uma das classes de remédio mais famosas do mundo 🦎💉
+
+Mas atenção: o Ozempic não tem veneno de lagarto. A história é outra 👀
+
+Comenta: de qual outro remédio você quer saber a origem?
+Deixa o like e segue @desvendandoideias.ofc pra mais curiosidades.
+
+⚠️ Conteúdo informativo. Não use sem prescrição. Converse com seu médico.
+
+#curiosidades #ciencia #saude #diabetes #ozempic
+```
+

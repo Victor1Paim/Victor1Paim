@@ -7,6 +7,7 @@ import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import receitasDinheiro from './receitas-dinheiro.mjs';
 import receitasTexto from './receitas-texto.mjs';
+import receitasSaude from './receitas-saude.mjs';
 
 const MOTOR = path.dirname(new URL(import.meta.url).pathname);            // motor compartilhado (esta pasta)
 const argv = process.argv.slice(2);
@@ -178,9 +179,11 @@ const THEMES = {
       mint: 'radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)',
     },
     css: `.stars{opacity:.35}.pile{background:radial-gradient(circle at 36% 30%,#C9FFF3 0%,#2DD4BF 45%,#0B6E6E 100%)}
+.bg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(30deg,rgba(242,251,255,.07) 0 2px,transparent 2px 72px),repeating-linear-gradient(150deg,rgba(242,251,255,.07) 0 2px,transparent 2px 72px)}
+.obj{filter:drop-shadow(14px 10px 0 rgba(0,0,0,.38))}.qrow{background:rgba(45,212,191,.12);border-color:rgba(242,251,255,.5)}
 .floor{position:absolute;border:4px solid rgba(242,251,255,.35);background:repeating-linear-gradient(0deg,rgba(242,251,255,.10) 0 2px,transparent 2px 60px),repeating-linear-gradient(90deg,rgba(242,251,255,.10) 0 2px,transparent 2px 60px),rgba(45,212,191,.10);transform:scaleY(.5) rotate(45deg)}`,
     base: '#FFFFFF',
-    cap: null,
+    cap: ".cg{position:absolute;left:108px;top:1150px;width:864px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:62px;line-height:1.16;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9);opacity:0}",
   },
 };
 THEMES.iso.cap = THEMES.cosmos.cap;
@@ -433,9 +436,11 @@ const R = {
   },
   endcard(P, T0, D, o) {
     if (o.big) {
-      const sub = o.sub ? `<div id="${P}-b" class="t" style="top:760px;font-size:${fit(o.sub, 74)}px;color:${COL.ink}">${o.sub}</div>` : '', hd = o.handle ? `<div id="${P}-c" class="t ts" style="top:900px;font-size:52px;color:${COL.soft}">@desvendandoideias.ofc</div>` : '';
+      const up = o.note ? -110 : 0;   // com aviso, o cartão sobe para o aviso não encostar na legenda
+      const note = o.note ? `<div id="${P}-nt" class="abs ts" style="left:108px;top:900px;width:864px;text-align:center;font-size:40px;line-height:1.25;color:${COL.soft}">${o.note}</div>` : '';
+      const sub = o.sub ? `<div id="${P}-b" class="t" style="top:${760 + up}px;font-size:${fit(o.sub, 74)}px;color:${COL.ink}">${o.sub}</div>` : '', hd = o.handle ? `<div id="${P}-c" class="t ts" style="top:${900 + up}px;font-size:52px;color:${COL.soft}">@desvendandoideias.ofc</div>` : '';
       return {
-        html: `<div id="${P}-a" class="t" style="top:520px;font-size:190px;color:${COL.amber}">${o.big}</div>${sub}${hd}`,
+        html: `<div id="${P}-a" class="t" style="top:${520 + up}px;font-size:190px;color:${COL.amber}">${o.big}</div>${sub}${hd}${note}`,
         js: `tl.fromTo('#${P}-a',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.35,ease:'back.out(1.6)'},${r3(T0 + 0.05)});` + (o.sub ? `tl.fromTo('#${P}-b',{opacity:0,y:40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${r3(T0 + (o.subAt ?? 0.1))});` : '') + (o.handle ? `tl.fromTo('#${P}-c',{opacity:0},{opacity:1,duration:0.3},${r3(T0 + (o.handleAt ?? 0.3))});` : ''),
       };
     }
@@ -450,7 +455,7 @@ const R = {
   },
 };
 
-Object.assign(R, receitasDinheiro({ COL, r3, px, fit }), receitasTexto({ COL, r3, fit }));   // carteira, nota, etiqueta, cesta, balança, linha do tempo, carrinhos, manchete, gráfico, lanche
+Object.assign(R, receitasDinheiro({ COL, r3, px, fit }), receitasTexto({ COL, r3, fit }), receitasSaude({ COL, r3, px }));   // carteira, nota, etiqueta, cesta, balança, linha do tempo, carrinhos, manchete, gráfico, lanche
 
 // ---------- pele isométrica: esferas em camadas sobre um piso em losango ----------
 if (THEME === 'iso') {

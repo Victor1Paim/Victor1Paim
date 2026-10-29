@@ -250,6 +250,35 @@ for s in shots:
         place(pitch(load('pop'), 0.8), t0 + 0.12, g=0.55, tag='pop'); place(s_rise(0.25, 300, 700), t0, g=0.2, tag='crescer')
     elif k == 'squares':
         plips(t0 + 0.05, 16, 0.03, g=0.2, f0=0.9, f1=1.4, base=650); place(load('pop'), t0 + 0.55, g=0.3, tag='pop')
+    # ---- receitas de saúde (receitas-saude.mjs)
+    elif k == 'lizard':
+        place(pitch(load('whoosh-short'), 0.8), t0 + 0.05, g=0.35, pan=-0.5, pan_to=0.2, tag='passagem')
+        if o.get('venom') or o.get('cross'): place(s_plip(520, 0.06), t0 + 0.75, g=0.4, tag='veneno'); place(s_plip(380, 0.05), t0 + 0.85, g=0.3, tag='veneno')
+        if o.get('cross'): place(s_thud(0.25), t0 + 0.9, g=0.55, peak_at=t0 + 0.93 + FRAME, tag='soco')
+    elif k == 'gut':
+        place(load('pop'), t0 + 0.05, g=0.3, tag='pop'); place(s_water(0.6), t0 + 0.15, g=0.15, tag='intestino')
+        if o.get('glp'):
+            for i in range(5): place(pitch(load('pop'), 1.1 + 0.08 * i), t0 + 0.35 + 0.12 * i, g=0.3, tag='glp1')
+    elif k == 'effect':
+        place(load('pop'), t0 + 0.05, g=0.4, tag='pop'); place(load('ping'), t0 + 0.3, g=0.35, peak_at=t0 + 0.3 + FRAME, tag='valor')
+    elif k == 'stopwatch':
+        d = min(3.0, D * 0.7)
+        ratchet(t0 + 0.3, d, 24, g=0.3, f0=2300, f1=1400, ease_pow=1, tag='cronometro')
+        place(s_beep(880, 0.3), t0 + 0.3 + d, g=0.6, tag='cronometro-fim')
+    elif k == 'enzyme':
+        at = t0 + o.get('at', 0.4)
+        place(pitch(load('whoosh-short'), 1.1), at, g=0.35, pan=0.6, pan_to=-0.2, tag='enzima')
+        if o.get('mode') == 'resist': place(s_thud(0.25), at + 0.48, g=0.6, peak_at=at + 0.5 + FRAME, tag='soco'); place(s_chime2(), at + 0.55, g=0.25, tag='resiste')
+        else: place(s_zip(0.15, 2400, 900), at + 0.45, g=0.4, tag='corte'); plips(at + 0.52, 8, 0.03, g=0.2, base=500, tag='corte')
+    elif k == 'vsBars':
+        place(s_rise(0.35, 400, 700), t0 + 0.1, g=0.25, tag='crescer'); place(s_rise(0.9, 300, 1300), t0 + 0.6, g=0.3, tag='crescer')
+        place(load('ping'), t0 + 1.45, g=0.45, peak_at=t0 + 1.45 + FRAME, tag='valor')
+    elif k == 'pen':
+        place(pitch(load('whoosh-short'), 0.9), t0 + 0.05, g=0.35, tag='passagem'); place(load('click'), t0 + 0.5, g=0.5, tag='click')
+    elif k == 'calendar':
+        for i in range(7): place(s_tick(1500 + 120 * i, 0.04, 0.4), t0 + 0.05 * i + 0.1, g=0.35, tag='dias')
+        if o.get('mode') == 'once': place(s_thud(0.2), t0 + 0.75, g=0.4, tag='caneta'); place(load('ping'), t0 + 0.8, g=0.4, tag='valor')
+        else: place(s_rise(min(1.6, D * 0.7), 300, 900), t0 + 0.4, g=0.22, tag='semana')
     # ---- receitas de texto e transições (receitas-texto.mjs, o.enter)
     elif k == 'textSwap':
         at = t0 + o.get('at', min(1.0, D * 0.4))

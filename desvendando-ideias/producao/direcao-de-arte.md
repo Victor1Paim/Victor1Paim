@@ -148,3 +148,11 @@ Pedido do usuário: a capa não pode ter mensagem perto das bordas, porque o Ree
 - **Regra:** todo texto e objeto-chave fica entre **y 340 e 1580** e **x 90 e 990**. Fora disso, só fundo e decoração.
 - Conferência: `previa/*-guias.png` (vermelho = 4:5, azul = 3:4) e `previa/*-feed-4x5.png` (como fica no feed), gerados com ffmpeg a partir da capa.
 - 3 opções por vídeo, na pele do vídeo; o usuário escolhe. Capas do 001 reposicionadas para a regra; capas do 002 já nasceram nela (`producoes/002-inflacao/capa/gerar.mjs`, que usa as receitas do motor).
+
+## 13. Pele Isométrico 2.5D completa (003, 29/10/2026)
+
+- Fundo com grade isométrica (linhas a 30° e 150°) em todas as cenas; objetos com sombra de bloco deslocada.
+- Objetos de saúde (`motor/receitas-saude.mjs`) ficam sobre um ladrilho isométrico (`isoTile`): lagarto, intestino com GLP-1, gota/estômago, caneta. Textos e números ficam chapados por cima, para não perder leitura.
+- Paleta: teal e âmbar (`THEMES.iso`); legenda igual à do Cosmos.
+- Primeiro vídeo na pele: 003 · O lagarto por trás do Ozempic.
+
