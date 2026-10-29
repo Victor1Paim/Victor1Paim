@@ -138,3 +138,13 @@ Som: as três versões usam a mesma mistura de efeitos (`motor/sfx.py`, 355 efei
 Arquivos: `producoes/001-sol/renders/001-sol-cosmos.mp4`, `…/001-sol-teste-brutal/renders/001-sol-brutal.mp4`, `…/001-sol-teste-blueprint/renders/001-sol-blueprint.mp4` (renders ignorados pelo git).
 
 Escolha do dia 1: **pendente (usuário)**.
+
+## 12. Capas: zona segura do feed (29/10/2026)
+
+Pedido do usuário: a capa não pode ter mensagem perto das bordas, porque o Reels é cortado ao aparecer no feed.
+
+- Arquivo da capa: 1080×1920 (9:16), igual ao vídeo.
+- **Corte do feed do Instagram (4:5):** só aparece a faixa y 285–1635. **Grade do perfil (3:4, Instagram e TikTok):** y 240–1680.
+- **Regra:** todo texto e objeto-chave fica entre **y 340 e 1580** e **x 90 e 990**. Fora disso, só fundo e decoração.
+- Conferência: `previa/*-guias.png` (vermelho = 4:5, azul = 3:4) e `previa/*-feed-4x5.png` (como fica no feed), gerados com ffmpeg a partir da capa.
+- 3 opções por vídeo, na pele do vídeo; o usuário escolhe. Capas do 001 reposicionadas para a regra; capas do 002 já nasceram nela (`producoes/002-inflacao/capa/gerar.mjs`, que usa as receitas do motor).
