@@ -248,6 +248,46 @@ for s in shots:
         place(pitch(load('pop'), 0.8), t0 + 0.12, g=0.55, tag='pop'); place(s_rise(0.25, 300, 700), t0, g=0.2, tag='crescer')
     elif k == 'squares':
         plips(t0 + 0.05, 16, 0.03, g=0.2, f0=0.9, f1=1.4, base=650); place(load('pop'), t0 + 0.55, g=0.3, tag='pop')
+    # ---- receitas de dinheiro (receitas-dinheiro.mjs): tempos iguais aos das animações
+    elif k == 'wallet':
+        place(pitch(load('whoosh-short'), 0.9), t0, g=0.3, tag='passagem')
+        if o.get('fade'): place(s_fall(min(1.4, D * 0.6), 900, 180), t0 + 0.3, g=0.35, tag='sumiu')
+    elif k == 'note':
+        place(load('pop'), t0 + 0.05, g=0.35, tag='pop')
+        if o.get('shrink'): place(s_fall(min(1.6, D * 0.7), 800, 260), t0 + 0.35, g=0.3, tag='encolhe')
+    elif k == 'priceTag':
+        d = min(1.4, D * 0.7)
+        place(pitch(load('whoosh-short'), 1.1), t0, g=0.3, tag='passagem')
+        ratchet(t0 + 0.25, d, 16, g=0.26); place(s_rise(d, 300, 900), t0 + 0.25, g=0.2, tag='crescer')
+        place(load('ping'), t0 + 0.25 + d, g=0.45, peak_at=t0 + 0.25 + d + FRAME, tag='valor')
+    elif k == 'basket':
+        place(load('pop'), t0 + 0.05, g=0.3, tag='pop')
+        n = len(o.get('items', []))
+        seg = min(0.7, (D - 0.3) / n) if n else 0
+        for i in range(n): place(pitch(load('pop'), 1 + 0.1 * i), t0 + 0.25 + i * seg, g=0.38, tag='cesta')
+    elif k == 'costUp':
+        if o.get('mode') == 'inputs':
+            for i, t in enumerate((t0 + 0.2, t0 + 0.8)):
+                place(pitch(load('pop'), 1 + 0.15 * i), t - 0.15, g=0.3, tag='pop'); place(s_rise(0.5, 260, 900), t, g=0.28, tag='crescer')
+        else:
+            place(load('pop'), t0 + 0.05, g=0.3, tag='pop'); place(s_rise(0.7, 200, 900), t0 + 0.3, g=0.3, tag='crescer')
+    elif k == 'balanca':
+        place(pitch(load('whoosh-short'), 0.85), t0, g=0.25, tag='passagem')
+        if o.get('tilt'): place(s_thud(0.3), t0 + 0.4, g=0.55, peak_at=t0 + 0.45 + FRAME, tag='soco'); place(s_fall(0.5, 500, 200), t0 + 0.35, g=0.2, tag='balanca')
+    elif k == 'timeline':
+        d = min(2.2, D * 0.8)
+        ratchet(t0 + 0.15, d, (o.get('to', 2026) - o.get('from', 2010)), g=0.28, ease_pow=1, tag='anos')
+        place(load('ping'), t0 + 0.15 + d, g=0.4, peak_at=t0 + 0.15 + d + FRAME, tag='valor')
+    elif k == 'carts':
+        place(load('pop'), t0 + 0.05, g=0.3, tag='pop'); place(pitch(load('pop'), 1.1), t0 + 0.15, g=0.3, tag='pop')
+        for i in range(10 - o.get('keep', 4)): place(pitch(load('whoosh-short'), 1.3 + 0.05 * i), t0 + 0.6 + 0.08 * i, g=0.16, tag='caixas')
+    elif k == 'headline':
+        place(pitch(load('whoosh'), 1.15), t0, g=0.4, pan=0.6, pan_to=0.0, tag='jornal'); place(s_thud(0.2), t0 + 0.4, g=0.3, tag='jornal')
+    elif k == 'slope':
+        place(s_rise(0.6, 300, 1100), t0 + 0.1, g=0.25, tag='traco'); place(load('click'), t0 + 0.7, g=0.5, tag='traco')
+        place(s_rise(0.8, 500, 800), t0 + 0.8, g=0.2, tag='traco')
+    elif k == 'lunch':
+        place(load('pop'), t0 + 0.05, g=0.4, tag='pop'); place(pitch(load('whoosh-short'), 1.2), t0 + 0.35, g=0.25, tag='etiqueta')
     elif k == 'endcard':
         place(load('pop'), t0 + 0.2, g=0.45, tag='pop')
         if o.get('sub'): place(pitch(load('pop'), 1.1), t0 + o.get('subAt', 0.1) + 0.1, g=0.35, tag='pop')

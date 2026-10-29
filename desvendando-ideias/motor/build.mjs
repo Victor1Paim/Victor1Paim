@@ -5,6 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
+import receitasDinheiro from './receitas-dinheiro.mjs';
 
 const MOTOR = path.dirname(new URL(import.meta.url).pathname);            // motor compartilhado (esta pasta)
 const argv = process.argv.slice(2);
@@ -137,7 +138,7 @@ const THEMES = {
 .trk{background:#fff;border:4px solid #111;box-sizing:border-box}
 .ball{background:#FF8C1A;border:8px solid #111;box-shadow:14px 14px 0 #111;box-sizing:border-box}svg g[stroke="#2a1304"]{stroke:#111}
 .sqb{background:#3A86FF;border:8px solid #111;box-shadow:12px 12px 0 #111;box-sizing:border-box}.sqr{background:#3A86FF;border:4px solid #111;box-sizing:border-box}
-.cube .face{border:6px solid #111;background:rgba(255,214,10,.55)}.cube.blue .face{border:6px solid #111;background:rgba(58,134,255,.55)}`,
+.obj{filter:drop-shadow(10px 10px 0 #111)}.cube .face{border:6px solid #111;background:rgba(255,214,10,.55)}.cube.blue .face{border:6px solid #111;background:rgba(58,134,255,.55)}`,
     base: '#111111',
     cap: ".cgh{display:flex;justify-content:center;align-items:flex-start}.cg{position:static;margin-top:1140px;width:auto;max-width:864px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:56px;line-height:1.18;color:#111;background:#fff;border:6px solid #111;box-shadow:10px 10px 0 #111;padding:14px 26px;box-sizing:border-box;opacity:0}",
   },
@@ -202,6 +203,7 @@ const COMMON_CSS = `
 .t{position:absolute;left:0;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;line-height:1;color:#F5F7FF;white-space:nowrap;text-shadow:0 6px 28px rgba(0,0,0,.55)}
 .ts{font-family:'Inter',sans-serif;font-weight:700}
 .abs{position:absolute}
+.obj{filter:drop-shadow(0 12px 26px rgba(0,0,0,.45))}
 .sqb{background:linear-gradient(180deg,#5AA2FF,#2E8BFF)}
 .sqr{background:linear-gradient(135deg,#5AA2FF,#2E8BFF);border:3px solid #7CC8FF;box-sizing:border-box}
 .trk{background:rgba(255,255,255,.18)}
@@ -253,7 +255,7 @@ function ovJS(P, list, T0, idx) {
 function numHTML(P, n, color) {
   const fmt = (v) => (n.prefix || '') + String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + (n.suffix || '');
   const txt = fmt(n.from);
-  return `<div id="${P}-num" class="t" style="top:${n.y}px;font-size:${fit((n.prefix || '') + '1.300.000' + (n.suffix || ''), n.size)}px;color:${color || COL.amber}">${txt}</div>`;
+  return `<div id="${P}-num" class="t" style="top:${n.y}px;font-size:${fit(n.fitText || ((n.prefix || '') + '1.300.000' + (n.suffix || '')), n.size)}px;color:${color || COL.amber}">${txt}</div>`;
 }
 function numJS(P, n, T0) {
   return `{const E=document.getElementById('${P}-num');const S={v:${n.from}};tl.fromTo(S,{v:${n.from}},{v:${n.to},duration:${n.dur || 1},ease:'power3.out',onUpdate:()=>{E.textContent='${n.prefix || ''}'+F(Math.round(S.v))+'${n.suffix || ''}'}},${T0});}`;
@@ -298,7 +300,7 @@ const R = {
   },
   bigNum(P, T0, D, o) {
     const n = o.num;
-    const lab = o.label ? `<div id="${P}-lab" class="t" style="top:${n.y + fit('1.300.000', n.size) + 40}px;font-size:84px;color:${COL[o.labelColor] || COL.ink}">${o.label}</div>` : '';
+    const lab = o.label ? `<div id="${P}-lab" class="t" style="top:${n.y + fit(n.fitText || '1.300.000', n.size) + 40}px;font-size:84px;color:${COL[o.labelColor] || COL.ink}">${o.label}</div>` : '';
     const src = o.source ? `<div class="t ts" style="top:1040px;font-size:44px;color:${COL.soft}">${o.source}</div>` : '';
     return { html: numHTML(P, n) + lab + src, js: numJS(P, n, T0) + (o.label ? `tl.fromTo('#${P}-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},${r3(T0 + 0.1)});` : '') };
   },
@@ -377,9 +379,9 @@ const R = {
     const w = 900, to = o.to, m = o.mode;
     const head = `<div class="abs" style="left:90px;top:560px;width:${w}px;height:170px;border:8px solid ${COL.ink};border-radius:20px;box-sizing:border-box"></div><div id="${P}-fill" class="abs" style="left:98px;top:568px;width:${w - 16}px;height:154px;border-radius:12px;background:linear-gradient(90deg,#2E8BFF,#7CC8FF);transform-origin:0 50%"></div>`;
     if (m === 'grow') return { html: head, js: `tl.fromTo('#${P}-fill',{scaleX:0},{scaleX:${to},duration:${r3(Math.min(1.3, D))},ease:'power3.out'},${T0});` };
-    if (m === 'growPct') { const gd = r3(Math.min(1.5, D)); return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.fromTo('#${P}-fill',{scaleX:0},{scaleX:${to},duration:${gd},ease:'power3.out'},${T0});{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:74,duration:${gd},ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` }; }
-    if (m === 'pct') return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:74,duration:0.7,ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` };
-    return { html: head + `<div id="${P}-empty" class="abs" style="left:${98 + (w - 16) * to}px;top:568px;width:${(w - 16) * (1 - to)}px;height:154px;border-radius:0 12px 12px 0;background:repeating-linear-gradient(45deg,${COL.coral} 0 14px,transparent 14px 28px)"></div><div id="${P}-num" class="t" style="top:800px;font-size:${fit("26% VAZIO", 190)}px;color:${COL.coral}">26% VAZIO</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);tl.fromTo('#${P}-empty',{opacity:0},{opacity:1,duration:0.2},${T0});tl.fromTo('#${P}-num',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},${r3(T0 + 0.1)});` };
+    if (m === 'growPct') { const gd = r3(Math.min(1.5, D)); return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.fromTo('#${P}-fill',{scaleX:0},{scaleX:${to},duration:${gd},ease:'power3.out'},${T0});{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:${Math.round(to * 100)},duration:${gd},ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` }; }
+    if (m === 'pct') return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:${Math.round(to * 100)},duration:0.7,ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` };
+    return { html: head + `<div id="${P}-empty" class="abs" style="left:${98 + (w - 16) * to}px;top:568px;width:${(w - 16) * (1 - to)}px;height:154px;border-radius:0 12px 12px 0;background:repeating-linear-gradient(45deg,${COL.coral} 0 14px,transparent 14px 28px)"></div><div id="${P}-num" class="t" style="top:800px;font-size:${fit(o.emptyLabel || "26% VAZIO", 190)}px;color:${COL.coral}">${o.emptyLabel || "26% VAZIO"}</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);tl.fromTo('#${P}-empty',{opacity:0},{opacity:1,duration:0.2},${T0});tl.fromTo('#${P}-num',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},${r3(T0 + 0.1)});` };
   },
   compare(P, T0, D, o) {
     const top = o.focus === 'top';
@@ -446,6 +448,8 @@ const R = {
     };
   },
 };
+
+Object.assign(R, receitasDinheiro({ COL, r3, px, fit }));   // carteira, nota, etiqueta, cesta, balança, linha do tempo, carrinhos, manchete, gráfico, lanche
 
 // ---------- pele isométrica: esferas em camadas sobre um piso em losango ----------
 if (THEME === 'iso') {

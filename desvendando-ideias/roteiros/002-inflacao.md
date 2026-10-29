@@ -1,7 +1,7 @@
 # 002 · A nota de R$ 100 encolheu
 
 Pilar: Finanças/Economia · Hook (tipo): Contradição (dia 2 do plano) · Pele: **Neo-brutalismo** (escolha do usuário, 29/10/2026; Cosmos e Blueprint ficaram de fora) · Duração-alvo: 70–85 s · Criado em 2026-10-29
-Status: **portões 1, 2 e 4 decididos; pele decidida; ordem decidida; roteiro aguardando aprovação (portão 6)** · Projeto: `../producoes/002-inflacao/`
+Status: **portões 1, 2 e 4 decididos; pele decidida; ordem decidida; roteiro aprovado; próximo: voz e cenas** · Projeto: `../producoes/002-inflacao/`
 
 ## Decisões (portões do fluxo)
 
@@ -12,7 +12,7 @@ Status: **portões 1, 2 e 4 decididos; pele decidida; ordem decidida; roteiro ag
 | 3. Ordem das cenas | **B · Explicação em cadeia:** hook → o que é (cesta/IPCA) → por que acontece → a conta 2010 → hoje → pegadinha "inflação caiu ≠ preço caiu" → CTA (29/10/2026) | A número primeiro, C pegadinha cedo |
 | 4. CTA | **2 · "Comenta: quanto custava seu lanche favorito em 2010? Deixa o like e segue pra mais curiosidades."** (29/10/2026) | 1 dúvida + like + seguir, 3 dúvida sobre inflação, 4 "qual preço mais te assustou", 5 "pode virar o próximo vídeo" |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
-| 6. Roteiro aprovado | _(pendente)_ | |
+| 6. Roteiro aprovado | **Aprovado** (29/10/2026), 170 palavras | — |
 | 7. Corte de teste | _(pendente)_ | |
 | 8. Publicação (legenda, capa, hashtags, horário) | _(pendente)_ | |
 

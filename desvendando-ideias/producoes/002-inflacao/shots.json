@@ -1,10 +1,474 @@
 {
-  "titulo": "002 · A nota de R$ 100 encolheu",
-  "beats": [
-    {
-      "audio": "assets/voz/beat0.wav",
-      "gap": 0.15
-    }
-  ],
-  "shots": []
+ "titulo": "002 · A nota de R$ 100 encolheu",
+ "beats": [
+  {
+   "audio": "assets/voz/beat0.wav",
+   "gap": 0.6
+  },
+  {
+   "audio": "assets/voz/beat1.wav",
+   "gap": 0.6
+  },
+  {
+   "audio": "assets/voz/beat2.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat3.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat4.wav",
+   "gap": 0.3
+  },
+  {
+   "audio": "assets/voz/beat5.wav",
+   "gap": 1.4
+  }
+ ],
+ "shots": [
+  {
+   "b": 0,
+   "t": "Ninguém tirou dinheiro da sua carteira.",
+   "k": "wallet",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 0,
+   "t": "Mesmo assim, ele sumiu.",
+   "k": "wallet",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "fade": true,
+    "ov": [
+     {
+      "text": "SUMIU?",
+      "y": 200,
+      "size": 150,
+      "color": "coral"
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "O nome disso é inflação:",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "text": "INFLAÇÃO",
+    "color": "amber"
+   }
+  },
+  {
+   "b": 1,
+   "t": "os preços sobem, na média,",
+   "k": "priceTag",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": 10,
+    "to": 13
+   }
+  },
+  {
+   "b": 1,
+   "t": "e cada real compra menos.",
+   "k": "note",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "shrink": true,
+    "to": 0.5
+   }
+  },
+  {
+   "b": 1,
+   "t": "Todo mês, o IBGE mede isso",
+   "k": "basket",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "items": [],
+    "ov": [
+     {
+      "text": "IBGE · TODO MÊS",
+      "y": 230,
+      "size": 110
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "pelo preço de uma cesta",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 1,
+   "t": "do que as famílias compram:",
+   "k": "basket",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "items": [
+     "comida",
+     "aluguel",
+     "transporte",
+     "luz"
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "comida, aluguel, transporte, luz.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 1,
+   "t": "É o IPCA.",
+   "k": "stamp",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "text": "IPCA"
+   }
+  },
+  {
+   "b": 2,
+   "t": "Por que os preços sobem?",
+   "k": "bigq",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 2,
+   "t": "Às vezes porque produzir fica mais caro,",
+   "k": "costUp",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "mode": "factory"
+   }
+  },
+  {
+   "b": 2,
+   "t": "como quando sobem o combustível ou a energia.",
+   "k": "costUp",
+   "cam": [
+    "panL"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "mode": "inputs"
+   }
+  },
+  {
+   "b": 2,
+   "t": "Às vezes porque a procura cresce",
+   "k": "balanca",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {}
+  },
+  {
+   "b": 2,
+   "t": "mais rápido que a oferta.",
+   "k": "balanca",
+   "cam": [
+    "punch"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "tilt": true,
+    "ov": [
+     {
+      "text": "PREÇO SOBE",
+      "y": 230,
+      "size": 120,
+      "color": "coral"
+     }
+    ]
+   }
+  },
+  {
+   "b": 3,
+   "t": "Agora, a conta.",
+   "k": "timeline",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": 2010,
+    "to": 2026,
+    "lastLabel": "HOJE"
+   }
+  },
+  {
+   "b": 3,
+   "t": "Somando a inflação desde 2010,",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 3,
+   "t": "o que custava cem reais",
+   "k": "bigNum",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 100,
+     "to": 100,
+     "prefix": "R$ ",
+     "y": 520,
+     "size": 240,
+     "dur": 0.01,
+     "fitText": "R$ 100"
+    },
+    "label": "EM 2010"
+   }
+  },
+  {
+   "b": 3,
+   "t": "custa cerca de duzentos e cinquenta hoje.",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 100,
+     "to": 250,
+     "prefix": "≈ R$ ",
+     "y": 520,
+     "size": 240,
+     "dur": 1.2,
+     "fitText": "≈ R$ 250"
+    },
+    "label": "HOJE"
+   }
+  },
+  {
+   "b": 3,
+   "t": "Ou seja, a mesma nota de cem",
+   "k": "carts",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "keep": 4
+   }
+  },
+  {
+   "b": 3,
+   "t": "compra só uns quarenta por cento do que comprava.",
+   "k": "barFill",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "to": 0.4,
+    "mode": "growPct"
+   }
+  },
+  {
+   "b": 4,
+   "t": "Mas tem uma pegadinha.",
+   "k": "stamp",
+   "cam": [
+    "punch"
+   ],
+   "bg": "alert",
+   "st": "2D",
+   "o": {
+    "text": "PEGADINHA"
+   }
+  },
+  {
+   "b": 4,
+   "t": "Quando o jornal diz que a inflação caiu,",
+   "k": "headline",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "lines": [
+     "INFLAÇÃO",
+     "CAIU"
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "o preço não caiu.",
+   "k": "slope",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "l1": "+10%",
+    "l2": "+4%",
+    "ov": [
+     {
+      "text": "NÃO CAIU",
+      "y": 230,
+      "size": 130,
+      "color": "coral"
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "Ele só subiu mais devagar.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 4,
+   "t": "Inflação de quatro por cento é tudo,",
+   "k": "bigNum",
+   "cam": [
+    "punch"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 4,
+     "prefix": "+",
+     "suffix": "%",
+     "y": 520,
+     "size": 300,
+     "dur": 0.6,
+     "fitText": "+4%"
+    },
+    "label": "EM 1 ANO"
+   }
+  },
+  {
+   "b": 4,
+   "t": "em média, quatro por cento mais caro que um ano antes.",
+   "k": "priceTag",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": 100,
+    "to": 104
+   }
+  },
+  {
+   "b": 5,
+   "t": "Comenta: quanto custava",
+   "k": "lunch",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "tag": "2010: R$ ?",
+    "ov": [
+     {
+      "text": "COMENTA",
+      "y": 230,
+      "size": 140,
+      "color": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "b": 5,
+   "t": "seu lanche favorito em 2010?",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "Deixa o like e segue",
+   "k": "endcard",
+   "cam": [
+    "pushIn"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "big": "SEGUE",
+    "sub": "DEIXA O LIKE",
+    "handle": true,
+    "subAt": 0.1,
+    "handleAt": 1.0
+   },
+   "hold": true
+  },
+  {
+   "b": 5,
+   "t": "pra mais curiosidades.",
+   "k": "-",
+   "cont": true
+  }
+ ]
 }
