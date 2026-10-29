@@ -9,8 +9,8 @@ export default function receitasDinheiro({ COL, r3, px, fit }) {
 <rect x="4" y="4" width="${w - 8}" height="${h - 8}" rx="${h * 0.07}" fill="url(#${gid})" ${S(7)}/>
 <rect x="${w * 0.05}" y="${h * 0.1}" width="${w * 0.9}" height="${h * 0.8}" rx="${h * 0.05}" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3"/>
 <circle cx="${w * 0.24}" cy="${h * 0.5}" r="${h * 0.29}" fill="rgba(255,255,255,.35)" ${S(5)}/>
-<text x="${w * 0.7}" y="${h * 0.62}" text-anchor="middle" font-family="Archivo Black" font-size="${h * 0.42}" fill="#fff" stroke="${ink}" stroke-width="${h * 0.012}" paint-order="stroke">${label}</text>
-<text x="${w * 0.7}" y="${h * 0.84}" text-anchor="middle" font-family="Archivo Black" font-size="${h * 0.12}" fill="#fff">REAIS</text>`;
+${label ? `<text x="${w * 0.7}" y="${h * 0.62}" text-anchor="middle" font-family="Archivo Black" font-size="${h * 0.42}" fill="#fff" stroke="${ink}" stroke-width="${h * 0.012}" paint-order="stroke">${label}</text>
+<text x="${w * 0.7}" y="${h * 0.84}" text-anchor="middle" font-family="Archivo Black" font-size="${h * 0.15}" fill="#fff">REAIS</text>` : ''}`;
   const tagPath = (w, h) => `M${h * 0.32} 4 H${w - 4} V${h - 4} H${h * 0.32} L4 ${h / 2} Z`;
   const icons = {
     comida: `<path d="M75 40 C70 20 85 10 95 8" fill="none" ${S(6)}/><ellipse cx="96" cy="30" rx="22" ry="11" transform="rotate(-25 96 30)" fill="#2BB673" ${S(5)}/><circle cx="75" cy="88" r="50" fill="#E63946" ${S(6)}/>`,
@@ -29,11 +29,11 @@ export default function receitasDinheiro({ COL, r3, px, fit }) {
   return {
     // Carteira com notas; o.fade: as notas ficam transparentes ("sumiu")
     wallet(P, T0, D, o) {
-      const notes = [-12, -2, 9].map((a, i) => `<g transform="translate(${130 + i * 40} ${40 + i * 18}) rotate(${a} 210 100)"><svg width="420" height="200" viewBox="0 0 420 200">${noteSVG(`${P}-g${i}`, 420, 200)}</svg></g>`).join('');
+      const notes = [-12, -2, 9].map((a, i) => `<g transform="translate(${130 + i * 40} ${40 + i * 18}) rotate(${a} 210 100)"><svg width="420" height="200" viewBox="0 0 420 200">${noteSVG(`${P}-g${i}`, 420, 200, i === 2 ? '100' : '')}</svg></g>`).join('');
       const html = `<svg id="${P}-w" class="abs obj" style="left:190px;top:330px" width="700" height="640" viewBox="0 0 700 640"><g id="${P}-notes">${notes}</g>
 <rect x="40" y="250" width="620" height="370" rx="44" fill="#9A5B2E" ${S(8)}/><rect x="70" y="280" width="560" height="310" rx="30" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="4" stroke-dasharray="16 12"/>
 <rect x="380" y="350" width="280" height="150" rx="34" fill="#7A4422" ${S(8)}/><circle cx="600" cy="425" r="24" fill="${COL.amber}" ${S(6)}/></svg>`;
-      let js = `tl.fromTo('#${P}-w',{opacity:0,y:80},{opacity:1,y:0,duration:0.35,ease:'back.out(1.4)'},${r3(T0)});`;
+      let js = `tl.fromTo('#${P}-w',{y:80,scale:0.92},{y:0,scale:1,duration:0.35,ease:'back.out(1.4)'},${r3(T0)});`;
       if (o.fade) js += `tl.fromTo('#${P}-notes',{opacity:1,y:0},{opacity:0.08,y:-30,duration:${r3(Math.min(1.4, D * 0.6))},ease:'power2.in'},${r3(T0 + 0.3)});`;
       return { html, js };
     },

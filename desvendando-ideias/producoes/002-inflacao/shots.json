@@ -7,7 +7,7 @@
   },
   {
    "audio": "assets/voz/beat1.wav",
-   "gap": 0.6
+   "gap": 0.9
   },
   {
    "audio": "assets/voz/beat2.wav",
@@ -19,7 +19,7 @@
   },
   {
    "audio": "assets/voz/beat4.wav",
-   "gap": 0.3
+   "gap": 0.6
   },
   {
    "audio": "assets/voz/beat5.wav",
@@ -104,6 +104,27 @@
   {
    "b": 1,
    "t": "Todo mês, o IBGE mede isso",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "mint",
+   "st": "2D",
+   "o": {
+    "text": "IBGE",
+    "color": "ink",
+    "ov": [
+     {
+      "text": "TODO MÊS",
+      "y": 230,
+      "size": 120
+     }
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "pelo preço de uma cesta",
    "k": "basket",
    "cam": [
     "pushIn"
@@ -114,7 +135,7 @@
     "items": [],
     "ov": [
      {
-      "text": "IBGE · TODO MÊS",
+      "text": "CESTA DE COMPRAS",
       "y": 230,
       "size": 110
      }
@@ -123,16 +144,16 @@
   },
   {
    "b": 1,
-   "t": "pelo preço de uma cesta",
+   "t": "do que as famílias compram:",
    "k": "-",
    "cont": true
   },
   {
    "b": 1,
-   "t": "do que as famílias compram:",
+   "t": "comida, aluguel, transporte, luz.",
    "k": "basket",
    "cam": [
-    "pushIn"
+    "pullOut"
    ],
    "bg": "mint",
    "st": "2D",
@@ -144,12 +165,6 @@
      "luz"
     ]
    }
-  },
-  {
-   "b": 1,
-   "t": "comida, aluguel, transporte, luz.",
-   "k": "-",
-   "cont": true
   },
   {
    "b": 1,
@@ -407,7 +422,7 @@
   },
   {
    "b": 4,
-   "t": "em média, quatro por cento mais caro que um ano antes.",
+   "t": "em média, quatro por cento mais caro",
    "k": "priceTag",
    "cam": [
     "pushIn"
@@ -420,8 +435,41 @@
    }
   },
   {
+   "b": 4,
+   "t": "que um ano antes.",
+   "k": "timeline",
+   "cam": [
+    "pullOut"
+   ],
+   "bg": "space",
+   "st": "2D",
+   "o": {
+    "from": 2025,
+    "to": 2026,
+    "ticks": [
+     2025,
+     2026
+    ],
+    "lastLabel": "HOJE"
+   }
+  },
+  {
    "b": 5,
    "t": "Comenta: quanto custava",
+   "k": "flash",
+   "cam": [
+    "punch"
+   ],
+   "bg": "warm",
+   "st": "2D",
+   "o": {
+    "text": "COMENTA",
+    "color": "amber"
+   }
+  },
+  {
+   "b": 5,
+   "t": "seu lanche favorito em 2010?",
    "k": "lunch",
    "cam": [
     "pushIn"
@@ -429,22 +477,8 @@
    "bg": "warm",
    "st": "2D",
    "o": {
-    "tag": "2010: R$ ?",
-    "ov": [
-     {
-      "text": "COMENTA",
-      "y": 230,
-      "size": 140,
-      "color": "amber"
-     }
-    ]
+    "tag": "2010: R$ ?"
    }
-  },
-  {
-   "b": 5,
-   "t": "seu lanche favorito em 2010?",
-   "k": "-",
-   "cont": true
   },
   {
    "b": 5,

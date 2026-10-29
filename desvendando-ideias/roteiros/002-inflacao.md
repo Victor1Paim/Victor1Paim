@@ -1,7 +1,7 @@
 # 002 · A nota de R$ 100 encolheu
 
 Pilar: Finanças/Economia · Hook (tipo): Contradição (dia 2 do plano) · Pele: **Neo-brutalismo** (escolha do usuário, 29/10/2026; Cosmos e Blueprint ficaram de fora) · Duração-alvo: 70–85 s · Criado em 2026-10-29
-Status: **portões 1, 2 e 4 decididos; pele decidida; ordem decidida; roteiro aprovado; próximo: voz e cenas** · Projeto: `../producoes/002-inflacao/`
+Status: **portões 1, 2 e 4 decididos; pele decidida; ordem decidida; vídeo renderizado (`renders/002-inflacao.mp4`, 76,1 s, 28 planos, Neo-brutalismo); aguardando corte de teste (portão 7)** · Projeto: `../producoes/002-inflacao/`
 
 ## Decisões (portões do fluxo)
 
@@ -37,8 +37,8 @@ Total: **170 palavras** (≈ 71 s de fala a 2,38 palavras/s; com pausas, ≈ 75 
 
 | Afirmação | Valor usado | Estado | O que falta |
 |---|---|---|---|
-| R$ 100 de jan/2010 equivalem a cerca de R$ 250 hoje (IPCA) | ≈ R$ 245 até dez/2025; ≈ R$ 254 até jun/2026 (conta com o IPCA anual do IBGE: 2010–2024 conhecidos, 2025 = 4,26%, 2026 até jun = 3,36% segundo investidor10) | **A conferir** | Rodar a Calculadora do Cidadão (Banco Central) com IPCA, 01/2010 → mês atual; segunda fonte: IBGE (série do IPCA). Hosts do BCB/IBGE bloqueados nesta sessão |
-| R$ 100 de hoje compram o que ~R$ 40 compravam em 2010 | 100 / 2,5 ≈ 40 | **A conferir** | Sai da mesma conta acima |
+| R$ 100 de jan/2010 equivalem a cerca de R$ 250 hoje (IPCA) | ≈ R$ 245 até dez/2025; ≈ R$ 254 até jun/2026 (conta com o IPCA anual do IBGE: 2010–2024 conhecidos, 2025 = 4,26%, 2026 até jun = 3,36% segundo investidor10) | **Aceito pelo usuário (29/10/2026):** usar o cálculo próprio, sempre com "cerca de" | Opcional: conferir na Calculadora do Cidadão quando os sites do BCB/IBGE estiverem liberados |
+| R$ 100 de hoje compram o que ~R$ 40 compravam em 2010 | 100 / 2,5 ≈ 40 | **Aceito pelo usuário (29/10/2026)**, "uns 40%" | — |
 | O IBGE mede o IPCA todo mês, pelo preço de uma cesta de consumo das famílias (alimentação, habitação, transportes, energia…) | Definição | **A conferir** | Página do IPCA no IBGE |
 | Preços sobem por custo maior de produzir ou por procura maior que a oferta | Explicação simplificada | **A conferir** | Página "O que é inflação" do Banco Central (Cidadania Financeira) |
 | "Inflação caiu" = preços subindo mais devagar, não caindo (queda de preços é deflação) | Definição | **A conferir** | IBGE ou Banco Central |
@@ -62,3 +62,49 @@ Regras: 2 fontes primárias para saúde e finanças; fonte na tela por 2–3 s; 
 - Planos e som: `shots.json` e `motor/sfx.py`. Rodar `node ../../motor/checar.mjs --full` antes de entregar.
 - Rótulo de conteúdo gerado por IA ligado na publicação.
 - Métricas: registrar em `../metricas/videos.csv` após 24 h e 7 dias, sempre anotando a idade do vídeo.
+
+## Publicação (portão 8) · legendas por plataforma
+
+Rótulo de conteúdo gerado por IA ligado nas três.
+
+### TikTok
+```
+Ninguém tirou dinheiro da sua carteira. Mesmo assim, ele sumiu 💸
+O que custava R$ 100 em 2010 custa cerca de R$ 250 hoje.
+E quando a inflação “cai”, o preço não cai 👀
+
+Comenta: quanto custava seu lanche favorito em 2010? 🍔
+Deixa o like e segue pra mais curiosidades.
+
+#inflacao #economia #dinheiro #curiosidades #financas
+```
+
+### YouTube Shorts
+Título:
+```
+Seu dinheiro sumiu sem ninguém tocar nele (inflação explicada) #shorts
+```
+Descrição:
+```
+Inflação é quando os preços sobem, na média, e cada real compra menos. Somando a inflação desde 2010, o que custava R$ 100 custa cerca de R$ 250 hoje. E “a inflação caiu” não quer dizer que o preço caiu: ele só subiu mais devagar.
+
+Comenta: quanto custava seu lanche favorito em 2010? Deixa o like e se inscreve pra mais curiosidades.
+
+Valores aproximados, calculados com o IPCA anual (IBGE). Conteúdo informativo, não é recomendação financeira.
+
+#shorts #inflacao #economia #curiosidades
+```
+
+### Instagram (Reels)
+```
+Seu dinheiro sumiu e ninguém tocou nele 💸
+
+R$ 100 de 2010 viraram uns R$ 250 de hoje.
+E tem uma pegadinha: inflação “caindo” não quer dizer preço caindo.
+
+Comenta: quanto custava seu lanche favorito em 2010? 🍔
+Deixa o like e segue @desvendandoideias.ofc pra mais curiosidades.
+
+#inflacao #economia #dinheiro #curiosidades #financas
+```
+

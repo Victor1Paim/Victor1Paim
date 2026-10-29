@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #04060f; }
+      #captions { z-index: 20; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="76.062" data-width="1080" data-height="1920">
+      <div id="beat0" data-composition-id="beat0" data-composition-src="compositions/beat0.html" data-start="0" data-duration="5.407" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="beat1" data-composition-id="beat1" data-composition-src="compositions/beat1.html" data-start="5.407" data-duration="16.987" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="beat2" data-composition-id="beat2" data-composition-src="compositions/beat2.html" data-start="22.394" data-duration="12.907" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="beat3" data-composition-id="beat3" data-composition-src="compositions/beat3.html" data-start="35.301" data-duration="15.547" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="beat4" data-composition-id="beat4" data-composition-src="compositions/beat4.html" data-start="50.848" data-duration="15.887" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="beat5" data-composition-id="beat5" data-composition-src="compositions/beat5.html" data-start="66.735" data-duration="9.327" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="76.062" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920"></div>
+      <audio id="sfx" src="assets/sfx/sfx-mix.wav" data-start="0" data-duration="76.062" data-track-index="6" data-volume="1"></audio>
+      <audio id="voz0" src="assets/voz/proc/beat0.wav" data-start="0" data-duration="4.807" data-track-index="5" data-volume="1"></audio>
+      <audio id="voz1" src="assets/voz/proc/beat1.wav" data-start="5.407" data-duration="16.087" data-track-index="5" data-volume="1"></audio>
+      <audio id="voz2" src="assets/voz/proc/beat2.wav" data-start="22.394" data-duration="12.607" data-track-index="5" data-volume="1"></audio>
+      <audio id="voz3" src="assets/voz/proc/beat3.wav" data-start="35.301" data-duration="15.247" data-track-index="5" data-volume="1"></audio>
+      <audio id="voz4" src="assets/voz/proc/beat4.wav" data-start="50.848" data-duration="15.287" data-track-index="5" data-volume="1"></audio>
+      <audio id="voz5" src="assets/voz/proc/beat5.wav" data-start="66.735" data-duration="7.927" data-track-index="5" data-volume="1"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

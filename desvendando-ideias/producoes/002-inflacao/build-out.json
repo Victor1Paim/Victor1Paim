@@ -1,0 +1,555 @@
+{
+ "total": 76.062,
+ "beats": [
+  {
+   "i": 0,
+   "G": 0,
+   "dur": 5.407
+  },
+  {
+   "i": 1,
+   "G": 5.407,
+   "dur": 16.987
+  },
+  {
+   "i": 2,
+   "G": 22.394,
+   "dur": 12.907
+  },
+  {
+   "i": 3,
+   "G": 35.301,
+   "dur": 15.547
+  },
+  {
+   "i": 4,
+   "G": 50.848,
+   "dur": 15.887
+  },
+  {
+   "i": 5,
+   "G": 66.735,
+   "dur": 9.327
+  }
+ ],
+ "shots": [
+  {
+   "id": "b0s1",
+   "k": "wallet",
+   "silent": false,
+   "hold": false,
+   "start": 0,
+   "dur": 2.483,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b0s2",
+   "k": "wallet",
+   "silent": false,
+   "hold": false,
+   "start": 2.483,
+   "dur": 2.924,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "fade": true,
+    "ov": [
+     {
+      "text": "SUMIU?",
+      "y": 200,
+      "size": 150,
+      "color": "coral"
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b1s1",
+   "k": "flash",
+   "silent": false,
+   "hold": false,
+   "start": 5.407,
+   "dur": 2.217,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "INFLAÇÃO",
+    "color": "amber"
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s2",
+   "k": "priceTag",
+   "silent": false,
+   "hold": false,
+   "start": 7.624,
+   "dur": 2.173,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "from": 10,
+    "to": 13
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s3",
+   "k": "note",
+   "silent": false,
+   "hold": false,
+   "start": 9.797,
+   "dur": 1.995,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "shrink": true,
+    "to": 0.5
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s4",
+   "k": "flash",
+   "silent": false,
+   "hold": false,
+   "start": 11.792,
+   "dur": 2.007,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "IBGE",
+    "color": "ink",
+    "ov": [
+     {
+      "text": "TODO MÊS",
+      "y": 230,
+      "size": 120
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b1s5",
+   "k": "basket",
+   "silent": false,
+   "hold": false,
+   "start": 13.799,
+   "dur": 2.981,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "items": [],
+    "ov": [
+     {
+      "text": "CESTA DE COMPRAS",
+      "y": 230,
+      "size": 110
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b1s6",
+   "k": "basket",
+   "silent": false,
+   "hold": false,
+   "start": 16.78,
+   "dur": 3.74,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "items": [
+     "comida",
+     "aluguel",
+     "transporte",
+     "luz"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s7",
+   "k": "stamp",
+   "silent": false,
+   "hold": false,
+   "start": 20.52,
+   "dur": 1.874,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "IPCA"
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s1",
+   "k": "bigq",
+   "silent": false,
+   "hold": false,
+   "start": 22.394,
+   "dur": 2.185,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b2s2",
+   "k": "costUp",
+   "silent": false,
+   "hold": false,
+   "start": 24.579,
+   "dur": 3.185,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "mode": "factory"
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s3",
+   "k": "costUp",
+   "silent": false,
+   "hold": false,
+   "start": 27.764,
+   "dur": 2.964,
+   "cam": [
+    "panL"
+   ],
+   "o": {
+    "mode": "inputs"
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s4",
+   "k": "balanca",
+   "silent": false,
+   "hold": false,
+   "start": 30.728,
+   "dur": 2.263,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {},
+   "anims": []
+  },
+  {
+   "id": "b2s5",
+   "k": "balanca",
+   "silent": false,
+   "hold": false,
+   "start": 32.991,
+   "dur": 2.31,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "tilt": true,
+    "ov": [
+     {
+      "text": "PREÇO SOBE",
+      "y": 230,
+      "size": 120,
+      "color": "coral"
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b3s1",
+   "k": "timeline",
+   "silent": false,
+   "hold": false,
+   "start": 35.301,
+   "dur": 4.013,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "from": 2010,
+    "to": 2026,
+    "lastLabel": "HOJE"
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s2",
+   "k": "bigNum",
+   "silent": false,
+   "hold": false,
+   "start": 39.314,
+   "dur": 1.842,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "num": {
+     "from": 100,
+     "to": 100,
+     "prefix": "R$ ",
+     "y": 520,
+     "size": 240,
+     "dur": 0.01,
+     "fitText": "R$ 100"
+    },
+    "label": "EM 2010"
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s3",
+   "k": "bigNum",
+   "silent": false,
+   "hold": false,
+   "start": 41.156,
+   "dur": 3.237,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 100,
+     "to": 250,
+     "prefix": "≈ R$ ",
+     "y": 520,
+     "size": 240,
+     "dur": 1.2,
+     "fitText": "≈ R$ 250"
+    },
+    "label": "HOJE"
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s4",
+   "k": "carts",
+   "silent": false,
+   "hold": false,
+   "start": 44.393,
+   "dur": 2.481,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "keep": 4
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s5",
+   "k": "barFill",
+   "silent": false,
+   "hold": false,
+   "start": 46.874,
+   "dur": 3.974,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "to": 0.4,
+    "mode": "growPct"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s1",
+   "k": "stamp",
+   "silent": false,
+   "hold": false,
+   "start": 50.848,
+   "dur": 1.589,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "PEGADINHA"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s2",
+   "k": "headline",
+   "silent": false,
+   "hold": false,
+   "start": 52.437,
+   "dur": 3.095,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "lines": [
+     "INFLAÇÃO",
+     "CAIU"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s3",
+   "k": "slope",
+   "silent": false,
+   "hold": false,
+   "start": 55.532,
+   "dur": 3.738,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "l1": "+10%",
+    "l2": "+4%",
+    "ov": [
+     {
+      "text": "NÃO CAIU",
+      "y": 230,
+      "size": 130,
+      "color": "coral"
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b4s4",
+   "k": "bigNum",
+   "silent": false,
+   "hold": false,
+   "start": 59.27,
+   "dur": 2.388,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "num": {
+     "from": 0,
+     "to": 4,
+     "prefix": "+",
+     "suffix": "%",
+     "y": 520,
+     "size": 300,
+     "dur": 0.6,
+     "fitText": "+4%"
+    },
+    "label": "EM 1 ANO"
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s5",
+   "k": "priceTag",
+   "silent": false,
+   "hold": false,
+   "start": 61.658,
+   "dur": 3.167,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "from": 100,
+    "to": 104
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s6",
+   "k": "timeline",
+   "silent": false,
+   "hold": false,
+   "start": 64.825,
+   "dur": 1.91,
+   "cam": [
+    "pullOut"
+   ],
+   "o": {
+    "from": 2025,
+    "to": 2026,
+    "ticks": [
+     2025,
+     2026
+    ],
+    "lastLabel": "HOJE"
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s1",
+   "k": "flash",
+   "silent": false,
+   "hold": false,
+   "start": 66.735,
+   "dur": 2.165,
+   "cam": [
+    "punch"
+   ],
+   "o": {
+    "text": "COMENTA",
+    "color": "amber"
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s2",
+   "k": "lunch",
+   "silent": false,
+   "hold": false,
+   "start": 68.9,
+   "dur": 2.347,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "tag": "2010: R$ ?"
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s3",
+   "k": "endcard",
+   "silent": false,
+   "hold": true,
+   "start": 71.247,
+   "dur": 4.815,
+   "cam": [
+    "pushIn"
+   ],
+   "o": {
+    "big": "SEGUE",
+    "sub": "DEIXA O LIKE",
+    "handle": true,
+    "subAt": 0.1,
+    "handleAt": 1
+   },
+   "anims": []
+  }
+ ]
+}
