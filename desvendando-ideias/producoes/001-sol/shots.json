@@ -74,33 +74,27 @@
   {
    "b": 0,
    "t": "Pensa num número",
-   "k": "bigq",
+   "k": "quiz",
    "cam": [
-    "punch"
+    "pushIn"
    ],
    "bg": "space",
    "st": "2D",
    "o": {
-    "ov": [
-     {
-      "text": "PENSA NUM NÚMERO",
-      "y": 200,
-      "size": 100
-     }
-    ]
+    "mode": "in"
    }
   },
   {
    "b": 0,
    "t": "antes que eu fale.",
-   "k": "stamp",
+   "k": "quiz",
    "cam": [
     "pushIn"
    ],
-   "bg": "alert",
+   "bg": "space",
    "st": "2D",
    "o": {
-    "text": "CHUTA!"
+    "mode": "timer"
    }
   },
   {
@@ -421,15 +415,15 @@
   {
    "b": 2,
    "t": "por aí, acertou.",
-   "k": "flash",
+   "k": "quiz",
    "cam": [
     "punch"
    ],
    "bg": "mint",
    "st": "2D",
    "o": {
-    "text": "ACERTOU!",
-    "color": "mint"
+    "mode": "answer",
+    "answer": "C"
    }
   },
   {

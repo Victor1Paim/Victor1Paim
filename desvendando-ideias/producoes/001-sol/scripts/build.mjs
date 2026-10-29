@@ -89,6 +89,9 @@ beats.forEach((B) => B.shots.forEach((s) => {
 }));
 fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por scripts/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
 
+fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, shots: beats.flatMap((B) => B.shots.map((s) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur }))) }, null, 1));
+spawnSync('python3', ['-I', path.join(ROOT, 'scripts/sfx.py')], { cwd: ROOT, stdio: 'inherit' });
+
 // ---------- visuais ----------
 const COL = { amber: '#FFB300', mint: '#3DDC97', coral: '#FF4D5E', blue: '#2E8BFF', ink: '#F5F7FF', soft: '#9FB0D8' };
 const BG = {
@@ -116,6 +119,8 @@ const COMMON_CSS = `
 .t{position:absolute;left:0;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;line-height:1;color:#F5F7FF;white-space:nowrap;text-shadow:0 6px 28px rgba(0,0,0,.55)}
 .ts{font-family:'Inter',sans-serif;font-weight:700}
 .abs{position:absolute}
+.qrow{position:absolute;left:110px;width:860px;height:140px;border-radius:28px;background:rgba(255,255,255,.09);border:4px solid rgba(255,255,255,.35);display:flex;align-items:center;gap:30px;padding:0 36px;box-sizing:border-box;font-family:'Archivo Black',sans-serif;font-size:58px;color:#F5F7FF}
+.qlet{width:86px;height:86px;border-radius:50%;background:#FFB300;color:#101426;display:flex;align-items:center;justify-content:center;font-size:54px;flex:none}
 .ball{position:absolute;border-radius:50%;background:radial-gradient(circle at 36% 30%,#FFA552 0%,#E8731A 45%,#8A3A07 100%)}
 .pile{position:absolute;border-radius:50%;background:radial-gradient(circle at 36% 30%,#9ADBFF 0%,#2E8BFF 45%,#0A3C95 100%)}
 .p3d{position:absolute;left:0;top:0;width:1080px;height:1920px;perspective:1600px}
@@ -302,6 +307,25 @@ const R = {
     if (o.stage === 2) return { html: g(1800, 2800) + sunHTML(`${P}-sun`, 540, 300, 90), js: `tl.fromTo('#${P}-giant',{y:100},{y:0,duration:${D},ease:'power2.out'},${T0});` };
     return { html: g(1950, 3000) + sunHTML(`${P}-sun`, 780, 520, 40), js: `tl.fromTo('#${P}-giant',{x:30},{x:-30,duration:${D},ease:'power1.inOut'},${T0});tl.fromTo('#${P}-sun',{x:-110},{x:110,duration:${D},ease:'power1.inOut'},${T0});` };
   },
+  quiz(P, T0, D, o) {
+    const opts = o.options || [['A', '1 MIL'], ['B', '100 MIL'], ['C', '1 MILHÃO'], ['D', '1 BILHÃO']];
+    const mode = o.mode || 'in', ans = o.answer || 'C';
+    const head = mode === 'answer' ? 'ACERTOU!' : 'QUANTAS TERRAS CABEM?';
+    const hcol = mode === 'answer' ? COL.mint : COL.ink;
+    const rows = opts.map(([l, t], i) => `<div id="${P}-r${i}" class="qrow" style="top:${400 + i * 170}px"><span class="qlet">${l}</span><span>${t}</span></div>`).join('');
+    const timer = mode === 'timer' ? `<div class="abs" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px;background:rgba(255,255,255,.18)"></div><div id="${P}-tm" class="abs" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px;background:linear-gradient(90deg,#FFB300,#FF4D5E);transform-origin:0 50%"></div>` : '';
+    let js = '';
+    if (mode === 'in') js = `tl.fromTo('#${P}-q-head',{opacity:0,y:-40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${T0});tl.fromTo('.qrow-${P}',{opacity:0,x:-140},{opacity:1,x:0,duration:0.32,ease:'power4.out',stagger:0.09},${r3(T0 + 0.08)});`;
+    if (mode === 'timer') js = `tl.fromTo('#${P}-tm',{scaleX:1},{scaleX:0,duration:${D},ease:'none'},${T0});`;
+    if (mode === 'answer') {
+      const ix = opts.findIndex(([l]) => l === ans);
+      js = opts.map((_, i) => i === ix ? `tl.fromTo('#${P}-r${i}',{scale:1},{scale:1.07,duration:0.3,ease:'back.out(2)'},${r3(T0 + 0.1)});` : `tl.fromTo('#${P}-r${i}',{opacity:1},{opacity:0.22,duration:0.25},${r3(T0 + 0.05)});`).join('') + `tl.fromTo('#${P}-q-head',{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.3,ease:'back.out(1.8)'},${T0});`;
+    }
+    const ixA = mode === 'answer' ? opts.findIndex(([l]) => l === ans) : -1;
+    const rowsFixed = rows.replace(/class="qrow"/g, `class="qrow qrow-${P}"`).replace(new RegExp(`(<div id="${P}-r${ixA}" class="qrow qrow-${P}")`), `$1 data-win="1"`);
+    const winCss = ixA >= 0 ? `<style>#${P}-r${ixA}{background:rgba(61,220,151,.22);border-color:${COL.mint}}</style>` : '';
+    return { html: `<div id="${P}-q-head" class="t" style="top:200px;font-size:${fit(head, 100)}px;color:${hcol}">${head}</div>${timer}${rowsFixed}${winCss}`, js };
+  },
   bigq(P, T0, D) {
     return { html: `<div id="${P}-q" class="t" style="top:430px;font-size:640px;color:${COL.amber}">?</div>`, js: `tl.fromTo('#${P}-q',{scale:0.35,opacity:0,rotation:-12},{scale:1,opacity:1,rotation:0,duration:0.4,ease:'back.out(1.8)'},${T0});` };
   },
@@ -405,7 +429,8 @@ window.__timelines["captions"] = tl;
 // ---------- index ----------
 {
   const hosts = beats.map((B) => `<div id="beat${B.i}" data-composition-id="beat${B.i}" data-composition-src="compositions/beat${B.i}.html" data-start="${B.G}" data-duration="${B.dur}" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>`);
-  const audios = beats.map((B) => `<audio id="voz${B.i}" src="${B.audio}" data-start="${B.G}" data-duration="${r3(B.audioDur)}" data-track-index="5" data-volume="1"></audio>`);
+  const sfxOn = fs.existsSync(path.join(ROOT, 'assets/sfx/sfx-mix.wav'));
+  const audios = (sfxOn ? [`<audio id="sfx" src="assets/sfx/sfx-mix.wav" data-start="0" data-duration="${TOTAL}" data-track-index="6" data-volume="0.9"></audio>`] : []).concat(beats.map((B) => `<audio id="voz${B.i}" src="${B.audio.replace('assets/voz/', 'assets/voz/proc/')}" data-start="${B.G}" data-duration="${r3(B.audioDur)}" data-track-index="5" data-volume="1"></audio>`));
   fs.writeFileSync(path.join(ROOT, 'index.html'), `<!doctype html>
 <html lang="pt-BR" data-resolution="portrait">
   <head>
