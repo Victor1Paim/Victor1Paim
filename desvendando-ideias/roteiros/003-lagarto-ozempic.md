@@ -1,6 +1,6 @@
 # 003 · O lagarto por trás do Ozempic
 
-Pilar: Saúde · Hook (tipo): _(a decidir; o dia 3 do plano pede "você aprendeu errado")_ · Pele: _(a decidir: plano diz Isométrico 2.5D, que ainda não cobre todos os planos)_ · Duração-alvo: 70–85 s · Criado em 2026-10-29
+Pilar: Saúde · Hook (tipo): história/consequência (escolha do usuário; o plano pedia "você aprendeu errado" no dia 3, a mudança fica anotada para o quadrado latino) · Pele: _(a decidir: plano diz Isométrico 2.5D, que ainda não cobre todos os planos)_ · Duração-alvo: 70–85 s · Criado em 2026-10-29
 Status: **rascunho** · Projeto: `../producoes/003-lagarto-ozempic/`
 
 ## Decisões (portões do fluxo)
@@ -8,9 +8,9 @@ Status: **rascunho** · Projeto: `../producoes/003-lagarto-ozempic/`
 | Portão | Escolha do usuário | Alternativas que ficaram de fora |
 |---|---|---|
 | 1. Tema e ângulo | **P29 · O remédio da moda veio do veneno de um lagarto** (29/10/2026; usuário respondeu "Tem 1") | Mito "queima gordura" (P31), injeção semanal (P32), Ozempic × Mounjaro (P33) e outros 6 temas de GLP-1; estalar dedos e demais mitos de saúde |
-| 2. Hook | _(pendente: 5 opções enviadas)_ | |
+| 2. Hook | **3 · "Em 1992, um médico foi estudar veneno de lagarto. E acabou mudando o tratamento do diabetes."** Primeiro quadro: "1992" digitado (typewriter) com o lagarto (29/10/2026) | 1 "lagarto ajudou a criar", 2 "veneno na história", 4 mito VENENO → INSPIRAÇÃO, 5 "meses sem comer" |
 | 3. Ordem das cenas | _(pendente)_ | |
-| 4. CTA | _(pendente: 5 opções enviadas)_ | |
+| 4. CTA | **2 · "Comenta: de qual outro remédio você quer saber a origem? Deixa o like e segue pra mais curiosidades."** + aviso fixo "Não use sem prescrição. Converse com seu médico." (29/10/2026) | 1 dúvida + like + seguir, 3 "conhecia essa história?", 4 "qual animal vai virar remédio", 5 dúvida sobre remédios |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
 | 6. Roteiro aprovado | _(pendente)_ | |
 | 7. Corte de teste | _(pendente)_ | |
