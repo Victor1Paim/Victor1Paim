@@ -12,6 +12,8 @@ Plano completo: [`plano-do-canal.md`](plano-do-canal.md). Preparação (VoiceStu
 
 Produção: [`producao/dicionario-de-movimento.md`](producao/dicionario-de-movimento.md) (movimentos e transições) e [`producao/fluxo-por-video.md`](producao/fluxo-por-video.md) (passo a passo, rascunho) e [`producao/ideias-de-teste.md`](producao/ideias-de-teste.md) (lote 1 de 10 vídeos de teste), [`producao/padrao-cadeia-problema-solucao.md`](producao/padrao-cadeia-problema-solucao.md) (comportamento de vídeos de explicação) e [`producao/regra-troca-a-cada-2s.md`](producao/regra-troca-a-cada-2s.md) (ritmo visual).
 
+Plano de 30 dias (adaptado do PDF de Shorts): [`plano-30-dias.md`](plano-30-dias.md) · análise do PDF: [`producao/analise-plano-shorts.md`](producao/analise-plano-shorts.md) · motor de produção: [`motor/README.md`](motor/README.md) · métricas: [`metricas/videos.csv`](metricas/videos.csv) · banco de pautas: [`pautas/banco.md`](pautas/banco.md).
+
 Direção de arte (análise do relatório do Manus e adaptação, com decisões pendentes): [`producao/direcao-de-arte.md`](producao/direcao-de-arte.md).
 
 Som e efeitos por cena: [`producao/som.md`](producao/som.md).

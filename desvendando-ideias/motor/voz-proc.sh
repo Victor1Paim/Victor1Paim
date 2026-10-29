@@ -1,7 +1,7 @@
 #!/bin/sh
 # Normaliza a voz de cada beat (alvo -13 LUFS, pico -1,5 dBTP) para assets/voz/proc/. A tocar no vídeo é a versão proc.
 set -e
-cd "$(dirname "$0")/.."
+cd "${1:-.}"   # pasta do vídeo (padrão: a atual)
 mkdir -p assets/voz/proc
 for f in assets/voz/beat*.wav; do
   n=$(basename "$f")

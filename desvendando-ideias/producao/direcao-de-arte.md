@@ -80,7 +80,7 @@ Mapa por pilar (sugestão, não decisão): engenharia/construção → Blueprint
 
 O relatório testa o mesmo trecho de 10 s em todas as linguagens. Para nós, o trecho **já existe**: o beat da "pegadinha" e do empacotamento do vídeo 001 (≈ 17 s de voz já gerada).
 
-1. Implementar `tema` no gerador (`scripts/build.mjs`): paleta, fundo, forma das placas e tipo de entrada, sem mexer em `shots.json`.
+1. Implementar `tema` no gerador (`motor/build.mjs`): paleta, fundo, forma das placas e tipo de entrada, sem mexer em `shots.json`.
 2. Renderizar o mesmo trecho em 2 ou 3 peles (2,5 min por render, custo zero).
 3. Comparar lado a lado: quadro 0, plano de maior densidade, quadro final; e o trecho em velocidade normal, **com e sem som**.
 4. Dois ou três observadores que não participaram respondem: "o que aconteceu?", "o que é o objeto?", "o que você lembra?". Pontuar de 1 a 5: reconhecimento, legibilidade, clareza, tempo de produção. Para fixar uma pele como base: ≥ 4/5 em reconhecimento e legibilidade.
@@ -99,12 +99,12 @@ O relatório testa o mesmo trecho de 10 s em todas as linguagens. Para nós, o t
 | Cores semânticas como regra do canal | **Não.** Cada pele tem a sua paleta (regra 1 acima) |
 | Validação nos previews de TikTok, Reels e Shorts | Pendente (só o usuário consegue abrir os apps) |
 
-Próximo passo: gerar o mesmo trecho nas três peles (e no Cosmos), comparar e só então escolher a pele-base de cada pilar. Código: `producoes/001-sol/scripts/build.mjs --tema`.
+Próximo passo: gerar o mesmo trecho nas três peles (e no Cosmos), comparar e só então escolher a pele-base de cada pilar. Código: `motor/build.mjs --tema`.
 
 ## 10. Resultado do teste de peles (29/10/2026)
 
 Trecho: beats 3 e 4 do vídeo 001 (a pegadinha e o empacotamento, 17,4 s, 12 planos), mesma voz, mesmos planos, mesmo roteiro; só a pele muda
-(`node scripts/build.mjs --tema <cosmos|brutal|blueprint|iso> --beats 3,4 --out ../001-sol-teste-<pele>`). Quadros lado a lado: `../producoes/comparacao-peles/comparacao-peles.png`.
+(`node ../../motor/build.mjs --tema <cosmos|brutal|blueprint|iso> --beats 3,4 --out ../001-sol-teste-<pele>` (na pasta do vídeo)). Quadros lado a lado: `../producoes/comparacao-peles/comparacao-peles.png`.
 Cada render levou 30–40 s e custo zero de API.
 
 | Pele | O que se vê | Pontos fortes | Pontos fracos | Custo de implementar |

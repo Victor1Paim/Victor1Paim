@@ -5,8 +5,9 @@ Roteiro, decisões e fatos: `../../roteiros/001-quantas-terras-cabem-no-sol.md`.
 ## Como reconstruir
 
 ```sh
-scripts/voz-proc.sh        # normaliza a voz de cada beat para assets/voz/proc/ (ffmpeg)
-node scripts/build.mjs     # gera index.html, compositions/*.html, PLANOS.md, build-out.json e o som do cronômetro (scripts/sfx.py)
+../../motor/voz-proc.sh    # normaliza a voz de cada beat para assets/voz/proc/ (ffmpeg)
+node ../../motor/build.mjs # gera index.html, compositions/*.html, PLANOS.md, build-out.json e os efeitos sonoros (motor/sfx.py)
+node ../../motor/checar.mjs --full   # confere tudo (inclui hyperframes check)
 npx hyperframes check      # lint + runtime + layout + contraste
 npx hyperframes snapshot --at 3.4,34.6   # quadros para olhar
 npx hyperframes render --quality draft -o renders/001-sol-rascunho.mp4   # ~2,5 min nesta máquina (sem GPU)
@@ -17,10 +18,10 @@ npx hyperframes render --quality draft -o renders/001-sol-rascunho.mp4   # ~2,5 
 | Arquivo | Papel |
 |---|---|
 | `shots.json` | **Os planos**: fala, tipo de plano, câmera, fundo e estilo (2D, 2,5D, 3D). Para mudar o vídeo, edite isto |
-| `scripts/build.mjs` | Receitas visuais por tipo de plano, tempos dos planos a partir da voz, legendas palavra a palavra, `index.html` |
-| `scripts/sfx.py` | Tique-taque de cronômetro, bipe e sino (síntese, sem arquivos externos) |
+| `../../motor/build.mjs` | Motor compartilhado: receitas visuais por tipo de plano, tempos dos planos a partir da voz, legendas palavra a palavra, `index.html` |
+| `../../motor/sfx.py` | Efeitos sonoros por cena (ver `../../producao/som.md`) |
 | `assets/voz/beat*.wav` | Voz crua (Gemini TTS, um arquivo por beat); `assets/voz/proc/` é a versão normalizada que toca no vídeo |
-| `assets/vendor/gsap.min.js` | GSAP local (o ambiente bloqueia CDNs) |
+| `assets/vendor/gsap.min.js` | Cópia do GSAP local (vem de `motor/vendor/`; o ambiente bloqueia CDNs) |
 | `assets/sfx/`, `renders/`, `.hyperframes/` | Gerados; fora do git (os renders de marco entram com `git add -f`) |
 
 ## Limites conhecidos

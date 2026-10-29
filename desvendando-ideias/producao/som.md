@@ -1,7 +1,7 @@
 # Som dos vídeos: efeitos por cena
 
 Feedback do usuário (29/10/2026) no vídeo 001: faltaram efeitos sonoros adaptados a cada cena: som de contagem nos números, cronômetro no quiz, som de objetos passando.
-O som agora é planejado **por tipo de plano**, automaticamente, a partir de `shots.json` (`producoes/001-sol/scripts/sfx.py`).
+O som agora é planejado **por tipo de plano**, automaticamente, a partir de `shots.json` (`motor/sfx.py`).
 
 ## Ferramentas
 
@@ -43,5 +43,5 @@ Foi medido com `ffmpeg ebur128`; ninguém ouviu o resultado ainda. O ajuste fino
 
 ## Para ajustar
 
-Ganhos por evento: `scripts/sfx.py` (campo `g=`). Rodar `python3 -I scripts/sfx.py` e `node scripts/build.mjs` e renderizar de novo.
+Ganhos por evento: `motor/sfx.py` (campo `g=`). Na pasta do vídeo: `python3 -I ../../motor/sfx.py .` (ou só `node ../../motor/build.mjs`, que chama o `sfx.py`) e renderizar de novo.
 Sem música por enquanto: a música é um portão à parte.

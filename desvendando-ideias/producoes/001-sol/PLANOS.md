@@ -1,4 +1,4 @@
-# Planos (gerado por scripts/build.mjs)
+# Planos (gerado por motor/build.mjs)
 
 Total: 73.189 s · 45 planos · avisos: 0
 

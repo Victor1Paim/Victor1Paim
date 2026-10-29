@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Trilha de efeitos sonoros do vídeo, planejada por tipo de plano (lê build-out.json).
 
-- Efeitos reais: biblioteca offline da skill media-use (assets/sfx-lib/, licença Pixabay) para whoosh, pop, impacto, ping, erro, sparkle, sino.
+- Efeitos reais: biblioteca offline da skill media-use (motor/sfx-lib/, licença Pixabay) para whoosh, pop, impacto, ping, erro, sparkle, sino.
 - Efeitos sintetizados (o que a biblioteca não tem): cronômetro (tique-taque), contagem de números (roleta de cliques), zíper de traço,
   líquido (água enchendo, gota, respingo), "plips" de empilhamento, subida e queda, baque.
 - Cada efeito nasce de algo que aparece na tela (regra do HyperFrames): o pico cai ~1 quadro depois da imagem.
@@ -9,14 +9,16 @@ Só biblioteca padrão + ffmpeg. Determinístico (semente fixa). Saída: assets/
 """
 import json, math, os, random, struct, subprocess, wave
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+import sys
+ROOT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.getcwd()   # pasta do vídeo
+MOTOR = os.path.dirname(os.path.abspath(__file__))
 SR = 48000
 info = json.load(open(os.path.join(ROOT, 'build-out.json')))
 shots, beats = info['shots'], info['beats']
 N = int((info['total'] + 0.6) * SR)
 BUF = [[0.0] * N, [0.0] * N]
 rng = random.Random(20261029)
-LIB = os.path.join(ROOT, 'assets/sfx-lib')
+LIB = os.path.join(MOTOR, 'sfx-lib')
 FRAME = 1 / 30
 COUNT = {}
 

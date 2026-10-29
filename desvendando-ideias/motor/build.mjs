@@ -6,11 +6,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
-const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const data = J('shots.json');
+const MOTOR = path.dirname(new URL(import.meta.url).pathname);            // motor compartilhado (esta pasta)
 const argv = process.argv.slice(2);
 const arg = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i + 1] : d; };
+const ROOT = path.resolve(arg('dir', process.cwd()));                      // pasta do vídeo (shots.json, assets/voz): padrão = pasta atual
+const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
+const data = J('shots.json');
 const THEME = arg('tema', 'cosmos');                                    // cosmos | brutal | blueprint | iso
 const ONLY = arg('beats', null) ? arg('beats').split(',').map(Number) : null;   // só estes beats (teste de pele)
 const OUT = arg('out', null) ? path.resolve(ROOT, arg('out')) : ROOT;   // pasta de saída (outro projeto)
@@ -94,11 +95,11 @@ beats.forEach((B) => B.shots.forEach((s) => {
   if (flag.includes('⚠')) warn++;
   report.push(`| ${s.P} | ${r3(B.G + s.start)} | ${s.dur}${flag} | ${s.st} | ${s.t} |`);
 }));
-if (FULL) fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por scripts/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
+if (FULL) fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por motor/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
 
 if (FULL) { const AN = ['pop', 'blur', 'slide', 'rise'];
   fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, beats: beats.map((B) => ({ i: B.i, G: B.G, dur: B.dur })), shots: beats.flatMap((B) => B.shots.map((s, idx) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur, cam: s.cam || [], o: s.o || {}, anims: ((s.o || {}).ov || []).map((_, i) => AN[(B.i + idx + i) % AN.length]) }))) }, null, 1)); }
-if (FULL) spawnSync('python3', ['-I', path.join(ROOT, 'scripts/sfx.py')], { cwd: ROOT, stdio: 'inherit' });
+if (FULL) spawnSync('python3', ['-I', path.join(MOTOR, 'sfx.py'), ROOT], { cwd: ROOT, stdio: 'inherit' });
 
 // ---------- visuais ----------
 const GRID = 'linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px) 0 0/60px 60px,';
@@ -543,9 +544,10 @@ window.__timelines["captions"] = tl;
 </html>
 `);
 }
+fs.mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true });
+fs.copyFileSync(path.join(MOTOR, 'vendor/gsap.min.js'), path.join(OUT, 'assets/vendor/gsap.min.js'));   // o ambiente bloqueia CDNs: GSAP local
 if (OUT !== ROOT) {
-  fs.mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true }); fs.mkdirSync(path.join(OUT, 'assets/voz/proc'), { recursive: true });
-  fs.copyFileSync(path.join(ROOT, 'assets/vendor/gsap.min.js'), path.join(OUT, 'assets/vendor/gsap.min.js'));
+  fs.mkdirSync(path.join(OUT, 'assets/voz/proc'), { recursive: true });
   beats.forEach((B) => { const f = B.audio.replace('assets/voz/', 'assets/voz/proc/'); fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f)); });
   for (const f of ['hyperframes.json', 'meta.json', 'package.json']) if (fs.existsSync(path.join(ROOT, f))) fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f));
 }
