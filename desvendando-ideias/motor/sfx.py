@@ -164,6 +164,8 @@ if quiz_in and guess:
 
 for s in shots:
     k, t0, D, cam, o, an = s['k'], s['start'], s['dur'], s['cam'], s['o'], s['anims']
+    if o.get('enter') == 'wipe': place(pitch(load('whoosh'), 1.2), t0 - 0.2, g=0.4, pan=-0.6, pan_to=0.6, tag='wipe')
+    elif o.get('enter') == 'mask': place(s_rise(0.35, 400, 1400), t0, g=0.22, tag='mascara')
     # câmera
     pp = pan_for(cam)
     if pp and ('panL' in cam or 'panR' in cam):
@@ -248,6 +250,15 @@ for s in shots:
         place(pitch(load('pop'), 0.8), t0 + 0.12, g=0.55, tag='pop'); place(s_rise(0.25, 300, 700), t0, g=0.2, tag='crescer')
     elif k == 'squares':
         plips(t0 + 0.05, 16, 0.03, g=0.2, f0=0.9, f1=1.4, base=650); place(load('pop'), t0 + 0.55, g=0.3, tag='pop')
+    # ---- receitas de texto e transições (receitas-texto.mjs, o.enter)
+    elif k == 'textSwap':
+        at = t0 + o.get('at', min(1.0, D * 0.4))
+        place(load('pop'), t0 + 0.05, g=0.35, tag='pop'); place(s_zip(0.25, 900, 2400), at - 0.3, g=0.25, tag='risco')
+        place(pitch(load('whoosh-short'), 1.2), at, g=0.4, pan=0.3, pan_to=-0.3, tag='troca'); place(load('ping'), at + 0.3, g=0.45, peak_at=at + 0.3 + FRAME, tag='troca')
+    elif k == 'typewriter':
+        n = len(str(o.get('text', ''))); dur = min(D * 0.75, n / o.get('cps', 14))
+        for c in range(n):
+            if str(o['text'])[c] != ' ': place(s_tick(1700 + 300 * (c % 3), 0.03, 0.6), t0 + 0.1 + dur * c / max(1, n), g=0.35, tag='digitacao')
     # ---- receitas de dinheiro (receitas-dinheiro.mjs): tempos iguais aos das animações
     elif k == 'wallet':
         place(pitch(load('whoosh-short'), 0.9), t0, g=0.3, tag='passagem')

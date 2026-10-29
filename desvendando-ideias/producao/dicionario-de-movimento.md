@@ -74,3 +74,31 @@ Receitas em Remotion 4 (`spring`, `interpolate`, `Easing`; o projeto `halftone/`
 - Mesma curva padrão (ease in-out) em tudo; overshoot só onde há número ou virada.
 - Tempo por tela entre 2 e 4 s (pesquisa); legenda palavra a palavra sempre ligada.
 - Tudo é código: nenhum movimento exige imagem gerada nem stock.
+
+## 7. No motor atual (HyperFrames + GSAP) · atualizado em 29/10/2026
+
+Referência: carrossel "Motion Dictionary" de @omatheusdaia (telas 2 a 7, salvas pelo usuário em 29/10/2026). As receitas acima eram para o Remotion; a produção hoje usa `motor/build.mjs` (HyperFrames + GSAP). Esta tabela diz onde cada movimento já existe e como pedir em `shots.json`.
+
+| Movimento | Estado | Como usar / onde está |
+|---|---|---|
+| Fade in | Pronto | Legenda por palavra; fontes e rótulos (`opacity` 0→1) |
+| Slide in | Pronto | Títulos `o.ov` (entrada `slide` em rodízio); etiqueta de preço entra deslizando |
+| Blur in | Pronto | Títulos `o.ov` (entrada `blur` em rodízio) |
+| Pop in | Pronto | Títulos `o.ov` (entrada `pop`); objetos das receitas (`back.out`) |
+| Scale up | Pronto | `note` com `shrink` (inverso), `cube`, `sun`, câmera `pullOut` |
+| Stagger | Pronto | `basket` (itens), `spherePile`, `squares`, opções do `quiz`, caixas do `carts` |
+| Ease in-out | Pronto | Padrão das câmeras (`power2.inOut`) |
+| Overshoot | Pronto | `back.out(1.6–1.8)` em pops, `balanca` inclinando, número batendo no valor |
+| Bounce | Pronto (uso raro) | Etiqueta do `lunch` (`elastic.out`); evitar em saúde e finanças |
+| Typewriter | **Novo** | `k: "typewriter"`, `o: {text, size, y, cps}` (`motor/receitas-texto.mjs`), com som de digitação |
+| Word reveal | Pronto | Legenda palavra a palavra (todas as peles) |
+| Text swap | **Novo** | `k: "textSwap"`, `o: {from: "MITO", to: "VERDADE", fromLabel, toLabel, at}`: a palavra velha é riscada, sobe e some; a nova entra por baixo. Base dos vídeos "você aprendeu errado" |
+| Draw-on | Pronto | `straightLine`, `slope`, contorno do `box` |
+| Morph | Falta | Precisa de interpolação de caminhos SVG (ex.: flubber); fazer quando um roteiro pedir |
+| Bar grow | Pronto | `barFill` (`grow`, `pct`, `growPct`, `empty` com `emptyLabel`) |
+| Mask reveal | **Novo** | Em qualquer plano: `o.enter: "mask"` (faixa horizontal abre e revela o conteúdo; o fundo já está lá) |
+| Wipe | **Novo** | Em qualquer plano: `o.enter: "wipe"`: uma faixa na cor de destaque da pele cobre o fim do plano anterior (mesmo beat) e sai revelando o novo, com som de passagem |
+| Punch zoom | Pronto | Câmera `punch`; punch extra no meio dos planos acima de 3 s |
+
+Regras: um movimento de destaque por plano (o resto é apoio); wipe só na mudança de assunto dentro de um beat, no máximo 2 ou 3 por vídeo; text swap no máximo 1 ou 2 por vídeo.
+

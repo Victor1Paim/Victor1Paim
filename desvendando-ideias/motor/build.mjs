@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import receitasDinheiro from './receitas-dinheiro.mjs';
+import receitasTexto from './receitas-texto.mjs';
 
 const MOTOR = path.dirname(new URL(import.meta.url).pathname);            // motor compartilhado (esta pasta)
 const argv = process.argv.slice(2);
@@ -449,7 +450,7 @@ const R = {
   },
 };
 
-Object.assign(R, receitasDinheiro({ COL, r3, px, fit }));   // carteira, nota, etiqueta, cesta, balança, linha do tempo, carrinhos, manchete, gráfico, lanche
+Object.assign(R, receitasDinheiro({ COL, r3, px, fit }), receitasTexto({ COL, r3, fit }));   // carteira, nota, etiqueta, cesta, balança, linha do tempo, carrinhos, manchete, gráfico, lanche
 
 // ---------- pele isométrica: esferas em camadas sobre um piso em losango ----------
 if (THEME === 'iso') {
@@ -484,6 +485,12 @@ beats.forEach((B) => {
     html.push(`<div id="${s.P}" class="clip shot" data-start="${s.start}" data-duration="${s.dur}" data-track-index="1"><div class="bg" style="background:${BG[s.bg]}"><div class="stars"></div></div><div id="${s.P}-cam" class="cam" data-layout-allow-overflow>${D > LONG ? `<div id="${s.P}-cam2" class="cam" data-layout-allow-overflow>${h}${ovHTML(s.P, o.ov)}</div>` : `${h}${ovHTML(s.P, o.ov)}`}</div></div>`);
     const extra = [];
     if (D > LONG) { const n = Math.ceil(D / LONG) - 1; for (let q = 1; q <= n; q++) { const at = r3(T0 + (D * q) / (n + 1)); extra.push(`tl.fromTo('#${s.P}-cam2',{scale:${(1 + 0.09 * (q - 1)).toFixed(2)}},{scale:${(1 + 0.09 * q).toFixed(2)},duration:0.22,ease:'power3.out'},${at});`); } }
+    const nx = B.shots[idx + 1], enter = o.enter, wipeOut = nx && (nx.o || {}).enter === 'wipe';
+    if (enter === 'mask') extra.push(`tl.fromTo('#${s.P}-cam',{clipPath:'inset(50% 0% 50% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:0.4,ease:'power3.out'},${T0});`);
+    if (enter === 'wipe' || wipeOut) html[html.length - 1] = html[html.length - 1].replace(/<\/div>$/, `<div id="${s.P}-wb" class="abs" style="left:0;top:0;width:1080px;height:1920px;background:${COL.amber};z-index:30"></div></div>`);
+    if (enter === 'wipe') extra.push(`tl.fromTo('#${s.P}-wb',{x:0},{x:1080,duration:0.22,ease:'power2.in'},${T0});`);
+    else if (wipeOut) extra.push(`tl.set('#${s.P}-wb',{x:-1080},0);`);
+    if (wipeOut) extra.push(`tl.fromTo('#${s.P}-wb',{x:-1080},{x:0,duration:0.2,ease:'power2.out'},${r3(T0 + D - 0.2)});`);
     js.push(`/* ${s.P} · ${s.st} · ${s.t} */`, j, ovJS(s.P, o.ov, T0, B.i + idx), camJS(s.P, T0, D, s.cam), ...extra);
   });
   const id = `beat${B.i}`;
