@@ -37,7 +37,7 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 24 | **Direção de arte:** regras fixas + pele por tema, sem estilo único. Peles a testar: neo-brutalismo, blueprint e isométrico 2.5D (Cosmos de referência). **Cores não são regra fixa:** cada pele tem a sua paleta (`producao/direcao-de-arte.md`) | Resposta do usuário (29/10) |
 | 25 | **Efeitos sonoros adaptados a cada cena** (contagem de números, cronômetro do quiz, objetos passando, líquido, impactos): planejados por tipo de plano em `motor/sfx.py`; ver `producao/som.md` | Resposta do usuário (29/10) |
 | 26 | **Motor reutilizável** (`motor/`): criar vídeo (`novo.mjs`), gerar cenas e som (`build.mjs`, `sfx.py`), checar (`checar.mjs`); planilha `metricas/videos.csv` e banco `pautas/banco.md` | Claude, para ampliar a produção (29/10) |
-| 27 | **Plano de 30 dias v2** adaptado do PDF de Shorts: experimento 5 pilares × 5 hooks em quadrado latino (25 vídeos) + 5 de confirmação; duração 70–85 s fixa; **escolhas pendentes** em `plano-30-dias.md` seção 9 | Proposta, aguardando o usuário |
+| 27 | **Plano de 30 dias v2** adaptado do PDF de Shorts: 5 pilares (conjunto B) × 5 hooks em quadrado latino (25 vídeos) + 5 de confirmação; duração 70–85 s fixa; **pele por pilar** (Blueprint, Neo-brutalismo, Isométrico 2.5D, Cosmos ×2); rotina de 7 por semana com sessão de pauta na segunda e corte na sexta. Detalhes e limites em `plano-30-dias.md` | Resposta do usuário (29/10) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa
