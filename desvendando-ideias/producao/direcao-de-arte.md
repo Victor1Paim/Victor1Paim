@@ -120,3 +120,21 @@ Leitura honesta: são **peles de CSS** (brutal, blueprint) contra uma pele que e
 1. Qual(is) pele(s) seguem para a segunda rodada (mais planos e outro assunto)?
 2. Avaliar com 2 ou 3 pessoas que não participaram, com e sem som (perguntas da seção 7).
 3. Escolher a pele-base provisória de cada pilar (seção 5, sugestão de mapa).
+
+## 11. Layout v2 e as 3 versões completas do vídeo 001 (29/10/2026)
+
+Pedido do usuário: recriar o vídeo atual com efeitos sonoros e novo layout, em 3 peles completas (Cosmos refinado, Neo-brutalismo, Blueprint) para escolher a do dia 1. **O próximo tema continua indefinido.**
+
+Mudanças de layout (motor, valem para todas as peles):
+- **Legenda** sobe para a faixa y ≈ 1140–1150 e fica com largura de 864 px (margem de 108 px de cada lado, dentro da área segura); fonte 56–68 px conforme a pele.
+- **Título** (`ov`) normalizado em y = 230 quando há um só; texto com fator de ajuste 0,88 para não vazar da largura.
+- **Grades** (`gaps`, `squares`) descem e encolhem um pouco (centro y = 740) para não encostar no título.
+- **Subtítulo do endcard** usa a cor de tinta da pele (ficava branco sobre creme no Neo-brutalismo).
+- Cada pele usa a própria paleta (`COL.*`); o vermelho do Neo-brutalismo foi escurecido (#B3001B) por contraste.
+- Todos os planos de `shots.json` foram conferidos quadro a quadro nas três peles (27 tipos de plano).
+
+Som: as três versões usam a mesma mistura de efeitos (`motor/sfx.py`, 355 efeitos, cronômetro no quiz, tiques na contagem, passagens entre planos).
+
+Arquivos: `producoes/001-sol/renders/001-sol-cosmos.mp4`, `…/001-sol-teste-brutal/renders/001-sol-brutal.mp4`, `…/001-sol-teste-blueprint/renders/001-sol-blueprint.mp4` (renders ignorados pelo git).
+
+Escolha do dia 1: **pendente (usuário)**.
