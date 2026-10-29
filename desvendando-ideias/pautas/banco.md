@@ -1,6 +1,6 @@
 # Banco de pautas (candidatas, **nenhuma decidida**)
 
-O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 11 candidatas; faltam cerca de 20 (**nenhuma ainda em Mistérios/história**), que saem das sessões de pauta
+O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 15 candidatas; faltam cerca de 20 (só 1 em Mistérios/história), que saem das sessões de pauta
 (portão 1 do fluxo: o Claude traz 3 ângulos por tema, você escolhe). Uma pauta só vira vídeo depois do portão 1.
 
 Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido (só sugestão) · risco.
@@ -18,6 +18,10 @@ Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido
 | P8 | "Usamos só 10% do cérebro": mito | Saúde | "10% → o cérebro todo" | 2 fontes de neurociência | Você aprendeu errado | Baixo | Candidata |
 | P9 | Ponte com "buraco" de propósito | Engenharia/Construção | "Se não tivesse, quebrava" | DNIT / norma de pontes | Consequência antes da causa | Baixo | Candidata |
 | P10 | Como uma geladeira funciona? (veio do relatório do Manus) | Engenharia/Construção | "Frio é calor removido" | 2 fontes (termodinâmica) | Pergunta com lacuna / cadeia problema→solução | Baixo | Candidata |
+| P11 | Inflação: a nota de R$ 100 encolheu | Finanças/Economia | "A nota é a mesma. O que ela compra, não." | Calculadora do Cidadão (Banco Central) + IPCA/IBGE | Contradição | Baixo | Candidata |
+| P12 | O imposto escondido na nota fiscal | Finanças/Economia | "Você paga imposto até no pão" | Lei 12.741/2012 (valor aproximado de tributos na nota) + Receita | Contradição | Médio (tom neutro; % varia por produto) | Candidata |
+| P13 | Pompeia: os "corpos" que não são corpos | Mistérios/história | "Isso não é um corpo. É o buraco que ele deixou" | Parque Arqueológico de Pompeia + estudo sobre os moldes de gesso (Fiorelli, 1863) | Você aprendeu errado | Baixo | Candidata |
+| P14 | Por que o céu é azul (e não violeta) | Curiosidades/ciência | "A luz que mais se espalha nem é a azul" | Física da dispersão de Rayleigh (2 fontes de universidade/agência) | Contradição | Baixo | Candidata |
 
 ## Como chegar a 30
 
