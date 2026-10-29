@@ -1,0 +1,52 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Inter',sans-serif;color:#F5F7FF}
+.shot{position:absolute;inset:0;overflow:hidden}
+.bg{position:absolute;inset:0}
+.stars{position:absolute;left:0;top:0;width:1px;height:1px;background:transparent;box-shadow:69px 1577px 0 0px rgba(255,255,255,0.28),222px 1044px 0 0px rgba(255,255,255,0.43),819px 1138px 0 0px rgba(255,255,255,0.48),383px 1246px 0 1px rgba(255,255,255,0.49),828px 632px 0 0px rgba(255,255,255,0.81),1063px 688px 0 0px rgba(255,255,255,0.27),53px 490px 0 0px rgba(255,255,255,0.62),969px 495px 0 0px rgba(255,255,255,0.74),343px 1239px 0 0px rgba(255,255,255,0.74),585px 1068px 0 0px rgba(255,255,255,0.77),954px 1120px 0 1px rgba(255,255,255,0.78),192px 1024px 0 0px rgba(255,255,255,0.47),841px 1574px 0 0px rgba(255,255,255,0.53),433px 1686px 0 0px rgba(255,255,255,0.54),963px 1162px 0 1px rgba(255,255,255,0.62),540px 1542px 0 0px rgba(255,255,255,0.30),199px 1366px 0 1px rgba(255,255,255,0.61),879px 821px 0 0px rgba(255,255,255,0.64),599px 744px 0 0px rgba(255,255,255,0.42),953px 1160px 0 0px rgba(255,255,255,0.69),1036px 1663px 0 0px rgba(255,255,255,0.62),546px 1542px 0 0px rgba(255,255,255,0.29),234px 390px 0 0px rgba(255,255,255,0.66),579px 645px 0 1px rgba(255,255,255,0.39),852px 408px 0 1px rgba(255,255,255,0.29),887px 178px 0 0px rgba(255,255,255,0.80),507px 208px 0 0px rgba(255,255,255,0.33),783px 1160px 0 0px rgba(255,255,255,0.81),767px 1656px 0 1px rgba(255,255,255,0.84),820px 793px 0 0px rgba(255,255,255,0.54),295px 1657px 0 0px rgba(255,255,255,0.53),177px 623px 0 0px rgba(255,255,255,0.39),41px 428px 0 0px rgba(255,255,255,0.83),83px 1837px 0 0px rgba(255,255,255,0.74),156px 76px 0 1px rgba(255,255,255,0.78),1052px 1392px 0 0px rgba(255,255,255,0.74),280px 1574px 0 0px rgba(255,255,255,0.73),1033px 723px 0 0px rgba(255,255,255,0.51),828px 1561px 0 0px rgba(255,255,255,0.32),432px 257px 0 0px rgba(255,255,255,0.59),740px 1450px 0 0px rgba(255,255,255,0.64),902px 463px 0 0px rgba(255,255,255,0.28),1032px 327px 0 0px rgba(255,255,255,0.49),421px 1328px 0 0px rgba(255,255,255,0.48),826px 1109px 0 0px rgba(255,255,255,0.37),708px 38px 0 1px rgba(255,255,255,0.41),82px 562px 0 0px rgba(255,255,255,0.53),790px 1732px 0 1px rgba(255,255,255,0.44),1076px 1709px 0 1px rgba(255,255,255,0.70),679px 82px 0 0px rgba(255,255,255,0.60),1057px 1349px 0 0px rgba(255,255,255,0.74),809px 1459px 0 0px rgba(255,255,255,0.38),340px 1409px 0 1px rgba(255,255,255,0.73),461px 1659px 0 0px rgba(255,255,255,0.50),757px 1856px 0 0px rgba(255,255,255,0.81),257px 1654px 0 0px rgba(255,255,255,0.45),1042px 894px 0 1px rgba(255,255,255,0.41),566px 1537px 0 1px rgba(255,255,255,0.60),30px 1098px 0 0px rgba(255,255,255,0.80),129px 1377px 0 0px rgba(255,255,255,0.29),697px 1878px 0 0px rgba(255,255,255,0.57),350px 1469px 0 0px rgba(255,255,255,0.80),1052px 163px 0 0px rgba(255,255,255,0.66),605px 259px 0 0px rgba(255,255,255,0.74),146px 227px 0 0px rgba(255,255,255,0.67),459px 1029px 0 0px rgba(255,255,255,0.26),42px 1750px 0 0px rgba(255,255,255,0.64),977px 1509px 0 1px rgba(255,255,255,0.70),1019px 1684px 0 0px rgba(255,255,255,0.46),370px 219px 0 0px rgba(255,255,255,0.74)}
+.cam{position:absolute;inset:0;transform-origin:50% 38%}
+.sun{position:absolute;border-radius:50%;background:radial-gradient(circle at 38% 34%,#FFE08A 0%,#FFB300 32%,#FF6A00 72%,#C23B00 100%);box-shadow:0 0 140px 50px rgba(255,140,0,.40)}
+.suntex{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(255,255,255,0),rgba(255,240,200,.22) 18%,rgba(255,255,255,0) 36%,rgba(140,30,0,.28) 58%,rgba(255,255,255,0) 80%)}
+.earth{position:absolute;border-radius:50%;background:radial-gradient(circle at 62% 56%,#3DDC97 0 12%,transparent 13%),radial-gradient(circle at 30% 66%,#3DDC97 0 9%,transparent 10%),radial-gradient(circle at 36% 30%,#9ADBFF 0%,#2E8BFF 42%,#0A3C95 100%);box-shadow:0 0 60px 10px rgba(46,139,255,.35)}
+.t{position:absolute;left:0;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;line-height:1;color:#F5F7FF;white-space:nowrap;text-shadow:0 6px 28px rgba(0,0,0,.55)}
+.ts{font-family:'Inter',sans-serif;font-weight:700}
+.abs{position:absolute}
+.pill{display:inline-flex;align-items:center;gap:14px;background:#fff;color:#111;font-family:'Archivo Black',sans-serif;font-size:38px;padding:12px 26px;border-radius:40px;border:4px solid #111;text-shadow:none;box-shadow:0 6px 0 rgba(0,0,0,.35)}.pill i{width:20px;height:20px;border-radius:50%;display:inline-block}
+.tag{display:inline-block;font-family:'Archivo Black',sans-serif;color:#FFD23F;transform:rotate(-5deg);text-shadow:0 0 6px #000,4px 4px 0 #111,-4px -4px 0 #111,4px -4px 0 #111,-4px 4px 0 #111,0 7px 0 #111}
+.obj{filter:drop-shadow(0 12px 26px rgba(0,0,0,.45))}
+.sqb{background:linear-gradient(180deg,#5AA2FF,#2E8BFF)}
+.sqr{background:linear-gradient(135deg,#5AA2FF,#2E8BFF);border:3px solid #7CC8FF;box-sizing:border-box}
+.trk{background:rgba(255,255,255,.18)}
+.qrow{position:absolute;left:110px;width:860px;height:140px;border-radius:28px;background:rgba(255,255,255,.09);border:4px solid rgba(255,255,255,.35);display:flex;align-items:center;gap:30px;padding:0 36px;box-sizing:border-box;font-family:'Archivo Black',sans-serif;font-size:58px;color:#F5F7FF}
+.qlet{width:86px;height:86px;border-radius:50%;background:#FFB300;color:#101426;display:flex;align-items:center;justify-content:center;font-size:54px;flex:none}
+.ball{position:absolute;border-radius:50%;background:radial-gradient(circle at 36% 30%,#FFA552 0%,#E8731A 45%,#8A3A07 100%)}
+.pile{position:absolute;border-radius:50%;background:radial-gradient(circle at 36% 30%,#9ADBFF 0%,#2E8BFF 45%,#0A3C95 100%)}
+.p3d{position:absolute;left:0;top:0;width:1080px;height:1920px;perspective:1600px}
+.cube{position:absolute;width:360px;height:360px;left:360px;top:500px;transform-style:preserve-3d}
+.face{position:absolute;width:360px;height:360px;border:6px solid #FFB300;background:rgba(255,179,0,.16);box-sizing:border-box;backface-visibility:visible}
+.cube.blue .face{border-color:#2E8BFF;background:rgba(46,139,255,.24)}
+.f1{transform:rotateY(0deg) translateZ(180px)}.f2{transform:rotateY(90deg) translateZ(180px)}.f3{transform:rotateY(180deg) translateZ(180px)}
+.f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
+</style>
+<div id="root" data-composition-id="beat5" data-width="1080" data-height="1920">
+<div id="b5s1" class="clip shot" data-start="0" data-duration="2.526" data-track-index="1"></div>
+<div id="b5s2" class="clip shot" data-start="2.526" data-duration="3.917" data-track-index="1"><div id="b5s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>TONELADAS</span></div></div>
+<div id="b5s3" class="clip shot" data-start="6.443" data-duration="3.59" data-track-index="1"><div id="b5s3-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>PAREDES ABREM</span></div><div id="b5s3-ov1" class="t" style="top:300px"><span class="tag" style="font-size:90px">TRIÂNGULO</span></div></div>
+<div id="b5s4" class="clip shot" data-start="10.033" data-duration="4.909" data-track-index="1"></div>
+<div id="b5s5" class="clip shot" data-start="14.942" data-duration="1.825" data-track-index="1"><div id="b5s5-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TESOURAS</span></div></div>
+</div>
+<script>
+const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+const tl = gsap.timeline({ paused: true });
+/* b5s1 · 3D · Mas tanta madeira, com milhares de telhas, */
+/* b5s2 · 3D · pesa toneladas. Apoiado só nas paredes, o telhado enverga */
+tl.fromTo('#b5s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},2.576);
+/* b5s3 · 3D · e empurra as paredes pra fora. A solução é o triângulo, */
+tl.fromTo('#b5s3-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},6.493);tl.fromTo('#b5s3-ov1',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},8.438);
+/* b5s4 · 3D · a forma que não deforma: a barra de baixo segura as duas pernas que querem abrir. */
+/* b5s5 · 3D · São as tesouras. */
+tl.fromTo('#b5s5-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},14.992);
+window.__timelines = window.__timelines || {};
+window.__timelines["beat5"] = tl;
+</script>
+</template>

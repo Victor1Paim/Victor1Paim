@@ -20,6 +20,7 @@ const ONLY = arg('beats', null) ? arg('beats').split(',').map(Number) : null;   
 const OUT = arg('out', null) ? path.resolve(ROOT, arg('out')) : ROOT;   // pasta de saída (outro projeto)
 const FULL = !ONLY;                                                      // vídeo inteiro (na pasta do vídeo ou em --out): gera PLANOS, build-out e som
 const r3 = (n) => Math.round(n * 1000) / 1000;
+const MODE3D = data.modo === '3d';                                     // cena 3D única (motor/3d/cena.js); planos só levam sobreposições
 const LONG = 3.0;                                                        // regra: um plano dura 2–3 s; acima de 3 s recebe um punch extra no meio
 
 // ---------- tempos da voz ----------
@@ -87,6 +88,10 @@ data.beats.forEach((b, i) => {
   const phr = shots.slice();
   const vis = shots.filter((s, k) => !(s.cont && k > 0));
   vis.forEach((s, n) => { const nx = vis[n + 1]; s.dur = r3((nx ? nx.start : speechEnd) - s.start); s.P = `b${i}s${n + 1}`; s.vt = phr.filter((x) => x === s || (x.cont && x.start >= s.start && x.start < s.start + s.dur - 1e-6)).map((x) => x.t).join(' '); });
+  // frase em continuação que traz título (o.ov) ou som (o.sfx) próprios: entra no plano visual com atraso igual ao início da frase
+  phr.forEach((x) => { if (!x.cont || !x.o) return; const v = [...vis].reverse().find((y) => y.start <= x.start + 1e-6); if (!v || v === x) return; const dt = r3(x.start - v.start); v.o = { ...(v.o || {}) };
+    if (x.o.ov) v.o.ov = [...(v.o.ov || []), ...x.o.ov.map((q) => ({ ...q, at: dt }))];
+    if (x.o.sfx) v.o.sfx = [...(v.o.sfx || []), ...x.o.sfx.map((q) => { const [nm, d0] = (q + '@0').split('@'); return `${nm}@${r3(dt + parseFloat(d0))}`; })]; });
   shots.length = 0; shots.push(...vis);
   let at = speechEnd;
   silents.forEach((s, q) => { s.start = r3(at); s.end = r3(at + s.dur); at += s.dur; s.P = `b${i}s${shots.length + q + 1}`; });
@@ -207,6 +212,8 @@ const COMMON_CSS = `
 .t{position:absolute;left:0;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;line-height:1;color:#F5F7FF;white-space:nowrap;text-shadow:0 6px 28px rgba(0,0,0,.55)}
 .ts{font-family:'Inter',sans-serif;font-weight:700}
 .abs{position:absolute}
+.pill{display:inline-flex;align-items:center;gap:14px;background:#fff;color:#111;font-family:'Archivo Black',sans-serif;font-size:38px;padding:12px 26px;border-radius:40px;border:4px solid #111;text-shadow:none;box-shadow:0 6px 0 rgba(0,0,0,.35)}.pill i{width:20px;height:20px;border-radius:50%;display:inline-block}
+.tag{display:inline-block;font-family:'Archivo Black',sans-serif;color:#FFD23F;transform:rotate(-5deg);text-shadow:0 0 6px #000,4px 4px 0 #111,-4px -4px 0 #111,4px -4px 0 #111,-4px 4px 0 #111,0 7px 0 #111}
 .obj{filter:drop-shadow(0 12px 26px rgba(0,0,0,.45))}
 .sqb{background:linear-gradient(180deg,#5AA2FF,#2E8BFF)}
 .sqr{background:linear-gradient(135deg,#5AA2FF,#2E8BFF);border:3px solid #7CC8FF;box-sizing:border-box}
@@ -245,11 +252,14 @@ function camJS(P, T0, D, list) {
 
 const ENTR = ['pop', 'blur', 'slide', 'rise'];
 function ovHTML(P, list) {
-  return (list || []).map((o, i) => `<div id="${P}-ov${i}" class="t" style="top:${(list.length === 1 && o.y >= 180 && o.y <= 340) ? 230 : o.y}px;font-size:${fit(o.text, o.size)}px;color:${COL[o.color] || COL.ink}">${o.text}</div>`).join('');
+  return (list || []).map((o, i) => o.style === 'pill' ? `<div id="${P}-ov${i}" class="t" style="top:${o.y}px"><span class="pill"><i style="background:${COL[o.color] || '#E53935'}"></i>${o.text}</span></div>`
+    : o.style === 'tag' ? `<div id="${P}-ov${i}" class="t" style="top:${o.y}px"><span class="tag" style="font-size:${fit(o.text, o.size || 78)}px">${o.text}</span></div>` : `<div id="${P}-ov${i}" class="t" style="top:${(list.length === 1 && o.y >= 180 && o.y <= 340) ? 230 : o.y}px;font-size:${fit(o.text, o.size)}px;color:${COL[o.color] || COL.ink}">${o.text}</div>`).join('');
 }
 function ovJS(P, list, T0, idx) {
-  return (list || []).map((o, i) => {
-    const a = ENTR[(idx + i) % ENTR.length], id = `#${P}-ov${i}`, t = r3(T0 + 0.05 + i * 0.08);
+  // título que entra depois (o.at) esconde os anteriores na mesma altura
+  const hide = (list || []).map((o, i) => o.at != null ? (list || []).slice(0, i).map((q, j) => q.y === o.y ? `tl.to('#${P}-ov${j}',{opacity:0,duration:0.08},${r3(T0 + o.at)});` : '').join('') : '').join('');
+  return hide + (list || []).map((o, i) => {
+    const a = ENTR[(idx + i) % ENTR.length], id = `#${P}-ov${i}`, t = r3(T0 + 0.05 + (o.at != null ? o.at : i * 0.08));
     if (a === 'pop') return `tl.fromTo('${id}',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},${t});`;
     if (a === 'blur') return `tl.fromTo('${id}',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},${t});`;
     if (a === 'slide') return `tl.fromTo('${id}',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},${t});`;
@@ -483,6 +493,12 @@ fs.mkdirSync(path.join(OUT, 'compositions'), { recursive: true });
 beats.forEach((B) => {
   const html = [], js = [];
   B.shots.forEach((s, idx) => {
+    if (MODE3D) {
+      const o = s.o || {};
+      html.push(`<div id="${s.P}" class="clip shot" data-start="${s.start}" data-duration="${s.dur}" data-track-index="1">${ovHTML(s.P, o.ov)}</div>`);
+      js.push(`/* ${s.P} · 3D · ${s.vt || s.t} */`, ovJS(s.P, o.ov, s.start, B.i + idx));
+      return;
+    }
     const rec = R[s.k];
     if (!rec) throw new Error('tipo de plano desconhecido: ' + s.k);
     const o = s.o || {}, T0 = s.start, D = s.dur;
@@ -518,7 +534,14 @@ window.__timelines["${id}"] = tl;
 // ---------- legendas ----------
 {
   const groups = [], js = [];
-  beats.forEach((B) => B.phr.forEach((s, k) => {
+  const PALAVRA = data.legenda === 'palavra', DEST = new Set((data.destaques || []).map((w) => w.toLowerCase()));
+  const norm = (w) => w.toLowerCase().replace(/[^a-zà-ú0-9-]/gi, '');
+  if (PALAVRA) beats.forEach((B) => B.words.forEach((w, i) => {
+    const nx = B.words[i + 1], a = r3(B.G + w.s), b = r3(B.G + (nx ? nx.s : Math.min(B.audioDur, w.e + 0.4))), id = `cw-${B.i}-${i}`;
+    groups.push(`<div id="${id}" class="cw${DEST.has(norm(w.w)) ? ' dest' : ''}">${w.w.replace(/[.,:;!?]+$/, '')}</div>`);
+    js.push(`tl.fromTo('#${id}',{opacity:0,scale:0.72},{opacity:1,scale:1,duration:0.09,ease:'back.out(2.4)'},${a});tl.set('#${id}',{opacity:0},${b});`);
+  }));
+  if (!PALAVRA) beats.forEach((B) => B.phr.forEach((s, k) => {
     const gid = `cg-${s.CP}`, a = r3(B.G + s.start), d = r3(s.pdur);
     const ws = B.words.filter((w) => w.pi === k);
     groups.push(`<div id="${gid}" class="clip cgh" data-start="${a}" data-duration="${d}" data-track-index="1"><div id="${gid}-g" class="cg">${ws.map((w, i) => `<span id="${gid}-w${i}" class="w">${w.w}</span>`).join(' ')}</div></div>`);
@@ -535,6 +558,8 @@ window.__timelines["${id}"] = tl;
 .cgh{position:absolute;inset:0}
 ${THEMES[THEME].cap}
 .w{display:inline-block}
+.cw{position:absolute;left:0;top:1250px;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:104px;line-height:1;color:#fff;opacity:0;text-shadow:0 0 10px #000,5px 5px 0 #111,-5px -5px 0 #111,5px -5px 0 #111,-5px 5px 0 #111,0 8px 0 #111}
+.cw.dest{color:#FFD23F}
 </style>
 <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
 ${groups.join('\n')}
@@ -547,6 +572,24 @@ window.__timelines["captions"] = tl;
 </script>
 </template>
 `);
+}
+
+// ---------- cena 3D: o estado muda a cada frase; a câmera, a cada plano visual (2–3 s) ----------
+function shots3d() {
+  const fim = (st) => Object.fromEntries(Object.entries(st || {}).map(([k, v]) => [k, Array.isArray(v) && typeof v[0] === 'number' ? v[1] : v]));
+  const out = []; let prev = {};
+  beats.forEach((B) => {
+    const items = [...B.phr.map((x) => ({ x, start: x.start, dur: x.pdur })), ...B.shots.filter((x) => x.silent).map((x) => ({ x, start: x.start, dur: x.dur }))];
+    items.forEach(({ x, start, dur }) => {
+      const v = [...B.shots].filter((y) => y.start <= start + 1e-6).pop() || B.shots[0], vo = v.o || {};
+      const st = x.o && x.o.st ? x.o.st : fim(prev);
+      // frase que muda de dentro para fora da casa (corte) leva a própria câmera
+      const own = x !== v && x.o && x.o.cam && ((st.cut || 0) !== ((vo.st || {}).cut || 0));
+      out.push(own ? { start: r3(B.G + start), dur: r3(dur), o: { st, cam: x.o.cam } } : { start: r3(B.G + start), dur: r3(dur), o: { st, cam: vo.cam }, camStart: r3(B.G + v.start), camDur: v.dur });
+      prev = st;
+    });
+  });
+  return out;
 }
 
 // ---------- index ----------
@@ -564,10 +607,12 @@ window.__timelines["captions"] = tl;
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #04060f; }
       #captions { z-index: 20; }
+      #c3d { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; z-index: 0; }
     </style>
   </head>
   <body>
     <div id="root" data-composition-id="main" data-start="0" data-duration="${TOTAL}" data-width="1080" data-height="1920">
+      ${MODE3D ? '<canvas id="c3d" width="1080" height="1920"></canvas>' : ''}
       ${hosts.join('\n      ')}
       <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="${TOTAL}" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920"></div>
       ${audios.join('\n      ')}
@@ -576,13 +621,21 @@ window.__timelines["captions"] = tl;
       const tl = gsap.timeline({ paused: true });
       window.__timelines["main"] = tl;
       tl.seek(0);
-    </script>
+    </script>${MODE3D ? `
+    <script type="module">
+      import { criarCena } from './assets/vendor/cena3d.js';
+      const shots = ${JSON.stringify(shots3d())};
+      const { renderAt } = criarCena(document.getElementById('c3d'), shots);
+      window.addEventListener('hf-seek', (e) => renderAt(e.detail.time));
+      renderAt(0);
+    </script>` : ''}
   </body>
 </html>
 `);
 }
 fs.mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true });
 fs.copyFileSync(path.join(MOTOR, 'vendor/gsap.min.js'), path.join(OUT, 'assets/vendor/gsap.min.js'));   // o ambiente bloqueia CDNs: GSAP local
+if (MODE3D) { fs.copyFileSync(path.join(MOTOR, 'vendor/three.module.js'), path.join(OUT, 'assets/vendor/three.module.js')); fs.copyFileSync(path.join(MOTOR, '3d/cena.js'), path.join(OUT, 'assets/vendor/cena3d.js')); }
 if (OUT !== ROOT) {
   fs.mkdirSync(path.join(OUT, 'assets/voz/proc'), { recursive: true });
   beats.forEach((B) => { const f = B.audio.replace('assets/voz/', 'assets/voz/proc/'); fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f)); });

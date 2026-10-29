@@ -1,0 +1,1899 @@
+{
+ "total": 156.96,
+ "beats": [
+  {
+   "i": 0,
+   "G": 0,
+   "dur": 10.274
+  },
+  {
+   "i": 1,
+   "G": 10.274,
+   "dur": 11.097
+  },
+  {
+   "i": 2,
+   "G": 21.371,
+   "dur": 18.129
+  },
+  {
+   "i": 3,
+   "G": 39.5,
+   "dur": 10.127
+  },
+  {
+   "i": 4,
+   "G": 49.627,
+   "dur": 12.495
+  },
+  {
+   "i": 5,
+   "G": 62.122,
+   "dur": 16.767
+  },
+  {
+   "i": 6,
+   "G": 78.889,
+   "dur": 8.632
+  },
+  {
+   "i": 7,
+   "G": 87.521,
+   "dur": 16.228
+  },
+  {
+   "i": 8,
+   "G": 103.749,
+   "dur": 12.303
+  },
+  {
+   "i": 9,
+   "G": 116.052,
+   "dur": 15.763
+  },
+  {
+   "i": 10,
+   "G": 131.815,
+   "dur": 14.17
+  },
+  {
+   "i": 11,
+   "G": 145.985,
+   "dur": 10.975
+  }
+ ],
+ "shots": [
+  {
+   "id": "b0s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 0,
+   "dur": 4.173,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {},
+    "sfx": [
+     "whoosh",
+     "pop@1.82"
+    ],
+    "ov": [
+     {
+      "text": "LAJE DE CONCRETO",
+      "style": "pill",
+      "color": "blue",
+      "y": 330,
+      "at": 1.52
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b0s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 4.173,
+   "dur": 2.895,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "puddles": [
+      0,
+      0.5
+     ],
+     "pose": "umbrella"
+    },
+    "sfx": [
+     "agua@1.602"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b0s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 7.068,
+   "dur": 3.206,
+   "cam": [],
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "puddles": 1,
+     "crack": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TRINCA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     },
+     {
+      "text": "GOTEIRA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330,
+      "at": 1.297
+     }
+    ],
+    "sfx": [
+     "racha@0.2",
+     "pinga@1.497",
+     "pinga@2.297"
+    ]
+   },
+   "anims": [
+    "slide",
+    "rise"
+   ]
+  },
+  {
+   "id": "b1s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 10.274,
+   "dur": 2.422,
+   "cam": [],
+   "o": {
+    "cam": "lado",
+    "st": {
+     "slab": 1,
+     "slabTilt": [
+      0,
+      1
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "whoosh"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b1s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 12.696,
+   "dur": 2.033,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "rain": 1
+    },
+    "sfx": [
+     "agua"
+    ],
+    "ov": [
+     {
+      "text": "UMA PEÇA SÓ",
+      "style": "pill",
+      "color": "blue",
+      "y": 330,
+      "at": 0.7
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b1s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 14.729,
+   "dur": 3.13,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "slabExpand": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "ESTICA",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     },
+     {
+      "text": "ENCOLHE",
+      "style": "pill",
+      "color": "blue",
+      "y": 330,
+      "at": 1.572
+     }
+    ],
+    "sfx": [
+     "calor"
+    ]
+   },
+   "anims": [
+    "rise",
+    "pop"
+   ]
+  },
+  {
+   "id": "b1s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 17.859,
+   "dur": 3.512,
+   "cam": [],
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "crack": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "racha@0.5",
+     "pinga@2.123"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 21.371,
+   "dur": 2.025,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 23.396,
+   "dur": 2.649,
+   "cam": [],
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "build": [
+      0,
+      1,
+      "lin"
+     ],
+     "overlap": 0
+    },
+    "sfx": [
+     "telhas"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b2s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 26.045,
+   "dur": 2.772,
+   "cam": [],
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "overlap": 0
+    },
+    "ov": [
+     {
+      "text": "TELHAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90,
+      "at": 1.5
+     }
+    ],
+    "sfx": [
+     "pop@1.5"
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b2s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 28.817,
+   "dur": 3.316,
+   "cam": [],
+   "o": {
+    "cam": "telhaMuitoPerto",
+    "st": {
+     "roof": 1,
+     "overlap": 0,
+     "rain": 1,
+     "gapDrops": 1
+    },
+    "ov": [
+     {
+      "text": "FRESTAS",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b2s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 32.133,
+   "dur": 3.106,
+   "cam": [],
+   "o": {
+    "cam": "telhaMuitoPerto",
+    "st": {
+     "roof": 1,
+     "overlap": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TELHA SOBRE TELHA",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "telhas"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b2s6",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 35.239,
+   "dur": 4.261,
+   "cam": [],
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "rain": 1,
+     "flowDrops": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 39.5,
+   "dur": 2.074,
+   "cam": [],
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1,
+     "angle": [
+      17,
+      6
+     ]
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b3s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 41.574,
+   "dur": 5.809,
+   "cam": [],
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "roof": 1,
+     "angle": 6,
+     "rain": 1,
+     "pool": 1
+    },
+    "ov": [
+     {
+      "text": "ÁGUA ACUMULA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     },
+     {
+      "text": "30%",
+      "style": "tag",
+      "y": 300,
+      "size": 150,
+      "at": 1.985
+     }
+    ]
+   },
+   "anims": [
+    "pop",
+    "blur"
+   ]
+  },
+  {
+   "id": "b3s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 47.383,
+   "dur": 2.244,
+   "cam": [],
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1
+    },
+    "ov": [
+     {
+      "text": "SOBE 30 CM A CADA 1 M",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b4s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 49.627,
+   "dur": 3.649,
+   "cam": [],
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "roof": 1
+    },
+    "ov": [
+     {
+      "text": "TELHA NÃO FLUTUA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "madeira@1.572"
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b4s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 53.276,
+   "dur": 2.046,
+   "cam": [],
+   "o": {
+    "cam": "topo",
+    "st": {
+     "ripas": 1,
+     "roof": 1,
+     "build": [
+      0,
+      0.6
+     ]
+    },
+    "sfx": [
+     "telhas@0.4"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b4s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 55.322,
+   "dur": 5.259,
+   "cam": [],
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "ripas": 1
+    },
+    "ov": [
+     {
+      "text": "RIPAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ],
+    "sfx": [
+     "madeira@1.257"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b4s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 60.581,
+   "dur": 1.541,
+   "cam": [],
+   "o": {
+    "cam": "lado",
+    "st": {
+     "ripas": 1,
+     "caibros": 1
+    },
+    "ov": [
+     {
+      "text": "CAIBROS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
+  },
+  {
+   "id": "b5s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 62.122,
+   "dur": 2.526,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "ripas": 1,
+     "caibros": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 64.648,
+   "dur": 3.917,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "weight": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TONELADAS",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "peso@0.3",
+     "peso@1.862"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b5s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 68.565,
+   "dur": 3.59,
+   "cam": [],
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "weight": 1,
+     "sag": [
+      0.7,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "PAREDES ABREM",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     },
+     {
+      "text": "TRIÂNGULO",
+      "style": "tag",
+      "y": 300,
+      "size": 90,
+      "at": 1.945
+     }
+    ],
+    "sfx": [
+     "madeira@1.945"
+    ]
+   },
+   "anims": [
+    "rise",
+    "pop"
+   ]
+  },
+  {
+   "id": "b5s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 72.155,
+   "dur": 4.909,
+   "cam": [],
+   "o": {
+    "cam": "frente",
+    "st": {
+     "tesouras": 1,
+     "weight": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b5s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 77.064,
+   "dur": 1.825,
+   "cam": [],
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "tesouras": 1,
+     "caibros": 1,
+     "ripas": 1
+    },
+    "ov": [
+     {
+      "text": "TESOURAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b6s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 78.889,
+   "dur": 3.138,
+   "cam": [],
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "ridgeGap": 1,
+     "tesouras": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b6s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 82.027,
+   "dur": 4.231,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      2.5,
+      6,
+      3.4
+     ],
+     "b": [
+      1.4,
+      5.8,
+      3.8
+     ],
+     "l": [
+      0,
+      3.9,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "ridgeGap": 1,
+     "rain": 1
+    },
+    "ov": [
+     {
+      "text": "FRESTA ABERTA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "telhas@1.246"
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
+  },
+  {
+   "id": "b6s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 86.258,
+   "dur": 1.263,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55
+    },
+    "ov": [
+     {
+      "text": "CUMEEIRA",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b7s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 87.521,
+   "dur": 2.39,
+   "cam": [],
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0,
+     "rain": 1,
+     "flowDrops": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b7s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 89.911,
+   "dur": 2.178,
+   "cam": [],
+   "o": {
+    "cam": "beiral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0,
+     "rain": 1,
+     "wallRun": 1,
+     "wallWet": [
+      0,
+      1
+     ],
+     "pose": "umbrella"
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b7s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 92.089,
+   "dur": 2.629,
+   "cam": [],
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": [
+      0,
+      0.7
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "whoosh"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b7s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 94.718,
+   "dur": 2.225,
+   "cam": [],
+   "o": {
+    "cam": "beiral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.7,
+     "rain": 1,
+     "eaveDrops": 1
+    },
+    "ov": [
+     {
+      "text": "BEIRAL",
+      "style": "tag",
+      "y": 300,
+      "size": 90,
+      "at": 0.919
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b7s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 96.943,
+   "dur": 3.757,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      6.8,
+      3,
+      6.8
+     ],
+     "b": [
+      7.4,
+      2.8,
+      6
+     ],
+     "l": [
+      2.5,
+      2.4,
+      2.6
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": [
+      0,
+      1
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "metal@0.5"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b7s6",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 100.7,
+   "dur": 2.181,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      6.8,
+      3,
+      6.8
+     ],
+     "b": [
+      7.4,
+      2.8,
+      6
+     ],
+     "l": [
+      2.5,
+      2.4,
+      2.6
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "rain": 1
+    },
+    "sfx": [
+     "agua"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b7s7",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 102.881,
+   "dur": 0.868,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1
+    },
+    "ov": [
+     {
+      "text": "CALHA",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b8s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 103.749,
+   "dur": 2.415,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1
+    },
+    "ov": [
+     {
+      "text": "PAREDE MAIS ALTA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b8s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 106.164,
+   "dur": 3.07,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rain": 1,
+     "neighborRun": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b8s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 109.234,
+   "dur": 2.58,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "metal@0.3"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b8s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 111.814,
+   "dur": 2.915,
+   "cam": [],
+   "o": {
+    "cam": "rufo",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b8s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 114.729,
+   "dur": 1.323,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": 1
+    },
+    "ov": [
+     {
+      "text": "RUFO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b9s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 116.052,
+   "dur": 2.016,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "rain": 1,
+     "wind": 1,
+     "night": 0.45
+    },
+    "ov": [
+     {
+      "text": "CHUVA DE LADO",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "vento"
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b9s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 118.068,
+   "dur": 4.717,
+   "cam": [],
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "rain": 1,
+     "wind": 1,
+     "night": 0.45,
+     "windRain": 1
+    },
+    "ov": [
+     {
+      "text": "+50 °C",
+      "style": "pill",
+      "color": "coral",
+      "y": 330,
+      "at": 1.353
+     }
+    ],
+    "sfx": [
+     "calor@1.353"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b9s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 122.785,
+   "dur": 2.662,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": [
+      0,
+      1
+     ],
+     "ripas": 1,
+     "caibros": 1
+    },
+    "sfx": [
+     "metal@0.6"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b9s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 125.447,
+   "dur": 2.534,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "ripas": 1,
+     "caibros": 1,
+     "mantaDrops": 1,
+     "calha": 1
+    }
+   },
+   "anims": []
+  },
+  {
+   "id": "b9s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 127.981,
+   "dur": 2.011,
+   "cam": [],
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "heat": 0.6
+    },
+    "ov": [
+     {
+      "text": "DEVOLVE O CALOR",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ]
+   },
+   "anims": [
+    "blur"
+   ]
+  },
+  {
+   "id": "b9s6",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 129.992,
+   "dur": 1.823,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "ripas": 1,
+     "caibros": 1
+    },
+    "ov": [
+     {
+      "text": "SUBCOBERTURA",
+      "style": "tag",
+      "y": 300,
+      "size": 80
+     }
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b10s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 131.815,
+   "dur": 3.679,
+   "cam": [],
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "pose": "sit",
+     "heroX": 0.8,
+     "heroZ": -1.05,
+     "heroRot": 0
+    },
+    "ov": [
+     {
+      "text": "AR QUENTE",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "calor"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b10s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 135.494,
+   "dur": 3.52,
+   "cam": [],
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "forro": [
+      0,
+      1
+     ],
+     "pose": "sit",
+     "heroX": 0.8,
+     "heroZ": -1.05,
+     "heroRot": 0
+    },
+    "sfx": [
+     "whoosh"
+    ],
+    "ov": [
+     {
+      "text": "COLCHÃO DE AR",
+      "style": "pill",
+      "color": "blue",
+      "y": 330,
+      "at": 1.751
+     }
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
+  },
+  {
+   "id": "b10s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 139.014,
+   "dur": 2.699,
+   "cam": [],
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "forro": 1,
+     "pose": "celebrate",
+     "heroX": 0.8,
+     "heroZ": -0.6,
+     "heroRot": 0
+    },
+    "ov": [
+     {
+      "text": "FORRO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "anims": [
+    "pop"
+   ]
+  },
+  {
+   "id": "b10s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 141.713,
+   "dur": 2.661,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      5.6,
+      3.9,
+      4.9
+     ],
+     "b": [
+      4.9,
+      3.8,
+      5.3
+     ],
+     "l": [
+      3.4,
+      3.3,
+      3
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "arame": [
+      0,
+      1
+     ],
+     "rain": 1,
+     "wind": 0.6
+    },
+    "sfx": [
+     "metal@0.5"
+    ]
+   },
+   "anims": []
+  },
+  {
+   "id": "b10s5",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 144.374,
+   "dur": 1.611,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      5.6,
+      3.9,
+      4.9
+     ],
+     "b": [
+      4.9,
+      3.8,
+      5.3
+     ],
+     "l": [
+      3.4,
+      3.3,
+      3
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "arame": 1,
+     "rain": 1,
+     "wind": 1,
+     "tileLift": [
+      0,
+      0.12
+     ]
+    },
+    "ov": [
+     {
+      "text": "ARAME",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "vento"
+    ]
+   },
+   "anims": [
+    "slide"
+   ]
+  },
+  {
+   "id": "b11s1",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 145.985,
+   "dur": 2.528,
+   "cam": [],
+   "o": {
+    "cam": "final",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "TELHADO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ],
+    "sfx": [
+     "festa"
+    ]
+   },
+   "anims": [
+    "rise"
+   ]
+  },
+  {
+   "id": "b11s2",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 148.513,
+   "dur": 2.223,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -2.4,
+      2.4,
+      8.8
+     ],
+     "b": [
+      -2.8,
+      2.3,
+      9.2
+     ],
+     "l": [
+      -2.6,
+      1.4,
+      4.4
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "SABIA? COMENTA",
+      "style": "tag",
+      "y": 250,
+      "size": 80
+     },
+     {
+      "text": "“ENGENHEIRO”",
+      "style": "tag",
+      "y": 350,
+      "size": 110
+     }
+    ],
+    "sfx": [
+     "pop"
+    ]
+   },
+   "anims": [
+    "pop",
+    "blur"
+   ]
+  },
+  {
+   "id": "b11s3",
+   "k": "cena3d",
+   "silent": false,
+   "hold": false,
+   "start": 150.736,
+   "dur": 2.782,
+   "cam": [],
+   "o": {
+    "cam": {
+     "a": [
+      -2.4,
+      2.4,
+      8.8
+     ],
+     "b": [
+      -2.8,
+      2.3,
+      9.2
+     ],
+     "l": [
+      -2.6,
+      1.4,
+      4.4
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "think"
+    },
+    "ov": [
+     {
+      "text": "NÃO SABIA? COMENTA",
+      "style": "tag",
+      "y": 250,
+      "size": 80
+     },
+     {
+      "text": "“ESTAGIÁRIO”",
+      "style": "tag",
+      "y": 350,
+      "size": 110
+     }
+    ],
+    "sfx": [
+     "pop"
+    ]
+   },
+   "anims": [
+    "blur",
+    "slide"
+   ]
+  },
+  {
+   "id": "b11s4",
+   "k": "cena3d",
+   "silent": false,
+   "hold": true,
+   "start": 153.518,
+   "dur": 3.442,
+   "cam": [],
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "SEGUE",
+      "style": "tag",
+      "y": 300,
+      "size": 150
+     },
+     {
+      "text": "@desvendandoideias.ofc",
+      "style": "pill",
+      "color": "amber",
+      "y": 470
+     }
+    ],
+    "sfx": [
+     "festa"
+    ]
+   },
+   "anims": [
+    "slide",
+    "rise"
+   ]
+  }
+ ]
+}

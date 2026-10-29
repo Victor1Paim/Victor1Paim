@@ -1,18 +1,18 @@
 # 004 · Como se constrói um telhado
 
-Pilar: Engenharia/Construção · Hook (tipo): consequência/cadeia · Pele: Isométrico 2.5D · Duração-alvo: **~2:40** (formato cadeia longo, decisão 33) · Criado em 2026-10-29
-Status: **roteiro para aprovação (portão 6), com hook e CTA a escolher** · Projeto: `../producoes/004-telhado/`
+Pilar: Engenharia/Construção · Hook (tipo): consequência/cadeia · Pele: **3D low-poly** (Three.js com WebGL por software, testado em 29/10/2026) · Duração-alvo: **~2:40** (formato cadeia longo, decisão 33) · Criado em 2026-10-29
+Status: **em produção** (voz, cena 3D, legenda palavra a palavra) · Projeto: `../producoes/004-telhado/`
 
 ## Decisões (portões do fluxo)
 
 | Portão | Escolha do usuário | Alternativas que ficaram de fora |
 |---|---|---|
 | 1. Tema e ângulo | **Como se constrói um telhado, problema por problema** (29/10/2026). Adaptação de um vídeo de referência enviado pelo usuário: mesma cadeia e formato, texto reescrito com as nossas palavras, personagem do canal | — |
-| 2. Hook | _(pendente: 5 opções)_ | |
+| 2. Hook | **1 · "Se você ergue as paredes e fecha a casa com uma laje reta de concreto, a chuva não tem por onde sair."** (29/10/2026) | 2 "por que telhado não é laje reta?", 3 "cada peça resolve um problema", 4 "pelo menos dez peças", 5 "o difícil é não deixar a chuva entrar" |
 | 3. Ordem das cenas | **Cadeia da referência** (laje reta → inclina → racha → telhas → fresta → sobreposição → inclinação → ripas → caibros → tesouras → cumeeira → beiral → calha → rufo → subcobertura → forro → arame) | — |
-| 4. CTA | _(pendente: 5 opções)_ | |
+| 4. CTA | **1 · "Se você já sabia, comenta engenheiro. Se não sabia, comenta estagiário. E segue pra não perder a próxima curiosidade."** (29/10/2026) | 2 dúvida + like + seguir, 3 "qual peça você não conhecia", 4 versão curta engenheiro/estagiário, 5 "o que construir agora" |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
-| 6. Roteiro aprovado | _(pendente)_ | |
+| 6. Roteiro aprovado | **Seguir com o texto enviado** (usuário: "vamos para produção" e "1 e 1", 29/10/2026) | — |
 | 7. Corte de teste | _(pendente)_ | |
 | 8. Publicação (legenda, capa, hashtags, horário) | _(pendente)_ | |
 

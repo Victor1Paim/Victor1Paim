@@ -1,10 +1,1970 @@
 {
-  "titulo": "004 · Como se constrói um telhado",
-  "beats": [
-    {
-      "audio": "assets/voz/beat0.wav",
-      "gap": 0.15
+ "titulo": "004 · Como se constrói um telhado",
+ "modo": "3d",
+ "legenda": "palavra",
+ "destaques": [
+  "telhas",
+  "ripas",
+  "caibros",
+  "tesouras",
+  "cumeeira",
+  "beiral",
+  "calha",
+  "rufo",
+  "subcobertura",
+  "forro",
+  "triângulo",
+  "arame",
+  "fresta",
+  "laje",
+  "engenheiro",
+  "estagiário",
+  "trinca",
+  "inclinação"
+ ],
+ "beats": [
+  {
+   "audio": "assets/voz/beat0.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat1.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat2.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat3.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat4.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat5.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat6.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat7.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat8.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat9.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat10.wav",
+   "gap": 0.25
+  },
+  {
+   "audio": "assets/voz/beat11.wav",
+   "gap": 1.5
+  }
+ ],
+ "shots": [
+  {
+   "b": 0,
+   "t": "Se você ergue as paredes",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {},
+    "sfx": [
+     "whoosh"
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "e fecha a casa com uma laje reta de concreto,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "slab": 1
+    },
+    "ov": [
+     {
+      "text": "LAJE DE CONCRETO",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "pop@0.3"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 0,
+   "t": "a chuva não tem por onde sair.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "puddles": [
+      0,
+      0.5
+     ],
+     "pose": "umbrella"
     }
-  ],
-  "shots": []
+   }
+  },
+  {
+   "b": 0,
+   "t": "A água empoça,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "puddles": [
+      0.5,
+      1
+     ]
+    },
+    "sfx": [
+     "agua"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 0,
+   "t": "acha uma trinca",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "puddles": 1,
+     "crack": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TRINCA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "racha@0.2"
+    ]
+   }
+  },
+  {
+   "b": 0,
+   "t": "e pinga dentro de casa.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "slab": 1,
+     "rain": 1,
+     "cut": 1,
+     "drip": 1,
+     "pose": "worried",
+     "heroX": -0.6,
+     "heroZ": 0.6,
+     "heroRot": 0.2
+    },
+    "ov": [
+     {
+      "text": "GOTEIRA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "pinga@0.2",
+     "pinga@1.0"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 1,
+   "t": "Então você inclina a cobertura",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "slab": 1,
+     "slabTilt": [
+      0,
+      1
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "whoosh"
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "pra água escorrer.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "rain": 1
+    },
+    "sfx": [
+     "agua"
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "Só que uma laje de uma peça só",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1
+    },
+    "ov": [
+     {
+      "text": "UMA PEÇA SÓ",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 1,
+   "t": "estica no calor do dia",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "slabExpand": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "ESTICA",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "calor"
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "e encolhe no frio da noite.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "slabExpand": [
+      1,
+      0
+     ],
+     "night": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "ENCOLHE",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 1,
+   "t": "Todo dia. Até trincar.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "crack": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "racha@0.5"
+    ]
+   }
+  },
+  {
+   "b": 1,
+   "t": "E volta a vazar.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1,
+     "rain": 1,
+     "cut": 1,
+     "drip": 1,
+     "pose": "worried",
+     "heroX": -0.6,
+     "heroZ": 0.6,
+     "heroRot": 0.2
+    },
+    "sfx": [
+     "pinga@0.2"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 2,
+   "t": "A saída é trocar a peça única",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "slab": 1,
+     "slabTilt": 1
+    }
+   }
+  },
+  {
+   "b": 2,
+   "t": "por várias peças pequenas e soltas,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "build": [
+      0,
+      1,
+      "lin"
+     ],
+     "overlap": 0
+    },
+    "sfx": [
+     "telhas"
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "que se mexem sem quebrar.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "overlap": 0
+    }
+   }
+  },
+  {
+   "b": 2,
+   "t": "São as telhas.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "overlap": 0
+    },
+    "ov": [
+     {
+      "text": "TELHAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ],
+    "sfx": [
+     "pop"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 2,
+   "t": "Mas agora a água passa pela fresta",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "telhaMuitoPerto",
+    "st": {
+     "roof": 1,
+     "overlap": 0,
+     "rain": 1,
+     "gapDrops": 1
+    },
+    "ov": [
+     {
+      "text": "FRESTAS",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "entre uma e outra.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 2,
+   "t": "Então cada telha fica por cima da de baixo:",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "telhaMuitoPerto",
+    "st": {
+     "roof": 1,
+     "overlap": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TELHA SOBRE TELHA",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "telhas"
+    ]
+   }
+  },
+  {
+   "b": 2,
+   "t": "a água sempre cai na telha seguinte,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "rain": 1,
+     "flowDrops": 1
+    }
+   }
+  },
+  {
+   "b": 2,
+   "t": "nunca na fresta.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 3,
+   "t": "Só que, se o telhado for deitado demais,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1,
+     "angle": [
+      17,
+      6
+     ]
+    }
+   }
+  },
+  {
+   "b": 3,
+   "t": "a água para, enche a fresta",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "roof": 1,
+     "angle": 6,
+     "rain": 1,
+     "pool": 1
+    },
+    "ov": [
+     {
+      "text": "ÁGUA ACUMULA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 3,
+   "t": "e volta por baixo.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 3,
+   "t": "Por isso telha de barro pede uns trinta por cento de inclinação:",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1,
+     "angle": [
+      6,
+      17
+     ]
+    },
+    "ov": [
+     {
+      "text": "30%",
+      "style": "tag",
+      "y": 300,
+      "size": 150
+     }
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 3,
+   "t": "sobe trinta centímetros a cada metro.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1
+    },
+    "ov": [
+     {
+      "text": "SOBE 30 CM A CADA 1 M",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "E telha não fica no ar.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "roof": 1
+    },
+    "ov": [
+     {
+      "text": "TELHA NÃO FLUTUA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "Ela apoia em sarrafos finos,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "ripas": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "madeira"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 4,
+   "t": "pregados na horizontal, um por fileira.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "ripas": 1,
+     "roof": 1,
+     "build": [
+      0,
+      0.6
+     ]
+    },
+    "sfx": [
+     "telhas@0.4"
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "São as ripas.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topoPerto",
+    "st": {
+     "ripas": 1
+    },
+    "ov": [
+     {
+      "text": "RIPAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 4,
+   "t": "As ripas apoiam em peças mais grossas,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "ripas": 1,
+     "caibros": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "madeira"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 4,
+   "t": "que descem o telhado.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 4,
+   "t": "São os caibros.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "ripas": 1,
+     "caibros": 1
+    },
+    "ov": [
+     {
+      "text": "CAIBROS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 5,
+   "t": "Mas tanta madeira, com milhares de telhas,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "ripas": 1,
+     "caibros": 1
+    }
+   }
+  },
+  {
+   "b": 5,
+   "t": "pesa toneladas.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "weight": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TONELADAS",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "peso@0.3"
+    ]
+   }
+  },
+  {
+   "b": 5,
+   "t": "Apoiado só nas paredes, o telhado enverga",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "weight": 1,
+     "sag": [
+      0,
+      0.7
+     ]
+    },
+    "sfx": [
+     "peso@0.4"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "e empurra as paredes pra fora.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "weight": 1,
+     "sag": [
+      0.7,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "PAREDES ABREM",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 5,
+   "t": "A solução é o triângulo,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "tesouras": [
+      0,
+      1
+     ]
+    },
+    "ov": [
+     {
+      "text": "TRIÂNGULO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ],
+    "sfx": [
+     "madeira"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "a forma que não deforma:",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "tesouras": 1,
+     "weight": 1
+    }
+   }
+  },
+  {
+   "b": 5,
+   "t": "a barra de baixo segura as duas pernas",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "tesouras": 1
+    }
+   },
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "que querem abrir.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 5,
+   "t": "São as tesouras.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "estrutura",
+    "st": {
+     "tesouras": 1,
+     "caibros": 1,
+     "ripas": 1
+    },
+    "ov": [
+     {
+      "text": "TESOURAS",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 6,
+   "t": "No alto, onde os dois lados do telhado se encontram,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "ridgeGap": 1,
+     "tesouras": 1
+    }
+   }
+  },
+  {
+   "b": 6,
+   "t": "sobra uma abertura.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      2.5,
+      6.0,
+      3.4
+     ],
+     "b": [
+      1.4,
+      5.8,
+      3.8
+     ],
+     "l": [
+      0,
+      3.9,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "ridgeGap": 1,
+     "rain": 1
+    },
+    "ov": [
+     {
+      "text": "FRESTA ABERTA",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 6,
+   "t": "Ela é fechada com telhas curvas e argamassa.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      2.5,
+      6.0,
+      3.4
+     ],
+     "b": [
+      1.4,
+      5.8,
+      3.8
+     ],
+     "l": [
+      0,
+      3.9,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "ridgeGap": 1,
+     "cumeeira": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "telhas"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 6,
+   "t": "É a cumeeira.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55
+    },
+    "ov": [
+     {
+      "text": "CUMEEIRA",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 7,
+   "t": "Mas a água que desce do telhado",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0,
+     "rain": 1,
+     "flowDrops": 1
+    }
+   }
+  },
+  {
+   "b": 7,
+   "t": "escorre colada na parede e encharca a casa.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "beiral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0,
+     "rain": 1,
+     "wallRun": 1,
+     "wallWet": [
+      0,
+      1
+     ],
+     "pose": "umbrella"
+    }
+   }
+  },
+  {
+   "b": 7,
+   "t": "Então o telhado avança pra fora da parede,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "lado",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": [
+      0,
+      0.7
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "whoosh"
+    ]
+   }
+  },
+  {
+   "b": 7,
+   "t": "e a água cai longe.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "beiral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.7,
+     "rain": 1,
+     "eaveDrops": 1
+    }
+   }
+  },
+  {
+   "b": 7,
+   "t": "É o beiral.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "frente",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.7
+    },
+    "ov": [
+     {
+      "text": "BEIRAL",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 7,
+   "t": "Onde não dá pra avançar, uma canaleta junta a água",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      6.8,
+      3.0,
+      6.8
+     ],
+     "b": [
+      7.4,
+      2.8,
+      6.0
+     ],
+     "l": [
+      2.5,
+      2.4,
+      2.6
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": [
+      0,
+      1
+     ],
+     "rain": 1
+    },
+    "sfx": [
+     "metal@0.5"
+    ]
+   }
+  },
+  {
+   "b": 7,
+   "t": "e leva por um cano até o chão.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      6.8,
+      3.0,
+      6.8
+     ],
+     "b": [
+      7.4,
+      2.8,
+      6.0
+     ],
+     "l": [
+      2.5,
+      2.4,
+      2.6
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "rain": 1
+    },
+    "sfx": [
+     "agua"
+    ]
+   }
+  },
+  {
+   "b": 7,
+   "t": "É a calha.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1
+    },
+    "ov": [
+     {
+      "text": "CALHA",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 8,
+   "t": "Onde o telhado encosta numa parede mais alta,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1
+    },
+    "ov": [
+     {
+      "text": "PAREDE MAIS ALTA",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 8,
+   "t": "a chuva desce pela parede e entra por baixo das telhas.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rain": 1,
+     "neighborRun": 1
+    }
+   }
+  },
+  {
+   "b": 8,
+   "t": "Ali vai uma chapa dobrada:",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": [
+      0,
+      1
+     ]
+    },
+    "sfx": [
+     "metal@0.3"
+    ]
+   }
+  },
+  {
+   "b": 8,
+   "t": "um lado entra na parede, o outro deita sobre as telhas.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "rufo",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": 1
+    }
+   }
+  },
+  {
+   "b": 8,
+   "t": "É o rufo.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -1.5,
+      7.6,
+      7.2
+     ],
+     "b": [
+      -0.5,
+      7.3,
+      7.6
+     ],
+     "l": [
+      3.3,
+      4.2,
+      0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "vizinho": 1,
+     "rufo": 1
+    },
+    "ov": [
+     {
+      "text": "RUFO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 9,
+   "t": "Num temporal, o vento joga chuva",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "rain": 1,
+     "wind": 1,
+     "night": 0.45
+    },
+    "ov": [
+     {
+      "text": "CHUVA DE LADO",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "vento"
+    ]
+   }
+  },
+  {
+   "b": 9,
+   "t": "por baixo das telhas.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "telhaPerto",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "rain": 1,
+     "wind": 1,
+     "night": 0.45,
+     "windRain": 1
+    }
+   }
+  },
+  {
+   "b": 9,
+   "t": "E no sol forte, elas podem passar de cinquenta graus.",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "heat": [
+      0,
+      1
+     ],
+     "pose": "sweat"
+    },
+    "ov": [
+     {
+      "text": "+50 °C",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "calor"
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 9,
+   "t": "Por isso vai uma manta com face de alumínio embaixo:",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": [
+      0,
+      1
+     ],
+     "ripas": 1,
+     "caibros": 1
+    },
+    "sfx": [
+     "metal@0.6"
+    ]
+   }
+  },
+  {
+   "b": 9,
+   "t": "a água escorre por cima até a calha,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "ripas": 1,
+     "caibros": 1,
+     "mantaDrops": 1,
+     "calha": 1
+    }
+   }
+  },
+  {
+   "b": 9,
+   "t": "e o alumínio devolve parte do calor.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "topo",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "heat": 0.6
+    },
+    "ov": [
+     {
+      "text": "DEVOLVE O CALOR",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "b": 9,
+   "t": "É a subcobertura.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      3,
+      6.5,
+      6.5
+     ],
+     "b": [
+      2,
+      6.2,
+      7
+     ],
+     "l": [
+      0,
+      3.4,
+      1
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "cutRoof": 1,
+     "manta": 1,
+     "ripas": 1,
+     "caibros": 1
+    },
+    "ov": [
+     {
+      "text": "SUBCOBERTURA",
+      "style": "tag",
+      "y": 300,
+      "size": 80
+     }
+    ]
+   }
+  },
+  {
+   "b": 10,
+   "t": "Mesmo assim, o ar embaixo das telhas esquenta",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "pose": "sit",
+     "heroX": 0.8,
+     "heroZ": -1.05,
+     "heroRot": 0
+    },
+    "ov": [
+     {
+      "text": "AR QUENTE",
+      "style": "pill",
+      "color": "coral",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "calor"
+    ]
+   }
+  },
+  {
+   "b": 10,
+   "t": "e desce pra casa.",
+   "k": "-",
+   "cont": true
+  },
+  {
+   "b": 10,
+   "t": "Então você fecha por baixo,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "forro": [
+      0,
+      1
+     ],
+     "pose": "sit",
+     "heroX": 0.8,
+     "heroZ": -1.05,
+     "heroRot": 0
+    },
+    "sfx": [
+     "whoosh"
+    ]
+   }
+  },
+  {
+   "b": 10,
+   "t": "deixando um colchão de ar no meio,",
+   "k": "-",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "forro": 1,
+     "pose": "idle",
+     "heroX": 0.8,
+     "heroZ": -0.6,
+     "heroRot": 0
+    },
+    "ov": [
+     {
+      "text": "COLCHÃO DE AR",
+      "style": "pill",
+      "color": "blue",
+      "y": 330
+     }
+    ]
+   },
+   "cont": true
+  },
+  {
+   "b": 10,
+   "t": "e o calor fica lá em cima. É o forro.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "dentro",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "tesouras": 1,
+     "cut": 1,
+     "hotAir": 1,
+     "forro": 1,
+     "pose": "celebrate",
+     "heroX": 0.8,
+     "heroZ": -0.6,
+     "heroRot": 0
+    },
+    "ov": [
+     {
+      "text": "FORRO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "b": 10,
+   "t": "E as telhas da beirada vão amarradas com arame,",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      5.6,
+      3.9,
+      4.9
+     ],
+     "b": [
+      4.9,
+      3.8,
+      5.3
+     ],
+     "l": [
+      3.4,
+      3.3,
+      3.0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "arame": [
+      0,
+      1
+     ],
+     "rain": 1,
+     "wind": 0.6
+    },
+    "sfx": [
+     "metal@0.5"
+    ]
+   }
+  },
+  {
+   "b": 10,
+   "t": "pro vento não levar.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      5.6,
+      3.9,
+      4.9
+     ],
+     "b": [
+      4.9,
+      3.8,
+      5.3
+     ],
+     "l": [
+      3.4,
+      3.3,
+      3.0
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "arame": 1,
+     "rain": 1,
+     "wind": 1,
+     "tileLift": [
+      0,
+      0.12
+     ]
+    },
+    "ov": [
+     {
+      "text": "ARAME",
+      "style": "pill",
+      "color": "amber",
+      "y": 330
+     }
+    ],
+    "sfx": [
+     "vento"
+    ]
+   }
+  },
+  {
+   "b": 11,
+   "t": "Pronto: você acabou de construir um telhado.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "final",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "TELHADO",
+      "style": "tag",
+      "y": 300,
+      "size": 90
+     }
+    ],
+    "sfx": [
+     "festa"
+    ]
+   }
+  },
+  {
+   "b": 11,
+   "t": "Se você já sabia, comenta engenheiro.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -2.4,
+      2.4,
+      8.8
+     ],
+     "b": [
+      -2.8,
+      2.3,
+      9.2
+     ],
+     "l": [
+      -2.6,
+      1.4,
+      4.4
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "SABIA? COMENTA",
+      "style": "tag",
+      "y": 250,
+      "size": 80
+     },
+     {
+      "text": "“ENGENHEIRO”",
+      "style": "tag",
+      "y": 350,
+      "size": 110
+     }
+    ],
+    "sfx": [
+     "pop"
+    ]
+   }
+  },
+  {
+   "b": 11,
+   "t": "Se não sabia, comenta estagiário.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": {
+     "a": [
+      -2.4,
+      2.4,
+      8.8
+     ],
+     "b": [
+      -2.8,
+      2.3,
+      9.2
+     ],
+     "l": [
+      -2.6,
+      1.4,
+      4.4
+     ]
+    },
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "think"
+    },
+    "ov": [
+     {
+      "text": "NÃO SABIA? COMENTA",
+      "style": "tag",
+      "y": 250,
+      "size": 80
+     },
+     {
+      "text": "“ESTAGIÁRIO”",
+      "style": "tag",
+      "y": 350,
+      "size": 110
+     }
+    ],
+    "sfx": [
+     "pop"
+    ]
+   }
+  },
+  {
+   "b": 11,
+   "t": "E segue pra não perder a próxima curiosidade.",
+   "k": "cena3d",
+   "st": "3D",
+   "o": {
+    "cam": "geral",
+    "st": {
+     "roof": 1,
+     "cumeeira": 1,
+     "eave": 0.55,
+     "calha": 1,
+     "pose": "celebrate"
+    },
+    "ov": [
+     {
+      "text": "SEGUE",
+      "style": "tag",
+      "y": 300,
+      "size": 150
+     },
+     {
+      "text": "@desvendandoideias.ofc",
+      "style": "pill",
+      "color": "amber",
+      "y": 470
+     }
+    ],
+    "sfx": [
+     "festa"
+    ]
+   },
+   "hold": true
+  }
+ ]
 }

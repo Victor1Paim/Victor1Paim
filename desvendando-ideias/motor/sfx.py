@@ -124,6 +124,20 @@ def s_chime2(dur=0.7):
     return [(math.sin(2 * math.pi * 1318.5 * k / SR) + 0.6 * math.sin(2 * math.pi * 1760 * k / SR)) * math.exp(-k / (0.18 * SR)) for k in range(n)]
 
 # ---------------------------------------------------------------- blocos reutilizáveis
+_RAIN = None
+def rain_bed(dur):
+    """Chuva de fundo: ruído filtrado em laço de 4 s, com gotinhas; repetido até a duração do plano."""
+    global _RAIN
+    if _RAIN is None:
+        n = 4 * SR; base = lowpass([(rng.random() * 2 - 1) * 0.35 for _ in range(n)], 2400)
+        for _ in range(60):
+            t0 = int(rng.random() * (n - 2000)); f = 1800 + rng.random() * 2500
+            for k in range(int(0.012 * SR)): base[t0 + k] += 0.18 * math.sin(2 * math.pi * f * k / SR) * math.exp(-k / (0.003 * SR))
+        fade = int(0.05 * SR)
+        for k in range(fade): base[k] *= k / fade; base[n - 1 - k] *= k / fade
+        _RAIN = base
+    n = int(dur * SR); return [_RAIN[k % len(_RAIN)] for k in range(n)]
+
 def ratchet(t0, dur, n, g=0.3, f0=1100, f1=2300, ease_pow=3, tag='contagem'):
     """Roleta de cliques de contagem: rápida no começo e lenta no fim, como o número (ease power-N.out). Tom sobe com o valor."""
     for k in range(1, n + 1):
@@ -164,6 +178,21 @@ if quiz_in and guess:
 
 for s in shots:
     k, t0, D, cam, o, an = s['k'], s['start'], s['dur'], s['cam'], s['o'], s['anims']
+    if (o.get('st') or {}).get('rain'): place(rain_bed(D), t0, g=0.22, tag='chuva')
+    for tag in o.get('sfx', []):
+        nm, dt = (tag.split('@') + ['0'])[:2]; tt = t0 + float(dt)
+        if nm == 'pinga': place(s_plip(520, 0.06), tt, g=0.45, tag='pinga'); place(s_plip(420, 0.05), tt + 0.35, g=0.35, tag='pinga')
+        elif nm == 'telhas': plips(tt, 14, 0.06, g=0.22, f0=0.8, f1=1.2, base=900, tag='telhas')
+        elif nm == 'madeira': [place(s_thud(0.18), tt + 0.22 * i, g=0.4, tag='madeira') for i in range(4)]
+        elif nm == 'peso': place(s_thud(0.4), tt, g=0.7, peak_at=tt + 0.05 + FRAME, tag='peso'); place(s_fall(0.6, 300, 90), tt + 0.1, g=0.4, tag='peso')
+        elif nm == 'racha': place(s_zip(0.25, 3000, 600), tt, g=0.4, tag='racha')
+        elif nm == 'metal': place(load('ping'), tt, g=0.4, tag='metal'); place(pitch(load('ping'), 0.8), tt + 0.12, g=0.3, tag='metal')
+        elif nm == 'vento': place(pitch(load('whoosh'), 0.7), tt, g=0.55, pan=-0.8, pan_to=0.8, tag='vento')
+        elif nm == 'calor': place(s_rise(1.0, 200, 700), tt, g=0.25, tag='calor')
+        elif nm == 'agua': place(s_water(1.2), tt, g=0.3, tag='agua')
+        elif nm == 'festa': place(load('sparkle'), tt, g=0.45, tag='festa'); place(s_chime2(), tt + 0.1, g=0.35, tag='festa')
+        elif nm == 'pop': place(load('pop'), tt, g=0.4, tag='pop')
+        elif nm == 'whoosh': place(load('whoosh-short'), tt, g=0.4, tag='passagem')
     if o.get('enter') == 'wipe': place(pitch(load('whoosh'), 1.2), t0 - 0.2, g=0.4, pan=-0.6, pan_to=0.6, tag='wipe')
     elif o.get('enter') == 'mask': place(s_rise(0.35, 400, 1400), t0, g=0.22, tag='mascara')
     # câmera
