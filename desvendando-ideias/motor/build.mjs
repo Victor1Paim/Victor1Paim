@@ -17,6 +17,7 @@ const ONLY = arg('beats', null) ? arg('beats').split(',').map(Number) : null;   
 const OUT = arg('out', null) ? path.resolve(ROOT, arg('out')) : ROOT;   // pasta de saída (outro projeto)
 const FULL = !ONLY;                                                      // vídeo inteiro (na pasta do vídeo ou em --out): gera PLANOS, build-out e som
 const r3 = (n) => Math.round(n * 1000) / 1000;
+const LONG = 3.0;                                                        // regra: um plano dura 2–3 s; acima de 3 s recebe um punch extra no meio
 
 // ---------- tempos da voz ----------
 function probe(file) {
@@ -78,10 +79,15 @@ data.beats.forEach((b, i) => {
     bnd = Math.max(bnd, lastB + 0.7); lastB = bnd;
     return r3(bnd);
   });
-  shots.forEach((s, k) => { s.start = starts[k]; s.end = k + 1 < shots.length ? starts[k + 1] : speechEnd; s.dur = r3(s.end - s.start); s.P = `b${i}s${k + 1}`; });
+  // frases (legenda): cada item de shots.json é uma frase; `cont: true` mantém o plano visual do item anterior (só a legenda muda)
+  shots.forEach((s, k) => { s.start = starts[k]; s.end = k + 1 < shots.length ? starts[k + 1] : speechEnd; s.pdur = r3(s.end - s.start); s.CP = `b${i}p${k + 1}`; });
+  const phr = shots.slice();
+  const vis = shots.filter((s, k) => !(s.cont && k > 0));
+  vis.forEach((s, n) => { const nx = vis[n + 1]; s.dur = r3((nx ? nx.start : speechEnd) - s.start); s.P = `b${i}s${n + 1}`; s.vt = phr.filter((x) => x === s || (x.cont && x.start >= s.start && x.start < s.start + s.dur - 1e-6)).map((x) => x.t).join(' '); });
+  shots.length = 0; shots.push(...vis);
   let at = speechEnd;
   silents.forEach((s, q) => { s.start = r3(at); s.end = r3(at + s.dur); at += s.dur; s.P = `b${i}s${shots.length + q + 1}`; });
-  beats.push({ i, G: r3(G), dur, audioDur: tm.dur, shots: [...shots, ...silents], words, audio: b.audio });
+  beats.push({ i, G: r3(G), dur, audioDur: tm.dur, shots: [...shots, ...silents], phr, words, audio: b.audio });
   G += dur;
 });
 if (ONLY) { const keep = beats.filter((B) => ONLY.includes(B.i)); beats.length = 0; let g = 0; keep.forEach((B) => { B.G = r3(g); g += B.dur; beats.push(B); }); G = g; }
@@ -91,15 +97,15 @@ const TOTAL = r3(G);
 const report = ['| Plano | Início | Dur | Estilo | Fala |', '|---|---|---|---|---|'];
 let warn = 0;
 beats.forEach((B) => B.shots.forEach((s) => {
-  const flag = s.dur > 2.0 ? ' (plano longo: punch extra no meio)' : s.dur < 0.8 ? ' ⚠ <0,8 s' : '';
-  if (flag.includes('⚠')) warn++;
-  report.push(`| ${s.P} | ${r3(B.G + s.start)} | ${s.dur}${flag} | ${s.st} | ${s.t} |`);
+  const flag = s.dur > LONG ? ' (plano longo: punch extra no meio)' : s.dur < 1.8 && !s.silent ? ' ⚠ <1,8 s' : s.dur > 3.6 ? ' ⚠ >3,6 s' : '';
+  if (flag.includes('⚠') && !s.hold) warn++;
+  report.push(`| ${s.P} | ${r3(B.G + s.start)} | ${s.dur}${flag} | ${s.st} | ${s.vt || s.t} |`);
 }));
 fs.mkdirSync(OUT, { recursive: true });
 if (FULL) fs.writeFileSync(path.join(OUT, 'PLANOS.md'), `# Planos (gerado por motor/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
 
 if (FULL) if (FULL) { const AN = ['pop', 'blur', 'slide', 'rise'];
-  fs.writeFileSync(path.join(OUT, 'build-out.json'), JSON.stringify({ total: TOTAL, beats: beats.map((B) => ({ i: B.i, G: B.G, dur: B.dur })), shots: beats.flatMap((B) => B.shots.map((s, idx) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur, cam: s.cam || [], o: s.o || {}, anims: ((s.o || {}).ov || []).map((_, i) => AN[(B.i + idx + i) % AN.length]) }))) }, null, 1)); }
+  fs.writeFileSync(path.join(OUT, 'build-out.json'), JSON.stringify({ total: TOTAL, beats: beats.map((B) => ({ i: B.i, G: B.G, dur: B.dur })), shots: beats.flatMap((B) => B.shots.map((s, idx) => ({ id: s.P, k: s.k, silent: !!s.silent, hold: !!s.hold, start: r3(B.G + s.start), dur: s.dur, cam: s.cam || [], o: s.o || {}, anims: ((s.o || {}).ov || []).map((_, i) => AN[(B.i + idx + i) % AN.length]) }))) }, null, 1)); }
 if (FULL) spawnSync('python3', ['-I', path.join(MOTOR, 'sfx.py'), OUT], { cwd: OUT, stdio: 'inherit' });
 
 // ---------- visuais ----------
@@ -371,6 +377,7 @@ const R = {
     const w = 900, to = o.to, m = o.mode;
     const head = `<div class="abs" style="left:90px;top:560px;width:${w}px;height:170px;border:8px solid ${COL.ink};border-radius:20px;box-sizing:border-box"></div><div id="${P}-fill" class="abs" style="left:98px;top:568px;width:${w - 16}px;height:154px;border-radius:12px;background:linear-gradient(90deg,#2E8BFF,#7CC8FF);transform-origin:0 50%"></div>`;
     if (m === 'grow') return { html: head, js: `tl.fromTo('#${P}-fill',{scaleX:0},{scaleX:${to},duration:${r3(Math.min(1.3, D))},ease:'power3.out'},${T0});` };
+    if (m === 'growPct') { const gd = r3(Math.min(1.5, D)); return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.fromTo('#${P}-fill',{scaleX:0},{scaleX:${to},duration:${gd},ease:'power3.out'},${T0});{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:74,duration:${gd},ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` }; }
     if (m === 'pct') return { html: head + `<div id="${P}-num" class="t" style="top:800px;font-size:210px;color:${COL.amber}">0%</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);{const E=document.getElementById('${P}-num');const S={v:0};tl.fromTo(S,{v:0},{v:74,duration:0.7,ease:'power3.out',onUpdate:()=>{E.textContent=Math.round(S.v)+'%'}},${T0});}` };
     return { html: head + `<div id="${P}-empty" class="abs" style="left:${98 + (w - 16) * to}px;top:568px;width:${(w - 16) * (1 - to)}px;height:154px;border-radius:0 12px 12px 0;background:repeating-linear-gradient(45deg,${COL.coral} 0 14px,transparent 14px 28px)"></div><div id="${P}-num" class="t" style="top:800px;font-size:${fit("26% VAZIO", 190)}px;color:${COL.coral}">26% VAZIO</div>`, js: `tl.set('#${P}-fill',{scaleX:${to}},0);tl.fromTo('#${P}-empty',{opacity:0},{opacity:1,duration:0.2},${T0});tl.fromTo('#${P}-num',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},${r3(T0 + 0.1)});` };
   },
@@ -393,10 +400,10 @@ const R = {
     const head = mode === 'answer' ? 'ACERTOU!' : 'QUANTAS TERRAS CABEM?';
     const hcol = mode === 'answer' ? COL.mint : COL.ink;
     const rows = opts.map(([l, t], i) => `<div id="${P}-r${i}" class="qrow" style="top:${400 + i * 170}px"><span class="qlet">${l}</span><span>${t}</span></div>`).join('');
-    const timer = mode === 'timer' ? `<div class="abs trk" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px"></div><div id="${P}-tm" class="abs" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px;background:linear-gradient(90deg,${COL.amber},${COL.coral});transform-origin:0 50%"></div>` : '';
+    const timer = (mode === 'timer' || mode === 'inTimer') ? `<div class="abs trk" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px"></div><div id="${P}-tm" class="abs" style="left:110px;top:310px;width:860px;height:18px;border-radius:9px;background:linear-gradient(90deg,${COL.amber},${COL.coral});transform-origin:0 50%"></div>` : '';
     let js = '';
-    if (mode === 'in') js = `tl.fromTo('#${P}-q-head',{opacity:0,y:-40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${T0});tl.fromTo('.qrow-${P}',{opacity:0,x:-140},{opacity:1,x:0,duration:0.32,ease:'power4.out',stagger:0.09},${r3(T0 + 0.08)});`;
-    if (mode === 'timer') js = `tl.fromTo('#${P}-tm',{scaleX:1},{scaleX:0,duration:${D},ease:'none'},${T0});`;
+    if (mode === 'in' || mode === 'inTimer') js = `tl.fromTo('#${P}-q-head',{opacity:0,y:-40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${T0});tl.fromTo('.qrow-${P}',{opacity:0,x:-140},{opacity:1,x:0,duration:0.32,ease:'power4.out',stagger:0.09},${r3(T0 + 0.08)});`;
+    if (mode === 'timer' || mode === 'inTimer') js += `tl.fromTo('#${P}-tm',{scaleX:1},{scaleX:0,duration:${D},ease:'none'},${T0});`;
     if (mode === 'answer') {
       const ix = opts.findIndex(([l]) => l === ans);
       js = opts.map((_, i) => i === ix ? `tl.fromTo('#${P}-r${i}',{scale:1},{scale:1.07,duration:0.3,ease:'back.out(2)'},${r3(T0 + 0.1)});` : `tl.fromTo('#${P}-r${i}',{opacity:1},{opacity:0.22,duration:0.25},${r3(T0 + 0.05)});`).join('') + `tl.fromTo('#${P}-q-head',{scale:0.6,opacity:0},{scale:1,opacity:1,duration:0.3,ease:'back.out(1.8)'},${T0});`;
@@ -426,7 +433,7 @@ const R = {
       const sub = o.sub ? `<div id="${P}-b" class="t" style="top:760px;font-size:${fit(o.sub, 74)}px;color:${COL.ink}">${o.sub}</div>` : '', hd = o.handle ? `<div id="${P}-c" class="t ts" style="top:900px;font-size:52px;color:${COL.soft}">@desvendandoideias.ofc</div>` : '';
       return {
         html: `<div id="${P}-a" class="t" style="top:520px;font-size:190px;color:${COL.amber}">${o.big}</div>${sub}${hd}`,
-        js: `tl.fromTo('#${P}-a',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.35,ease:'back.out(1.6)'},${r3(T0 + 0.05)});` + (o.sub ? `tl.fromTo('#${P}-b',{opacity:0,y:40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${r3(T0 + 0.1)});` : '') + (o.handle ? `tl.fromTo('#${P}-c',{opacity:0},{opacity:1,duration:0.3},${r3(T0 + 0.3)});` : ''),
+        js: `tl.fromTo('#${P}-a',{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.35,ease:'back.out(1.6)'},${r3(T0 + 0.05)});` + (o.sub ? `tl.fromTo('#${P}-b',{opacity:0,y:40},{opacity:1,y:0,duration:0.3,ease:'power4.out'},${r3(T0 + (o.subAt ?? 0.1))});` : '') + (o.handle ? `tl.fromTo('#${P}-c',{opacity:0},{opacity:1,duration:0.3},${r3(T0 + (o.handleAt ?? 0.3))});` : ''),
       };
     }
     return R.endcardPending(P, T0, D, o);
@@ -470,9 +477,9 @@ beats.forEach((B) => {
     if (!rec) throw new Error('tipo de plano desconhecido: ' + s.k);
     const o = s.o || {}, T0 = s.start, D = s.dur;
     const { html: h, js: j } = rec(s.P, T0, D, o);
-    html.push(`<div id="${s.P}" class="clip shot" data-start="${s.start}" data-duration="${s.dur}" data-track-index="1"><div class="bg" style="background:${BG[s.bg]}"><div class="stars"></div></div><div id="${s.P}-cam" class="cam" data-layout-allow-overflow>${D > 2.0 ? `<div id="${s.P}-cam2" class="cam" data-layout-allow-overflow>${h}${ovHTML(s.P, o.ov)}</div>` : `${h}${ovHTML(s.P, o.ov)}`}</div></div>`);
+    html.push(`<div id="${s.P}" class="clip shot" data-start="${s.start}" data-duration="${s.dur}" data-track-index="1"><div class="bg" style="background:${BG[s.bg]}"><div class="stars"></div></div><div id="${s.P}-cam" class="cam" data-layout-allow-overflow>${D > LONG ? `<div id="${s.P}-cam2" class="cam" data-layout-allow-overflow>${h}${ovHTML(s.P, o.ov)}</div>` : `${h}${ovHTML(s.P, o.ov)}`}</div></div>`);
     const extra = [];
-    if (D > 2.0) { const n = Math.ceil(D / 2.0) - 1; for (let q = 1; q <= n; q++) { const at = r3(T0 + (D * q) / (n + 1)); extra.push(`tl.fromTo('#${s.P}-cam2',{scale:${(1 + 0.09 * (q - 1)).toFixed(2)}},{scale:${(1 + 0.09 * q).toFixed(2)},duration:0.22,ease:'power3.out'},${at});`); } }
+    if (D > LONG) { const n = Math.ceil(D / LONG) - 1; for (let q = 1; q <= n; q++) { const at = r3(T0 + (D * q) / (n + 1)); extra.push(`tl.fromTo('#${s.P}-cam2',{scale:${(1 + 0.09 * (q - 1)).toFixed(2)}},{scale:${(1 + 0.09 * q).toFixed(2)},duration:0.22,ease:'power3.out'},${at});`); } }
     js.push(`/* ${s.P} · ${s.st} · ${s.t} */`, j, ovJS(s.P, o.ov, T0, B.i + idx), camJS(s.P, T0, D, s.cam), ...extra);
   });
   const id = `beat${B.i}`;
@@ -495,9 +502,8 @@ window.__timelines["${id}"] = tl;
 // ---------- legendas ----------
 {
   const groups = [], js = [];
-  beats.forEach((B) => B.shots.forEach((s, k) => {
-    if (s.silent) return;
-    const gid = `cg-${s.P}`, a = r3(B.G + s.start), d = r3(s.dur);
+  beats.forEach((B) => B.phr.forEach((s, k) => {
+    const gid = `cg-${s.CP}`, a = r3(B.G + s.start), d = r3(s.pdur);
     const ws = B.words.filter((w) => w.pi === k);
     groups.push(`<div id="${gid}" class="clip cgh" data-start="${a}" data-duration="${d}" data-track-index="1"><div id="${gid}-g" class="cg">${ws.map((w, i) => `<span id="${gid}-w${i}" class="w">${w.w}</span>`).join(' ')}</div></div>`);
     js.push(`tl.fromTo('#${gid}-g',{opacity:0},{opacity:1,duration:0.08,ease:'power1.out'},${a});`);

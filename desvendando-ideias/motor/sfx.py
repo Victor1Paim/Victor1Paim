@@ -151,7 +151,7 @@ for b in beats[1:]:
     place(pitch(load('whoosh'), 0.95), b['G'] - 0.08, g=0.5, pan=-0.3, pan_to=0.3, tag='transicao')
 
 # cronômetro do quiz: do pergunta aparecer até o fim da contagem 3-2-1 (tique, taque; acelera na contagem)
-quiz_in = next((s for s in shots if s['k'] == 'quiz' and s['o'].get('mode') == 'in'), None)
+quiz_in = next((s for s in shots if s['k'] == 'quiz' and s['o'].get('mode') in ('in', 'inTimer')), None)
 guess = next((s for s in shots if s['k'] == 'guess'), None)
 if quiz_in and guess:
     t0, t_cd, t1 = quiz_in['start'] + 0.45, guess['start'], guess['start'] + guess['dur']
@@ -226,13 +226,14 @@ for s in shots:
     elif k == 'barFill':
         m = o.get('mode')
         if m == 'grow': place(s_rise(min(1.3, D), 180, 800), t0, g=0.3, tag='crescer')
+        elif m == 'growPct': place(s_rise(min(1.5, D), 180, 800), t0, g=0.3, tag='crescer'); ratchet(t0, min(1.5, D), 26, g=0.26); place(load('ping'), t0 + min(1.5, D), g=0.5, peak_at=t0 + min(1.5, D) + FRAME, tag='valor')
         elif m == 'pct': ratchet(t0, 0.7, 20, g=0.28); place(load('ping'), t0 + 0.7, g=0.5, peak_at=t0 + 0.7 + FRAME, tag='valor')
         else: place(s_thud(0.3), t0, g=0.5, peak_at=t0 + 0.1 + FRAME, tag='soco'); place(pitch(load('whoosh-short'), 1.1), t0 + 0.05, g=0.3, tag='passagem')
     elif k == 'compare':
         place(pitch(load('whoosh-short'), 1.0), t0 + 0.05, g=0.25, tag='passagem')
     elif k == 'quiz':
         m = o.get('mode', 'in')
-        if m == 'in':
+        if m in ('in', 'inTimer'):
             place(load('whoosh-short'), t0, g=0.35, tag='passagem')
             for i in range(4): place(pitch(load('pop'), 1 + 0.12 * i), t0 + 0.12 + 0.09 * i, g=0.38, tag='quiz-opcao')
         elif m == 'answer':
@@ -249,7 +250,8 @@ for s in shots:
         plips(t0 + 0.05, 16, 0.03, g=0.2, f0=0.9, f1=1.4, base=650); place(load('pop'), t0 + 0.55, g=0.3, tag='pop')
     elif k == 'endcard':
         place(load('pop'), t0 + 0.2, g=0.45, tag='pop')
-        if o.get('handle'): place(load('sparkle'), t0 + 0.3, g=0.35, tag='sparkle')
+        if o.get('sub'): place(pitch(load('pop'), 1.1), t0 + o.get('subAt', 0.1) + 0.1, g=0.35, tag='pop')
+        if o.get('handle'): place(load('sparkle'), t0 + o.get('handleAt', 0.3), g=0.35, tag='sparkle')
 
     # textos que entram "estourando" (anim pop) ganham um pop; os que deslizam ganham um passe curto
     for i, a in enumerate(an):

@@ -23,10 +23,10 @@ const out = ex('build-out.json') ? rd('build-out.json') : null;
 if (out) {
   const T = out.total;
   add(T >= 61 ? (T >= 70 && T <= 85 ? 'OK' : 'AVISO') : 'FALHA', 'Duração', `${T.toFixed(1)} s (monetização no TikTok: acima de 61 s; faixa do canal: 70–85 s)`);
-  const sp = out.shots.filter((s) => !s.silent), long = sp.filter((s) => s.dur > 2.0);
+  const sp = out.shots.filter((s) => !s.silent), long = sp.filter((s) => s.dur > 3.0);
   const longSemPunch = long.length; // planos >2 s recebem punch extra no meio; só registramos
-  add('OK', 'Planos', `${out.shots.length} planos; ${long.length} acima de 2,0 s (recebem aproximação extra no meio); maior: ${Math.max(...out.shots.map((s) => s.dur)).toFixed(2)} s`);
-  const maxLong = Math.max(0, ...out.shots.map((s) => s.dur));
+  add('OK', 'Planos', `${out.shots.length} planos; ${long.length} acima de 3,0 s (recebem aproximação extra no meio); maior: ${Math.max(...out.shots.map((s) => s.dur)).toFixed(2)} s`);
+  const maxLong = Math.max(0, ...out.shots.filter((s) => !s.hold).map((s) => s.dur));
   if (maxLong > 3.6) add('AVISO', 'Plano muito longo', `${maxLong.toFixed(2)} s: dividir em dois planos`);
   const curtos = out.shots.filter((s) => s.dur < 0.8 && !s.silent);
   if (curtos.length) add('AVISO', 'Planos curtos', `${curtos.map((s) => s.id).join(', ')} (< 0,8 s)`);

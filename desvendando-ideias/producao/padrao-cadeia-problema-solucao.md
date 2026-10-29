@@ -26,7 +26,7 @@ Regras:
 4. **Mostrar o problema antes de falar dele** (a água subindo, a rachadura aparecendo) e só então nomear.
 5. **Cada elo tem um dado ou uma ideia visual**, nunca só texto (regra do canal, `../decisoes.md`).
 6. **Honestidade didática:** é uma reconstrução para explicar, não a história real de quem inventou. Falar "uma das razões", "por isso, em geral", nunca "foi inventado para".
-7. **Troca de plano a cada 2 s, no máximo** (`regra-troca-a-cada-2s.md`): os blocos das tabelas abaixo são *beats*, e cada beat se divide em planos de 1,2 a 2,0 s com mudança de cenário, aproximação ou ângulo (2D, 2,5D ou 3D). Exemplo completo plano a plano em `../roteiros/001-quantas-terras-cabem-no-sol.md`.
+7. **Plano de 2 a 3 s** (revisado, decisão 28) (`regra-troca-a-cada-2s.md`): os blocos das tabelas abaixo são *beats*, e cada beat se divide em planos de 2 a 3 s com mudança de cenário, aproximação ou ângulo (2D, 2,5D ou 3D). Exemplo completo plano a plano em `../roteiros/001-quantas-terras-cabem-no-sol.md`.
 8. **Remate com pergunta aberta** que vira o gancho do próximo vídeo (série encadeada, também favorece seguir o perfil).
 
 ## Movimentos fixos por papel (do dicionário)

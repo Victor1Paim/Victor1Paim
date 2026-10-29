@@ -1,6 +1,6 @@
 # 001 · Quantas Terras cabem no Sol
 
-Tema: curiosidades (escala) · Duração: ~73 s (voz 66 s + 1,4 s de pausa final + planos sem fala) · Planos ≤ 2,0 s (`../producao/regra-troca-a-cada-2s.md`)
+Tema: curiosidades (escala) · Duração: ~75 s (voz 66 s + 1,4 s de pausa final + planos sem fala) · Planos de 2–3 s (`../producao/regra-troca-a-cada-2s.md`, revisada)
 Status: **rascunho 2, aguardando seu "aprovado" no corte de teste (portão 7)** · Projeto: `../producoes/001-sol/` (HyperFrames, 1080×1920)
 
 ## Decisões (portões do fluxo, 29/10/2026)

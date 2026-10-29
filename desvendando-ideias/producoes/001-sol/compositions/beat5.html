@@ -26,27 +26,19 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat5" data-width="1080" data-height="1920">
-<div id="b5s1" class="clip shot" data-start="0" data-duration="2.279" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 30%,#16264F 0%,#080D22 62%,#04060F 100%)"><div class="stars"></div></div><div id="b5s1-cam" class="cam" data-layout-allow-overflow><div id="b5s1-cam2" class="cam" data-layout-allow-overflow><div id="b5s1-num" class="t" style="top:560px;font-size:109px;color:#FFB300">1.300.000</div><div id="b5s1-lab" class="t" style="top:709px;font-size:84px;color:#F5F7FF">TERRAS (VOLUME)</div></div></div></div>
-<div id="b5s2" class="clip shot" data-start="2.279" data-duration="1.018" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 30%,#16264F 0%,#080D22 62%,#04060F 100%)"><div class="stars"></div></div><div id="b5s2-cam" class="cam" data-layout-allow-overflow><div id="b5s2-num" class="t" style="top:560px;font-size:109px;color:#FFB300">1.300.000</div><div id="b5s2-lab" class="t" style="top:709px;font-size:84px;color:#FFB300">× 0,74</div></div></div>
-<div id="b5s3" class="clip shot" data-start="3.297" data-duration="1.256" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)"><div class="stars"></div></div><div id="b5s3-cam" class="cam" data-layout-allow-overflow><div id="b5s3-num" class="t" style="top:560px;font-size:109px;color:#FFB300">1.300.000</div><div id="b5s3-lab" class="t" style="top:709px;font-size:84px;color:#F5F7FF">TERRAS</div></div></div>
-<div id="b5s4" class="clip shot" data-start="4.553" data-duration="1.404" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)"><div class="stars"></div></div><div id="b5s4-cam" class="cam" data-layout-allow-overflow><div id="b5s4-num" class="t" style="top:560px;font-size:89px;color:#FFB300">≈ 962.000</div><div id="b5s4-lab" class="t" style="top:709px;font-size:84px;color:#F5F7FF">NO MÁXIMO</div></div></div>
+<div id="b5s1" class="clip shot" data-start="0" data-duration="3.297" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 30%,#16264F 0%,#080D22 62%,#04060F 100%)"><div class="stars"></div></div><div id="b5s1-cam" class="cam" data-layout-allow-overflow><div id="b5s1-cam2" class="cam" data-layout-allow-overflow><div id="b5s1-num" class="t" style="top:560px;font-size:109px;color:#FFB300">1.300.000</div><div id="b5s1-lab" class="t" style="top:709px;font-size:84px;color:#F5F7FF">TERRAS × 0,74</div></div></div></div>
+<div id="b5s2" class="clip shot" data-start="3.297" data-duration="2.66" data-track-index="1"><div class="bg" style="background:radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)"><div class="stars"></div></div><div id="b5s2-cam" class="cam" data-layout-allow-overflow><div id="b5s2-num" class="t" style="top:560px;font-size:89px;color:#FFB300">≈ 1.300.000</div><div id="b5s2-lab" class="t" style="top:709px;font-size:84px;color:#F5F7FF">NO MÁXIMO</div></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
 /* b5s1 · 2D · Então, com Terras inteiras, */
 {const E=document.getElementById('b5s1-num');const S={v:1300000};tl.fromTo(S,{v:1300000},{v:1300000,duration:0.01,ease:'power3.out',onUpdate:()=>{E.textContent=''+F(Math.round(S.v))+''}},0);}tl.fromTo('#b5s1-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},0.1);
-tl.fromTo('#b5s1-cam',{"scale":1.22},{...{"scale":1},duration:2.279,ease:'power2.out'},0);
-tl.fromTo('#b5s1-cam2',{scale:1.00},{scale:1.09,duration:0.22,ease:'power3.out'},1.14);
-/* b5s2 · 2D · cabem no máximo */
-{const E=document.getElementById('b5s2-num');const S={v:1300000};tl.fromTo(S,{v:1300000},{v:1300000,duration:0.01,ease:'power3.out',onUpdate:()=>{E.textContent=''+F(Math.round(S.v))+''}},2.279);}tl.fromTo('#b5s2-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},2.379);
-tl.fromTo('#b5s2-cam',{"x":-60},{...{"x":60},duration:1.018,ease:'power1.inOut'},2.279);
-/* b5s3 · 2D · cerca de novecentas */
-{const E=document.getElementById('b5s3-num');const S={v:1300000};tl.fromTo(S,{v:1300000},{v:962000,duration:1.2,ease:'power3.out',onUpdate:()=>{E.textContent=''+F(Math.round(S.v))+''}},3.297);}tl.fromTo('#b5s3-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},3.397);
-tl.fromTo('#b5s3-cam',{"scale":1},{...{"scale":1.12},duration:1.256,ease:'power2.inOut'},3.297);
-/* b5s4 · 2D · e sessenta mil. */
-{const E=document.getElementById('b5s4-num');const S={v:962000};tl.fromTo(S,{v:962000},{v:962000,duration:0.01,ease:'power3.out',onUpdate:()=>{E.textContent='≈ '+F(Math.round(S.v))+''}},4.553);}tl.fromTo('#b5s4-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},4.653);
-tl.fromTo('#b5s4-cam',{"scale":1},{...{"scale":1.16},duration:0.25,ease:'power3.out'},4.553);tl.to('#b5s4-cam',{scale:1.2,duration:1.154,ease:'none'},4.803);
+tl.fromTo('#b5s1-cam',{"scale":1.22},{...{"scale":1},duration:3.297,ease:'power2.out'},0);
+tl.fromTo('#b5s1-cam2',{scale:1.00},{scale:1.09,duration:0.22,ease:'power3.out'},1.649);
+/* b5s2 · 2D · cerca de novecentas */
+{const E=document.getElementById('b5s2-num');const S={v:1300000};tl.fromTo(S,{v:1300000},{v:962000,duration:1.2,ease:'power3.out',onUpdate:()=>{E.textContent='≈ '+F(Math.round(S.v))+''}},3.297);}tl.fromTo('#b5s2-lab',{opacity:0,y:30},{opacity:1,y:0,duration:0.3,ease:'power3.out'},3.397);
+tl.fromTo('#b5s2-cam',{"scale":1},{...{"scale":1.12},duration:2.66,ease:'power2.inOut'},3.297);
 window.__timelines = window.__timelines || {};
 window.__timelines["beat5"] = tl;
 </script>
