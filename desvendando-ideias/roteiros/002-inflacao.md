@@ -1,16 +1,16 @@
 # 002 · A nota de R$ 100 encolheu
 
 Pilar: Finanças/Economia · Hook (tipo): Contradição (dia 2 do plano) · Pele: _(a decidir: plano diz Neo-brutalismo; 001 usou Cosmos)_ · Duração-alvo: 70–85 s · Criado em 2026-10-29
-Status: **portão 1 decidido; aguardando hook e CTA** · Projeto: `../producoes/002-inflacao/`
+Status: **portões 1, 2 e 4 decididos; aguardando ordem das cenas (3) e pele** · Projeto: `../producoes/002-inflacao/`
 
 ## Decisões (portões do fluxo)
 
 | Portão | Escolha do usuário | Alternativas que ficaram de fora |
 |---|---|---|
 | 1. Tema e ângulo | **Inflação: a nota de R$ 100 encolheu** (29/10/2026) | Imposto na nota fiscal, R$ 200/mês por 20 anos, 10 temas de engenharia (P15–P23) |
-| 2. Hook | _(pendente: 5 opções enviadas)_ | |
+| 2. Hook | **2 · "Ninguém tirou dinheiro da sua carteira. Mesmo assim, ele sumiu."** Primeiro quadro: carteira fechada e as notas ficando transparentes (29/10/2026) | 1 "a nota compra menos da metade", 3 "o preço não subiu, o dinheiro encolheu", 4 dois carrinhos, 5 "a nota é a mesma, o valor não" |
 | 3. Ordem das cenas | _(pendente)_ | |
-| 4. CTA | _(pendente: 5 opções enviadas)_ | |
+| 4. CTA | **2 · "Comenta: quanto custava seu lanche favorito em 2010? Deixa o like e segue pra mais curiosidades."** (29/10/2026) | 1 dúvida + like + seguir, 3 dúvida sobre inflação, 4 "qual preço mais te assustou", 5 "pode virar o próximo vídeo" |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
 | 6. Roteiro aprovado | _(pendente)_ | |
 | 7. Corte de teste | _(pendente)_ | |
