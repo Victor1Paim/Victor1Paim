@@ -160,9 +160,7 @@ def pan_for(cam):
 by_id = {s['id']: s for s in shots}
 GAIN = {'whoosh': 0.55, 'pop': 0.4}
 
-# transição entre beats
-for b in beats[1:]:
-    place(pitch(load('whoosh'), 0.95), b['G'] - 0.08, g=0.5, pan=-0.3, pan_to=0.3, tag='transicao')
+# sem som de troca de cena entre beats (decisão 34: o usuário achou parecido com corte de TV)
 
 # cronômetro do quiz: do pergunta aparecer até o fim da contagem 3-2-1 (tique, taque; acelera na contagem)
 quiz_in = next((s for s in shots if s['k'] == 'quiz' and s['o'].get('mode') in ('in', 'inTimer')), None)

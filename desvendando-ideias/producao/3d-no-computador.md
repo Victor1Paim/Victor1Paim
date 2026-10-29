@@ -1,5 +1,7 @@
 # 3D no computador do usuário (próxima produção)
 
+**Escolha do usuário (decisão 34): opção C, Blender Cycles**, pela qualidade. As opções A e B ficam só como referência de tempo no primeiro teste.
+
 Decisão do usuário (29/10/2026): o 004 ficou bom, mas a próxima produção em 3D roda no computador dele, com placa de vídeo, para render mais rápido e melhor. Também vamos testar outros jeitos de gerar o 3D.
 
 ## Antes da sessão (checklist do usuário)

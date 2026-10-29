@@ -74,10 +74,6 @@
    "o": {
     "cam": "geral",
     "st": {},
-    "sfx": [
-     "whoosh",
-     "pop@1.82"
-    ],
     "ov": [
      {
       "text": "LAJE DE CONCRETO",
@@ -86,6 +82,9 @@
       "y": 330,
       "at": 1.52
      }
+    ],
+    "sfx": [
+     "pop@1.82"
     ]
    },
    "anims": [
@@ -185,7 +184,6 @@
      "rain": 1
     },
     "sfx": [
-     "whoosh",
      "agua@2.422"
     ]
    },
@@ -847,10 +845,7 @@
       0.7
      ],
      "rain": 1
-    },
-    "sfx": [
-     "whoosh"
-    ]
+    }
    },
    "anims": []
   },
@@ -1285,9 +1280,6 @@
      "heroZ": -1.05,
      "heroRot": 0
     },
-    "sfx": [
-     "whoosh"
-    ],
     "ov": [
      {
       "text": "COLCHÃO DE AR",

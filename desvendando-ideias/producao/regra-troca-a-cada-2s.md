@@ -1,5 +1,7 @@
 # Regra de ritmo visual: um plano dura 2 a 3 s (revisada em 29/10/2026)
 
+> **Revisão 2 (decisão 34):** planos de **2 a 4 s**, chegando a 4 s quando a cena pede; sem som de troca de cena.
+>
 > **Revisão (decisão 28):** o usuário achou as trocas de 1–2 s rápidas demais no vídeo 001. Vale agora: **cada plano dura de 2 a 3 s**; perguntas e quiz ficam nos 3 s ou mais (contagem 3-2-1 de 3 s); planos acima de 3 s ganham um punch extra no meio; o cartão final pode segurar até ~4,5 s. Um vídeo de 70–85 s tem, portanto, **cerca de 25 a 32 planos**. O texto abaixo é o original (2,0 s) e vale como fundamento, trocando "2,0 s" por "2–3 s". A legenda continua por frase curta (`cont: true` em `shots.json` mantém o plano visual).
 
 ---
