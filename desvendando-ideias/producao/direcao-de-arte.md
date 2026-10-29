@@ -1,7 +1,7 @@
 # Direção de arte do Desvendando Ideias (adaptada do relatório "Halftone: estilos de motion design", 26/10/2026)
 
 Fonte: relatório do Manus AI sobre 9 estilos para vídeos explicativos verticais, escrito para o canal **Halftone** (séries). Aqui ele é lido
-criticamente e adaptado ao **Desvendando Ideias**. Status: **proposta, aguardando suas escolhas** (portão 0, no fim). Nada abaixo fixa um estilo único.
+criticamente e adaptado ao **Desvendando Ideias**. Status: **portão 0 respondido em 29/10/2026** (ver seção 9). Nada abaixo fixa um estilo único.
 
 ## 1. O que o relatório diz, em uma página
 
@@ -39,7 +39,7 @@ criticamente e adaptado ao **Desvendando Ideias**. Status: **proposta, aguardand
 
 Estas regras valem para **qualquer pele**. O que já está no vídeo 001 vira regra.
 
-1. **Cor semântica (constante):** âmbar `#FFB300` = número/dado/destaque; azul `#2E8BFF` = objeto/sistema; **menta** `#3DDC97` = correto/solução/resposta; **coral** `#FF4D5E` = problema/pegadinha/alerta/vazio; branco = texto. Calor ou energia, quando for o tema, usa laranja `#FF6A00` só no objeto, nunca como cor de dado.
+1. **Cor: cada pele tem a sua paleta** (decisão do usuário, 29/10/2026). A cor **não** é regra fixa entre peles. Dentro de uma mesma pele, cada cor mantém um papel (dado, objeto, problema, solução) do começo ao fim do vídeo, para o espectador não ter de reaprender. A paleta do vídeo 001 (âmbar/azul/menta/coral) pertence à pele **Cosmos**.
 2. **Tipografia:** uma família de exibição (Archivo Black) para ganchos, números e palavras-chave; uma informativa (Inter 700) para rótulos e fontes. Nada de terceira família.
 3. **Uma ação principal por plano**; o objeto aparece inteiro e reconhecível **antes** de qualquer aproximação.
 4. **Plano ≤ 2,0 s com mudança visível** (cenário, aproximação ou ângulo); o dado importante fica visível por 2 planos enquanto a câmera muda.
@@ -90,9 +90,33 @@ O relatório testa o mesmo trecho de 10 s em todas as linguagens. Para nós, o t
 
 "Como uma geladeira funciona?" é um bom teste de pele para engenharia, e encaixa no padrão problema → solução: tirar calor de dentro → evaporar um líquido absorve calor (evaporador) → o vapor se acumula, então comprime (compressor) → fica quente demais, então libera o calor para fora (condensador) → ainda está sob pressão, então estreita (capilar) → volta ao início. Precisa de 70–85 s para monetizar e de 2 fontes oficiais para os fatos. Fica no banco de pautas até você escolher o próximo vídeo.
 
-## 9. Decisões pendentes (portão 0 · direção de arte)
+## 9. Portão 0 · decisões do usuário (29/10/2026)
 
-1. Adotar a **gramática da seção 4** (regras fixas) como padrão do canal? Quais regras mudar?
-2. Quais **peles testar** no trecho do vídeo 001?
-3. Cores semânticas: manter âmbar = dado, coral = problema, menta = solução, azul = objeto?
-4. Validar nos previews reais de TikTok, Reels e Shorts (só você consegue abrir): quando?
+| Pergunta | Resposta |
+|---|---|
+| Estrutura | **Regras fixas + pele por tema.** Sem estilo único por enquanto |
+| Peles a testar no trecho do vídeo 001 | **Neo-brutalismo (laboratório de dados), Blueprint e Isométrico 2.5D**; Cosmos (atual) como referência |
+| Cores semânticas como regra do canal | **Não.** Cada pele tem a sua paleta (regra 1 acima) |
+| Validação nos previews de TikTok, Reels e Shorts | Pendente (só o usuário consegue abrir os apps) |
+
+Próximo passo: gerar o mesmo trecho nas três peles (e no Cosmos), comparar e só então escolher a pele-base de cada pilar. Código: `producoes/001-sol/scripts/build.mjs --tema`.
+
+## 10. Resultado do teste de peles (29/10/2026)
+
+Trecho: beats 3 e 4 do vídeo 001 (a pegadinha e o empacotamento, 17,4 s, 12 planos), mesma voz, mesmos planos, mesmo roteiro; só a pele muda
+(`node scripts/build.mjs --tema <cosmos|brutal|blueprint|iso> --beats 3,4 --out ../001-sol-teste-<pele>`). Quadros lado a lado: `../producoes/comparacao-peles/comparacao-peles.png`.
+Cada render levou 30–40 s e custo zero de API.
+
+| Pele | O que se vê | Pontos fortes | Pontos fracos | Custo de implementar |
+|---|---|---|---|---|
+| **Cosmos** (referência) | Fundo escuro, esferas com brilho | Já pronto; leitura boa de números e rótulos | Parece "tema espacial" mesmo em assuntos sem relação | Zero |
+| **Neo-brutalismo** | Fundo claro chapado (creme, amarelo, rosa, menta), contorno preto, sombra dura | **Maior impacto e maior contraste**; números e formas lidos de longe; legenda em caixa branca nítida | Cores muito vivas cansam em 70+ s; cada tema pede uma troca de cor de fundo para não repetir; o vermelho sobre rosa falhou no contraste (2,5:1) e foi corrigido | Baixo: só CSS e paleta |
+| **Blueprint** | Campo azul com grade, traço claro, hachura | Visual "técnico" coerente para engenharia; ótimo para cortes e esquemas | Elementos pequenos (a pilha de esferas) **perdem peso**: azul sobre azul, preenchimento com hachura leve; o `check` não acusou, mas no celular exige conferência | Baixo: só CSS e paleta |
+| **Isométrico 2.5D** | Piso em losango, esferas em camadas | **A pilha 3D conta a ideia melhor que as outras** (empacotamento visível como volume) | Só 2 dos 12 planos foram redesenhados; barras e textos seguem iguais ao Cosmos. Para valer em todo o vídeo, cada tipo de plano precisa de versão isométrica | Médio: receita nova por tipo de plano |
+
+Leitura honesta: são **peles de CSS** (brutal, blueprint) contra uma pele que exige **redesenho por plano** (isométrico). Isto é análise minha dos quadros; a avaliação que conta é a sua e a de quem não fez o vídeo (seção 7, passos 3 e 4).
+
+### Pendente (portão 0, parte 2)
+1. Qual(is) pele(s) seguem para a segunda rodada (mais planos e outro assunto)?
+2. Avaliar com 2 ou 3 pessoas que não participaram, com e sem som (perguntas da seção 7).
+3. Escolher a pele-base provisória de cada pilar (seção 5, sugestão de mapa).

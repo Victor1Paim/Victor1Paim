@@ -9,6 +9,12 @@ import { execFileSync, spawnSync } from 'node:child_process';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const data = J('shots.json');
+const argv = process.argv.slice(2);
+const arg = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i + 1] : d; };
+const THEME = arg('tema', 'cosmos');                                    // cosmos | brutal | blueprint | iso
+const ONLY = arg('beats', null) ? arg('beats').split(',').map(Number) : null;   // só estes beats (teste de pele)
+const OUT = arg('out', null) ? path.resolve(ROOT, arg('out')) : ROOT;   // pasta de saída (outro projeto)
+const FULL = !ONLY && OUT === ROOT;
 const r3 = (n) => Math.round(n * 1000) / 1000;
 
 // ---------- tempos da voz ----------
@@ -77,6 +83,7 @@ data.beats.forEach((b, i) => {
   beats.push({ i, G: r3(G), dur, audioDur: tm.dur, shots: [...shots, ...silents], words, audio: b.audio });
   G += dur;
 });
+if (ONLY) { const keep = beats.filter((B) => ONLY.includes(B.i)); beats.length = 0; let g = 0; keep.forEach((B) => { B.G = r3(g); g += B.dur; beats.push(B); }); G = g; }
 const TOTAL = r3(G);
 
 // ---------- relatório ----------
@@ -87,19 +94,75 @@ beats.forEach((B) => B.shots.forEach((s) => {
   if (flag.includes('⚠')) warn++;
   report.push(`| ${s.P} | ${r3(B.G + s.start)} | ${s.dur}${flag} | ${s.st} | ${s.t} |`);
 }));
-fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por scripts/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
+if (FULL) fs.writeFileSync(path.join(ROOT, 'PLANOS.md'), `# Planos (gerado por scripts/build.mjs)\n\nTotal: ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos: ${warn}\n\n${report.join('\n')}\n`);
 
-fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, shots: beats.flatMap((B) => B.shots.map((s) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur }))) }, null, 1));
-spawnSync('python3', ['-I', path.join(ROOT, 'scripts/sfx.py')], { cwd: ROOT, stdio: 'inherit' });
+if (FULL) fs.writeFileSync(path.join(ROOT, 'build-out.json'), JSON.stringify({ total: TOTAL, shots: beats.flatMap((B) => B.shots.map((s) => ({ id: s.P, k: s.k, silent: !!s.silent, start: r3(B.G + s.start), dur: s.dur }))) }, null, 1));
+if (FULL) spawnSync('python3', ['-I', path.join(ROOT, 'scripts/sfx.py')], { cwd: ROOT, stdio: 'inherit' });
 
 // ---------- visuais ----------
-const COL = { amber: '#FFB300', mint: '#3DDC97', coral: '#FF4D5E', blue: '#2E8BFF', ink: '#F5F7FF', soft: '#9FB0D8' };
-const BG = {
-  space: 'radial-gradient(ellipse at 50% 30%,#16264F 0%,#080D22 62%,#04060F 100%)',
-  warm: 'radial-gradient(ellipse at 50% 35%,#3A1C08 0%,#150A05 65%,#080403 100%)',
-  alert: 'radial-gradient(ellipse at 50% 35%,#4A0F1C 0%,#1A060B 65%,#080305 100%)',
-  mint: 'radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)',
+const GRID = 'linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px) 0 0/60px 60px,';
+const THEMES = {
+  // Cosmos: pele do vídeo 001 (azul-noite, formas com brilho)
+  cosmos: {
+    col: { amber: '#FFB300', mint: '#3DDC97', coral: '#FF4D5E', blue: '#2E8BFF', ink: '#F5F7FF', soft: '#9FB0D8' },
+    bg: {
+      space: 'radial-gradient(ellipse at 50% 30%,#16264F 0%,#080D22 62%,#04060F 100%)',
+      warm: 'radial-gradient(ellipse at 50% 35%,#3A1C08 0%,#150A05 65%,#080403 100%)',
+      alert: 'radial-gradient(ellipse at 50% 35%,#4A0F1C 0%,#1A060B 65%,#080305 100%)',
+      mint: 'radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)',
+    },
+    css: '', base: '#FFFFFF',
+    cap: ".cg{position:absolute;left:90px;top:1130px;width:900px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:58px;line-height:1.18;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9);opacity:0}",
+  },
+  // Neo-brutalismo (laboratório de dados): fundo claro chapado, contorno preto, sombra dura, cores saturadas
+  brutal: {
+    col: { amber: '#D90368', mint: '#007A4D', coral: '#B3001B', blue: '#3A86FF', ink: '#111111', soft: '#444444' },
+    bg: { space: '#FFF3D6', warm: '#FFD60A', alert: '#FFB3C1', mint: '#B8F2D9' },
+    css: `#root{color:#111}.stars{display:none}.t{text-shadow:none}
+.sun{background:#FFD60A;border:8px solid #111;box-shadow:14px 14px 0 #111;box-sizing:border-box}.suntex{display:none}
+.earth{background:#3A86FF;border:8px solid #111;box-shadow:12px 12px 0 #111;box-sizing:border-box}
+.pile{background:#3A86FF;border:6px solid #111;box-shadow:8px 8px 0 #111;box-sizing:border-box}
+[id$="-liq"]{background:#3A86FF!important;opacity:1!important}[id$="-drop"]{background:#3A86FF!important;border:8px solid #111;box-sizing:border-box}
+[id$="-splash"]{background:#3A86FF!important;border:6px solid #111;box-sizing:border-box}[id$="-fill"]{background:#3A86FF!important;border:4px solid #111;box-sizing:border-box}`,
+    base: '#111111',
+    cap: ".cgh{display:flex;justify-content:center;align-items:flex-start}.cg{position:static;margin-top:1120px;width:auto;max-width:900px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:54px;line-height:1.18;color:#111;background:#fff;border:6px solid #111;box-shadow:10px 10px 0 #111;padding:14px 26px;box-sizing:border-box;opacity:0}",
+  },
+  // Blueprint: campo azul com grade, traço claro, hachura, rótulos técnicos
+  blueprint: {
+    col: { amber: '#FFD166', mint: '#8DFFD1', coral: '#FF8FA3', blue: '#9CC9FF', ink: '#EAF2FF', soft: '#9DB8E8' },
+    bg: {
+      space: GRID + 'radial-gradient(ellipse at 50% 35%,#154799 0%,#0B2E70 62%,#071B45 100%)',
+      warm: GRID + 'radial-gradient(ellipse at 50% 35%,#14509E 0%,#0B3374 62%,#071E4A 100%)',
+      alert: GRID + 'radial-gradient(ellipse at 50% 35%,#1C3A8A 0%,#0F2461 65%,#081540 100%)',
+      mint: GRID + 'radial-gradient(ellipse at 50% 35%,#13589F 0%,#0A3C78 62%,#06254C 100%)',
+    },
+    css: `.stars{display:none}.t{font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.03em;text-shadow:none}.ts{font-family:'IBM Plex Mono',monospace}
+.sun{background:repeating-linear-gradient(45deg,rgba(234,242,255,.30) 0 3px,transparent 3px 14px);border:6px solid #EAF2FF;box-shadow:none;box-sizing:border-box}.suntex{display:none}
+.earth{background:repeating-linear-gradient(45deg,rgba(156,201,255,.32) 0 3px,transparent 3px 12px);border:6px solid #9CC9FF;box-shadow:none;box-sizing:border-box}
+.pile{background:repeating-linear-gradient(45deg,rgba(156,201,255,.30) 0 3px,transparent 3px 12px);border:5px solid #9CC9FF;box-sizing:border-box}
+[id$="-liq"]{background:repeating-linear-gradient(0deg,rgba(156,201,255,.55) 0 3px,rgba(156,201,255,.2) 3px 10px)!important}
+[id$="-drop"]{background:rgba(156,201,255,.35)!important;border:5px solid #9CC9FF;box-sizing:border-box}[id$="-splash"]{background:rgba(156,201,255,.4)!important}
+[id$="-fill"]{background:repeating-linear-gradient(45deg,#9CC9FF 0 4px,#6FA8F0 4px 10px)!important}`,
+    base: '#EAF2FF',
+    cap: ".cg{position:absolute;left:90px;top:1130px;width:900px;text-align:center;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.02em;font-size:62px;line-height:1.18;color:#EAF2FF;text-shadow:0 3px 14px rgba(0,0,0,.8);opacity:0}",
+  },
+  // Isométrico 2.5D: cenário em eixos a 30° com piso em losango, esferas empilhadas em camadas
+  iso: {
+    col: { amber: '#FFC857', mint: '#7CFFCB', coral: '#FF6B6B', blue: '#2DD4BF', ink: '#F2FBFF', soft: '#9CC9C9' },
+    bg: {
+      space: 'radial-gradient(ellipse at 50% 30%,#12383F 0%,#0A1F26 62%,#051217 100%)',
+      warm: 'radial-gradient(ellipse at 50% 35%,#3B2A14 0%,#150F07 65%,#080503 100%)',
+      alert: 'radial-gradient(ellipse at 50% 35%,#3A1420 0%,#1A0A10 65%,#08040A 100%)',
+      mint: 'radial-gradient(ellipse at 50% 35%,#0C3A33 0%,#061A18 65%,#030C0B 100%)',
+    },
+    css: `.stars{opacity:.35}.pile{background:radial-gradient(circle at 36% 30%,#C9FFF3 0%,#2DD4BF 45%,#0B6E6E 100%)}
+.floor{position:absolute;border:4px solid rgba(242,251,255,.35);background:repeating-linear-gradient(0deg,rgba(242,251,255,.10) 0 2px,transparent 2px 60px),repeating-linear-gradient(90deg,rgba(242,251,255,.10) 0 2px,transparent 2px 60px),rgba(45,212,191,.10);transform:scaleY(.5) rotate(45deg)}`,
+    base: '#FFFFFF',
+    cap: null,
+  },
 };
+THEMES.iso.cap = THEMES.cosmos.cap;
+const COL = THEMES[THEME].col, BG = THEMES[THEME].bg;
 const fit = (text, size) => Math.min(size, Math.floor(900 / (String(text).length * 0.88)));
 const px = (n) => Math.round(n * 100) / 100;
 
@@ -360,8 +423,29 @@ const R = {
   },
 };
 
+// ---------- pele isométrica: esferas em camadas sobre um piso em losango ----------
+if (THEME === 'iso') {
+  const proj = (i, j, l, r, n) => ({ x: 540 + (i - j) * r * 1.55, y: 640 + (i + j) * r * 0.78 - l * r * 1.5 });
+  const floorHTML = (n, r) => { const c = proj((n - 1) / 2, (n - 1) / 2, 0, r, n), sz = Math.round((n * r * 1.55 + r) * 1.4142); return `<div class="floor" style="left:${px(c.x - sz / 2)}px;top:${px(c.y + r * 0.55 - sz / 2)}px;width:${sz}px;height:${sz}px"></div>`; };
+  R.spherePile = (P, T0, D, o) => {
+    const rows = o.rows || 3, n = 3, layers = rows > 3 ? 3 : 2, r = 64, cells = [];
+    for (let l = 0; l < layers; l++) for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) cells.push({ i, j, l });
+    cells.sort((a, b) => a.l - b.l || (a.i + a.j) - (b.i + b.j));
+    const sph = cells.map(({ i, j, l }) => { const p = proj(i, j, l, r, n); return `<span class="pile pile-${P}" style="left:${px(p.x - r)}px;top:${px(p.y - r)}px;width:${r * 2}px;height:${r * 2}px"></span>`; });
+    return { html: floorHTML(n, r) + sph.join(''), js: `tl.fromTo('.pile-${P}',{opacity:0,y:60,scale:0.7},{opacity:1,y:0,scale:1,duration:0.3,ease:'back.out(1.4)',stagger:0.03},${T0});` };
+  };
+  R.gaps = (P, T0, D) => {
+    const n = 4, r = 56, cells = [], marks = [];
+    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) cells.push({ i, j });
+    cells.sort((a, b) => (a.i + a.j) - (b.i + b.j));
+    const sph = cells.map(({ i, j }) => { const p = proj(i, j, 0, r, n); return `<span class="pile" style="left:${px(p.x - r)}px;top:${px(p.y - r)}px;width:${r * 2}px;height:${r * 2}px"></span>`; });
+    for (let i = 0; i < n - 1; i++) for (let j = 0; j < n - 1; j++) { const p = proj(i + 0.5, j + 0.5, 0, r, n); marks.push(`<span class="abs gp-${P}" style="left:${px(p.x - 22)}px;top:${px(p.y + r * 0.5 - 12)}px;width:44px;height:24px;background:${COL.coral};transform:none;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span>`); }
+    return { html: floorHTML(n, r) + sph.join('') + marks.join(''), js: `tl.fromTo('.gp-${P}',{opacity:0,scale:0.2},{opacity:1,scale:1,duration:0.25,ease:'back.out(2)',stagger:0.03},${r3(T0 + 0.1)});` };
+  };
+}
+
 // ---------- monta as cenas ----------
-fs.mkdirSync(path.join(ROOT, 'compositions'), { recursive: true });
+fs.mkdirSync(path.join(OUT, 'compositions'), { recursive: true });
 beats.forEach((B) => {
   const html = [], js = [];
   B.shots.forEach((s, idx) => {
@@ -375,8 +459,8 @@ beats.forEach((B) => {
     js.push(`/* ${s.P} · ${s.st} · ${s.t} */`, j, ovJS(s.P, o.ov, T0, B.i + idx), camJS(s.P, T0, D, s.cam), ...extra);
   });
   const id = `beat${B.i}`;
-  fs.writeFileSync(path.join(ROOT, `compositions/${id}.html`), `<template>
-<style>${COMMON_CSS}</style>
+  fs.writeFileSync(path.join(OUT, `compositions/${id}.html`), `<template>
+<style>${COMMON_CSS}${THEMES[THEME].css}</style>
 <div id="root" data-composition-id="${id}" data-width="1080" data-height="1920">
 ${html.join('\n')}
 </div>
@@ -402,15 +486,15 @@ window.__timelines["${id}"] = tl;
     js.push(`tl.fromTo('#${gid}-g',{opacity:0},{opacity:1,duration:0.08,ease:'power1.out'},${a});`);
     ws.forEach((w, i) => {
       const t0 = r3(Math.max(a, B.G + w.s)), t1 = r3(Math.min(a + d, B.G + w.e));
-      js.push(`tl.to('#${gid}-w${i}',{color:'#FFB300',duration:0.05},${t0});tl.to('#${gid}-w${i}',{color:'#FFFFFF',duration:0.05},${r3(Math.max(t0 + 0.05, t1))});`);
+      js.push(`tl.to('#${gid}-w${i}',{color:'${COL.amber}',duration:0.05},${t0});tl.to('#${gid}-w${i}',{color:'${THEMES[THEME].base}',duration:0.05},${r3(Math.max(t0 + 0.05, t1))});`);
     });
     js.push(`tl.to('#${gid}-g',{opacity:0,duration:0.06},${r3(a + d - 0.06)});tl.set('#${gid}-g',{opacity:0},${r3(a + d)});`);
   }));
-  fs.writeFileSync(path.join(ROOT, 'compositions/captions.html'), `<template>
+  fs.writeFileSync(path.join(OUT, 'compositions/captions.html'), `<template>
 <style>
 #root{position:absolute;inset:0}
 .cgh{position:absolute;inset:0}
-.cg{position:absolute;left:90px;top:1130px;width:900px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:58px;line-height:1.18;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.9);opacity:0}
+${THEMES[THEME].cap}
 .w{display:inline-block}
 </style>
 <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
@@ -429,9 +513,9 @@ window.__timelines["captions"] = tl;
 // ---------- index ----------
 {
   const hosts = beats.map((B) => `<div id="beat${B.i}" data-composition-id="beat${B.i}" data-composition-src="compositions/beat${B.i}.html" data-start="${B.G}" data-duration="${B.dur}" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>`);
-  const sfxOn = fs.existsSync(path.join(ROOT, 'assets/sfx/sfx-mix.wav'));
+  const sfxOn = FULL && fs.existsSync(path.join(ROOT, 'assets/sfx/sfx-mix.wav'));
   const audios = (sfxOn ? [`<audio id="sfx" src="assets/sfx/sfx-mix.wav" data-start="0" data-duration="${TOTAL}" data-track-index="6" data-volume="0.9"></audio>`] : []).concat(beats.map((B) => `<audio id="voz${B.i}" src="${B.audio.replace('assets/voz/', 'assets/voz/proc/')}" data-start="${B.G}" data-duration="${r3(B.audioDur)}" data-track-index="5" data-volume="1"></audio>`));
-  fs.writeFileSync(path.join(ROOT, 'index.html'), `<!doctype html>
+  fs.writeFileSync(path.join(OUT, 'index.html'), `<!doctype html>
 <html lang="pt-BR" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
@@ -458,4 +542,10 @@ window.__timelines["captions"] = tl;
 </html>
 `);
 }
-console.log(`ok · ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos de duração: ${warn} (ver PLANOS.md)`);
+if (OUT !== ROOT) {
+  fs.mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true }); fs.mkdirSync(path.join(OUT, 'assets/voz/proc'), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, 'assets/vendor/gsap.min.js'), path.join(OUT, 'assets/vendor/gsap.min.js'));
+  beats.forEach((B) => { const f = B.audio.replace('assets/voz/', 'assets/voz/proc/'); fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f)); });
+  for (const f of ['hyperframes.json', 'meta.json', 'package.json']) if (fs.existsSync(path.join(ROOT, f))) fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f));
+}
+console.log(`ok · tema ${THEME} · ${TOTAL} s · ${beats.reduce((a, b) => a + b.shots.length, 0)} planos · avisos de duração: ${warn} (ver PLANOS.md)`);

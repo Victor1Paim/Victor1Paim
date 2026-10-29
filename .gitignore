@@ -6,3 +6,6 @@
 # Cache e registro de chamadas pagas (skill gemini-midia)
 producoes/.cache-gemini/
 **/.cache-gemini/
+
+# Projetos de teste de pele (reproduzíveis com: node scripts/build.mjs --tema <pele> --beats 3,4 --out ../001-sol-teste-<pele>)
+desvendando-ideias/producoes/001-sol-teste-*/
