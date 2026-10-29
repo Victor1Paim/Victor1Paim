@@ -1,6 +1,6 @@
 # Banco de pautas (candidatas, **nenhuma decidida**)
 
-O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 29 candidatas; faltam cerca de 20 (só 1 em Mistérios/história), que saem das sessões de pauta
+O plano de 30 dias pede **pelo menos 30 ideias separadas por pilar** antes do dia 1. Hoje há 39 candidatas; faltam cerca de 20 (só 1 em Mistérios/história), que saem das sessões de pauta
 (portão 1 do fluxo: o Claude traz 3 ângulos por tema, você escolhe). Uma pauta só vira vídeo depois do portão 1.
 
 Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido (só sugestão) · risco.
@@ -36,9 +36,26 @@ Campos: pilar · pergunta/gancho em uma frase · fontes a achar · hook sugerido
 | P26 | A gente perde a maior parte do calor pela cabeça? | Saúde | "Põe a touca que o calor sai pela cabeça" | Fonte de fisiologia (perda de calor proporcional à área exposta) + BMJ 2008 | Você aprendeu errado | Baixo | Candidata |
 | P27 | Ler no escuro estraga a vista? | Saúde | "Vai ficar cego lendo no escuro" | Academia Americana de Oftalmologia + 1 fonte | Você aprendeu errado | Baixo | Candidata |
 | P28 | Precisa beber 2 litros de água por dia? | Saúde | "2 litros" contando o quê? | EFSA (ingestão total de água) + 1 fonte oficial | Você aprendeu errado | Médio (não dar meta individual) | Candidata |
+| P29 | O remédio da moda veio do veneno de um lagarto | Saúde | "Um lagarto venenoso ajudou a criar o Ozempic" | Exenatida/exendina-4 do monstro-de-gila (FDA 2005) + artigo de revisão | Consequência antes da causa | Médio (sem recomendar uso) | Candidata |
+| P30 | Como o Ozempic “desliga” a fome | Saúde | "Ele não queima gordura. Ele conversa com o seu cérebro" | Bula/EMA ou FDA (semaglutida) + revisão sobre GLP-1 | Pergunta com lacuna | Médio | Candidata |
+| P31 | Mito: “Ozempic queima gordura” | Saúde | "QUEIMA → ? (text swap)" | Bula + revisão sobre GLP-1 | Você aprendeu errado | Médio | Candidata |
+| P32 | Por que é uma injeção por semana (e não um comprimido por dia) | Saúde | "Uma picada por semana. Como o remédio dura 7 dias?" | Bula (meia-vida ~1 semana) + existência da versão oral | Pergunta com lacuna | Baixo | Candidata |
+| P33 | Ozempic × Mounjaro: qual a diferença | Saúde | "Um imita 1 hormônio. O outro imita 2" | Bulas (semaglutida; tirzepatida) + estudos STEP 1 e SURMOUNT-1 | Contradição | Médio (comparação não é recomendação) | Candidata |
+| P34 | O que acontece quando para de tomar | Saúde | "Perdeu peso com a caneta. E quando para?" | Extensão do estudo STEP 1 (reganho de ~2/3 do peso em 1 ano) | Consequência antes da causa | Médio | Candidata |
+| P35 | “Rosto de Ozempic”: o que é | Saúde | "Não é o remédio que muda o rosto" | Fontes dermatológicas/médicas (perda rápida de gordura facial) | Você aprendeu errado | Médio | Candidata |
+| P36 | Nem todo quilo perdido é gordura | Saúde | "Parte do peso que sai é músculo" | Análises dos estudos com GLP-1 sobre massa magra (2 fontes) | Número absurdo | Médio (sem conselho de dieta/treino) | Candidata |
+| P37 | Canetas falsas: o alerta da Anvisa | Saúde | "Essa caneta pode ser falsa" | Alertas da Anvisa sobre falsificação + regra de receita | Consequência antes da causa | Médio (precisa de alerta oficial atual) | Candidata |
+| P38 | De remédio de diabetes a febre para emagrecer | Saúde | "Ele nasceu para tratar diabetes" | Histórico de aprovação (diabetes → obesidade) + Anvisa | Pergunta com lacuna | Baixo | Candidata |
 
 ## Como chegar a 30
 
 1. Sessão de pauta por pilar: o Claude traz 8 a 10 perguntas respondíveis em 70–85 s, cada uma com a fonte provável; você marca as que quer.
 2. Cada um dos 5 pilares precisa de **5 pautas aprovadas para o teste de 30 dias** (25 no total) mais 1 reserva por pilar. Em Mistérios/história, as pautas seguem as regras editoriais do PDF (lenda não é fato).
 3. Descartar o que: vira lenda tratada como fato, depende de número que varia entre fontes, ou exige aconselhar saúde/investimento.
+
+### Regras extras para remédios (GLP-1: Ozempic, Mounjaro, Wegovy e afins)
+- Explicar como funciona e o que os estudos mostram; **nunca** dose, onde comprar, "vale a pena tomar", antes/depois ou promessa de quilos.
+- Toda afirmação com 2 fontes (bula/agência reguladora + estudo publicado); números sempre "em média, no estudo X".
+- Fecho obrigatório na tela e na legenda: "Não use sem prescrição. Converse com seu médico."
+- Risco de plataforma: conteúdo que pareça promover emagrecimento pode ter alcance limitado no TikTok; manter tom explicativo, sem corpo "antes/depois".
+
