@@ -43,6 +43,7 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 30 | **Sempre 5 opções de hook e 5 de CTA final** por vídeo, para o usuário escolher (portões 2 e 4) | Resposta do usuário (29/10/2026) |
 | 31 | **Vídeo 001 aprovado** (Cosmos, 75 s, 27 planos): "ficou excelente… o andamento do vídeo ficou perfeito". Ritmo de 2–3 s vira o padrão | Resposta do usuário (29/10/2026) |
 | 32 | **Chave da OpenAI (opcional, futura) para imagem:** entra só como variável de ambiente `OPENAI_API_KEY` nas configurações do ambiente (nunca no chat), com o domínio `api.openai.com` liberado. Ordem para imagem: código → Gemini imagem → OpenAI, sempre com simulação e cache antes de gastar | Resposta do usuário (29/10/2026) |
+| 33 | **Formato cadeia como padrão de retenção:** cada fala resolve o problema anterior e cria o próximo ("Mas…", "Então…", "Esse é o…"). Vídeos podem passar de 85 s quando o assunto pede (ex.: 2–3 min). Legenda palavra a palavra grande no centro nesses vídeos. Personagem do canal (avatar com moletom de nuvens vermelhas) entra nas cenas. Primeiro vídeo: 004 telhado, adaptado de uma referência com texto reescrito | Resposta do usuário (29/10/2026) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa

@@ -69,3 +69,14 @@ Hook A (pergunta): "Por que o telhado da sua casa é feito de pedacinhos?"
 | #2 Concreto cura | Concreto seca → perde resistência → molha/cobre → cura de 7 dias |
 | #1 Taipei 101 | Prédio alto balança → enrijecer? → peso demais → amortecedor de massa |
 | Novos | Por que o tijolo tem furos, por que pontes têm arcos, por que trilho tem folga |
+
+## Formato cadeia longo (decisão 33, 29/10/2026)
+
+Referência: vídeo de telhado enviado pelo usuário (2:45, 3D low-poly). O que copiar do **comportamento**, não do texto:
+- **Toda frase abre um problema ou fecha um**: "Se você faz X… → acontece Y. Então você faz Z. Mas… Então… Esse é o/a [nome]." O nome técnico só aparece **depois** que o espectador entendeu por que a peça existe.
+- **Nome da peça como recompensa**: cada "É a calha." / "São as ripas." fecha um elo e vira destaque amarelo na tela.
+- **Ritmo de fala rápido** (≈ 3,3 palavras/s na referência; nossa voz acelerada a 1,2×) e cena nova a cada frase.
+- **Personagem** reage a cada problema (guarda-chuva na goteira, suor no calor, comemora no fim).
+- **CTA de identidade**: "Se já sabia, comenta engenheiro. Se não sabia, comenta estagiário." (gera comentário sem pedir "comente").
+- Duração livre (2–3 min) quando a cadeia tem muitos elos; manter 70–85 s quando a cadeia é curta.
+
