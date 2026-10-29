@@ -29,25 +29,20 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat2" data-width="1080" data-height="1920">
-<div id="b2s1" class="clip shot" data-start="0" data-duration="2.025" data-track-index="1"></div>
-<div id="b2s2" class="clip shot" data-start="2.025" data-duration="2.649" data-track-index="1"></div>
-<div id="b2s3" class="clip shot" data-start="4.674" data-duration="2.772" data-track-index="1"><div id="b2s3-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TELHAS</span></div></div>
-<div id="b2s4" class="clip shot" data-start="7.446" data-duration="3.316" data-track-index="1"><div id="b2s4-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>FRESTAS</span></div></div>
-<div id="b2s5" class="clip shot" data-start="10.762" data-duration="3.106" data-track-index="1"><div id="b2s5-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>TELHA SOBRE TELHA</span></div></div>
-<div id="b2s6" class="clip shot" data-start="13.868" data-duration="4.261" data-track-index="1"></div>
+<div id="b2s1" class="clip shot" data-start="0" data-duration="4.674" data-track-index="1"></div>
+<div id="b2s2" class="clip shot" data-start="4.674" data-duration="6.088" data-track-index="1"><div id="b2s2-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TELHAS</span></div><div id="b2s2-ov1" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>FRESTAS</span></div></div>
+<div id="b2s3" class="clip shot" data-start="10.762" data-duration="3.106" data-track-index="1"><div id="b2s3-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>TELHA SOBRE TELHA</span></div></div>
+<div id="b2s4" class="clip shot" data-start="13.868" data-duration="4.261" data-track-index="1"></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b2s1 · 3D · A saída é trocar a peça única */
-/* b2s2 · 3D · por várias peças pequenas e soltas, */
-/* b2s3 · 3D · que se mexem sem quebrar. São as telhas. */
-tl.fromTo('#b2s3-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},6.224);
-/* b2s4 · 3D · Mas agora a água passa pela fresta entre uma e outra. */
-tl.fromTo('#b2s4-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},7.496);
-/* b2s5 · 3D · Então cada telha fica por cima da de baixo: */
-tl.fromTo('#b2s5-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},10.812);
-/* b2s6 · 3D · a água sempre cai na telha seguinte, nunca na fresta. */
+/* b2s1 · 3D · A saída é trocar a peça única por várias peças pequenas e soltas, */
+/* b2s2 · 3D · que se mexem sem quebrar. São as telhas. Mas agora a água passa pela fresta entre uma e outra. */
+tl.to('#b2s2-ov0',{opacity:0,duration:0.08},7.346);tl.fromTo('#b2s2-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},6.224);tl.fromTo('#b2s2-ov1',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},7.496);
+/* b2s3 · 3D · Então cada telha fica por cima da de baixo: */
+tl.fromTo('#b2s3-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},10.812);
+/* b2s4 · 3D · a água sempre cai na telha seguinte, nunca na fresta. */
 window.__timelines = window.__timelines || {};
 window.__timelines["beat2"] = tl;
 </script>

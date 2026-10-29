@@ -29,26 +29,20 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat7" data-width="1080" data-height="1920">
-<div id="b7s1" class="clip shot" data-start="0" data-duration="2.39" data-track-index="1"></div>
-<div id="b7s2" class="clip shot" data-start="2.39" data-duration="2.178" data-track-index="1"></div>
-<div id="b7s3" class="clip shot" data-start="4.568" data-duration="2.629" data-track-index="1"></div>
-<div id="b7s4" class="clip shot" data-start="7.197" data-duration="2.225" data-track-index="1"><div id="b7s4-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">BEIRAL</span></div></div>
-<div id="b7s5" class="clip shot" data-start="9.422" data-duration="3.757" data-track-index="1"></div>
-<div id="b7s6" class="clip shot" data-start="13.179" data-duration="2.181" data-track-index="1"></div>
-<div id="b7s7" class="clip shot" data-start="15.36" data-duration="0.868" data-track-index="1"><div id="b7s7-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">CALHA</span></div></div>
+<div id="b7s1" class="clip shot" data-start="0" data-duration="4.568" data-track-index="1"></div>
+<div id="b7s2" class="clip shot" data-start="4.568" data-duration="3.548" data-track-index="1"></div>
+<div id="b7s3" class="clip shot" data-start="8.116" data-duration="5.063" data-track-index="1"><div id="b7s3-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">BEIRAL</span></div></div>
+<div id="b7s4" class="clip shot" data-start="13.179" data-duration="3.049" data-track-index="1"><div id="b7s4-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">CALHA</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b7s1 · 3D · Mas a água que desce do telhado */
-/* b7s2 · 3D · escorre colada na parede e encharca a casa. */
-/* b7s3 · 3D · Então o telhado avança pra fora da parede, */
-/* b7s4 · 3D · e a água cai longe. É o beiral. */
-tl.fromTo('#b7s4-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},8.166);
-/* b7s5 · 3D · Onde não dá pra avançar, uma canaleta junta a água */
-/* b7s6 · 3D · e leva por um cano até o chão. */
-/* b7s7 · 3D · É a calha. */
-tl.fromTo('#b7s7-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},15.41);
+/* b7s1 · 3D · Mas a água que desce do telhado escorre colada na parede e encharca a casa. */
+/* b7s2 · 3D · Então o telhado avança pra fora da parede, e a água cai longe. */
+/* b7s3 · 3D · É o beiral. Onde não dá pra avançar, uma canaleta junta a água */
+tl.fromTo('#b7s3-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},8.166);
+/* b7s4 · 3D · e leva por um cano até o chão. É a calha. */
+tl.fromTo('#b7s4-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},15.41);
 window.__timelines = window.__timelines || {};
 window.__timelines["beat7"] = tl;
 </script>

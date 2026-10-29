@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#8fd0ff}
+#c3d{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.shot{position:absolute;inset:0}
+.t{position:absolute;left:0;width:1080px;text-align:center;font-family:'Archivo Black',sans-serif;line-height:1.02;white-space:nowrap}
+.tag{display:inline-block;color:#FFD23F;transform:rotate(-4deg);text-shadow:0 0 8px #000,6px 6px 0 #111,-6px -6px 0 #111,6px -6px 0 #111,-6px 6px 0 #111,0 9px 0 #111}
+.wh{color:#fff}
+.pill{display:inline-flex;align-items:center;gap:14px;background:#fff;color:#111;font-family:'Archivo Black',sans-serif;font-size:40px;padding:14px 30px;border-radius:44px;border:5px solid #111;box-shadow:0 7px 0 rgba(0,0,0,.35)}
+.pill i{width:24px;height:24px;border-radius:50%;background:#E53935;display:inline-block}
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="3" data-width="1080" data-height="1920">
+<canvas id="c3d" width="1080" height="1920"></canvas>
+<div id="capa0" class="clip shot" data-start="0" data-duration="1" data-track-index="1">
+  <div class="t" style="top:380px"><span class="tag wh" style="font-size:118px">POR QUE O</span></div>
+  <div class="t" style="top:510px"><span class="tag" style="font-size:150px">TELHADO</span></div>
+  <div class="t" style="top:670px"><span class="tag wh" style="font-size:118px">É ASSIM?</span></div>
+</div>
+<div id="capa1" class="clip shot" data-start="1" data-duration="1" data-track-index="1">
+  <div class="t" style="top:380px"><span class="tag wh" style="font-size:120px">LAJE RETA?</span></div>
+  <div class="t" style="top:520px"><span class="tag" style="font-size:170px">NÃO.</span></div>
+  <div class="t" style="top:1380px"><span class="pill"><i></i>A CHUVA NÃO TEM POR ONDE SAIR</span></div>
+</div>
+<div id="capa2" class="clip shot" data-start="2" data-duration="1" data-track-index="1">
+  <div class="t" style="top:380px"><span class="tag" style="font-size:150px">10 PEÇAS</span></div>
+  <div class="t" style="top:560px"><span class="tag wh" style="font-size:84px">DE UM TELHADO</span></div>
+  <div class="t" style="top:1400px"><span class="pill"><i></i>E POR QUE CADA UMA EXISTE</span></div>
+</div>
+</div>
+<script>window.__timelines = window.__timelines || {};const tl = gsap.timeline({ paused: true });window.__timelines["main"] = tl;</script>
+<script type="module">
+import { criarCena } from './assets/vendor/cena3d.js';
+const FULL = { roof: 1, cumeeira: 1, eave: 0.55, calha: 1 };
+const shots = [
+  { start: 0, dur: 1, o: { st: { ...FULL, rain: 1, pose: 'celebrate', heroX: -1.6, heroZ: 4.6 }, cam: { a: [8.5, 4.2, 15.5], l: [0, 2.6, 0] } } },
+  { start: 1, dur: 1, o: { st: { slab: 1, rain: 1, puddles: 1, crack: 1, pose: 'umbrella', heroX: -1.6, heroZ: 4.6 }, cam: { a: [8, 6.5, 14], l: [0, 2.6, 0] } } },
+  { start: 2, dur: 1, o: { st: { roof: 1, cutRoof: 1, ripas: 1, caibros: 1, tesouras: 1, cumeeira: 1, calha: 1, pose: 'think', heroX: -1.6, heroZ: 4.6 }, cam: { a: [9, 7, 13.5], l: [0, 2.8, 0] } } },
+];
+const { renderAt } = criarCena(document.getElementById('c3d'), shots);
+window.addEventListener('hf-seek', (e) => renderAt(e.detail.time));
+renderAt(0);
+</script>
+</body></html>

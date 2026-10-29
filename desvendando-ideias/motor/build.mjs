@@ -256,8 +256,8 @@ function ovHTML(P, list) {
     : o.style === 'tag' ? `<div id="${P}-ov${i}" class="t" style="top:${o.y}px"><span class="tag" style="font-size:${fit(o.text, o.size || 78)}px">${o.text}</span></div>` : `<div id="${P}-ov${i}" class="t" style="top:${(list.length === 1 && o.y >= 180 && o.y <= 340) ? 230 : o.y}px;font-size:${fit(o.text, o.size)}px;color:${COL[o.color] || COL.ink}">${o.text}</div>`).join('');
 }
 function ovJS(P, list, T0, idx) {
-  // título que entra depois (o.at) esconde os anteriores na mesma altura
-  const hide = (list || []).map((o, i) => o.at != null ? (list || []).slice(0, i).map((q, j) => q.y === o.y ? `tl.to('#${P}-ov${j}',{opacity:0,duration:0.08},${r3(T0 + o.at)});` : '').join('') : '').join('');
+  // título que entra depois (o.at) esconde os que entraram antes dele
+  const hide = (list || []).map((o, i) => o.at != null ? (list || []).slice(0, i).map((q, j) => (q.at || 0) < o.at ? `tl.to('#${P}-ov${j}',{opacity:0,duration:0.08},${r3(T0 + o.at - 0.1)});` : '').join('') : '').join('');
   return hide + (list || []).map((o, i) => {
     const a = ENTR[(idx + i) % ENTR.length], id = `#${P}-ov${i}`, t = r3(T0 + 0.05 + (o.at != null ? o.at : i * 0.08));
     if (a === 'pop') return `tl.fromTo('${id}',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},${t});`;

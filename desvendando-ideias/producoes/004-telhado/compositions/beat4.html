@@ -30,8 +30,8 @@
 </style>
 <div id="root" data-composition-id="beat4" data-width="1080" data-height="1920">
 <div id="b4s1" class="clip shot" data-start="0" data-duration="3.649" data-track-index="1"><div id="b4s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>TELHA NÃO FLUTUA</span></div></div>
-<div id="b4s2" class="clip shot" data-start="3.649" data-duration="2.046" data-track-index="1"></div>
-<div id="b4s3" class="clip shot" data-start="5.695" data-duration="5.259" data-track-index="1"><div id="b4s3-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">RIPAS</span></div></div>
+<div id="b4s2" class="clip shot" data-start="3.649" data-duration="3.303" data-track-index="1"><div id="b4s2-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">RIPAS</span></div></div>
+<div id="b4s3" class="clip shot" data-start="6.952" data-duration="4.002" data-track-index="1"></div>
 <div id="b4s4" class="clip shot" data-start="10.954" data-duration="1.541" data-track-index="1"><div id="b4s4-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">CAIBROS</span></div></div>
 </div>
 <script>
@@ -39,9 +39,9 @@ const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
 /* b4s1 · 3D · E telha não fica no ar. Ela apoia em sarrafos finos, */
 tl.fromTo('#b4s1-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},0.05);
-/* b4s2 · 3D · pregados na horizontal, um por fileira. */
-/* b4s3 · 3D · São as ripas. As ripas apoiam em peças mais grossas, que descem o telhado. */
-tl.fromTo('#b4s3-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},5.745);
+/* b4s2 · 3D · pregados na horizontal, um por fileira. São as ripas. */
+tl.fromTo('#b4s2-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},5.745);
+/* b4s3 · 3D · As ripas apoiam em peças mais grossas, que descem o telhado. */
 /* b4s4 · 3D · São os caibros. */
 tl.fromTo('#b4s4-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},11.004);
 window.__timelines = window.__timelines || {};

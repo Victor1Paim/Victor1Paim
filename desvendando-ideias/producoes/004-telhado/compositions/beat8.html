@@ -29,22 +29,18 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat8" data-width="1080" data-height="1920">
-<div id="b8s1" class="clip shot" data-start="0" data-duration="2.415" data-track-index="1"><div id="b8s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>PAREDE MAIS ALTA</span></div></div>
-<div id="b8s2" class="clip shot" data-start="2.415" data-duration="3.07" data-track-index="1"></div>
-<div id="b8s3" class="clip shot" data-start="5.485" data-duration="2.58" data-track-index="1"></div>
-<div id="b8s4" class="clip shot" data-start="8.065" data-duration="2.915" data-track-index="1"></div>
-<div id="b8s5" class="clip shot" data-start="10.98" data-duration="1.323" data-track-index="1"><div id="b8s5-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">RUFO</span></div></div>
+<div id="b8s1" class="clip shot" data-start="0" data-duration="5.485" data-track-index="1"><div id="b8s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>PAREDE MAIS ALTA</span></div></div>
+<div id="b8s2" class="clip shot" data-start="5.485" data-duration="5.495" data-track-index="1"></div>
+<div id="b8s3" class="clip shot" data-start="10.98" data-duration="1.323" data-track-index="1"><div id="b8s3-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">RUFO</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b8s1 · 3D · Onde o telhado encosta numa parede mais alta, */
+/* b8s1 · 3D · Onde o telhado encosta numa parede mais alta, a chuva desce pela parede e entra por baixo das telhas. */
 tl.fromTo('#b8s1-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},0.05);
-/* b8s2 · 3D · a chuva desce pela parede e entra por baixo das telhas. */
-/* b8s3 · 3D · Ali vai uma chapa dobrada: */
-/* b8s4 · 3D · um lado entra na parede, o outro deita sobre as telhas. */
-/* b8s5 · 3D · É o rufo. */
-tl.fromTo('#b8s5-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},11.03);
+/* b8s2 · 3D · Ali vai uma chapa dobrada: um lado entra na parede, o outro deita sobre as telhas. */
+/* b8s3 · 3D · É o rufo. */
+tl.fromTo('#b8s3-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},11.03);
 window.__timelines = window.__timelines || {};
 window.__timelines["beat8"] = tl;
 </script>

@@ -29,26 +29,21 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat9" data-width="1080" data-height="1920">
-<div id="b9s1" class="clip shot" data-start="0" data-duration="2.016" data-track-index="1"><div id="b9s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>CHUVA DE LADO</span></div></div>
-<div id="b9s2" class="clip shot" data-start="2.016" data-duration="4.717" data-track-index="1"><div id="b9s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>+50 °C</span></div></div>
-<div id="b9s3" class="clip shot" data-start="6.733" data-duration="2.662" data-track-index="1"></div>
-<div id="b9s4" class="clip shot" data-start="9.395" data-duration="2.534" data-track-index="1"></div>
-<div id="b9s5" class="clip shot" data-start="11.929" data-duration="2.011" data-track-index="1"><div id="b9s5-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>DEVOLVE O CALOR</span></div></div>
-<div id="b9s6" class="clip shot" data-start="13.94" data-duration="1.823" data-track-index="1"><div id="b9s6-ov0" class="t" style="top:300px"><span class="tag" style="font-size:80px">SUBCOBERTURA</span></div></div>
+<div id="b9s1" class="clip shot" data-start="0" data-duration="3.369" data-track-index="1"><div id="b9s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>CHUVA DE LADO</span></div></div>
+<div id="b9s2" class="clip shot" data-start="3.369" data-duration="3.364" data-track-index="1"><div id="b9s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>+50 °C</span></div></div>
+<div id="b9s3" class="clip shot" data-start="6.733" data-duration="5.196" data-track-index="1"></div>
+<div id="b9s4" class="clip shot" data-start="11.929" data-duration="3.834" data-track-index="1"><div id="b9s4-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>DEVOLVE O CALOR</span></div><div id="b9s4-ov1" class="t" style="top:300px"><span class="tag" style="font-size:80px">SUBCOBERTURA</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b9s1 · 3D · Num temporal, o vento joga chuva */
+/* b9s1 · 3D · Num temporal, o vento joga chuva por baixo das telhas. */
 tl.fromTo('#b9s1-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},0.05);
-/* b9s2 · 3D · por baixo das telhas. E no sol forte, elas podem passar de cinquenta graus. */
+/* b9s2 · 3D · E no sol forte, elas podem passar de cinquenta graus. */
 tl.fromTo('#b9s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},3.419);
-/* b9s3 · 3D · Por isso vai uma manta com face de alumínio embaixo: */
-/* b9s4 · 3D · a água escorre por cima até a calha, */
-/* b9s5 · 3D · e o alumínio devolve parte do calor. */
-tl.fromTo('#b9s5-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},11.979);
-/* b9s6 · 3D · É a subcobertura. */
-tl.fromTo('#b9s6-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},13.99);
+/* b9s3 · 3D · Por isso vai uma manta com face de alumínio embaixo: a água escorre por cima até a calha, */
+/* b9s4 · 3D · e o alumínio devolve parte do calor. É a subcobertura. */
+tl.to('#b9s4-ov0',{opacity:0,duration:0.08},13.84);tl.fromTo('#b9s4-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},11.979);tl.fromTo('#b9s4-ov1',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},13.99);
 window.__timelines = window.__timelines || {};
 window.__timelines["beat9"] = tl;
 </script>

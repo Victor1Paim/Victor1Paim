@@ -1,7 +1,7 @@
 # 004 · Como se constrói um telhado
 
 Pilar: Engenharia/Construção · Hook (tipo): consequência/cadeia · Pele: **3D low-poly** (Three.js com WebGL por software, testado em 29/10/2026) · Duração-alvo: **~2:40** (formato cadeia longo, decisão 33) · Criado em 2026-10-29
-Status: **em produção** (voz, cena 3D, legenda palavra a palavra) · Projeto: `../producoes/004-telhado/`
+Status: **pronto para postar** (`renders/004-telhado.mp4`, 2:37, 3D low-poly, 42 planos de ~3,7 s em média, −14 LUFS). Capa escolhida pela recomendação: A · Projeto: `../producoes/004-telhado/`
 
 ## Decisões (portões do fluxo)
 
@@ -13,8 +13,8 @@ Status: **em produção** (voz, cena 3D, legenda palavra a palavra) · Projeto: 
 | 4. CTA | **1 · "Se você já sabia, comenta engenheiro. Se não sabia, comenta estagiário. E segue pra não perder a próxima curiosidade."** (29/10/2026) | 2 dúvida + like + seguir, 3 "qual peça você não conhecia", 4 versão curta engenheiro/estagiário, 5 "o que construir agora" |
 | 5. Fecho e próximo vídeo | _(pendente)_ | |
 | 6. Roteiro aprovado | **Seguir com o texto enviado** (usuário: "vamos para produção" e "1 e 1", 29/10/2026) | — |
-| 7. Corte de teste | _(pendente)_ | |
-| 8. Publicação (legenda, capa, hashtags, horário) | _(pendente)_ | |
+| 7. Corte de teste | Usuário pediu o vídeo pronto sem interrupção e a opção recomendada nas dúvidas (29/10/2026); planos alongados para ≥ 3 s | — |
+| 8. Publicação (legenda, capa, hashtags, horário) | Legendas abaixo; capa A (recomendada); horário a critério do usuário | Capas B e C |
 
 ## Texto falado (por beat, como vai para a voz)
 
@@ -63,3 +63,49 @@ Regras: 2 fontes primárias para saúde e finanças; fonte na tela por 2–3 s; 
 - Planos e som: `shots.json` e `motor/sfx.py`. Rodar `node ../../motor/checar.mjs --full` antes de entregar.
 - Rótulo de conteúdo gerado por IA ligado na publicação.
 - Métricas: registrar em `../metricas/videos.csv` após 24 h e 7 dias, sempre anotando a idade do vídeo.
+
+## Publicação (portão 8) · legendas por plataforma
+
+Rótulo de conteúdo gerado por IA ligado nas três. Capa: opção A ("Por que o telhado é assim?"), a recomendada.
+
+### TikTok
+```
+Por que telhado não é só uma laje reta? 🏠🌧️
+Cada peça existe pra resolver o problema da anterior: telha, ripa, caibro, tesoura, cumeeira, beiral, calha, rufo, manta e forro.
+
+Se você já sabia, comenta ENGENHEIRO 👷
+Se não sabia, comenta ESTAGIÁRIO 😅
+E segue pra não perder a próxima curiosidade.
+
+#engenharia #construcao #telhado #curiosidades #obra
+```
+
+### YouTube Shorts
+Título:
+```
+Por que o telhado é feito assim? (peça por peça) #shorts
+```
+Descrição:
+```
+Laje reta empoça e trinca. Telhas soltas resolvem, mas abrem frestas. Cada peça do telhado resolve o problema da anterior: ripas, caibros, tesouras, cumeeira, beiral, calha, rufo, subcobertura e forro.
+
+Se você já sabia, comenta ENGENHEIRO. Se não sabia, comenta ESTAGIÁRIO. E se inscreve pra não perder a próxima curiosidade.
+
+Valores aproximados (inclinação de telha cerâmica varia por modelo; confira o catálogo do fabricante).
+
+#shorts #engenharia #construcao #telhado
+```
+
+### Instagram (Reels)
+```
+Você sabe por que o telhado é feito assim? 🏠
+
+Do jeito mais simples (uma laje reta) até o telhado completo, peça por peça, cada uma resolvendo o problema da anterior.
+
+Já sabia? Comenta ENGENHEIRO 👷
+Não sabia? Comenta ESTAGIÁRIO 😅
+Segue @desvendandoideias.ofc pra mais curiosidades.
+
+#engenharia #construcao #telhado #curiosidades #obra
+```
+

@@ -152,7 +152,7 @@
   {
    "b": 0,
    "t": "acha uma trinca",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "topoPerto",
@@ -176,12 +176,13 @@
     "sfx": [
      "racha@0.2"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 0,
    "t": "e pinga dentro de casa.",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "dentro",
@@ -207,8 +208,7 @@
      "pinga@0.2",
      "pinga@1.0"
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 1,
@@ -233,7 +233,7 @@
   {
    "b": 1,
    "t": "pra água escorrer.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "geral",
@@ -245,12 +245,13 @@
     "sfx": [
      "agua"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 1,
    "t": "Só que uma laje de uma peça só",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "topo",
@@ -266,13 +267,12 @@
       "y": 330
      }
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 1,
    "t": "estica no calor do dia",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "geral",
@@ -295,7 +295,8 @@
     "sfx": [
      "calor"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 1,
@@ -387,7 +388,7 @@
   {
    "b": 2,
    "t": "por várias peças pequenas e soltas,",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "topo",
@@ -403,7 +404,8 @@
     "sfx": [
      "telhas"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 2,
@@ -446,7 +448,7 @@
   {
    "b": 2,
    "t": "Mas agora a água passa pela fresta",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "telhaMuitoPerto",
@@ -464,7 +466,8 @@
       "y": 330
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 2,
@@ -538,7 +541,7 @@
   {
    "b": 3,
    "t": "a água para, enche a fresta",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "topoPerto",
@@ -556,7 +559,8 @@
       "y": 330
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 3,
@@ -567,7 +571,7 @@
   {
    "b": 3,
    "t": "Por isso telha de barro pede uns trinta por cento de inclinação:",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "lado",
@@ -586,8 +590,7 @@
       "size": 150
      }
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 3,
@@ -671,7 +674,7 @@
   {
    "b": 4,
    "t": "São as ripas.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "topoPerto",
@@ -686,12 +689,13 @@
       "size": 90
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 4,
    "t": "As ripas apoiam em peças mais grossas,",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "estrutura",
@@ -705,8 +709,7 @@
     "sfx": [
      "madeira"
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 4,
@@ -752,7 +755,7 @@
   {
    "b": 5,
    "t": "pesa toneladas.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "geral",
@@ -774,12 +777,13 @@
     "sfx": [
      "peso@0.3"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 5,
    "t": "Apoiado só nas paredes, o telhado enverga",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "frente",
@@ -794,13 +798,12 @@
     "sfx": [
      "peso@0.4"
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 5,
    "t": "e empurra as paredes pra fora.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "frente",
@@ -820,12 +823,13 @@
       "y": 330
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 5,
    "t": "A solução é o triângulo,",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "estrutura",
@@ -846,13 +850,12 @@
     "sfx": [
      "madeira"
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 5,
    "t": "a forma que não deforma:",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "frente",
@@ -860,20 +863,20 @@
      "tesouras": 1,
      "weight": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 5,
    "t": "a barra de baixo segura as duas pernas",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "frente",
     "st": {
      "tesouras": 1
     }
-   },
-   "cont": true
+   }
   },
   {
    "b": 5,
@@ -1033,7 +1036,7 @@
   {
    "b": 7,
    "t": "escorre colada na parede e encharca a casa.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "beiral",
@@ -1049,7 +1052,8 @@
      ],
      "pose": "umbrella"
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 7,
@@ -1075,7 +1079,7 @@
   {
    "b": 7,
    "t": "e a água cai longe.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "beiral",
@@ -1086,12 +1090,13 @@
      "rain": 1,
      "eaveDrops": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 7,
    "t": "É o beiral.",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "frente",
@@ -1108,13 +1113,12 @@
       "size": 90
      }
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 7,
    "t": "Onde não dá pra avançar, uma canaleta junta a água",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1147,7 +1151,8 @@
     "sfx": [
      "metal@0.5"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 7,
@@ -1187,7 +1192,7 @@
   {
    "b": 7,
    "t": "É a calha.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "geral",
@@ -1205,7 +1210,8 @@
       "size": 90
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 8,
@@ -1249,7 +1255,7 @@
   {
    "b": 8,
    "t": "a chuva desce pela parede e entra por baixo das telhas.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1277,7 +1283,8 @@
      "rain": 1,
      "neighborRun": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 8,
@@ -1320,7 +1327,7 @@
   {
    "b": 8,
    "t": "um lado entra na parede, o outro deita sobre as telhas.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "rufo",
@@ -1331,7 +1338,8 @@
      "vizinho": 1,
      "rufo": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 8,
@@ -1404,7 +1412,7 @@
   {
    "b": 9,
    "t": "por baixo das telhas.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "telhaPerto",
@@ -1417,12 +1425,13 @@
      "night": 0.45,
      "windRain": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 9,
    "t": "E no sol forte, elas podem passar de cinquenta graus.",
-   "k": "-",
+   "k": "cena3d",
    "st": "3D",
    "o": {
     "cam": "topo",
@@ -1447,8 +1456,7 @@
     "sfx": [
      "calor"
     ]
-   },
-   "cont": true
+   }
   },
   {
    "b": 9,
@@ -1493,7 +1501,7 @@
   {
    "b": 9,
    "t": "a água escorre por cima até a calha,",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1524,7 +1532,8 @@
      "mantaDrops": 1,
      "calha": 1
     }
-   }
+   },
+   "cont": true
   },
   {
    "b": 9,
@@ -1554,7 +1563,7 @@
   {
    "b": 9,
    "t": "É a subcobertura.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1591,7 +1600,8 @@
       "size": 80
      }
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 10,
@@ -1723,7 +1733,7 @@
   {
    "b": 10,
    "t": "E as telhas da beirada vão amarradas com arame,",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1757,7 +1767,8 @@
     "sfx": [
      "metal@0.5"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 10,
@@ -1837,7 +1848,7 @@
   {
    "b": 11,
    "t": "Se você já sabia, comenta engenheiro.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": {
@@ -1881,7 +1892,8 @@
     "sfx": [
      "pop"
     ]
-   }
+   },
+   "cont": true
   },
   {
    "b": 11,
@@ -1935,7 +1947,7 @@
   {
    "b": 11,
    "t": "E segue pra não perder a próxima curiosidade.",
-   "k": "cena3d",
+   "k": "-",
    "st": "3D",
    "o": {
     "cam": "geral",
@@ -1964,7 +1976,8 @@
      "festa"
     ]
    },
-   "hold": true
+   "hold": true,
+   "cont": true
   }
  ]
 }

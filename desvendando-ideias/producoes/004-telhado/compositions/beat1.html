@@ -29,20 +29,17 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat1" data-width="1080" data-height="1920">
-<div id="b1s1" class="clip shot" data-start="0" data-duration="2.422" data-track-index="1"></div>
-<div id="b1s2" class="clip shot" data-start="2.422" data-duration="2.033" data-track-index="1"><div id="b1s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>UMA PEÇA SÓ</span></div></div>
-<div id="b1s3" class="clip shot" data-start="4.455" data-duration="3.13" data-track-index="1"><div id="b1s3-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>ESTICA</span></div><div id="b1s3-ov1" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>ENCOLHE</span></div></div>
-<div id="b1s4" class="clip shot" data-start="7.585" data-duration="3.512" data-track-index="1"></div>
+<div id="b1s1" class="clip shot" data-start="0" data-duration="3.122" data-track-index="1"></div>
+<div id="b1s2" class="clip shot" data-start="3.122" data-duration="4.463" data-track-index="1"><div id="b1s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>UMA PEÇA SÓ</span></div><div id="b1s2-ov1" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>ESTICA</span></div><div id="b1s2-ov2" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>ENCOLHE</span></div></div>
+<div id="b1s3" class="clip shot" data-start="7.585" data-duration="3.512" data-track-index="1"></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b1s1 · 3D · Então você inclina a cobertura */
-/* b1s2 · 3D · pra água escorrer. Só que uma laje de uma peça só */
-tl.fromTo('#b1s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},3.172);
-/* b1s3 · 3D · estica no calor do dia e encolhe no frio da noite. */
-tl.to('#b1s3-ov0',{opacity:0,duration:0.08},6.027);tl.fromTo('#b1s3-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},4.505);tl.fromTo('#b1s3-ov1',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},6.077);
-/* b1s4 · 3D · Todo dia. Até trincar. E volta a vazar. */
+/* b1s1 · 3D · Então você inclina a cobertura pra água escorrer. */
+/* b1s2 · 3D · Só que uma laje de uma peça só estica no calor do dia e encolhe no frio da noite. */
+tl.to('#b1s2-ov0',{opacity:0,duration:0.08},4.355);tl.to('#b1s2-ov0',{opacity:0,duration:0.08},5.927);tl.to('#b1s2-ov1',{opacity:0,duration:0.08},5.927);tl.fromTo('#b1s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},3.172);tl.fromTo('#b1s2-ov1',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},4.505);tl.fromTo('#b1s2-ov2',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},6.077);
+/* b1s3 · 3D · Todo dia. Até trincar. E volta a vazar. */
 window.__timelines = window.__timelines || {};
 window.__timelines["beat1"] = tl;
 </script>

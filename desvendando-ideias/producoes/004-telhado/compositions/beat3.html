@@ -29,16 +29,17 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat3" data-width="1080" data-height="1920">
-<div id="b3s1" class="clip shot" data-start="0" data-duration="2.074" data-track-index="1"></div>
-<div id="b3s2" class="clip shot" data-start="2.074" data-duration="5.809" data-track-index="1"><div id="b3s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>ÁGUA ACUMULA</span></div><div id="b3s2-ov1" class="t" style="top:300px"><span class="tag" style="font-size:150px">30%</span></div></div>
+<div id="b3s1" class="clip shot" data-start="0" data-duration="4.059" data-track-index="1"><div id="b3s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#2E8BFF"></i>ÁGUA ACUMULA</span></div></div>
+<div id="b3s2" class="clip shot" data-start="4.059" data-duration="3.824" data-track-index="1"><div id="b3s2-ov0" class="t" style="top:300px"><span class="tag" style="font-size:150px">30%</span></div></div>
 <div id="b3s3" class="clip shot" data-start="7.883" data-duration="2.244" data-track-index="1"><div id="b3s3-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FFB300"></i>SOBE 30 CM A CADA 1 M</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b3s1 · 3D · Só que, se o telhado for deitado demais, */
-/* b3s2 · 3D · a água para, enche a fresta e volta por baixo. Por isso telha de barro pede uns trinta por cento de inclinação: */
-tl.fromTo('#b3s2-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},2.124);tl.fromTo('#b3s2-ov1',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},4.109);
+/* b3s1 · 3D · Só que, se o telhado for deitado demais, a água para, enche a fresta e volta por baixo. */
+tl.fromTo('#b3s1-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},2.124);
+/* b3s2 · 3D · Por isso telha de barro pede uns trinta por cento de inclinação: */
+tl.fromTo('#b3s2-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},4.109);
 /* b3s3 · 3D · sobe trinta centímetros a cada metro. */
 tl.fromTo('#b3s3-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},7.933);
 window.__timelines = window.__timelines || {};

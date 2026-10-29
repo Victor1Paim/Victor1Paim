@@ -29,21 +29,22 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat5" data-width="1080" data-height="1920">
-<div id="b5s1" class="clip shot" data-start="0" data-duration="2.526" data-track-index="1"></div>
-<div id="b5s2" class="clip shot" data-start="2.526" data-duration="3.917" data-track-index="1"><div id="b5s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>TONELADAS</span></div></div>
-<div id="b5s3" class="clip shot" data-start="6.443" data-duration="3.59" data-track-index="1"><div id="b5s3-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>PAREDES ABREM</span></div><div id="b5s3-ov1" class="t" style="top:300px"><span class="tag" style="font-size:90px">TRIÂNGULO</span></div></div>
-<div id="b5s4" class="clip shot" data-start="10.033" data-duration="4.909" data-track-index="1"></div>
+<div id="b5s1" class="clip shot" data-start="0" data-duration="3.988" data-track-index="1"><div id="b5s1-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>TONELADAS</span></div></div>
+<div id="b5s2" class="clip shot" data-start="3.988" data-duration="4.4" data-track-index="1"><div id="b5s2-ov0" class="t" style="top:330px"><span class="pill"><i style="background:#FF4D5E"></i>PAREDES ABREM</span></div></div>
+<div id="b5s3" class="clip shot" data-start="8.388" data-duration="3.382" data-track-index="1"><div id="b5s3-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TRIÂNGULO</span></div></div>
+<div id="b5s4" class="clip shot" data-start="11.77" data-duration="3.172" data-track-index="1"></div>
 <div id="b5s5" class="clip shot" data-start="14.942" data-duration="1.825" data-track-index="1"><div id="b5s5-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TESOURAS</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b5s1 · 3D · Mas tanta madeira, com milhares de telhas, */
-/* b5s2 · 3D · pesa toneladas. Apoiado só nas paredes, o telhado enverga */
-tl.fromTo('#b5s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},2.576);
-/* b5s3 · 3D · e empurra as paredes pra fora. A solução é o triângulo, */
-tl.fromTo('#b5s3-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},6.493);tl.fromTo('#b5s3-ov1',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},8.438);
-/* b5s4 · 3D · a forma que não deforma: a barra de baixo segura as duas pernas que querem abrir. */
+/* b5s1 · 3D · Mas tanta madeira, com milhares de telhas, pesa toneladas. */
+tl.fromTo('#b5s1-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},2.576);
+/* b5s2 · 3D · Apoiado só nas paredes, o telhado enverga e empurra as paredes pra fora. */
+tl.fromTo('#b5s2-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},6.493);
+/* b5s3 · 3D · A solução é o triângulo, a forma que não deforma: */
+tl.fromTo('#b5s3-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},8.438);
+/* b5s4 · 3D · a barra de baixo segura as duas pernas que querem abrir. */
 /* b5s5 · 3D · São as tesouras. */
 tl.fromTo('#b5s5-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},14.992);
 window.__timelines = window.__timelines || {};

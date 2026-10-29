@@ -29,22 +29,16 @@
 .f4{transform:rotateY(-90deg) translateZ(180px)}.f5{transform:rotateX(90deg) translateZ(180px)}.f6{transform:rotateX(-90deg) translateZ(180px)}
 </style>
 <div id="root" data-composition-id="beat11" data-width="1080" data-height="1920">
-<div id="b11s1" class="clip shot" data-start="0" data-duration="2.528" data-track-index="1"><div id="b11s1-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TELHADO</span></div></div>
-<div id="b11s2" class="clip shot" data-start="2.528" data-duration="2.223" data-track-index="1"><div id="b11s2-ov0" class="t" style="top:250px"><span class="tag" style="font-size:70px">SABIA? COMENTA</span></div><div id="b11s2-ov1" class="t" style="top:350px"><span class="tag" style="font-size:81px">“ENGENHEIRO”</span></div></div>
-<div id="b11s3" class="clip shot" data-start="4.751" data-duration="2.782" data-track-index="1"><div id="b11s3-ov0" class="t" style="top:250px"><span class="tag" style="font-size:54px">NÃO SABIA? COMENTA</span></div><div id="b11s3-ov1" class="t" style="top:350px"><span class="tag" style="font-size:81px">“ESTAGIÁRIO”</span></div></div>
-<div id="b11s4" class="clip shot" data-start="7.533" data-duration="3.442" data-track-index="1"><div id="b11s4-ov0" class="t" style="top:300px"><span class="tag" style="font-size:150px">SEGUE</span></div><div id="b11s4-ov1" class="t" style="top:470px"><span class="pill"><i style="background:#FFB300"></i>@desvendandoideias.ofc</span></div></div>
+<div id="b11s1" class="clip shot" data-start="0" data-duration="4.751" data-track-index="1"><div id="b11s1-ov0" class="t" style="top:300px"><span class="tag" style="font-size:90px">TELHADO</span></div><div id="b11s1-ov1" class="t" style="top:250px"><span class="tag" style="font-size:70px">SABIA? COMENTA</span></div><div id="b11s1-ov2" class="t" style="top:350px"><span class="tag" style="font-size:81px">“ENGENHEIRO”</span></div></div>
+<div id="b11s2" class="clip shot" data-start="4.751" data-duration="6.224" data-track-index="1"><div id="b11s2-ov0" class="t" style="top:250px"><span class="tag" style="font-size:54px">NÃO SABIA? COMENTA</span></div><div id="b11s2-ov1" class="t" style="top:350px"><span class="tag" style="font-size:81px">“ESTAGIÁRIO”</span></div><div id="b11s2-ov2" class="t" style="top:300px"><span class="tag" style="font-size:150px">SEGUE</span></div><div id="b11s2-ov3" class="t" style="top:470px"><span class="pill"><i style="background:#FFB300"></i>@desvendandoideias.ofc</span></div></div>
 </div>
 <script>
 const F=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
 const tl = gsap.timeline({ paused: true });
-/* b11s1 · 3D · Pronto: você acabou de construir um telhado. */
-tl.fromTo('#b11s1-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},0.05);
-/* b11s2 · 3D · Se você já sabia, comenta engenheiro. */
-tl.fromTo('#b11s2-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},2.578);tl.fromTo('#b11s2-ov1',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},2.658);
-/* b11s3 · 3D · Se não sabia, comenta estagiário. */
-tl.fromTo('#b11s3-ov0',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},4.801);tl.fromTo('#b11s3-ov1',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},4.881);
-/* b11s4 · 3D · E segue pra não perder a próxima curiosidade. */
-tl.fromTo('#b11s4-ov0',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},7.583);tl.fromTo('#b11s4-ov1',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},7.663);
+/* b11s1 · 3D · Pronto: você acabou de construir um telhado. Se você já sabia, comenta engenheiro. */
+tl.to('#b11s1-ov0',{opacity:0,duration:0.08},2.428);tl.to('#b11s1-ov0',{opacity:0,duration:0.08},2.428);tl.fromTo('#b11s1-ov0',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},0.05);tl.fromTo('#b11s1-ov1',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},2.578);tl.fromTo('#b11s1-ov2',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},2.578);
+/* b11s2 · 3D · Se não sabia, comenta estagiário. E segue pra não perder a próxima curiosidade. */
+tl.to('#b11s2-ov0',{opacity:0,duration:0.08},7.433);tl.to('#b11s2-ov1',{opacity:0,duration:0.08},7.433);tl.to('#b11s2-ov0',{opacity:0,duration:0.08},7.433);tl.to('#b11s2-ov1',{opacity:0,duration:0.08},7.433);tl.fromTo('#b11s2-ov0',{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.3,ease:'back.out(1.6)'},4.801);tl.fromTo('#b11s2-ov1',{opacity:0,filter:'blur(14px)'},{opacity:1,filter:'blur(0px)',duration:0.25,ease:'power2.out'},4.881);tl.fromTo('#b11s2-ov2',{opacity:0,x:-90},{opacity:1,x:0,duration:0.3,ease:'power4.out'},7.583);tl.fromTo('#b11s2-ov3',{opacity:0,y:50},{opacity:1,y:0,duration:0.3,ease:'power4.out'},7.583);
 window.__timelines = window.__timelines || {};
 window.__timelines["beat11"] = tl;
 </script>
