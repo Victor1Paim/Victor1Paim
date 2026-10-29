@@ -23,9 +23,9 @@ Lição do vídeo 001 (29/10/2026): o Claude escolheu sozinho o hook, a ordem da
 | Portão | Antes de | Opções que o Claude traz | Você decide |
 |---|---|---|---|
 | 1. Tema e ângulo | Roteiro | 3 temas ou 3 ângulos do mesmo tema | O tema e a "pegadinha" do vídeo |
-| 2. Hook | Roteiro | 3 a 5 aberturas de tipos diferentes | O hook (ou uma mistura) |
+| 2. Hook | Roteiro | **5 aberturas** (decisão 30), do tipo de hook do dia no quadrado latino, com o texto exato e o primeiro quadro | O hook (ou uma mistura) |
 | 3. Ordem das cenas | Roteiro completo | 2 a 3 ordens (ex.: pegadinha cedo ou tarde; escala primeiro ou conta primeiro), cada uma em uma linha de storyboard | A ordem |
-| 4. CTA | Roteiro completo | 3 opções (seguir, comentar uma pergunta, salvar/compartilhar) | O CTA |
+| 4. CTA | Roteiro completo | **5 opções** (decisão 30) partindo do padrão: dúvida nos comentários + like + seguir (decisão 29) | O CTA |
 | 5. Mensagem final e gancho | Roteiro completo | 3 fechos (pergunta aberta, próxima parte, desafio) | O fecho e **qual será o próximo vídeo** |
 | 6. Roteiro aprovado | Voz | Roteiro final em texto corrido, com a contagem de palavras | "Aprovado" ou o que mudar |
 | 7. Corte de teste | Render final | Vídeo rascunho (baixa qualidade) e lista do que o Claude mudaria | O que ajustar |

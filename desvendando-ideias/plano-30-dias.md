@@ -25,7 +25,7 @@ Variam **três coisas**: pilar, tipo de hook e **pele** (a pele é amarrada ao p
 
 | Dia | Pilar | Pele | Hook | Tema |
 |---|---|---|---|---|
-| 1 | Engenharia/Construção | Blueprint | H1 Quiz (desafio de adivinhar) | _(portão 1)_ |
+| 1 | Curiosidades/ciência | Cosmos | H1 Quiz (desafio de adivinhar) | **001 · Quantas Terras cabem no Sol** (trocado com o dia 14) |
 | 2 | Finanças/Economia | Neo-brutalismo | H2 Contradição (pegadinha) | _(portão 1)_ |
 | 3 | Saúde | Isométrico 2.5D | H3 Você aprendeu errado (mito) | _(portão 1)_ |
 | 4 | Curiosidades/ciência | Cosmos | H4 Número absurdo / escala | _(portão 1)_ |
@@ -38,7 +38,7 @@ Variam **três coisas**: pilar, tipo de hook e **pele** (a pele é amarrada ao p
 | 11 | Engenharia/Construção | Blueprint | H3 Você aprendeu errado (mito) | _(portão 1)_ |
 | 12 | Finanças/Economia | Neo-brutalismo | H4 Número absurdo / escala | _(portão 1)_ |
 | 13 | Saúde | Isométrico 2.5D | H5 Consequência antes da causa | _(portão 1)_ |
-| 14 | Curiosidades/ciência | Cosmos | H1 Quiz (desafio de adivinhar) | _(portão 1)_ |
+| 14 | Engenharia/Construção | Blueprint | H1 Quiz (desafio de adivinhar) | _(portão 1)_ (veio do dia 1) |
 | 15 | Mistérios/história | Cosmos | H2 Contradição (pegadinha) | _(portão 1)_ |
 | 16 | Engenharia/Construção | Blueprint | H4 Número absurdo / escala | _(portão 1)_ |
 | 17 | Finanças/Economia | Neo-brutalismo | H5 Consequência antes da causa | _(portão 1)_ |

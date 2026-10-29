@@ -1,7 +1,7 @@
 # 001 · Quantas Terras cabem no Sol
 
 Tema: curiosidades (escala) · Duração: ~75 s (voz 66 s + 1,4 s de pausa final + planos sem fala) · Planos de 2–3 s (`../producao/regra-troca-a-cada-2s.md`, revisada)
-Status: **rascunho 2, aguardando seu "aprovado" no corte de teste (portão 7)** · Projeto: `../producoes/001-sol/` (HyperFrames, 1080×1920)
+Status: **aprovado pelo usuário (29/10/2026): "ficou excelente… o andamento do vídeo ficou perfeito"** · render final `renders/001-sol-final.mp4` (Cosmos, 75,1 s, 27 planos) · Projeto: `../producoes/001-sol/` (HyperFrames, 1080×1920)
 
 ## Decisões (portões do fluxo, 29/10/2026)
 
@@ -13,7 +13,9 @@ Status: **rascunho 2, aguardando seu "aprovado" no corte de teste (portão 7)** 
 | 5. Fecho | **Pergunta com cubos:** "E se a Terra fosse um cubo? Sem vãos, cabem quase um milhão e trezentas mil." | Síntese, humor, texto próprio |
 | Próximo vídeo | **Não definido.** O rascunho anterior prometia "as gigantes" sem a sua escolha; foi removido. Escolher junto, em outro portão | — |
 
-Pendentes: portão 6 (aprovar o texto abaixo), portão 7 (corte de teste), portão 8 (legenda, capa, hashtags).
+| 6–7. Roteiro e corte | **Aprovados** (29/10/2026), pele Cosmos, planos de 2–3 s | Neo-brutalismo, Blueprint |
+
+Pendentes: portão 8 (capa e horário; as legendas estão na seção "Publicação"); conferir "Fonte: NASA" antes de postar.
 
 ## Texto falado (por beat, como vai para a voz)
 
@@ -46,3 +48,48 @@ Antes de publicar: 2 fontes para o 109 e o 1,3 milhão e 1 para o 74%.
 - Visual: paleta provisória (azul-noite, âmbar, azul-Terra); estilo único **não** definido, cada plano usa 2D, 2,5D ou 3D (CSS 3D, sem WebGL).
 - Sem música e sem efeitos sonoros por enquanto.
 - Rótulo de conteúdo gerado por IA ligado na publicação.
+
+## Publicação (portão 8) · legendas por plataforma
+
+Regras: rótulo de conteúdo gerado por IA ligado nas três; postar o mesmo arquivo limpo; a fonte só vai no texto depois de conferida.
+
+### TikTok
+```
+Quantas Terras cabem dentro do Sol? 🌍☀️
+Pensa num número antes de assistir e confere no final se acertou.
+Spoiler: a conta tem uma pegadinha 👀
+
+Ficou com alguma dúvida? Comenta aqui. E deixa o like e segue pra não perder nenhuma curiosidade.
+
+#curiosidades #ciencia #astronomia #sol #espaco
+```
+
+### YouTube Shorts
+Título (até 100 caracteres):
+```
+Quantas Terras cabem dentro do Sol? (tem uma pegadinha) #shorts
+```
+Descrição:
+```
+Se o Sol fosse uma bola de basquete, a Terra seria a cabeça de um alfinete. Por volume, cabem cerca de 1,3 milhão de Terras no Sol. Mas Terras inteiras são bolas, e bolas deixam vãos: no máximo, cerca de 960 mil.
+
+Ficou com alguma dúvida? Comenta aqui. Deixa o like e se inscreve pra não perder nenhuma curiosidade.
+
+Valores aproximados. Fonte: NASA, ficha técnica do Sol.
+
+#shorts #curiosidades #ciencia #astronomia
+```
+
+### Instagram (Reels)
+```
+Quantas Terras cabem dentro do Sol? ☀️
+Chuta um número antes de ver o vídeo 👇
+
+A resposta “de livro” é 1,3 milhão. Só que tem uma pegadinha, e ela muda o número.
+
+Ficou com alguma dúvida? Comenta aqui.
+Deixa o like e segue @desvendandoideias.ofc pra não perder nenhuma curiosidade.
+
+#curiosidades #ciencia #astronomia #espaco #sol
+```
+

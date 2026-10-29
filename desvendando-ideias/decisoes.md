@@ -39,6 +39,9 @@ nós não conseguimos abrir as fontes. **Tratar como pendente de conferência no
 | 26 | **Motor reutilizável** (`motor/`): criar vídeo (`novo.mjs`), gerar cenas e som (`build.mjs`, `sfx.py`), checar (`checar.mjs`); planilha `metricas/videos.csv` e banco `pautas/banco.md` | Claude, para ampliar a produção (29/10) |
 | 27 | **Plano de 30 dias v2** adaptado do PDF de Shorts: 5 pilares (conjunto B) × 5 hooks em quadrado latino (25 vídeos) + 5 de confirmação; duração 70–85 s fixa; **pele por pilar** (Blueprint, Neo-brutalismo, Isométrico 2.5D, Cosmos ×2); rotina de 7 por semana com sessão de pauta na segunda e corte na sexta. Detalhes e limites em `plano-30-dias.md` | Resposta do usuário (29/10) |
 | 28 | **Ritmo: cada plano dura de 2 a 3 s** (perguntas e quiz ≥ 3 s; cartão final pode segurar mais). Substitui a decisão 17. Vídeo 001 refeito: 27 planos, 75 s, pele **Cosmos** escolhida para o dia 1 | Resposta do usuário (29/10/2026) |
+| 29 | **CTA padrão do canal:** pedir dúvida nos comentários + like + seguir ("Ficou com alguma dúvida? Comenta aqui. E deixa o like e segue pra não perder nenhuma curiosidade."). Vale para os próximos vídeos; o 001 fica como está ("Segue para descobrir mais curiosidades") | Resposta do usuário (29/10/2026) |
+| 30 | **Sempre 5 opções de hook e 5 de CTA final** por vídeo, para o usuário escolher (portões 2 e 4) | Resposta do usuário (29/10/2026) |
+| 31 | **Vídeo 001 aprovado** (Cosmos, 75 s, 27 planos): "ficou excelente… o andamento do vídeo ficou perfeito". Ritmo de 2–3 s vira o padrão | Resposta do usuário (29/10/2026) |
 | 16 | Postar o mesmo arquivo limpo (sem marca d'água) em TikTok, Reels e Shorts, com legenda e capa nativas |
 
 ### Riscos e lacunas da pesquisa
