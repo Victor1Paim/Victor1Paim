@@ -104,3 +104,7 @@ para um próximo vídeo parecido** (ex.: depois do 1, outro sobre amortecedor em
 
 **Sugestão de piloto: #2 (concreto), #4 (Sol) e #7 (juros).** Os três têm fatos fáceis de confirmar ou conta própria, cobrem hooks diferentes
 (você aprendeu errado, escala, adivinhar) e usam movimentos diferentes (text swap, scale up/stagger, count-up/bar grow), o que testa o template do Remotion por completo.
+
+## Pautas candidatas vindas do relatório de estilos (não decididas)
+
+- **Como uma geladeira funciona?** (engenharia): cadeia problema → solução com evaporador, compressor, condensador e capilar; 2 fontes oficiais; 70–85 s. Ver `direcao-de-arte.md`, seção 8.
