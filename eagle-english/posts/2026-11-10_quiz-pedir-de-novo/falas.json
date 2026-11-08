@@ -1,0 +1,25 @@
+{
+  "vozes": {"pt": "Achird", "en": "Kore"},
+  "modelo": "gemini-3.8-flash-tts",
+  "falas": [
+    {"id": "00_gancho", "lingua": "pt", "texto": "Não entendeu o que falaram em inglês? Responde antes do tempo acabar!"},
+    {"id": "01_regra", "lingua": "pt", "texto": "São cinco perguntas, três segundos cada. Guarda o seu placar."},
+    {"id": "q1_pt", "lingua": "pt", "texto": "Pergunta um: complete a frase."},
+    {"id": "q1_en", "lingua": "en", "texto": "Sorry, could you explain that again?"},
+    {"id": "q1_tr", "lingua": "pt", "texto": "Desculpa, pode explicar de novo?"},
+    {"id": "q2_pt", "lingua": "pt", "texto": "Pergunta dois: qual pede pra falar mais devagar?"},
+    {"id": "q2_en", "lingua": "en", "texto": "Could you speak a little more slowly, please?"},
+    {"id": "q2_tr", "lingua": "pt", "texto": "Pode falar um pouco mais devagar, por favor?"},
+    {"id": "q3_pt", "lingua": "pt", "texto": "Pergunta três: como se pergunta o que essa palavra quer dizer?"},
+    {"id": "q3_en", "lingua": "en", "texto": "What does this word mean?"},
+    {"id": "q3_tr", "lingua": "pt", "texto": "Essa é a ordem certa da pergunta."},
+    {"id": "regancho", "lingua": "pt", "texto": "Agora as duas que mais pegam."},
+    {"id": "q4_pt", "lingua": "pt", "texto": "Pergunta quatro: o que significa essa frase?"},
+    {"id": "q4_en", "lingua": "en", "texto": "I didn't catch the last part."},
+    {"id": "q4_tr", "lingua": "pt", "texto": "Quer dizer: não entendi a última parte."},
+    {"id": "q5_pt", "lingua": "pt", "texto": "Última pergunta: como pedir um exemplo?"},
+    {"id": "q5_en", "lingua": "en", "texto": "Could you give us an example?"},
+    {"id": "q5_tr", "lingua": "pt", "texto": "Pode dar um exemplo pra gente?"},
+    {"id": "99_cta", "lingua": "pt", "texto": "Quantas você acertou? Comenta seu placar! No Ígol trezentos e cinquenta tem frases de trinta e cinco situações do dia a dia, com tradução e pronúncia escrita, e mais quatro bônus. Link na bio!"}
+  ]
+}

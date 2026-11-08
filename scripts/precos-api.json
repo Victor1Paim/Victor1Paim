@@ -5,18 +5,62 @@
     "openai": "https://platform.openai.com/docs/pricing"
   },
   "conferido_em": "2026-11-08",
-  "cambio_brl_por_usd": 5.40,
+  "cambio_brl_por_usd": 5.4,
   "_cambio": "Câmbio aproximado para mostrar em reais; ajustar quando quiser.",
   "modelos": {
-    "gemini-3.8-flash-tts":       {"entrada_texto": 0.50, "saida_audio": 9.00,  "obs": "até 31/12/2026; a partir de 01/01/2027: 1.00 / 18.00. 25 tokens de áudio por segundo."},
-    "gemini-3.8-flash-lite-tts":  {"entrada_texto": 0.50, "saida_audio": 9.00,  "obs": "conferir valores de 2027 na página"},
-    "gemini-2.5-flash-preview-tts": {"entrada_texto": 0.50, "saida_audio": 10.00},
-    "gemini-2.5-pro-preview-tts": {"entrada_texto": 1.00, "saida_audio": 20.00},
-    "gpt-image-2":    {"entrada_texto": 5.00, "entrada_imagem": 8.00, "saida_imagem": 30.00, "obs": "Standard; Batch custa metade"},
-    "gpt-image-2.5-sunburst": {"entrada_texto": 5.00, "entrada_imagem": 8.00, "saida_imagem": 30.00},
-    "gpt-image-2.5-flare":    {"entrada_texto": 5.00, "entrada_imagem": 8.00, "saida_imagem": 30.00},
-    "gpt-image-2.6-sunburst": {"entrada_texto": 5.00, "entrada_imagem": 8.00, "saida_imagem": 30.00},
-    "gpt-image-2.6-flare":    {"entrada_texto": 5.00, "entrada_imagem": 8.00, "saida_imagem": 30.00}
+    "gemini-3.8-flash-tts": {
+      "entrada_texto": 0.5,
+      "saida_audio": 9.0,
+      "obs": "até 31/12/2026; a partir de 01/01/2027: 1.00 / 18.00. 25 tokens de áudio por segundo."
+    },
+    "gemini-3.8-flash-lite-tts": {
+      "entrada_texto": 0.5,
+      "saida_audio": 9.0,
+      "obs": "conferir valores de 2027 na página"
+    },
+    "gemini-2.5-flash-preview-tts": {
+      "entrada_texto": 0.5,
+      "saida_audio": 10.0
+    },
+    "gemini-2.5-pro-preview-tts": {
+      "entrada_texto": 1.0,
+      "saida_audio": 20.0
+    },
+    "gpt-image-2": {
+      "entrada_texto": 5.0,
+      "entrada_imagem": 8.0,
+      "saida_imagem": 30.0,
+      "obs": "Standard; Batch custa metade"
+    },
+    "gpt-image-2.5-sunburst": {
+      "entrada_texto": 5.0,
+      "entrada_imagem": 8.0,
+      "saida_imagem": 30.0
+    },
+    "gpt-image-2.5-flare": {
+      "entrada_texto": 5.0,
+      "entrada_imagem": 8.0,
+      "saida_imagem": 30.0
+    },
+    "gpt-image-2.6-sunburst": {
+      "entrada_texto": 5.0,
+      "entrada_imagem": 8.0,
+      "saida_imagem": 30.0
+    },
+    "gpt-image-2.6-flare": {
+      "entrada_texto": 5.0,
+      "entrada_imagem": 8.0,
+      "saida_imagem": 30.0
+    },
+    "gemini-2.5-flash-image": {
+      "entrada_texto": 0.3,
+      "saida_imagem": 30.0,
+      "obs": "~1290 tokens por imagem (~US$ 0,039). Conferir na página de preços."
+    }
   },
-  "gratis": ["whisper local (openai-whisper)", "ffmpeg", "Remotion/HyperFrames render local"]
+  "gratis": [
+    "whisper local (openai-whisper)",
+    "ffmpeg",
+    "Remotion/HyperFrames render local"
+  ]
 }

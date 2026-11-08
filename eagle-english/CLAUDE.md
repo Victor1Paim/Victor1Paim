@@ -52,6 +52,20 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 10. "CTA incluído: sim" + checklist.
 11. Custo: `python3 ../scripts/custos.py relatorio <post>` e mostrar a tabela (US$ e R$) no fim.
 
+## Quiz (formato B) – já automatizado
+
+`posts/<post>/quiz.json` (perguntas, textos, ids das falas) + `falas.json` → `python3 scripts/vozes.py gerar <post>`
+→ imagens (`scripts/imagem_gemini.py`: fundo 9:16 + mascote recortado; padrão OpenAI gpt-image-2) →
+`python3 scripts/montar_quiz.py <post>` (cartões `templates/quiz.html`, tique/ding/whoosh, loudness, capa,
+folha de contato). Primeiro exemplo: `posts/2026-11-10_quiz-pedir-de-novo/`. Mascote reutilizável em `assets/mascote/`.
+
+## Limites das APIs (plano gratuito do Gemini)
+
+- TTS: 3 pedidos/min e 10 por dia POR MODELO (`gemini-3.8-flash-tts`, `-lite-tts`, `2.5-flash-preview-tts`).
+  `vozes.py` espera o limite por minuto; no diário, use `--modelo gemini-3.8-flash-lite-tts --pular-existentes`.
+- Imagem no Gemini gratuito: bloqueada (limite 0) → usar OpenAI (`gpt-image-2`, qualidade medium; high dá 502).
+- Nome do produto na voz pt: escrever "Ígol trezentos e cinquenta" para sair "Eagle 350".
+
 ## Lições técnicas (seção 6 do passo a passo)
 
 - Rodar ffmpeg com `-nostdin` em loops e arredondar os tempos ("Invalid duration").

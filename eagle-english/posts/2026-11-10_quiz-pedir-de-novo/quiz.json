@@ -1,0 +1,123 @@
+{
+ "intro": {
+  "selo": "QUIZ ⏱️",
+  "hook": [
+   "Não entendeu?",
+   "Peça *de novo*",
+   "em inglês"
+  ],
+  "sub": "5 perguntas • 3 segundos cada",
+  "audio": [
+   "00_gancho",
+   "01_regra"
+  ]
+ },
+ "segundos_pensar": 3,
+ "perguntas": [
+  {
+   "enunciado": "Complete a frase:",
+   "frase": "Sorry, could you ___ that again?",
+   "a": "explained",
+   "b": "explain",
+   "certa": "b",
+   "pron": "/SÓ-ri, kud iú eks-PLÊIN thét a-GUÉN/",
+   "traducao": "Desculpa, pode explicar de novo?",
+   "nota": "Depois de could, o verbo fica na forma básica.",
+   "audio_pergunta": [
+    "q1_pt"
+   ],
+   "audio_resposta": [
+    "q1_en"
+   ]
+  },
+  {
+   "enunciado": "Qual pede pra falar mais devagar?",
+   "a": "Could you speak a little more slowly, please?",
+   "b": "Could you speak a little more slow, please?",
+   "certa": "a",
+   "pron": "/kud iú SPÍIK a LÍ-tol mór SLÔU-li, PLÍIZ/",
+   "traducao": "Pode falar um pouco mais devagar, por favor?",
+   "nota": "Pra dizer como se faz algo: slowly.",
+   "audio_pergunta": [
+    "q2_pt"
+   ],
+   "audio_resposta": [
+    "q2_en"
+   ]
+  },
+  {
+   "enunciado": "Como se pergunta “O que essa palavra quer dizer?”",
+   "a": "What means this word?",
+   "b": "What does this word mean?",
+   "certa": "b",
+   "pron": "/UÓT dâz this UÂRD MÍIN/",
+   "traducao": "O que essa palavra quer dizer?",
+   "nota": "Na pergunta, does vem antes da palavra.",
+   "audio_pergunta": [
+    "q3_pt"
+   ],
+   "audio_resposta": [
+    "q3_en"
+   ]
+  },
+  {
+   "regancho": [
+    "Agora as duas",
+    "que mais *pegam* 👀"
+   ],
+   "audio": [
+    "regancho"
+   ]
+  },
+  {
+   "enunciado": "O que significa:",
+   "frase": "I didn't catch the last part.",
+   "a": "Não gostei da última parte.",
+   "b": "Não entendi a última parte.",
+   "certa": "b",
+   "pron": "/ái DÍ-dent KÉTCH the LÉST PÁRT/",
+   "traducao": "Não entendi a última parte.",
+   "nota": "Aqui, catch = ouvir / entender.",
+   "audio_pergunta": [
+    "q4_pt",
+    "q4_en"
+   ],
+   "audio_resposta": [
+    "q4_tr"
+   ]
+  },
+  {
+   "enunciado": "Como pedir um exemplo?",
+   "a": "Could you give us an example?",
+   "b": "Could you give an example us?",
+   "certa": "a",
+   "pron": "/kud iú GUÍV âs an eg-ZÉM-pol/",
+   "traducao": "Pode dar um exemplo pra gente?",
+   "nota": "O us vem antes de an example.",
+   "audio_pergunta": [
+    "q5_pt"
+   ],
+   "audio_resposta": [
+    "q5_en",
+    "q5_tr"
+   ]
+  }
+ ],
+ "cta": {
+  "titulo": [
+   "Quantas você",
+   "*acertou*?"
+  ],
+  "comenta": "Comenta seu placar 👇",
+  "itens": [
+   "350 mapas visuais • 2.100 frases",
+   "35 situações do dia a dia",
+   "Tradução e pronúncia escrita",
+   "+ 4 bônus"
+  ],
+  "audio": [
+   "99_cta"
+  ]
+ },
+ "velocidade_pt": 1.2
+}

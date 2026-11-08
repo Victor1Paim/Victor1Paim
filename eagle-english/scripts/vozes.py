@@ -96,6 +96,25 @@ def tirar_estalo(pcm, sr=24000):
     return a.tobytes()
 
 
+def pedir(req, tentativas=8):
+    """Chama a API; no plano gratuito (3 pedidos/min) espera e tenta de novo. Limite diário: para com aviso."""
+    import re, time, urllib.error
+    for i in range(tentativas):
+        try:
+            return json.load(urllib.request.urlopen(req, timeout=180))
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                raise
+            msg = e.read().decode(errors="ignore")
+            if "per day" in msg or "PerDay" in msg:
+                sys.exit("Limite DIÁRIO do Gemini gratuito atingido: tente amanhã ou ative o faturamento no AI Studio.")
+            m = re.search(r"retry in ([0-9.]+)s", msg)
+            espera = max(float(m.group(1)) if m else 20.0, 5.0) + 1
+            print(f"  limite por minuto do Gemini; esperando {espera:.0f} s...", flush=True)
+            time.sleep(espera)
+    sys.exit("Gemini continua recusando (429).")
+
+
 def tts(texto, voz, modelo, saida, post):
     body = {"contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
@@ -103,7 +122,7 @@ def tts(texto, voz, modelo, saida, post):
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=json.dumps(body).encode(), headers={"x-goog-api-key": chave(), "Content-Type": "application/json"})
-    d = json.load(urllib.request.urlopen(req, timeout=180))
+    d = pedir(req)
     u = d.get("usageMetadata", {})
     registrar(post, modelo, "voz", entrada_texto=u.get("promptTokenCount", 0),
               saida_audio=u.get("candidatesTokenCount", 0))
@@ -129,13 +148,15 @@ def conferir(saida, texto, lingua):
     return float(linhas[0].split()[1].rstrip("%")) if linhas else 0.0
 
 
-def gerar(post, so, sem_conferir, minimo, tentativas):
+def gerar(post, so, sem_conferir, minimo, tentativas, pular=False, modelo_forcado=None):
     cfg = json.loads((post / "falas.json").read_text(encoding="utf-8"))
-    vozes, modelo = {**VOZ, **cfg.get("vozes", {})}, cfg.get("modelo", MODELO)
+    vozes, modelo = {**VOZ, **cfg.get("vozes", {})}, modelo_forcado or cfg.get("modelo", MODELO)
     (post / "audio").mkdir(exist_ok=True)
     falhas = []
     for f in cfg["falas"]:
         if so and f["id"] not in so:
+            continue
+        if pular and (post / "audio" / f"{f['id']}.wav").exists():
             continue
         saida = post / "audio" / f"{f['id']}.wav"
         for t in range(1, tentativas + 1):
@@ -160,13 +181,15 @@ def main():
     ap.add_argument("acao", choices=["montar", "gerar"]); ap.add_argument("post")
     ap.add_argument("--so", nargs="*", help="gerar só estes ids")
     ap.add_argument("--sem-conferir", action="store_true", help="pular a conferência do Whisper")
+    ap.add_argument("--modelo", help="outro modelo de TTS (ex.: gemini-3.8-flash-lite-tts quando o limite diário acabar)")
+    ap.add_argument("--pular-existentes", action="store_true", help="não regerar falas que já têm áudio")
     ap.add_argument("--minimo", type=float, default=95.0)
     ap.add_argument("--tentativas", type=int, default=3)
     a = ap.parse_args()
     post = Path(a.post).resolve()
     if a.acao == "montar":
         return montar(post)
-    return gerar(post, a.so, a.sem_conferir, a.minimo, a.tentativas)
+    return gerar(post, a.so, a.sem_conferir, a.minimo, a.tentativas, a.pular_existentes, a.modelo)
 
 
 if __name__ == "__main__":

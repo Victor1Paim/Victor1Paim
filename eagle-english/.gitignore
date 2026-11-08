@@ -6,3 +6,6 @@ __pycache__/
 posts/*/video/*.mp4
 posts/*/audio/*.wav
 posts/*/cartoes/
+posts/*/video/quadros/
+posts/*/audio/_mix/
+posts/*/audio/conferencia/

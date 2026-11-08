@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Montserrat:wght@500;600;700;800;900&display=swap">
+<style>
+  :root { --preto:#111; --vermelho:#E63946; --amarelo:#FFC93C; --marinho:#0B1F4B; --creme:#F7F3EA; --cinza:#8a8f98; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; }
+  body { font-family:"Montserrat", sans-serif; color:var(--preto); position:relative; background:#ddd; }
+  #fundo { position:absolute; inset:0; background-size:cover; background-position:center; }
+  #veu { position:absolute; inset:0; background:rgba(247,243,234,.86); }
+  /* área segura do Reels/TikTok: 250 topo, 400 base, 150 direita */
+  .area { position:absolute; top:250px; bottom:400px; left:90px; right:150px; display:flex; flex-direction:column; }
+  .titulo { font-family:"Oswald", sans-serif; font-weight:700; line-height:1.04; }
+  .vermelho { color:var(--vermelho); }
+  .selo { align-self:flex-start; background:var(--amarelo); color:#111; font-weight:900; font-size:38px;
+          padding:10px 28px; border-radius:40px; letter-spacing:1px; }
+  .rodape { position:absolute; left:90px; bottom:410px; font-size:28px; font-weight:700; color:var(--marinho); }
+  .mascote { position:absolute; }
+  /* intro / capa */
+  .intro { align-items:center; text-align:center; justify-content:flex-start; gap:34px; right:90px; padding-top:60px; }
+  .intro .selo { align-self:center; }
+  .intro .hook { font-size:104px; }
+  .intro .sub { font-size:44px; font-weight:700; color:var(--marinho); }
+  /* pergunta */
+  .pergunta { gap:36px; padding-top:10px; }
+  .enunciado { font-size:58px; font-weight:800; line-height:1.18; }
+  .frase { font-size:58px; font-weight:900; background:#fff; border-radius:24px; padding:24px 30px;
+           box-shadow:0 6px 24px rgba(11,31,75,.12); line-height:1.2; }
+  .op { display:flex; align-items:center; gap:26px; background:#fff; border:5px solid var(--marinho);
+        border-radius:28px; padding:30px 32px; font-size:50px; font-weight:800; line-height:1.18;
+        box-shadow:0 6px 24px rgba(11,31,75,.12); }
+  .op .letra { flex:none; width:78px; height:78px; border-radius:50%; background:var(--marinho); color:#fff;
+               display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:900; }
+  .op.certa { background:var(--amarelo); border-color:#d9a400; }
+  .op.certa .letra { background:#111; }
+  .op.errada { background:#eceae5; border-color:#c9c6bf; color:var(--cinza); text-decoration:line-through;
+               text-decoration-thickness:5px; text-decoration-color:var(--vermelho); }
+  .op.errada .letra { background:#b9b6af; }
+  .marca { margin-left:auto; font-size:56px; text-decoration:none; }
+  .timer { position:absolute; left:50%; transform:translateX(-50%); top:1160px; width:210px; height:210px; border-radius:50%;
+           background:var(--vermelho); color:#fff; font-family:"Oswald"; font-size:130px; font-weight:700;
+           display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(230,57,70,.35); }
+  .explica { display:flex; flex-direction:column; gap:14px; margin-top:6px; }
+  .pron { font-size:46px; font-weight:800; color:var(--vermelho); }
+  .trad { font-size:44px; font-weight:700; color:var(--marinho); }
+  .nota { font-size:36px; font-weight:600; color:#555; }
+  /* re-gancho */
+  .regancho { justify-content:center; align-items:center; text-align:center; right:90px; }
+  .regancho .titulo { font-size:130px; }
+  /* cta */
+  .cta { gap:30px; justify-content:flex-start; padding-top:40px; }
+  .cta .titulo { font-size:116px; }
+  .cta .comenta { font-size:52px; font-weight:800; }
+  .produto { background:#fff; border:4px solid var(--marinho); border-radius:30px; padding:34px 38px;
+             display:flex; flex-direction:column; gap:12px; box-shadow:0 8px 30px rgba(11,31,75,.15); }
+  .produto .nome { font-family:"Oswald"; font-weight:700; font-size:84px; color:var(--vermelho); line-height:1; }
+  .produto .item { font-size:40px; font-weight:700; }
+  .botao { align-self:flex-start; margin-top:14px; background:var(--vermelho); color:#fff; font-size:50px;
+           font-weight:900; padding:20px 50px; border-radius:60px; }
+</style></head>
+<body>
+<div id="fundo"></div><div id="veu"></div>
+<div id="conteudo"></div>
+<script>
+const d = window.DADOS || {tipo:"intro"};
+document.getElementById("fundo").style.backgroundImage = d.fundo ? `url('${d.fundo}')` : "";
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
+const masc = (src, css) => src ? `<img class="mascote" src="${src}" style="${css}">` : "";
+let h = "";
+if (d.tipo === "intro") {
+  h = `<div class="area intro">
+        <div class="selo">${esc(d.selo)}</div>
+        <div class="titulo hook">${d.hook.map(red).join("<br>")}</div>
+        <div class="sub">${esc(d.sub)}</div>
+      </div>
+      ${masc(d.mascote, "left:50%;transform:translateX(-50%);bottom:440px;height:520px")}
+      <div class="rodape" style="left:0;right:0;text-align:center">@eagle.english.br</div>`;
+} else if (d.tipo === "pergunta") {
+  const ops = ["a","b"].map(k => {
+    let cls = "op", marca = "";
+    if (d.revelar) { cls += k === d.certa ? " certa" : " errada"; marca = k === d.certa ? "✓" : "✗"; }
+    return `<div class="${cls}"><div class="letra">${k.toUpperCase()}</div><div>${esc(d[k])}</div>${marca ? `<div class="marca">${marca}</div>` : ""}</div>`;
+  }).join("");
+  const exp = d.revelar ? `<div class="explica">
+        <div class="pron">🗣️ ${esc(d.pron).split(" ").map(w => `<span style="white-space:nowrap">${w}</span>`).join(" ")}</div>
+        <div class="trad">🇧🇷 ${esc(d.traducao)}</div>
+        ${d.nota ? `<div class="nota">💡 ${esc(d.nota)}</div>` : ""}</div>` : "";
+  h = `<div class="area pergunta">
+        <div class="selo">PERGUNTA ${d.n}/${d.total}</div>
+        <div class="enunciado">${esc(d.enunciado)}</div>
+        ${d.frase ? `<div class="frase">🇺🇸 ${esc(d.frase)}</div>` : ""}
+        ${ops}${exp}
+      </div>
+      ${d.timer ? `<div class="timer">${d.timer}</div>` : ""}
+      ${d.revelar ? "" : masc(d.mascote, "right:150px;bottom:410px;height:230px")}
+      <div class="rodape">@eagle.english.br</div>`;
+} else if (d.tipo === "regancho") {
+  h = `<div class="area regancho"><div class="titulo">${d.texto.map(red).join("<br>")}</div></div>
+       ${masc(d.mascote, "left:50%;transform:translateX(-50%);bottom:420px;height:380px")}
+       <div class="rodape">@eagle.english.br</div>`;
+} else if (d.tipo === "cta") {
+  h = `<div class="area cta">
+        <div class="titulo">${d.titulo.map(red).join("<br>")}</div>
+        <div class="comenta">${esc(d.comenta)}</div>
+        <div class="produto">
+          <div class="nome">EAGLE 350</div>
+          ${d.itens.map(i => `<div class="item">✔ ${esc(i)}</div>`).join("")}
+          <div class="botao">Link na bio 👆</div>
+        </div>
+      </div>
+      ${masc(d.mascote, "left:50%;transform:translateX(-50%);bottom:430px;height:280px")}
+      <div class="rodape">@eagle.english.br</div>`;
+}
+document.getElementById("conteudo").innerHTML = h;
+</script>
+</body></html>
