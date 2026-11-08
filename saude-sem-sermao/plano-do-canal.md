@@ -16,7 +16,7 @@ Versão 2 (08/11/2026). O que ainda está **a definir** depende de decisão sua.
 
 **Tom:** amigo bem informado, não professor nem médico dando sermão. Humor leve, zero terrorismo ("isso vai te matar"), zero vergonha do corpo ou do hábito de quem assiste. Mostra o custo-benefício real e deixa a pessoa decidir.
 
-**Assinatura (em desenvolvimento — escolher e testar no piloto):**
+**Assinatura (em desenvolvimento — opções e roteiros de exemplo em `assinatura.md`):**
 - Fechar cada vídeo com "o mínimo que já ajuda" (o passo menor e realista, não o ideal).
 - Um selo de força da evidência: **Forte · Moderada · Fraca · Mito**.
 - Quadro "Sermão x Realidade": o conselho exagerado que todo mundo ouve versus o que os estudos mostram.
