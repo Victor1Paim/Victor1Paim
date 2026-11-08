@@ -6,6 +6,7 @@ Uso: python3 saude-sem-sermao/scripts/voz_gemini.py ROTEIRO.txt SAIDA.mp3 [--voz
 Chave: variável GEMINI_API_KEY (ou arquivo indicado em GEMINI_KEY_FILE). Se a chave estiver salva
 no ambiente como network secret (header x-goog-api-key), use GEMINI_API_KEY=proxy-injected.
 Nunca grave a chave no repositório.
+Cada geração registra tokens e custo em PASTA_DO_POST/custos.jsonl (ver scripts/custos.py).
 
 Regra aprendida em 08/11/2026: NÃO colocar instrução de tom no texto ("Say warmly: ...").
 O modelo gemini-3.8-flash-tts às vezes lê a instrução em voz alta, e não aceita systemInstruction.
@@ -15,6 +16,8 @@ import argparse, base64, json, os, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(RAIZ / "scripts"))
+from custos import registrar  # noqa: E402
 CONFERIR = RAIZ / ".claude/skills/whisper-legendas/scripts/whisper_legendas.py"
 
 
@@ -26,7 +29,7 @@ def chave():
     sys.exit("defina GEMINI_API_KEY ou GEMINI_KEY_FILE")
 
 
-def gerar(texto, voz, modelo, saida):
+def gerar(texto, voz, modelo, saida, pasta_post=None):
     body = {"contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}
@@ -34,6 +37,11 @@ def gerar(texto, voz, modelo, saida):
         f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=json.dumps(body).encode(), headers={"x-goog-api-key": chave(), "Content-Type": "application/json"})
     d = json.load(urllib.request.urlopen(req, timeout=180))
+    u = d.get("usageMetadata", {})
+    usd = registrar(pasta_post or Path(saida).parent, modelo, "voz",
+                    entrada_texto=u.get("promptTokenCount", 0), saida_audio=u.get("candidatesTokenCount", 0))
+    if usd is not None:
+        print(f"  custo desta geração: US$ {usd:.4f}")
     pcm = base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
     with tempfile.NamedTemporaryFile(suffix=".pcm") as f:
         f.write(pcm); f.flush()
@@ -48,12 +56,13 @@ def main():
     ap.add_argument("--modelo", default="gemini-3.8-flash-tts")
     ap.add_argument("--minimo", type=float, default=97.0)
     ap.add_argument("--tentativas", type=int, default=3)
+    ap.add_argument("--post", help="pasta do post onde registrar custos.jsonl (padrão: pasta da saída)")
     a = ap.parse_args()
     texto = Path(a.roteiro).read_text().strip()
     saida = Path(a.saida); saida.parent.mkdir(parents=True, exist_ok=True)
     conf = saida.parent / "conferencia"
     for i in range(1, a.tentativas + 1):
-        gerar(texto, a.voz, a.modelo, saida)
+        gerar(texto, a.voz, a.modelo, saida, a.post)
         r = subprocess.run([sys.executable, str(CONFERIR), str(saida), "--saida", str(conf), "--roteiro", a.roteiro],
                            capture_output=True, text=True).stdout
         linhas = [l for l in r.splitlines() if l.startswith(("semelhança", "insert", "replace", "delete"))]
