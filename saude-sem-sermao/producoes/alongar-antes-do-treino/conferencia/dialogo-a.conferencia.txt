@@ -1,0 +1,3 @@
+semelhança: 99.1%
+insert: roteiro='' voz='a'
+insert: roteiro='' voz='a'

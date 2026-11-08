@@ -1,0 +1,517 @@
+[
+ {
+  "palavra": "Precisa",
+  "inicio": 0.0,
+  "fim": 0.5
+ },
+ {
+  "palavra": "mesmo",
+  "inicio": 0.5,
+  "fim": 0.88
+ },
+ {
+  "palavra": "dormir",
+  "inicio": 0.88,
+  "fim": 1.22
+ },
+ {
+  "palavra": "oito",
+  "inicio": 1.22,
+  "fim": 1.6
+ },
+ {
+  "palavra": "horas",
+  "inicio": 1.6,
+  "fim": 1.96
+ },
+ {
+  "palavra": "por",
+  "inicio": 1.96,
+  "fim": 2.16
+ },
+ {
+  "palavra": "noite?",
+  "inicio": 2.16,
+  "fim": 2.48
+ },
+ {
+  "palavra": "Eu",
+  "inicio": 2.96,
+  "fim": 3.52
+ },
+ {
+  "palavra": "durmo",
+  "inicio": 3.52,
+  "fim": 3.84
+ },
+ {
+  "palavra": "sete",
+  "inicio": 3.84,
+  "fim": 4.42
+ },
+ {
+  "palavra": "e",
+  "inicio": 4.42,
+  "fim": 4.58
+ },
+ {
+  "palavra": "ainda",
+  "inicio": 4.58,
+  "fim": 4.82
+ },
+ {
+  "palavra": "acordo",
+  "inicio": 4.82,
+  "fim": 5.18
+ },
+ {
+  "palavra": "com",
+  "inicio": 5.18,
+  "fim": 5.4
+ },
+ {
+  "palavra": "culpa.",
+  "inicio": 5.4,
+  "fim": 5.78
+ },
+ {
+  "palavra": "Calma,",
+  "inicio": 6.54,
+  "fim": 7.1
+ },
+ {
+  "palavra": "oito",
+  "inicio": 7.3,
+  "fim": 7.5
+ },
+ {
+  "palavra": "horas",
+  "inicio": 7.5,
+  "fim": 7.84
+ },
+ {
+  "palavra": "não",
+  "inicio": 7.84,
+  "fim": 8.0
+ },
+ {
+  "palavra": "é",
+  "inicio": 8.0,
+  "fim": 8.12
+ },
+ {
+  "palavra": "número",
+  "inicio": 8.12,
+  "fim": 8.34
+ },
+ {
+  "palavra": "mágico.",
+  "inicio": 8.34,
+  "fim": 8.88
+ },
+ {
+  "palavra": "A",
+  "inicio": 9.02,
+  "fim": 9.16
+ },
+ {
+  "palavra": "recomendação",
+  "inicio": 9.16,
+  "fim": 9.82
+ },
+ {
+  "palavra": "para",
+  "inicio": 9.82,
+  "fim": 10.0
+ },
+ {
+  "palavra": "adultos",
+  "inicio": 10.0,
+  "fim": 10.44
+ },
+ {
+  "palavra": "é",
+  "inicio": 10.44,
+  "fim": 10.56
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.56,
+  "fim": 10.72
+ },
+ {
+  "palavra": "sete",
+  "inicio": 10.72,
+  "fim": 11.1
+ },
+ {
+  "palavra": "a",
+  "inicio": 11.1,
+  "fim": 11.22
+ },
+ {
+  "palavra": "nove",
+  "inicio": 11.22,
+  "fim": 11.46
+ },
+ {
+  "palavra": "horas",
+  "inicio": 11.46,
+  "fim": 11.72
+ },
+ {
+  "palavra": "por",
+  "inicio": 11.72,
+  "fim": 11.9
+ },
+ {
+  "palavra": "noite.",
+  "inicio": 11.9,
+  "fim": 12.22
+ },
+ {
+  "palavra": "Ou",
+  "inicio": 12.62,
+  "fim": 13.18
+ },
+ {
+  "palavra": "seja,",
+  "inicio": 13.18,
+  "fim": 13.44
+ },
+ {
+  "palavra": "sete",
+  "inicio": 13.7,
+  "fim": 14.02
+ },
+ {
+  "palavra": "horas",
+  "inicio": 14.02,
+  "fim": 14.32
+ },
+ {
+  "palavra": "já",
+  "inicio": 14.32,
+  "fim": 14.58
+ },
+ {
+  "palavra": "está",
+  "inicio": 14.58,
+  "fim": 14.78
+ },
+ {
+  "palavra": "dentro",
+  "inicio": 14.78,
+  "fim": 15.16
+ },
+ {
+  "palavra": "da",
+  "inicio": 15.16,
+  "fim": 15.32
+ },
+ {
+  "palavra": "faixa.",
+  "inicio": 15.32,
+  "fim": 15.66
+ },
+ {
+  "palavra": "Ué,",
+  "inicio": 16.34,
+  "fim": 16.6
+ },
+ {
+  "palavra": "então",
+  "inicio": 16.98,
+  "fim": 17.24
+ },
+ {
+  "palavra": "por",
+  "inicio": 17.24,
+  "fim": 17.52
+ },
+ {
+  "palavra": "que",
+  "inicio": 17.52,
+  "fim": 17.6
+ },
+ {
+  "palavra": "eu",
+  "inicio": 17.6,
+  "fim": 17.72
+ },
+ {
+  "palavra": "acordo",
+  "inicio": 17.72,
+  "fim": 18.0
+ },
+ {
+  "palavra": "cansado?",
+  "inicio": 18.0,
+  "fim": 18.54
+ },
+ {
+  "palavra": "Porque",
+  "inicio": 18.96,
+  "fim": 19.48
+ },
+ {
+  "palavra": "não",
+  "inicio": 19.48,
+  "fim": 19.64
+ },
+ {
+  "palavra": "é",
+  "inicio": 19.64,
+  "fim": 19.76
+ },
+ {
+  "palavra": "só",
+  "inicio": 19.76,
+  "fim": 19.9
+ },
+ {
+  "palavra": "quantidade.",
+  "inicio": 19.9,
+  "fim": 20.3
+ },
+ {
+  "palavra": "Dormir",
+  "inicio": 20.78,
+  "fim": 21.16
+ },
+ {
+  "palavra": "e",
+  "inicio": 21.16,
+  "fim": 21.28
+ },
+ {
+  "palavra": "acordar",
+  "inicio": 21.28,
+  "fim": 21.62
+ },
+ {
+  "palavra": "em",
+  "inicio": 21.62,
+  "fim": 21.76
+ },
+ {
+  "palavra": "horários",
+  "inicio": 21.76,
+  "fim": 22.06
+ },
+ {
+  "palavra": "parecidos,",
+  "inicio": 22.06,
+  "fim": 22.84
+ },
+ {
+  "palavra": "até",
+  "inicio": 23.02,
+  "fim": 23.28
+ },
+ {
+  "palavra": "no",
+  "inicio": 23.28,
+  "fim": 23.46
+ },
+ {
+  "palavra": "fim",
+  "inicio": 23.46,
+  "fim": 23.62
+ },
+ {
+  "palavra": "de",
+  "inicio": 23.62,
+  "fim": 23.74
+ },
+ {
+  "palavra": "semana,",
+  "inicio": 23.74,
+  "fim": 24.04
+ },
+ {
+  "palavra": "ajuda",
+  "inicio": 24.38,
+  "fim": 24.82
+ },
+ {
+  "palavra": "o",
+  "inicio": 24.82,
+  "fim": 24.96
+ },
+ {
+  "palavra": "corpo",
+  "inicio": 24.96,
+  "fim": 25.22
+ },
+ {
+  "palavra": "a",
+  "inicio": 25.22,
+  "fim": 25.34
+ },
+ {
+  "palavra": "se",
+  "inicio": 25.34,
+  "fim": 25.42
+ },
+ {
+  "palavra": "ajustar.",
+  "inicio": 25.42,
+  "fim": 25.82
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 26.8,
+  "fim": 27.36
+ },
+ {
+  "palavra": "Oito",
+  "inicio": 28.18,
+  "fim": 28.4
+ },
+ {
+  "palavra": "horas",
+  "inicio": 28.4,
+  "fim": 28.84
+ },
+ {
+  "palavra": "não",
+  "inicio": 28.84,
+  "fim": 29.26
+ },
+ {
+  "palavra": "é",
+  "inicio": 29.26,
+  "fim": 29.42
+ },
+ {
+  "palavra": "regra.",
+  "inicio": 29.42,
+  "fim": 29.8
+ },
+ {
+  "palavra": "De",
+  "inicio": 30.0,
+  "fim": 30.36
+ },
+ {
+  "palavra": "sete",
+  "inicio": 30.36,
+  "fim": 30.92
+ },
+ {
+  "palavra": "a",
+  "inicio": 30.92,
+  "fim": 31.0
+ },
+ {
+  "palavra": "nove",
+  "inicio": 31.0,
+  "fim": 31.34
+ },
+ {
+  "palavra": "está",
+  "inicio": 31.34,
+  "fim": 31.64
+ },
+ {
+  "palavra": "ótimo.",
+  "inicio": 31.64,
+  "fim": 32.14
+ },
+ {
+  "palavra": "E",
+  "inicio": 32.34,
+  "fim": 32.8
+ },
+ {
+  "palavra": "horário",
+  "inicio": 32.8,
+  "fim": 33.06
+ },
+ {
+  "palavra": "certinho",
+  "inicio": 33.06,
+  "fim": 33.7
+ },
+ {
+  "palavra": "ajuda",
+  "inicio": 33.7,
+  "fim": 34.14
+ },
+ {
+  "palavra": "mais",
+  "inicio": 34.14,
+  "fim": 34.56
+ },
+ {
+  "palavra": "do",
+  "inicio": 34.56,
+  "fim": 34.74
+ },
+ {
+  "palavra": "que",
+  "inicio": 34.74,
+  "fim": 34.86
+ },
+ {
+  "palavra": "contar",
+  "inicio": 34.86,
+  "fim": 35.14
+ },
+ {
+  "palavra": "minuto.",
+  "inicio": 35.14,
+  "fim": 35.54
+ },
+ {
+  "palavra": "Resumiu",
+  "inicio": 36.06,
+  "fim": 36.64
+ },
+ {
+  "palavra": "bem.",
+  "inicio": 36.64,
+  "fim": 36.84
+ },
+ {
+  "palavra": "Curtiu?",
+  "inicio": 37.14,
+  "fim": 37.48
+ },
+ {
+  "palavra": "Então",
+  "inicio": 37.72,
+  "fim": 38.02
+ },
+ {
+  "palavra": "segue",
+  "inicio": 38.02,
+  "fim": 38.3
+ },
+ {
+  "palavra": "a",
+  "inicio": 38.3,
+  "fim": 38.42
+ },
+ {
+  "palavra": "gente",
+  "inicio": 38.42,
+  "fim": 38.6
+ },
+ {
+  "palavra": "para",
+  "inicio": 38.6,
+  "fim": 38.76
+ },
+ {
+  "palavra": "ver",
+  "inicio": 38.76,
+  "fim": 38.86
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 38.86,
+  "fim": 39.12
+ }
+]

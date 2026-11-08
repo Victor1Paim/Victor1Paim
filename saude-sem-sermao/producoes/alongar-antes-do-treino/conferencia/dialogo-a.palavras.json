@@ -1,0 +1,547 @@
+[
+ {
+  "palavra": "Alongar",
+  "inicio": 0.0,
+  "fim": 0.58
+ },
+ {
+  "palavra": "antes",
+  "inicio": 0.58,
+  "fim": 0.84
+ },
+ {
+  "palavra": "do",
+  "inicio": 0.84,
+  "fim": 1.04
+ },
+ {
+  "palavra": "treino",
+  "inicio": 1.04,
+  "fim": 1.3
+ },
+ {
+  "palavra": "evita",
+  "inicio": 1.3,
+  "fim": 1.7
+ },
+ {
+  "palavra": "a",
+  "inicio": 1.7,
+  "fim": 1.82
+ },
+ {
+  "palavra": "lesão?",
+  "inicio": 1.82,
+  "fim": 2.06
+ },
+ {
+  "palavra": "Eu",
+  "inicio": 2.26,
+  "fim": 2.68
+ },
+ {
+  "palavra": "sempre",
+  "inicio": 2.68,
+  "fim": 2.98
+ },
+ {
+  "palavra": "alongo",
+  "inicio": 2.98,
+  "fim": 3.34
+ },
+ {
+  "palavra": "10",
+  "inicio": 3.34,
+  "fim": 3.54
+ },
+ {
+  "palavra": "minutos",
+  "inicio": 3.54,
+  "fim": 3.88
+ },
+ {
+  "palavra": "antes.",
+  "inicio": 3.88,
+  "fim": 4.22
+ },
+ {
+  "palavra": "Tô",
+  "inicio": 4.62,
+  "fim": 4.7
+ },
+ {
+  "palavra": "perdendo",
+  "inicio": 4.7,
+  "fim": 5.04
+ },
+ {
+  "palavra": "tempo?",
+  "inicio": 5.04,
+  "fim": 5.32
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 5.68,
+  "fim": 6.08
+ },
+ {
+  "palavra": "análise",
+  "inicio": 6.08,
+  "fim": 6.5
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.5,
+  "fim": 6.66
+ },
+ {
+  "palavra": "25",
+  "inicio": 6.66,
+  "fim": 7.16
+ },
+ {
+  "palavra": "estudos",
+  "inicio": 7.16,
+  "fim": 7.84
+ },
+ {
+  "palavra": "com",
+  "inicio": 7.84,
+  "fim": 8.06
+ },
+ {
+  "palavra": "mais",
+  "inicio": 8.06,
+  "fim": 8.26
+ },
+ {
+  "palavra": "de",
+  "inicio": 8.26,
+  "fim": 8.38
+ },
+ {
+  "palavra": "26",
+  "inicio": 8.38,
+  "fim": 8.76
+ },
+ {
+  "palavra": "mil",
+  "inicio": 8.76,
+  "fim": 8.94
+ },
+ {
+  "palavra": "pessoas",
+  "inicio": 8.94,
+  "fim": 9.5
+ },
+ {
+  "palavra": "comparou",
+  "inicio": 9.5,
+  "fim": 10.1
+ },
+ {
+  "palavra": "formas",
+  "inicio": 10.1,
+  "fim": 10.5
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.5,
+  "fim": 10.7
+ },
+ {
+  "palavra": "prevenir",
+  "inicio": 10.7,
+  "fim": 11.18
+ },
+ {
+  "palavra": "lesão",
+  "inicio": 11.18,
+  "fim": 11.52
+ },
+ {
+  "palavra": "no",
+  "inicio": 11.52,
+  "fim": 11.64
+ },
+ {
+  "palavra": "esporte.",
+  "inicio": 11.64,
+  "fim": 11.98
+ },
+ {
+  "palavra": "O",
+  "inicio": 12.34,
+  "fim": 12.64
+ },
+ {
+  "palavra": "alongamento",
+  "inicio": 12.64,
+  "fim": 13.26
+ },
+ {
+  "palavra": "sozinho",
+  "inicio": 13.26,
+  "fim": 13.82
+ },
+ {
+  "palavra": "quase",
+  "inicio": 13.82,
+  "fim": 14.38
+ },
+ {
+  "palavra": "não",
+  "inicio": 14.38,
+  "fim": 14.56
+ },
+ {
+  "palavra": "fez",
+  "inicio": 14.56,
+  "fim": 14.74
+ },
+ {
+  "palavra": "diferença.",
+  "inicio": 14.74,
+  "fim": 15.12
+ },
+ {
+  "palavra": "Ué,",
+  "inicio": 15.74,
+  "fim": 16.1
+ },
+ {
+  "palavra": "e",
+  "inicio": 16.28,
+  "fim": 16.56
+ },
+ {
+  "palavra": "o",
+  "inicio": 16.56,
+  "fim": 16.62
+ },
+ {
+  "palavra": "que",
+  "inicio": 16.62,
+  "fim": 16.7
+ },
+ {
+  "palavra": "fez?",
+  "inicio": 16.7,
+  "fim": 17.0
+ },
+ {
+  "palavra": "O",
+  "inicio": 17.42,
+  "fim": 17.78
+ },
+ {
+  "palavra": "treino",
+  "inicio": 17.78,
+  "fim": 18.06
+ },
+ {
+  "palavra": "de",
+  "inicio": 18.06,
+  "fim": 18.18
+ },
+ {
+  "palavra": "força.",
+  "inicio": 18.18,
+  "fim": 18.5
+ },
+ {
+  "palavra": "As",
+  "inicio": 18.78,
+  "fim": 19.1
+ },
+ {
+  "palavra": "lesões",
+  "inicio": 19.1,
+  "fim": 19.42
+ },
+ {
+  "palavra": "caíram",
+  "inicio": 19.42,
+  "fim": 19.78
+ },
+ {
+  "palavra": "para",
+  "inicio": 19.78,
+  "fim": 19.94
+ },
+ {
+  "palavra": "cerca",
+  "inicio": 19.94,
+  "fim": 20.16
+ },
+ {
+  "palavra": "de",
+  "inicio": 20.16,
+  "fim": 20.32
+ },
+ {
+  "palavra": "um",
+  "inicio": 20.32,
+  "fim": 20.44
+ },
+ {
+  "palavra": "terço.",
+  "inicio": 20.44,
+  "fim": 20.86
+ },
+ {
+  "palavra": "Treino",
+  "inicio": 21.4,
+  "fim": 21.72
+ },
+ {
+  "palavra": "de",
+  "inicio": 21.72,
+  "fim": 21.84
+ },
+ {
+  "palavra": "equilíbrio",
+  "inicio": 21.84,
+  "fim": 22.3
+ },
+ {
+  "palavra": "também",
+  "inicio": 22.3,
+  "fim": 22.56
+ },
+ {
+  "palavra": "ajudou,",
+  "inicio": 22.56,
+  "fim": 22.92
+ },
+ {
+  "palavra": "cortando",
+  "inicio": 23.1,
+  "fim": 23.4
+ },
+ {
+  "palavra": "quase",
+  "inicio": 23.4,
+  "fim": 23.62
+ },
+ {
+  "palavra": "pela",
+  "inicio": 23.62,
+  "fim": 23.82
+ },
+ {
+  "palavra": "metade.",
+  "inicio": 23.82,
+  "fim": 24.18
+ },
+ {
+  "palavra": "Alongar",
+  "inicio": 24.88,
+  "fim": 25.3
+ },
+ {
+  "palavra": "não",
+  "inicio": 25.3,
+  "fim": 25.4
+ },
+ {
+  "palavra": "faz",
+  "inicio": 25.4,
+  "fim": 25.6
+ },
+ {
+  "palavra": "mal",
+  "inicio": 25.6,
+  "fim": 25.88
+ },
+ {
+  "palavra": "e",
+  "inicio": 25.88,
+  "fim": 26.12
+ },
+ {
+  "palavra": "ajuda",
+  "inicio": 26.12,
+  "fim": 26.42
+ },
+ {
+  "palavra": "na",
+  "inicio": 26.42,
+  "fim": 26.58
+ },
+ {
+  "palavra": "flexibilidade.",
+  "inicio": 26.58,
+  "fim": 27.3
+ },
+ {
+  "palavra": "Só",
+  "inicio": 27.58,
+  "fim": 27.8
+ },
+ {
+  "palavra": "não",
+  "inicio": 27.8,
+  "fim": 27.92
+ },
+ {
+  "palavra": "é",
+  "inicio": 27.92,
+  "fim": 28.02
+ },
+ {
+  "palavra": "o",
+  "inicio": 28.02,
+  "fim": 28.1
+ },
+ {
+  "palavra": "escudo",
+  "inicio": 28.1,
+  "fim": 28.42
+ },
+ {
+  "palavra": "contra",
+  "inicio": 28.42,
+  "fim": 28.68
+ },
+ {
+  "palavra": "a",
+  "inicio": 28.68,
+  "fim": 28.84
+ },
+ {
+  "palavra": "lesão.",
+  "inicio": 28.84,
+  "fim": 29.08
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 29.84,
+  "fim": 30.36
+ },
+ {
+  "palavra": "Alongar",
+  "inicio": 30.74,
+  "fim": 31.26
+ },
+ {
+  "palavra": "pode,",
+  "inicio": 31.26,
+  "fim": 31.6
+ },
+ {
+  "palavra": "mas",
+  "inicio": 31.84,
+  "fim": 32.38
+ },
+ {
+  "palavra": "quem",
+  "inicio": 32.38,
+  "fim": 32.54
+ },
+ {
+  "palavra": "protege",
+  "inicio": 32.54,
+  "fim": 32.94
+ },
+ {
+  "palavra": "mesmo",
+  "inicio": 32.94,
+  "fim": 33.18
+ },
+ {
+  "palavra": "é",
+  "inicio": 33.18,
+  "fim": 33.32
+ },
+ {
+  "palavra": "músculo",
+  "inicio": 33.32,
+  "fim": 33.7
+ },
+ {
+  "palavra": "forte.",
+  "inicio": 33.7,
+  "fim": 34.04
+ },
+ {
+  "palavra": "Vou",
+  "inicio": 34.24,
+  "fim": 34.54
+ },
+ {
+  "palavra": "incluir",
+  "inicio": 34.54,
+  "fim": 34.84
+ },
+ {
+  "palavra": "uns",
+  "inicio": 34.84,
+  "fim": 34.98
+ },
+ {
+  "palavra": "agachamentos",
+  "inicio": 34.98,
+  "fim": 35.5
+ },
+ {
+  "palavra": "no",
+  "inicio": 35.5,
+  "fim": 35.68
+ },
+ {
+  "palavra": "treino.",
+  "inicio": 35.68,
+  "fim": 35.94
+ },
+ {
+  "palavra": "Resumiu",
+  "inicio": 36.28,
+  "fim": 36.7
+ },
+ {
+  "palavra": "bem.",
+  "inicio": 36.7,
+  "fim": 36.88
+ },
+ {
+  "palavra": "Curtiu?",
+  "inicio": 37.28,
+  "fim": 37.64
+ },
+ {
+  "palavra": "Então",
+  "inicio": 37.82,
+  "fim": 38.2
+ },
+ {
+  "palavra": "segue",
+  "inicio": 38.2,
+  "fim": 38.44
+ },
+ {
+  "palavra": "a",
+  "inicio": 38.44,
+  "fim": 38.56
+ },
+ {
+  "palavra": "gente",
+  "inicio": 38.56,
+  "fim": 38.7
+ },
+ {
+  "palavra": "para",
+  "inicio": 38.7,
+  "fim": 38.82
+ },
+ {
+  "palavra": "ver",
+  "inicio": 38.82,
+  "fim": 38.96
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 38.96,
+  "fim": 39.22
+ }
+]

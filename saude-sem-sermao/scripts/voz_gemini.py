@@ -29,10 +29,22 @@ def chave():
     sys.exit("defina GEMINI_API_KEY ou GEMINI_KEY_FILE")
 
 
-def gerar(texto, voz, modelo, saida, pasta_post=None):
-    body = {"contents": [{"parts": [{"text": texto}]}],
-            "generationConfig": {"responseModalities": ["AUDIO"],
-                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}
+def gerar(texto, voz, modelo, saida, pasta_post=None, vozes=None):
+    if vozes:  # diálogo: {"Narrador": "Charon", "Tito": "Puck"}; roteiro com linhas "Nome: fala"
+        fala = {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": [
+            {"speaker": n, "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": v}}} for n, v in vozes.items()]}}
+    else:
+        fala = {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}
+    if vozes:  # gemini-3.8 exige cada fala numa parte, marcada com speechMetadata.speaker
+        partes = []
+        for linha in texto.splitlines():
+            if ":" in linha and linha.split(":", 1)[0].strip() in vozes:
+                quem, frase = linha.split(":", 1)
+                partes.append({"text": frase.strip(), "speechMetadata": {"speaker": quem.strip()}})
+    else:
+        partes = [{"text": texto}]
+    body = {"contents": [{"parts": partes}],
+            "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": fala}}
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=json.dumps(body).encode(), headers={"x-goog-api-key": chave(), "Content-Type": "application/json"})
@@ -53,17 +65,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro"); ap.add_argument("saida")
     ap.add_argument("--voz", default="Achird")
+    ap.add_argument("--vozes", help='diálogo: "Narrador=Charon,Tito=Puck" (roteiro com linhas "Nome: fala")')
     ap.add_argument("--modelo", default="gemini-3.8-flash-tts")
     ap.add_argument("--minimo", type=float, default=97.0)
     ap.add_argument("--tentativas", type=int, default=3)
     ap.add_argument("--post", help="pasta do post onde registrar custos.jsonl (padrão: pasta da saída)")
     a = ap.parse_args()
     texto = Path(a.roteiro).read_text().strip()
+    vozes = dict(p.split("=") for p in a.vozes.split(",")) if a.vozes else None
+    roteiro_conf = a.roteiro
+    if vozes:  # para conferir, tira o "Nome:" do começo das linhas
+        import re
+        limpo = "\n".join(re.sub(r"^\s*[^:]{1,20}:\s*", "", l) for l in texto.splitlines())
+        roteiro_conf = str(Path(tempfile.gettempdir()) / "roteiro_sem_nomes.txt"); Path(roteiro_conf).write_text(limpo)
     saida = Path(a.saida); saida.parent.mkdir(parents=True, exist_ok=True)
     conf = saida.parent / "conferencia"
     for i in range(1, a.tentativas + 1):
-        gerar(texto, a.voz, a.modelo, saida, a.post)
-        r = subprocess.run([sys.executable, str(CONFERIR), str(saida), "--saida", str(conf), "--roteiro", a.roteiro],
+        gerar(texto, a.voz, a.modelo, saida, a.post, vozes)
+        r = subprocess.run([sys.executable, str(CONFERIR), str(saida), "--saida", str(conf), "--roteiro", roteiro_conf],
                            capture_output=True, text=True).stdout
         linhas = [l for l in r.splitlines() if l.startswith(("semelhança", "insert", "replace", "delete"))]
         pct = float(linhas[0].split()[1].rstrip("%")) if linhas else 0.0

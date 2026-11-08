@@ -12,8 +12,23 @@ def srt_tempo(s):
     return f"{h:02}:{m:02}:{s:02},{ms:03}"
 
 
+EQUIVALENTES = {"pra": "para", "pro": "para o", "tá": "está", "tô": "estou", "cê": "você", "né": "não é"}
+
+
 def normalizar(t):
-    return re.sub(r"[^\w\s]", "", t.lower()).split()
+    """Minúsculas, sem pontuação, números por extenso e formas faladas iguais às escritas,
+    para a conferência não reprovar '25' x 'vinte e cinco' ou 'pra' x 'para'."""
+    try:
+        from num2words import num2words
+    except ImportError:
+        num2words = None
+    t = t.lower()
+    if num2words:
+        t = re.sub(r"\d+", lambda m: " " + num2words(int(m.group()), lang="pt_BR") + " ", t)
+    palavras = []
+    for w in re.sub(r"[^\w\s]", " ", t).split():
+        palavras.extend(EQUIVALENTES.get(w, w).split())
+    return palavras
 
 
 def main():
