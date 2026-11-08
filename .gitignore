@@ -4,3 +4,5 @@ saude-sem-sermao/producoes/*/tmp-render.mp4
 saude-sem-sermao/producoes/**/work-*/
 saude-sem-sermao/producoes/**/.tmp-render*/
 saude-sem-sermao/producoes/**/tmp-render.mp4
+saude-sem-sermao/producoes/**/.hyperframes/
+saude-sem-sermao/producoes/**/node_modules/
