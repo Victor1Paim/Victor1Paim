@@ -1,0 +1,68 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .bg{background:var(--verde);}
+  .titulo{color:var(--creme2);top:250px;}
+  .titulo em{color:var(--mostarda);}
+  #capa-lua{position:absolute;left:300px;top:600px;width:420px;height:420px;}
+  #capa-selo{position:absolute;left:650px;top:560px;width:190px;height:190px;border-radius:50%;background:var(--laranja);
+     color:#fff;font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:78px;display:flex;align-items:center;justify-content:center;}
+  #capa-q{position:absolute;left:830px;top:520px;font-family:'Playfair Display',serif;font-weight:700;font-size:80px;color:var(--mostarda);}
+</style>
+<div id="root" data-composition-id="capa" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo"><span id="capa-t1" style="display:inline-block">Precisa dormir</span><br><em id="capa-t2" style="display:inline-block">8 horas?</em></h1>
+  <svg id="capa-lua" viewBox="0 0 200 200"><path d="M130 20 A80 80 0 1 0 180 140 A64 64 0 1 1 130 20 Z" fill="#F2ECE2"/>
+    <circle cx="160" cy="40" r="5" fill="#E2B04A"/><circle cx="40" cy="30" r="4" fill="#E2B04A"/><circle cx="185" cy="90" r="3" fill="#F2ECE2"/></svg>
+  <div id="capa-selo">8h</div><div id="capa-q">?</div>
+  <div class="tito-mini" id="capa-tito"><svg viewBox="-10 0 220 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="100" cy="226" rx="62" ry="8" fill="rgba(90,50,30,.12)"/>
+  <rect x="74" y="166" width="17" height="48" rx="8" fill="#C75A34"/><rect x="109" y="166" width="17" height="48" rx="8" fill="#C75A34"/>
+  <ellipse cx="80" cy="216" rx="19" ry="9" fill="#C75A34"/><ellipse cx="120" cy="216" rx="19" ry="9" fill="#C75A34"/>
+  <path d="M32 104 q-22 10 -22 34" stroke="#C75A34" stroke-width="15" fill="none" stroke-linecap="round"/><circle cx="10" cy="142" r="11" fill="#C75A34"/>
+  <g id="capa-braco"><path d="M168 102 q26 -8 30 -38" stroke="#C75A34" stroke-width="15" fill="none" stroke-linecap="round"/><circle cx="198" cy="60" r="11" fill="#C75A34"/></g>
+  <path d="M100 188 C 40 142, 10 106, 18 66 C 25 30, 70 22, 100 56 C 130 22, 175 30, 182 66 C 190 106, 160 142, 100 188 Z" fill="#CE6840"/>
+  <ellipse cx="56" cy="58" rx="17" ry="10" fill="#E08A63" opacity=".75" transform="rotate(-25 56 58)"/>
+  <path d="M64 72 q14 -10 28 -2" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M108 70 q14 -8 28 2" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="76" cy="92" rx="8" ry="11" fill="#2B2B2B"/><circle cx="79" cy="88" r="3" fill="#fff"/><path d="M112 94 q12 -10 24 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="60" cy="112" rx="10" ry="6" fill="#EE8F78" opacity=".75"/><ellipse cx="140" cy="112" rx="10" ry="6" fill="#EE8F78" opacity=".75"/>
+  <path id="capa-sorriso" d="M86 116 q14 14 28 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <ellipse id="capa-boca" cx="100" cy="121" rx="10" ry="8" fill="#5A1E14" opacity="0"/>
+  <path d="M42 126 q58 42 116 0" stroke="#2F483A" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M152 130 q14 26 -4 44" stroke="#2F483A" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="146" cy="176" r="11" fill="#F2ECE2" stroke="#2F483A" stroke-width="6"/>
+</svg></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#capa-t2",{scale:1,transformOrigin:"0% 50%"},{scale:1.08,duration:0.25,ease:"power2.out",yoyo:true,repeat:1},1.5);
+  tl.fromTo("#capa-lua",{rotation:-6},{rotation:0,duration:1.2,ease:"power2.out"},0.0);
+  tl.fromTo("#capa-selo",{scale:0},{scale:1,duration:0.4,ease:"back.out(2.2)"},0.25);
+  tl.fromTo("#capa-q",{opacity:0,y:-20},{opacity:1,y:0,duration:0.3,ease:"power2.out"},0.5);
+  tl.fromTo("#capa-tito",{opacity:0,y:80},{opacity:1,y:0,duration:0.5,ease:"back.out(1.5)"},0.6);
+  tl.fromTo("#capa-braco",{rotation:-12,transformOrigin:"170px 100px"},{rotation:12,duration:0.3,ease:"sine.inOut",yoyo:true,repeat:3},1.1);
+
+  window.__timelines["capa"] = tl;
+</script>
+</template>

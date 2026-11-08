@@ -1,0 +1,68 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .bg{background:var(--pessego);}
+  .barra{position:absolute;left:230px;width:624px;height:48px;border-radius:24px;background:#B9B0A9;transform-origin:0% 50%;}
+  #horario-fds{position:absolute;left:80px;top:400px;}
+  #horario-fds span{display:inline-block;background:var(--salvia);color:#fff;font-weight:900;font-size:32px;padding:8px 20px;border-radius:999px;}
+  .fonte{top:1240px;}
+</style>
+<div id="root" data-composition-id="horario" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo" id="horario-t1">Não é só <em>quantidade</em></h1>
+  <h1 class="titulo" id="horario-t2" style="opacity:0">Horário <em>regular</em></h1>
+  <div style="position:absolute;left:110px;top:500px;width:60px;text-align:center;font-weight:900;font-size:40px;color:#6b6460">S</div><div class="barra" id="horario-b0" style="top:508px"></div><div style="position:absolute;left:110px;top:576px;width:60px;text-align:center;font-weight:900;font-size:40px;color:#6b6460">T</div><div class="barra" id="horario-b1" style="top:584px"></div><div style="position:absolute;left:110px;top:652px;width:60px;text-align:center;font-weight:900;font-size:40px;color:#6b6460">Q</div><div class="barra" id="horario-b2" style="top:660px"></div><div style="position:absolute;left:110px;top:728px;width:60px;text-align:center;font-weight:900;font-size:40px;color:#6b6460">Q</div><div class="barra" id="horario-b3" style="top:736px"></div><div style="position:absolute;left:110px;top:804px;width:60px;text-align:center;font-weight:900;font-size:40px;color:#6b6460">S</div><div class="barra" id="horario-b4" style="top:812px"></div><div style="position:absolute;left:110px;top:880px;width:60px;text-align:center;font-weight:900;font-size:40px;color:var(--laranja)">S</div><div class="barra" id="horario-b5" style="top:888px"></div><div style="position:absolute;left:110px;top:956px;width:60px;text-align:center;font-weight:900;font-size:40px;color:var(--laranja)">D</div><div class="barra" id="horario-b6" style="top:964px"></div><div style="position:absolute;left:190px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">22h</div><div style="position:absolute;left:346px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">0h</div><div style="position:absolute;left:502px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">2h</div><div style="position:absolute;left:658px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">4h</div><div style="position:absolute;left:814px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">6h</div><div style="position:absolute;left:970px;top:1040px;width:80px;text-align:center;font-weight:800;font-size:32px;color:#8a837d">8h</div>
+  <div id="horario-fds"><span>fim de semana também</span></div>
+  <div class="fonte" id="horario-fonte" style="top:1110px">Fonte: AASM; National Sleep Foundation</div>
+  <div class="tito-mini" id="horario-tito" style="top:1380px"><svg viewBox="-10 0 220 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="100" cy="226" rx="62" ry="8" fill="rgba(90,50,30,.12)"/>
+  <rect x="74" y="166" width="17" height="48" rx="8" fill="#C75A34"/><rect x="109" y="166" width="17" height="48" rx="8" fill="#C75A34"/>
+  <ellipse cx="80" cy="216" rx="19" ry="9" fill="#C75A34"/><ellipse cx="120" cy="216" rx="19" ry="9" fill="#C75A34"/>
+  <path d="M32 104 q-22 10 -22 34" stroke="#C75A34" stroke-width="15" fill="none" stroke-linecap="round"/><circle cx="10" cy="142" r="11" fill="#C75A34"/>
+  <g id="horario-braco"><path d="M168 104 q22 10 22 34" stroke="#C75A34" stroke-width="15" fill="none" stroke-linecap="round"/><circle cx="190" cy="142" r="11" fill="#C75A34"/></g>
+  <path d="M100 188 C 40 142, 10 106, 18 66 C 25 30, 70 22, 100 56 C 130 22, 175 30, 182 66 C 190 106, 160 142, 100 188 Z" fill="#CE6840"/>
+  <ellipse cx="56" cy="58" rx="17" ry="10" fill="#E08A63" opacity=".75" transform="rotate(-25 56 58)"/>
+  <path d="M64 72 q14 -10 28 -2" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M108 70 q14 -8 28 2" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="78" cy="92" rx="8" ry="11" fill="#2B2B2B"/><circle cx="81" cy="88" r="3" fill="#fff"/><ellipse cx="122" cy="92" rx="8" ry="11" fill="#2B2B2B"/><circle cx="125" cy="88" r="3" fill="#fff"/>
+  <ellipse cx="60" cy="112" rx="10" ry="6" fill="#EE8F78" opacity=".75"/><ellipse cx="140" cy="112" rx="10" ry="6" fill="#EE8F78" opacity=".75"/>
+  <path id="horario-sorriso" d="M86 116 q14 14 28 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <ellipse id="horario-boca" cx="100" cy="121" rx="10" ry="8" fill="#5A1E14" opacity="0"/>
+  <path d="M42 126 q58 42 116 0" stroke="#2F483A" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M152 130 q14 26 -4 44" stroke="#2F483A" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="146" cy="176" r="11" fill="#F2ECE2" stroke="#2F483A" stroke-width="6"/>
+</svg></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#horario-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.1);
+  tl.fromTo("#horario-b0",{x:78,scaleX:0.875},{x:78,scaleX:0.875,duration:0.01},0.0); tl.fromTo("#horario-b0",{opacity:0},{opacity:1,duration:0.25},0.25); tl.to("#horario-b0",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.30); tl.fromTo("#horario-b1",{x:195,scaleX:0.500},{x:195,scaleX:0.500,duration:0.01},0.0); tl.fromTo("#horario-b1",{opacity:0},{opacity:1,duration:0.25},0.33); tl.to("#horario-b1",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.36); tl.fromTo("#horario-b2",{x:39,scaleX:0.875},{x:39,scaleX:0.875,duration:0.01},0.0); tl.fromTo("#horario-b2",{opacity:0},{opacity:1,duration:0.25},0.41); tl.to("#horario-b2",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.42); tl.fromTo("#horario-b3",{x:234,scaleX:0.500},{x:234,scaleX:0.500,duration:0.01},0.0); tl.fromTo("#horario-b3",{opacity:0},{opacity:1,duration:0.25},0.49); tl.to("#horario-b3",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.48); tl.fromTo("#horario-b4",{x:117,scaleX:0.938},{x:117,scaleX:0.938,duration:0.01},0.0); tl.fromTo("#horario-b4",{opacity:0},{opacity:1,duration:0.25},0.57); tl.to("#horario-b4",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.54); tl.fromTo("#horario-b5",{x:273,scaleX:0.750},{x:273,scaleX:0.750,duration:0.01},0.0); tl.fromTo("#horario-b5",{opacity:0},{opacity:1,duration:0.25},0.65); tl.to("#horario-b5",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.60); tl.fromTo("#horario-b6",{x:195,scaleX:0.938},{x:195,scaleX:0.938,duration:0.01},0.0); tl.fromTo("#horario-b6",{opacity:0},{opacity:1,duration:0.25},0.73); tl.to("#horario-b6",{x:78,scaleX:1,backgroundColor:"#D45F2B",duration:0.7,ease:"power3.inOut"},2.66);
+  tl.to("#horario-t1",{opacity:0,y:-20,duration:0.25},2.10);
+  tl.fromTo("#horario-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},2.25);
+  tl.fromTo("#horario-fds",{opacity:0,y:10},{opacity:1,y:0,duration:0.3,ease:"back.out(2)"},4.10);
+  tl.fromTo("#horario-fonte",{opacity:0},{opacity:1,duration:0.4},5.20);
+  tl.fromTo("#horario-tito",{opacity:0,y:60},{opacity:1,y:0,duration:0.45,ease:"back.out(1.5)"},0.4);
+
+  window.__timelines["horario"] = tl;
+</script>
+</template>
