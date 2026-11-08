@@ -1,0 +1,13 @@
+{
+  "fundo": "img/fundo.png", "velocidade_pt": 1.1,
+  "beats": [
+    {"tipo": "abertura", "texto": "Não entendeu o que falaram em inglês?", "audio": ["00_abertura"]},
+    {"tipo": "frase", "en": "Sorry, could you explain that again?", "pron": "/SÓ-ri, kud iú eks-PLÊIN thét a-GUÉN/", "pt": "Desculpa, pode explicar de novo?", "audio_en": "q1_en", "audio_pt": "q1_tr"},
+    {"tipo": "frase", "en": "Could you speak a little more slowly, please?", "pron": "/kud iú SPÍIK a LÍ-tol mór SLÔU-li, PLÍIZ/", "pt": "Pode falar um pouco mais devagar, por favor?", "audio_en": "q2_en", "audio_pt": "q2_tr"},
+    {"tipo": "frase", "en": "I didn't catch the last part.", "pron": "/ái DÍ-dent KÉTCH the LÉST PÁRT/", "pt": "Não entendi a última parte.", "audio_en": "q4_en", "audio_pt": "q4_tr"},
+    {"tipo": "frase", "en": "Could you give us an example?", "pron": "/kud iú GUÍV âs an eg-ZÉM-pol/", "pt": "Pode dar um exemplo pra gente?", "audio_en": "q5_en", "audio_pt": "q5_tr"},
+    {"tipo": "ponte", "texto": "Não sei se você *ficou sabendo*,\nmas essas frases já vêm\n*prontas* pra cada situação", "audio": ["ponte"]},
+    {"tipo": "produto", "audio": ["produto"], "telas": [["O *Eagle 350*", "ebook_capa"], ["350 mapas · *35 situações*", "mapa_say_tell_speak"], ["Guia de *21 dias*", "guia21_capa"], ["*15 minutos* por dia", "guia21_dia5"]]},
+    {"tipo": "oferta", "audio": "original"}
+  ]
+}

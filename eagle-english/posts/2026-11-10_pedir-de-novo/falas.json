@@ -1,0 +1,17 @@
+{
+  "vozes": {"pt": "Achird", "en": "Kore"},
+  "modelo": "gemini-3.8-flash-lite-tts",
+  "falas": [
+    {"id": "00_abertura", "lingua": "pt", "texto": "Não entendeu o que falaram em inglês?"},
+    {"id": "q1_en", "lingua": "en", "texto": "Sorry, could you explain that again?"},
+    {"id": "q1_tr", "lingua": "pt", "texto": "Desculpa, pode explicar de novo?"},
+    {"id": "q2_en", "lingua": "en", "texto": "Could you speak a little more slowly, please?"},
+    {"id": "q2_tr", "lingua": "pt", "texto": "Pode falar um pouco mais devagar, por favor?"},
+    {"id": "q4_en", "lingua": "en", "texto": "I didn't catch the last part."},
+    {"id": "q4_tr", "lingua": "pt", "texto": "Quer dizer: não entendi a última parte."},
+    {"id": "q5_en", "lingua": "en", "texto": "Could you give us an example?"},
+    {"id": "q5_tr", "lingua": "pt", "texto": "Pode dar um exemplo pra gente?"},
+    {"id": "ponte", "lingua": "pt", "texto": "Não sei se você ficou sabendo, mas essas frases já vêm prontas pra cada situação."},
+    {"id": "produto", "lingua": "pt", "texto": "O Ígol trezentos e cinquenta tem mapas para trinta e cinco situações, com pronúncia escrita. E o Guia de vinte e um dias mostra o que estudar, quinze minutos por dia."}
+  ]
+}
