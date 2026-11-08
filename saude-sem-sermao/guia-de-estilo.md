@@ -84,6 +84,7 @@ Achados na transcrição com o Whisper e na análise quadro a quadro:
 
 ## 8. Capa
 
+- **Carrossel não tem capa separada:** a lâmina 1 já é a capa. Entregar as lâminas como arquivos separados, em ordem (`lamina-01.jpg` … `lamina-10.jpg`).
 - **Só vertical, 1080×1920** (todas as plataformas são estilo Reels: Instagram, TikTok, YouTube Shorts). Não gerar versão 16:9.
 - Ilustração do Tito no traço texturizado (OpenAI, com `personagens/tito/tito-referencia.jpg` de referência), parte de cima livre para o título.
 - Selo "MITO OU VERDADE?" (ou equivalente) + título serifado com a palavra-chave em itálico; título dentro do recorte 3:4 do perfil do Instagram (y 240–1680).
