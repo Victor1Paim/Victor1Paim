@@ -1,6 +1,6 @@
 # Textos dos posts: "10 mil passos por dia é regra?"
 
-Vídeo: `10-mil-passos.mp4` (55,3 s, 1080×1920) · Capas: `capa/capa-10-mil-passos.jpg` (vertical) e `capa/capa-10-mil-passos-1280x720.jpg` (16:9)
+Vídeo: `10-mil-passos.mp4` (55,3 s, 1080×1920) · Capa: `capa/capa-10-mil-passos.jpg` (vertical)
 Antes de publicar: revisão do profissional de saúde e conferência dos números no artigo original (ver `fontes.md`).
 CTA deste vídeo: **Enviar** ("Manda pra quem se culpa por não bater 10 mil").
 

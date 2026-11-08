@@ -81,3 +81,10 @@ Achados na transcrição com o Whisper e na análise quadro a quadro:
 - **Narrador:** voz masculina grave e calma. Dos testes de 08/11, **Achird** e **Puck** são masculinas; testar também vozes mais graves (ex.: **Charon**, **Orus**, **Algenib**).
 - **Tito:** voz mais aguda e leve, diferente o bastante do narrador para o público distinguir de olhos fechados (ex.: **Puck**, **Leda**, **Zephyr**). Gerar as falas do Tito separadas das do narrador e montar na linha do tempo.
 - Gemini TTS aceita **2 vozes no mesmo pedido** (multi-speaker), útil para diálogos narrador ↔ Tito.
+
+## 8. Capa
+
+- **Só vertical, 1080×1920** (todas as plataformas são estilo Reels: Instagram, TikTok, YouTube Shorts). Não gerar versão 16:9.
+- Ilustração do Tito no traço texturizado (OpenAI, com `personagens/tito/tito-referencia.jpg` de referência), parte de cima livre para o título.
+- Selo "MITO OU VERDADE?" (ou equivalente) + título serifado com a palavra-chave em itálico; título dentro do recorte 3:4 do perfil do Instagram (y 240–1680).
+- Texto da capa composto por cima em HTML (nunca texto gerado pela IA de imagem).
