@@ -1,0 +1,16 @@
+{
+  "tema": "salão",
+  "versao": "Salão ✂️",
+  "gancho": "No salão, explique seu corte",
+  "situacao_ebook": "cuidados pessoais",
+  "formato": "A",
+  "frases": [
+    {"en": "I have an appointment at two.", "pt": "Tenho horário às duas.", "pron": "/ái HÉV an a-PÓINT-ment ét TÚ/"},
+    {"en": "Just a trim, please.", "pt": "Só aparar, por favor.", "pron": "/DJÂST a TRÍM, PLÍIZ/"},
+    {"en": "Not too short, please.", "pt": "Não muito curto, por favor.", "pron": "/NÓT TÚ XÓRT, PLÍIZ/"},
+    {"en": "A little shorter on the sides.", "pt": "Um pouco mais curto dos lados.", "pron": "/a LÍ-tol XÓR-ter on the SÁIDZ/"},
+    {"en": "Can I see the back?", "pt": "Posso ver atrás?", "pron": "/kén ái SÍI the BÉK/"},
+    {"en": "How much do I owe you?", "pt": "Quanto eu te devo?", "pron": "/HÁU MÂTCH du ái ÔU iú/"},
+    {"en": "That looks great, thanks!", "pt": "Ficou ótimo, obrigado!", "pron": "/thét LÚKS GRÊIT, THÉNKS/"}
+  ]
+}

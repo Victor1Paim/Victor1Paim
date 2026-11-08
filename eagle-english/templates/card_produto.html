@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>
+  .titulo { font-size:96px; }
+  .produto { font-size:48px; font-weight:800; color:var(--marinho); margin:22px 0 40px; }
+  li { list-style:none; font-size:42px; font-weight:600; margin:16px 0; }
+  li::before { content:"✔ "; color:var(--vermelho); font-weight:900; }
+  .botao { display:inline-block; margin-top:44px; background:var(--vermelho); color:#fff;
+    font-size:52px; font-weight:800; padding:22px 56px; border-radius:60px; }
+  .assina { margin-top:40px; font-size:30px; font-weight:600; color:var(--marinho); }
+</style></head>
+<body>
+  <div class="seguro"><div class="cartao">
+    <div class="titulo" id="titulo"></div>
+    <div class="produto">Eagle 350 – Inglês por Situação</div>
+    <ul>
+      <li>350 mapas visuais em 35 situações</li>
+      <li>Guia de 21 Dias</li>
+      <li>20 Cards de Gramática</li>
+      <li>500 Frases para o Dia a Dia</li>
+      <li>100 Combinações de Verbos</li>
+    </ul>
+    <div class="botao">Link na bio 👆</div>
+    <div class="assina">@eagle.english.br · Seu inglês decolando 🦅</div>
+  </div></div>
+<script>
+  // titulo: texto curto ligado ao tema; a palavra entre *asteriscos* sai em vermelho
+  const d = window.DADOS || {titulo:"Frases de *salão* e muito mais"};
+  const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  document.getElementById("titulo").innerHTML = esc(d.titulo).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
+</script>
+</body></html>

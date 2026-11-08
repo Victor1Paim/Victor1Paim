@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Montserrat:wght@400;600;700;800;900&display=swap");
+/* Identidade Eagle English (PARTE 4, seção 2). Títulos em Oswald (condensada COM minúsculas: Bebas Neue só tem maiúsculas e a capa D nunca pode sair em caixa alta). */
+:root { --preto:#111; --vermelho:#E63946; --amarelo:#FFC93C; --marinho:#0B1F4B; --creme:#F7F3EA; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1920px; overflow:hidden; background:transparent; }
+body { font-family:"Montserrat", sans-serif; color:var(--preto); }
+/* Área segura do Reels/TikTok: 250 px topo, 400 px base, 150 px direita */
+.seguro { position:absolute; top:250px; bottom:400px; left:90px; right:150px;
+  display:flex; flex-direction:column; justify-content:center; }
+.titulo { font-family:"Oswald", "Montserrat", sans-serif; font-weight:700; line-height:1.05; }
+.vermelho { color:var(--vermelho); }
+.cartao { background:rgba(247,243,234,.94); border-radius:36px; padding:56px 56px 60px;
+  box-shadow:0 12px 40px rgba(11,31,75,.18); }
+.rodape { position:absolute; left:90px; bottom:420px; font-size:30px; font-weight:600; color:var(--marinho); }

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>
+  .num { font-size:34px; font-weight:800; color:var(--marinho); letter-spacing:2px; margin-bottom:28px; }
+  .en { font-size:78px; font-weight:900; line-height:1.08; }
+  .pt { font-size:50px; font-weight:600; color:var(--marinho); margin-top:30px; line-height:1.2; }
+  .pron { font-size:44px; font-weight:700; color:var(--vermelho); margin-top:26px; }
+  .pt, .pron { opacity:var(--revelar, 1); }
+</style></head>
+<body>
+  <div class="seguro"><div class="cartao">
+    <div class="num" id="num"></div>
+    <div class="en">🇺🇸 <span id="en"></span></div>
+    <div class="pt">🇧🇷 <span id="pt"></span></div>
+    <div class="pron">🗣️ <span id="pron"></span></div>
+  </div></div>
+  <div class="rodape">@eagle.english.br</div>
+<script>
+  // Dados injetados por scripts/render_cartoes.py: {en, pt, pron, num, revelar}
+  const d = window.DADOS || {en:"Just a trim, please.", pt:"Só aparar, por favor.", pron:"/DJÂST a TRÍM, PLÍIZ/", num:"FRASE 2 DE 7"};
+  for (const k of ["en","pt","pron","num"]) document.getElementById(k).textContent = d[k] || "";
+  if (d.revelar === false) document.body.style.setProperty("--revelar", 0);
+</script>
+</body></html>

@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+# saídas pesadas: guarde no Drive se precisar
+posts/*/video/*.mp4
+posts/*/audio/*.wav
+posts/*/cartoes/

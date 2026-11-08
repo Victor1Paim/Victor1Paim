@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>
+  .seguro { right:90px; justify-content:flex-start; padding-top:40px; text-align:center; }
+  .emojis { font-size:90px; }
+  .hook { font-size:100px; margin-top:20px; white-space:nowrap; }
+  .versao { font-size:46px; font-weight:600; color:var(--marinho); margin-top:24px; }
+  .div { width:200px; height:6px; background:var(--marinho); margin:48px auto; }
+  .en { font-size:72px; font-weight:900; line-height:1.1; }
+  .pt { font-size:48px; font-weight:600; color:var(--marinho); margin-top:24px; }
+  .pron { font-size:42px; font-weight:700; color:var(--vermelho); margin-top:20px; }
+</style></head>
+<body>
+  <div class="seguro">
+    <div class="emojis">🇺🇸 🔁 🧠</div>
+    <div class="titulo hook">Repita até <span class="vermelho">aprender</span><br>Inglês do dia a dia</div>
+    <div class="versao">(Versão: <span id="versao"></span>)</div>
+    <div class="div"></div>
+    <div class="en">🇺🇸 <span id="en"></span></div>
+    <div class="pt">🇧🇷 <span id="pt"></span></div>
+    <div class="pron">🗣️ <span id="pron"></span></div>
+  </div>
+<script>
+  const d = window.DADOS || {versao:"Salão ✂️", en:"I have an appointment at two.", pt:"Tenho horário às duas.", pron:"/ái HÉV an a-PÓINT-ment ét TÚ/"};
+  for (const k of ["versao","en","pt","pron"]) document.getElementById(k).textContent = d[k] || "";
+</script>
+</body></html>
