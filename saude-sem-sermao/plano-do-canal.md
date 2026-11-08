@@ -101,6 +101,8 @@ Retenção média e % que assiste até o fim, compartilhamentos e salvamentos (f
 
 ## 11. Decisões
 
+Séries ativas (08/11/2026): Mito, contexto e fonte · Receita sem moral · Um passo possível · Costas na Cadeira · Mente sem Nó · Intestino sem Drama · Tela na Mão · Fase da Mulher (🔴 revisão de ginecologista) · Sinal de Alerta (🔴 revisão de socorrista; sempre SAMU 192). Ordem de produção em `pautas/cronograma-producao.md`; meta ~10 vídeos/semana.
+
 Já decididas (08/11/2026): **sem geração de vídeo por IA** (Gemini Omni/Veo/Flow custa ~R$ 7–16 por Reel; avaliado e descartado): movimento sempre com HyperFrames e as skills locais; **imagens realistas pela OpenAI estão liberadas** (~US$ 0,04 cada), inclusive sequências de etapas para dar movimento; @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 40 s a 1 min 10 s com Parte 2 quando preciso; ganchos e CTA conforme `pesquisa-hooks-e-cta.md`; pesquisa de atualidade no Grok.
 
 Em aberto:
