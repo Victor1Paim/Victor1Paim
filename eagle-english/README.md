@@ -17,6 +17,8 @@ Todo conteúdo termina com o CTA do produto **Eagle 350 – Inglês por Situaç�
 | `docs/estado.md` | último bloco ESTADO ATUALIZADO do ChatGPT |
 | `docs/PROMPT_MESTRE_PRODUCAO.md` | prompt mestre dos carrosséis (08/11/2026), manda sobre a PARTE 2/4 onde diferir |
 | `docs/HOOKS_E_CTA_VIDEO.md` | duração padrão (40 s–1 min 10 s), ganchos, retenção e o CTA final novo |
+| `docs/IDEIAS_PRIMEIRO_REEL.md` | 5 ideias de Reel com roteiro, capa, legenda e legenda resumida |
+| `docs/pesquisas/` | relatório e JSON do Manus (08/11/2026) |
 | `docs/PROMPT_PESQUISA_MANUS_VIDEO.md` | prompt de pesquisa no Manus para os vídeos (quiz, pronúncia, estilos) |
 | `docs/originais/` | os PDFs originais (fonte da conversão) |
 | `templates/` | cartões HTML (capa, frase, produto) para texto exato na tela |

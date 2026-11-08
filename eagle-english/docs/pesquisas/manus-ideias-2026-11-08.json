@@ -1,0 +1,1012 @@
+[
+  {
+    "tema": "rotina da manhã",
+    "gancho": "Comece o dia com uma frase que soa natural.",
+    "itens": [
+      {
+        "pergunta": "Traduza: “Eu geralmente acordo por volta das seis.”",
+        "certa": "I usually wake up around six.",
+        "errada": "I usually wake around six up.",
+        "explicacao": "“Wake up” é a expressão natural para dizer “acordar”."
+      },
+      {
+        "pergunta": "Complete a fala: “What’s your morning routine?” — “I ___ my teeth after I get dressed.”",
+        "certa": "brush",
+        "errada": "am brushing",
+        "explicacao": "O presente simples descreve um hábito; “am brushing” indicaria uma ação acontecendo agora."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Would you like to leave now?” Você ainda está se arrumando e quer responder que vai depois. Qual resposta funciona?",
+        "certa": "Maybe later, after I get ready.",
+        "errada": "Maybe later, before I get ready.",
+        "explicacao": "“After I get ready” indica que você vai sair depois de terminar de se arrumar."
+      },
+      {
+        "pergunta": "Qual frase diz que você toma banho todas as manhãs?",
+        "certa": "I shower every morning.",
+        "errada": "I am shower every morning.",
+        "explicacao": "Para falar de rotina, use o verbo no presente simples: “I shower”."
+      },
+      {
+        "pergunta": "O que significa “I need a few more minutes before I get up”?",
+        "certa": "Preciso de mais alguns minutos antes de me levantar.",
+        "errada": "Preciso de mais alguns minutos depois de me levantar.",
+        "explicacao": "“Before” significa “antes de”, não “depois de”."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "conversa sobre o tempo",
+    "gancho": "Puxe papo com uma observação simples sobre o dia.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “It’s ___ chilly this morning.” — “I know. I need a warmer jacket.”",
+        "certa": "pretty",
+        "errada": "prettily",
+        "explicacao": "“Pretty” funciona como intensificador informal de “chilly”; “prettily” é advérbio e não cabe aqui."
+      },
+      {
+        "pergunta": "Alguém diz: “It looks like rain.” Qual resposta demonstra que você concorda?",
+        "certa": "Yes, the sky is getting darker.",
+        "errada": "Yes, the sky is getting more darker.",
+        "explicacao": "“Darker” já é o comparativo; não se combina “more” com a terminação “-er”."
+      },
+      {
+        "pergunta": "Traduza: “Está fazendo bastante vento hoje.”",
+        "certa": "It’s quite windy today.",
+        "errada": "It’s quite wind today.",
+        "explicacao": "“Windy” é o adjetivo usado para descrever um dia com vento."
+      },
+      {
+        "pergunta": "Qual pergunta combina com a resposta “It’s warm and sunny”?",
+        "certa": "What’s the weather like?",
+        "errada": "How does the weather look like?",
+        "explicacao": "A forma comum para perguntar como está o tempo é “What’s the weather like?”."
+      },
+      {
+        "pergunta": "O que significa “The forecast says it may snow tonight”?",
+        "certa": "A previsão diz que pode nevar esta noite.",
+        "errada": "A previsão diz que vai nevar com certeza esta noite.",
+        "explicacao": "“May” expressa possibilidade, não certeza."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "mensagens no trabalho",
+    "gancho": "Uma mensagem clara pode evitar várias idas e vindas.",
+    "itens": [
+      {
+        "pergunta": "Complete a mensagem: “Could you send me the report ___ noon?”",
+        "certa": "by",
+        "errada": "until",
+        "explicacao": "“By noon” estabelece o prazo: até o meio-dia."
+      },
+      {
+        "pergunta": "Sua colega pergunta: “Are you still working on the slides?” Qual resposta informa que você está terminando agora?",
+        "certa": "Yes, I’m finishing them now.",
+        "errada": "Yes, I finishing them now.",
+        "explicacao": "A ação acontecendo agora usa “am” mais verbo terminado em “-ing”."
+      },
+      {
+        "pergunta": "Traduza para o inglês: “Recebi sua mensagem e vou responder em breve.”",
+        "certa": "I got your message, and I’ll reply soon.",
+        "errada": "I got your message, and I reply soon.",
+        "explicacao": "“I’ll reply” expressa uma intenção futura de responder."
+      },
+      {
+        "pergunta": "Qual frase pede educadamente que alguém verifique um arquivo?",
+        "certa": "Could you check the file, please?",
+        "errada": "You could checking the file, please?",
+        "explicacao": "Depois de “could”, use o verbo na forma básica: “check”."
+      },
+      {
+        "pergunta": "O que significa “I’m available after two”?",
+        "certa": "Estou disponível depois das duas.",
+        "errada": "Estou ocupado até as duas.",
+        "explicacao": "“Available” significa disponível, e “after two” indica depois das duas."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "pedir esclarecimento em aula",
+    "gancho": "Não entendeu uma parte? Peça que expliquem de novo.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Sorry, could you ___ that again?”",
+        "certa": "explain",
+        "errada": "explained",
+        "explicacao": "Depois de “could”, o verbo fica na forma básica: “explain”."
+      },
+      {
+        "pergunta": "A professora fala rápido. Qual pedido é educado e natural?",
+        "certa": "Could you speak a little more slowly, please?",
+        "errada": "Could you speak a little more slow, please?",
+        "explicacao": "“Slowly” é o advérbio que descreve como a pessoa deve falar."
+      },
+      {
+        "pergunta": "Traduza: “O que essa palavra quer dizer?”",
+        "certa": "What does this word mean?",
+        "errada": "What means this word?",
+        "explicacao": "Na pergunta no presente simples, use “does” antes do sujeito “this word”."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Do you have any questions?” Você quer pedir um exemplo. O que diz?",
+        "certa": "Could you give us an example?",
+        "errada": "Could you give an example us?",
+        "explicacao": "O pronome “us” vem antes do objeto “an example” nessa construção."
+      },
+      {
+        "pergunta": "O que significa “I didn’t catch the last part”?",
+        "certa": "Não entendi a última parte.",
+        "errada": "Não gostei da última parte.",
+        "explicacao": "Nesse contexto, “didn’t catch” significa não ter ouvido ou entendido algo."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "telefonemas",
+    "gancho": "Use expressões simples para começar e continuar uma ligação.",
+    "itens": [
+      {
+        "pergunta": "Qual pedido é correto para falar com Jordan?",
+        "certa": "May I speak with Jordan, please?",
+        "errada": "May I speak Jordan, please?",
+        "explicacao": "Nesta formulação, “speak with someone” é uma maneira natural de pedir para falar com a pessoa."
+      },
+      {
+        "pergunta": "Você atende uma ligação e a pessoa pergunta: “Is Jordan there?” Qual resposta indica que vai chamá-lo?",
+        "certa": "Sure, I’ll get him.",
+        "errada": "Sure, I gets him.",
+        "explicacao": "Com “I”, use “get”; “gets” acompanha “he”, “she” ou “it”."
+      },
+      {
+        "pergunta": "Traduza: “A ligação está ruim; você pode repetir?”",
+        "certa": "The connection is bad; could you repeat that?",
+        "errada": "The connection is badly; could you repeat that?",
+        "explicacao": "“Bad” descreve a qualidade da conexão; “badly” é advérbio."
+      },
+      {
+        "pergunta": "Qual frase é adequada para avisar que você ligará mais tarde?",
+        "certa": "I’ll call you back later.",
+        "errada": "I call you back later yesterday.",
+        "explicacao": "“I’ll call” expressa uma ação futura, e “yesterday” não combina com esse sentido."
+      },
+      {
+        "pergunta": "O que significa “Could you hold for a moment, please?”",
+        "certa": "Você pode aguardar um instante, por favor?",
+        "errada": "Você pode desligar por um instante, por favor?",
+        "explicacao": "Durante uma ligação, “hold” significa aguardar sem desligar."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "combinar horários",
+    "gancho": "Encontre um horário que funcione para os dois lados.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Are you free Tuesday afternoon?” — “Yes, ___ three works for me.”",
+        "certa": "after",
+        "errada": "during",
+        "explicacao": "“After three” significa depois das três e combina com a ideia de ter disponibilidade."
+      },
+      {
+        "pergunta": "Você não pode às duas, mas pode às quatro. Qual resposta é mais clara?",
+        "certa": "Two doesn’t work for me, but four is fine.",
+        "errada": "Two don’t work for me, but four is fine.",
+        "explicacao": "O sujeito “two” é tratado como singular nessa frase, então use “doesn’t”."
+      },
+      {
+        "pergunta": "Traduza: “Podemos conversar amanhã de manhã?”",
+        "certa": "Can we talk tomorrow morning?",
+        "errada": "Can we talks tomorrow morning?",
+        "explicacao": "Depois de “can”, o verbo fica na forma básica: “talk”."
+      },
+      {
+        "pergunta": "Complete a sugestão de horário: “How ___ ten?”",
+        "certa": "about",
+        "errada": "around",
+        "explicacao": "“How about ten?” é uma maneira natural de propor dez horas."
+      },
+      {
+        "pergunta": "O que significa “Let’s move it to Friday”?",
+        "certa": "Vamos mudar isso para sexta-feira.",
+        "errada": "Vamos cancelar isso na sexta-feira.",
+        "explicacao": "“Move it to Friday” significa remarcar para sexta, não cancelar."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "sentimentos",
+    "gancho": "Fale sobre como você está se sentindo com naturalidade.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “How are you feeling?” — “A little ___, but I’m okay.”",
+        "certa": "nervous",
+        "errada": "nervously",
+        "explicacao": "Depois de “I’m”, use o adjetivo “nervous” para descrever como você se sente."
+      },
+      {
+        "pergunta": "Sua amiga diz: “I’m excited about the new class.” Qual resposta mostra interesse?",
+        "certa": "That sounds great. What are you studying?",
+        "errada": "That sound great. What are you studying?",
+        "explicacao": "Com “that”, o verbo no presente simples recebe “-s”: “sounds”."
+      },
+      {
+        "pergunta": "Traduza: “Estou um pouco preocupado com a prova.”",
+        "certa": "I’m a little worried about the test.",
+        "errada": "I’m a little worrying about the test.",
+        "explicacao": "“Worried” descreve o sentimento de quem está preocupado."
+      },
+      {
+        "pergunta": "Qual frase diz que você está aliviado porque tudo correu bem?",
+        "certa": "I’m glad everything went well.",
+        "errada": "I’m glad everything go well.",
+        "explicacao": "A expressão natural para algo que correu bem no passado é “went well”."
+      },
+      {
+        "pergunta": "O que significa “She seems upset”?",
+        "certa": "Ela parece chateada.",
+        "errada": "Ela parece animada.",
+        "explicacao": "“Upset” pode significar chateado ou aborrecido, conforme o contexto."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "problemas com tecnologia",
+    "gancho": "Explique o problema e tente uma solução simples.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “My tablet can’t connect to the web. Could you ___ it?”",
+        "certa": "restart",
+        "errada": "restarted",
+        "explicacao": "Depois de “could”, o verbo fica na forma básica: “restart”."
+      },
+      {
+        "pergunta": "Seu computador está muito lento. Qual frase explica isso?",
+        "certa": "My computer is running slowly today.",
+        "errada": "My computer is running slowlier today.",
+        "explicacao": "“Slowly” é o advérbio apropriado, e “slowlier” não é a forma usada aqui."
+      },
+      {
+        "pergunta": "Traduza: “A tela não está respondendo.”",
+        "certa": "The screen isn’t responding.",
+        "errada": "The screen doesn’t responding.",
+        "explicacao": "A forma contínua negativa é “isn’t responding”; após “doesn’t” seria necessário o verbo básico."
+      },
+      {
+        "pergunta": "Qual resposta combina com “The printer has no paper”?",
+        "certa": "I’ll add some in a moment.",
+        "errada": "I’ll adding some in a moment.",
+        "explicacao": "Depois de “will”, use o verbo na forma básica: “add”."
+      },
+      {
+        "pergunta": "O que significa “I forgot my password”?",
+        "certa": "Esqueci minha senha.",
+        "errada": "Troquei minha senha.",
+        "explicacao": "“Forgot” é o passado de “forget” e significa “esqueci”."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "biblioteca",
+    "gancho": "Pratique frases úteis para encontrar e emprestar livros.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Could I ___ this book for another week?”",
+        "certa": "renew",
+        "errada": "renewing",
+        "explicacao": "Depois de “could”, use o verbo na forma básica: “renew”."
+      },
+      {
+        "pergunta": "A funcionária pergunta: “Are you looking for a specific title?” Qual resposta diz que você está procurando um livro de história?",
+        "certa": "Yes, I’m looking for a history book.",
+        "errada": "Yes, I look for a history book now.",
+        "explicacao": "“I’m looking for” descreve o que você está procurando neste momento."
+      },
+      {
+        "pergunta": "Traduza: “Onde fica a seção de livros infantis?”",
+        "certa": "Where is the children’s book section?",
+        "errada": "Where the children’s book section is?",
+        "explicacao": "Em uma pergunta direta, o verbo “is” vem antes do sujeito."
+      },
+      {
+        "pergunta": "Qual frase pergunta se um livro está disponível?",
+        "certa": "Is this book available?",
+        "errada": "Does this book available?",
+        "explicacao": "“Available” é adjetivo; a pergunta usa o verbo “is”."
+      },
+      {
+        "pergunta": "O que significa “Please return the book by Monday”?",
+        "certa": "Por favor, devolva o livro até segunda-feira.",
+        "errada": "Por favor, devolva o livro depois de segunda-feira.",
+        "explicacao": "“By Monday” indica que a devolução deve ocorrer até segunda-feira."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "vizinhança",
+    "gancho": "Pergunte sobre lugares e pessoas que ficam por perto.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Is there a quiet park ___ here?”",
+        "certa": "near",
+        "errada": "nearly",
+        "explicacao": "“Near here” significa perto daqui; “nearly” significa quase."
+      },
+      {
+        "pergunta": "Alguém pergunta onde fica o centro comunitário. Qual resposta indica que está a duas quadras?",
+        "certa": "It’s two blocks from here.",
+        "errada": "It’s two blocks beside here.",
+        "explicacao": "“Two blocks from here” é uma forma natural de indicar essa distância."
+      },
+      {
+        "pergunta": "Traduza: “Nossos vizinhos são muito simpáticos.”",
+        "certa": "Our neighbors are very friendly.",
+        "errada": "Our neighbors is very friendly.",
+        "explicacao": "“Neighbors” está no plural, por isso use “are”."
+      },
+      {
+        "pergunta": "Qual pergunta é adequada para saber se alguém conhece bem a região?",
+        "certa": "Do you know this area well?",
+        "errada": "Are you know this area well?",
+        "explicacao": "No presente simples, a pergunta usa “do” antes do sujeito."
+      },
+      {
+        "pergunta": "O que significa “The street is usually quiet after dark”?",
+        "certa": "A rua costuma ficar tranquila depois que escurece.",
+        "errada": "A rua costuma ficar movimentada depois que escurece.",
+        "explicacao": "“Quiet” significa tranquilo ou silencioso."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "esporte ao ar livre",
+    "gancho": "Converse sobre frequência, habilidade e planos para jogar.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “How often do you play tennis?” — “___ a week, when the weather is nice.”",
+        "certa": "Twice",
+        "errada": "Two time",
+        "explicacao": "“Twice a week” é a expressão natural para “duas vezes por semana”."
+      },
+      {
+        "pergunta": "Seu colega pergunta: “Would you like to join our soccer game?” Qual resposta aceita o convite?",
+        "certa": "Sure, I’d love to play.",
+        "errada": "Sure, I’d love playing.",
+        "explicacao": "Depois de “would love”, use o infinitivo com “to”: “to play”."
+      },
+      {
+        "pergunta": "Traduza: “Ela nada muito bem.”",
+        "certa": "She swims very well.",
+        "errada": "She swim very well.",
+        "explicacao": "Com “she” no presente simples, o verbo recebe “-s”: “swims”."
+      },
+      {
+        "pergunta": "Qual frase diz que você prefere jogar fora de casa?",
+        "certa": "I prefer playing outdoors.",
+        "errada": "I prefer play outdoors.",
+        "explicacao": "Depois de “prefer”, o gerúndio “playing” é uma forma natural de expressar preferência."
+      },
+      {
+        "pergunta": "O que significa “We need a bigger ball for this game”?",
+        "certa": "Precisamos de uma bola maior para este jogo.",
+        "errada": "Precisamos de uma bola menor para este jogo.",
+        "explicacao": "“Bigger” significa maior."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "jardinagem",
+    "gancho": "Observe as plantas e fale sobre o que elas precisam.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “These flowers look dry. They need more ___.”",
+        "certa": "water",
+        "errada": "waters",
+        "explicacao": "“Water” é incontável nesse sentido e normalmente não recebe “-s”."
+      },
+      {
+        "pergunta": "Qual frase diz que as plantas precisam de luz solar?",
+        "certa": "The plants need more sunlight.",
+        "errada": "The plants needs more sunlight.",
+        "explicacao": "Com o sujeito plural “the plants”, use “need”, sem “-s”."
+      },
+      {
+        "pergunta": "Traduza: “Eu plantei três sementes ontem.”",
+        "certa": "I planted three seeds yesterday.",
+        "errada": "I plant three seeds yesterday.",
+        "explicacao": "“Yesterday” pede o passado; o passado regular de “plant” é “planted”."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Why are you wearing gloves?” Você responde que está trabalhando no jardim. Qual opção é natural?",
+        "certa": "I’m working in the garden.",
+        "errada": "I’m work in the garden.",
+        "explicacao": "Uma ação que acontece agora usa “am” mais verbo terminado em “-ing”."
+      },
+      {
+        "pergunta": "O que significa “The rose bush is growing quickly”?",
+        "certa": "O arbusto de rosas está crescendo rápido.",
+        "errada": "O arbusto de rosas está secando rápido.",
+        "explicacao": "“Growing” significa crescendo, não secando."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "sono e descanso",
+    "gancho": "Descreva sua noite e fale sobre descanso.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “I didn’t sleep ___ last night.”",
+        "certa": "well",
+        "errada": "good",
+        "explicacao": "“Well” é o advérbio que descreve como você dormiu."
+      },
+      {
+        "pergunta": "Sua colega parece cansada. Qual sugestão soa natural?",
+        "certa": "Maybe you need to rest for a while.",
+        "errada": "Maybe you need resting for a while.",
+        "explicacao": "Depois de “need to”, use o verbo na forma básica: “rest”."
+      },
+      {
+        "pergunta": "Traduza: “Ele costuma ir para a cama cedo.”",
+        "certa": "He usually goes to bed early.",
+        "errada": "He usually go to bed early.",
+        "explicacao": "Com “he” no presente simples, use “goes”."
+      },
+      {
+        "pergunta": "Qual frase diz que você acordou várias vezes durante a noite?",
+        "certa": "I woke up several times during the night.",
+        "errada": "I wake up several times during the night yesterday.",
+        "explicacao": "Para uma ação passada, use “woke up”; “yesterday” não combina com o presente “wake”."
+      },
+      {
+        "pergunta": "O que significa “A short nap might help”?",
+        "certa": "Uma soneca curta talvez ajude.",
+        "errada": "Uma caminhada curta talvez ajude.",
+        "explicacao": "“Nap” significa soneca."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "família",
+    "gancho": "Fale sobre parentes e momentos simples em família.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “My brother ___ two children.”",
+        "certa": "has",
+        "errada": "have",
+        "explicacao": "Com “my brother”, use “has”, a forma de “have” para terceira pessoa singular."
+      },
+      {
+        "pergunta": "Traduza: “Minha irmã está aqui hoje.”",
+        "certa": "My sister is here today.",
+        "errada": "My sister are here today.",
+        "explicacao": "“My sister” é singular e pede o verbo “is”."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Who is that woman?” Você responde que ela é sua tia. Qual opção está correta?",
+        "certa": "She’s my aunt.",
+        "errada": "She my aunt is.",
+        "explicacao": "Na frase afirmativa, “is” vem logo depois do sujeito “she”."
+      },
+      {
+        "pergunta": "Qual frase diz que seus pais moram perto?",
+        "certa": "My parents live nearby.",
+        "errada": "My parents lives nearby.",
+        "explicacao": "O sujeito “my parents” é plural, então use “live”."
+      },
+      {
+        "pergunta": "O que significa “We visit our grandparents every month”?",
+        "certa": "Visitamos nossos avós a cada mês.",
+        "errada": "Visitamos nossos avós uma vez por ano.",
+        "explicacao": "“Every month” significa “a cada mês”."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "pedir/oferecer ajuda",
+    "gancho": "Ofereça apoio ou aceite uma mão quando precisar.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Would you like a hand with those boxes?” — “Yes, that would be ___.”",
+        "certa": "helpful",
+        "errada": "helpfully",
+        "explicacao": "Depois de “would be”, use o adjetivo “helpful”."
+      },
+      {
+        "pergunta": "Você vê alguém carregando muitas caixas. Qual oferta é natural?",
+        "certa": "Can I help you with those?",
+        "errada": "Can I help you those?",
+        "explicacao": "A expressão “help someone with something” inclui “with” antes do objeto."
+      },
+      {
+        "pergunta": "Traduza: “Você poderia me mostrar como funciona?”",
+        "certa": "Could you show me how it works?",
+        "errada": "Could you show to me how it works?",
+        "explicacao": "“Show me” é a construção natural com esse pronome objeto."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Do you need any help?” Você quer recusar com educação. O que responde?",
+        "certa": "No, thanks. I’m okay.",
+        "errada": "No, thanks. I’m well.",
+        "explicacao": "“I’m okay” é uma resposta natural para dizer que não precisa de ajuda."
+      },
+      {
+        "pergunta": "O que significa “Let me carry that for you”?",
+        "certa": "Deixe-me carregar isso para você.",
+        "errada": "Deixe-me guardar isso para você.",
+        "explicacao": "“Carry” significa carregar ou transportar algo."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "cumprimentos casuais",
+    "gancho": "Comece uma conversa informal sem complicar.",
+    "itens": [
+      {
+        "pergunta": "Qual resposta combina com “Hey, how’s it going?”",
+        "certa": "Pretty good, thanks. And you?",
+        "errada": "Pretty good, thanks. And he?",
+        "explicacao": "“And you?” devolve a pergunta à pessoa com quem você está falando."
+      },
+      {
+        "pergunta": "Complete a fala: “Hey, Sam! Long time no ___.”",
+        "certa": "see",
+        "errada": "saw",
+        "explicacao": "A expressão informal fixa é “Long time no see”, usada ao rever alguém após um tempo."
+      },
+      {
+        "pergunta": "Traduza: “Oi, tudo bem?”",
+        "certa": "Hi, how are you?",
+        "errada": "Hi, how you are?",
+        "explicacao": "Na pergunta direta, o verbo “are” vem antes do sujeito “you”."
+      },
+      {
+        "pergunta": "Alguém diz: “Good to see you!” Qual resposta é natural?",
+        "certa": "Good to see you too!",
+        "errada": "Good to seeing you too!",
+        "explicacao": "Depois de “good to”, use o verbo básico “see”."
+      },
+      {
+        "pergunta": "O que significa “I’m doing pretty well, thanks”?",
+        "certa": "Estou muito bem, obrigado ou obrigada.",
+        "errada": "Estou indo embora agora, obrigado ou obrigada.",
+        "explicacao": "“Doing pretty well” é uma resposta informal sobre como a pessoa está."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "pequenos consertos em casa",
+    "gancho": "Explique um problema simples e sugira um reparo.",
+    "itens": [
+      {
+        "pergunta": "The door handle feels loose. The screw is loose. What should you do?",
+        "certa": "Tighten it.",
+        "errada": "Loosen it.",
+        "explicacao": "A pergunta diz que o parafuso está frouxo; “tighten it” é apertá-lo."
+      },
+      {
+        "pergunta": "Qual frase avisa que a torneira está pingando?",
+        "certa": "The faucet is dripping.",
+        "errada": "The faucet are dripping.",
+        "explicacao": "“The faucet” é singular, por isso use “is”."
+      },
+      {
+        "pergunta": "Traduza: “A lâmpada precisa ser trocada.”",
+        "certa": "The light bulb needs to be replaced.",
+        "errada": "The light bulb needs replace.",
+        "explicacao": "A estrutura passiva é “needs to be replaced”."
+      },
+      {
+        "pergunta": "Alguém pergunta: “Can you fix this shelf?” Qual resposta diz que você tentará?",
+        "certa": "I can try to fix it.",
+        "errada": "I can trying to fix it.",
+        "explicacao": "Depois de “can”, use o verbo básico; “try” pode ser seguido de “to fix”."
+      },
+      {
+        "pergunta": "O que significa “The cabinet door won’t close”?",
+        "certa": "A porta do armário não fecha.",
+        "errada": "A porta do armário não abre.",
+        "explicacao": "“Close” significa fechar."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "passeio no parque",
+    "gancho": "Convide alguém para caminhar e aproveite o ar livre.",
+    "itens": [
+      {
+        "pergunta": "Você vai cruzar o parque da entrada oeste à saída leste. Complete: “Let’s walk ___ the park.”",
+        "certa": "across",
+        "errada": "along",
+        "explicacao": "“Across” indica atravessar de um lado ao outro; “along” sugere seguir por uma linha ou margem."
+      },
+      {
+        "pergunta": "Seu amigo propõe um ritmo tranquilo. Qual resposta está correta?",
+        "certa": "Great, we can walk at an easy pace.",
+        "errada": "Great, we can walking at an easy pace.",
+        "explicacao": "Depois de “can”, use o verbo na forma básica: “walk”."
+      },
+      {
+        "pergunta": "Traduza: “Há muitas árvores perto do lago.”",
+        "certa": "There are many trees near the lake.",
+        "errada": "There is many trees near the lake.",
+        "explicacao": "“Many trees” está no plural, então a forma correta é “there are”."
+      },
+      {
+        "pergunta": "Qual frase pergunta se a outra pessoa quer sentar um pouco?",
+        "certa": "Would you like to sit for a while?",
+        "errada": "Would you like sit for a while?",
+        "explicacao": "Depois de “would like”, use “to” antes do verbo."
+      },
+      {
+        "pergunta": "O que significa “The path is muddy after the rain”?",
+        "certa": "O caminho fica enlameado depois da chuva.",
+        "errada": "O caminho fica empoeirado depois da chuva.",
+        "explicacao": "“Muddy” significa enlameado ou cheio de lama."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "calendário e datas",
+    "gancho": "Diga datas em inglês americano com clareza.",
+    "itens": [
+      {
+        "pergunta": "Como se fala a data “8 de julho” em inglês americano?",
+        "certa": "July eighth.",
+        "errada": "July eight.",
+        "explicacao": "Ao falar a data, o dia costuma ser dito como número ordinal: “eighth”."
+      },
+      {
+        "pergunta": "Complete a data: “Today is March ___.”",
+        "certa": "twelfth",
+        "errada": "twelve",
+        "explicacao": "Em datas faladas, o dia é expresso com número ordinal: “twelfth”."
+      },
+      {
+        "pergunta": "Traduza: “O evento será em 23 de maio.”",
+        "certa": "The event is May twenty-third.",
+        "errada": "The event is May twenty-three.",
+        "explicacao": "Na leitura de uma data, “twenty-third” é a forma ordinal."
+      },
+      {
+        "pergunta": "Qual pergunta busca saber o mês de um evento?",
+        "certa": "What month is the event?",
+        "errada": "Which month does the event?",
+        "explicacao": "A pergunta direta usa “is”; “does” não pode substituir o verbo principal aqui."
+      },
+      {
+        "pergunta": "O que significa “Today is the first of October”?",
+        "certa": "Hoje é primeiro de outubro.",
+        "errada": "Hoje é onze de outubro.",
+        "explicacao": "“The first” significa o primeiro dia do mês."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tema": "animais de estimação em casa",
+    "gancho": "Converse sobre os hábitos do seu pet dentro de casa.",
+    "itens": [
+      {
+        "pergunta": "Complete a fala: “Our cat ___ on the sofa every afternoon.”",
+        "certa": "sleeps",
+        "errada": "sleep",
+        "explicacao": "Com “our cat” no presente simples, o verbo recebe “-s”."
+      },
+      {
+        "pergunta": "Seu cão está arranhando o sofá. Qual sugestão faz sentido?",
+        "certa": "Try giving him a toy.",
+        "errada": "Try giving to him a toy.",
+        "explicacao": "Com “give” e um pronome, a construção natural é “give him a toy”."
+      },
+      {
+        "pergunta": "Traduza: “Meu cachorro está latindo lá fora.”",
+        "certa": "My dog is barking outside.",
+        "errada": "My dog barking outside.",
+        "explicacao": "A ação acontecendo agora usa “is” antes de “barking”."
+      },
+      {
+        "pergunta": "Qual frase pergunta se o gato já recebeu água?",
+        "certa": "Has the cat had some water?",
+        "errada": "Have the cat had some water?",
+        "explicacao": "Com o sujeito singular “the cat”, use “has”."
+      },
+      {
+        "pergunta": "O que significa “The puppy is afraid of loud noises”?",
+        "certa": "O filhote tem medo de barulhos altos.",
+        "errada": "O filhote gosta de barulhos altos.",
+        "explicacao": "“Is afraid of” significa ter medo de."
+      }
+    ],
+    "tipo": "quiz"
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "think",
+    "erro_comum": "O TH inicial pode ser aproximado por T ou F. Treine o ar sem voz e a língua levemente entre os dentes.",
+    "forma_certa": "/THINK: ponta da língua entre os dentes; sopro sem voz/",
+    "frase_exemplo": "I think we have time.",
+    "traducao": "Acho que temos tempo.",
+    "gancho": "Vamos testar o TH com calma?"
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "this",
+    "erro_comum": "O TH sonoro pode ser aproximado por D. Deixe a ponta da língua aparecer levemente e mantenha a vibração da voz.",
+    "forma_certa": "/THIS: ponta da língua entre os dentes; use a voz/",
+    "frase_exemplo": "This is my seat.",
+    "traducao": "Este é o meu lugar.",
+    "gancho": "Sinta a diferença no TH sonoro."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "ship / sheep",
+    "erro_comum": "Não dependa apenas de alongar o mesmo som: compare também a posição da língua e a qualidade da vogal.",
+    "forma_certa": "/SHIP: i curto e relaxado; SHEEP: i mais longo e tenso, com qualidade diferente/",
+    "frase_exemplo": "The ship is near the sheep.",
+    "traducao": "O navio está perto da ovelha.",
+    "gancho": "Duas vogais, dois sentidos: ouça a diferença."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "live / leave",
+    "erro_comum": "No verbo live, a vogal curta pode se aproximar da vogal longa de leave.",
+    "forma_certa": "/LIVE: i curto e relaxado; LEAVE: i mais longo e tenso/",
+    "frase_exemplo": "I live here, but I may leave soon.",
+    "traducao": "Moro aqui, mas talvez eu vá embora em breve.",
+    "gancho": "Um par útil para treinar o ouvido e a fala."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "full / fool",
+    "erro_comum": "A diferença principal não é apenas a duração: FULL rima com PULL e FOOL com POOL; compare a qualidade da vogal.",
+    "forma_certa": "/FULL rima com PULL; FOOL rima com POOL — a qualidade da vogal muda; não dependa só da duração/",
+    "frase_exemplo": "The pool is full.",
+    "traducao": "A piscina está cheia.",
+    "gancho": "FULL rima com PULL; FOOL com POOL. Ouça qual é qual."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "bad / bed",
+    "erro_comum": "A vogal de bad pode se aproximar da de bed se a abertura da boca não variar.",
+    "forma_certa": "/BAD: boca mais aberta; BED: boca um pouco menos aberta/",
+    "frase_exemplo": "That bed is bad for my back.",
+    "traducao": "Aquela cama faz mal para as minhas costas.",
+    "gancho": "Ajuste pequeno na boca, diferença clara no ouvido."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "map",
+    "erro_comum": "Depois da consoante final, pode surgir uma vogal extra, como se fosse “mépi”.",
+    "forma_certa": "/MAP, uma só sílaba; feche os lábios no P final sem acrescentar vogal/",
+    "frase_exemplo": "Can you show me the map?",
+    "traducao": "Você pode me mostrar o mapa?",
+    "gancho": "Feche a palavra sem colocar uma vogal a mais."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "street",
+    "erro_comum": "No grupo inicial STR, pode entrar uma vogal entre o S e as consoantes seguintes.",
+    "forma_certa": "/comece com S e emende direto em TR; STREet/",
+    "frase_exemplo": "The street is quiet today.",
+    "traducao": "A rua está tranquila hoje.",
+    "gancho": "Treine o grupo consonantal em câmera lenta."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "help",
+    "erro_comum": "O grupo final LP pode ganhar uma vogal de apoio depois do P.",
+    "forma_certa": "/HELP, uma sílaba; termine em P sem soltar outra vogal/",
+    "frase_exemplo": "Could you help me with this?",
+    "traducao": "Você poderia me ajudar com isto?",
+    "gancho": "Um final firme deixa a palavra mais nítida."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "worked",
+    "erro_comum": "Depois de um som surdo como K, o -ed costuma soar como T, não como uma sílaba extra.",
+    "forma_certa": "/WORKT, uma sílaba; termine com T/",
+    "frase_exemplo": "She worked late last night.",
+    "traducao": "Ela trabalhou até tarde ontem à noite.",
+    "gancho": "O -ed pode ser curto: ouça o final desta palavra."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "played",
+    "erro_comum": "Depois de um som sonoro como Y, o -ed costuma soar como D, sem sílaba extra.",
+    "forma_certa": "/PLAYD, uma sílaba; termine com D/",
+    "frase_exemplo": "We played after school.",
+    "traducao": "Brincamos depois da escola.",
+    "gancho": "Descubra quando o -ed não ganha outra sílaba."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "wanted",
+    "erro_comum": "Depois de T, o -ed forma uma sílaba extra, que pode ser reduzida ou omitida na tentativa de encurtar a palavra.",
+    "forma_certa": "/WANT-id, duas sílabas; dê espaço à sílaba final/",
+    "frase_exemplo": "I wanted a quiet evening.",
+    "traducao": "Eu queria uma noite tranquila.",
+    "gancho": "Aqui o -ed realmente acrescenta uma sílaba."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "books",
+    "erro_comum": "Após o som surdo de K, o plural -s tem som de S, sem vogal final.",
+    "forma_certa": "/BOOKS, termine com S surdo, sem acrescentar vogal/",
+    "frase_exemplo": "I have three books in my bag.",
+    "traducao": "Tenho três livros na minha bolsa.",
+    "gancho": "Treine o plural sem uma sílaba extra."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "buses",
+    "erro_comum": "Depois do som de S, o final -es forma uma sílaba adicional, que pode ser encurtada demais.",
+    "forma_certa": "/BUS-iz, duas sílabas; a última soa como “iz”/",
+    "frase_exemplo": "The buses stop near the park.",
+    "traducao": "Os ônibus param perto do parque.",
+    "gancho": "O final de buses merece uma sílaba própria."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "red",
+    "erro_comum": "O R americano não costuma ser tocado com a ponta da língua como um R vibrado em português.",
+    "forma_certa": "/REd; retraia ou curve levemente a língua, sem vibrá-la/",
+    "frase_exemplo": "I like the red one.",
+    "traducao": "Gosto do vermelho.",
+    "gancho": "Experimente um R sem vibração da língua."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "bird",
+    "erro_comum": "O R americano é contínuo, não uma vibração como o R forte de algumas variedades do português.",
+    "forma_certa": "/BIRD, uma sílaba; mantenha o R americano sem vibrar a língua/",
+    "frase_exemplo": "A bird landed on the fence.",
+    "traducao": "Um pássaro pousou na cerca.",
+    "gancho": "Una vogal e R num movimento só."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "home",
+    "erro_comum": "O H inicial pode ficar fraco ou desaparecer na aproximação ao padrão do português.",
+    "forma_certa": "/solte um sopro leve antes de HOME; H aspirado/",
+    "frase_exemplo": "I’m going home now.",
+    "traducao": "Estou indo para casa agora.",
+    "gancho": "Um sopro suave ajuda a iniciar a palavra."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "water",
+    "erro_comum": "Em muitos sotaques americanos, o T entre vogais soa como um toque rápido; não force se o modelo de voz escolhido usar outra variante.",
+    "forma_certa": "/WA-der, com toque breve da língua entre as vogais; há variação regional/",
+    "frase_exemplo": "Can I have some water?",
+    "traducao": "Posso tomar um pouco de água?",
+    "gancho": "Ouça o T rápido comum em muitas falas americanas."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "know",
+    "erro_comum": "A letra K escrita não é pronunciada no início desta palavra.",
+    "forma_certa": "/NO; comece direto pelo som de N/",
+    "frase_exemplo": "I know the answer.",
+    "traducao": "Eu sei a resposta.",
+    "gancho": "Uma letra escrita a mais não precisa entrar na fala."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "write",
+    "erro_comum": "O W inicial é mudo; começar com um som de W acrescenta algo que a palavra não pede.",
+    "forma_certa": "/RITE; comece pelo R americano, sem pronunciar o W/",
+    "frase_exemplo": "Please write your name here.",
+    "traducao": "Por favor, escreva seu nome aqui.",
+    "gancho": "Leia o começo como um som só: R."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "comb",
+    "erro_comum": "Como o B final é mudo, pode haver a tentação de ler a palavra pelo desenho das letras. A vogal rima com “home”.",
+    "forma_certa": "/COMB, rima com “home”; termine no M, sem pronunciar B/",
+    "frase_exemplo": "I need a comb for my hair.",
+    "traducao": "Preciso de um pente para o meu cabelo.",
+    "gancho": "Nem toda letra final aparece na pronúncia."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "island",
+    "erro_comum": "O S escrito não é pronunciado nesta palavra.",
+    "forma_certa": "/EYE-land; passe do primeiro som direto para L, sem S/",
+    "frase_exemplo": "They live on a small island.",
+    "traducao": "Eles moram em uma ilha pequena.",
+    "gancho": "A escrita guarda uma letra que a fala deixa de lado."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "record",
+    "erro_comum": "A sílaba forte muda entre o substantivo record e o verbo record.",
+    "forma_certa": "/substantivo: RE-cord; verbo: re-CORD/",
+    "frase_exemplo": "I record every new record.",
+    "traducao": "Eu gravo cada novo recorde.",
+    "gancho": "Mude a sílaba forte e acompanhe a mudança de sentido."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "about",
+    "erro_comum": "Na fala americana, a primeira sílaba é reduzida e a segunda recebe o destaque.",
+    "forma_certa": "/uh-BOUT: a primeira parte é fraca; destaque BOUT/",
+    "frase_exemplo": "Tell me about your trip.",
+    "traducao": "Conte-me sobre sua viagem.",
+    "gancho": "Deixe a sílaba fraca realmente leve."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "to",
+    "erro_comum": "Em fala ligada, “to” frequentemente fica átono. É uma redução de ritmo, não uma palavra diferente.",
+    "forma_certa": "/to fraco pode soar como “tuh”; destaque WANT e GO/",
+    "frase_exemplo": "I want to go home.",
+    "traducao": "Quero ir para casa.",
+    "gancho": "A palavra pequena também acompanha o ritmo da frase."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "can",
+    "erro_comum": "Dar a CAN átono o mesmo destaque de CAN’T pode prejudicar o ritmo; a redução varia conforme a frase e o falante.",
+    "forma_certa": "/I can HELP you today/: can fraco, HELP forte/",
+    "frase_exemplo": "I can help you today.",
+    "traducao": "Posso ajudar você hoje.",
+    "gancho": "Ouça como can fica leve quando não é o foco."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "turn it off",
+    "erro_comum": "Na fala ligada, as palavras se conectam; pratique em blocos curtos antes de acelerar.",
+    "forma_certa": "/TURN-it-OFF: ligue o N final de TURN ao início de it, sem vogal extra/",
+    "frase_exemplo": "Please turn it off.",
+    "traducao": "Por favor, desligue isso.",
+    "gancho": "Ligue as palavras sem perder a clareza."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "did you",
+    "erro_comum": "Em fala rápida, o encontro de D com Y pode se fundir num som parecido com “dj”; não é necessário separar as palavras com uma pausa.",
+    "forma_certa": "/did you pode se aproximar de “didja” na fala casual; destaque DID/",
+    "frase_exemplo": "Did you call your sister?",
+    "traducao": "Você ligou para sua irmã?",
+    "gancho": "Perceba como dois sons podem se aproximar na conversa."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "very",
+    "erro_comum": "O V inicial pode se aproximar do B; para V, os dentes de cima encostam de leve no lábio de baixo.",
+    "forma_certa": "/V: toque o lábio inferior com os dentes de cima e use a voz; VE-ry/",
+    "frase_exemplo": "That’s very kind of you.",
+    "traducao": "Isso é muito gentil da sua parte.",
+    "gancho": "Um ajuste simples dos lábios ajuda no V."
+  },
+  {
+    "tipo": "pronuncia",
+    "palavra": "bag",
+    "erro_comum": "A vogal de bag pode ser substituída por uma vogal mais fechada, aproximando-a de beg.",
+    "forma_certa": "/BAG; abra mais a boca e mantenha a língua baixa e à frente/",
+    "frase_exemplo": "I left my bag by the door.",
+    "traducao": "Deixei minha bolsa perto da porta.",
+    "gancho": "Encontre a abertura certa para esta vogal americana."
+  }
+]
