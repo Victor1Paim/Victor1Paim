@@ -1,5 +1,5 @@
 {
-  "fundo": "img/fundo.png", "velocidade_pt": 1.05,
+  "fundo": "img/fundo.png", "velocidade_pt": 1.0,
   "beats": [
     {"tipo": "abertura", "texto": "O telefone tocou e é em inglês 📞", "audio": ["00_gancho"]},
     {"tipo": "frase", "en": "Hello, who's calling?", "pron": "/re-LÔU, RÚZ KÓ-lin/", "pt": "Alô, quem está falando?", "audio_en": "f1_en", "audio_pt": "f1_pt"},

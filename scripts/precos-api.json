@@ -56,6 +56,10 @@
       "entrada_texto": 0.3,
       "saida_imagem": 30.0,
       "obs": "~1290 tokens por imagem (~US$ 0,039). Conferir na página de preços."
+    },
+    "gpt-4o-mini-tts": {
+      "minuto_audio": 0.015,
+      "obs": "Estimativa da OpenAI: ~US$ 0,015 por minuto de áudio (texto US$ 0,60/1M + áudio US$ 12/1M tokens). Conferir na página de preços."
     }
   },
   "gratis": [

@@ -115,7 +115,37 @@ def pedir(req, tentativas=8):
     sys.exit("Gemini continua recusando (429).")
 
 
-def tts(texto, voz, modelo, saida, post):
+INSTRUCOES = {  # só OpenAI (gpt-4o-mini-tts): tom de locutor, mesma voz nas duas línguas
+    "pt": "Locutor brasileiro de rádio e comerciais: voz grave, firme, animada e clara, ritmo dinâmico, "
+          "sotaque de português do Brasil, sem exagero.",
+    "en": "Same announcer voice and energy, now speaking clear, natural American English, at a slightly "
+          "slower pace so a learner can repeat it.",
+}
+
+
+def tts_openai(texto, voz, modelo, lingua, instrucoes, post):
+    import time, urllib.error
+    body = {"model": modelo, "voice": voz, "input": texto, "response_format": "pcm",
+            "instructions": (instrucoes or INSTRUCOES)[lingua]}
+    req = urllib.request.Request("https://api.openai.com/v1/audio/speech", data=json.dumps(body).encode(),
+                                 headers={"Authorization": "Bearer " + os.environ.get("OPENAI_API_KEY", "proxy-injected"),
+                                          "Content-Type": "application/json"})
+    for i in range(3):
+        try:
+            pcm = urllib.request.urlopen(req, timeout=180).read(); break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503) or i == 2:
+                raise
+            time.sleep(8)
+    # custo estimado pela duração (24 kHz, 16 bits): a rota /audio/speech não devolve tokens
+    registrar(post, modelo, "voz", minuto_audio=len(pcm) / 2 / 24000 / 60)
+    return pcm
+
+
+def tts(texto, voz, modelo, saida, post, lingua="pt", instrucoes=None):
+    if modelo.startswith("gpt-"):
+        pcm = tirar_estalo(tts_openai(texto, voz, modelo, lingua, instrucoes, post))
+        return _gravar(pcm, saida)
     # Modelos 2.5 tratam frase curta como instrução (erro 400 "tried to generate text"): prefixar "Say".
     # Os 3.x NÃO podem ter prefixo (às vezes leem a instrução em voz alta).
     if "2.5" in modelo:
@@ -131,6 +161,10 @@ def tts(texto, voz, modelo, saida, post):
     registrar(post, modelo, "voz", entrada_texto=u.get("promptTokenCount", 0),
               saida_audio=u.get("candidatesTokenCount", 0))
     pcm = tirar_estalo(base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]))
+    return _gravar(pcm, saida)
+
+
+def _gravar(pcm, saida):
     with tempfile.NamedTemporaryFile(suffix=".pcm") as f:
         f.write(pcm); f.flush()
         # wav 48 kHz para montar no ffmpeg sem perda. Apara o silêncio das pontas deixando 80 ms de folga,
@@ -142,7 +176,24 @@ def tts(texto, voz, modelo, saida, post):
                         "-ar", "48000", str(saida)], check=True)
 
 
+_WHISPER = None
+
+
 def conferir(saida, texto, lingua):
+    """Transcreve com o Whisper (modelo carregado uma vez) e devolve a semelhança com o texto (%)."""
+    global _WHISPER
+    import difflib, re
+    import whisper
+    if _WHISPER is None:
+        _WHISPER = whisper.load_model(os.environ.get("WHISPER_MODELO", "turbo"))
+    ouvido = _WHISPER.transcribe(str(saida), language=lingua, fp16=False)["text"].strip()
+    norm = lambda t: re.sub(r"[^\wáéíóúâêôãõçà' ]", " ", t.lower()).split()
+    pct = round(difflib.SequenceMatcher(None, norm(texto), norm(ouvido)).ratio() * 100, 1)
+    print(f"    whisper: {ouvido}")
+    return pct
+
+
+def conferir_antigo(saida, texto, lingua):
     with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as r:
         r.write(texto)
     out = subprocess.run([sys.executable, str(CONFERIR), str(saida), "--saida", str(saida.parent / "conferencia"),
@@ -164,7 +215,7 @@ def gerar(post, so, sem_conferir, minimo, tentativas, pular=False, modelo_forcad
             continue
         saida = post / "audio" / f"{f['id']}.wav"
         for t in range(1, tentativas + 1):
-            tts(f["texto"], vozes[f["lingua"]], modelo, saida, post)
+            tts(f["texto"], vozes[f["lingua"]], modelo, saida, post, f["lingua"], cfg.get("instrucoes"))
             if sem_conferir:
                 print(f"{f['id']}: gerado"); break
             pct = conferir(saida, f["texto"], f["lingua"])

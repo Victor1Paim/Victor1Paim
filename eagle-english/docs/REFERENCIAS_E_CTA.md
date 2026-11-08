@@ -15,6 +15,14 @@ Para variar as poses do mascote (apontar, pensar, comemorar), gerar novas poses 
 
 ## 2. Voz "mais locutora" e inglês no mesmo tom
 
+**Em uso desde 08/11:** OpenAI `gpt-4o-mini-tts`, voz **onyx** nas duas línguas, com instrução de tom
+(`INSTRUCOES` em `scripts/vozes.py`): locutor brasileiro grave e animado; em inglês, mesma voz, americano
+claro e um pouco mais devagar. Sem limite diário (o Gemini gratuito só dá 10 falas/dia por modelo).
+No `falas.json`: `"modelo": "gpt-4o-mini-tts", "vozes": {"pt": "onyx", "en": "onyx"}`. Produto: "Eagle trezentos e cinquenta".
+Conferir no Whisper que a última fala do CTA termina em "Link na bio" (a voz às vezes corta o final).
+
+(Plano anterior com o Gemini, mantido como alternativa:)
+
 - Usar **a mesma voz do Gemini nas duas línguas** (arquivos separados): o inglês sai com o mesmo timbre do
   narrador, em vez de outra pessoa. Candidatas de locutor: **Charon** (informativa), **Orus** (firme),
   **Sadaltager** (de quem sabe) e **Alnilam** (firme). Teste: 1 frase pt + 1 frase en de cada, escolher de ouvido.

@@ -1,7 +1,7 @@
 # Produção 1 — "Atender o telefone" (estilo R4, mapa real pág. 368)
 
-STATUS: roteiro, fundo e prévia prontos; faltam as vozes (teste de voz locutora + 17 falas).
-Duração estimada: ~55–60 s. Capa: quadro do gancho com o mascote.
+STATUS: PRONTO — vídeo 64 s, voz OpenAI "onyx" (locutor, mesma voz em pt e en), conferido pelo Whisper (falas e vídeo final), -14 LUFS.
+Vídeo: `video/final.mp4` · Capa: `video/capa.png` (quadro do gancho com o mascote) · Horário sugerido: terça 17h.
 
 ## Legenda (Reels e TikTok)
 ```
