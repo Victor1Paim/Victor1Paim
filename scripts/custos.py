@@ -25,7 +25,8 @@ def custo_usd(modelo, **tokens):
     tabela = _precos()["modelos"].get(modelo)
     if not tabela:
         return None
-    return sum(tabela.get(k, 0) * v / 1_000_000 for k, v in tokens.items())
+    # preços por 1M de tokens; chaves "minuto_*" são preço por minuto (ex.: TTS da OpenAI)
+    return sum(tabela.get(k, 0) * v / (1 if k.startswith("minuto") else 1_000_000) for k, v in tokens.items())
 
 
 def registrar(pasta, modelo, etapa, **tokens):
@@ -44,6 +45,9 @@ def relatorio(pasta):
         print("Nenhuma chamada de API registrada neste post (custo US$ 0,00)."); return
     p = _precos(); cambio = p["cambio_brl_por_usd"]
     linhas = [json.loads(l) for l in arq.read_text().splitlines() if l.strip()]
+    for l in linhas:  # recalcula com a tabela atual (corrige registros antigos)
+        u = custo_usd(l["modelo"], **l["tokens"])
+        l["usd"] = None if u is None else u
     por = {}
     sem_preco = set()
     for l in linhas:
