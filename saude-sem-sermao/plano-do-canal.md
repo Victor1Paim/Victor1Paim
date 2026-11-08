@@ -74,7 +74,7 @@ Começar com **3 a 5 curtos por semana**, constante, e subir depois. Produção 
 
 - **Nome:** Saúde sem Sermão · **@saudesemsermao** nas três plataformas.
 - **Paleta e tipografia:** cores claras e acolhedoras, longe do visual "hospital" e do visual "alerta vermelho". Uma fonte só para título e legenda.
-- **Voz:** sintética, via **API do Gemini** (`gemini_tts` do OpenMontage). Uma voz fixa, calorosa e informal; testar 3 opções e fixar uma.
+- **Voz:** sintética, via **API do Gemini** (`gemini-3.8-flash-tts`), com o script `scripts/voz_gemini.py`, que gera e confere com o Whisper (mínimo 97% de semelhança com o roteiro, senão gera de novo). **Não colocar instrução de tom no texto:** o modelo às vezes lê a instrução em voz alta. Testes de 08/11/2026 em `producoes/testes-voz/` (Sulafat, Puck, Achird); escolher uma e fixar.
 - **Imagem:** ilustração e motion graphics próprios; sem imagens de doença chocantes.
 
 ## 8. Produção (reaproveitando o que já existe no repo)
