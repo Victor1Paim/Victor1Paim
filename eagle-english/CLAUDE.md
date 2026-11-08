@@ -7,6 +7,14 @@ Passo a passo do projeto (quem faz o quê): `docs/PASSO_A_PASSO_EAGLE_ENGLISH.md
 
 Idioma de trabalho com o usuário: português do Brasil, direto e curto.
 
+## PADRÃO VISUAL (manda sobre o resto deste arquivo)
+
+Todo vídeo segue `docs/PADRAO_VIDEO.md` (medido nos Reels publicados): foto do cenário em cor cheia,
+mascote OFICIAL grande falando (`assets/mascote/oficial/`), legendas Poppins com contorno (inglês amarelo,
+pronúncia branca, tradução verde), cartão de ponte, telas do ebook e a oferta fixa
+(`assets/marca/fechamento_oferta.mp4`). Montagem: `scripts/montar_padrao.py`. Os templates `quiz.html`,
+`card_*.html` e os mascotes `assets/mascote/pensando.png`/`positivo.png` são do visual antigo: não usar.
+
 ## Sempre
 
 - Formato 1080x1920 (9:16), 30 fps, H.264 + AAC. **Duração padrão: 40 s a 1 min 10 s** (a partir das

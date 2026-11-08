@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Oswald:wght@500;600;700&display=swap">
+<!-- PADRÃO OFICIAL DOS VÍDEOS (docs/PADRAO_VIDEO.md), medido nos Reels publicados:
+     foto do cenário em cor cheia (sem véu) · mascote grande no centro (entra depois, no ffmpeg) ·
+     legendas Poppins Black com contorno preto · cartões de ponte/etiqueta em Oswald, marinho e vermelho. -->
+<style>
+  :root { --amarelo:#FDDF33; --verde:#7CFD4E; --marinho:#0B1F4B; --vermelho:#E63946; --creme:#F7F3EA; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; }
+  body { position:relative; background:#333; }
+  #fundo { position:absolute; inset:0; background-size:cover; background-position:center; }
+  /* leve escurecido só no topo, para a legenda ler em qualquer foto */
+  #topo { position:absolute; left:0; right:0; top:0; height:760px;
+          background:linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,0)); }
+  .leg { position:absolute; left:70px; right:70px; top:260px; text-align:center; font-family:"Poppins";
+         paint-order:stroke fill; -webkit-text-stroke:14px #000; letter-spacing:-0.03em; }
+  .leg div { text-wrap:balance; }
+  .leg .branco { color:#fff; font-weight:900; font-size:78px; line-height:1.08; }
+  .leg .en { color:var(--amarelo); font-weight:900; font-size:86px; line-height:1.05; }
+  .leg .pron { color:#fff; font-weight:800; font-size:40px; margin-top:14px; -webkit-text-stroke:9px #000; letter-spacing:-0.01em; }
+  .leg .pt { color:var(--verde); font-weight:900; font-size:64px; margin-top:16px; line-height:1.08; }
+  .cartao { position:absolute; left:60px; right:60px; top:250px; background:var(--creme); border:7px solid var(--marinho);
+            border-radius:34px; padding:34px 30px; text-align:center; text-wrap:balance; font-family:"Oswald"; font-weight:500;
+            color:var(--marinho); font-size:66px; line-height:1.16; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+  .vermelho { color:var(--vermelho); }
+  .tag { position:absolute; left:50%; transform:translateX(-50%); top:240px; background:var(--creme);
+         border:6px solid var(--marinho); border-radius:24px; padding:6px 30px; font-family:"Oswald"; font-weight:500;
+         font-size:76px; color:var(--marinho); white-space:nowrap; box-shadow:0 8px 24px rgba(0,0,0,.25); }
+  .pagina { position:absolute; left:50%; transform:translateX(-50%); top:380px; width:720px;
+            box-shadow:0 14px 40px rgba(0,0,0,.35); border-radius:34px; }
+</style></head>
+<body>
+<div id="fundo"></div><div id="topo"></div>
+<div id="c"></div>
+<script>
+const d = window.DADOS || {tipo:"frase", en:"What did you say?", pron:"/UÓT did iú SÊI/", pt:"O que você disse?"};
+document.getElementById("fundo").style.backgroundImage = d.fundo ? `url('${d.fundo}')` : "";
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
+let h = "";
+if (d.tipo === "abertura") h = `<div class="leg"><div class="branco">${esc(d.texto)}</div></div>`;
+else if (d.tipo === "frase") h = `<div class="leg"><div class="en">${esc(d.en)}</div>
+     ${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}${d.mostrar_pt && d.pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>`;
+else if (d.tipo === "ponte") h = `<div class="cartao">${red(d.texto).replace(/\n/g, "<br>")}</div>`;
+else if (d.tipo === "produto") { h = `<div class="tag">${red(d.tag)}</div>${d.pagina ? `<img class="pagina" src="${d.pagina}">` : ""}`;
+  document.getElementById("topo").style.display = "none"; }
+document.getElementById("c").innerHTML = h;
+// encolhe a legenda até caber acima da cabeça do mascote (topo do bloco em 260 px, limite 520 px de altura)
+const leg = document.querySelector(".leg");
+if (leg) document.fonts.ready.then(() => { let f = 1; while (leg.offsetHeight > 520 && f > 0.6) { f -= 0.04;
+  leg.querySelectorAll("div").forEach(el => { el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * (f / (f + 0.04))) + "px"; }); } });
+</script>
+</body></html>
