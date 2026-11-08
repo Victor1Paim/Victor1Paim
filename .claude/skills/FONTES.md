@@ -13,6 +13,7 @@ Para atualizar, clone o repositório de novo e copie a pasta da skill por cima.
 | obra/superpowers (`22f0b46`) — 08/11/2026 | brainstorming, writing-plans, executing-plans, subagent-driven-development, dispatching-parallel-agents, systematic-debugging, test-driven-development, verification-before-completion, requesting-code-review, receiving-code-review, using-git-worktrees, finishing-a-development-branch, writing-skills |
 | bangtutorial/bang-motion (`c1aa65e`) — 08/11/2026 | bang-motion (sem a ponte After Effects/Higgsfield: removidos `references/ae-bridge-higgsfield.md` e `scripts/ae/`) |
 | Jakeschincariol/instagram-agent-skill (`d03c56b`) — 08/11/2026 | ig-reel, ig-caption, ig-carousel, ig-story, ig-plan, ig-viral, ig-audit, ig-profile, ig-human, ig-comment, ig-reply, ig-dm, ig-repurpose |
+| openai/whisper (`8609812`) — 08/11/2026 | whisper-legendas (skill própria; o Whisper é instalado como pacote `openai-whisper` pelo `scripts/preparar-sessao.sh`) |
 | RobMitt/grill-me-skill (`31d61d6`) | grill-me |
 
 Deixadas de fora: skills internas de desenvolvimento de cada repositório, as que dependem de contas
