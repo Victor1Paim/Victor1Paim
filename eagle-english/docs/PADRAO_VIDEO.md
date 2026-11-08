@@ -1,3 +1,6 @@
+> **Atualização 08/11 (noite):** voz, estilos novos (R1–R4) e o **fechamento novo** com dados da página de
+> vendas estão em `REFERENCIAS_E_CTA.md` e mandam sobre a seção "Oferta (fixa)" abaixo.
+
 # Padrão oficial dos vídeos (medido nos Reels publicados — 08/11/2026)
 
 Referências analisadas: "I eat / I drink…" (48 s), "Say, tell ou speak" (47 s) e "Paquera Copa" (65 s).

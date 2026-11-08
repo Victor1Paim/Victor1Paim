@@ -29,6 +29,27 @@
          font-size:76px; color:var(--marinho); white-space:nowrap; box-shadow:0 8px 24px rgba(0,0,0,.25); }
   .pagina { position:absolute; left:50%; transform:translateX(-50%); top:380px; width:720px;
             box-shadow:0 14px 40px rgba(0,0,0,.35); border-radius:34px; }
+  /* fechamento novo (dados da página de vendas) */
+  .kit { position:absolute; left:0; right:0; top:420px; height:760px; }
+  .kit img { position:absolute; width:290px; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,.35); border:4px solid #fff; }
+  .lista { position:absolute; left:340px; right:60px; top:1170px; background:var(--creme); border:6px solid var(--marinho);
+           border-radius:28px; padding:22px 30px; font-family:"Poppins"; font-weight:800; font-size:31px; color:var(--marinho); line-height:1.4; }
+  .lista b { color:var(--vermelho); }
+  .preco { position:absolute; left:70px; right:70px; top:420px; display:flex; flex-direction:column; align-items:center; gap:26px; }
+  .preco .de { background:var(--creme); border:6px solid var(--marinho); border-radius:26px; padding:16px 40px; font-family:"Oswald";
+               font-size:62px; color:var(--marinho); }
+  .preco .de s { color:var(--vermelho); text-decoration-thickness:6px; }
+  .preco .por { background:var(--amarelo); border:7px solid #111; border-radius:30px; padding:20px 50px 26px; text-align:center;
+                font-family:"Oswald"; font-weight:700; color:#111; box-shadow:0 12px 30px rgba(0,0,0,.35); }
+  .preco .por small { display:block; font-size:44px; font-weight:500; }
+  .preco .por span { font-size:170px; line-height:1; }
+  .preco .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+  .preco .chip { background:#fff; border:4px solid var(--marinho); border-radius:40px; padding:10px 26px; font-family:"Poppins";
+                 font-weight:800; font-size:32px; color:var(--marinho); }
+  .preco .botao { background:var(--vermelho); color:#fff; font-family:"Oswald"; font-weight:700; font-size:92px; padding:8px 60px 14px;
+                  border-radius:30px; border:6px solid #fff; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+  .preco .prazo { background:var(--vermelho); color:#fff; font-family:"Poppins"; font-weight:800; font-size:34px; padding:8px 24px;
+                  border-radius:14px; transform:rotate(-3deg); }
 </style></head>
 <body>
 <div id="fundo"></div><div id="topo"></div>
@@ -45,6 +66,15 @@ else if (d.tipo === "frase") h = `<div class="leg"><div class="en">${esc(d.en)}<
 else if (d.tipo === "ponte") h = `<div class="cartao">${red(d.texto).replace(/\n/g, "<br>")}</div>`;
 else if (d.tipo === "produto") { h = `<div class="tag">${red(d.tag)}</div>${d.pagina ? `<img class="pagina" src="${d.pagina}">` : ""}`;
   document.getElementById("topo").style.display = "none"; }
+else if (d.tipo === "kit") { const pos = [[60,30,-6],[730,30,6],[395,0,0],[225,380,-4],[565,380,4]];
+  h = `<div class="tag">${red(d.tag)}</div><div class="kit">${d.capas.map((c,i)=>`<img src="${c}" style="left:${pos[i][0]}px;top:${pos[i][1]}px;transform:rotate(${pos[i][2]}deg);z-index:${i==2?5:i}">`).join("")}</div>
+       <div class="lista">${d.itens.map(red).join("<br>")}</div>`; document.getElementById("topo").style.display = "none"; }
+else if (d.tipo === "preco") { h = `<div class="tag">${red(d.tag)}</div><div class="preco" style="top:400px">
+       <div class="de">Separado: <s>${esc(d.de)}</s></div>
+       <div class="por"><small>Kit completo hoje</small><span>${esc(d.por)}</span></div>
+       <div class="chips">${d.chips.map(c=>`<div class="chip">${esc(c)}</div>`).join("")}</div>
+       ${d.prazo ? `<div class="prazo">${esc(d.prazo)}</div>` : ""}
+       <div class="botao">Link na bio 👆</div></div>`; document.getElementById("topo").style.display = "none"; }
 document.getElementById("c").innerHTML = h;
 // encolhe a legenda até caber acima da cabeça do mascote (topo do bloco em 260 px, limite 520 px de altura)
 const leg = document.querySelector(".leg");

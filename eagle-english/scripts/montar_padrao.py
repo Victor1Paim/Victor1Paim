@@ -36,8 +36,10 @@ PEQUENO = (400, 1560)  # altura, chão — canto inferior esquerdo
 
 
 def pagina(post, nome):
-    p = PROJ / "assets" / "marca" / "paginas" / f"{nome}.png"
-    return p if p.exists() else (post / nome)
+    for p in (PROJ / "assets/marca/paginas" / f"{nome}.png", PROJ / "assets/marca/paginas/site" / f"{nome}.webp"):
+        if p.exists():
+            return p
+    return post / nome
 
 
 def render(post, especs, fundo):
@@ -114,10 +116,18 @@ def main(pasta, previa=False):
         elif tp == "produto":
             fim = falar(b["audio"], t + 0.1); total = fim - t + 0.3
             telas = b["telas"]; cada = total / len(telas)
-            for k, (tag, pag) in enumerate(telas):
+            for k, tela in enumerate(telas):
                 nome = f"{n:02d}_produto_{k}"
-                especs.append((nome, {"tipo": "produto", "tag": tag, "pagina": pagina(post, pag).as_uri()}))
-                cenas.append((nome, cada))
+                if isinstance(tela, dict):   # telas "kit" e "preco" (fechamento novo)
+                    dados = dict(tela)
+                    if "capas" in dados:
+                        dados["capas"] = [pagina(post, c).as_uri() for c in dados["capas"]]
+                    dados.setdefault("tipo", "produto")
+                else:
+                    tag, pag = tela
+                    dados = {"tipo": "produto", "tag": tag, "pagina": pagina(post, pag).as_uri()}
+                especs.append((nome, dados))
+                cenas.append((nome, tela.get("segundos", cada) if isinstance(tela, dict) else cada))
             janelas.append((t, t + total, "pequeno")); t += total
 
     q = render(post, especs, fundo)
@@ -128,9 +138,9 @@ def main(pasta, previa=False):
     folha = Image.new("RGB", (cols * 270, lin * 480), "white")
     for i, (nm, dados) in enumerate(especs):
         im = Image.open(q / f"{nm}.png").convert("RGBA")
-        h, chao = PEQUENO if dados["tipo"] == "produto" else GRANDE
+        h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else GRANDE
         m = mf.resize((int(mf.width * h / mf.height), h))
-        x = 20 if dados["tipo"] == "produto" else (1080 - m.width) // 2
+        x = 20 if dados["tipo"] in ("produto", "kit", "preco") else (1080 - m.width) // 2
         im.alpha_composite(m, (x, chao - h))
         folha.paste(im.convert("RGB").resize((270, 480)), ((i % cols) * 270, (i // cols) * 480))
     folha.save(post / "video" / "contato.jpg", quality=85)
