@@ -1,0 +1,3 @@
+semelhança: 99.2%
+insert: roteiro='' voz='esse' pos=12
+replace: roteiro='quatrocentas' voz='quatrocentos' pos=109

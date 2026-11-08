@@ -1,0 +1,75 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:24px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:46px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:70px;line-height:1;}
+
+  .bg{background:#fff;}
+  .titulo{top:270px;}
+  #volume-qd{position:absolute;left:80px;top:180px;font-weight:900;font-size:44px;color:#8a837d;}
+  #volume-barra{position:absolute;left:80px;top:540px;width:920px;height:24px;border-radius:12px;background:#F2ECE2;}
+  #volume-fill{position:absolute;left:0;top:0;height:24px;width:920px;border-radius:12px;background:linear-gradient(90deg,#95A185,#CE6840);transform-origin:0 50%;}
+  #volume-knob{position:absolute;left:830px;top:515px;width:74px;height:74px;border-radius:50%;background:var(--verde);box-shadow:0 6px 16px rgba(0,0,0,.25);}
+  #volume-ic{position:absolute;left:80px;top:390px;font-size:56px;}
+  #volume-ajuda{position:absolute;left:80px;top:1045px;width:920px;padding:24px 34px;border-radius:26px;background:var(--verde);color:#fff;font-weight:900;font-size:42px;}
+</style>
+<div id="root" data-composition-id="volume" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div id="volume-qd">Quem dera, né? 😅</div>
+  <h1 class="titulo" id="volume-t">Dá pra <em>baixar o volume</em></h1>
+  <div id="volume-barra"><div id="volume-fill"></div></div><div id="volume-knob"></div>
+  <div class="chip" id="volume-c0" style="top:640px"><span class="i">😴</span>dormir melhor</div>
+  <div class="chip" id="volume-c1" style="top:770px"><span class="i">🚶</span>se mexer</div>
+  <div class="chip" id="volume-c2" style="top:900px"><span class="i">🤝</span>não brigar com a fome</div>
+  <div id="volume-ajuda">💬 Não passa? Procure ajuda</div>
+  <div class="wipe" id="volume-wipe" style="background:#FDF3ED"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#volume-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#volume-qd",{opacity:0},{opacity:1,duration:0.3},0.2);
+  tl.fromTo("#volume-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},1.37);
+  tl.fromTo(["#volume-barra","#volume-knob"],{opacity:0},{opacity:1,duration:0.3},1.37);
+  tl.fromTo("#volume-knob",{x:0},{x:-500,duration:1.0,ease:"power2.inOut"},2.11);
+  tl.fromTo("#volume-fill",{scaleX:1},{scaleX:0.42,duration:1.0,ease:"power2.inOut"},2.11);
+  tl.fromTo("#volume-c0",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},3.23);
+  tl.fromTo("#volume-c1",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},4.17);
+  tl.fromTo("#volume-c2",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},5.17);
+  tl.fromTo("#volume-ajuda",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"back.out(1.6)"},6.31);
+
+  window.__timelines["volume"] = tl;
+</script>
+</template>
