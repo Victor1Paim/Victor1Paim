@@ -34,7 +34,14 @@ def gerar_openai(prompt, saida, post, proporcao, transparente, modelo):
     req = urllib.request.Request("https://api.openai.com/v1/images/generations", data=json.dumps(body).encode(),
                                  headers={"Authorization": "Bearer " + os.environ.get("OPENAI_API_KEY", "proxy-injected"),
                                           "Content-Type": "application/json"})
-    d = json.load(urllib.request.urlopen(req, timeout=600))
+    import time
+    for tentativa in range(3):  # 502/503 passageiros do proxy/servidor: tenta de novo
+        try:
+            d = json.load(urllib.request.urlopen(req, timeout=600)); break
+        except urllib.error.HTTPError as e:
+            if e.code not in (500, 502, 503, 504) or tentativa == 2:
+                raise
+            print(f"  erro {e.code} da OpenAI; tentando de novo...", flush=True); time.sleep(10)
     u = d.get("usage", {})
     det = u.get("input_tokens_details", {})
     registrar(post, modelo, "imagem", entrada_texto=det.get("text_tokens", u.get("input_tokens", 0)),

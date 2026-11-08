@@ -1,0 +1,72 @@
+{
+ "intro": {
+  "selo": "TELEFONE 📞",
+  "hook": [
+   "Inglês no telefone",
+   "em *3 velocidades*"
+  ],
+  "sub": "🐢 Lenta • 🚶 Normal • 🚀 Nativo",
+  "audio": [
+   "00_gancho",
+   "01_regra"
+  ]
+ },
+ "velocidades": [
+  [
+   "🐢 Lenta",
+   0.78
+  ],
+  [
+   "🚶 Normal",
+   1.0
+  ],
+  [
+   "🚀 Nativo",
+   1.15
+  ]
+ ],
+ "segundos_repetir": 2.0,
+ "frases": [
+  {
+   "titulo": "Pra pedir pra pessoa aguardar",
+   "en": "Could you hold for a moment?",
+   "pron": "/kud iú HÔULD for a MÔU-ment/",
+   "traducao": "Pode aguardar um instante?",
+   "audio_titulo": "f1_pt",
+   "audio": "f1_en"
+  },
+  {
+   "titulo": "Quando a ligação está ruim",
+   "en": "The connection is bad.",
+   "pron": "/the ka-NÉK-xan iz BÉD/",
+   "traducao": "A ligação está ruim.",
+   "audio_titulo": "f2_pt",
+   "audio": "f2_en"
+  },
+  {
+   "titulo": "Pra dizer que liga depois",
+   "en": "I'll call you back later.",
+   "pron": "/áil KÓL iú BÉK LÊI-ter/",
+   "traducao": "Te ligo mais tarde.",
+   "audio_titulo": "f3_pt",
+   "audio": "f3_en"
+  }
+ ],
+ "cta": {
+  "titulo": [
+   "Salva pra próxima",
+   "*ligação* 📌"
+  ],
+  "comenta": "Frases prontas pra cada situação 📞",
+  "itens": [
+   "350 mapas visuais • 2.100 frases",
+   "35 situações do dia a dia",
+   "Tradução e pronúncia escrita",
+   "+ 4 bônus"
+  ],
+  "audio": [
+   "99_cta"
+  ]
+ },
+ "velocidade_pt": 1.1
+}

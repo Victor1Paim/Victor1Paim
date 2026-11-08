@@ -73,6 +73,15 @@
   .suavez { position:absolute; left:50%; transform:translateX(-50%); top:1200px; background:var(--vermelho);
             color:#fff; font-size:62px; font-weight:900; padding:26px 54px; border-radius:80px; white-space:nowrap;
             box-shadow:0 8px 24px rgba(230,57,70,.35); }
+  /* escada de velocidade */
+  .escada { gap:34px; padding-top:10px; }
+  .frase-grande { font-family:"Oswald"; font-weight:700; font-size:104px; line-height:1.05; background:#fff;
+                  border-radius:30px; padding:34px 36px; box-shadow:0 8px 30px rgba(11,31,75,.15); }
+  .vels { display:flex; gap:16px; }
+  .vel { flex:1; text-align:center; font-size:38px; font-weight:800; padding:18px 6px; border-radius:22px;
+         background:#e8e4da; color:#888; border:4px solid transparent; }
+  .vel.ativa { background:var(--vermelho); color:#fff; box-shadow:0 6px 18px rgba(230,57,70,.35); }
+  .vel.feita { background:#fff; color:var(--marinho); border-color:var(--marinho); }
 </style></head>
 <body>
 <div id="fundo"></div><div id="veu"></div>
@@ -121,6 +130,18 @@ if (d.tipo === "intro") {
       </div>
       ${d.suavez ? `<div class="suavez">🔁 Sua vez! Repete</div>` : masc(d.mascote, "right:150px;bottom:410px;height:230px")}
       <div class="rodape">@eagle.english.br</div>`;
+} else if (d.tipo === "escada") {
+  const vels = d.velocidades.map((v, i) => `<div class="vel ${i === d.atual ? "ativa" : i < d.atual ? "feita" : ""}">${esc(v)}</div>`).join("");
+  h = `<div class="area escada">
+        <div class="selo">${esc(d.selo)}</div>
+        <div class="enunciado">${esc(d.titulo)}</div>
+        <div class="frase-grande">${esc(d.en)}</div>
+        <div class="vels">${vels}</div>
+        <div class="explica"><div class="pron">🗣️ ${esc(d.pron).split(" ").map(w => `<span style="white-space:nowrap">${w}</span>`).join(" ")}</div>
+          <div class="trad">🇧🇷 ${esc(d.traducao)}</div></div>
+      </div>
+      ${d.suavez ? `<div class="suavez">🔁 Sua vez! Repete</div>` : masc(d.mascote, "right:150px;bottom:410px;height:230px")}
+      <div class="rodape">@eagle.english.br</div>`;
 } else if (d.tipo === "regancho") {
   h = `<div class="area regancho"><div class="titulo">${d.texto.map(red).join("<br>")}</div></div>
        ${masc(d.mascote, "left:50%;transform:translateX(-50%);bottom:420px;height:380px")}
@@ -134,8 +155,8 @@ if (d.tipo === "intro") {
           ${d.itens.map(i => `<div class="item">✔ ${esc(i)}</div>`).join("")}
           <div class="botao">Link na bio 👆</div>
         </div>
+        ${d.mascote ? `<img src="${d.mascote}" style="align-self:center;height:260px;margin-top:-6px">` : ""}
       </div>
-      ${masc(d.mascote, "left:50%;transform:translateX(-50%);bottom:430px;height:280px")}
       <div class="rodape">@eagle.english.br</div>`;
 }
 document.getElementById("conteudo").innerHTML = h;

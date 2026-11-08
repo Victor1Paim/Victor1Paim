@@ -1,0 +1,15 @@
+{
+  "vozes": {"pt": "Achird", "en": "Kore"},
+  "modelo": "gemini-3.8-flash-tts",
+  "falas": [
+    {"id": "00_gancho", "lingua": "pt", "texto": "No telefone, o inglês vem rápido. Treina comigo em três velocidades!"},
+    {"id": "01_regra", "lingua": "pt", "texto": "Lenta, normal e de nativo. Repete depois de cada uma."},
+    {"id": "f1_pt", "lingua": "pt", "texto": "Pra pedir pra pessoa aguardar."},
+    {"id": "f1_en", "lingua": "en", "texto": "Could you hold for a moment?"},
+    {"id": "f2_pt", "lingua": "pt", "texto": "Essa salva quando a ligação está ruim."},
+    {"id": "f2_en", "lingua": "en", "texto": "The connection is bad."},
+    {"id": "f3_pt", "lingua": "pt", "texto": "E pra dizer que liga depois."},
+    {"id": "f3_en", "lingua": "en", "texto": "I'll call you back later."},
+    {"id": "99_cta", "lingua": "pt", "texto": "Salva pra próxima ligação! Frases de trinta e cinco situações, com tradução e pronúncia escrita, estão no Ígol trezentos e cinquenta, com quatro bônus. Link na bio!"}
+  ]
+}

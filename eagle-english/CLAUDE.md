@@ -59,6 +59,7 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 `python3 scripts/montar_quiz.py <post>` (cartões `templates/quiz.html`, tique/ding/whoosh, loudness, capa,
 folha de contato). Primeiro exemplo: `posts/2026-11-10_quiz-pedir-de-novo/`.
 Pronúncia: `pronuncia.json` → `python3 scripts/montar_pronuncia.py <post>` (grupo → "Sua vez!" → ouvir de novo → teste).
+Escada de velocidade: `escada.json` → `python3 scripts/montar_escada.py <post>` (lenta/normal/nativo por atempo).
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Limites das APIs (plano gratuito do Gemini)
