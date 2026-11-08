@@ -1,0 +1,73 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:var(--laranja);}
+  .titulo{color:#fff;top:300px;}
+  .titulo em{color:var(--creme2);}
+  #mito-selo{position:absolute;left:80px;top:200px;padding:8px 22px;border:5px solid #fff;border-radius:14px;color:#fff;
+             font-weight:900;font-size:40px;letter-spacing:.1em;}
+  .rot{position:absolute;left:80px;font-weight:900;font-size:36px;color:#fff;}
+  .trilho{position:absolute;left:80px;width:920px;height:80px;border-radius:20px;background:rgba(255,255,255,.18);}
+  .barra{position:absolute;left:80px;width:920px;height:80px;border-radius:20px;transform-origin:0% 50%;}
+  .pct{position:absolute;font-weight:900;font-size:48px;color:#fff;}
+  #mito-img{right:30px;top:1290px;width:330px;height:390px;}
+  #mito-quase{position:absolute;left:80px;top:990px;font-weight:900;font-size:44px;color:var(--creme2);}
+</style>
+<div id="root" data-composition-id="mito" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div id="mito-selo">✕ MITO</div>
+  <h1 class="titulo" id="mito-t">Alongar <em>sozinho</em>?</h1>
+  <div class="rot" style="top:530px">sem prevenção</div>
+  <div class="trilho" style="top:585px"></div><div class="barra" id="mito-b0" style="top:585px;background:#8C8580"></div>
+  <div class="pct" style="left:870px;top:595px">100</div>
+  <div class="rot" style="top:740px">com alongamento</div>
+  <div class="trilho" style="top:795px"></div><div class="barra" id="mito-b1" style="top:795px;background:#fff"></div>
+  <div class="pct" id="mito-p1" style="left:870px;top:805px;color:var(--laranja)">100</div>
+  <div id="mito-quase">−4%: quase nada</div>
+  <div class="img" id="mito-img"><img src="assets/tito-alongando.png"></div>
+  <div class="wipe" id="mito-wipe" style="background:#FFFFFF"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#mito-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#mito-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.25);
+  tl.fromTo("#mito-b0",{scaleX:0},{scaleX:1,duration:0.5,ease:"power2.out"},0.4);
+  tl.fromTo("#mito-b1",{scaleX:0},{scaleX:1,duration:0.5,ease:"power2.out"},0.6);
+  tl.to("#mito-b1",{scaleX:0.96,duration:0.6,ease:"power2.inOut"},1.15);
+  (function(){const o={v:100};const el=document.querySelector("#mito-p1");tl.fromTo(o,{v:100},{v:96,duration:0.6,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v);}},1.15);})();
+  tl.fromTo("#mito-selo",{opacity:0,scale:2.4,rotation:-14},{opacity:1,scale:1,rotation:-6,duration:0.22,ease:"power4.in"},1.62);
+    tl.fromTo("#root",{x:0},{x:10,duration:0.04,yoyo:true,repeat:5,ease:"none"},1.84);
+  tl.fromTo("#mito-quase",{opacity:0,y:10},{opacity:1,y:0,duration:0.3},1.8);
+  tl.fromTo("#mito-img",{opacity:0,y:80},{opacity:1,y:0,duration:0.45,ease:"back.out(1.5)"},0.5);
+  tl.to("#mito-img",{rotation:-5,transformOrigin:"50% 95%",duration:0.5,yoyo:true,repeat:3,ease:"sine.inOut"},1.0);
+
+  window.__timelines["mito"] = tl;
+</script>
+</template>

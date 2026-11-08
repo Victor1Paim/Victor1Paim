@@ -29,6 +29,44 @@ def chave():
     sys.exit("defina GEMINI_API_KEY ou GEMINI_KEY_FILE")
 
 
+def limpar_final(arquivo):
+    """Remove o estalo que o Gemini TTS deixa no fim do áudio (silêncio curto + pico alto nos
+    últimos ~100 ms), aplica fade-out de 80 ms e deixa 0,4 s de silêncio limpo no final."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(arquivo), "-ac", "1", "-ar", "24000",
+                          "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
+    sr, jan = 24000, 240  # janelas de 10 ms
+    env = np.array([np.sqrt((x[i:i + jan] ** 2).mean()) for i in range(0, len(x) - jan, jan)])
+    db = 20 * np.log10(env + 1e-9)
+    fim = len(db)
+    # procura, no último 1,5 s, um trecho de silêncio (< -45 dB) de pelo menos 120 ms;
+    # o que vem depois dele e dura menos de 0,4 s é o estalo
+    ini_busca = max(0, len(db) - 150)
+    i = len(db) - 1
+    while i > ini_busca:
+        if db[i] < -45:
+            j = i
+            while j > ini_busca and db[j - 1] < -45:
+                j -= 1
+            if i - j + 1 >= 12 and (len(db) - i) <= 40:
+                fim = j + 5  # mantém 50 ms do silêncio
+                break
+            i = j - 1
+        else:
+            i -= 1
+    y = x[: fim * jan].copy()
+    f = min(len(y), int(0.08 * sr))
+    y[-f:] *= np.linspace(1, 0, f)
+    y = np.concatenate([y, np.zeros(int(0.4 * sr), dtype=np.float32)])
+    pcm = (np.clip(y, -1, 1) * 32767).astype(np.int16).tobytes()
+    tmp = Path(str(arquivo) + ".tmp.mp3")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", "-",
+                    "-b:a", "128k", str(tmp)], input=pcm, check=True)
+    tmp.replace(arquivo)
+    return (len(x) - fim * jan) / sr  # segundos removidos
+
+
 def gerar(texto, voz, modelo, saida, pasta_post=None, vozes=None):
     if vozes:  # diálogo: {"Narrador": "Charon", "Tito": "Puck"}; roteiro com linhas "Nome: fala"
         fala = {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": [
@@ -59,6 +97,9 @@ def gerar(texto, voz, modelo, saida, pasta_post=None, vozes=None):
         f.write(pcm); f.flush()
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", "24000", "-ac", "1",
                         "-i", f.name, "-b:a", "128k", str(saida)], check=True)
+    cortado = limpar_final(saida)
+    if cortado > 0.02:
+        print(f"  estalo final removido ({cortado*1000:.0f} ms)")
 
 
 def main():
@@ -95,4 +136,8 @@ def main():
 
 
 if __name__ == "__main__":
+    if len(sys.argv) >= 3 and sys.argv[1] == "limpar":  # corrige áudios já gerados
+        for arq in sys.argv[2:]:
+            print(arq, f"{limpar_final(arq)*1000:.0f} ms removidos")
+        sys.exit(0)
     sys.exit(main())

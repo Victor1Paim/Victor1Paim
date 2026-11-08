@@ -3,7 +3,7 @@
 Precisa mesmo dormir 8 horas por noite?
 
 2
-00:00:03,040 --> 00:00:05,800
+00:00:03,020 --> 00:00:05,800
 Eu durmo 7 e ainda acordo com culpa.
 
 3
@@ -47,13 +47,13 @@ De 7 a 9 está ótimo.
 E horário certinho ajuda mais do que contar minuto.
 
 13
-00:00:32,680 --> 00:00:33,440
+00:00:32,640 --> 00:00:33,440
 Resumiu bem.
 
 14
-00:00:33,720 --> 00:00:34,120
+00:00:33,780 --> 00:00:34,120
 Curtiu?
 
 15
-00:00:34,260 --> 00:00:35,700
+00:00:34,260 --> 00:00:35,680
 Então segue a gente para ver mais.

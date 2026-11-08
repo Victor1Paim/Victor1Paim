@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #FDF3ED; }
+      #main { position: relative; width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="40.6" data-width="1080" data-height="1920">
+      <div id="capa" data-composition-id="capa" data-composition-src="compositions/capa.html"
+        data-start="0" data-duration="2.2" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="duvida" data-composition-id="duvida" data-composition-src="compositions/duvida.html"
+        data-start="2.2" data-duration="3.35" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="estudo" data-composition-id="estudo" data-composition-src="compositions/estudo.html"
+        data-start="5.55" data-duration="6.65" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="mito" data-composition-id="mito" data-composition-src="compositions/mito.html"
+        data-start="12.2" data-duration="3.3" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="oque" data-composition-id="oque" data-composition-src="compositions/oque.html"
+        data-start="15.5" data-duration="1.8" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="forca" data-composition-id="forca" data-composition-src="compositions/forca.html"
+        data-start="17.3" data-duration="7.3" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="escudo" data-composition-id="escudo" data-composition-src="compositions/escudo.html"
+        data-start="24.6" data-duration="5.05" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="resumo" data-composition-id="resumo" data-composition-src="compositions/resumo.html"
+        data-start="29.65" data-duration="6.5" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="cta" data-composition-id="cta" data-composition-src="compositions/cta.html"
+        data-start="36.15" data-duration="4.45" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="legendas" data-composition-id="legendas" data-composition-src="compositions/legendas.html"
+        data-start="0" data-duration="40.6" data-track-index="2" data-track-kind="captions"
+        data-width="1080" data-height="1920" style="z-index:5"></div>
+      <audio id="voz" class="clip" src="assets/voz.mp3" data-start="0" data-track-index="3" data-volume="1" data-fade-out="0.3"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

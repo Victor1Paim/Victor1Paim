@@ -1,0 +1,53 @@
+<template>
+<style>
+  #root{position:absolute;inset:0;font-family:'Nunito',sans-serif;pointer-events:none;}
+  .leg{position:absolute;left:80px;top:1180px;max-width:640px;background:#fff;border-radius:24px;padding:18px 30px;
+        font-weight:900;font-size:50px;line-height:1.15;color:#2B2B2B;box-shadow:0 12px 34px rgba(80,40,20,.14);
+        opacity:0;visibility:hidden;}
+  .leg b{color:#D45F2B;font-weight:900;}
+</style>
+<div id="root" data-composition-id="legendas" data-width="1080" data-height="1920" data-layout-allow-caption-zone>
+<div class="leg" id="leg-0">Alongar antes do <b>treino</b></div>
+<div class="leg" id="leg-1"><b>evita a lesão?</b></div>
+<div class="leg" id="leg-2">Uma análise de <b>25 estudos</b>,</div>
+<div class="leg" id="leg-3">com mais de <b>26 mil pessoas</b>,</div>
+<div class="leg" id="leg-4">comparou formas de <b>prevenir lesão</b></div>
+<div class="leg" id="leg-5">no esporte.</div>
+<div class="leg" id="leg-6">O <b>alongamento</b>, sozinho,</div>
+<div class="leg" id="leg-7"><b>quase não</b> fez diferença.</div>
+<div class="leg" id="leg-8">O treino de <b>força</b>.</div>
+<div class="leg" id="leg-9">As lesões caíram</div>
+<div class="leg" id="leg-10">para cerca de <b>um terço</b>.</div>
+<div class="leg" id="leg-11">Treino de <b>equilíbrio</b> também ajudou,</div>
+<div class="leg" id="leg-12">cortando <b>quase pela metade</b>.</div>
+<div class="leg" id="leg-13">Alongar <b>não faz mal</b></div>
+<div class="leg" id="leg-14">e ajuda na <b>flexibilidade</b>.</div>
+<div class="leg" id="leg-15">Só não é o <b>escudo</b></div>
+<div class="leg" id="leg-16">contra a lesão.</div>
+<div class="leg" id="leg-17"><b>Resumiu bem.</b></div>
+<div class="leg" id="leg-18">Curtiu? Então <b>segue a gente</b></div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#leg-0",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},0.15);tl.to("#leg-0",{opacity:0,duration:0.1,ease:"power2.in"},1.10);tl.set("#leg-0",{opacity:0,visibility:"hidden"},1.20);
+  tl.fromTo("#leg-1",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},1.22);tl.to("#leg-1",{opacity:0,duration:0.1,ease:"power2.in"},2.14);tl.set("#leg-1",{opacity:0,visibility:"hidden"},2.24);
+  tl.fromTo("#leg-2",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},5.60);tl.to("#leg-2",{opacity:0,duration:0.1,ease:"power2.in"},7.64);tl.set("#leg-2",{opacity:0,visibility:"hidden"},7.74);
+  tl.fromTo("#leg-3",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},7.76);tl.to("#leg-3",{opacity:0,duration:0.1,ease:"power2.in"},9.30);tl.set("#leg-3",{opacity:0,visibility:"hidden"},9.40);
+  tl.fromTo("#leg-4",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},9.42);tl.to("#leg-4",{opacity:0,duration:0.1,ease:"power2.in"},11.32);tl.set("#leg-4",{opacity:0,visibility:"hidden"},11.42);
+  tl.fromTo("#leg-5",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},11.44);tl.to("#leg-5",{opacity:0,duration:0.1,ease:"power2.in"},12.06);tl.set("#leg-5",{opacity:0,visibility:"hidden"},12.16);
+  tl.fromTo("#leg-6",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},12.26);tl.to("#leg-6",{opacity:0,duration:0.1,ease:"power2.in"},13.62);tl.set("#leg-6",{opacity:0,visibility:"hidden"},13.72);
+  tl.fromTo("#leg-7",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},13.74);tl.to("#leg-7",{opacity:0,duration:0.1,ease:"power2.in"},15.20);tl.set("#leg-7",{opacity:0,visibility:"hidden"},15.30);
+  tl.fromTo("#leg-8",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},17.34);tl.to("#leg-8",{opacity:0,duration:0.1,ease:"power2.in"},18.58);tl.set("#leg-8",{opacity:0,visibility:"hidden"},18.68);
+  tl.fromTo("#leg-9",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},18.72);tl.to("#leg-9",{opacity:0,duration:0.1,ease:"power2.in"},19.58);tl.set("#leg-9",{opacity:0,visibility:"hidden"},19.68);
+  tl.fromTo("#leg-10",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},19.70);tl.to("#leg-10",{opacity:0,duration:0.1,ease:"power2.in"},20.94);tl.set("#leg-10",{opacity:0,visibility:"hidden"},21.04);
+  tl.fromTo("#leg-11",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},21.32);tl.to("#leg-11",{opacity:0,duration:0.1,ease:"power2.in"},22.90);tl.set("#leg-11",{opacity:0,visibility:"hidden"},23.00);
+  tl.fromTo("#leg-12",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},23.02);tl.to("#leg-12",{opacity:0,duration:0.1,ease:"power2.in"},24.26);tl.set("#leg-12",{opacity:0,visibility:"hidden"},24.36);
+  tl.fromTo("#leg-13",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},24.80);tl.to("#leg-13",{opacity:0,duration:0.1,ease:"power2.in"},25.68);tl.set("#leg-13",{opacity:0,visibility:"hidden"},25.78);
+  tl.fromTo("#leg-14",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},25.80);tl.to("#leg-14",{opacity:0,duration:0.1,ease:"power2.in"},27.38);tl.set("#leg-14",{opacity:0,visibility:"hidden"},27.48);
+  tl.fromTo("#leg-15",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},27.54);tl.to("#leg-15",{opacity:0,duration:0.1,ease:"power2.in"},28.22);tl.set("#leg-15",{opacity:0,visibility:"hidden"},28.32);
+  tl.fromTo("#leg-16",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},28.34);tl.to("#leg-16",{opacity:0,duration:0.1,ease:"power2.in"},29.16);tl.set("#leg-16",{opacity:0,visibility:"hidden"},29.26);
+  tl.fromTo("#leg-17",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},36.20);tl.to("#leg-17",{opacity:0,duration:0.1,ease:"power2.in"},36.96);tl.set("#leg-17",{opacity:0,visibility:"hidden"},37.06);
+  tl.fromTo("#leg-18",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},37.20);tl.to("#leg-18",{opacity:0,duration:0.1,ease:"power2.in"},38.78);tl.set("#leg-18",{opacity:0,visibility:"hidden"},38.88);
+  window.__timelines["legendas"] = tl;
+</script>
+</template>

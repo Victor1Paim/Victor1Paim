@@ -36,7 +36,7 @@
  },
  {
   "palavra": "Eu",
-  "inicio": 3.04,
+  "inicio": 3.02,
   "fim": 3.58
  },
  {
@@ -137,11 +137,11 @@
  {
   "palavra": "de",
   "inicio": 10.78,
-  "fim": 10.92
+  "fim": 10.94
  },
  {
   "palavra": "7",
-  "inicio": 10.92,
+  "inicio": 10.94,
   "fim": 11.3
  },
  {
@@ -181,7 +181,7 @@
  },
  {
   "palavra": "7",
-  "inicio": 13.52,
+  "inicio": 13.56,
   "fim": 13.78
  },
  {
@@ -437,11 +437,11 @@
  {
   "palavra": "ajuda",
   "inicio": 30.72,
-  "fim": 30.96
+  "fim": 30.98
  },
  {
   "palavra": "mais",
-  "inicio": 30.96,
+  "inicio": 30.98,
   "fim": 31.24
  },
  {
@@ -466,7 +466,7 @@
  },
  {
   "palavra": "Resumiu",
-  "inicio": 32.68,
+  "inicio": 32.64,
   "fim": 33.16
  },
  {
@@ -476,7 +476,7 @@
  },
  {
   "palavra": "Curtiu?",
-  "inicio": 33.72,
+  "inicio": 33.78,
   "fim": 34.12
  },
  {
@@ -512,6 +512,6 @@
  {
   "palavra": "mais.",
   "inicio": 35.46,
-  "fim": 35.7
+  "fim": 35.68
  }
 ]

@@ -66,7 +66,7 @@
  },
  {
   "palavra": "Tô",
-  "inicio": 4.62,
+  "inicio": 4.58,
   "fim": 4.7
  },
  {
@@ -97,11 +97,11 @@
  {
   "palavra": "25",
   "inicio": 6.66,
-  "fim": 7.16
+  "fim": 7.18
  },
  {
   "palavra": "estudos",
-  "inicio": 7.16,
+  "inicio": 7.18,
   "fim": 7.84
  },
  {
@@ -122,11 +122,11 @@
  {
   "palavra": "26",
   "inicio": 8.38,
-  "fim": 8.76
+  "fim": 8.78
  },
  {
   "palavra": "mil",
-  "inicio": 8.76,
+  "inicio": 8.78,
   "fim": 8.94
  },
  {
@@ -206,7 +206,7 @@
  },
  {
   "palavra": "Ué,",
-  "inicio": 15.74,
+  "inicio": 15.7,
   "fim": 16.1
  },
  {
@@ -251,7 +251,7 @@
  },
  {
   "palavra": "As",
-  "inicio": 18.78,
+  "inicio": 18.8,
   "fim": 19.1
  },
  {
@@ -376,7 +376,7 @@
  },
  {
   "palavra": "Só",
-  "inicio": 27.58,
+  "inicio": 27.62,
   "fim": 27.8
  },
  {
@@ -447,11 +447,11 @@
  {
   "palavra": "mesmo",
   "inicio": 32.94,
-  "fim": 33.18
+  "fim": 33.2
  },
  {
   "palavra": "é",
-  "inicio": 33.18,
+  "inicio": 33.2,
   "fim": 33.32
  },
  {
@@ -542,6 +542,6 @@
  {
   "palavra": "mais.",
   "inicio": 38.96,
-  "fim": 39.22
+  "fim": 39.2
  }
 ]

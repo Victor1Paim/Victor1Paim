@@ -1,0 +1,2 @@
+{"quando": "2026-11-08T02:36:00", "etapa": "banner youtube", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 177, "entrada_imagem": 1024, "saida_imagem": 1372}, "usd": 0.050237}
+{"quando": "2026-11-08T02:36:04", "etapa": "perfil youtube", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 143, "entrada_imagem": 1024, "saida_imagem": 1756}, "usd": 0.061587}
