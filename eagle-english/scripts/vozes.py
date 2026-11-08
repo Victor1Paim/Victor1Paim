@@ -67,6 +67,35 @@ def montar(post):
     print(f"criado {arq.relative_to(PROJ)} com {len(falas)} falas: revise gancho e CTA (seção 12) antes de gerar")
 
 
+def tirar_estalo(pcm, sr=24000):
+    """O Gemini TTS às vezes devolve um ruído curto e forte DEPOIS do fim da fala (estalo no final).
+    Remove blocos finais curtos (< 0,4 s) que venham depois de >= 80 ms de quase-silêncio."""
+    import numpy as np
+    a = np.frombuffer(pcm, np.int16)
+    w = sr // 100  # janelas de 10 ms
+    for _ in range(3):
+        n = len(a) // w
+        if n < 20:
+            break
+        rms = np.sqrt((a[:n * w].astype(float).reshape(n, w) ** 2).mean(axis=1))
+        som = np.nonzero(rms > 60)[0]
+        if not len(som):
+            break
+        fim = som[-1]
+        ini = fim
+        while ini > 0 and rms[ini - 1] > 60:
+            ini -= 1
+        silencio = 0
+        j = ini - 1
+        while j >= 0 and rms[j] <= 60:
+            silencio += 1; j -= 1
+        if fim - ini + 1 < 40 and silencio >= 8 and j > 0:
+            a = a[:(ini - silencio // 2) * w]  # corta o ruído, mantém metade do silêncio antes dele
+        else:
+            break
+    return a.tobytes()
+
+
 def tts(texto, voz, modelo, saida, post):
     body = {"contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
@@ -78,14 +107,15 @@ def tts(texto, voz, modelo, saida, post):
     u = d.get("usageMetadata", {})
     registrar(post, modelo, "voz", entrada_texto=u.get("promptTokenCount", 0),
               saida_audio=u.get("candidatesTokenCount", 0))
-    pcm = base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+    pcm = tirar_estalo(base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]))
     with tempfile.NamedTemporaryFile(suffix=".pcm") as f:
         f.write(pcm); f.flush()
-        # wav 48 kHz para montar no ffmpeg sem perda; corta silêncio do começo e do fim
+        # wav 48 kHz para montar no ffmpeg sem perda. Apara o silêncio das pontas deixando 80 ms de folga,
+        # faz fade de 60 ms no fim e 10 ms no começo e soma 150 ms de silêncio: sem estalo de corte no final.
+        apara = "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.08"
         subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-f", "s16le", "-ar", "24000", "-ac", "1",
                         "-i", f.name, "-af",
-                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        f"{apara},areverse,{apara},afade=t=in:d=0.06,areverse,afade=t=in:d=0.01,apad=pad_dur=0.15",
                         "-ar", "48000", str(saida)], check=True)
 
 

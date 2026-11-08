@@ -15,6 +15,7 @@ Todo conteúdo termina com o CTA do produto **Eagle 350 – Inglês por Situaç�
 | `docs/EAGLE_ENGLISH_PROJETO_COMPLETO.md` | regras completas: estado, prompts do ChatGPT, identidade, estilos, pronúncia, fila, CTA, banco de frases, pacotes prontos |
 | `docs/PASSO_A_PASSO_EAGLE_ENGLISH.md` | quem faz o quê, em que ordem |
 | `docs/estado.md` | último bloco ESTADO ATUALIZADO do ChatGPT |
+| `docs/PROMPT_PESQUISA_MANUS_VIDEO.md` | prompt de pesquisa no Manus para os vídeos (quiz, pronúncia, estilos) |
 | `docs/originais/` | os PDFs originais (fonte da conversão) |
 | `templates/` | cartões HTML (capa, frase, produto) para texto exato na tela |
 | `scripts/` | `preparar.sh`, `novo_post.sh`, `render_cartoes.py`, `vozes.py` (Gemini TTS + Whisper) |
