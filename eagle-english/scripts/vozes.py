@@ -58,8 +58,8 @@ def montar(post):
     for i, f in enumerate(d["frases"], 1):
         falas.append({"id": f"{i:02d}_en", "lingua": "en", "texto": f["en"]})
     falas.append({"id": "99_cta", "lingua": "pt", "texto":
-                  f"Quer as frases certas pra cada situação, como no {d['tema']}? "
-                  "No Eagle 350 você tem 350 mapas visuais com tradução e pronúncia, e mais 4 bônus. Link na bio!"})
+                  f"Essas foram {len(d['frases'])}. No Eagle 350 tem mapas de 35 situações do dia a dia, "
+                  "com tradução e pronúncia escrita, e mais 4 bônus. Link na bio. E manda pra quem vai viajar!"})
     arq = post / "falas.json"
     if arq.exists():
         sys.exit(f"{arq} já existe; apague para remontar")

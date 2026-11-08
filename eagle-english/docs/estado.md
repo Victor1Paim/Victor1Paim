@@ -15,4 +15,6 @@ ESTADO ATUALIZADO (08/11/2026 – montado a partir dos PDFs)
 - Pendências: D1 (gírias BR slide 7 e capa; redes sociais capa; date capa e slides 2–9);
   F1 make/take/do (slide 3 "shower", "TÚK/NÉP", "pergunta", acento em "DO");
   D6 viagem de carro, slide 4: /kén uí STÓP for GUÉS/.
-- Mudanças de regra: CTA Eagle 350 obrigatório em todo conteúdo (desde 30/10).
+- Mudanças de regra: vídeos de 40 s a 1 min 10 s e CTA final novo (docs/HOOKS_E_CTA_VIDEO.md),
+  valendo a partir das próximas produções.
+- Mudanças anteriores: CTA Eagle 350 obrigatório em todo conteúdo (desde 30/10).

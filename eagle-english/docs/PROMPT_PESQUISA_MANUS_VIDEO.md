@@ -12,7 +12,7 @@ O perfil tem cerca de 2.000 seguidores e até agora cresceu com carrosséis. Ago
 
 ## Contexto (o que já fazemos, para você não repetir)
 
-- Vídeos de 20 a 45 s, 9:16, narração por voz sintética (pt-BR + voz americana para as frases em inglês),
+- Vídeos de 40 s a 1 min 10 s, 9:16, narração por voz sintética (pt-BR + voz americana para as frases em inglês),
   cartões de texto na tela, mascote (uma águia de óculos) discreto no canto. Não aparecemos de rosto.
 - Formatos atuais:
   - **A) "Repita até aprender"**: 7 frases de uma situação (salão, lavanderia, correios…), cada uma dita

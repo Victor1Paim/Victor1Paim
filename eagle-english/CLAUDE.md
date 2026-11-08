@@ -9,7 +9,9 @@ Idioma de trabalho com o usuário: português do Brasil, direto e curto.
 
 ## Sempre
 
-- Formato 1080x1920 (9:16), 30 fps, H.264 + AAC, até 60 s (ideal 20–45 s).
+- Formato 1080x1920 (9:16), 30 fps, H.264 + AAC. **Duração padrão: 40 s a 1 min 10 s** (a partir das
+  próximas produções; o D10 Salão segue o modelo antigo). Estrutura, ganchos, re-gancho aos 25–30 s e
+  o CTA final novo: `docs/HOOKS_E_CTA_VIDEO.md` (manda sobre a seção 2.6 do passo a passo).
 - Gancho nos 2 primeiros segundos (falado + texto na tela).
 - Textos na tela renderizados a partir de templates HTML (`templates/`, via
   `scripts/render_cartoes.py`): texto exato, acentos certos, nunca escritos por gerador de imagem.
@@ -17,8 +19,9 @@ Idioma de trabalho com o usuário: português do Brasil, direto e curto.
   nem nos 150 px da direita (interface do TikTok/Reels).
 - Narração em pt-BR; frases em inglês com voz americana (arquivo separado).
 - Música a 10–15% do volume da voz; loudness final perto de -14 LUFS.
-- Final obrigatório (seção 12.3): CTA falado de 5 a 8 s + texto na tela de no máximo 2 linhas
-  ("Eagle 350: 350 mapas + 4 bônus | Link na bio").
+- Final obrigatório (seção 12.3 + `docs/HOOKS_E_CTA_VIDEO.md` seção 4): CTA falado de 6 a 9 s
+  (ponte com o tema → o que recebe → "link na bio" + "manda pra quem…"/"comenta") + texto na tela de
+  no máximo 2 linhas ("Eagle 350: 350 mapas + 4 bônus" / "Link na bio 👆").
 - Entregar junto: `roteiro.md`, `legenda.md` (legenda terminando no bloco de CTA),
   comentário fixado e resposta curta para "eu quero".
 - Fechar a entrega com "CTA incluído: sim" + checklist 12.7.
