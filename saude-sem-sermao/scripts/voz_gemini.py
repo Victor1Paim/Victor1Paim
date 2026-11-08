@@ -12,7 +12,7 @@ Regra aprendida em 08/11/2026: NÃO colocar instrução de tom no texto ("Say wa
 O modelo gemini-3.8-flash-tts às vezes lê a instrução em voz alta, e não aceita systemInstruction.
 Sem instrução, a leitura natural já sai calorosa e bate 99% com o roteiro.
 """
-import argparse, base64, json, os, subprocess, sys, tempfile, urllib.request
+import argparse, base64, re, json, os, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
@@ -128,7 +128,12 @@ def main():
         linhas = [l for l in r.splitlines() if l.startswith(("semelhança", "insert", "replace", "delete"))]
         pct = float(linhas[0].split()[1].rstrip("%")) if linhas else 0.0
         # erro nas primeiras 8 palavras (o gancho) reprova, mesmo com semelhança alta
-        erro_gancho = [l for l in linhas[1:] if " pos=" in l and int(l.rsplit("pos=", 1)[1]) < 8]
+        # palavras pequenas (artigo, preposição) acrescentadas ou trocadas não mudam o sentido do gancho
+        MIUDAS = {"a", "o", "as", "os", "e", "de", "do", "da", "um", "uma", "pra", "para", "pro"}
+        def relevante(l):
+            difs = re.findall(r"(?:roteiro|voz)='([^']*)'", l)
+            return any(w not in MIUDAS for d in difs for w in d.split())
+        erro_gancho = [l for l in linhas[1:] if " pos=" in l and int(l.rsplit("pos=", 1)[1]) < 8 and relevante(l)]
         print(f"tentativa {i}: {pct}%" + ("  [ERRO NO GANCHO: " + "; ".join(erro_gancho) + "]" if erro_gancho else ""))
         if pct >= a.minimo and not erro_gancho:
             print("\n".join(linhas[1:]) or "sem diferenças")

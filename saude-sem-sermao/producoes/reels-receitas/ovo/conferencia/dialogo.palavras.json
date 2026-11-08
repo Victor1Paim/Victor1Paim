@@ -1,0 +1,757 @@
+[
+ {
+  "palavra": "Ovo",
+  "inicio": 0.0,
+  "fim": 0.4
+ },
+ {
+  "palavra": "aumenta",
+  "inicio": 0.4,
+  "fim": 0.78
+ },
+ {
+  "palavra": "o",
+  "inicio": 0.78,
+  "fim": 0.86
+ },
+ {
+  "palavra": "colesterol?",
+  "inicio": 0.86,
+  "fim": 1.32
+ },
+ {
+  "palavra": "Para",
+  "inicio": 1.64,
+  "fim": 2.16
+ },
+ {
+  "palavra": "a",
+  "inicio": 2.16,
+  "fim": 2.3
+ },
+ {
+  "palavra": "maioria",
+  "inicio": 2.3,
+  "fim": 2.54
+ },
+ {
+  "palavra": "das",
+  "inicio": 2.54,
+  "fim": 2.76
+ },
+ {
+  "palavra": "pessoas,",
+  "inicio": 2.76,
+  "fim": 3.2
+ },
+ {
+  "palavra": "não",
+  "inicio": 3.4,
+  "fim": 3.76
+ },
+ {
+  "palavra": "do",
+  "inicio": 3.76,
+  "fim": 3.94
+ },
+ {
+  "palavra": "jeito",
+  "inicio": 3.94,
+  "fim": 4.16
+ },
+ {
+  "palavra": "que",
+  "inicio": 4.16,
+  "fim": 4.28
+ },
+ {
+  "palavra": "te",
+  "inicio": 4.28,
+  "fim": 4.4
+ },
+ {
+  "palavra": "contaram.",
+  "inicio": 4.4,
+  "fim": 4.82
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 5.44,
+  "fim": 5.64
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 5.64,
+  "fim": 5.88
+ },
+ {
+  "palavra": "não",
+  "inicio": 5.88,
+  "fim": 6.0
+ },
+ {
+  "palavra": "é",
+  "inicio": 6.0,
+  "fim": 6.18
+ },
+ {
+  "palavra": "cheio",
+  "inicio": 6.18,
+  "fim": 6.56
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.56,
+  "fim": 6.66
+ },
+ {
+  "palavra": "colesterol?",
+  "inicio": 6.66,
+  "fim": 7.06
+ },
+ {
+  "palavra": "Tem",
+  "inicio": 7.46,
+  "fim": 7.78
+ },
+ {
+  "palavra": "colesterol,",
+  "inicio": 7.78,
+  "fim": 8.3
+ },
+ {
+  "palavra": "sim.",
+  "inicio": 8.38,
+  "fim": 8.52
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 8.76,
+  "fim": 9.22
+ },
+ {
+  "palavra": "uma",
+  "inicio": 9.22,
+  "fim": 9.4
+ },
+ {
+  "palavra": "análise",
+  "inicio": 9.4,
+  "fim": 9.8
+ },
+ {
+  "palavra": "com",
+  "inicio": 9.8,
+  "fim": 10.0
+ },
+ {
+  "palavra": "1",
+  "inicio": 10.0,
+  "fim": 10.26
+ },
+ {
+  "palavra": ",7",
+  "inicio": 10.26,
+  "fim": 10.9
+ },
+ {
+  "palavra": "milhão",
+  "inicio": 10.9,
+  "fim": 11.4
+ },
+ {
+  "palavra": "de",
+  "inicio": 11.4,
+  "fim": 11.56
+ },
+ {
+  "palavra": "pessoas",
+  "inicio": 11.56,
+  "fim": 11.98
+ },
+ {
+  "palavra": "não",
+  "inicio": 11.98,
+  "fim": 12.5
+ },
+ {
+  "palavra": "viu",
+  "inicio": 12.5,
+  "fim": 12.72
+ },
+ {
+  "palavra": "ligação",
+  "inicio": 12.72,
+  "fim": 13.22
+ },
+ {
+  "palavra": "entre",
+  "inicio": 13.22,
+  "fim": 13.48
+ },
+ {
+  "palavra": "comer",
+  "inicio": 13.48,
+  "fim": 13.78
+ },
+ {
+  "palavra": "até",
+  "inicio": 13.78,
+  "fim": 14.02
+ },
+ {
+  "palavra": "um",
+  "inicio": 14.02,
+  "fim": 14.18
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 14.18,
+  "fim": 14.4
+ },
+ {
+  "palavra": "por",
+  "inicio": 14.4,
+  "fim": 14.64
+ },
+ {
+  "palavra": "dia",
+  "inicio": 14.64,
+  "fim": 14.9
+ },
+ {
+  "palavra": "e",
+  "inicio": 14.9,
+  "fim": 15.16
+ },
+ {
+  "palavra": "doença",
+  "inicio": 15.16,
+  "fim": 15.6
+ },
+ {
+  "palavra": "do",
+  "inicio": 15.6,
+  "fim": 15.72
+ },
+ {
+  "palavra": "coração.",
+  "inicio": 15.72,
+  "fim": 16.02
+ },
+ {
+  "palavra": "O",
+  "inicio": 16.56,
+  "fim": 16.8
+ },
+ {
+  "palavra": "colesterol",
+  "inicio": 16.8,
+  "fim": 17.2
+ },
+ {
+  "palavra": "do",
+  "inicio": 17.2,
+  "fim": 17.36
+ },
+ {
+  "palavra": "sangue",
+  "inicio": 17.36,
+  "fim": 17.72
+ },
+ {
+  "palavra": "depende",
+  "inicio": 17.72,
+  "fim": 18.02
+ },
+ {
+  "palavra": "mais",
+  "inicio": 18.02,
+  "fim": 18.26
+ },
+ {
+  "palavra": "do",
+  "inicio": 18.26,
+  "fim": 18.4
+ },
+ {
+  "palavra": "conjunto",
+  "inicio": 18.4,
+  "fim": 18.9
+ },
+ {
+  "palavra": "da",
+  "inicio": 18.9,
+  "fim": 19.08
+ },
+ {
+  "palavra": "alimentação",
+  "inicio": 19.08,
+  "fim": 19.66
+ },
+ {
+  "palavra": "do",
+  "inicio": 19.66,
+  "fim": 19.84
+ },
+ {
+  "palavra": "que",
+  "inicio": 19.84,
+  "fim": 19.96
+ },
+ {
+  "palavra": "do",
+  "inicio": 19.96,
+  "fim": 20.1
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 20.1,
+  "fim": 20.34
+ },
+ {
+  "palavra": "sozinho.",
+  "inicio": 20.34,
+  "fim": 20.72
+ },
+ {
+  "palavra": "Então",
+  "inicio": 21.22,
+  "fim": 21.74
+ },
+ {
+  "palavra": "me",
+  "inicio": 21.74,
+  "fim": 21.96
+ },
+ {
+  "palavra": "ensina",
+  "inicio": 21.96,
+  "fim": 22.22
+ },
+ {
+  "palavra": "uma",
+  "inicio": 22.22,
+  "fim": 22.34
+ },
+ {
+  "palavra": "receita.",
+  "inicio": 22.34,
+  "fim": 22.76
+ },
+ {
+  "palavra": "Omelete",
+  "inicio": 23.38,
+  "fim": 23.9
+ },
+ {
+  "palavra": "de",
+  "inicio": 23.9,
+  "fim": 24.08
+ },
+ {
+  "palavra": "forno.",
+  "inicio": 24.08,
+  "fim": 24.44
+ },
+ {
+  "palavra": "Bata",
+  "inicio": 24.7,
+  "fim": 25.14
+ },
+ {
+  "palavra": "4",
+  "inicio": 25.14,
+  "fim": 25.44
+ },
+ {
+  "palavra": "ovos",
+  "inicio": 25.44,
+  "fim": 25.8
+ },
+ {
+  "palavra": "com",
+  "inicio": 25.8,
+  "fim": 25.94
+ },
+ {
+  "palavra": "sal,",
+  "inicio": 25.94,
+  "fim": 26.28
+ },
+ {
+  "palavra": "pimenta",
+  "inicio": 26.44,
+  "fim": 26.86
+ },
+ {
+  "palavra": "e",
+  "inicio": 26.86,
+  "fim": 26.96
+ },
+ {
+  "palavra": "orégano.",
+  "inicio": 26.96,
+  "fim": 27.34
+ },
+ {
+  "palavra": "Junte",
+  "inicio": 27.34,
+  "fim": 28.34
+ },
+ {
+  "palavra": "tomate,",
+  "inicio": 28.34,
+  "fim": 28.94
+ },
+ {
+  "palavra": "cebola",
+  "inicio": 29.1,
+  "fim": 29.62
+ },
+ {
+  "palavra": "e",
+  "inicio": 29.62,
+  "fim": 29.78
+ },
+ {
+  "palavra": "espinafre.",
+  "inicio": 29.78,
+  "fim": 30.3
+ },
+ {
+  "palavra": "Coloque",
+  "inicio": 30.72,
+  "fim": 31.32
+ },
+ {
+  "palavra": "numa",
+  "inicio": 31.32,
+  "fim": 31.48
+ },
+ {
+  "palavra": "forma",
+  "inicio": 31.48,
+  "fim": 31.84
+ },
+ {
+  "palavra": "untada,",
+  "inicio": 31.84,
+  "fim": 32.44
+ },
+ {
+  "palavra": "cubra",
+  "inicio": 32.8,
+  "fim": 33.06
+ },
+ {
+  "palavra": "com",
+  "inicio": 33.06,
+  "fim": 33.22
+ },
+ {
+  "palavra": "queijo",
+  "inicio": 33.22,
+  "fim": 33.7
+ },
+ {
+  "palavra": "e",
+  "inicio": 33.7,
+  "fim": 34.0
+ },
+ {
+  "palavra": "asse",
+  "inicio": 34.0,
+  "fim": 34.24
+ },
+ {
+  "palavra": "a",
+  "inicio": 34.24,
+  "fim": 34.42
+ },
+ {
+  "palavra": "180",
+  "inicio": 34.42,
+  "fim": 34.82
+ },
+ {
+  "palavra": "graus",
+  "inicio": 34.82,
+  "fim": 35.32
+ },
+ {
+  "palavra": "por",
+  "inicio": 35.32,
+  "fim": 35.58
+ },
+ {
+  "palavra": "uns",
+  "inicio": 35.58,
+  "fim": 35.76
+ },
+ {
+  "palavra": "20",
+  "inicio": 35.76,
+  "fim": 36.02
+ },
+ {
+  "palavra": "minutos.",
+  "inicio": 36.02,
+  "fim": 36.34
+ },
+ {
+  "palavra": "E",
+  "inicio": 36.78,
+  "fim": 37.18
+ },
+ {
+  "palavra": "se",
+  "inicio": 37.18,
+  "fim": 37.28
+ },
+ {
+  "palavra": "eu",
+  "inicio": 37.28,
+  "fim": 37.38
+ },
+ {
+  "palavra": "tiver",
+  "inicio": 37.38,
+  "fim": 37.58
+ },
+ {
+  "palavra": "colesterol",
+  "inicio": 37.58,
+  "fim": 38.08
+ },
+ {
+  "palavra": "alto?",
+  "inicio": 38.08,
+  "fim": 38.4
+ },
+ {
+  "palavra": "Aí",
+  "inicio": 38.78,
+  "fim": 39.2
+ },
+ {
+  "palavra": "combine",
+  "inicio": 39.2,
+  "fim": 39.58
+ },
+ {
+  "palavra": "a",
+  "inicio": 39.58,
+  "fim": 39.72
+ },
+ {
+  "palavra": "quantidade",
+  "inicio": 39.72,
+  "fim": 40.02
+ },
+ {
+  "palavra": "com",
+  "inicio": 40.02,
+  "fim": 40.32
+ },
+ {
+  "palavra": "seu",
+  "inicio": 40.32,
+  "fim": 40.48
+ },
+ {
+  "palavra": "médico",
+  "inicio": 40.48,
+  "fim": 40.8
+ },
+ {
+  "palavra": "ou",
+  "inicio": 40.8,
+  "fim": 41.04
+ },
+ {
+  "palavra": "nutricionista.",
+  "inicio": 41.04,
+  "fim": 41.74
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 42.36,
+  "fim": 42.88
+ },
+ {
+  "palavra": "O",
+  "inicio": 43.14,
+  "fim": 43.48
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 43.48,
+  "fim": 43.7
+ },
+ {
+  "palavra": "não",
+  "inicio": 43.7,
+  "fim": 43.94
+ },
+ {
+  "palavra": "é",
+  "inicio": 43.94,
+  "fim": 44.12
+ },
+ {
+  "palavra": "vilão",
+  "inicio": 44.12,
+  "fim": 44.44
+ },
+ {
+  "palavra": "e",
+  "inicio": 44.44,
+  "fim": 44.74
+ },
+ {
+  "palavra": "essa",
+  "inicio": 44.74,
+  "fim": 44.96
+ },
+ {
+  "palavra": "omelete",
+  "inicio": 44.96,
+  "fim": 45.42
+ },
+ {
+  "palavra": "rende",
+  "inicio": 45.42,
+  "fim": 45.86
+ },
+ {
+  "palavra": "o",
+  "inicio": 45.86,
+  "fim": 45.92
+ },
+ {
+  "palavra": "café",
+  "inicio": 45.92,
+  "fim": 46.16
+ },
+ {
+  "palavra": "da",
+  "inicio": 46.16,
+  "fim": 46.3
+ },
+ {
+  "palavra": "manhã",
+  "inicio": 46.3,
+  "fim": 46.48
+ },
+ {
+  "palavra": "da",
+  "inicio": 46.48,
+  "fim": 46.62
+ },
+ {
+  "palavra": "semana.",
+  "inicio": 46.62,
+  "fim": 46.96
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 47.52,
+  "fim": 48.02
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 48.02,
+  "fim": 48.22
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 48.68,
+  "fim": 48.92
+ },
+ {
+  "palavra": "para",
+  "inicio": 48.92,
+  "fim": 49.04
+ },
+ {
+  "palavra": "quem",
+  "inicio": 49.04,
+  "fim": 49.22
+ },
+ {
+  "palavra": "tem",
+  "inicio": 49.22,
+  "fim": 49.38
+ },
+ {
+  "palavra": "medo",
+  "inicio": 49.38,
+  "fim": 49.68
+ },
+ {
+  "palavra": "de",
+  "inicio": 49.68,
+  "fim": 49.82
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 49.82,
+  "fim": 50.16
+ },
+ {
+  "palavra": "e",
+  "inicio": 50.16,
+  "fim": 50.58
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 50.58,
+  "fim": 51.14
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 51.3,
+  "fim": 51.74
+ },
+ {
+  "palavra": "qual",
+  "inicio": 51.74,
+  "fim": 52.0
+ },
+ {
+  "palavra": "legume",
+  "inicio": 52.0,
+  "fim": 52.34
+ },
+ {
+  "palavra": "você",
+  "inicio": 52.34,
+  "fim": 52.58
+ },
+ {
+  "palavra": "colocaria",
+  "inicio": 52.58,
+  "fim": 53.18
+ },
+ {
+  "palavra": "e",
+  "inicio": 53.18,
+  "fim": 53.58
+ },
+ {
+  "palavra": "segue",
+  "inicio": 53.58,
+  "fim": 53.88
+ },
+ {
+  "palavra": "para",
+  "inicio": 53.88,
+  "fim": 54.02
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 54.02,
+  "fim": 54.24
+ }
+]

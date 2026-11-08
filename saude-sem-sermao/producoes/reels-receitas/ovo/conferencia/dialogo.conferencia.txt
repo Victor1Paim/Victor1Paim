@@ -1,0 +1,4 @@
+semelhança: 99.0%
+insert: roteiro='' voz='a' pos=5
+delete: roteiro='vírgula' voz='' pos=29
+insert: roteiro='' voz='o' pos=118

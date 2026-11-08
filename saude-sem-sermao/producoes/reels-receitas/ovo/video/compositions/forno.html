@@ -1,0 +1,73 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .foto{position:absolute;inset:0;overflow:hidden;}
+  .foto img{position:absolute;left:-100px;top:0;width:1280px;height:1920px;object-fit:cover;}
+  .sombra-top{position:absolute;left:0;right:0;top:0;height:900px;background:linear-gradient(rgba(18,22,18,.78),rgba(18,22,18,0));}
+  .sombra-base{position:absolute;left:0;right:0;bottom:0;height:900px;background:linear-gradient(rgba(18,22,18,0),rgba(18,22,18,.6));}
+  .chip{position:absolute;padding:12px 28px;border-radius:999px;font-weight:900;font-size:44px;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.25);}
+  .passo{position:absolute;left:80px;top:250px;width:120px;height:120px;border-radius:50%;background:var(--laranja);color:#fff;
+         font-family:'Playfair Display',serif;font-weight:700;font-size:80px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.3);}
+  .tit-foto{position:absolute;left:80px;width:920px;font-family:'Playfair Display',serif;font-weight:800;font-size:100px;line-height:1.02;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.4);}
+  .tit-foto em{font-style:italic;color:#F2C46A;}
+
+  #forno-temp{left:80px;top:420px;background:var(--laranja);font-size:64px;}
+  #forno-rel{position:absolute;left:640px;top:380px;width:240px;height:240px;}
+  #forno-min{position:absolute;left:640px;top:470px;width:240px;text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:64px;color:#fff;}
+  #forno-c1{left:200px;top:250px;background:#5F6E52;}
+  #forno-c2{left:200px;top:330px;background:#8A6A1F;}
+</style>
+<div id="root" data-composition-id="forno" data-width="1080" data-height="1920">
+
+  <div class="foto"><img id="forno-img" src="assets/forma.jpg"></div><div class="sombra-top"></div>
+  <div class="passo" id="forno-n">2</div>
+  <div class="chip" id="forno-c1">forma untada</div>
+  <div class="chip" id="forno-c2">+ queijo por cima</div>
+  <div class="chip" id="forno-temp">🔥 180 °C</div>
+  <svg id="forno-rel" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="rgba(0,0,0,.35)" stroke="rgba(255,255,255,.35)" stroke-width="8"/>
+    <circle id="forno-arco" cx="50" cy="50" r="42" fill="none" stroke="#F2C46A" stroke-width="8" stroke-linecap="butt" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" transform="rotate(-90 50 50)"/></svg>
+  <div id="forno-min">0 min</div>
+  <div class="wipe" id="forno-wipe" style="background:#1c211c"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#forno-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#forno-img",{scale:1.0,x:0,transformOrigin:"50% 50%"},{scale:1.12,x:20,duration:6.15,ease:"none"},0);
+  tl.fromTo("#forno-n",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.35,ease:"back.out(2.4)"},0.3);
+  tl.fromTo("#forno-c1",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.8)"},0.88);
+  tl.fromTo("#forno-c2",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.8)"},2.62);
+  tl.fromTo("#forno-temp",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.35,ease:"back.out(2.4)"},3.82);
+  tl.fromTo(["#forno-rel","#forno-min"],{opacity:0},{opacity:1,duration:0.3},4.96);
+  tl.fromTo("#forno-arco",{attr:{"stroke-dashoffset":1}},{attr:{"stroke-dashoffset":0},duration:1.0,ease:"power2.out"},5.16);
+  (function(){const o={v:0};const el=document.querySelector("#forno-min");
+    tl.fromTo(o,{v:0},{v:20,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v)+" min";}},5.16);})();
+
+  window.__timelines["forno"] = tl;
+</script>
+</template>
