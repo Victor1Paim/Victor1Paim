@@ -58,10 +58,84 @@ def preparar_vozes(post, cfg, vel):
     res = {}
     for i, f in falas.items():
         src, dst = post / "audio" / f"{i}.wav", out / f"{i}.wav"
+        if not src.exists():  # prévia: silêncio do tamanho estimado da fala (~13 caracteres/s)
+            est = max(1.0, len(f["texto"]) / 13 / (vel if f["lingua"] == "pt" else 1))
+            print(f"  AVISO: falta audio/{i}.wav — usando {est:.1f} s de silêncio (prévia)")
+            sh("-f", "lavfi", "-i", f"anullsrc=r={SR}:cl=mono", "-t", f"{est:.2f}", str(dst))
+            res[i] = (dst, est); continue
         filtro = f"atempo={vel}" if f["lingua"] == "pt" and vel != 1 else "anull"
         sh("-i", str(src), "-af", filtro, "-ar", str(SR), "-ac", "1", str(dst))
         res[i] = (dst, dur(dst))
     return res
+
+
+def finalizar(post, especs, cenas, sons, t, fundo, template="quiz.html", capa="00_intro"):
+    """Renderiza os quadros (HTML), monta vídeo + áudio, loudness, capa, folha de contato e linha do tempo."""
+    quadros = post / "video" / "quadros"; quadros.mkdir(parents=True, exist_ok=True)
+    # RENDER DOS QUADROS
+    with sync_playwright() as pw:
+        cam = os.environ.get("CHROMIUM_PATH")
+        nav = pw.chromium.launch(executable_path=cam) if cam else pw.chromium.launch()
+        for nome, dados in especs:
+            pg = nav.new_page(viewport={"width": 1080, "height": 1920})
+            pg.add_init_script(f"window.DADOS = {json.dumps({'fundo': fundo, **dados}, ensure_ascii=False)};")
+            pg.goto((PROJ / "templates" / template).as_uri())
+            pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready")
+            pg.screenshot(path=str(quadros / f"{nome}.png"))
+            pg.close()
+        nav.close()
+
+    # VÍDEO: quadros fixos com a duração de cada cena (arredondada a quadros inteiros)
+    lista = post / "video" / "cenas.txt"
+    with open(lista, "w") as f:
+        for nome, d in cenas:
+            f.write(f"file '{quadros / (nome + '.png')}'\nduration {round(d * FPS) / FPS:.4f}\n")
+        f.write(f"file '{quadros / (cenas[-1][0] + '.png')}'\n")
+    mudo = post / "video" / "_mudo.mp4"
+    sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p",
+       "-c:v", "libx264", "-preset", "medium", "-crf", "18", str(mudo))
+
+    # ÁUDIO: cada som no seu instante (adelay) + mix + loudness -14 LUFS
+    entradas, filtros = [], []
+    for k, (arq, ini, vol) in enumerate(sons):
+        entradas += ["-i", str(arq)]
+        ms = int(round(ini * 1000))
+        filtros.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={vol},adelay={ms}|{ms}[s{k}]")
+    mix = "".join(f"[s{k}]" for k in range(len(sons)))
+    filtros.append(f"{mix}amix=inputs={len(sons)}:normalize=0,apad=whole_dur={t:.3f},atrim=0:{t:.3f}[a]")
+    bruto, audio = post / "video" / "_bruto.wav", post / "video" / "_audio.wav"
+    sh(*entradas, "-filter_complex", ";".join(filtros), "-map", "[a]", "-ar", str(SR), str(bruto))
+    # loudness em duas passadas (uma passada só deixa ~1,5 dB abaixo da meta em falas curtas)
+    alvo = "I=-14:TP=-1.5:LRA=11"
+    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(bruto), "-af", f"loudnorm={alvo}:print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True).stderr
+    m = json.loads(r[r.rindex("{"):r.rindex("}") + 1])
+    sh("-i", str(bruto), "-af", f"loudnorm={alvo}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+       f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
+       "-ar", str(SR), "-ac", "2", str(audio))
+    bruto.unlink()
+
+    final = post / "video" / "final.mp4"
+    sh("-i", str(mudo), "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+       "-shortest", "-movflags", "+faststart", str(final))
+    for x in (mudo, audio, lista):
+        x.unlink()
+
+    # capa + folha de contato (1 quadro por cena) + linha do tempo
+    import shutil
+    from PIL import Image
+    shutil.copy(quadros / f"{capa}.png", post / "video" / "capa.png")
+    nomes = [n for n, _ in especs]
+    cols = 6; lin = (len(nomes) + cols - 1) // cols
+    folha = Image.new("RGB", (cols * 270, lin * 480), "white")
+    for i, nm in enumerate(nomes):
+        im = Image.open(quadros / f"{nm}.png").convert("RGB").resize((270, 480))
+        folha.paste(im, ((i % cols) * 270, (i // cols) * 480))
+    folha.save(post / "video" / "contato.jpg", quality=85)
+    (post / "video" / "linha_do_tempo.json").write_text(json.dumps(
+        {"duracao": round(t, 2), "cenas": [[n, round(d, 2)] for n, d in cenas],
+         "sons": [[Path(a).name, round(i, 2)] for a, i, _ in sons]}, ensure_ascii=False, indent=1))
+    print(f"ok -> {final.relative_to(PROJ)}  ({t:.1f} s)")
 
 
 def main(pasta):
@@ -125,70 +199,7 @@ def main(pasta):
     cenas.append(("99_cta", fim - t + 0.8)); t = fim + 0.8
     cenas.append(("00_intro", 0.3)); t += 0.3  # volta à capa: o vídeo emenda no começo (loop)
 
-    # RENDER DOS QUADROS
-    with sync_playwright() as pw:
-        cam = os.environ.get("CHROMIUM_PATH")
-        nav = pw.chromium.launch(executable_path=cam) if cam else pw.chromium.launch()
-        for nome, dados in especs:
-            pg = nav.new_page(viewport={"width": 1080, "height": 1920})
-            pg.add_init_script(f"window.DADOS = {json.dumps({'fundo': fundo, **dados}, ensure_ascii=False)};")
-            pg.goto((PROJ / "templates" / "quiz.html").as_uri())
-            pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready")
-            pg.screenshot(path=str(quadros / f"{nome}.png"))
-            pg.close()
-        nav.close()
-
-    # VÍDEO: quadros fixos com a duração de cada cena (arredondada a quadros inteiros)
-    lista = post / "video" / "cenas.txt"
-    with open(lista, "w") as f:
-        for nome, d in cenas:
-            f.write(f"file '{quadros / (nome + '.png')}'\nduration {round(d * FPS) / FPS:.4f}\n")
-        f.write(f"file '{quadros / (cenas[-1][0] + '.png')}'\n")
-    mudo = post / "video" / "_mudo.mp4"
-    sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p",
-       "-c:v", "libx264", "-preset", "medium", "-crf", "18", str(mudo))
-
-    # ÁUDIO: cada som no seu instante (adelay) + mix + loudness -14 LUFS
-    entradas, filtros = [], []
-    for k, (arq, ini, vol) in enumerate(sons):
-        entradas += ["-i", str(arq)]
-        ms = int(round(ini * 1000))
-        filtros.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={vol},adelay={ms}|{ms}[s{k}]")
-    mix = "".join(f"[s{k}]" for k in range(len(sons)))
-    filtros.append(f"{mix}amix=inputs={len(sons)}:normalize=0,apad=whole_dur={t:.3f},atrim=0:{t:.3f}[a]")
-    bruto, audio = post / "video" / "_bruto.wav", post / "video" / "_audio.wav"
-    sh(*entradas, "-filter_complex", ";".join(filtros), "-map", "[a]", "-ar", str(SR), str(bruto))
-    # loudness em duas passadas (uma passada só deixa ~1,5 dB abaixo da meta em falas curtas)
-    alvo = "I=-14:TP=-1.5:LRA=11"
-    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(bruto), "-af", f"loudnorm={alvo}:print_format=json", "-f", "null", "-"],
-                       capture_output=True, text=True).stderr
-    m = json.loads(r[r.rindex("{"):r.rindex("}") + 1])
-    sh("-i", str(bruto), "-af", f"loudnorm={alvo}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-       f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
-       "-ar", str(SR), "-ac", "2", str(audio))
-    bruto.unlink()
-
-    final = post / "video" / "final.mp4"
-    sh("-i", str(mudo), "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-       "-shortest", "-movflags", "+faststart", str(final))
-    for x in (mudo, audio, lista):
-        x.unlink()
-
-    # capa + folha de contato (1 quadro por cena) + linha do tempo
-    import shutil
-    from PIL import Image
-    shutil.copy(quadros / "00_intro.png", post / "video" / "capa.png")
-    nomes = [n for n, _ in especs]
-    cols = 6; lin = (len(nomes) + cols - 1) // cols
-    folha = Image.new("RGB", (cols * 270, lin * 480), "white")
-    for i, nm in enumerate(nomes):
-        im = Image.open(quadros / f"{nm}.png").convert("RGB").resize((270, 480))
-        folha.paste(im, ((i % cols) * 270, (i // cols) * 480))
-    folha.save(post / "video" / "contato.jpg", quality=85)
-    (post / "video" / "linha_do_tempo.json").write_text(json.dumps(
-        {"duracao": round(t, 2), "cenas": [[n, round(d, 2)] for n, d in cenas],
-         "sons": [[Path(a).name, round(i, 2)] for a, i, _ in sons]}, ensure_ascii=False, indent=1))
-    print(f"ok -> {final.relative_to(PROJ)}  ({t:.1f} s)")
+    finalizar(post, especs, cenas, sons, t, fundo)
 
 
 if __name__ == "__main__":

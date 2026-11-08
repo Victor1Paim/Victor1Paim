@@ -1,0 +1,24 @@
+{
+  "intro": {"selo": "PRONÚNCIA 🗣️", "hook": ["O -ed tem *3 sons*", "Você usa os três?"], "sub": "worked • played • wanted",
+            "audio": ["00_gancho"]},
+  "grupos": [
+    {"selo": "1 · SOM DE T", "regra": "Depois de som surdo: k, p, s, x, tch, f", "audio_titulo": ["g1_pt"], "audio": ["g1_en"],
+     "palavras": [["worked", "/UÂRKT/"], ["walked", "/UÓKT/"]],
+     "exemplo": ["She worked late.", "/xi UÂRKT LÊIT/", "Ela trabalhou até tarde."]},
+    {"selo": "2 · SOM DE D", "regra": "Depois de vogal ou som sonoro: l, n, m, r, b, g, v…", "audio_titulo": ["g2_pt"], "audio": ["g2_en"],
+     "palavras": [["played", "/PLÊID/"], ["opened", "/ÔU-pend/"]],
+     "exemplo": ["We played after school.", "/uí PLÊID ÉF-ter SKÚL/", "A gente brincou depois da escola."]},
+    {"selo": "3 · SÍLABA A MAIS", "regra": "Só depois de T ou D: aí o -ed vira “id”", "audio_titulo": ["g3_pt"], "audio": ["g3_en"],
+     "palavras": [["wanted", "/UÓN-tid/"], ["needed", "/NÍI-did/"]],
+     "exemplo": ["I needed help.", "/ái NÍI-did HÉLP/", "Eu precisei de ajuda."]}
+  ],
+  "segundos_repetir": 3,
+  "teste": {"selo": "TESTE RÁPIDO ⏱️", "enunciado": "Quantas sílabas tem esta palavra?", "frase": "looked",
+            "a": "1 sílaba", "b": "2 sílabas", "certa": "a", "pron": "/LÚKT/", "traducao": "olhou",
+            "nota": "Depois de K, o -ed soa como T: sem sílaba a mais.",
+            "audio_pergunta": ["t_pt", "t_en"], "audio_resposta": ["t_en"]},
+  "cta": {"titulo": ["Salva pra", "*treinar* 📌"], "comenta": "Pronúncia escrita em todas as frases 🗣️",
+          "itens": ["350 mapas visuais • 2.100 frases", "35 situações do dia a dia", "Tradução e pronúncia escrita", "+ 4 bônus"],
+          "audio": ["99_cta"]},
+  "velocidade_pt": 1.1
+}

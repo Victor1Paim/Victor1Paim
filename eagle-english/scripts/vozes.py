@@ -116,6 +116,10 @@ def pedir(req, tentativas=8):
 
 
 def tts(texto, voz, modelo, saida, post):
+    # Modelos 2.5 tratam frase curta como instrução (erro 400 "tried to generate text"): prefixar "Say".
+    # Os 3.x NÃO podem ter prefixo (às vezes leem a instrução em voz alta).
+    if "2.5" in modelo:
+        texto = ("Say in Brazilian Portuguese: " if voz == VOZ["pt"] else "Say: ") + texto
     body = {"contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}

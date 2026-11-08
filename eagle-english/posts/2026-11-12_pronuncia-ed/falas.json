@@ -1,0 +1,16 @@
+{
+  "vozes": {"pt": "Achird", "en": "Kore"},
+  "modelo": "gemini-2.5-flash-preview-tts",
+  "falas": [
+    {"id": "00_gancho", "lingua": "pt", "texto": "O final do passado em inglês tem três sons. Repete comigo e descobre qual é qual!"},
+    {"id": "g1_pt", "lingua": "pt", "texto": "Primeiro: som de tê."},
+    {"id": "g1_en", "lingua": "en", "texto": "Worked. Walked. She worked late."},
+    {"id": "g2_pt", "lingua": "pt", "texto": "Segundo: som de dê."},
+    {"id": "g2_en", "lingua": "en", "texto": "Played. Opened. We played after school."},
+    {"id": "g3_pt", "lingua": "pt", "texto": "E agora o único caso em que ele vira uma sílaba a mais."},
+    {"id": "g3_en", "lingua": "en", "texto": "Wanted. Needed. I needed help."},
+    {"id": "t_pt", "lingua": "pt", "texto": "Teste rápido: essa palavra tem uma ou duas sílabas?"},
+    {"id": "t_en", "lingua": "en", "texto": "Looked."},
+    {"id": "99_cta", "lingua": "pt", "texto": "Salva pra treinar! A pronúncia escrita de duas mil e cem frases do dia a dia está no Ígol trezentos e cinquenta, com quatro bônus. Link na bio!"}
+  ]
+}

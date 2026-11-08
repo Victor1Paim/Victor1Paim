@@ -57,6 +57,22 @@
   .produto .item { font-size:40px; font-weight:700; }
   .botao { align-self:flex-start; margin-top:14px; background:var(--vermelho); color:#fff; font-size:50px;
            font-weight:900; padding:20px 50px; border-radius:60px; }
+  /* pronúncia: grupo de som */
+  .grupo { gap:30px; padding-top:10px; }
+  .regra { font-size:40px; font-weight:700; color:#333; line-height:1.25; }
+  .palavras { display:flex; flex-direction:column; gap:18px; }
+  .palavra { display:flex; align-items:baseline; gap:28px; background:#fff; border-radius:26px; padding:22px 30px;
+             box-shadow:0 6px 24px rgba(11,31,75,.12); }
+  .palavra .en { font-family:"Oswald"; font-weight:700; font-size:92px; line-height:1; }
+  .palavra .pr { font-size:46px; font-weight:800; color:var(--vermelho); }
+  .exemplo { background:var(--marinho); color:#fff; border-radius:26px; padding:26px 30px; display:flex;
+             flex-direction:column; gap:10px; }
+  .exemplo .f { font-size:50px; font-weight:900; }
+  .exemplo .p { font-size:40px; font-weight:800; color:var(--amarelo); }
+  .exemplo .t { font-size:38px; font-weight:600; color:#dfe6f5; }
+  .suavez { position:absolute; left:50%; transform:translateX(-50%); top:1200px; background:var(--vermelho);
+            color:#fff; font-size:62px; font-weight:900; padding:26px 54px; border-radius:80px; white-space:nowrap;
+            box-shadow:0 8px 24px rgba(230,57,70,.35); }
 </style></head>
 <body>
 <div id="fundo"></div><div id="veu"></div>
@@ -87,13 +103,23 @@ if (d.tipo === "intro") {
         <div class="trad">🇧🇷 ${esc(d.traducao)}</div>
         ${d.nota ? `<div class="nota">💡 ${esc(d.nota)}</div>` : ""}</div>` : "";
   h = `<div class="area pergunta">
-        <div class="selo">PERGUNTA ${d.n}/${d.total}</div>
+        <div class="selo">${esc(d.selo || `PERGUNTA ${d.n}/${d.total}`)}</div>
         <div class="enunciado">${esc(d.enunciado)}</div>
         ${d.frase ? `<div class="frase">🇺🇸 ${esc(d.frase)}</div>` : ""}
         ${ops}${exp}
       </div>
       ${d.timer ? `<div class="timer">${d.timer}</div>` : ""}
       ${d.revelar ? "" : masc(d.mascote, "right:150px;bottom:410px;height:230px")}
+      <div class="rodape">@eagle.english.br</div>`;
+} else if (d.tipo === "grupo") {
+  const ed = w => esc(w).replace(/(ed)$/, '<span class="vermelho">$1</span>');
+  h = `<div class="area grupo">
+        <div class="selo">${esc(d.selo)}</div>
+        <div class="regra">${esc(d.regra)}</div>
+        <div class="palavras">${d.palavras.map(w => `<div class="palavra"><div class="en">${ed(w[0])}</div><div class="pr">${esc(w[1])}</div></div>`).join("")}</div>
+        <div class="exemplo"><div class="f">🇺🇸 ${esc(d.exemplo[0])}</div><div class="p">🗣️ ${esc(d.exemplo[1])}</div><div class="t">🇧🇷 ${esc(d.exemplo[2])}</div></div>
+      </div>
+      ${d.suavez ? `<div class="suavez">🔁 Sua vez! Repete</div>` : masc(d.mascote, "right:150px;bottom:410px;height:230px")}
       <div class="rodape">@eagle.english.br</div>`;
 } else if (d.tipo === "regancho") {
   h = `<div class="area regancho"><div class="titulo">${d.texto.map(red).join("<br>")}</div></div>

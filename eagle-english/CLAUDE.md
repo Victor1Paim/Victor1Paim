@@ -57,13 +57,17 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 `posts/<post>/quiz.json` (perguntas, textos, ids das falas) + `falas.json` → `python3 scripts/vozes.py gerar <post>`
 → imagens (`scripts/imagem_gemini.py`: fundo 9:16 + mascote recortado; padrão OpenAI gpt-image-2) →
 `python3 scripts/montar_quiz.py <post>` (cartões `templates/quiz.html`, tique/ding/whoosh, loudness, capa,
-folha de contato). Primeiro exemplo: `posts/2026-11-10_quiz-pedir-de-novo/`. Mascote reutilizável em `assets/mascote/`.
+folha de contato). Primeiro exemplo: `posts/2026-11-10_quiz-pedir-de-novo/`.
+Pronúncia: `pronuncia.json` → `python3 scripts/montar_pronuncia.py <post>` (grupo → "Sua vez!" → ouvir de novo → teste).
+Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Limites das APIs (plano gratuito do Gemini)
 
 - TTS: 3 pedidos/min e 10 por dia POR MODELO (`gemini-3.8-flash-tts`, `-lite-tts`, `2.5-flash-preview-tts`).
   `vozes.py` espera o limite por minuto; no diário, use `--modelo gemini-3.8-flash-lite-tts --pular-existentes`.
 - Imagem no Gemini gratuito: bloqueada (limite 0) → usar OpenAI (`gpt-image-2`, qualidade medium; high dá 502).
+- Modelos 2.5 de TTS: frase curta vira "instrução" (erro 400); `vozes.py` prefixa "Say…" só nesses.
+  Letras soltas na voz pt: escrever "tê", "dê".
 - Nome do produto na voz pt: escrever "Ígol trezentos e cinquenta" para sair "Eagle 350".
 
 ## Lições técnicas (seção 6 do passo a passo)
