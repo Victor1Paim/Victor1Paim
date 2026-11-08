@@ -1,0 +1,23 @@
+{
+  "vozes": {"pt": "Charon", "en": "Charon"},
+  "modelo": "gemini-3.8-flash-tts",
+  "falas": [
+    {"id": "00_gancho", "lingua": "pt", "texto": "O telefone tocou e é em inglês. Repete comigo!"},
+    {"id": "f1_en", "lingua": "en", "texto": "Hello, who's calling?"},
+    {"id": "f1_pt", "lingua": "pt", "texto": "Alô, quem está falando?"},
+    {"id": "f2_en", "lingua": "en", "texto": "Good morning, how can I help?"},
+    {"id": "f2_pt", "lingua": "pt", "texto": "Bom dia, como posso ajudar?"},
+    {"id": "f3_en", "lingua": "en", "texto": "Hold on, please."},
+    {"id": "f3_pt", "lingua": "pt", "texto": "Aguarde, por favor."},
+    {"id": "f4_en", "lingua": "en", "texto": "I'll transfer you now."},
+    {"id": "f4_pt", "lingua": "pt", "texto": "Vou transferir você agora."},
+    {"id": "regancho", "lingua": "pt", "texto": "E se a pessoa não estiver?"},
+    {"id": "f5_en", "lingua": "en", "texto": "She's not here right now."},
+    {"id": "f5_pt", "lingua": "pt", "texto": "Ela não está aqui agora."},
+    {"id": "f6_en", "lingua": "en", "texto": "Can I take a message?"},
+    {"id": "f6_pt", "lingua": "pt", "texto": "Posso anotar um recado?"},
+    {"id": "cta1", "lingua": "pt", "texto": "Essas frases estão num mapa do Ígol trezentos e cinquenta. São trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita."},
+    {"id": "cta2", "lingua": "pt", "texto": "E vem com quatro bônus, como o Guia de vinte e um dias, de quinze minutos por dia."},
+    {"id": "cta3", "lingua": "pt", "texto": "Separado, daria cento e vinte e três e setenta. Hoje, o kit completo sai por dezenove e noventa, pagamento único, com sete dias de garantia. Link na bio!"}
+  ]
+}

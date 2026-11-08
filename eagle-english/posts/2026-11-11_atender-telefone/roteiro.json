@@ -1,0 +1,19 @@
+{
+  "fundo": "img/fundo.png", "velocidade_pt": 1.05,
+  "beats": [
+    {"tipo": "abertura", "texto": "O telefone tocou e é em inglês 📞", "audio": ["00_gancho"]},
+    {"tipo": "frase", "en": "Hello, who's calling?", "pron": "/re-LÔU, RÚZ KÓ-lin/", "pt": "Alô, quem está falando?", "audio_en": "f1_en", "audio_pt": "f1_pt"},
+    {"tipo": "frase", "en": "Good morning, how can I help?", "pron": "/GÚD MÓR-nin, HÁU kén ái HÉLP/", "pt": "Bom dia, como posso ajudar?", "audio_en": "f2_en", "audio_pt": "f2_pt"},
+    {"tipo": "frase", "en": "Hold on, please.", "pron": "/HÔULD ÓN, PLÍIZ/", "pt": "Aguarde, por favor.", "audio_en": "f3_en", "audio_pt": "f3_pt"},
+    {"tipo": "frase", "en": "I'll transfer you now.", "pron": "/áil trens-FÉR iú NÁU/", "pt": "Vou transferir você agora.", "audio_en": "f4_en", "audio_pt": "f4_pt"},
+    {"tipo": "abertura", "texto": "E se a pessoa não estiver? 🤔", "audio": ["regancho"]},
+    {"tipo": "frase", "en": "She's not here right now.", "pron": "/xís NÓT RÍER RÁIT NÁU/", "pt": "Ela não está aqui agora.", "audio_en": "f5_en", "audio_pt": "f5_pt"},
+    {"tipo": "frase", "en": "Can I take a message?", "pron": "/kén ái TÊIK a MÉ-sidj/", "pt": "Posso anotar um recado?", "audio_en": "f6_en", "audio_pt": "f6_pt"},
+    {"tipo": "produto", "audio": ["cta1"], "telas": [["Essas frases estão *aqui* 👇", "mapa-telefone"], ["*35 situações* no sumário", "sumario-ebook"]]},
+    {"tipo": "produto", "audio": ["cta2"], "telas": [{"tipo": "kit", "tag": "Ebook + *4 bônus*",
+       "capas": ["capa-guia", "capa-cards", "capa-ebook", "capa-500", "capa-verbos"],
+       "itens": ["*350 mapas* · 2.100 frases", "Guia de 21 Dias · *15 min/dia*", "20 Cards de Gramática", "500 Frases · 100 Verbos"]}]},
+    {"tipo": "produto", "audio": ["cta3"], "telas": [{"tipo": "preco", "tag": "Pagamento *único*", "de": "R$ 123,70", "por": "R$ 19,90",
+       "chips": ["PDF no seu e-mail", "Garantia de 7 dias", "Celular, tablet ou impresso"], "prazo": "Oferta até 25/12"}]}
+  ]
+}
