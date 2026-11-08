@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #FDF3ED; }
+      #main { position: relative; width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="63.6" data-width="1080" data-height="1920">
+      <div id="capa" data-composition-id="capa" data-composition-src="compositions/capa.html"
+        data-start="0" data-duration="3.2" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="t1" data-composition-id="t1" data-composition-src="compositions/t1.html"
+        data-start="3.2" data-duration="2.95" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="numero" data-composition-id="numero" data-composition-src="compositions/numero.html"
+        data-start="6.15" data-duration="4.55" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="depende" data-composition-id="depende" data-composition-src="compositions/depende.html"
+        data-start="10.7" data-duration="13.6" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="comum" data-composition-id="comum" data-composition-src="compositions/comum.html"
+        data-start="24.3" data-duration="3.55" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="t2" data-composition-id="t2" data-composition-src="compositions/t2.html"
+        data-start="27.85" data-duration="1.2" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="toque" data-composition-id="toque" data-composition-src="compositions/toque.html"
+        data-start="29.05" data-duration="4.85" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="t3" data-composition-id="t3" data-composition-src="compositions/t3.html"
+        data-start="33.9" data-duration="2.4" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="psa" data-composition-id="psa" data-composition-src="compositions/psa.html"
+        data-start="36.3" data-duration="6.65" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="silencio" data-composition-id="silencio" data-composition-src="compositions/silencio.html"
+        data-start="42.95" data-duration="4.9" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="resumo" data-composition-id="resumo" data-composition-src="compositions/resumo.html"
+        data-start="47.85" data-duration="5.85" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="cta" data-composition-id="cta" data-composition-src="compositions/cta.html"
+        data-start="53.7" data-duration="9.9" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="legendas" data-composition-id="legendas" data-composition-src="compositions/legendas.html"
+        data-start="0" data-duration="63.6" data-track-index="2" data-track-kind="captions"
+        data-width="1080" data-height="1920" style="z-index:5"></div>
+      <audio id="voz" class="clip" src="assets/voz.mp3" data-start="0" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

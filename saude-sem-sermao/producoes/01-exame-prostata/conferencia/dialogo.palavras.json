@@ -1,0 +1,972 @@
+[
+ {
+  "palavra": "Exame",
+  "inicio": 0.0,
+  "fim": 0.38
+ },
+ {
+  "palavra": "de",
+  "inicio": 0.38,
+  "fim": 0.52
+ },
+ {
+  "palavra": "próstata.",
+  "inicio": 0.52,
+  "fim": 1.02
+ },
+ {
+  "palavra": "O",
+  "inicio": 1.2,
+  "fim": 1.42
+ },
+ {
+  "palavra": "que",
+  "inicio": 1.42,
+  "fim": 1.52
+ },
+ {
+  "palavra": "é",
+  "inicio": 1.52,
+  "fim": 1.66
+ },
+ {
+  "palavra": "mito",
+  "inicio": 1.66,
+  "fim": 2.02
+ },
+ {
+  "palavra": "e",
+  "inicio": 2.02,
+  "fim": 2.16
+ },
+ {
+  "palavra": "o",
+  "inicio": 2.16,
+  "fim": 2.22
+ },
+ {
+  "palavra": "que",
+  "inicio": 2.22,
+  "fim": 2.28
+ },
+ {
+  "palavra": "é",
+  "inicio": 2.28,
+  "fim": 2.36
+ },
+ {
+  "palavra": "verdade?",
+  "inicio": 2.36,
+  "fim": 2.66
+ },
+ {
+  "palavra": "Eu",
+  "inicio": 3.32,
+  "fim": 3.72
+ },
+ {
+  "palavra": "tenho",
+  "inicio": 3.72,
+  "fim": 3.86
+ },
+ {
+  "palavra": "45",
+  "inicio": 3.86,
+  "fim": 4.42
+ },
+ {
+  "palavra": "anos.",
+  "inicio": 4.42,
+  "fim": 4.94
+ },
+ {
+  "palavra": "Já",
+  "inicio": 5.16,
+  "fim": 5.44
+ },
+ {
+  "palavra": "tenho",
+  "inicio": 5.44,
+  "fim": 5.56
+ },
+ {
+  "palavra": "o",
+  "inicio": 5.56,
+  "fim": 5.64
+ },
+ {
+  "palavra": "que",
+  "inicio": 5.64,
+  "fim": 5.66
+ },
+ {
+  "palavra": "fazer?",
+  "inicio": 5.66,
+  "fim": 5.86
+ },
+ {
+  "palavra": "É",
+  "inicio": 6.28,
+  "fim": 6.64
+ },
+ {
+  "palavra": "o",
+  "inicio": 6.64,
+  "fim": 6.72
+ },
+ {
+  "palavra": "câncer",
+  "inicio": 6.72,
+  "fim": 6.94
+ },
+ {
+  "palavra": "mais",
+  "inicio": 6.94,
+  "fim": 7.1
+ },
+ {
+  "palavra": "comum",
+  "inicio": 7.1,
+  "fim": 7.4
+ },
+ {
+  "palavra": "entre",
+  "inicio": 7.4,
+  "fim": 7.58
+ },
+ {
+  "palavra": "os",
+  "inicio": 7.58,
+  "fim": 7.68
+ },
+ {
+  "palavra": "homens",
+  "inicio": 7.68,
+  "fim": 7.88
+ },
+ {
+  "palavra": "no",
+  "inicio": 7.88,
+  "fim": 7.98
+ },
+ {
+  "palavra": "Brasil.",
+  "inicio": 7.98,
+  "fim": 8.28
+ },
+ {
+  "palavra": "Cerca",
+  "inicio": 8.48,
+  "fim": 8.82
+ },
+ {
+  "palavra": "de",
+  "inicio": 8.82,
+  "fim": 8.96
+ },
+ {
+  "palavra": "72",
+  "inicio": 8.96,
+  "fim": 9.48
+ },
+ {
+  "palavra": "mil",
+  "inicio": 9.48,
+  "fim": 9.66
+ },
+ {
+  "palavra": "casos",
+  "inicio": 9.66,
+  "fim": 9.96
+ },
+ {
+  "palavra": "por",
+  "inicio": 9.96,
+  "fim": 10.16
+ },
+ {
+  "palavra": "ano.",
+  "inicio": 10.16,
+  "fim": 10.36
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 10.78,
+  "fim": 11.14
+ },
+ {
+  "palavra": "a",
+  "inicio": 11.14,
+  "fim": 11.22
+ },
+ {
+  "palavra": "resposta",
+  "inicio": 11.22,
+  "fim": 11.56
+ },
+ {
+  "palavra": "é",
+  "inicio": 11.56,
+  "fim": 11.74
+ },
+ {
+  "palavra": "depende.",
+  "inicio": 11.74,
+  "fim": 12.1
+ },
+ {
+  "palavra": "O",
+  "inicio": 12.66,
+  "fim": 12.92
+ },
+ {
+  "palavra": "Ministério",
+  "inicio": 12.92,
+  "fim": 13.26
+ },
+ {
+  "palavra": "da",
+  "inicio": 13.26,
+  "fim": 13.38
+ },
+ {
+  "palavra": "Saúde",
+  "inicio": 13.38,
+  "fim": 13.72
+ },
+ {
+  "palavra": "não",
+  "inicio": 13.72,
+  "fim": 13.9
+ },
+ {
+  "palavra": "recomenda",
+  "inicio": 13.9,
+  "fim": 14.34
+ },
+ {
+  "palavra": "exame",
+  "inicio": 14.34,
+  "fim": 14.6
+ },
+ {
+  "palavra": "em",
+  "inicio": 14.6,
+  "fim": 14.76
+ },
+ {
+  "palavra": "massa",
+  "inicio": 14.76,
+  "fim": 15.0
+ },
+ {
+  "palavra": "para",
+  "inicio": 15.0,
+  "fim": 15.18
+ },
+ {
+  "palavra": "quem",
+  "inicio": 15.18,
+  "fim": 15.3
+ },
+ {
+  "palavra": "não",
+  "inicio": 15.3,
+  "fim": 15.44
+ },
+ {
+  "palavra": "tem",
+  "inicio": 15.44,
+  "fim": 15.58
+ },
+ {
+  "palavra": "sintomas.",
+  "inicio": 15.58,
+  "fim": 16.04
+ },
+ {
+  "palavra": "Já",
+  "inicio": 16.82,
+  "fim": 17.0
+ },
+ {
+  "palavra": "a",
+  "inicio": 17.0,
+  "fim": 17.14
+ },
+ {
+  "palavra": "Sociedade",
+  "inicio": 17.14,
+  "fim": 17.46
+ },
+ {
+  "palavra": "Brasileira",
+  "inicio": 17.46,
+  "fim": 17.9
+ },
+ {
+  "palavra": "de",
+  "inicio": 17.9,
+  "fim": 18.0
+ },
+ {
+  "palavra": "Urologia",
+  "inicio": 18.0,
+  "fim": 18.54
+ },
+ {
+  "palavra": "orienta",
+  "inicio": 18.54,
+  "fim": 19.04
+ },
+ {
+  "palavra": "a",
+  "inicio": 19.04,
+  "fim": 19.12
+ },
+ {
+  "palavra": "conversar",
+  "inicio": 19.12,
+  "fim": 19.44
+ },
+ {
+  "palavra": "com",
+  "inicio": 19.44,
+  "fim": 19.56
+ },
+ {
+  "palavra": "o",
+  "inicio": 19.56,
+  "fim": 19.66
+ },
+ {
+  "palavra": "médico",
+  "inicio": 19.66,
+  "fim": 19.82
+ },
+ {
+  "palavra": "a",
+  "inicio": 19.82,
+  "fim": 19.94
+ },
+ {
+  "palavra": "partir",
+  "inicio": 19.94,
+  "fim": 20.14
+ },
+ {
+  "palavra": "dos",
+  "inicio": 20.14,
+  "fim": 20.34
+ },
+ {
+  "palavra": "50,",
+  "inicio": 20.34,
+  "fim": 20.66
+ },
+ {
+  "palavra": "ou",
+  "inicio": 20.98,
+  "fim": 21.32
+ },
+ {
+  "palavra": "dos",
+  "inicio": 21.32,
+  "fim": 21.48
+ },
+ {
+  "palavra": "45",
+  "inicio": 21.48,
+  "fim": 22.0
+ },
+ {
+  "palavra": "para",
+  "inicio": 22.0,
+  "fim": 22.2
+ },
+ {
+  "palavra": "homens",
+  "inicio": 22.2,
+  "fim": 22.48
+ },
+ {
+  "palavra": "negros",
+  "inicio": 22.48,
+  "fim": 22.86
+ },
+ {
+  "palavra": "ou",
+  "inicio": 22.86,
+  "fim": 23.04
+ },
+ {
+  "palavra": "com",
+  "inicio": 23.04,
+  "fim": 23.18
+ },
+ {
+  "palavra": "casos",
+  "inicio": 23.18,
+  "fim": 23.46
+ },
+ {
+  "palavra": "na",
+  "inicio": 23.46,
+  "fim": 23.56
+ },
+ {
+  "palavra": "família.",
+  "inicio": 23.56,
+  "fim": 23.88
+ },
+ {
+  "palavra": "O",
+  "inicio": 24.38,
+  "fim": 24.78
+ },
+ {
+  "palavra": "ponto",
+  "inicio": 24.78,
+  "fim": 25.0
+ },
+ {
+  "palavra": "em",
+  "inicio": 25.0,
+  "fim": 25.12
+ },
+ {
+  "palavra": "comum?",
+  "inicio": 25.12,
+  "fim": 25.32
+ },
+ {
+  "palavra": "A",
+  "inicio": 25.56,
+  "fim": 25.8
+ },
+ {
+  "palavra": "decisão",
+  "inicio": 25.8,
+  "fim": 26.14
+ },
+ {
+  "palavra": "é",
+  "inicio": 26.14,
+  "fim": 26.26
+ },
+ {
+  "palavra": "sua,",
+  "inicio": 26.26,
+  "fim": 26.52
+ },
+ {
+  "palavra": "junto",
+  "inicio": 26.68,
+  "fim": 26.96
+ },
+ {
+  "palavra": "com",
+  "inicio": 26.96,
+  "fim": 27.08
+ },
+ {
+  "palavra": "o",
+  "inicio": 27.08,
+  "fim": 27.16
+ },
+ {
+  "palavra": "médico.",
+  "inicio": 27.16,
+  "fim": 27.4
+ },
+ {
+  "palavra": "E",
+  "inicio": 27.88,
+  "fim": 28.22
+ },
+ {
+  "palavra": "o",
+  "inicio": 28.22,
+  "fim": 28.34
+ },
+ {
+  "palavra": "exame",
+  "inicio": 28.34,
+  "fim": 28.58
+ },
+ {
+  "palavra": "de",
+  "inicio": 28.58,
+  "fim": 28.72
+ },
+ {
+  "palavra": "TOC,",
+  "inicio": 28.72,
+  "fim": 28.98
+ },
+ {
+  "palavra": "hein?",
+  "inicio": 29.0,
+  "fim": 29.08
+ },
+ {
+  "palavra": "O",
+  "inicio": 29.08,
+  "fim": 29.82
+ },
+ {
+  "palavra": "TOC",
+  "inicio": 29.82,
+  "fim": 30.0
+ },
+ {
+  "palavra": "não",
+  "inicio": 30.0,
+  "fim": 30.12
+ },
+ {
+  "palavra": "tem",
+  "inicio": 30.12,
+  "fim": 30.26
+ },
+ {
+  "palavra": "nada",
+  "inicio": 30.26,
+  "fim": 30.48
+ },
+ {
+  "palavra": "a",
+  "inicio": 30.48,
+  "fim": 30.58
+ },
+ {
+  "palavra": "ver",
+  "inicio": 30.58,
+  "fim": 30.66
+ },
+ {
+  "palavra": "com",
+  "inicio": 30.66,
+  "fim": 30.78
+ },
+ {
+  "palavra": "masculinidade.",
+  "inicio": 30.78,
+  "fim": 31.56
+ },
+ {
+  "palavra": "É",
+  "inicio": 31.8,
+  "fim": 32.06
+ },
+ {
+  "palavra": "rápido.",
+  "inicio": 32.06,
+  "fim": 32.42
+ },
+ {
+  "palavra": "Leva",
+  "inicio": 32.64,
+  "fim": 32.82
+ },
+ {
+  "palavra": "poucos",
+  "inicio": 32.82,
+  "fim": 33.04
+ },
+ {
+  "palavra": "segundos.",
+  "inicio": 33.04,
+  "fim": 33.36
+ },
+ {
+  "palavra": "E",
+  "inicio": 33.96,
+  "fim": 34.2
+ },
+ {
+  "palavra": "se",
+  "inicio": 34.2,
+  "fim": 34.34
+ },
+ {
+  "palavra": "o",
+  "inicio": 34.34,
+  "fim": 34.48
+ },
+ {
+  "palavra": "PSA",
+  "inicio": 34.48,
+  "fim": 34.84
+ },
+ {
+  "palavra": "der",
+  "inicio": 34.84,
+  "fim": 34.94
+ },
+ {
+  "palavra": "alto?",
+  "inicio": 34.94,
+  "fim": 35.2
+ },
+ {
+  "palavra": "É",
+  "inicio": 35.38,
+  "fim": 35.58
+ },
+ {
+  "palavra": "câncer?",
+  "inicio": 35.58,
+  "fim": 35.9
+ },
+ {
+  "palavra": "Não",
+  "inicio": 36.38,
+  "fim": 36.66
+ },
+ {
+  "palavra": "necessariamente.",
+  "inicio": 36.66,
+  "fim": 37.22
+ },
+ {
+  "palavra": "O",
+  "inicio": 37.56,
+  "fim": 37.82
+ },
+ {
+  "palavra": "PSA",
+  "inicio": 37.82,
+  "fim": 38.18
+ },
+ {
+  "palavra": "também",
+  "inicio": 38.18,
+  "fim": 38.4
+ },
+ {
+  "palavra": "sobe",
+  "inicio": 38.4,
+  "fim": 38.74
+ },
+ {
+  "palavra": "com",
+  "inicio": 38.74,
+  "fim": 38.88
+ },
+ {
+  "palavra": "o",
+  "inicio": 38.88,
+  "fim": 38.96
+ },
+ {
+  "palavra": "aumento",
+  "inicio": 38.96,
+  "fim": 39.18
+ },
+ {
+  "palavra": "benigno",
+  "inicio": 39.18,
+  "fim": 39.66
+ },
+ {
+  "palavra": "da",
+  "inicio": 39.66,
+  "fim": 39.78
+ },
+ {
+  "palavra": "próstata",
+  "inicio": 39.78,
+  "fim": 40.26
+ },
+ {
+  "palavra": "ou",
+  "inicio": 40.26,
+  "fim": 40.58
+ },
+ {
+  "palavra": "com",
+  "inicio": 40.58,
+  "fim": 40.7
+ },
+ {
+  "palavra": "inflamação.",
+  "inicio": 40.7,
+  "fim": 41.18
+ },
+ {
+  "palavra": "Por",
+  "inicio": 41.38,
+  "fim": 41.78
+ },
+ {
+  "palavra": "isso",
+  "inicio": 41.78,
+  "fim": 41.96
+ },
+ {
+  "palavra": "o",
+  "inicio": 41.96,
+  "fim": 42.06
+ },
+ {
+  "palavra": "médico",
+  "inicio": 42.06,
+  "fim": 42.24
+ },
+ {
+  "palavra": "investiga.",
+  "inicio": 42.24,
+  "fim": 42.74
+ },
+ {
+  "palavra": "E",
+  "inicio": 43.02,
+  "fim": 43.46
+ },
+ {
+  "palavra": "não",
+  "inicio": 43.46,
+  "fim": 43.62
+ },
+ {
+  "palavra": "ter",
+  "inicio": 43.62,
+  "fim": 43.78
+ },
+ {
+  "palavra": "sintoma",
+  "inicio": 43.78,
+  "fim": 44.18
+ },
+ {
+  "palavra": "não",
+  "inicio": 44.18,
+  "fim": 44.32
+ },
+ {
+  "palavra": "garante",
+  "inicio": 44.32,
+  "fim": 44.66
+ },
+ {
+  "palavra": "nada.",
+  "inicio": 44.66,
+  "fim": 44.92
+ },
+ {
+  "palavra": "No",
+  "inicio": 45.18,
+  "fim": 45.42
+ },
+ {
+  "palavra": "começo,",
+  "inicio": 45.42,
+  "fim": 45.72
+ },
+ {
+  "palavra": "esse",
+  "inicio": 45.74,
+  "fim": 45.96
+ },
+ {
+  "palavra": "câncer",
+  "inicio": 45.96,
+  "fim": 46.24
+ },
+ {
+  "palavra": "costuma",
+  "inicio": 46.24,
+  "fim": 46.54
+ },
+ {
+  "palavra": "ser",
+  "inicio": 46.54,
+  "fim": 46.7
+ },
+ {
+  "palavra": "silencioso.",
+  "inicio": 46.7,
+  "fim": 47.28
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 47.9,
+  "fim": 48.38
+ },
+ {
+  "palavra": "Nem",
+  "inicio": 48.8,
+  "fim": 49.1
+ },
+ {
+  "palavra": "pânico,",
+  "inicio": 49.1,
+  "fim": 49.76
+ },
+ {
+  "palavra": "nem",
+  "inicio": 49.92,
+  "fim": 50.02
+ },
+ {
+  "palavra": "descaso.",
+  "inicio": 50.02,
+  "fim": 50.54
+ },
+ {
+  "palavra": "É",
+  "inicio": 50.76,
+  "fim": 50.92
+ },
+ {
+  "palavra": "conversa",
+  "inicio": 50.92,
+  "fim": 51.42
+ },
+ {
+  "palavra": "com",
+  "inicio": 51.42,
+  "fim": 51.54
+ },
+ {
+  "palavra": "o",
+  "inicio": 51.54,
+  "fim": 51.68
+ },
+ {
+  "palavra": "médico",
+  "inicio": 51.68,
+  "fim": 52.04
+ },
+ {
+  "palavra": "na",
+  "inicio": 52.04,
+  "fim": 52.3
+ },
+ {
+  "palavra": "idade",
+  "inicio": 52.3,
+  "fim": 52.56
+ },
+ {
+  "palavra": "certa",
+  "inicio": 52.56,
+  "fim": 52.9
+ },
+ {
+  "palavra": "para",
+  "inicio": 52.9,
+  "fim": 53.1
+ },
+ {
+  "palavra": "mim.",
+  "inicio": 53.1,
+  "fim": 53.3
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 53.76,
+  "fim": 54.18
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 54.18,
+  "fim": 54.38
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 54.6,
+  "fim": 55.06
+ },
+ {
+  "palavra": "para",
+  "inicio": 55.06,
+  "fim": 55.18
+ },
+ {
+  "palavra": "aquele",
+  "inicio": 55.18,
+  "fim": 55.4
+ },
+ {
+  "palavra": "homem",
+  "inicio": 55.4,
+  "fim": 55.64
+ },
+ {
+  "palavra": "que",
+  "inicio": 55.64,
+  "fim": 55.82
+ },
+ {
+  "palavra": "foge",
+  "inicio": 55.82,
+  "fim": 56.16
+ },
+ {
+  "palavra": "do",
+  "inicio": 56.16,
+  "fim": 56.28
+ },
+ {
+  "palavra": "médico.",
+  "inicio": 56.28,
+  "fim": 56.64
+ },
+ {
+  "palavra": "E",
+  "inicio": 56.64,
+  "fim": 57.22
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 57.22,
+  "fim": 57.72
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 57.96,
+  "fim": 58.32
+ },
+ {
+  "palavra": "azul",
+  "inicio": 58.32,
+  "fim": 58.84
+ },
+ {
+  "palavra": "se",
+  "inicio": 58.84,
+  "fim": 59.2
+ },
+ {
+  "palavra": "aprendeu",
+  "inicio": 59.2,
+  "fim": 59.56
+ },
+ {
+  "palavra": "algo",
+  "inicio": 59.56,
+  "fim": 59.86
+ },
+ {
+  "palavra": "e",
+  "inicio": 59.86,
+  "fim": 60.2
+ },
+ {
+  "palavra": "segue",
+  "inicio": 60.2,
+  "fim": 60.48
+ },
+ {
+  "palavra": "para",
+  "inicio": 60.48,
+  "fim": 60.62
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 60.62,
+  "fim": 60.84
+ }
+]

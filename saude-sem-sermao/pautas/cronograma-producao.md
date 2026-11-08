@@ -10,7 +10,7 @@ Formato: **A** = explicador animado (narrador + Tito) · **R** = Reel de receita
 ## Lote 1 (Novembro Azul)
 | # | Tema (gancho) | Série | Pilar | Fmt | Risco | Fonte principal (conferir) |
 |---|---|---|---|---|---|---|
-| 1 | Exame de próstata: mitos e verdades | Mito, contexto e fonte (Novembro Azul) | Mito x verdade | A | 🟡 | INCA / Ministério da Saúde (posição do INCA sobre rastreamento em homens sem sintomas: decisão compartilhada com o médico) |
+| 1 | ✅ Exame de próstata: mitos e verdades (produzido 08/11) | Mito, contexto e fonte (Novembro Azul) | Mito x verdade | A | 🟡 | INCA / Ministério da Saúde (posição do INCA sobre rastreamento em homens sem sintomas: decisão compartilhada com o médico) |
 | 2 | Estresse engorda? | Mente sem Nó | Sono e mente | A | 🟡 | Revisões sobre cortisol e peso; OMS |
 | 3 | Postura perfeita existe? | Costas na Cadeira | Corpo explicado | A | 🟢 | Revisões sobre postura e dor lombar |
 | 4 | Celular antes de dormir faz mal? | Tela na Mão | Bem-estar | A | 🟢 | Revisões sobre luz azul/telas e sono; Associação Brasileira do Sono |

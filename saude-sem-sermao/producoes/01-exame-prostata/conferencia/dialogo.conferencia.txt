@@ -1,0 +1,6 @@
+semelhança: 98.0%
+insert: roteiro='' voz='o' pos=20
+insert: roteiro='' voz='a' pos=67
+replace: roteiro='caso' voz='casos' pos=85
+replace: roteiro='toque' voz='toc' pos=104
+replace: roteiro='toque' voz='toc' pos=107
