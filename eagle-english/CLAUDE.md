@@ -34,16 +34,20 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 ## Ciclo de um vídeo (seção 2.5 do passo a passo)
 
 1. `roteiro.md` com tempos e fala por cena (incluindo o CTA final).
-2. Narração pt-BR + frases em inglês (voz americana), um arquivo por cena em `audio/`
-   (Fish Audio pela API com a chave em `.env`, ou arquivos soltos pelo usuário).
+2. Vozes com o **Gemini TTS**: `python3 scripts/vozes.py montar <post>` (cria `falas.json`;
+   revisar gancho e CTA) e `python3 scripts/vozes.py gerar <post>`: um `.wav` por fala em `audio/`,
+   narração pt-BR (voz Achird) e frases em inglês em arquivo separado (voz Kore), conferidas
+   pelo Whisper (skill `whisper-legendas`).
 3. Medir durações (`silencedetect`) e montar a linha do tempo (`adelay` + `amix`).
 4. Renderizar os cartões HTML em PNG (`scripts/render_cartoes.py`).
 5. Montar o vídeo com ffmpeg: fundo, cartões, mascote discreto, música baixa e efeitos.
-6. Gerar `.srt` a partir do roteiro (e queimar na tela, se pedido).
+6. Gerar `.srt` com o texto do roteiro e o tempo do Whisper (skill `whisper-legendas`;
+   queimar na tela, se pedido).
 7. Tela final de produto + CTA falado.
 8. Exportar `video/final.mp4` + folha de contato (1 quadro por cena).
 9. `legenda.md`: legenda + bloco de CTA + comentário fixado + resposta curta.
 10. "CTA incluído: sim" + checklist.
+11. Custo: `python3 ../scripts/custos.py relatorio <post>` e mostrar a tabela (US$ e R$) no fim.
 
 ## Lições técnicas (seção 6 do passo a passo)
 
@@ -55,4 +59,19 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 
 - Ferramentas: ffmpeg, Python (Pillow, pydub/numpy), Playwright/Chromium.
 - Preparar no notebook: `bash scripts/preparar.sh`.
-- A chave do Fish Audio fica em `.env` (`FISH_AUDIO_API_KEY`), nunca no chat nem no git.
+- Chave do Gemini: no notebook em `.env` (`GEMINI_API_KEY`); na nuvem como network secret
+  (host `generativelanguage.googleapis.com`, header `x-goog-api-key`) com `GEMINI_API_KEY=proxy-injected`.
+  Nunca no chat nem no git.
+
+## Skills (pasta `.claude/skills` da raiz, as mesmas do branch `claude/awesome-cannon-sxprt5`)
+
+- Vídeo: `hyperframes*`, `bang-motion`, `motion-doctrine`, `cut-the-curve`, `captions-overlay`,
+  `remotion-*`, `ffmpeg`, `media-use`.
+- Áudio/legenda: `whisper-legendas`, `speech-to-text`, `sound-effects`, `music`.
+- Instagram/TikTok: `ig-reel` (gancho e roteiro), `ig-caption`, `ig-carousel`, `ig-story`, `ig-plan`,
+  `ig-audit` (métricas), `ig-reply`/`ig-comment`/`ig-dm`, `ig-human` (tirar cara de IA do texto).
+  As regras do projeto (seções 7 e 12) mandam sobre as das skills: 5 hashtags fixas, CTA Eagle 350,
+  pronúncia na convenção. As `ig-*` guardam voz/plano em `~/.claude/instagram/`, que some na nuvem:
+  copiar para `eagle-english/instagram/` o que valer guardar.
+- Processo: `brainstorming`, `writing-plans`, `systematic-debugging`, `verification-before-completion`.
+- Não usar Higgsfield.

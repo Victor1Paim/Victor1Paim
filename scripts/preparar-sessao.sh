@@ -14,4 +14,7 @@ fi
 if [ -f ferramentas/OpenMontage/requirements.txt ] && ! python3 -c "import pydantic, yaml, dotenv, openai" >/dev/null 2>&1; then
   pip install -q -r ferramentas/OpenMontage/requirements.txt >/dev/null 2>&1 || echo "aviso: pip install do OpenMontage falhou"
 fi
+if ! python3 -c "import whisper" >/dev/null 2>&1; then
+  pip install -q openai-whisper >/dev/null 2>&1 || echo "aviso: pip install openai-whisper falhou"
+fi
 exit 0

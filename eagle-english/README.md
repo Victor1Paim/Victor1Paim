@@ -17,7 +17,7 @@ Todo conteúdo termina com o CTA do produto **Eagle 350 – Inglês por Situaç�
 | `docs/estado.md` | último bloco ESTADO ATUALIZADO do ChatGPT |
 | `docs/originais/` | os PDFs originais (fonte da conversão) |
 | `templates/` | cartões HTML (capa, frase, produto) para texto exato na tela |
-| `scripts/` | `preparar.sh`, `novo_post.sh`, `render_cartoes.py` |
+| `scripts/` | `preparar.sh`, `novo_post.sh`, `render_cartoes.py`, `vozes.py` (Gemini TTS + Whisper) |
 | `assets/` | mascote (PNGs sem fundo), fontes, música, sfx, marca |
 | `posts/AAAA-MM-DD_tema/` | um post por pasta: `frases.json`, `slides/`, `audio/`, `roteiro.md`, `legenda.md`, `video/` |
 
@@ -33,8 +33,9 @@ cd Victor1Paim
 git checkout claude/eagle-english
 cd eagle-english
 bash scripts/preparar.sh          # ffmpeg à parte; cria .venv, instala Playwright e cria o .env
-# coloque sua chave do Fish Audio no .env (nunca no chat)
-claude                            # abre o Claude Code já com o CLAUDE.md desta pasta
+# coloque sua GEMINI_API_KEY no .env (nunca no chat)
+cd ..                             # volte para a raiz do repositório
+claude                            # abra o Claude Code NA RAIZ: é lá que estão as skills (.claude/skills)
 ```
 
 Se o repositório já estiver clonado: `git fetch origin && git checkout claude/eagle-english && git pull`.
@@ -44,7 +45,19 @@ Se o repositório já estiver clonado: `git fetch origin && git checkout claude/
 1. `bash scripts/novo_post.sh 2026-11-17 lavanderia` e cole as frases do ChatGPT em `frases.json`.
 2. (Opcional) coloque os PNGs do carrossel em `slides/`.
 3. `python3 scripts/render_cartoes.py posts/2026-11-17_lavanderia` → cartões em `cartoes/`.
-4. Peça ao Claude Code: "Gere o vídeo do formato A para o post de lavanderia".
-5. Assista com e sem som; peça ajustes pontuais.
+4. `python3 scripts/vozes.py montar posts/...` → revise `falas.json` → `python3 scripts/vozes.py gerar posts/...`.
+5. Peça ao Claude Code: "Gere o vídeo do formato A para o post de lavanderia".
+6. Assista com e sem som; peça ajustes pontuais.
 
 Primeiro post já preparado: `posts/2026-11-10_salao/` (D10 Salão, 7 frases da pesquisa do Manus de 07/11).
+
+## Custo de API
+
+Toda chamada ao Gemini é registrada em `posts/<post>/custos.jsonl`.
+Relatório: `python3 ../scripts/custos.py relatorio posts/<post>` (preços em `../scripts/precos-api.json`).
+
+## Skills
+
+O Claude Code usa as skills de `../.claude/skills` (as mesmas do branch `claude/awesome-cannon-sxprt5`):
+vídeo (HyperFrames, bang-motion, Remotion, ffmpeg), Whisper, e as `ig-*` para Reels, legendas,
+stories e métricas. Lista e origem em `../.claude/skills/FONTES.md`.

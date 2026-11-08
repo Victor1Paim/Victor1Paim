@@ -1,0 +1,54 @@
+{
+  "vozes": {
+    "pt": "Achird",
+    "en": "Kore"
+  },
+  "modelo": "gemini-3.8-flash-tts",
+  "falas": [
+    {
+      "id": "00_gancho",
+      "lingua": "pt",
+      "texto": "Repita comigo: inglês do salão! No salão, explique seu corte"
+    },
+    {
+      "id": "01_en",
+      "lingua": "en",
+      "texto": "I have an appointment at two."
+    },
+    {
+      "id": "02_en",
+      "lingua": "en",
+      "texto": "Just a trim, please."
+    },
+    {
+      "id": "03_en",
+      "lingua": "en",
+      "texto": "Not too short, please."
+    },
+    {
+      "id": "04_en",
+      "lingua": "en",
+      "texto": "A little shorter on the sides."
+    },
+    {
+      "id": "05_en",
+      "lingua": "en",
+      "texto": "Can I see the back?"
+    },
+    {
+      "id": "06_en",
+      "lingua": "en",
+      "texto": "How much do I owe you?"
+    },
+    {
+      "id": "07_en",
+      "lingua": "en",
+      "texto": "That looks great, thanks!"
+    },
+    {
+      "id": "99_cta",
+      "lingua": "pt",
+      "texto": "Quer as frases certas pra cada situação, como no salão? No Eagle 350 você tem 350 mapas visuais com tradução e pronúncia, e mais 4 bônus. Link na bio!"
+    }
+  ]
+}
