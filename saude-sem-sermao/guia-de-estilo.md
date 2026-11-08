@@ -18,7 +18,12 @@ Extraído em 08/11/2026 dos vídeos publicados **002 "Treinar 2× por semana adi
 3. **No fim**, faz o **resumo** em 1 frase, com as palavras dele ("Entendi! Peso não deixa grandona, fortalece o osso e ainda cuida do coração. O bíceps é só o brinde!"). O narrador confirma com 2–3 palavras ("Resumiu bem.").
 4. O Tito nunca dá informação técnica nova, nunca está "certo" no lugar do narrador e nunca é ridicularizado. Ele é o público.
 
-## 2. Estrutura do vídeo (45–60s)
+## 2. Estrutura do vídeo
+
+**Duração padrão a partir das próximas produções: 40 s a 1 min 10 s.** Estrutura detalhada, ganchos e o porquê de cada regra: `pesquisa-hooks-e-cta.md` (08/11/2026). A tabela abaixo é o formato dos vídeos já publicados; as mudanças valem do próximo vídeo em diante.
+
+**Regras novas de gancho:** fala do gancho em até 2 s, texto do gancho e imagem forte já no quadro 1, Tito com a objeção até os 5 s, 3 ganchos de fórmulas diferentes por roteiro antes de escolher, nova informação ou pergunta a cada 10–15 s e mudança visual a cada 2–4 s; em vídeos acima de 55 s, o Tito pergunta 2× no meio.
+
 
 | Tempo | Bloco | Quem | Tela |
 |---|---|---|---|
@@ -26,7 +31,7 @@ Extraído em 08/11/2026 dos vídeos publicados **002 "Treinar 2× por semana adi
 | 3–8s | **Objeção da vida real** | Tito | Fundo creme, Tito grande, balão "PERGUNTA DO TITO" |
 | 8–40s | **2 a 4 blocos de informação** (ou "Mito 1/3, 2/3, 3/3") | Narrador; Tito entra 1× no meio | Título do bloco + infográfico simples + fonte em letra pequena + legenda; Tito pequeno no canto inferior direito reagindo |
 | 40–50s | **Resumo do Tito** + confirmação do narrador | Tito → Narrador | Balão "O QUE O TITO ENTENDEU", texto aparecendo palavra por palavra |
-| últimos 4–5s | **CTA**: "Curtiu? Então segue a gente pra ver mais." | Narrador | Fundo laranja, card do perfil @saudesemsermao com botão "Seguir → Seguindo ✓" e cursor, confete; aviso "Conteúdo educativo, não substitui orientação profissional." |
+| últimos ~3s | **CTA novo** (substitui "Curtiu? Então segue a gente pra ver mais."): narrador confirma em 1–2 palavras e emenda **um pedido só, com motivo**, em rodízio: **Enviar** (padrão: "Manda pra quem…"), **Seguir com promessa** ("Segue: toda semana o Tito derruba um mito de saúde."), **Comentar** (pergunta de duas opções) ou **Gancho do próximo** (Tito pergunta o próximo tema; "Fica pro próximo. Segue pra não perder.") | Narrador (e Tito no gancho do próximo) | Fundo laranja em movimento; ícone conforme o pedido (avião de papel → card "@amigo", card do perfil "Seguir → Seguindo ✓", balão de comentário, ou "PRÓXIMO: …"); aviso "Conteúdo educativo, não substitui orientação profissional."; último quadro conversa com o primeiro (mesma pose ou título do gancho) para favorecer rever |
 
 Formato de mitos: rótulo **✕ MITO** + contador **1/3**, fundo laranja, e o desmentido em fundo claro. Formato de evidência: rótulo **✓ CIÊNCIA**.
 

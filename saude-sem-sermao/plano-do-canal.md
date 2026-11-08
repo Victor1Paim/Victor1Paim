@@ -4,9 +4,9 @@ Versão 2 (08/11/2026). O que ainda está **a definir** depende de decisão sua.
 
 | Plataforma | Perfil | Formato principal |
 |---|---|---|
-| TikTok | @saudesemsermao | Curto, 30s a 1m30 |
-| Instagram | @saudesemsermao | Reels, 30s a 1m30 |
-| YouTube | @saudesemsermao | Shorts, 30s a 1m30 |
+| TikTok | @saudesemsermao | Curto, 40s a 1m10 |
+| Instagram | @saudesemsermao | Reels, 40s a 1m10 |
+| YouTube | @saudesemsermao | Shorts, 40s a 1m10 |
 
 ---
 
@@ -33,7 +33,7 @@ Regra de equilíbrio: nenhum pilar passa de 40% do calendário do mês.
 
 ## 3. Formatos
 
-Duração: **30s a 1m30**. Temas que pedem mais detalhe viram **Parte 1 / Parte 2** (a Parte 1 termina com um gancho real para a Parte 2, e a Parte 2 abre com 3s de recapitulação).
+Duração: **40 s a 1 min 10 s** (padrão desde 08/11/2026; os vídeos de 30–40 s anteriores ficam como estão). Temas que pedem mais detalhe viram **Parte 1 / Parte 2** (a Parte 1 termina com um gancho real para a Parte 2, e a Parte 2 abre com 3s de recapitulação).
 
 | Formato | Duração | Uso |
 |---|---|---|
@@ -101,7 +101,7 @@ Retenção média e % que assiste até o fim, compartilhamentos e salvamentos (f
 
 ## 11. Decisões
 
-Já decididas (08/11/2026): @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 30s a 1m30 com Parte 2 quando preciso; pesquisa de atualidade no Grok.
+Já decididas (08/11/2026): @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 40 s a 1 min 10 s com Parte 2 quando preciso; ganchos e CTA conforme `pesquisa-hooks-e-cta.md`; pesquisa de atualidade no Grok.
 
 Em aberto:
 1. Assinatura do canal (em desenvolvimento).
