@@ -1,0 +1,64 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:var(--pessego);}
+  .it{left:80px;width:560px;height:84px;display:flex;align-items:center;gap:18px;padding:0 26px;font-weight:900;font-size:36px;}
+  .it .e{font-size:44px;} .it .v{margin-left:auto;color:var(--laranja);}
+  #total-anel{position:absolute;left:680px;top:540px;width:340px;height:340px;}
+  #total-num{position:absolute;left:680px;top:650px;width:340px;text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:66px;}
+  #total-ok{position:absolute;left:680px;top:740px;width:340px;text-align:center;font-weight:900;font-size:32px;color:var(--verde);}
+  .fonte{top:1060px;}
+</style>
+<div id="root" data-composition-id="total" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo" id="total-t">O <em>total</em> pesa mais</h1>
+  <div class="card it" id="total-i0" style="top:500px"><span class="e">☕</span><span class="n">padaria</span><span class="v">+1.200</span></div><div class="card it" id="total-i1" style="top:604px"><span class="e">🚌</span><span class="n">ponto de ônibus</span><span class="v">+900</span></div><div class="card it" id="total-i2" style="top:708px"><span class="e">🏢</span><span class="n">escada</span><span class="v">+600</span></div><div class="card it" id="total-i3" style="top:812px"><span class="e">🛒</span><span class="n">mercado</span><span class="v">+1.800</span></div><div class="card it" id="total-i4" style="top:916px"><span class="e">🐕</span><span class="n">passeio</span><span class="v">+2.500</span></div>
+  <svg id="total-anel" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#fff" stroke-width="10"/>
+    <circle id="total-arco" cx="50" cy="50" r="42" fill="none" stroke="#2F483A" stroke-width="10" stroke-linecap="butt"
+      pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" transform="rotate(-90 50 50)"/></svg>
+  <div id="total-num">0</div><div id="total-ok">passos no dia</div>
+  <div class="fonte" id="total-fonte">Fonte: Saint-Maurice et al., JAMA, 2020</div>
+  <div class="wipe" id="total-wipe" style="background:#FDF3ED"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#total-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#total-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.3);
+  tl.fromTo("#total-anel",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.35,ease:"back.out(1.8)"},0.4);
+  tl.fromTo("#total-i0",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},0.70); tl.fromTo("#total-i1",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},1.15); tl.fromTo("#total-i2",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},1.60); tl.fromTo("#total-i3",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},2.05); tl.fromTo("#total-i4",{opacity:0,x:-60},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},2.50);
+  tl.fromTo("#total-arco",{attr:{"stroke-dashoffset":1}},{attr:{"stroke-dashoffset":0},duration:2.4,ease:"power1.inOut"},0.7);
+  (function(){const o={v:0};const el=document.querySelector("#total-num");tl.fromTo(o,{v:0},{v:7000,duration:2.4,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v).toLocaleString('pt-BR');}},0.70);})();
+  tl.to("#total-ok",{color:"#D45F2B",duration:0.2},3.1);
+  tl.set("#total-ok",{textContent:"7 mil ✓"},3.1);
+  tl.fromTo("#total-fonte",{opacity:0},{opacity:1,duration:0.4},0.5);
+
+  window.__timelines["total"] = tl;
+</script>
+</template>

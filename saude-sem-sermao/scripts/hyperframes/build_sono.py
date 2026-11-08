@@ -334,7 +334,7 @@ cena("cta", d, """
   tl.to("#cta-cursor",{{scale:0.85,duration:0.08,yoyo:true,repeat:1,transformOrigin:"10% 10%"}},{35.05-ini:.2f});
   tl.to("#cta-bt1",{{opacity:0,duration:0.15}},{35.12-ini:.2f});
   tl.to("#cta-bt2",{{opacity:1,duration:0.15}},{35.12-ini:.2f});
-  {' '.join(f'tl.fromTo("#cta-cf{i}",{{opacity:1,x:0,y:0,rotation:0}},{{opacity:0,x:{dx:.0f},y:{dy - 60:.0f},rotation:{(i*47)%360},duration:0.9,ease:"power2.out"}},{35.15-ini:.2f});' for i, _, dx, dy in confete)}
+  {' '.join(f'tl.fromTo("#cta-cf{i}",{{opacity:1,x:0,y:0,rotation:0}},{{immediateRender:false,opacity:0,x:{dx:.0f},y:{dy - 60:.0f},rotation:{(i*47)%360},duration:0.9,ease:"power2.out"}},{35.15-ini:.2f});' for i, _, dx, dy in confete)}
   tl.fromTo("#cta-aviso",{{opacity:0}},{{opacity:1,duration:0.4}},0.8);
   tl.fromTo("#cta-circ",{{scale:0}},{{scale:1,duration:0.4,ease:"back.out(1.6)"}},0.4);
   tl.fromTo("#cta-tito",{{opacity:0,y:60}},{{opacity:1,y:0,duration:0.45,ease:"back.out(1.5)"}},0.5);

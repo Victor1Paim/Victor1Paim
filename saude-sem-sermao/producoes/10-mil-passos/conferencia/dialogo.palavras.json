@@ -1,0 +1,752 @@
+[
+ {
+  "palavra": "10",
+  "inicio": 0.0,
+  "fim": 0.44
+ },
+ {
+  "palavra": "mil",
+  "inicio": 0.44,
+  "fim": 0.66
+ },
+ {
+  "palavra": "passos",
+  "inicio": 0.66,
+  "fim": 1.04
+ },
+ {
+  "palavra": "por",
+  "inicio": 1.04,
+  "fim": 1.26
+ },
+ {
+  "palavra": "dia?",
+  "inicio": 1.26,
+  "fim": 1.48
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 1.7,
+  "fim": 2.14
+ },
+ {
+  "palavra": "número",
+  "inicio": 2.14,
+  "fim": 2.42
+ },
+ {
+  "palavra": "nem",
+  "inicio": 2.42,
+  "fim": 2.72
+ },
+ {
+  "palavra": "nasceu",
+  "inicio": 2.72,
+  "fim": 3.22
+ },
+ {
+  "palavra": "na",
+  "inicio": 3.22,
+  "fim": 3.34
+ },
+ {
+  "palavra": "ciência.",
+  "inicio": 3.34,
+  "fim": 3.72
+ },
+ {
+  "palavra": "Ué,",
+  "inicio": 4.04,
+  "fim": 4.34
+ },
+ {
+  "palavra": "eu",
+  "inicio": 4.76,
+  "fim": 5.18
+ },
+ {
+  "palavra": "mal",
+  "inicio": 5.18,
+  "fim": 5.4
+ },
+ {
+  "palavra": "chego",
+  "inicio": 5.4,
+  "fim": 5.68
+ },
+ {
+  "palavra": "a",
+  "inicio": 5.68,
+  "fim": 5.82
+ },
+ {
+  "palavra": "5",
+  "inicio": 5.82,
+  "fim": 5.96
+ },
+ {
+  "palavra": "mil,",
+  "inicio": 5.96,
+  "fim": 6.26
+ },
+ {
+  "palavra": "então",
+  "inicio": 6.64,
+  "fim": 6.96
+ },
+ {
+  "palavra": "nem",
+  "inicio": 6.96,
+  "fim": 7.18
+ },
+ {
+  "palavra": "adianta?",
+  "inicio": 7.18,
+  "fim": 7.54
+ },
+ {
+  "palavra": "Adianta",
+  "inicio": 8.06,
+  "fim": 8.66
+ },
+ {
+  "palavra": "sim.",
+  "inicio": 8.66,
+  "fim": 8.88
+ },
+ {
+  "palavra": "Os",
+  "inicio": 9.36,
+  "fim": 9.54
+ },
+ {
+  "palavra": "10",
+  "inicio": 9.54,
+  "fim": 9.7
+ },
+ {
+  "palavra": "mil",
+  "inicio": 9.7,
+  "fim": 9.92
+ },
+ {
+  "palavra": "vieram",
+  "inicio": 9.92,
+  "fim": 10.26
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.26,
+  "fim": 10.38
+ },
+ {
+  "palavra": "um",
+  "inicio": 10.38,
+  "fim": 10.48
+ },
+ {
+  "palavra": "pedômetro",
+  "inicio": 10.48,
+  "fim": 11.18
+ },
+ {
+  "palavra": "japonês",
+  "inicio": 11.18,
+  "fim": 11.82
+ },
+ {
+  "palavra": "dos",
+  "inicio": 11.82,
+  "fim": 11.98
+ },
+ {
+  "palavra": "anos",
+  "inicio": 11.98,
+  "fim": 12.16
+ },
+ {
+  "palavra": "60.",
+  "inicio": 12.16,
+  "fim": 12.64
+ },
+ {
+  "palavra": "Era",
+  "inicio": 12.98,
+  "fim": 13.22
+ },
+ {
+  "palavra": "marketing.",
+  "inicio": 13.22,
+  "fim": 13.54
+ },
+ {
+  "palavra": "Em",
+  "inicio": 13.96,
+  "fim": 14.1
+ },
+ {
+  "palavra": "2025,",
+  "inicio": 14.1,
+  "fim": 14.68
+ },
+ {
+  "palavra": "uma",
+  "inicio": 15.2,
+  "fim": 15.34
+ },
+ {
+  "palavra": "revisão",
+  "inicio": 15.34,
+  "fim": 15.7
+ },
+ {
+  "palavra": "juntou",
+  "inicio": 15.7,
+  "fim": 16.06
+ },
+ {
+  "palavra": "dezenas",
+  "inicio": 16.06,
+  "fim": 16.86
+ },
+ {
+  "palavra": "de",
+  "inicio": 16.86,
+  "fim": 17.02
+ },
+ {
+  "palavra": "estudos",
+  "inicio": 17.02,
+  "fim": 17.5
+ },
+ {
+  "palavra": "sobre",
+  "inicio": 17.5,
+  "fim": 17.78
+ },
+ {
+  "palavra": "passos",
+  "inicio": 17.78,
+  "fim": 18.34
+ },
+ {
+  "palavra": "e",
+  "inicio": 18.34,
+  "fim": 18.48
+ },
+ {
+  "palavra": "saúde.",
+  "inicio": 18.48,
+  "fim": 18.82
+ },
+ {
+  "palavra": "Comparado",
+  "inicio": 19.16,
+  "fim": 19.76
+ },
+ {
+  "palavra": "com",
+  "inicio": 19.76,
+  "fim": 19.88
+ },
+ {
+  "palavra": "quem",
+  "inicio": 19.88,
+  "fim": 20.06
+ },
+ {
+  "palavra": "dava",
+  "inicio": 20.06,
+  "fim": 20.32
+ },
+ {
+  "palavra": "2",
+  "inicio": 20.32,
+  "fim": 20.64
+ },
+ {
+  "palavra": "mil",
+  "inicio": 20.64,
+  "fim": 20.84
+ },
+ {
+  "palavra": "passos",
+  "inicio": 20.84,
+  "fim": 21.18
+ },
+ {
+  "palavra": "por",
+  "inicio": 21.18,
+  "fim": 21.36
+ },
+ {
+  "palavra": "dia,",
+  "inicio": 21.36,
+  "fim": 21.62
+ },
+ {
+  "palavra": "quem",
+  "inicio": 22.0,
+  "fim": 22.16
+ },
+ {
+  "palavra": "dava",
+  "inicio": 22.16,
+  "fim": 22.42
+ },
+ {
+  "palavra": "7",
+  "inicio": 22.42,
+  "fim": 22.82
+ },
+ {
+  "palavra": "mil",
+  "inicio": 22.82,
+  "fim": 23.14
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 23.14,
+  "fim": 23.54
+ },
+ {
+  "palavra": "quase",
+  "inicio": 23.54,
+  "fim": 23.82
+ },
+ {
+  "palavra": "metade",
+  "inicio": 23.82,
+  "fim": 24.42
+ },
+ {
+  "palavra": "do",
+  "inicio": 24.42,
+  "fim": 24.58
+ },
+ {
+  "palavra": "risco",
+  "inicio": 24.58,
+  "fim": 24.82
+ },
+ {
+  "palavra": "de",
+  "inicio": 24.82,
+  "fim": 24.92
+ },
+ {
+  "palavra": "morte.",
+  "inicio": 24.92,
+  "fim": 25.18
+ },
+ {
+  "palavra": "E",
+  "inicio": 25.46,
+  "fim": 25.88
+ },
+ {
+  "palavra": "de",
+  "inicio": 25.88,
+  "fim": 26.16
+ },
+ {
+  "palavra": "7",
+  "inicio": 26.16,
+  "fim": 26.46
+ },
+ {
+  "palavra": "para",
+  "inicio": 26.46,
+  "fim": 26.7
+ },
+ {
+  "palavra": "10",
+  "inicio": 26.7,
+  "fim": 27.06
+ },
+ {
+  "palavra": "mil,",
+  "inicio": 27.06,
+  "fim": 27.42
+ },
+ {
+  "palavra": "muda",
+  "inicio": 27.56,
+  "fim": 28.0
+ },
+ {
+  "palavra": "muito?",
+  "inicio": 28.0,
+  "fim": 28.2
+ },
+ {
+  "palavra": "Pouco.",
+  "inicio": 28.2,
+  "fim": 29.02
+ },
+ {
+  "palavra": "O",
+  "inicio": 29.26,
+  "fim": 29.56
+ },
+ {
+  "palavra": "maior",
+  "inicio": 29.56,
+  "fim": 29.74
+ },
+ {
+  "palavra": "salto",
+  "inicio": 29.74,
+  "fim": 30.28
+ },
+ {
+  "palavra": "vem",
+  "inicio": 30.28,
+  "fim": 30.48
+ },
+ {
+  "palavra": "antes",
+  "inicio": 30.48,
+  "fim": 30.92
+ },
+ {
+  "palavra": "dos",
+  "inicio": 30.92,
+  "fim": 31.14
+ },
+ {
+  "palavra": "7",
+  "inicio": 31.14,
+  "fim": 31.38
+ },
+ {
+  "palavra": "mil.",
+  "inicio": 31.38,
+  "fim": 31.56
+ },
+ {
+  "palavra": "E",
+  "inicio": 31.76,
+  "fim": 32.18
+ },
+ {
+  "palavra": "cada",
+  "inicio": 32.18,
+  "fim": 32.52
+ },
+ {
+  "palavra": "mil",
+  "inicio": 32.52,
+  "fim": 32.7
+ },
+ {
+  "palavra": "passos",
+  "inicio": 32.7,
+  "fim": 33.06
+ },
+ {
+  "palavra": "a",
+  "inicio": 33.06,
+  "fim": 33.18
+ },
+ {
+  "palavra": "mais",
+  "inicio": 33.18,
+  "fim": 33.38
+ },
+ {
+  "palavra": "já",
+  "inicio": 33.38,
+  "fim": 33.68
+ },
+ {
+  "palavra": "conta.",
+  "inicio": 33.68,
+  "fim": 33.96
+ },
+ {
+  "palavra": "E",
+  "inicio": 34.32,
+  "fim": 34.54
+ },
+ {
+  "palavra": "se",
+  "inicio": 34.54,
+  "fim": 34.72
+ },
+ {
+  "palavra": "eu",
+  "inicio": 34.72,
+  "fim": 34.82
+ },
+ {
+  "palavra": "andar",
+  "inicio": 34.82,
+  "fim": 35.0
+ },
+ {
+  "palavra": "devagar,",
+  "inicio": 35.0,
+  "fim": 35.5
+ },
+ {
+  "palavra": "conta",
+  "inicio": 35.74,
+  "fim": 36.1
+ },
+ {
+  "palavra": "também?",
+  "inicio": 36.1,
+  "fim": 36.32
+ },
+ {
+  "palavra": "Conta.",
+  "inicio": 36.72,
+  "fim": 37.22
+ },
+ {
+  "palavra": "Nos",
+  "inicio": 37.42,
+  "fim": 37.7
+ },
+ {
+  "palavra": "estudos,",
+  "inicio": 37.7,
+  "fim": 38.12
+ },
+ {
+  "palavra": "o",
+  "inicio": 38.2,
+  "fim": 38.24
+ },
+ {
+  "palavra": "que",
+  "inicio": 38.24,
+  "fim": 38.36
+ },
+ {
+  "palavra": "mais",
+  "inicio": 38.36,
+  "fim": 38.66
+ },
+ {
+  "palavra": "pesou",
+  "inicio": 38.66,
+  "fim": 39.04
+ },
+ {
+  "palavra": "foi",
+  "inicio": 39.04,
+  "fim": 39.3
+ },
+ {
+  "palavra": "o",
+  "inicio": 39.3,
+  "fim": 39.44
+ },
+ {
+  "palavra": "total",
+  "inicio": 39.44,
+  "fim": 39.82
+ },
+ {
+  "palavra": "de",
+  "inicio": 39.82,
+  "fim": 40.02
+ },
+ {
+  "palavra": "passos",
+  "inicio": 40.02,
+  "fim": 40.34
+ },
+ {
+  "palavra": "do",
+  "inicio": 40.34,
+  "fim": 40.46
+ },
+ {
+  "palavra": "dia.",
+  "inicio": 40.46,
+  "fim": 40.62
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 41.16,
+  "fim": 41.68
+ },
+ {
+  "palavra": "10",
+  "inicio": 42.1,
+  "fim": 42.48
+ },
+ {
+  "palavra": "mil",
+  "inicio": 42.48,
+  "fim": 42.72
+ },
+ {
+  "palavra": "não",
+  "inicio": 42.72,
+  "fim": 42.84
+ },
+ {
+  "palavra": "é",
+  "inicio": 42.84,
+  "fim": 42.98
+ },
+ {
+  "palavra": "regra.",
+  "inicio": 42.98,
+  "fim": 43.26
+ },
+ {
+  "palavra": "7",
+  "inicio": 43.8,
+  "fim": 44.14
+ },
+ {
+  "palavra": "mil",
+  "inicio": 44.14,
+  "fim": 44.36
+ },
+ {
+  "palavra": "já",
+  "inicio": 44.36,
+  "fim": 44.48
+ },
+ {
+  "palavra": "é",
+  "inicio": 44.48,
+  "fim": 44.6
+ },
+ {
+  "palavra": "ótimo.",
+  "inicio": 44.6,
+  "fim": 44.98
+ },
+ {
+  "palavra": "E",
+  "inicio": 45.08,
+  "fim": 45.42
+ },
+ {
+  "palavra": "cada",
+  "inicio": 45.42,
+  "fim": 45.76
+ },
+ {
+  "palavra": "passinho",
+  "inicio": 45.76,
+  "fim": 46.12
+ },
+ {
+  "palavra": "a",
+  "inicio": 46.12,
+  "fim": 46.2
+ },
+ {
+  "palavra": "mais",
+  "inicio": 46.2,
+  "fim": 46.38
+ },
+ {
+  "palavra": "conta.",
+  "inicio": 46.38,
+  "fim": 46.7
+ },
+ {
+  "palavra": "Vou",
+  "inicio": 47.04,
+  "fim": 47.48
+ },
+ {
+  "palavra": "descer",
+  "inicio": 47.48,
+  "fim": 47.76
+ },
+ {
+  "palavra": "do",
+  "inicio": 47.76,
+  "fim": 47.88
+ },
+ {
+  "palavra": "ônibus",
+  "inicio": 47.88,
+  "fim": 48.26
+ },
+ {
+  "palavra": "um",
+  "inicio": 48.26,
+  "fim": 48.42
+ },
+ {
+  "palavra": "ponto",
+  "inicio": 48.42,
+  "fim": 48.66
+ },
+ {
+  "palavra": "antes.",
+  "inicio": 48.66,
+  "fim": 48.96
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 49.34,
+  "fim": 49.74
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 49.74,
+  "fim": 49.94
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 50.22,
+  "fim": 50.62
+ },
+ {
+  "palavra": "para",
+  "inicio": 50.62,
+  "fim": 50.76
+ },
+ {
+  "palavra": "quem",
+  "inicio": 50.76,
+  "fim": 50.94
+ },
+ {
+  "palavra": "se",
+  "inicio": 50.94,
+  "fim": 51.14
+ },
+ {
+  "palavra": "culpa",
+  "inicio": 51.14,
+  "fim": 51.48
+ },
+ {
+  "palavra": "por",
+  "inicio": 51.48,
+  "fim": 51.8
+ },
+ {
+  "palavra": "não",
+  "inicio": 51.8,
+  "fim": 52.02
+ },
+ {
+  "palavra": "bater",
+  "inicio": 52.02,
+  "fim": 52.32
+ },
+ {
+  "palavra": "10",
+  "inicio": 52.32,
+  "fim": 52.58
+ },
+ {
+  "palavra": "mil.",
+  "inicio": 52.58,
+  "fim": 52.78
+ }
+]

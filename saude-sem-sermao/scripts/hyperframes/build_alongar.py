@@ -267,7 +267,7 @@ cena("forca", d, f"""
   tl.to("#forca-f1",{{scaleX:0.32,duration:0.9,ease:"power3.inOut"}},{t(52)-ini:.2f});
   {contador("#forca-pf1", 100, 32, t(52)-ini, 0.9)}
   tl.fromTo("#forca-terco",{{opacity:0,scale:0.4}},{{opacity:1,scale:1,duration:0.35,ease:"back.out(2.4)"}},{t(56)-ini:.2f});
-  {' '.join(f'tl.fromTo("#forca-cf{i}",{{opacity:1,x:0,y:0,rotation:0}},{{opacity:0,x:{dx:.0f},y:{dy:.0f},rotation:{(i*53)%360},duration:0.9,ease:"power2.out"}},{t(56)-ini:.2f});' for i,_,dx,dy in confete)}
+  {' '.join(f'tl.fromTo("#forca-cf{i}",{{opacity:1,x:0,y:0,rotation:0}},{{immediateRender:false,opacity:0,x:{dx:.0f},y:{dy:.0f},rotation:{(i*53)%360},duration:0.9,ease:"power2.out"}},{t(56)-ini:.2f});' for i,_,dx,dy in confete)}
   tl.fromTo("#forca-agach",{{opacity:0,x:120}},{{opacity:1,x:0,duration:0.45,ease:"back.out(1.4)"}},{t(47)-ini:.2f});
   tl.fromTo("#forca-agach",{{y:0,scaleY:1,transformOrigin:"50% 100%"}},{{y:30,scaleY:0.9,duration:0.42,ease:"sine.inOut",yoyo:true,repeat:5}},{t(49)-ini:.2f});
   tl.to("#forca-t1",{{opacity:0,y:-20,duration:0.25}},{t(58)-ini-0.15:.2f});

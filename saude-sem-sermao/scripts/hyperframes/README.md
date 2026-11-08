@@ -1,6 +1,6 @@
 # Geradores dos projetos HyperFrames
 
-`build_sono.py` e `build_alongar.py` geraram os projetos em `producoes/<post>/video/`.
+`build_sono.py`, `build_alongar.py` e `build_passos.py` geraram os projetos em `producoes/<post>/video/`.
 `build_sono.py` contém a base reaproveitável (paleta, Tito em SVG com boca que fala, balões
 "PERGUNTA DO TITO" / "O QUE O TITO ENTENDEU", legendas por palavra, CTA com card do perfil);
 `build_alongar.py` importa essa base e acrescenta transições, contadores, gráficos de barras,

@@ -1,0 +1,70 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:var(--creme);}
+  #cinco-img{left:60px;top:640px;width:560px;height:680px;}
+  #cinco-anel{position:absolute;left:640px;top:700px;width:360px;height:360px;}
+  #cinco-num{position:absolute;left:640px;top:820px;width:360px;text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:72px;color:#2B2B2B;}
+  #cinco-meta{position:absolute;left:640px;top:910px;width:360px;text-align:center;font-weight:900;font-size:30px;color:#8a837d;}
+</style>
+<div id="root" data-composition-id="cinco" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div class="balao" id="cinco-balao"><div class="rot">💬 PERGUNTA DO TITO</div>
+    <div class="txt"><span class="w" id="cinco-w0">Ué!</span> <span class="w" id="cinco-w1">Eu</span> <span class="w" id="cinco-w2">mal</span> <span class="w" id="cinco-w3">chego</span> <span class="w" id="cinco-w4">a</span> <span class="w" id="cinco-w5" style="color:var(--laranja)">5</span> <span class="w" id="cinco-w6" style="color:var(--laranja)">mil.</span> <span class="w" id="cinco-w7">Então</span> <span class="w" id="cinco-w8" style="color:var(--laranja)">nem</span> <span class="w" id="cinco-w9" style="color:var(--laranja)">adianta?</span></div><div class="rabo"></div></div>
+  <div class="img" id="cinco-img"><img src="assets/tito-celular.png"></div>
+  <svg id="cinco-anel" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#F2ECE2" stroke-width="10"/>
+    <circle id="cinco-arco" cx="50" cy="50" r="42" fill="none" stroke="#D45F2B" stroke-width="10" stroke-linecap="butt"
+      pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" transform="rotate(-90 50 50)"/></svg>
+  <div id="cinco-num">0</div><div id="cinco-meta">de 10.000</div>
+  <div class="wipe" id="cinco-wipe" style="background:#2F483A"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#cinco-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#cinco-balao",{opacity:0,y:30,scale:0.96},{opacity:1,y:0,scale:1,duration:0.3,ease:"back.out(1.6)"},0.12);
+  tl.fromTo("#cinco-img",{opacity:0,y:100},{opacity:1,y:0,duration:0.45,ease:"back.out(1.4)"},0.05);
+  tl.fromTo("#cinco-w0",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},0.09);
+  tl.fromTo("#cinco-w1",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},0.81);
+  tl.fromTo("#cinco-w2",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1.23);
+  tl.fromTo("#cinco-w3",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1.45);
+  tl.fromTo("#cinco-w4",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1.73);
+  tl.fromTo("#cinco-w5",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},1.87);
+  tl.fromTo("#cinco-w6",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},2.01);
+  tl.fromTo("#cinco-w7",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},2.69);
+  tl.fromTo("#cinco-w8",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},3.01);
+  tl.fromTo("#cinco-w9",{opacity:0,y:14},{opacity:1,y:0,duration:0.16,ease:"power2.out"},3.23);
+  tl.fromTo("#cinco-anel",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.35,ease:"back.out(1.8)"},0.5);
+  tl.fromTo("#cinco-arco",{attr:{"stroke-dashoffset":1}},{attr:{"stroke-dashoffset":0.5},duration:1.0,ease:"power2.out"},1.45);
+  (function(){const o={v:0};const el=document.querySelector("#cinco-num");tl.fromTo(o,{v:0},{v:5000,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v).toLocaleString('pt-BR');}},1.45);})();
+  tl.fromTo("#cinco-img",{rotation:0,transformOrigin:"50% 100%"},{rotation:-4,duration:0.3,yoyo:true,repeat:1,ease:"sine.inOut"},2.69);
+
+  window.__timelines["cinco"] = tl;
+</script>
+</template>

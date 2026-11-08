@@ -1,0 +1,83 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:#fff;}
+  .tag{background:#5F6E52;color:#fff;}
+  .graf{position:absolute;left:0;top:0;}
+  #curva-chip{position:absolute;left:600px;top:420px;padding:8px 22px;border-radius:999px;background:var(--salvia);color:#fff;font-weight:900;font-size:32px;}
+  .ponto{position:absolute;width:40px;height:40px;border-radius:50%;border:8px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.18);}
+  #curva-p2{left:120px;top:500px;background:#8C8580;}
+  #curva-p7{left:540px;top:876px;background:var(--laranja);}
+  #curva-l2{position:absolute;left:176px;top:528px;font-weight:900;font-size:34px;color:#6b6460;}
+  #curva-l7{position:absolute;left:500px;top:936px;padding:10px 24px;border-radius:999px;background:var(--verde);color:#fff;font-weight:900;font-size:44px;}
+  .cf{position:absolute;left:550px;top:886px;width:20px;height:30px;border-radius:5px;opacity:0;}
+  .fonte{top:1110px;}
+</style>
+<div id="root" data-composition-id="curva" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div class="tag" id="curva-tag">✓ CIÊNCIA</div>
+  <h1 class="titulo" id="curva-t1">O que a <em>ciência</em> diz</h1>
+  <h1 class="titulo" id="curva-t2" style="opacity:0"><em>7 mil</em>: quase metade do risco</h1>
+  <svg class="graf" viewBox="0 0 1080 1100" width="1080" height="1100">
+  <line x1="140" y1="1000" x2="980" y2="1000" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round"/>
+  <line x1="140" y1="500" x2="140" y2="1000" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round"/>
+  <text x="126" y="486" font-family="Nunito" font-weight="900" font-size="28" fill="#8a837d">risco de morte</text>
+  <text x="980" y="1092" text-anchor="end" font-family="Nunito" font-weight="900" font-size="28" fill="#8a837d">passos por dia</text>
+  <text x="140" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">2k</text><text x="308" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">4k</text><text x="476" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">6k</text><text x="644" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">8k</text><text x="812" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">10k</text><text x="980" y="1048" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#6b6460">12k</text>
+  <path id="curva-curva" d="M140 520 L224 640 L308 736 L392 808 L476 856 L560 896 L644 920 L728 928 L812 936 L896 944 L980 948" fill="none" stroke="#D45F2B" stroke-width="12" stroke-linecap="butt" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+</svg>
+  <div id="curva-chip">57 estudos</div>
+  <div class="ponto" id="curva-p2"></div><div id="curva-l2">2 mil passos = 100</div>
+  <div class="ponto" id="curva-p7"></div><div id="curva-l7">−47%</div>
+  <div class="cf" id="curva-cf0" style="background:#E2B04A"></div><div class="cf" id="curva-cf1" style="background:#2F483A"></div><div class="cf" id="curva-cf2" style="background:#95A185"></div><div class="cf" id="curva-cf3" style="background:#D45F2B"></div><div class="cf" id="curva-cf4" style="background:#E2B04A"></div><div class="cf" id="curva-cf5" style="background:#2F483A"></div><div class="cf" id="curva-cf6" style="background:#95A185"></div><div class="cf" id="curva-cf7" style="background:#D45F2B"></div><div class="cf" id="curva-cf8" style="background:#E2B04A"></div><div class="cf" id="curva-cf9" style="background:#2F483A"></div><div class="cf" id="curva-cf10" style="background:#95A185"></div><div class="cf" id="curva-cf11" style="background:#D45F2B"></div><div class="cf" id="curva-cf12" style="background:#E2B04A"></div><div class="cf" id="curva-cf13" style="background:#2F483A"></div><div class="cf" id="curva-cf14" style="background:#95A185"></div><div class="cf" id="curva-cf15" style="background:#D45F2B"></div>
+  <div class="fonte" id="curva-fonte">Fonte: Ding et al., Lancet Public Health, 2025 (estudo observacional)</div>
+  <div class="wipe" id="curva-wipe" style="background:#F7E5DD"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#curva-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#curva-tag",{opacity:0,y:-10},{opacity:1,y:0,duration:0.3},0.3);
+  tl.fromTo("#curva-t1",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.3);
+  tl.fromTo(".graf",{opacity:0},{opacity:1,duration:0.4},1.34);
+  tl.fromTo("#curva-chip",{opacity:0,scale:0.5},{opacity:1,scale:1,duration:0.35,ease:"back.out(2)"},2.06);
+  tl.fromTo("#curva-curva",{attr:{"stroke-dashoffset":1}},{attr:{"stroke-dashoffset":0},duration:2.4,ease:"power2.inOut"},3.02);
+  tl.fromTo("#curva-fonte",{opacity:0},{opacity:1,duration:0.4},3.02);
+  tl.fromTo("#curva-p2",{scale:0},{scale:1,duration:0.3,ease:"back.out(2.4)"},6.32);
+  tl.fromTo("#curva-l2",{opacity:0,x:-10},{opacity:1,x:0,duration:0.3},6.64);
+  tl.to("#curva-t1",{opacity:0,y:-20,duration:0.25},8.27);
+  tl.fromTo("#curva-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},8.42);
+  tl.to("#curva-chip",{opacity:0,duration:0.2},8.27);
+  tl.fromTo("#curva-p7",{scale:0},{scale:1,duration:0.35,ease:"back.out(2.6)"},8.42);
+  tl.fromTo("#curva-l7",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.35,ease:"back.out(2.4)"},9.54);
+  tl.fromTo("#curva-cf0",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:130,y:0,rotation:0,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf1",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:162,y:49,rotation:47,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf2",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:156,y:113,rotation:94,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf3",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:51,y:175,rotation:141,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf4",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:2,y:100,rotation:188,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf5",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-81,y:121,rotation:235,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf6",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-90,y:115,rotation:282,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf7",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-160,y:76,rotation:329,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf8",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-220,y:2,rotation:16,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf9",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-121,y:-47,rotation:63,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf10",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-127,y:-110,rotation:110,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf11",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-90,y:-173,rotation:157,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf12",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:-4,y:-100,rotation:204,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf13",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:61,y:-122,rotation:251,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf14",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:150,y:-117,rotation:298,duration:0.9,ease:"power2.out"},9.54); tl.fromTo("#curva-cf15",{opacity:1,x:0,y:0,rotation:0},{immediateRender:false,opacity:0,x:118,y:-80,rotation:345,duration:0.9,ease:"power2.out"},9.54);
+
+  window.__timelines["curva"] = tl;
+</script>
+</template>
