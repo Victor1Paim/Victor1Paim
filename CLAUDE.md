@@ -10,5 +10,5 @@ Canal de séries em capítulos (@halftone.tv1). Série atual: **Ano Zero · T1 A
 - Sessão nova: rodar `scripts/preparar-sessao.sh` (submódulo + npm ci + pip).
 - Antes de entregar um episódio: `cd halftone && npm run checar -- series/ano-zero/t1/epNN/ep.json`.
 - Segundo canal: **Desvendando Ideias** (@desvendandoideias.ofc) — curiosidades/ciência/mistérios, curtos e longos. Pasta `desvendando-ideias/` — leia `desvendando-ideias/plano-do-canal.md`. Independente do Halftone.
-- Terceiro canal: **Saúde sem Sermão** (@ a definir) — saúde e hábitos explicados sem bronca, com fonte. Pasta `saude-sem-sermao/` — leia `saude-sem-sermao/plano-do-canal.md`. Independente dos outros canais.
+- Terceiro canal: **Saúde sem Sermão** (@saudesemsermao) — saúde e hábitos explicados sem bronca, com fonte. Pasta `saude-sem-sermao/` — leia `saude-sem-sermao/plano-do-canal.md`. Independente dos outros canais.
 - Idioma de trabalho com o usuário: português do Brasil.

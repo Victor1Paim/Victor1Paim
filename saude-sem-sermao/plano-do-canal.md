@@ -1,12 +1,12 @@
 # Saúde sem Sermão — Plano do canal
 
-Rascunho inicial. Tudo marcado como **a definir** depende de decisão sua.
+Versão 2 (08/11/2026). O que ainda está **a definir** depende de decisão sua.
 
 | Plataforma | Perfil | Formato principal |
 |---|---|---|
-| TikTok | a definir | Curto, 30s a 2m |
-| Instagram | a definir | Reels, 30s a 2m |
-| YouTube | a definir | Shorts + longos (a definir se haverá longos) |
+| TikTok | @saudesemsermao | Curto, 30s a 1m30 |
+| Instagram | @saudesemsermao | Reels, 30s a 1m30 |
+| YouTube | @saudesemsermao | Shorts, 30s a 1m30 |
 
 ---
 
@@ -16,7 +16,7 @@ Rascunho inicial. Tudo marcado como **a definir** depende de decisão sua.
 
 **Tom:** amigo bem informado, não professor nem médico dando sermão. Humor leve, zero terrorismo ("isso vai te matar"), zero vergonha do corpo ou do hábito de quem assiste. Mostra o custo-benefício real e deixa a pessoa decidir.
 
-**Assinatura possível (decisão aberta):**
+**Assinatura (em desenvolvimento — escolher e testar no piloto):**
 - Fechar cada vídeo com "o mínimo que já ajuda" (o passo menor e realista, não o ideal).
 - Um selo de força da evidência: **Forte · Moderada · Fraca · Mito**.
 - Quadro "Sermão x Realidade": o conselho exagerado que todo mundo ouve versus o que os estudos mostram.
@@ -33,11 +33,14 @@ Regra de equilíbrio: nenhum pilar passa de 40% do calendário do mês.
 
 ## 3. Formatos
 
+Duração: **30s a 1m30**. Temas que pedem mais detalhe viram **Parte 1 / Parte 2** (a Parte 1 termina com um gancho real para a Parte 2, e a Parte 2 abre com 3s de recapitulação).
+
 | Formato | Duração | Uso |
 |---|---|---|
 | Relâmpago | 30–45s | 1 mito derrubado ou 1 dica com motivo |
 | Explicado | 60–90s | Hábito + o que os estudos dizem + o mínimo que ajuda |
-| Sermão x Realidade | 60–120s | Conselho exagerado comparado com a evidência |
+| Sermão x Realidade | 60–90s | Conselho exagerado comparado com a evidência |
+| Série em partes | 2 × 60–90s | Tema grande dividido em Parte 1 e Parte 2 |
 
 Estrutura base:
 1. **0–3s:** gancho (o conselho que todo mundo ouve, ou uma contradição). Sem "olá".
@@ -54,7 +57,7 @@ Estrutura base:
 - Temas sensíveis (transtornos alimentares, saúde mental, gravidez, doenças graves) só com cuidado extra no tom e indicação de onde buscar ajuda (ex.: CVV 188).
 - Sem antes/depois de corpo, sem promessa de emagrecimento, sem venda de produto milagroso.
 - Conferir as políticas das plataformas para **informação médica** e para **conteúdo gerado por IA**. Saúde é a categoria em que desinformação mais derruba alcance e monetização.
-- Decisão aberta: ter um profissional de saúde revisando os roteiros (aumenta credibilidade e segurança).
+- **Revisão por profissional de saúde:** todo roteiro passa por um profissional antes da gravação. Registrar no roteiro quem revisou e quando. Nome e registro profissional a definir.
 - Erro corrigido em comentário fixado e, se grave, no vídeo.
 
 ## 5. Cadência sugerida
@@ -65,22 +68,23 @@ Começar com **3 a 5 curtos por semana**, constante, e subir depois. Produção 
 
 - Vertical **9:16, 1080×1920**, 30 fps, margens de segurança para a interface.
 - Legendas queimadas no vídeo, grandes, com palavras-chave destacadas.
-- Longos (se houver): **16:9, 1920×1080**.
 - Fontes na descrição ou no comentário fixado.
 
 ## 7. Identidade visual e sonora (a definir)
 
-- **Nome:** Saúde sem Sermão. @ a definir; verificar disponibilidade nas três plataformas antes de fixar.
+- **Nome:** Saúde sem Sermão · **@saudesemsermao** nas três plataformas.
 - **Paleta e tipografia:** cores claras e acolhedoras, longe do visual "hospital" e do visual "alerta vermelho". Uma fonte só para título e legenda.
-- **Voz:** uma voz fixa, calorosa e informal. Testar 3 opções.
+- **Voz:** sintética, via **API do Gemini** (`gemini_tts` do OpenMontage). Uma voz fixa, calorosa e informal; testar 3 opções e fixar uma.
 - **Imagem:** ilustração e motion graphics próprios; sem imagens de doença chocantes.
 
 ## 8. Produção (reaproveitando o que já existe no repo)
 
 - **Montagem:** Remotion, como no Halftone (`halftone/`).
-- **Mídia:** voz, música e imagens via skill `openmontage`. Sem Higgsfield (regra do projeto).
+- **Mídia:** via skill `openmontage`. Voz no **Gemini**, imagens na **OpenAI** (GPT Image). Sem Higgsfield (regra do projeto).
+- **Pesquisa de pauta:** **Grok** para assuntos da atualidade (o que está em alta em saúde). O Grok só sugere o tema; a checagem é feita nas fontes primárias (seção 4). Prompt pronto em `pautas/pesquisa-grok.md`.
+- **Skills de apoio:** `ig-reel`, `ig-caption`, `ig-plan`, `ig-human` (roteiro, legenda, semana, tirar cara de IA); `bang-motion` e `hyperframes` (motion); `brainstorming` e `writing-plans` (planejar).
 - **Pastas:** `pautas/` (banco de ideias com gancho, pilar, formato e fontes), `roteiros/` (um arquivo por vídeo), `producoes/` (finalizados e apoio).
-- **Fluxo:** pauta → pesquisa e fontes → roteiro → revisão de segurança → voz → imagens/motion → montagem → checagem → publicação.
+- **Fluxo:** pesquisa no Grok → pauta → checagem nas fontes → roteiro → revisão do profissional de saúde → voz (Gemini) → imagens (OpenAI)/motion → montagem → checagem → publicação.
 
 ## 9. Fases
 
@@ -95,11 +99,13 @@ Começar com **3 a 5 curtos por semana**, constante, e subir depois. Produção 
 
 Retenção média e % que assiste até o fim, compartilhamentos e salvamentos (forte sinal em conteúdo útil), seguidores por vídeo. Decidir pelo conjunto de 10 vídeos, não por um isolado.
 
-## 11. Decisões em aberto
+## 11. Decisões
 
-1. @ e plataformas.
-2. Assinatura do canal (selo de evidência, "o mínimo que já ajuda", Sermão x Realidade).
-3. Voz: sintética, sua, ou mista. Rosto aparece ou não?
-4. Revisão por profissional de saúde?
-5. Haverá vídeos longos no YouTube?
-6. Primeiros 10 temas do piloto.
+Já decididas (08/11/2026): @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 30s a 1m30 com Parte 2 quando preciso; pesquisa de atualidade no Grok.
+
+Em aberto:
+1. Assinatura do canal (em desenvolvimento).
+2. Rosto aparece ou não?
+3. Quem é o profissional de saúde revisor.
+4. Paleta, fonte e a voz escolhida entre as 3 do teste.
+5. Primeiros 10 temas do piloto.
