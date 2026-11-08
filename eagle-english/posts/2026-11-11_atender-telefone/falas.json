@@ -1,9 +1,9 @@
 {
  "vozes": {
-  "pt": "onyx",
-  "en": "onyx"
+  "pt": "Achird",
+  "en": "Kore"
  },
- "modelo": "gpt-4o-mini-tts",
+ "modelo": "gemini-3.8-flash-tts",
  "falas": [
   {
    "id": "00_gancho",
@@ -13,7 +13,8 @@
   {
    "id": "f1_en",
    "lingua": "en",
-   "texto": "Hello, who's calling?"
+   "texto": "Hello, who's calling?",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f1_pt",
@@ -23,7 +24,8 @@
   {
    "id": "f2_en",
    "lingua": "en",
-   "texto": "Good morning, how can I help?"
+   "texto": "Good morning, how can I help?",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f2_pt",
@@ -33,7 +35,8 @@
   {
    "id": "f3_en",
    "lingua": "en",
-   "texto": "Hold on, please."
+   "texto": "Hold on, please.",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f3_pt",
@@ -43,7 +46,8 @@
   {
    "id": "f4_en",
    "lingua": "en",
-   "texto": "I'll transfer you now."
+   "texto": "I'll transfer you now.",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f4_pt",
@@ -58,7 +62,8 @@
   {
    "id": "f5_en",
    "lingua": "en",
-   "texto": "She's not here right now."
+   "texto": "She's not here right now.",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f5_pt",
@@ -68,7 +73,8 @@
   {
    "id": "f6_en",
    "lingua": "en",
-   "texto": "Can I take a message?"
+   "texto": "Can I take a message?",
+   "modelo": "gemini-3.8-flash-lite-tts"
   },
   {
    "id": "f6_pt",
@@ -76,19 +82,9 @@
    "texto": "Posso anotar um recado?"
   },
   {
-   "id": "cta1",
+   "id": "cta",
    "lingua": "pt",
-   "texto": "Essas frases estão num mapa do Eagle trezentos e cinquenta. São trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita."
-  },
-  {
-   "id": "cta2",
-   "lingua": "pt",
-   "texto": "E vem com quatro bônus, como o Guia de vinte e um dias, de quinze minutos por dia."
-  },
-  {
-   "id": "cta3",
-   "lingua": "pt",
-   "texto": "Separado, daria cento e vinte e três e setenta. Hoje, o kit completo sai por dezenove e noventa, pagamento único, com sete dias de garantia. Link na bio!"
+   "texto": "Essas frases estão num mapa do Ígol trezentos e cinquenta. São trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita. E vem com quatro bônus, como o Guia de vinte e um dias. Separado, daria cento e vinte e três e setenta. Hoje, o kit completo sai por dezenove e noventa, pagamento único, com sete dias de garantia. Link na bio!"
   }
  ]
 }

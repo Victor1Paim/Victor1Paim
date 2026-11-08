@@ -15,7 +15,7 @@ Para variar as poses do mascote (apontar, pensar, comemorar), gerar novas poses 
 
 ## 2. Voz "mais locutora" e inglês no mesmo tom
 
-**Em uso desde 08/11:** OpenAI `gpt-4o-mini-tts`, voz **onyx** nas duas línguas, com instrução de tom
+**REPROVADO pelo usuário em 08/11 (áudio ruim) — voltar ao Gemini Achird (pt) / Kore (en).** Registro do teste: OpenAI `gpt-4o-mini-tts`, voz **onyx** nas duas línguas, com instrução de tom
 (`INSTRUCOES` em `scripts/vozes.py`): locutor brasileiro grave e animado; em inglês, mesma voz, americano
 claro e um pouco mais devagar. Sem limite diário (o Gemini gratuito só dá 10 falas/dia por modelo).
 No `falas.json`: `"modelo": "gpt-4o-mini-tts", "vozes": {"pt": "onyx", "en": "onyx"}`. Produto: "Eagle trezentos e cinquenta".

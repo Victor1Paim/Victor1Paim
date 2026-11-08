@@ -215,7 +215,7 @@ def gerar(post, so, sem_conferir, minimo, tentativas, pular=False, modelo_forcad
             continue
         saida = post / "audio" / f"{f['id']}.wav"
         for t in range(1, tentativas + 1):
-            tts(f["texto"], vozes[f["lingua"]], modelo, saida, post, f["lingua"], cfg.get("instrucoes"))
+            tts(f["texto"], vozes[f["lingua"]], f.get("modelo", modelo), saida, post, f["lingua"], cfg.get("instrucoes"))
             if sem_conferir:
                 print(f"{f['id']}: gerado"); break
             pct = conferir(saida, f["texto"], f["lingua"])
