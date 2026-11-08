@@ -1,0 +1,4 @@
+semelhança: 98.0%
+replace: roteiro='recomenda' voz='recomende' pos=21
+delete: roteiro='o' voz='' pos=25
+replace: roteiro='você' voz='se' pos=89

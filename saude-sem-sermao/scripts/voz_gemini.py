@@ -118,7 +118,8 @@ def main():
     if vozes:  # para conferir, tira o "Nome:" do começo das linhas
         import re
         limpo = "\n".join(re.sub(r"^\s*[^:]{1,20}:\s*", "", l) for l in texto.splitlines())
-        roteiro_conf = str(Path(tempfile.gettempdir()) / "roteiro_sem_nomes.txt"); Path(roteiro_conf).write_text(limpo)
+        tmp = tempfile.NamedTemporaryFile("w", suffix="_roteiro.txt", delete=False)  # um arquivo por execução
+        tmp.write(limpo); tmp.close(); roteiro_conf = tmp.name
     saida = Path(a.saida); saida.parent.mkdir(parents=True, exist_ok=True)
     conf = saida.parent / "conferencia"
     for i in range(1, a.tentativas + 1):

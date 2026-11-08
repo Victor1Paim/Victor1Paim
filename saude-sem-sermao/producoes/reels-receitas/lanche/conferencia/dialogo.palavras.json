@@ -1,0 +1,617 @@
+[
+ {
+  "palavra": "Lanche",
+  "inicio": 0.0,
+  "fim": 0.56
+ },
+ {
+  "palavra": "da",
+  "inicio": 0.56,
+  "fim": 0.7
+ },
+ {
+  "palavra": "tarde",
+  "inicio": 0.7,
+  "fim": 1.02
+ },
+ {
+  "palavra": "em",
+  "inicio": 1.02,
+  "fim": 1.18
+ },
+ {
+  "palavra": "5",
+  "inicio": 1.18,
+  "fim": 1.42
+ },
+ {
+  "palavra": "minutos,",
+  "inicio": 1.42,
+  "fim": 1.8
+ },
+ {
+  "palavra": "sem",
+  "inicio": 2.06,
+  "fim": 2.46
+ },
+ {
+  "palavra": "biscoito",
+  "inicio": 2.46,
+  "fim": 3.0
+ },
+ {
+  "palavra": "recheado.",
+  "inicio": 3.0,
+  "fim": 3.5
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 3.84,
+  "fim": 4.08
+ },
+ {
+  "palavra": "biscoito",
+  "inicio": 4.08,
+  "fim": 4.58
+ },
+ {
+  "palavra": "é",
+  "inicio": 4.58,
+  "fim": 4.7
+ },
+ {
+  "palavra": "tão",
+  "inicio": 4.7,
+  "fim": 4.88
+ },
+ {
+  "palavra": "prático.",
+  "inicio": 4.88,
+  "fim": 5.5
+ },
+ {
+  "palavra": "O",
+  "inicio": 5.8,
+  "fim": 6.16
+ },
+ {
+  "palavra": "Guia",
+  "inicio": 6.16,
+  "fim": 6.32
+ },
+ {
+  "palavra": "Alimentar",
+  "inicio": 6.32,
+  "fim": 6.72
+ },
+ {
+  "palavra": "do",
+  "inicio": 6.72,
+  "fim": 6.84
+ },
+ {
+  "palavra": "Ministério",
+  "inicio": 6.84,
+  "fim": 7.22
+ },
+ {
+  "palavra": "da",
+  "inicio": 7.22,
+  "fim": 7.34
+ },
+ {
+  "palavra": "Saúde",
+  "inicio": 7.34,
+  "fim": 7.6
+ },
+ {
+  "palavra": "recomende",
+  "inicio": 7.6,
+  "fim": 8.04
+ },
+ {
+  "palavra": "evitar",
+  "inicio": 8.04,
+  "fim": 8.44
+ },
+ {
+  "palavra": "ultraprocessados,",
+  "inicio": 8.44,
+  "fim": 9.22
+ },
+ {
+  "palavra": "como",
+  "inicio": 9.5,
+  "fim": 9.66
+ },
+ {
+  "palavra": "biscoito",
+  "inicio": 9.66,
+  "fim": 10.16
+ },
+ {
+  "palavra": "recheado",
+  "inicio": 10.16,
+  "fim": 10.66
+ },
+ {
+  "palavra": "e",
+  "inicio": 10.66,
+  "fim": 10.84
+ },
+ {
+  "palavra": "preferir",
+  "inicio": 10.84,
+  "fim": 11.2
+ },
+ {
+  "palavra": "fruta",
+  "inicio": 11.2,
+  "fim": 11.58
+ },
+ {
+  "palavra": "e",
+  "inicio": 11.58,
+  "fim": 11.7
+ },
+ {
+  "palavra": "comida",
+  "inicio": 11.7,
+  "fim": 11.94
+ },
+ {
+  "palavra": "feita",
+  "inicio": 11.94,
+  "fim": 12.16
+ },
+ {
+  "palavra": "em",
+  "inicio": 12.16,
+  "fim": 12.26
+ },
+ {
+  "palavra": "casa.",
+  "inicio": 12.26,
+  "fim": 12.52
+ },
+ {
+  "palavra": "E",
+  "inicio": 12.9,
+  "fim": 13.2
+ },
+ {
+  "palavra": "o",
+  "inicio": 13.2,
+  "fim": 13.34
+ },
+ {
+  "palavra": "que",
+  "inicio": 13.34,
+  "fim": 13.46
+ },
+ {
+  "palavra": "eu",
+  "inicio": 13.46,
+  "fim": 13.64
+ },
+ {
+  "palavra": "como",
+  "inicio": 13.64,
+  "fim": 13.9
+ },
+ {
+  "palavra": "no",
+  "inicio": 13.9,
+  "fim": 14.04
+ },
+ {
+  "palavra": "lugar?",
+  "inicio": 14.04,
+  "fim": 14.34
+ },
+ {
+  "palavra": "Um",
+  "inicio": 14.72,
+  "fim": 14.98
+ },
+ {
+  "palavra": "copo",
+  "inicio": 14.98,
+  "fim": 15.3
+ },
+ {
+  "palavra": "em",
+  "inicio": 15.3,
+  "fim": 15.4
+ },
+ {
+  "palavra": "camadas.",
+  "inicio": 15.4,
+  "fim": 15.78
+ },
+ {
+  "palavra": "No",
+  "inicio": 16.02,
+  "fim": 16.28
+ },
+ {
+  "palavra": "fundo,",
+  "inicio": 16.28,
+  "fim": 16.58
+ },
+ {
+  "palavra": "aveia",
+  "inicio": 16.72,
+  "fim": 17.14
+ },
+ {
+  "palavra": "e",
+  "inicio": 17.14,
+  "fim": 17.24
+ },
+ {
+  "palavra": "banana.",
+  "inicio": 17.24,
+  "fim": 17.52
+ },
+ {
+  "palavra": "Por",
+  "inicio": 17.88,
+  "fim": 18.14
+ },
+ {
+  "palavra": "cima,",
+  "inicio": 18.14,
+  "fim": 18.4
+ },
+ {
+  "palavra": "iogurte",
+  "inicio": 18.68,
+  "fim": 19.08
+ },
+ {
+  "palavra": "natural.",
+  "inicio": 19.08,
+  "fim": 19.4
+ },
+ {
+  "palavra": "Finalize",
+  "inicio": 19.94,
+  "fim": 20.38
+ },
+ {
+  "palavra": "com",
+  "inicio": 20.38,
+  "fim": 20.52
+ },
+ {
+  "palavra": "morango",
+  "inicio": 20.52,
+  "fim": 21.0
+ },
+ {
+  "palavra": "e",
+  "inicio": 21.0,
+  "fim": 21.16
+ },
+ {
+  "palavra": "mais",
+  "inicio": 21.16,
+  "fim": 21.38
+ },
+ {
+  "palavra": "aveia.",
+  "inicio": 21.38,
+  "fim": 21.72
+ },
+ {
+  "palavra": "Quatro",
+  "inicio": 22.14,
+  "fim": 22.72
+ },
+ {
+  "palavra": "ingredientes,",
+  "inicio": 22.72,
+  "fim": 23.36
+ },
+ {
+  "palavra": "nenhum",
+  "inicio": 23.56,
+  "fim": 23.94
+ },
+ {
+  "palavra": "fogão.",
+  "inicio": 23.94,
+  "fim": 24.4
+ },
+ {
+  "palavra": "E",
+  "inicio": 24.78,
+  "fim": 25.08
+ },
+ {
+  "palavra": "dá",
+  "inicio": 25.08,
+  "fim": 25.26
+ },
+ {
+  "palavra": "pra",
+  "inicio": 25.26,
+  "fim": 25.4
+ },
+ {
+  "palavra": "montar",
+  "inicio": 25.4,
+  "fim": 25.72
+ },
+ {
+  "palavra": "três",
+  "inicio": 25.72,
+  "fim": 26.0
+ },
+ {
+  "palavra": "copos",
+  "inicio": 26.0,
+  "fim": 26.42
+ },
+ {
+  "palavra": "de",
+  "inicio": 26.42,
+  "fim": 26.54
+ },
+ {
+  "palavra": "noite",
+  "inicio": 26.54,
+  "fim": 26.72
+ },
+ {
+  "palavra": "e",
+  "inicio": 26.72,
+  "fim": 26.86
+ },
+ {
+  "palavra": "deixar",
+  "inicio": 26.86,
+  "fim": 27.04
+ },
+ {
+  "palavra": "na",
+  "inicio": 27.04,
+  "fim": 27.14
+ },
+ {
+  "palavra": "geladeira.",
+  "inicio": 27.14,
+  "fim": 27.58
+ },
+ {
+  "palavra": "Sem",
+  "inicio": 27.58,
+  "fim": 28.4
+ },
+ {
+  "palavra": "a",
+  "inicio": 28.4,
+  "fim": 28.54
+ },
+ {
+  "palavra": "fruta,",
+  "inicio": 28.54,
+  "fim": 28.82
+ },
+ {
+  "palavra": "né?",
+  "inicio": 28.94,
+  "fim": 29.0
+ },
+ {
+  "palavra": "Senão",
+  "inicio": 29.26,
+  "fim": 29.54
+ },
+ {
+  "palavra": "ela",
+  "inicio": 29.54,
+  "fim": 29.66
+ },
+ {
+  "palavra": "escurece.",
+  "inicio": 29.66,
+  "fim": 30.14
+ },
+ {
+  "palavra": "Isso.",
+  "inicio": 30.5,
+  "fim": 30.84
+ },
+ {
+  "palavra": "A",
+  "inicio": 31.18,
+  "fim": 31.34
+ },
+ {
+  "palavra": "fruta",
+  "inicio": 31.34,
+  "fim": 31.56
+ },
+ {
+  "palavra": "se",
+  "inicio": 31.56,
+  "fim": 31.68
+ },
+ {
+  "palavra": "coloca",
+  "inicio": 31.68,
+  "fim": 31.94
+ },
+ {
+  "palavra": "na",
+  "inicio": 31.94,
+  "fim": 32.06
+ },
+ {
+  "palavra": "hora.",
+  "inicio": 32.06,
+  "fim": 32.28
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 32.98,
+  "fim": 33.54
+ },
+ {
+  "palavra": "Trocar",
+  "inicio": 33.96,
+  "fim": 34.28
+ },
+ {
+  "palavra": "o",
+  "inicio": 34.28,
+  "fim": 34.42
+ },
+ {
+  "palavra": "biscoito",
+  "inicio": 34.42,
+  "fim": 34.78
+ },
+ {
+  "palavra": "pelo",
+  "inicio": 34.78,
+  "fim": 35.0
+ },
+ {
+  "palavra": "copo",
+  "inicio": 35.0,
+  "fim": 35.4
+ },
+ {
+  "palavra": "é",
+  "inicio": 35.4,
+  "fim": 35.5
+ },
+ {
+  "palavra": "fácil",
+  "inicio": 35.5,
+  "fim": 36.12
+ },
+ {
+  "palavra": "e",
+  "inicio": 36.12,
+  "fim": 36.32
+ },
+ {
+  "palavra": "leva",
+  "inicio": 36.32,
+  "fim": 36.58
+ },
+ {
+  "palavra": "cinco",
+  "inicio": 36.58,
+  "fim": 36.9
+ },
+ {
+  "palavra": "minutos.",
+  "inicio": 36.9,
+  "fim": 37.28
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 37.8,
+  "fim": 38.1
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 38.1,
+  "fim": 38.36
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 38.78,
+  "fim": 39.1
+ },
+ {
+  "palavra": "pra",
+  "inicio": 39.1,
+  "fim": 39.22
+ },
+ {
+  "palavra": "quem",
+  "inicio": 39.22,
+  "fim": 39.4
+ },
+ {
+  "palavra": "vive",
+  "inicio": 39.4,
+  "fim": 39.66
+ },
+ {
+  "palavra": "de",
+  "inicio": 39.66,
+  "fim": 39.78
+ },
+ {
+  "palavra": "biscoito",
+  "inicio": 39.78,
+  "fim": 40.1
+ },
+ {
+  "palavra": "recheado.",
+  "inicio": 40.1,
+  "fim": 40.56
+ },
+ {
+  "palavra": "E",
+  "inicio": 40.68,
+  "fim": 40.96
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 40.96,
+  "fim": 41.34
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 41.62,
+  "fim": 42.08
+ },
+ {
+  "palavra": "qual",
+  "inicio": 42.08,
+  "fim": 42.3
+ },
+ {
+  "palavra": "fruta",
+  "inicio": 42.3,
+  "fim": 42.6
+ },
+ {
+  "palavra": "você",
+  "inicio": 42.6,
+  "fim": 42.8
+ },
+ {
+  "palavra": "colocaria",
+  "inicio": 42.8,
+  "fim": 43.28
+ },
+ {
+  "palavra": "e",
+  "inicio": 43.28,
+  "fim": 43.64
+ },
+ {
+  "palavra": "segue",
+  "inicio": 43.64,
+  "fim": 43.9
+ },
+ {
+  "palavra": "pra",
+  "inicio": 43.9,
+  "fim": 44.04
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 44.04,
+  "fim": 44.26
+ }
+]

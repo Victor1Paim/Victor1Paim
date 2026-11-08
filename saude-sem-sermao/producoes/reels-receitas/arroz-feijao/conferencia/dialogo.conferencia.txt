@@ -1,0 +1,2 @@
+semelhança: 99.3%
+replace: roteiro='congele' voz='congela' pos=95

@@ -1,0 +1,712 @@
+[
+ {
+  "palavra": "Arroz",
+  "inicio": 0.0,
+  "fim": 0.38
+ },
+ {
+  "palavra": "com",
+  "inicio": 0.38,
+  "fim": 0.48
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 0.48,
+  "fim": 0.7
+ },
+ {
+  "palavra": "engorda?",
+  "inicio": 0.7,
+  "fim": 1.22
+ },
+ {
+  "palavra": "Na",
+  "inicio": 1.36,
+  "fim": 1.72
+ },
+ {
+  "palavra": "verdade,",
+  "inicio": 1.72,
+  "fim": 2.12
+ },
+ {
+  "palavra": "a",
+  "inicio": 2.3,
+  "fim": 2.42
+ },
+ {
+  "palavra": "dupla",
+  "inicio": 2.42,
+  "fim": 2.64
+ },
+ {
+  "palavra": "pode",
+  "inicio": 2.64,
+  "fim": 2.9
+ },
+ {
+  "palavra": "até",
+  "inicio": 2.9,
+  "fim": 3.16
+ },
+ {
+  "palavra": "ajudar.",
+  "inicio": 3.16,
+  "fim": 3.54
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 4.22,
+  "fim": 4.52
+ },
+ {
+  "palavra": "arroz",
+  "inicio": 4.52,
+  "fim": 5.16
+ },
+ {
+  "palavra": "não",
+  "inicio": 5.16,
+  "fim": 5.34
+ },
+ {
+  "palavra": "é",
+  "inicio": 5.34,
+  "fim": 5.44
+ },
+ {
+  "palavra": "carboidrato",
+  "inicio": 5.44,
+  "fim": 6.1
+ },
+ {
+  "palavra": "demais?",
+  "inicio": 6.1,
+  "fim": 6.36
+ },
+ {
+  "palavra": "Em",
+  "inicio": 6.96,
+  "fim": 7.48
+ },
+ {
+  "palavra": "estudos",
+  "inicio": 7.48,
+  "fim": 7.88
+ },
+ {
+  "palavra": "no",
+  "inicio": 7.88,
+  "fim": 8.0
+ },
+ {
+  "palavra": "Rio",
+  "inicio": 8.0,
+  "fim": 8.12
+ },
+ {
+  "palavra": "de",
+  "inicio": 8.12,
+  "fim": 8.22
+ },
+ {
+  "palavra": "Janeiro,",
+  "inicio": 8.22,
+  "fim": 8.5
+ },
+ {
+  "palavra": "quem",
+  "inicio": 8.74,
+  "fim": 8.86
+ },
+ {
+  "palavra": "comia",
+  "inicio": 8.86,
+  "fim": 9.2
+ },
+ {
+  "palavra": "o",
+  "inicio": 9.2,
+  "fim": 9.34
+ },
+ {
+  "palavra": "tradicional",
+  "inicio": 9.34,
+  "fim": 9.78
+ },
+ {
+  "palavra": "arroz",
+  "inicio": 9.78,
+  "fim": 10.14
+ },
+ {
+  "palavra": "com",
+  "inicio": 10.14,
+  "fim": 10.26
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 10.26,
+  "fim": 10.62
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 10.62,
+  "fim": 10.92
+ },
+ {
+  "palavra": "menos",
+  "inicio": 10.92,
+  "fim": 11.28
+ },
+ {
+  "palavra": "sobrepeso",
+  "inicio": 11.28,
+  "fim": 11.9
+ },
+ {
+  "palavra": "do",
+  "inicio": 11.9,
+  "fim": 12.02
+ },
+ {
+  "palavra": "que",
+  "inicio": 12.02,
+  "fim": 12.16
+ },
+ {
+  "palavra": "quem",
+  "inicio": 12.16,
+  "fim": 12.34
+ },
+ {
+  "palavra": "comia",
+  "inicio": 12.34,
+  "fim": 12.7
+ },
+ {
+  "palavra": "mais",
+  "inicio": 12.7,
+  "fim": 12.94
+ },
+ {
+  "palavra": "gordura",
+  "inicio": 12.94,
+  "fim": 13.32
+ },
+ {
+  "palavra": "e",
+  "inicio": 13.32,
+  "fim": 13.42
+ },
+ {
+  "palavra": "açúcar.",
+  "inicio": 13.42,
+  "fim": 13.82
+ },
+ {
+  "palavra": "A",
+  "inicio": 14.2,
+  "fim": 14.5
+ },
+ {
+  "palavra": "dupla",
+  "inicio": 14.5,
+  "fim": 14.76
+ },
+ {
+  "palavra": "se",
+  "inicio": 14.76,
+  "fim": 14.94
+ },
+ {
+  "palavra": "completa",
+  "inicio": 14.94,
+  "fim": 15.32
+ },
+ {
+  "palavra": "em",
+  "inicio": 15.32,
+  "fim": 15.48
+ },
+ {
+  "palavra": "proteína",
+  "inicio": 15.48,
+  "fim": 15.96
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.96,
+  "fim": 16.24
+ },
+ {
+  "palavra": "o",
+  "inicio": 16.24,
+  "fim": 16.34
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 16.34,
+  "fim": 16.66
+ },
+ {
+  "palavra": "traz",
+  "inicio": 16.66,
+  "fim": 16.92
+ },
+ {
+  "palavra": "fibra,",
+  "inicio": 16.92,
+  "fim": 17.32
+ },
+ {
+  "palavra": "que",
+  "inicio": 17.4,
+  "fim": 17.58
+ },
+ {
+  "palavra": "segura",
+  "inicio": 17.58,
+  "fim": 17.88
+ },
+ {
+  "palavra": "a",
+  "inicio": 17.88,
+  "fim": 18.02
+ },
+ {
+  "palavra": "fome.",
+  "inicio": 18.02,
+  "fim": 18.18
+ },
+ {
+  "palavra": "Então,",
+  "inicio": 18.82,
+  "fim": 19.08
+ },
+ {
+  "palavra": "como",
+  "inicio": 19.24,
+  "fim": 19.56
+ },
+ {
+  "palavra": "eu",
+  "inicio": 19.56,
+  "fim": 19.7
+ },
+ {
+  "palavra": "monto",
+  "inicio": 19.7,
+  "fim": 19.96
+ },
+ {
+  "palavra": "o",
+  "inicio": 19.96,
+  "fim": 20.08
+ },
+ {
+  "palavra": "prato?",
+  "inicio": 20.08,
+  "fim": 20.34
+ },
+ {
+  "palavra": "Metade",
+  "inicio": 21.04,
+  "fim": 21.56
+ },
+ {
+  "palavra": "do",
+  "inicio": 21.56,
+  "fim": 21.7
+ },
+ {
+  "palavra": "prato",
+  "inicio": 21.7,
+  "fim": 22.0
+ },
+ {
+  "palavra": "com",
+  "inicio": 22.0,
+  "fim": 22.18
+ },
+ {
+  "palavra": "salada",
+  "inicio": 22.18,
+  "fim": 22.5
+ },
+ {
+  "palavra": "e",
+  "inicio": 22.5,
+  "fim": 22.58
+ },
+ {
+  "palavra": "legumes.",
+  "inicio": 22.58,
+  "fim": 22.96
+ },
+ {
+  "palavra": "Um",
+  "inicio": 23.32,
+  "fim": 23.74
+ },
+ {
+  "palavra": "quarto",
+  "inicio": 23.74,
+  "fim": 24.02
+ },
+ {
+  "palavra": "com",
+  "inicio": 24.02,
+  "fim": 24.14
+ },
+ {
+  "palavra": "arroz",
+  "inicio": 24.14,
+  "fim": 24.34
+ },
+ {
+  "palavra": "e",
+  "inicio": 24.34,
+  "fim": 24.44
+ },
+ {
+  "palavra": "feijão.",
+  "inicio": 24.44,
+  "fim": 24.72
+ },
+ {
+  "palavra": "E",
+  "inicio": 24.96,
+  "fim": 25.3
+ },
+ {
+  "palavra": "um",
+  "inicio": 25.3,
+  "fim": 25.42
+ },
+ {
+  "palavra": "quarto",
+  "inicio": 25.42,
+  "fim": 25.72
+ },
+ {
+  "palavra": "com",
+  "inicio": 25.72,
+  "fim": 25.9
+ },
+ {
+  "palavra": "proteína,",
+  "inicio": 25.9,
+  "fim": 26.38
+ },
+ {
+  "palavra": "frango,",
+  "inicio": 26.58,
+  "fim": 27.06
+ },
+ {
+  "palavra": "ovo,",
+  "inicio": 27.22,
+  "fim": 27.52
+ },
+ {
+  "palavra": "carne",
+  "inicio": 27.68,
+  "fim": 27.96
+ },
+ {
+  "palavra": "ou",
+  "inicio": 27.96,
+  "fim": 28.14
+ },
+ {
+  "palavra": "peixe.",
+  "inicio": 28.14,
+  "fim": 28.48
+ },
+ {
+  "palavra": "E",
+  "inicio": 28.9,
+  "fim": 29.24
+ },
+ {
+  "palavra": "na",
+  "inicio": 29.24,
+  "fim": 29.38
+ },
+ {
+  "palavra": "correria?",
+  "inicio": 29.38,
+  "fim": 29.86
+ },
+ {
+  "palavra": "Faça",
+  "inicio": 30.42,
+  "fim": 30.86
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 30.86,
+  "fim": 31.14
+ },
+ {
+  "palavra": "no",
+  "inicio": 31.14,
+  "fim": 31.22
+ },
+ {
+  "palavra": "fim",
+  "inicio": 31.22,
+  "fim": 31.34
+ },
+ {
+  "palavra": "de",
+  "inicio": 31.34,
+  "fim": 31.44
+ },
+ {
+  "palavra": "semana",
+  "inicio": 31.44,
+  "fim": 31.74
+ },
+ {
+  "palavra": "e",
+  "inicio": 31.74,
+  "fim": 31.88
+ },
+ {
+  "palavra": "congela",
+  "inicio": 31.88,
+  "fim": 32.26
+ },
+ {
+  "palavra": "em",
+  "inicio": 32.26,
+  "fim": 32.32
+ },
+ {
+  "palavra": "porções.",
+  "inicio": 32.32,
+  "fim": 32.74
+ },
+ {
+  "palavra": "Dura",
+  "inicio": 33.1,
+  "fim": 33.24
+ },
+ {
+  "palavra": "até",
+  "inicio": 33.24,
+  "fim": 33.4
+ },
+ {
+  "palavra": "três",
+  "inicio": 33.4,
+  "fim": 33.66
+ },
+ {
+  "palavra": "meses",
+  "inicio": 33.66,
+  "fim": 33.96
+ },
+ {
+  "palavra": "no",
+  "inicio": 33.96,
+  "fim": 34.12
+ },
+ {
+  "palavra": "freezer.",
+  "inicio": 34.12,
+  "fim": 34.36
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 35.06,
+  "fim": 35.5
+ },
+ {
+  "palavra": "Arroz",
+  "inicio": 35.72,
+  "fim": 36.16
+ },
+ {
+  "palavra": "com",
+  "inicio": 36.16,
+  "fim": 36.28
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 36.28,
+  "fim": 36.6
+ },
+ {
+  "palavra": "não",
+  "inicio": 36.6,
+  "fim": 36.72
+ },
+ {
+  "palavra": "é",
+  "inicio": 36.72,
+  "fim": 36.82
+ },
+ {
+  "palavra": "vilão.",
+  "inicio": 36.82,
+  "fim": 37.1
+ },
+ {
+  "palavra": "O",
+  "inicio": 37.26,
+  "fim": 37.42
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 37.42,
+  "fim": 37.9
+ },
+ {
+  "palavra": "é",
+  "inicio": 37.9,
+  "fim": 37.98
+ },
+ {
+  "palavra": "o",
+  "inicio": 37.98,
+  "fim": 38.06
+ },
+ {
+  "palavra": "prato",
+  "inicio": 38.06,
+  "fim": 38.28
+ },
+ {
+  "palavra": "todo.",
+  "inicio": 38.28,
+  "fim": 38.54
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 39.2,
+  "fim": 39.48
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 39.48,
+  "fim": 39.66
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 40.06,
+  "fim": 40.28
+ },
+ {
+  "palavra": "para",
+  "inicio": 40.28,
+  "fim": 40.4
+ },
+ {
+  "palavra": "quem",
+  "inicio": 40.4,
+  "fim": 40.56
+ },
+ {
+  "palavra": "acha",
+  "inicio": 40.56,
+  "fim": 40.78
+ },
+ {
+  "palavra": "que",
+  "inicio": 40.78,
+  "fim": 40.94
+ },
+ {
+  "palavra": "arroz",
+  "inicio": 40.94,
+  "fim": 41.22
+ },
+ {
+  "palavra": "com",
+  "inicio": 41.22,
+  "fim": 41.32
+ },
+ {
+  "palavra": "feijão",
+  "inicio": 41.32,
+  "fim": 41.6
+ },
+ {
+  "palavra": "engorda.",
+  "inicio": 41.6,
+  "fim": 42.04
+ },
+ {
+  "palavra": "E",
+  "inicio": 42.22,
+  "fim": 42.26
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 42.26,
+  "fim": 42.66
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 42.78,
+  "fim": 43.18
+ },
+ {
+  "palavra": "qual",
+  "inicio": 43.18,
+  "fim": 43.42
+ },
+ {
+  "palavra": "é",
+  "inicio": 43.42,
+  "fim": 43.52
+ },
+ {
+  "palavra": "a",
+  "inicio": 43.52,
+  "fim": 43.6
+ },
+ {
+  "palavra": "proteína",
+  "inicio": 43.6,
+  "fim": 44.0
+ },
+ {
+  "palavra": "do",
+  "inicio": 44.0,
+  "fim": 44.14
+ },
+ {
+  "palavra": "seu",
+  "inicio": 44.14,
+  "fim": 44.26
+ },
+ {
+  "palavra": "PF",
+  "inicio": 44.26,
+  "fim": 44.66
+ },
+ {
+  "palavra": "e",
+  "inicio": 44.66,
+  "fim": 44.88
+ },
+ {
+  "palavra": "segue",
+  "inicio": 44.88,
+  "fim": 45.18
+ },
+ {
+  "palavra": "para",
+  "inicio": 45.18,
+  "fim": 45.32
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 45.32,
+  "fim": 45.56
+ }
+]
