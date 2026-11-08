@@ -101,7 +101,7 @@ Retenção média e % que assiste até o fim, compartilhamentos e salvamentos (f
 
 ## 11. Decisões
 
-Já decididas (08/11/2026): @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 40 s a 1 min 10 s com Parte 2 quando preciso; ganchos e CTA conforme `pesquisa-hooks-e-cta.md`; pesquisa de atualidade no Grok.
+Já decididas (08/11/2026): **sem geração de vídeo por IA** (Gemini Omni/Veo/Flow custa ~R$ 7–16 por Reel; avaliado e descartado): movimento sempre com HyperFrames e as skills locais; @saudesemsermao; voz sintética no Gemini; imagens na OpenAI; revisão por profissional de saúde; curtos de 40 s a 1 min 10 s com Parte 2 quando preciso; ganchos e CTA conforme `pesquisa-hooks-e-cta.md`; pesquisa de atualidade no Grok.
 
 Em aberto:
 1. Assinatura do canal (em desenvolvimento).
