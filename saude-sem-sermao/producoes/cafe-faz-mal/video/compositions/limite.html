@@ -1,0 +1,70 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:#fff;}
+  .xic{position:absolute;}
+  #limite-tag{position:absolute;left:80px;top:180px;padding:6px 18px;border-radius:999px;background:var(--mostarda);color:#2B2B2B;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .med{position:absolute;left:80px;width:920px;height:70px;border-radius:35px;background:#F2ECE2;}
+  .medb{position:absolute;left:80px;width:920px;height:70px;border-radius:35px;transform-origin:0% 50%;}
+  .medr{position:absolute;left:80px;font-weight:900;font-size:36px;}
+  .medv{position:absolute;right:80px;font-family:'Playfair Display',serif;font-weight:700;font-size:56px;}
+  #limite-eq{position:absolute;left:80px;top:760px;font-weight:900;font-size:40px;color:#6b6460;}
+  .fonte{top:1110px;}
+</style>
+<div id="root" data-composition-id="limite" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div id="limite-tag">⚠ LIMITE</div>
+  <h1 class="titulo" id="limite-t">Mas tem <em>limite</em></h1>
+  <div class="medr" style="top:440px">adultos</div><div class="medv" id="limite-v1" style="top:425px;color:var(--laranja)">0 mg</div>
+  <div class="med" style="top:500px"></div><div class="medb" id="limite-b1" style="top:500px;background:var(--laranja)"></div>
+  <svg class="xic" id="limite-x0" style="left:110px;top:610px;width:120px;height:120px" viewBox="0 0 100 100"><path d="M14 30 H74 V70 Q74 88 56 88 H32 Q14 88 14 70 Z" fill="#95A185" stroke="#2F483A" stroke-width="5"/><path d="M74 40 Q92 40 92 54 Q92 68 74 66" fill="none" stroke="#2F483A" stroke-width="6"/><rect x="20" y="34" width="48" height="8" rx="4" fill="#5A3A22"/></svg><svg class="xic" id="limite-x1" style="left:270px;top:610px;width:120px;height:120px" viewBox="0 0 100 100"><path d="M14 30 H74 V70 Q74 88 56 88 H32 Q14 88 14 70 Z" fill="#95A185" stroke="#2F483A" stroke-width="5"/><path d="M74 40 Q92 40 92 54 Q92 68 74 66" fill="none" stroke="#2F483A" stroke-width="6"/><rect x="20" y="34" width="48" height="8" rx="4" fill="#5A3A22"/></svg><svg class="xic" id="limite-x2" style="left:430px;top:610px;width:120px;height:120px" viewBox="0 0 100 100"><path d="M14 30 H74 V70 Q74 88 56 88 H32 Q14 88 14 70 Z" fill="#95A185" stroke="#2F483A" stroke-width="5"/><path d="M74 40 Q92 40 92 54 Q92 68 74 66" fill="none" stroke="#2F483A" stroke-width="6"/><rect x="20" y="34" width="48" height="8" rx="4" fill="#5A3A22"/></svg><svg class="xic" id="limite-x3" style="left:590px;top:610px;width:120px;height:120px" viewBox="0 0 100 100"><path d="M14 30 H74 V70 Q74 88 56 88 H32 Q14 88 14 70 Z" fill="#95A185" stroke="#2F483A" stroke-width="5"/><path d="M74 40 Q92 40 92 54 Q92 68 74 66" fill="none" stroke="#2F483A" stroke-width="6"/><rect x="20" y="34" width="48" height="8" rx="4" fill="#5A3A22"/></svg>
+  <div id="limite-eq">≈ 4 xícaras de café coado (≈ 90 mg cada)</div>
+  <div class="medr" id="limite-gr" style="top:880px">grávidas</div><div class="medv" id="limite-v2" style="top:865px;color:var(--verde)">200 mg</div>
+  <div class="med" id="limite-m2" style="top:940px"></div><div class="medb" id="limite-b2" style="top:940px;background:var(--verde)"></div>
+  <div class="fonte" id="limite-fonte">Fonte: EFSA, Scientific Opinion on the safety of caffeine, 2015</div>
+  <div class="wipe" id="limite-wipe" style="background:#F7E5DD"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#limite-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#limite-tag",{opacity:0,y:-10},{opacity:1,y:0,duration:0.3},0.3);
+  tl.fromTo("#limite-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.3);
+  tl.fromTo("#limite-fonte",{opacity:0},{opacity:1,duration:0.4},1.83);
+  tl.fromTo("#limite-b1",{scaleX:0},{scaleX:1,duration:1.6,ease:"power1.inOut"},1.83);
+  (function(){const o={v:0};const el=document.querySelector("#limite-v1");
+    tl.fromTo(o,{v:0},{v:400,duration:1.6,ease:"power1.inOut",onUpdate:()=>{el.textContent=Math.round(o.v)+" mg";}},1.83);})();
+  tl.fromTo("#limite-x0",{scale:0},{scale:1,duration:0.25,ease:"back.out(2.4)"},4.95); tl.fromTo("#limite-x1",{scale:0},{scale:1,duration:0.25,ease:"back.out(2.4)"},5.10); tl.fromTo("#limite-x2",{scale:0},{scale:1,duration:0.25,ease:"back.out(2.4)"},5.25); tl.fromTo("#limite-x3",{scale:0},{scale:1,duration:0.25,ease:"back.out(2.4)"},5.40);
+  tl.fromTo("#limite-eq",{opacity:0},{opacity:1,duration:0.3},5.45);
+  tl.fromTo(["#limite-gr","#limite-v2","#limite-m2"],{opacity:0},{opacity:1,duration:0.3},6.99);
+  tl.fromTo("#limite-b2",{scaleX:0},{scaleX:0.5,duration:0.6,ease:"power2.out"},7.19);
+
+  window.__timelines["limite"] = tl;
+</script>
+</template>

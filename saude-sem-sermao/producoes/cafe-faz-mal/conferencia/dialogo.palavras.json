@@ -1,0 +1,842 @@
+[
+ {
+  "palavra": "Café.",
+  "inicio": 0.0,
+  "fim": 0.48
+ },
+ {
+  "palavra": "Faz",
+  "inicio": 0.64,
+  "fim": 0.98
+ },
+ {
+  "palavra": "mal",
+  "inicio": 0.98,
+  "fim": 1.18
+ },
+ {
+  "palavra": "pro",
+  "inicio": 1.18,
+  "fim": 1.32
+ },
+ {
+  "palavra": "coração?",
+  "inicio": 1.32,
+  "fim": 1.66
+ },
+ {
+  "palavra": "Talvez",
+  "inicio": 2.1,
+  "fim": 2.52
+ },
+ {
+  "palavra": "você",
+  "inicio": 2.52,
+  "fim": 2.74
+ },
+ {
+  "palavra": "não",
+  "inicio": 2.74,
+  "fim": 2.84
+ },
+ {
+  "palavra": "precise",
+  "inicio": 2.84,
+  "fim": 3.12
+ },
+ {
+  "palavra": "cortar.",
+  "inicio": 3.12,
+  "fim": 3.42
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 3.96,
+  "fim": 4.32
+ },
+ {
+  "palavra": "eu",
+  "inicio": 4.32,
+  "fim": 4.42
+ },
+ {
+  "palavra": "tomo",
+  "inicio": 4.42,
+  "fim": 4.72
+ },
+ {
+  "palavra": "3",
+  "inicio": 4.72,
+  "fim": 4.92
+ },
+ {
+  "palavra": "por",
+  "inicio": 4.92,
+  "fim": 5.2
+ },
+ {
+  "palavra": "dia",
+  "inicio": 5.2,
+  "fim": 5.46
+ },
+ {
+  "palavra": "e",
+  "inicio": 5.46,
+  "fim": 5.66
+ },
+ {
+  "palavra": "todo",
+  "inicio": 5.66,
+  "fim": 5.88
+ },
+ {
+  "palavra": "mundo",
+  "inicio": 5.88,
+  "fim": 6.06
+ },
+ {
+  "palavra": "diz",
+  "inicio": 6.06,
+  "fim": 6.24
+ },
+ {
+  "palavra": "que",
+  "inicio": 6.24,
+  "fim": 6.34
+ },
+ {
+  "palavra": "é",
+  "inicio": 6.34,
+  "fim": 6.42
+ },
+ {
+  "palavra": "demais.",
+  "inicio": 6.42,
+  "fim": 6.72
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 7.2,
+  "fim": 7.44
+ },
+ {
+  "palavra": "revisão",
+  "inicio": 7.44,
+  "fim": 7.94
+ },
+ {
+  "palavra": "juntou",
+  "inicio": 7.94,
+  "fim": 8.3
+ },
+ {
+  "palavra": "mais",
+  "inicio": 8.3,
+  "fim": 8.44
+ },
+ {
+  "palavra": "de",
+  "inicio": 8.44,
+  "fim": 8.58
+ },
+ {
+  "palavra": "200",
+  "inicio": 8.58,
+  "fim": 9.06
+ },
+ {
+  "palavra": "análises",
+  "inicio": 9.06,
+  "fim": 9.74
+ },
+ {
+  "palavra": "sobre",
+  "inicio": 9.74,
+  "fim": 10.0
+ },
+ {
+  "palavra": "café",
+  "inicio": 10.0,
+  "fim": 10.38
+ },
+ {
+  "palavra": "e",
+  "inicio": 10.38,
+  "fim": 10.54
+ },
+ {
+  "palavra": "saúde.",
+  "inicio": 10.54,
+  "fim": 10.88
+ },
+ {
+  "palavra": "Quem",
+  "inicio": 11.14,
+  "fim": 11.56
+ },
+ {
+  "palavra": "tomava",
+  "inicio": 11.56,
+  "fim": 11.88
+ },
+ {
+  "palavra": "de",
+  "inicio": 11.88,
+  "fim": 12.02
+ },
+ {
+  "palavra": "3",
+  "inicio": 12.02,
+  "fim": 12.34
+ },
+ {
+  "palavra": "a",
+  "inicio": 12.34,
+  "fim": 12.52
+ },
+ {
+  "palavra": "4",
+  "inicio": 12.52,
+  "fim": 12.82
+ },
+ {
+  "palavra": "xícaras",
+  "inicio": 12.82,
+  "fim": 13.2
+ },
+ {
+  "palavra": "por",
+  "inicio": 13.2,
+  "fim": 13.4
+ },
+ {
+  "palavra": "dia",
+  "inicio": 13.4,
+  "fim": 13.58
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 13.58,
+  "fim": 14.12
+ },
+ {
+  "palavra": "risco",
+  "inicio": 14.12,
+  "fim": 14.44
+ },
+ {
+  "palavra": "menor",
+  "inicio": 14.44,
+  "fim": 14.72
+ },
+ {
+  "palavra": "de",
+  "inicio": 14.72,
+  "fim": 14.9
+ },
+ {
+  "palavra": "morte",
+  "inicio": 14.9,
+  "fim": 15.3
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.3,
+  "fim": 15.64
+ },
+ {
+  "palavra": "de",
+  "inicio": 15.64,
+  "fim": 15.78
+ },
+ {
+  "palavra": "doença",
+  "inicio": 15.78,
+  "fim": 16.1
+ },
+ {
+  "palavra": "do",
+  "inicio": 16.1,
+  "fim": 16.22
+ },
+ {
+  "palavra": "coração.",
+  "inicio": 16.22,
+  "fim": 16.58
+ },
+ {
+  "palavra": "Menor,",
+  "inicio": 17.02,
+  "fim": 17.58
+ },
+ {
+  "palavra": "não",
+  "inicio": 17.82,
+  "fim": 18.02
+ },
+ {
+  "palavra": "maior.",
+  "inicio": 18.02,
+  "fim": 18.28
+ },
+ {
+  "palavra": "Ué,",
+  "inicio": 19.02,
+  "fim": 19.28
+ },
+ {
+  "palavra": "mas",
+  "inicio": 19.48,
+  "fim": 19.72
+ },
+ {
+  "palavra": "café",
+  "inicio": 19.72,
+  "fim": 20.34
+ },
+ {
+  "palavra": "não",
+  "inicio": 20.34,
+  "fim": 20.46
+ },
+ {
+  "palavra": "acelera",
+  "inicio": 20.46,
+  "fim": 20.86
+ },
+ {
+  "palavra": "o",
+  "inicio": 20.86,
+  "fim": 20.92
+ },
+ {
+  "palavra": "coração?",
+  "inicio": 20.92,
+  "fim": 21.2
+ },
+ {
+  "palavra": "Num",
+  "inicio": 21.6,
+  "fim": 22.02
+ },
+ {
+  "palavra": "estudo",
+  "inicio": 22.02,
+  "fim": 22.34
+ },
+ {
+  "palavra": "com",
+  "inicio": 22.34,
+  "fim": 22.46
+ },
+ {
+  "palavra": "quase",
+  "inicio": 22.46,
+  "fim": 22.78
+ },
+ {
+  "palavra": "meio",
+  "inicio": 22.78,
+  "fim": 23.08
+ },
+ {
+  "palavra": "milhão",
+  "inicio": 23.08,
+  "fim": 23.4
+ },
+ {
+  "palavra": "de",
+  "inicio": 23.4,
+  "fim": 23.5
+ },
+ {
+  "palavra": "pessoas,",
+  "inicio": 23.5,
+  "fim": 23.92
+ },
+ {
+  "palavra": "quem",
+  "inicio": 24.2,
+  "fim": 24.52
+ },
+ {
+  "palavra": "tomava",
+  "inicio": 24.52,
+  "fim": 24.84
+ },
+ {
+  "palavra": "café",
+  "inicio": 24.84,
+  "fim": 25.16
+ },
+ {
+  "palavra": "não",
+  "inicio": 25.16,
+  "fim": 25.4
+ },
+ {
+  "palavra": "teve",
+  "inicio": 25.4,
+  "fim": 25.7
+ },
+ {
+  "palavra": "mais",
+  "inicio": 25.7,
+  "fim": 25.92
+ },
+ {
+  "palavra": "arritmia.",
+  "inicio": 25.92,
+  "fim": 26.36
+ },
+ {
+  "palavra": "O",
+  "inicio": 26.56,
+  "fim": 26.88
+ },
+ {
+  "palavra": "risco",
+  "inicio": 26.88,
+  "fim": 27.16
+ },
+ {
+  "palavra": "foi",
+  "inicio": 27.16,
+  "fim": 27.34
+ },
+ {
+  "palavra": "até",
+  "inicio": 27.34,
+  "fim": 27.48
+ },
+ {
+  "palavra": "um",
+  "inicio": 27.48,
+  "fim": 27.6
+ },
+ {
+  "palavra": "pouco",
+  "inicio": 27.6,
+  "fim": 27.8
+ },
+ {
+  "palavra": "menor.",
+  "inicio": 27.8,
+  "fim": 28.12
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 28.12,
+  "fim": 28.82
+ },
+ {
+  "palavra": "tem",
+  "inicio": 28.82,
+  "fim": 28.96
+ },
+ {
+  "palavra": "limite.",
+  "inicio": 28.96,
+  "fim": 29.34
+ },
+ {
+  "palavra": "Até",
+  "inicio": 29.54,
+  "fim": 29.88
+ },
+ {
+  "palavra": "400",
+  "inicio": 29.88,
+  "fim": 30.58
+ },
+ {
+  "palavra": "miligramas",
+  "inicio": 30.58,
+  "fim": 31.22
+ },
+ {
+  "palavra": "de",
+  "inicio": 31.22,
+  "fim": 31.32
+ },
+ {
+  "palavra": "cafeína",
+  "inicio": 31.32,
+  "fim": 31.68
+ },
+ {
+  "palavra": "por",
+  "inicio": 31.68,
+  "fim": 31.9
+ },
+ {
+  "palavra": "dia.",
+  "inicio": 31.9,
+  "fim": 32.1
+ },
+ {
+  "palavra": "Algo",
+  "inicio": 32.3,
+  "fim": 32.74
+ },
+ {
+  "palavra": "como",
+  "inicio": 32.74,
+  "fim": 33.0
+ },
+ {
+  "palavra": "4",
+  "inicio": 33.0,
+  "fim": 33.5
+ },
+ {
+  "palavra": "xícaras",
+  "inicio": 33.5,
+  "fim": 33.96
+ },
+ {
+  "palavra": "de",
+  "inicio": 33.96,
+  "fim": 34.08
+ },
+ {
+  "palavra": "café",
+  "inicio": 34.08,
+  "fim": 34.3
+ },
+ {
+  "palavra": "coado.",
+  "inicio": 34.3,
+  "fim": 34.64
+ },
+ {
+  "palavra": "Grávidas",
+  "inicio": 35.04,
+  "fim": 35.64
+ },
+ {
+  "palavra": "até",
+  "inicio": 35.64,
+  "fim": 35.84
+ },
+ {
+  "palavra": "200.",
+  "inicio": 35.84,
+  "fim": 36.1
+ },
+ {
+  "palavra": "E",
+  "inicio": 36.5,
+  "fim": 36.84
+ },
+ {
+  "palavra": "se",
+  "inicio": 36.84,
+  "fim": 37.06
+ },
+ {
+  "palavra": "o",
+  "inicio": 37.06,
+  "fim": 37.16
+ },
+ {
+  "palavra": "meu",
+  "inicio": 37.16,
+  "fim": 37.24
+ },
+ {
+  "palavra": "coração",
+  "inicio": 37.24,
+  "fim": 37.6
+ },
+ {
+  "palavra": "disparar",
+  "inicio": 37.6,
+  "fim": 38.16
+ },
+ {
+  "palavra": "depois",
+  "inicio": 38.16,
+  "fim": 38.5
+ },
+ {
+  "palavra": "do",
+  "inicio": 38.5,
+  "fim": 38.64
+ },
+ {
+  "palavra": "café?",
+  "inicio": 38.64,
+  "fim": 38.9
+ },
+ {
+  "palavra": "Aí",
+  "inicio": 39.26,
+  "fim": 39.74
+ },
+ {
+  "palavra": "vale",
+  "inicio": 39.74,
+  "fim": 39.94
+ },
+ {
+  "palavra": "reduzir",
+  "inicio": 39.94,
+  "fim": 40.54
+ },
+ {
+  "palavra": "e",
+  "inicio": 40.54,
+  "fim": 40.7
+ },
+ {
+  "palavra": "conversar",
+  "inicio": 40.7,
+  "fim": 41.14
+ },
+ {
+  "palavra": "com",
+  "inicio": 41.14,
+  "fim": 41.28
+ },
+ {
+  "palavra": "o",
+  "inicio": 41.28,
+  "fim": 41.36
+ },
+ {
+  "palavra": "médico.",
+  "inicio": 41.36,
+  "fim": 41.64
+ },
+ {
+  "palavra": "Cada",
+  "inicio": 42.06,
+  "fim": 42.32
+ },
+ {
+  "palavra": "corpo",
+  "inicio": 42.32,
+  "fim": 42.66
+ },
+ {
+  "palavra": "reage",
+  "inicio": 42.66,
+  "fim": 42.98
+ },
+ {
+  "palavra": "de",
+  "inicio": 42.98,
+  "fim": 43.1
+ },
+ {
+  "palavra": "um",
+  "inicio": 43.1,
+  "fim": 43.18
+ },
+ {
+  "palavra": "jeito.",
+  "inicio": 43.18,
+  "fim": 43.42
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 43.98,
+  "fim": 44.52
+ },
+ {
+  "palavra": "Café",
+  "inicio": 44.94,
+  "fim": 45.36
+ },
+ {
+  "palavra": "não",
+  "inicio": 45.36,
+  "fim": 45.46
+ },
+ {
+  "palavra": "é",
+  "inicio": 45.46,
+  "fim": 45.58
+ },
+ {
+  "palavra": "vilão.",
+  "inicio": 45.58,
+  "fim": 45.9
+ },
+ {
+  "palavra": "Até",
+  "inicio": 46.3,
+  "fim": 46.6
+ },
+ {
+  "palavra": "umas",
+  "inicio": 46.6,
+  "fim": 46.88
+ },
+ {
+  "palavra": "4",
+  "inicio": 46.88,
+  "fim": 47.24
+ },
+ {
+  "palavra": "xícaras",
+  "inicio": 47.24,
+  "fim": 47.7
+ },
+ {
+  "palavra": "tá",
+  "inicio": 47.7,
+  "fim": 47.82
+ },
+ {
+  "palavra": "tranquilo",
+  "inicio": 47.82,
+  "fim": 48.38
+ },
+ {
+  "palavra": "e",
+  "inicio": 48.38,
+  "fim": 48.76
+ },
+ {
+  "palavra": "se",
+  "inicio": 48.76,
+  "fim": 49.06
+ },
+ {
+  "palavra": "o",
+  "inicio": 49.06,
+  "fim": 49.12
+ },
+ {
+  "palavra": "coração",
+  "inicio": 49.12,
+  "fim": 49.42
+ },
+ {
+  "palavra": "disparar",
+  "inicio": 49.42,
+  "fim": 49.86
+ },
+ {
+  "palavra": "eu",
+  "inicio": 49.86,
+  "fim": 50.06
+ },
+ {
+  "palavra": "diminuo.",
+  "inicio": 50.06,
+  "fim": 50.42
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 50.8,
+  "fim": 51.08
+ },
+ {
+  "palavra": "aí",
+  "inicio": 51.08,
+  "fim": 51.26
+ },
+ {
+  "palavra": "manda",
+  "inicio": 51.26,
+  "fim": 51.84
+ },
+ {
+  "palavra": "pra",
+  "inicio": 51.84,
+  "fim": 51.96
+ },
+ {
+  "palavra": "quem",
+  "inicio": 51.96,
+  "fim": 52.18
+ },
+ {
+  "palavra": "vive",
+  "inicio": 52.18,
+  "fim": 52.4
+ },
+ {
+  "palavra": "dizendo",
+  "inicio": 52.4,
+  "fim": 52.76
+ },
+ {
+  "palavra": "que",
+  "inicio": 52.76,
+  "fim": 52.92
+ },
+ {
+  "palavra": "café",
+  "inicio": 52.92,
+  "fim": 53.22
+ },
+ {
+  "palavra": "faz",
+  "inicio": 53.22,
+  "fim": 53.48
+ },
+ {
+  "palavra": "mal.",
+  "inicio": 53.48,
+  "fim": 53.66
+ },
+ {
+  "palavra": "E",
+  "inicio": 53.92,
+  "fim": 54.36
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 54.36,
+  "fim": 54.8
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 55.04,
+  "fim": 55.46
+ },
+ {
+  "palavra": "quantas",
+  "inicio": 55.46,
+  "fim": 55.94
+ },
+ {
+  "palavra": "xícaras",
+  "inicio": 55.94,
+  "fim": 56.32
+ },
+ {
+  "palavra": "você",
+  "inicio": 56.32,
+  "fim": 56.56
+ },
+ {
+  "palavra": "toma",
+  "inicio": 56.56,
+  "fim": 56.88
+ },
+ {
+  "palavra": "e",
+  "inicio": 56.88,
+  "fim": 57.16
+ },
+ {
+  "palavra": "segue",
+  "inicio": 57.16,
+  "fim": 57.46
+ },
+ {
+  "palavra": "pra",
+  "inicio": 57.46,
+  "fim": 57.62
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 57.62,
+  "fim": 57.86
+ }
+]

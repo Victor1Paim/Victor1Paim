@@ -127,8 +127,10 @@ def main():
                            capture_output=True, text=True).stdout
         linhas = [l for l in r.splitlines() if l.startswith(("semelhança", "insert", "replace", "delete"))]
         pct = float(linhas[0].split()[1].rstrip("%")) if linhas else 0.0
-        print(f"tentativa {i}: {pct}%")
-        if pct >= a.minimo:
+        # erro nas primeiras 8 palavras (o gancho) reprova, mesmo com semelhança alta
+        erro_gancho = [l for l in linhas[1:] if " pos=" in l and int(l.rsplit("pos=", 1)[1]) < 8]
+        print(f"tentativa {i}: {pct}%" + ("  [ERRO NO GANCHO: " + "; ".join(erro_gancho) + "]" if erro_gancho else ""))
+        if pct >= a.minimo and not erro_gancho:
             print("\n".join(linhas[1:]) or "sem diferenças")
             print(f"ok -> {saida} (legendas em {conf}/)")
             return 0

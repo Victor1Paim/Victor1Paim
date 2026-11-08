@@ -1,0 +1,59 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .bg{background:#EEF0EA;}
+  .card2{position:absolute;left:80px;width:920px;height:120px;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+          display:flex;align-items:center;gap:24px;padding:0 34px;font-weight:900;font-size:42px;}
+  .card2 .e{font-size:56px;}
+  .cor{position:absolute;top:840px;width:150px;height:140px;}
+  #medico-cr{position:absolute;left:80px;top:1010px;width:920px;text-align:center;font-weight:900;font-size:38px;color:#6b6460;}
+</style>
+<div id="root" data-composition-id="medico" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo" id="medico-t">Aí vale <em>reduzir</em></h1>
+  <div class="card2" id="medico-c1" style="top:430px"><span class="e">☕↓</span> diminuir a quantidade</div>
+  <div class="card2" id="medico-c2" style="top:580px"><span class="e">🩺</span> conversar com um médico</div>
+  <svg class="cor" id="medico-h0" style="left:200px" viewBox="0 0 100 92"><path d="M50 88 C20 66 4 50 6 30 C8 12 30 4 50 22 C70 4 92 12 94 30 C96 50 80 66 50 88 Z" fill="#D45F2B"/></svg><svg class="cor" id="medico-h1" style="left:450px" viewBox="0 0 100 92"><path d="M50 88 C20 66 4 50 6 30 C8 12 30 4 50 22 C70 4 92 12 94 30 C96 50 80 66 50 88 Z" fill="#CE6840"/></svg><svg class="cor" id="medico-h2" style="left:700px" viewBox="0 0 100 92"><path d="M50 88 C20 66 4 50 6 30 C8 12 30 4 50 22 C70 4 92 12 94 30 C96 50 80 66 50 88 Z" fill="#B5481F"/></svg>
+  <div id="medico-cr">cada corpo reage de um jeito</div>
+  <div class="wipe" id="medico-wipe" style="background:#FDF3ED"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#medico-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#medico-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.3);
+  tl.fromTo("#medico-c1",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},0.74);
+  tl.fromTo("#medico-c2",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},1.50);
+  tl.fromTo("#medico-h0",{scale:0},{scale:1,duration:0.3,ease:"back.out(2)"},2.86); tl.fromTo("#medico-h1",{scale:0},{scale:1,duration:0.3,ease:"back.out(2)"},2.96); tl.fromTo("#medico-h2",{scale:0},{scale:1,duration:0.3,ease:"back.out(2)"},3.06);
+  tl.fromTo("#medico-h0",{scale:1,transformOrigin:"50% 55%"},{scale:1.15,duration:0.35,yoyo:true,repeat:3,ease:"power1.inOut",immediateRender:false},3.46); tl.fromTo("#medico-h1",{scale:1,transformOrigin:"50% 55%"},{scale:1.15,duration:0.18,yoyo:true,repeat:7,ease:"power1.inOut",immediateRender:false},3.46); tl.fromTo("#medico-h2",{scale:1,transformOrigin:"50% 55%"},{scale:1.15,duration:0.50,yoyo:true,repeat:1,ease:"power1.inOut",immediateRender:false},3.46);
+  tl.fromTo("#medico-cr",{opacity:0},{opacity:1,duration:0.3},2.56);
+
+  window.__timelines["medico"] = tl;
+</script>
+</template>

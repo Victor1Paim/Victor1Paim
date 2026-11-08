@@ -1,0 +1,3 @@
+semelhança: 98.8%
+replace: roteiro='duzentas' voz='duzentos' pos=29
+replace: roteiro='um' voz='o' pos=121
