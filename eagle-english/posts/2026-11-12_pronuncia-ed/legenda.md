@@ -1,7 +1,7 @@
 # Pronúncia "O -ed tem 3 sons" – textos para postar
 
 Vídeo: `video/final.mp4` (~65 s, 9:16) · Capa: `video/capa.png` · Horário sugerido: quinta 16h.
-STATUS: prévia pronta; faltam 4 falas (g3_en, t_pt, t_en, 99_cta) por causa do limite diário do Gemini gratuito.
+STATUS: prévia pronta; faltam 3 falas (t_pt, t_en, 99_cta) — agendado para 09/11 ~5h20 (Brasília) por causa do limite diário do Gemini gratuito.
 Para terminar: `python3 scripts/vozes.py gerar posts/2026-11-12_pronuncia-ed --pular-existentes`
 (modelo do falas.json: gemini-2.5-flash-preview-tts) e `python3 scripts/montar_pronuncia.py posts/2026-11-12_pronuncia-ed`.
 
