@@ -96,6 +96,7 @@ def main(pasta, previa=False):
         return ini - gap
 
     for n, b in enumerate(r["beats"]):
+        k0 = len(especs)
         tp = b["tipo"]
         if tp == "oferta":
             oferta = b; break
@@ -129,6 +130,9 @@ def main(pasta, previa=False):
                 especs.append((nome, dados))
                 cenas.append((nome, tela.get("segundos", cada) if isinstance(tela, dict) else cada))
             janelas.append((t, t + total, "pequeno")); t += total
+        if b.get("fundo"):   # cenário próprio deste trecho (regra de cenários do V3)
+            for i in range(k0, len(especs)):
+                especs[i] = (especs[i][0], {**especs[i][1], "fundo": (post / b["fundo"]).as_uri()})
 
     q = render(post, especs, fundo)
     # folha de contato (com o mascote por cima, como vai ficar)

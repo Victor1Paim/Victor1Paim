@@ -1,0 +1,127 @@
+{
+ "fundo": "img/quarto.png",
+ "velocidade_pt": 1.0,
+ "beats": [
+  {
+   "tipo": "abertura",
+   "texto": "Sua manhã em inglês ☀️ Repete comigo!",
+   "audio": [
+    "00_gancho"
+   ],
+   "fundo": "img/quarto.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Good morning!",
+   "pron": "/gud MÓR-nin/",
+   "pt": "Bom dia!",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/quarto.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm still sleepy.",
+   "pron": "/áim STÍL SLÍI-pi/",
+   "pt": "Ainda estou com sono.",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/cama.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Time to get up!",
+   "pron": "/TÁIM tu guét ÂP/",
+   "pt": "Hora de levantar!",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/cama.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I need some coffee.",
+   "pron": "/ái NÍID sâm CÓ-fi/",
+   "pt": "Preciso de um café.",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Agora, bora se arrumar! 🚿",
+   "audio": [
+    "regancho"
+   ],
+   "fundo": "img/banheiro.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm taking a shower.",
+   "pron": "/áim TÊI-kin a XÁU-er/",
+   "pt": "Estou tomando banho.",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/banheiro.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "What's for breakfast?",
+   "pron": "/UÓTS for BRÉK-fâst/",
+   "pt": "O que tem de café da manhã?",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm ready to go!",
+   "pron": "/áim RÉ-di tu GÔU/",
+   "pt": "Estou pronto pra sair!",
+   "audio_en": "f7_en",
+   "audio_pt": "f7_pt",
+   "fundo": "img/porta.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/cozinha.png",
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "00_gancho",
+   "lingua": "pt",
+   "texto": "Você sabe falar da sua manhã em inglês? Vem comigo e repete!"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Good morning!"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Bom dia!"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm still sleepy."
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Ainda estou com sono."
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Time to get up!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Hora de levantar!"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I need some coffee."
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Preciso de um café."
+  },
+  {
+   "id": "regancho",
+   "lingua": "pt",
+   "texto": "Agora, bora se arrumar!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm taking a shower."
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Estou tomando banho."
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What's for breakfast?"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "O que tem de café da manhã?"
+  },
+  {
+   "id": "f7_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm ready to go!"
+  },
+  {
+   "id": "f7_pt",
+   "lingua": "pt",
+   "texto": "Estou pronto pra sair!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Gostou? Salva pra praticar e segue a Eagle! E se você quer achar a frase certa pra cada situação, sem travar na hora, o Ígol trezentos e cinquenta tem trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita, e mais quatro bônus. Hoje, por dezenove e noventa, pagamento único. O link tá na bio!"
+  }
+ ]
+}
