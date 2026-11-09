@@ -1,10 +1,10 @@
 {
  "fundo": "img/fundo.png",
- "velocidade_pt": 1.1,
+ "velocidade_pt": 1.0,
  "beats": [
   {
    "tipo": "abertura",
-   "texto": "Vai viajar pra fora? No aeroporto, fala assim ✈️",
+   "texto": "Chegou no aeroporto lá fora… e é tudo em inglês ✈️",
    "audio": [
     "00_gancho"
    ]

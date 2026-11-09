@@ -72,7 +72,9 @@ Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `a
 
 ## Vozes e cotas (decisão do usuário em 09/11: continuar no plano GRATUITO do Gemini)
 
-- Vozes aprovadas: Gemini **Achird** (pt) no `gemini-3.8-flash-tts` e **Kore** (en) no `gemini-3.8-flash-lite-tts`.
+- Voz aprovada: Gemini **Achird nas DUAS línguas** (o usuário não quer voz feminina no inglês junto da masculina).
+  pt no `gemini-3.8-flash-tts`, en no `gemini-3.8-flash-lite-tts` (ou `gemini-2.5-flash-preview-tts`). `velocidade_pt` 1.0 (não acelerar).
+  Gancho: pergunta que cria situação e dúvida ("Se o telefone tocar em inglês… você sabe o que dizer?").
   A voz da OpenAI foi reprovada.
 - Cota por dia (zera 05h em Brasília): 10 falas pt + 10 falas en → ~1 vídeo por dia. Reaproveitar o áudio
   do CTA quando o texto for idêntico. Planejar: prévia e parte das falas num dia, o resto no dia seguinte.

@@ -1,21 +1,90 @@
 {
-  "vozes": {"pt": "Achird", "en": "Kore"},
-  "modelo": "gemini-3.8-flash-tts",
-  "falas": [
-    {"id": "00_gancho", "lingua": "pt", "texto": "Vai viajar pra fora? No aeroporto, repete comigo!"},
-    {"id": "f1_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Where is the check-in counter?"},
-    {"id": "f1_pt", "lingua": "pt", "texto": "Onde fica o balcão de check-in?"},
-    {"id": "f2_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Could I have a window seat?"},
-    {"id": "f2_pt", "lingua": "pt", "texto": "Posso ficar na janela?"},
-    {"id": "f3_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Do I need to take off my shoes?"},
-    {"id": "f3_pt", "lingua": "pt", "texto": "Preciso tirar os sapatos?"},
-    {"id": "f4_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Do I need to take out my laptop?"},
-    {"id": "f4_pt", "lingua": "pt", "texto": "Preciso tirar o notebook da mala?"},
-    {"id": "regancho", "lingua": "pt", "texto": "Passou da segurança? Falta pouco!"},
-    {"id": "f5_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Where is gate twelve?"},
-    {"id": "f5_pt", "lingua": "pt", "texto": "Onde fica o portão doze?"},
-    {"id": "f6_en", "lingua": "en", "modelo": "gemini-3.8-flash-lite-tts", "texto": "Where is baggage claim?"},
-    {"id": "f6_pt", "lingua": "pt", "texto": "Onde fica a retirada de bagagem?"},
-    {"id": "cta", "lingua": "pt", "texto": "Essas frases estão num mapa do Ígol trezentos e cinquenta. São trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita. E vem com quatro bônus, como o Guia de vinte e um dias. Separado, daria cento e vinte e três e setenta. Hoje, o kit completo sai por dezenove e noventa, pagamento único, com sete dias de garantia. Link na bio!"}
-  ]
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "00_gancho",
+   "lingua": "pt",
+   "texto": "Você chega no aeroporto lá fora… e tudo em inglês. Sabe o que dizer? Repete comigo."
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Where is the check-in counter?"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Onde fica o balcão de check-in?"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Could I have a window seat?"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Posso ficar na janela?"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Do I need to take off my shoes?"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Preciso tirar os sapatos?"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Do I need to take out my laptop?"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Preciso tirar o notebook da mala?"
+  },
+  {
+   "id": "regancho",
+   "lingua": "pt",
+   "texto": "Passou da segurança? Falta pouco!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Where is gate twelve?"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Onde fica o portão doze?"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Where is baggage claim?"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Onde fica a retirada de bagagem?"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Essas frases estão num mapa do Ígol trezentos e cinquenta. São trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita. E vem com quatro bônus, como o Guia de vinte e um dias. Separado, daria cento e vinte e três e setenta. Hoje, o kit completo sai por dezenove e noventa, pagamento único, com sete dias de garantia. Link na bio!"
+  }
+ ]
 }

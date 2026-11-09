@@ -1,6 +1,6 @@
 # Produção 2 — "No aeroporto" (estilo R4, mapa real pág. 5)
 
-STATUS: roteiro, fundo, prévia e 4 frases em inglês prontos; faltam 8 falas pt (gemini-3.8-flash-tts) e f5_en/f6_en (lite) — agendado para 10/11 05h15.
+STATUS: roteiro, fundo e prévia prontos; vozes (Achird pt e en, gancho novo) agendadas para 10/11 05h15.
 CTA: mesmo áudio da produção 1 (texto idêntico). Horário sugerido: quinta 16h.
 
 ## Legenda (Reels e TikTok)

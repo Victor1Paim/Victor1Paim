@@ -1,20 +1,21 @@
 {
  "vozes": {
   "pt": "Achird",
-  "en": "Kore"
+  "en": "Achird"
  },
  "modelo": "gemini-3.8-flash-tts",
  "falas": [
   {
    "id": "00_gancho",
    "lingua": "pt",
-   "texto": "O telefone tocou e é em inglês. Repete comigo!"
+   "texto": "Se o telefone tocar e for em inglês… você sabe o que dizer? Repete comigo.",
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f1_en",
    "lingua": "en",
    "texto": "Hello, who's calling?",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f1_pt",
@@ -25,7 +26,7 @@
    "id": "f2_en",
    "lingua": "en",
    "texto": "Good morning, how can I help?",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f2_pt",
@@ -36,7 +37,7 @@
    "id": "f3_en",
    "lingua": "en",
    "texto": "Hold on, please.",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f3_pt",
@@ -47,7 +48,7 @@
    "id": "f4_en",
    "lingua": "en",
    "texto": "I'll transfer you now.",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f4_pt",
@@ -63,7 +64,7 @@
    "id": "f5_en",
    "lingua": "en",
    "texto": "She's not here right now.",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f5_pt",
@@ -74,7 +75,7 @@
    "id": "f6_en",
    "lingua": "en",
    "texto": "Can I take a message?",
-   "modelo": "gemini-3.8-flash-lite-tts"
+   "modelo": "gemini-2.5-flash-preview-tts"
   },
   {
    "id": "f6_pt",

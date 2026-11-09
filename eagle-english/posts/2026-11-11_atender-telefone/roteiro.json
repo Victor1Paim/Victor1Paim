@@ -1,10 +1,10 @@
 {
  "fundo": "img/fundo.png",
- "velocidade_pt": 1.1,
+ "velocidade_pt": 1.0,
  "beats": [
   {
    "tipo": "abertura",
-   "texto": "O telefone tocou e é em inglês 📞",
+   "texto": "Se o telefone tocar em inglês… você sabe o que dizer? 📞",
    "audio": [
     "00_gancho"
    ]

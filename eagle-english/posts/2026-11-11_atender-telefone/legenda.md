@@ -1,6 +1,6 @@
 # Produção 1 — "Atender o telefone" (estilo R4, mapa real pág. 368)
 
-STATUS: PRONTO — vídeo 47,6 s, vozes Gemini (Achird pt / Kore en), conferido pelo Whisper (falas e vídeo final), -14 LUFS.
+STATUS: PRONTO (v2, 09/11) — mesma voz Achird no pt e no en, gancho novo, narração sem aceleração; 52,1 s, -14 LUFS.
 Vídeo: `video/final.mp4` · Capa: `video/capa.png` (quadro do gancho com o mascote) · Horário sugerido: terça 17h.
 
 ## Legenda (Reels e TikTok)
