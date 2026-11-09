@@ -1,0 +1,90 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "00_gancho",
+   "lingua": "pt",
+   "texto": "Vai dormir? Vamos falar isso em inglês."
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm so tired."
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Estou muito cansado."
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Time for bed."
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Hora de dormir."
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Turn off the light, please."
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Apaga a luz, por favor."
+  },
+  {
+   "id": "regancho",
+   "lingua": "pt",
+   "texto": "Agora, tente antes de mim."
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Good night!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Boa noite!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Sweet dreams!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Bons sonhos!"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "See you tomorrow."
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Até amanhã."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

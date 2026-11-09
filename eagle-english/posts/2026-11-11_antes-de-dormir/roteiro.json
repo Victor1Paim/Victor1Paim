@@ -1,0 +1,119 @@
+{
+ "fundo": "img/quarto.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "beats": [
+  {
+   "tipo": "abertura",
+   "texto": "Inglês antes de dormir 🌙",
+   "audio": [
+    "00_gancho"
+   ],
+   "fundo": "img/quarto.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm so tired.",
+   "pron": "/áim SÔU TÁIRD/",
+   "pt": "Estou muito cansado.",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Time for bed.",
+   "pron": "/TÁIM for BÉD/",
+   "pt": "Hora de dormir.",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/corredor.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Turn off the light, please.",
+   "pron": "/TÂRN óf the LÁIT, PLÍIZ/",
+   "pt": "Apaga a luz, por favor.",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/quarto.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Agora, tente antes de mim 👀",
+   "audio": [
+    "regancho"
+   ],
+   "fundo": "img/cama.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Good night!",
+   "pron": "/gud NÁIT/",
+   "pt": "Boa noite!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/cama.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Sweet dreams!",
+   "pron": "/SUÍIT DRÍIMZ/",
+   "pt": "Bons sonhos!",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/cama.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "See you tomorrow.",
+   "pron": "/SÍI iú tu-MÓ-rôu/",
+   "pt": "Até amanhã.",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt",
+   "fundo": "img/janela.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/sala.png",
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

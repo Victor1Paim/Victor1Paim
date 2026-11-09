@@ -9,7 +9,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 |---|---|---|---|---|---|---|
 | ter 10/11 | 12h | Sua manhã em inglês ☀️ | Repita | "Você sabe falar da sua manhã em inglês?" (teste A: pergunta) | salvar | ✅ |
 | ter 10/11 | 19h | Atender o telefone 📞 | Repita (mapa real) | "Se o telefone tocar e for em inglês… você sabe o que dizer?" | salvar | ✅ |
-| qua 11/11 | 12h | Inglês antes de dormir 🌙 | Repita | "Vai dormir? Vamos falar isso em inglês." (teste B: situação) | salvar | 🎬 |
+| qua 11/11 | 12h | Inglês antes de dormir 🌙 | Repita | "Vai dormir? Vamos falar isso em inglês." (teste B: situação) | salvar | ✅ |
 | qua 11/11 | 19h | Café da manhã ☕ | Flashcard | "Teste rápido! Você sabe dizer isso em inglês?" | placar | ✅ |
 | qui 12/11 | 12h | No aeroporto ✈️ | Repita (mapa real) | "Você chega no aeroporto lá fora… e tudo em inglês." | salvar | ✅ |
 | qui 12/11 | 19h | Frutas 🍎 | Flashcard | "Você sabe o nome desta fruta em inglês?" | placar | 🎬 |
