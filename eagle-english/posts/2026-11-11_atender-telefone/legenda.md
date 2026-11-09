@@ -1,6 +1,6 @@
 # Produção 1 — "Atender o telefone" (estilo R4, mapa real pág. 368)
 
-STATUS: refazendo com as vozes do Gemini (Achird pt / Kore en) — produção automática agendada para 09/11 05h15 (Brasília). A versão com voz OpenAI foi reprovada pelo usuário.
+STATUS: PRONTO — vídeo 47,6 s, vozes Gemini (Achird pt / Kore en), conferido pelo Whisper (falas e vídeo final), -14 LUFS.
 Vídeo: `video/final.mp4` · Capa: `video/capa.png` (quadro do gancho com o mascote) · Horário sugerido: terça 17h.
 
 ## Legenda (Reels e TikTok)
