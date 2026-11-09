@@ -1,0 +1,9 @@
+{
+  "vozes": {"pt": "Achird", "en": "Achird"},
+  "modelo": "gemini-2.5-flash-preview-tts",
+  "falas": [
+    {"id": "q_en", "lingua": "en", "texto": "What is this called?"},
+    {"id": "respostas_en", "lingua": "en", "texto": "Suitcase.\n\nPassport.\n\nBoarding pass.\n\nBackpack.\n\nNeck pillow.\n\nSeat belt.\n\nLuggage cart.\n\nSunglasses."},
+    {"id": "cta", "lingua": "pt", "texto": "Quantas você acertou? Comenta aí! E se você vai viajar, o Ígol trezentos e cinquenta tem as frases certas pro aeroporto, o hotel e o restaurante: trinta e cinco situações e duas mil e cem frases, com tradução e pronúncia escrita, e mais quatro bônus. Hoje, por dezenove e noventa, pagamento único. Link na bio!"}
+  ]
+}

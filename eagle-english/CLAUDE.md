@@ -68,6 +68,8 @@ da seção 6 (tônica em MAIÚSCULA, sem IPA).
 folha de contato). Primeiro exemplo: `posts/2026-11-10_quiz-pedir-de-novo/`.
 Pronúncia: `pronuncia.json` → `python3 scripts/montar_pronuncia.py <post>` (grupo → "Sua vez!" → ouvir de novo → teste).
 Escada de velocidade: `escada.json` → `python3 scripts/montar_escada.py <post>` (lenta/normal/nativo por atempo).
+Flashcard "What is this called?" (ref. R1): `flash.json` → `python3 scripts/montar_flash.py <post>` (template `flash.html`;
+as respostas podem vir numa fala só, cortada nas pausas; figuras numa grade 2x4 gerada de uma vez e recortada).
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas (decisão do usuário em 09/11: continuar no plano GRATUITO do Gemini)

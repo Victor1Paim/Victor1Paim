@@ -1,0 +1,21 @@
+{
+  "audio_pergunta": "q_en", "audio_respostas": "respostas_en", "segundos_contagem": 0.8,
+  "fundo_cta": "img/fundo_cta.png",
+  "itens": [
+    {"img": "img/suitcase.png", "en": "Suitcase", "pron": "/SÚT-kêis/", "pt": "Mala"},
+    {"img": "img/passport.png", "en": "Passport", "pron": "/PÉS-port/", "pt": "Passaporte"},
+    {"img": "img/boarding_pass.png", "en": "Boarding pass", "pron": "/BÓR-din PÉS/", "pt": "Cartão de embarque"},
+    {"img": "img/backpack.png", "en": "Backpack", "pron": "/BÉK-pék/", "pt": "Mochila"},
+    {"img": "img/neck_pillow.png", "en": "Neck pillow", "pron": "/NÉK PÍ-lôu/", "pt": "Travesseiro de pescoço"},
+    {"img": "img/seat_belt.png", "en": "Seat belt", "pron": "/SÍIT BÉLT/", "pt": "Cinto de segurança"},
+    {"img": "img/luggage_cart.png", "en": "Luggage cart", "pron": "/LÂ-guidj KÁRT/", "pt": "Carrinho de bagagem"},
+    {"img": "img/sunglasses.png", "en": "Sunglasses", "pron": "/SÂN-glé-siz/", "pt": "Óculos de sol"}
+  ],
+  "cta": {"audio": "cta", "segundos_placar": 3.2, "telas": [
+    ["Frases de *viagem* estão aqui 👇", "mapa-aeroporto"],
+    {"tipo": "kit", "tag": "Ebook + *4 bônus*", "capas": ["capa-guia", "capa-cards", "capa-ebook", "capa-500", "capa-verbos"],
+     "itens": ["*350 mapas* · 2.100 frases", "Guia de 21 Dias · *15 min/dia*", "20 Cards de Gramática", "500 Frases · 100 Verbos"]},
+    {"tipo": "preco", "tag": "Pagamento *único*", "de": "R$ 123,70", "por": "R$ 19,90",
+     "chips": ["PDF no seu e-mail", "Garantia de 7 dias", "Celular, tablet ou impresso"], "prazo": "Oferta até 25/12"}
+  ]}
+}

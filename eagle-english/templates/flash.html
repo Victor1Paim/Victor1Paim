@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Oswald:wght@600;700&display=swap">
+<!-- Flashcard "What is this called?" (referência R1) no layout Eagle: fundo claro nas cores da marca, etiqueta
+     com progresso, cartão branco com borda marinho, contagem vermelha, revelação com pronúncia (nossa convenção)
+     e tradução, mascote oficial "espiando" no canto do cartão. Tipo "imagem" = tela pronta (CTA do padrão). -->
+<style>
+  :root { --marinho:#0B1F4B; --vermelho:#E63946; --amarelo:#FFC93C; --creme:#F7F3EA; --verde:#16A34A; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; }
+  body { font-family:"Poppins"; background:linear-gradient(180deg, #D6E6FF 0%, #EEF4FF 45%, var(--creme) 100%); position:relative; }
+  .topo { position:absolute; top:250px; left:0; right:0; text-align:center; }
+  .pill { display:inline-flex; gap:18px; align-items:center; background:var(--marinho); color:#fff; font-weight:800;
+          font-size:40px; padding:12px 34px; border-radius:60px; box-shadow:0 8px 20px rgba(11,31,75,.25); }
+  .pill b { background:var(--amarelo); color:#111; border-radius:30px; padding:2px 18px; }
+  .sub { margin-top:16px; font-weight:800; font-size:36px; color:var(--marinho); }
+  .cartao { position:absolute; left:90px; right:90px; top:410px; height:900px; background:#fff; border:8px solid var(--marinho);
+            border-radius:44px; box-shadow:0 18px 40px rgba(11,31,75,.18); display:flex; flex-direction:column; align-items:center; padding-top:46px; }
+  .cartao h1 { font-weight:900; font-size:62px; color:var(--marinho); letter-spacing:-0.02em; }
+  .cartao img.obj { width:600px; height:380px; object-fit:contain; margin-top:20px; }
+  .timer { margin-top:24px; width:170px; height:170px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+           font-family:"Oswald"; font-weight:700; font-size:100px; color:var(--vermelho);
+           background:conic-gradient(var(--vermelho) calc(var(--p) * 1turn), #f1e4e5 0); }
+  .timer span { width:136px; height:136px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; }
+  .resp { margin-top:14px; text-align:center; }
+  .resp .en { font-family:"Oswald"; font-weight:700; font-size:104px; color:var(--marinho); line-height:1; }
+  .resp .pron { font-weight:800; font-size:44px; color:var(--vermelho); margin-top:10px; }
+  .resp .pt { font-weight:800; font-size:40px; color:var(--verde); margin-top:6px; }
+  .placar { padding:0 50px; text-align:center; }
+  .placar h1 { font-size:66px; }
+  .placar .c { font-weight:800; font-size:40px; color:var(--vermelho); margin:10px 0 24px; }
+  .placar ul { list-style:none; text-align:left; display:grid; grid-template-columns:1fr 1fr; gap:14px 34px; }
+  .placar li { font-weight:800; font-size:31px; color:var(--marinho); line-height:1.2; }
+  .placar li small { display:block; font-weight:700; font-size:25px; color:var(--verde); }
+  .masc { position:absolute; right:40px; top:1250px; height:300px; }
+  .rodape { position:absolute; bottom:420px; left:0; right:0; text-align:center; font-weight:700; font-size:28px; color:var(--marinho); opacity:.7; }
+  #full { position:absolute; inset:0; width:1080px; height:1920px; }
+</style></head>
+<body><div id="c"></div>
+<script>
+const d = window.DADOS || {tipo:"pergunta", n:1, total:8, img:"", timer:3};
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+let h = "";
+if (d.tipo === "imagem") h = `<img id="full" src="${d.src}">`;
+else {
+  const topo = `<div class="topo"><div class="pill">${esc(d.selo || "QUIZ DE VIAGEM ✈️")}${d.n ? `<b>${d.n}/${d.total}</b>` : ""}</div>
+                <div class="sub">${esc(d.sub || "Responde antes do 3, 2, 1!")}</div></div>`;
+  let corpo = "";
+  if (d.tipo === "pergunta") {
+    const base = `<h1>What is this called?</h1><img class="obj" src="${d.img}">`;
+    if (d.revelar) corpo = base + `<div class="resp"><div class="en">${esc(d.en)}</div><div class="pron">${esc(d.pron)}</div><div class="pt">${esc(d.pt)}</div></div>`;
+    else corpo = base + (d.timer ? `<div class="timer" style="--p:${d.timer / 3}"><span>${d.timer}</span></div>` : "");
+  } else if (d.tipo === "placar") {
+    corpo = `<div class="placar"><h1>Quantas você acertou? 🏆</h1><div class="c">Comenta aí 👇</div>
+             <ul>${d.itens.map(i => `<li>${esc(i[0])}<small>${esc(i[1])}</small></li>`).join("")}</ul></div>`;
+  }
+  h = topo + `<div class="cartao">${corpo}</div>` + (d.mascote ? `<img class="masc" src="${d.mascote}">` : "") +
+      `<div class="rodape">@eagle.english.br</div>`;
+}
+document.getElementById("c").innerHTML = h;
+</script>
+</body></html>
