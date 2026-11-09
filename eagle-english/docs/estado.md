@@ -18,3 +18,15 @@ ESTADO ATUALIZADO (08/11/2026 – montado a partir dos PDFs)
 - Mudanças de regra: vídeos de 40 s a 1 min 10 s e CTA final novo (docs/HOOKS_E_CTA_VIDEO.md),
   valendo a partir das próximas produções.
 - Mudanças anteriores: CTA Eagle 350 obrigatório em todo conteúdo (desde 30/10).
+
+
+## Vídeos prontos (atualizado em 09/11/2026)
+
+| Post | Formato | Duração | Status |
+|---|---|---|---|
+| posts/2026-11-11_atender-telefone | Repita (mapa real pág. 368) | 52 s | PRONTO (v2: Achird pt/en, gancho novo) |
+| posts/2026-11-13_aeroporto | Repita (mapa real pág. 5) | 56 s | PRONTO |
+| posts/2026-11-15_flashcard-cafe | Flashcard "What is this called?" (A1) | 68,7 s | PRONTO |
+| posts/2026-11-17_minha-manha | Repita A1, 6 cenários (V3) | 50 s | PRONTO — aprovado pelo usuário |
+
+Próximo passo combinado: pesquisar ganchos de entrada melhores e copys (mensagens) antes das próximas produções.
