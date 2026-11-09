@@ -265,6 +265,7 @@ wh, wj = wipe("cta", CREME)
 src4 = (SCR / "build_cafe.py").read_text()
 cta_src = src4[src4.index('cena("cta", d, """'):src4.index("# ---------- legendas do narrador")]
 cta_src = (cta_src
+    .replace(".bg{background:var(--laranja);}", ".bg{background:var(--verde);}\n  #cta-tito{filter:drop-shadow(0 0 2px #FDF3ED) drop-shadow(0 0 2px #FDF3ED);}")  # Tito não some no fundo
     .replace("Manda pra quem diz que <em>café faz mal</em>", "Manda pra quem <em>foge do médico</em>")
     .replace('"☕ 3 xícaras!"', "💙 AZUL")
     .replace("#cta-eco{position:absolute;inset:0;background:var(--mostarda);}", "#cta-eco{position:absolute;inset:0;background:var(--verde);}")

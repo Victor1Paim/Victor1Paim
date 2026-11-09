@@ -31,7 +31,7 @@ Extraído em 08/11/2026 dos vídeos publicados **002 "Treinar 2× por semana adi
 | 3–8s | **Objeção da vida real** | Tito | Fundo creme, Tito grande, balão "PERGUNTA DO TITO" |
 | 8–40s | **2 a 4 blocos de informação** (ou "Mito 1/3, 2/3, 3/3") | Narrador; Tito entra 1× no meio | Título do bloco + infográfico simples + fonte em letra pequena + legenda; Tito pequeno no canto inferior direito reagindo |
 | 40–50s | **Resumo do Tito** + confirmação do narrador | Tito → Narrador | Balão "O QUE O TITO ENTENDEU", texto aparecendo palavra por palavra |
-| últimos ~5s | **CTA (versão 08/11/2026, aprovada no vídeo dos 10 mil passos):** o narrador confirma ("Isso aí.") + **frase de envio ligada ao tema** ("Manda pra quem se culpa por não bater 10 mil.") + **pedido curto de engajamento com gancho do tema**: "Curte, comenta {pergunta do tema} e segue pra mais!" (ex.: "comenta quantas xícaras você toma"). Rodízio opcional do 1º pedido (Seguir com promessa / Comentar / Gancho do próximo), mas o trio curte-comenta-segue fica sempre. | Narrador | Fundo laranja: card "Enviar para…" com avião de papel; depois três ícones entram no ritmo da fala (♥ curte → 💬 comenta → botão "Seguir → Seguindo ✓"); aviso "Conteúdo educativo, não substitui orientação profissional."; cena final repete o gancho (favorece rever) |
+| últimos ~5s | **CTA (versão 08/11/2026, aprovada no vídeo dos 10 mil passos):** o narrador confirma ("Isso aí.") + **frase de envio ligada ao tema** ("Manda pra quem se culpa por não bater 10 mil.") + **pedido curto de engajamento com gancho do tema**: "Curte, comenta {pergunta do tema} e segue pra mais!" (ex.: "comenta quantas xícaras você toma"). Rodízio opcional do 1º pedido (Seguir com promessa / Comentar / Gancho do próximo), mas o trio curte-comenta-segue fica sempre. | Narrador | Fundo **verde-escuro** (desde 09/11/2026; antes era laranja e o Tito sumia), Tito com contorno creme fino: card "Enviar para…" com avião de papel; depois três ícones entram no ritmo da fala (♥ curte → 💬 comenta → botão "Seguir → Seguindo ✓"); aviso "Conteúdo educativo, não substitui orientação profissional."; cena final repete o gancho (favorece rever) |
 
 Formato de mitos: rótulo **✕ MITO** + contador **1/3**, fundo laranja, e o desmentido em fundo claro. Formato de evidência: rótulo **✓ CIÊNCIA**.
 
@@ -41,6 +41,7 @@ Formato de mitos: rótulo **✕ MITO** + contador **1/3**, fundo laranja, e o de
 - **Paleta** (amostrada dos vídeos):
   - Verde-escuro `#2F483A` (capa e botão "Seguindo")
   - Laranja terracota `#D45F2B` / `#CE6840` (destaque, mitos, CTA, Tito)
+  - **Regra do Tito (09/11/2026): o Tito é laranja-terracota, então nunca fica direto sobre fundo laranja `#D45F2B`, terracota `#CE6840` ou outro tom avermelhado/alaranjado: ele some.** Fundos seguros para o Tito: creme, branco, pêssego claro, verde-escuro (com contorno creme fino, porque o estetoscópio é verde), sálvia e mostarda. Se a cena ou a capa precisar ser laranja/terracota, o Tito vai dentro de um círculo creme. Conferir no snapshot de cada cena com o Tito antes de renderizar.
   - Creme `#FDF3ED` / `#F2ECE2` (fundo das cenas do Tito)
   - Branco `#FFFFFF` (fundo dos infográficos)
   - Verde-sálvia `#95A185` (selos "mesmo %", "↑ coluna", "30–60 min/semana")
