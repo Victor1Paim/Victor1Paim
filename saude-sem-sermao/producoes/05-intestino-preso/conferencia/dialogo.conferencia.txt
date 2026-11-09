@@ -1,0 +1,6 @@
+semelhança: 98.0%
+replace: roteiro='a' voz='à' pos=83
+replace: roteiro='num' voz='no' pos=96
+insert: roteiro='' voz='a' pos=111
+insert: roteiro='' voz='fibra' pos=140
+insert: roteiro='' voz='e' pos=164

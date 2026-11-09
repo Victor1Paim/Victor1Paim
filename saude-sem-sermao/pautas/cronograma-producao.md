@@ -14,7 +14,7 @@ Formato: **A** = explicador animado (narrador + Tito) · **R** = Reel de receita
 | 2 | ✅ Estresse engorda? (produzido 08/11) | Mente sem Nó | Sono e mente | A | 🟡 | Revisões sobre cortisol e peso; OMS |
 | 3 | ✅ Postura perfeita existe? (produzido 09/11) | Costas na Cadeira | Corpo explicado | A | 🟢 | Revisões sobre postura e dor lombar |
 | 4 | ✅ Celular antes de dormir faz mal? (produzido 09/11) | Tela na Mão | Bem-estar | A | 🟢 | Revisões sobre luz azul/telas e sono; Associação Brasileira do Sono |
-| 5 | Intestino preso: o que ajuda de verdade | Intestino sem Drama | Comida sem culpa | A | 🟡 | Guia Alimentar; diretrizes de constipação |
+| 5 | ✅ Intestino preso: o que ajuda de verdade (produzido 09/11) | Intestino sem Drama | Comida sem culpa | A | 🟡 | Guia Alimentar; diretrizes de constipação |
 | 6 | Grão-de-bico: salada de fibra em 10 minutos | Receita sem moral | Comida sem culpa | R | 🟢 | Guia Alimentar (fibras) |
 | 7 | Levantar a cada 30 minutos funciona? | Costas na Cadeira | Movimento possível | A | 🟢 | Revisões sobre pausas ativas e comportamento sedentário |
 | 8 | Respiração 4-7-8 funciona? | Mente sem Nó | Sono e mente | A | 🟡 | Revisão sobre respiração diafragmática e estresse |

@@ -1,0 +1,59 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:22px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:44px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:66px;line-height:1;}
+
+  .bg{background:#EEF0EA;}
+</style>
+<div id="root" data-composition-id="habito" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo" id="habito-t">Movimento e <em>sem segurar</em></h1>
+  <div class="chip" id="habito-a" style="top:520px"><span class="i">🚶</span>se mexer</div>
+  <div class="chip" id="habito-b" style="top:660px"><span class="i">🔔</span>deu sinal? vai!</div>
+  <div class="wipe" id="habito-wipe" style="background:#FFFFFF"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#habito-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#habito-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.15);
+  tl.fromTo("#habito-a",{opacity:0,x:-100},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},0.30);
+  tl.fromTo("#habito-b",{opacity:0,x:-100},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},1.06);
+  tl.fromTo("#habito-b .i",{rotation:-18},{rotation:18,duration:0.08,yoyo:true,repeat:7,ease:"none"},2.42);
+
+  window.__timelines["habito"] = tl;
+</script>
+</template>
