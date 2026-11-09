@@ -70,6 +70,13 @@ Pronúncia: `pronuncia.json` → `python3 scripts/montar_pronuncia.py <post>` (g
 Escada de velocidade: `escada.json` → `python3 scripts/montar_escada.py <post>` (lenta/normal/nativo por atempo).
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
+## Vozes e cotas (decisão do usuário em 09/11: continuar no plano GRATUITO do Gemini)
+
+- Vozes aprovadas: Gemini **Achird** (pt) no `gemini-3.8-flash-tts` e **Kore** (en) no `gemini-3.8-flash-lite-tts`.
+  A voz da OpenAI foi reprovada.
+- Cota por dia (zera 05h em Brasília): 10 falas pt + 10 falas en → ~1 vídeo por dia. Reaproveitar o áudio
+  do CTA quando o texto for idêntico. Planejar: prévia e parte das falas num dia, o resto no dia seguinte.
+
 ## Limites das APIs (plano gratuito do Gemini)
 
 - TTS: 3 pedidos/min e 10 por dia POR MODELO (`gemini-3.8-flash-tts`, `-lite-tts`, `2.5-flash-preview-tts`).

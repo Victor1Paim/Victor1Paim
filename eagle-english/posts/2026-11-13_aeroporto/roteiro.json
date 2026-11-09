@@ -1,0 +1,113 @@
+{
+ "fundo": "img/fundo.png",
+ "velocidade_pt": 1.1,
+ "beats": [
+  {
+   "tipo": "abertura",
+   "texto": "Vai viajar pra fora? No aeroporto, fala assim ✈️",
+   "audio": [
+    "00_gancho"
+   ]
+  },
+  {
+   "tipo": "frase",
+   "en": "Where is the check-in counter?",
+   "pron": "/UÉR iz the TCHÉK-in KÁUN-ter/",
+   "pt": "Onde fica o balcão de check-in?",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "Could I have a window seat?",
+   "pron": "/kud ái HÉV a UÍN-dôu SÍIT/",
+   "pt": "Posso ficar na janela?",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "Do I need to take off my shoes?",
+   "pron": "/du ái NÍID tu TÊIK óf mái XÚZ/",
+   "pt": "Preciso tirar os sapatos?",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "Do I need to take out my laptop?",
+   "pron": "/du ái NÍID tu TÊIK AUT mái LÉP-top/",
+   "pt": "Preciso tirar o notebook da mala?",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Passou da segurança? Falta pouco! 🛫",
+   "audio": [
+    "regancho"
+   ]
+  },
+  {
+   "tipo": "frase",
+   "en": "Where is gate twelve?",
+   "pron": "/UÉR iz GÊIT TUÉLV/",
+   "pt": "Onde fica o portão 12?",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "Where is baggage claim?",
+   "pron": "/UÉR iz BÉ-guij KLÊIM/",
+   "pt": "Onde fica a retirada de bagagem?",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    [
+     "Essas frases estão *aqui* 👇",
+     "mapa-aeroporto"
+    ],
+    [
+     "*35 situações* no sumário",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}
