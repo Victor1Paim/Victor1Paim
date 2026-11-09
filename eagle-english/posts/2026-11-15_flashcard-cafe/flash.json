@@ -1,0 +1,113 @@
+{
+ "intro": {
+  "audio": "intro",
+  "selo": "TESTE SEU INGLÊS 🧠",
+  "titulo": [
+   "Você sabe dizer",
+   "isso em *inglês*?"
+  ],
+  "sub": "☕ 8 itens do café da manhã · 3 s cada",
+  "previa": [
+   "img/coffee.png",
+   "img/bread.png",
+   "img/eggs.png",
+   "img/milk.png"
+  ]
+ },
+ "audio_pergunta": "q_en",
+ "audio_respostas": "respostas_en",
+ "audio_traducoes": "traducoes_pt",
+ "segundos_contagem": 0.8,
+ "fundo_cta": "img/fundo_cta.png",
+ "itens": [
+  {
+   "img": "img/coffee.png",
+   "en": "Coffee",
+   "pron": "/CÓ-fi/",
+   "pt": "Café"
+  },
+  {
+   "img": "img/bread.png",
+   "en": "Bread",
+   "pron": "/BRÉD/",
+   "pt": "Pão"
+  },
+  {
+   "img": "img/eggs.png",
+   "en": "Eggs",
+   "pron": "/ÉGZ/",
+   "pt": "Ovos"
+  },
+  {
+   "img": "img/milk.png",
+   "en": "Milk",
+   "pron": "/MÍLK/",
+   "pt": "Leite"
+  },
+  {
+   "img": "img/orange_juice.png",
+   "en": "Orange juice",
+   "pron": "/Ó-rindj DJÚS/",
+   "pt": "Suco de laranja"
+  },
+  {
+   "img": "img/bananas.png",
+   "en": "Bananas",
+   "pron": "/ba-NÉ-naz/",
+   "pt": "Bananas"
+  },
+  {
+   "img": "img/cheese.png",
+   "en": "Cheese",
+   "pron": "/TCHÍIZ/",
+   "pt": "Queijo"
+  },
+  {
+   "img": "img/butter.png",
+   "en": "Butter",
+   "pron": "/BÂ-ter/",
+   "pt": "Manteiga"
+  }
+ ],
+ "cta": {
+  "audio": "cta",
+  "segundos_placar": 4.5,
+  "sub_placar": "Salva pra praticar depois 📌",
+  "telas": [
+   [
+    "*35 situações* do dia a dia",
+    "sumario-ebook"
+   ],
+   {
+    "tipo": "kit",
+    "tag": "Ebook + *4 bônus*",
+    "capas": [
+     "capa-guia",
+     "capa-cards",
+     "capa-ebook",
+     "capa-500",
+     "capa-verbos"
+    ],
+    "itens": [
+     "*350 mapas* · 2.100 frases",
+     "Guia de 21 Dias · *15 min/dia*",
+     "20 Cards de Gramática",
+     "500 Frases · 100 Verbos"
+    ]
+   },
+   {
+    "tipo": "preco",
+    "tag": "Pagamento *único*",
+    "de": "R$ 123,70",
+    "por": "R$ 19,90",
+    "chips": [
+     "PDF no seu e-mail",
+     "Garantia de 7 dias",
+     "Celular, tablet ou impresso"
+    ],
+    "prazo": "Oferta até 25/12"
+   }
+  ]
+ },
+ "selo": "QUIZ DO CAFÉ ☕"
+}

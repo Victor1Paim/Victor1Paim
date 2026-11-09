@@ -1,0 +1,11 @@
+{
+  "vozes": {"pt": "Achird", "en": "Achird"},
+  "modelo": "gemini-2.5-flash-preview-tts",
+  "falas": [
+    {"id": "intro", "lingua": "pt", "texto": "Teste rápido do café da manhã! Você sabe dizer essas coisas em inglês? São oito, e você tem três segundos pra cada. Vem se testar comigo!"},
+    {"id": "q_en", "lingua": "en", "texto": "What is this called?"},
+    {"id": "respostas_en", "lingua": "en", "texto": "Coffee.\n\nBread.\n\nEggs.\n\nMilk.\n\nOrange juice.\n\nBananas.\n\nCheese.\n\nButter."},
+    {"id": "traducoes_pt", "lingua": "pt", "texto": "Café.\n\nPão.\n\nOvos.\n\nLeite.\n\nSuco de laranja.\n\nBananas.\n\nQueijo.\n\nManteiga."},
+    {"id": "cta", "lingua": "pt", "texto": "Quantas você acertou? Comenta aí! Salva pra praticar e segue a Eagle. E se você quer achar a frase certa pra cada situação, sem travar na hora, o Ígol trezentos e cinquenta tem duas mil e cem frases com tradução e pronúncia escrita, por dezenove e noventa. Link na bio!"}
+  ]
+}

@@ -35,6 +35,14 @@
   .masc { position:absolute; right:40px; top:1250px; height:300px; }
   .rodape { position:absolute; bottom:420px; left:0; right:0; text-align:center; font-weight:700; font-size:28px; color:var(--marinho); opacity:.7; }
   #full { position:absolute; inset:0; width:1080px; height:1920px; }
+  /* abertura: mascote grande no centro chamando para o teste */
+  .intro { position:absolute; top:400px; left:70px; right:70px; text-align:center; }
+  .intro h1 { font-weight:900; font-size:96px; line-height:1.02; color:var(--marinho); letter-spacing:-0.03em; }
+  .intro h1 span { color:var(--vermelho); }
+  .intro .s2 { margin-top:22px; font-weight:800; font-size:42px; color:#111; }
+  .intro .previa { margin-top:26px; display:flex; justify-content:center; gap:18px; }
+  .intro .previa img { width:150px; height:120px; object-fit:contain; background:#fff; border:5px solid var(--marinho); border-radius:22px; padding:8px; }
+  .masc-grande { position:absolute; left:50%; transform:translateX(-50%); bottom:300px; height:720px; }
 </style></head>
 <body><div id="c"></div>
 <script>
@@ -42,6 +50,13 @@ const d = window.DADOS || {tipo:"pergunta", n:1, total:8, img:"", timer:3};
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 let h = "";
 if (d.tipo === "imagem") h = `<img id="full" src="${d.src}">`;
+else if (d.tipo === "intro") {
+  const red = t => esc(t).replace(/\*(.+?)\*/g, '<span>$1</span>');
+  h = `<div class="topo"><div class="pill">${esc(d.selo)}</div></div>
+       <div class="intro"><h1>${d.titulo.map(red).join("<br>")}</h1><div class="s2">${esc(d.sub)}</div>
+       <div class="previa">${(d.previa || []).map(src => `<img src="${src}">`).join("")}</div></div>
+       <img class="masc-grande" src="${d.mascote}">`;
+}
 else {
   const topo = `<div class="topo"><div class="pill">${esc(d.selo || "QUIZ DE VIAGEM ✈️")}${d.n ? `<b>${d.n}/${d.total}</b>` : ""}</div>
                 <div class="sub">${esc(d.sub || "Responde antes do 3, 2, 1!")}</div></div>`;

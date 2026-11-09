@@ -19,7 +19,7 @@ PROJ = Path(__file__).resolve().parents[1]
 MASC = PROJ / "assets" / "mascote" / "oficial"
 
 
-def cortar_respostas(arq, n, pasta):
+def cortar_respostas(arq, n, pasta, prefixo="resp"):
     r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(arq), "-af", "silencedetect=noise=-40dB:d=0.3", "-f", "null", "-"],
                        capture_output=True, text=True).stderr
     ini = [float(x) for x in re.findall(r"silence_start: ([0-9.]+)", r)]
@@ -27,12 +27,14 @@ def cortar_respostas(arq, n, pasta):
     pausas = [(a + b) / 2 for a, b in zip(ini, fim) if a > 0.05]
     total = dur(arq)
     pausas = [p for p in pausas if p < total - 0.2]
+    if len(pausas) != n - 1 and not (pasta.parent / arq.name).exists():   # prévia sem áudio: divide igual
+        pausas = [total * (i + 1) / n for i in range(n - 1)]
     if len(pausas) != n - 1:
         sys.exit(f"esperava {n - 1} pausas em {arq.name}, achei {len(pausas)}: regrave a fala com pausas maiores")
     cortes = [0.0] + pausas + [total]
     saidas = []
     for i in range(n):
-        out = pasta / f"_resp_{i + 1}.wav"
+        out = pasta / f"_{prefixo}_{i + 1}.wav"
         # (o fade de saída é feito com areverse: um afade=out com st=0 zeraria o trecho inteiro)
         sh("-i", str(arq), "-af", f"atrim={cortes[i]:.3f}:{cortes[i + 1]:.3f},asetpts=PTS-STARTPTS,"
            "silenceremove=start_periods=1:start_threshold=-45dB,afade=t=in:d=0.01,"
@@ -57,8 +59,32 @@ def main(pasta):
     especs, cenas, sons, t = [], [], [], 0.0
     q_arq, q_d = vozes[c["audio_pergunta"]]
 
+    if c.get("audio_traducoes"):
+        trads = cortar_respostas(vozes[c["audio_traducoes"]][0], len(itens), post / "audio" / "_mix", "trad")
+    else:
+        trads = [None] * len(itens)
+
+    # ABERTURA em português: mascote grande no centro, bico abrindo com a voz
+    it0 = c.get("intro")
+    if it0:
+        base = {"tipo": "intro", "selo": it0["selo"], "titulo": it0["titulo"], "sub": it0["sub"],
+                "previa": [(post / x).as_uri() for x in it0.get("previa", [])]}
+        especs.append(("00_intro_f", {**base, "mascote": fechada}))
+        especs.append(("00_intro_a", {**base, "mascote": aberta}))
+        a_arq, a_d = vozes[it0["audio"]]
+        sons.append((a_arq, 0.15, 1.0))
+        total = a_d + 0.5
+        abertos = montar_padrao.boca_aberta([(a_arq, 0.15, 1.0)], total)
+        cur = 0.0
+        for a, b in abertos:
+            if a > cur:
+                cenas.append(("00_intro_f", a - cur))
+            cenas.append(("00_intro_a", b - a)); cur = b
+        cenas.append(("00_intro_f", total - cur))
+        t = total
+
     for n, it in enumerate(itens, 1):
-        base = {"tipo": "pergunta", "n": n, "total": len(itens), "img": (post / it["img"]).as_uri(),
+        base = {"tipo": "pergunta", "n": n, "total": len(itens), "img": (post / it["img"]).as_uri(), "selo": c.get("selo"),
                 "en": it["en"], "pron": it["pron"], "pt": it["pt"]}
         especs.append((f"{n:02d}_q", {**base, "mascote": aberta}))
         sons.append((fx["whoosh"], t, 0.5)); sons.append((q_arq, t + 0.15, 1.0))
@@ -69,12 +95,17 @@ def main(pasta):
         especs.append((f"{n:02d}_r", {**base, "revelar": True, "mascote": aberta}))
         r_arq, r_d = resps[n - 1]
         sons.append((fx["ding"], t, 0.6)); sons.append((r_arq, t + 0.3, 1.0))
-        d = 0.3 + r_d + 0.8; cenas.append((f"{n:02d}_r", d)); t += d
+        d = 0.3 + r_d + 0.25
+        if trads[n - 1]:
+            tr_arq, tr_d = trads[n - 1]
+            sons.append((tr_arq, t + d, 1.0)); d += tr_d
+        d += 0.6
+        cenas.append((f"{n:02d}_r", d)); t += d
 
     # placar + CTA (telas do padrão, renderizadas antes e coladas como imagem)
     k = c["cta"]; arq, d_cta = vozes[k["audio"]]
     especs.append(("90_placar", {"tipo": "placar", "itens": [[i["en"], i["pt"]] for i in itens], "mascote": aberta,
-                                 "selo": "PLACAR 🏆", "sub": "Salva pra revisar antes da viagem 📌"}))
+                                 "selo": "PLACAR 🏆", "sub": k.get("sub_placar", "Salva pra praticar depois 📌")}))
     sons.append((fx["whoosh"], t, 0.5)); sons.append((arq, t + 0.2, 1.0))
     seg_placar = k.get("segundos_placar", 3.2)
     cenas.append(("90_placar", seg_placar))
@@ -98,7 +129,7 @@ def main(pasta):
         especs.append((f"{nome}_m", {"tipo": "imagem", "src": (q / f"{nome}_m.png").as_uri()}))
         cenas.append((f"{nome}_m", resto / len(telas)))
     t += seg_placar + resto
-    finalizar(post, especs, cenas, sons, t, fundo_cta, template="flash.html", capa="01_q")
+    finalizar(post, especs, cenas, sons, t, fundo_cta, template="flash.html", capa=("00_intro_f" if it0 else "01_q"))
 
 
 if __name__ == "__main__":

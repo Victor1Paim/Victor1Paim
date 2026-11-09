@@ -7,6 +7,13 @@ Passo a passo do projeto (quem faz o quê): `docs/PASSO_A_PASSO_EAGLE_ENGLISH.md
 
 Idioma de trabalho com o usuário: português do Brasil, direto e curto.
 
+## DIREÇÃO EDITORIAL V3 (09/11/2026) — `docs/PROMPT_MESTRE_V3.md`
+
+70% A1 / 25% A2 / 5% B1; temas do dia a dia (rotina, casa, lazer, comida, sentimentos, vocabulário fácil);
+evitar burocracia/bancos/reclamação formal. Legendas no formato V3 (5 hashtags, sem #eagleenglish).
+**Vídeo sempre abre em PORTUGUÊS com o mascote GRANDE no centro falando com quem assiste** (gancho/convite
+para se testar); o inglês vem nas frases, e toda frase/resposta em inglês ganha a tradução falada em português.
+
 ## PADRÃO VISUAL (manda sobre o resto deste arquivo)
 
 Todo vídeo segue `docs/PADRAO_VIDEO.md` (medido nos Reels publicados): foto do cenário em cor cheia,
