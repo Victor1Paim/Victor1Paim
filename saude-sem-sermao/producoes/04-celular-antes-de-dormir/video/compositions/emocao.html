@@ -1,0 +1,67 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:22px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:44px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:66px;line-height:1;}
+
+  .bg{background:var(--pessego);}
+  #emocao-selo{left:80px;top:200px;color:var(--verde);border-color:var(--verde);font-size:44px;}
+  .titulo{top:330px;}
+  #emocao-c{position:absolute;left:390px;top:840px;width:300px;height:300px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:170px;box-shadow:0 14px 40px rgba(80,40,20,.14);}
+  #emocao-r{position:absolute;left:80px;top:1150px;width:920px;text-align:center;font-weight:900;font-size:44px;color:var(--verde);}
+</style>
+<div id="root" data-composition-id="emocao" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div class="selo" id="emocao-selo">✓ EXATO</div>
+  <h1 class="titulo" id="emocao-t">Conteúdo que <em>mexe com a emoção</em></h1>
+  <div class="chip" id="emocao-a" style="top:560px"><span class="i">💢</span>briga nos comentários</div>
+  <div class="chip" id="emocao-b" style="top:690px"><span class="i">📰</span>notícia tensa</div>
+  <div id="emocao-c">🧠</div>
+  <div class="wipe" id="emocao-wipe" style="background:#FDF3ED"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#emocao-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#emocao-selo",{opacity:0,scale:2.2,rotation:-12},{opacity:1,scale:1,rotation:-5,duration:0.22,ease:"power4.in"},0.10);
+  tl.fromTo("#emocao-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.59);
+  tl.fromTo("#emocao-a",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},2.61);
+  tl.fromTo("#emocao-b",{opacity:0,x:-80},{opacity:1,x:0,duration:0.35,ease:"back.out(1.6)"},3.93);
+  tl.fromTo("#emocao-c",{scale:0},{scale:1,duration:0.35,ease:"back.out(2.2)"},4.97);
+  tl.fromTo("#emocao-c",{boxShadow:"0 0 0 0 rgba(212,95,43,.6)"},{boxShadow:"0 0 0 40px rgba(212,95,43,0)",duration:0.6,repeat:1,ease:"power1.out"},5.25);
+
+  window.__timelines["emocao"] = tl;
+</script>
+</template>

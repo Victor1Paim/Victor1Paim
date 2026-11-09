@@ -1,0 +1,4 @@
+semelhança: 98.4%
+replace: roteiro='atrasa' voz='atrasou' pos=51
+replace: roteiro='quinhentas' voz='quinhentos' pos=74
+replace: roteiro='jogo' voz='joga' pos=122

@@ -13,7 +13,7 @@ Formato: **A** = explicador animado (narrador + Tito) · **R** = Reel de receita
 | 1 | ✅ Exame de próstata: mitos e verdades (produzido 08/11) | Mito, contexto e fonte (Novembro Azul) | Mito x verdade | A | 🟡 | INCA / Ministério da Saúde (posição do INCA sobre rastreamento em homens sem sintomas: decisão compartilhada com o médico) |
 | 2 | ✅ Estresse engorda? (produzido 08/11) | Mente sem Nó | Sono e mente | A | 🟡 | Revisões sobre cortisol e peso; OMS |
 | 3 | ✅ Postura perfeita existe? (produzido 09/11) | Costas na Cadeira | Corpo explicado | A | 🟢 | Revisões sobre postura e dor lombar |
-| 4 | Celular antes de dormir faz mal? | Tela na Mão | Bem-estar | A | 🟢 | Revisões sobre luz azul/telas e sono; Associação Brasileira do Sono |
+| 4 | ✅ Celular antes de dormir faz mal? (produzido 09/11) | Tela na Mão | Bem-estar | A | 🟢 | Revisões sobre luz azul/telas e sono; Associação Brasileira do Sono |
 | 5 | Intestino preso: o que ajuda de verdade | Intestino sem Drama | Comida sem culpa | A | 🟡 | Guia Alimentar; diretrizes de constipação |
 | 6 | Grão-de-bico: salada de fibra em 10 minutos | Receita sem moral | Comida sem culpa | R | 🟢 | Guia Alimentar (fibras) |
 | 7 | Levantar a cada 30 minutos funciona? | Costas na Cadeira | Movimento possível | A | 🟢 | Revisões sobre pausas ativas e comportamento sedentário |
