@@ -1,0 +1,61 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:22px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:46px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:66px;line-height:1;}
+
+  .bg{background:var(--pessego);}
+  .col{position:absolute;top:470px;width:180px;height:600px;}
+  .fonte{top:1090px;}
+</style>
+<div id="root" data-composition-id="curvas" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <h1 class="titulo" id="curvas-t">Não existe <em>uma única</em> postura correta</h1>
+  <svg class="col" id="curvas-c0" viewBox="0 0 120 400" style="left:150px"><path d="M56.1 30.0 L61.0 64.0 L65.7 98.0 L68.9 132.0 L70.0 166.0 L68.6 200.0 L65.0 234.0 L60.2 268.0 L55.4 302.0 L51.7 336.0 L50.0 370.0" stroke="#2B2B2B" stroke-width="6" fill="none"/><rect x="34.1" y="19.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="39.0" y="53.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="43.7" y="87.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="46.9" y="121.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="48.0" y="155.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="46.6" y="189.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="43.0" y="223.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="38.2" y="257.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="33.4" y="291.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="29.7" y="325.0" width="44" height="22" rx="9" fill="#CE6840"/><rect x="28.0" y="359.0" width="44" height="22" rx="9" fill="#CE6840"/></svg><svg class="col" id="curvas-c1" viewBox="0 0 120 400" style="left:440px"><path d="M51.4 30.0 L62.3 64.0 L72.5 98.0 L79.7 132.0 L82.0 166.0 L78.8 200.0 L71.0 234.0 L60.5 268.0 L49.8 302.0 L41.7 336.0 L38.1 370.0" stroke="#2B2B2B" stroke-width="6" fill="none"/><rect x="29.4" y="19.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="40.3" y="53.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="50.5" y="87.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="57.7" y="121.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="60.0" y="155.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="56.8" y="189.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="49.0" y="223.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="38.5" y="257.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="27.8" y="291.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="19.7" y="325.0" width="44" height="22" rx="9" fill="#E2B04A"/><rect x="16.1" y="359.0" width="44" height="22" rx="9" fill="#E2B04A"/></svg><svg class="col" id="curvas-c2" viewBox="0 0 120 400" style="left:730px"><path d="M46.8 30.0 L63.5 64.0 L79.3 98.0 L90.4 132.0 L94.0 166.0 L89.1 200.0 L77.1 234.0 L60.8 268.0 L44.3 302.0 L31.7 336.0 L26.1 370.0" stroke="#2B2B2B" stroke-width="6" fill="none"/><rect x="24.8" y="19.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="41.5" y="53.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="57.3" y="87.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="68.4" y="121.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="72.0" y="155.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="67.1" y="189.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="55.1" y="223.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="38.8" y="257.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="22.3" y="291.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="9.7" y="325.0" width="44" height="22" rx="9" fill="#2F483A"/><rect x="4.1" y="359.0" width="44" height="22" rx="9" fill="#2F483A"/></svg>
+  <div class="fonte" id="curvas-f">Fonte: Slater et al., JOSPT, 2019</div>
+  <div class="wipe" id="curvas-wipe" style="background:#FFFFFF"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#curvas-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#curvas-t",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},0.25);
+  tl.fromTo("#curvas-c0",{opacity:0,y:60},{opacity:1,y:0,duration:0.4,ease:"back.out(1.6)"},2.64); tl.fromTo("#curvas-c1",{opacity:0,y:60},{opacity:1,y:0,duration:0.4,ease:"back.out(1.6)"},2.94); tl.fromTo("#curvas-c2",{opacity:0,y:60},{opacity:1,y:0,duration:0.4,ease:"back.out(1.6)"},3.24);
+  tl.fromTo("#curvas-f",{opacity:0},{opacity:1,duration:0.3},2.64);
+  tl.fromTo(".col",{scaleX:1},{scaleX:1.12,duration:0.25,yoyo:true,repeat:1,stagger:0.12},3.86);
+
+  window.__timelines["curvas"] = tl;
+</script>
+</template>

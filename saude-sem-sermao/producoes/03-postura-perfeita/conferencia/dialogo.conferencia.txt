@@ -1,0 +1,3 @@
+semelhança: 99.1%
+replace: roteiro='uma' voz='um' pos=31
+insert: roteiro='' voz='a' pos=163

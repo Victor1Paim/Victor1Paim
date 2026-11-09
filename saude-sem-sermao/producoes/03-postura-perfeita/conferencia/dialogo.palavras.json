@@ -1,0 +1,862 @@
+[
+ {
+  "palavra": "Postura",
+  "inicio": 0.0,
+  "fim": 0.44
+ },
+ {
+  "palavra": "perfeita",
+  "inicio": 0.44,
+  "fim": 0.86
+ },
+ {
+  "palavra": "existe?",
+  "inicio": 0.86,
+  "fim": 1.28
+ },
+ {
+  "palavra": "A",
+  "inicio": 1.56,
+  "fim": 1.92
+ },
+ {
+  "palavra": "ciência",
+  "inicio": 1.92,
+  "fim": 2.2
+ },
+ {
+  "palavra": "diz,",
+  "inicio": 2.2,
+  "fim": 2.52
+ },
+ {
+  "palavra": "não",
+  "inicio": 2.74,
+  "fim": 3.1
+ },
+ {
+  "palavra": "do",
+  "inicio": 3.1,
+  "fim": 3.22
+ },
+ {
+  "palavra": "jeito",
+  "inicio": 3.22,
+  "fim": 3.4
+ },
+ {
+  "palavra": "que",
+  "inicio": 3.4,
+  "fim": 3.5
+ },
+ {
+  "palavra": "te",
+  "inicio": 3.5,
+  "fim": 3.62
+ },
+ {
+  "palavra": "ensinaram.",
+  "inicio": 3.62,
+  "fim": 4.1
+ },
+ {
+  "palavra": "Como",
+  "inicio": 4.64,
+  "fim": 4.96
+ },
+ {
+  "palavra": "assim?",
+  "inicio": 4.96,
+  "fim": 5.26
+ },
+ {
+  "palavra": "A",
+  "inicio": 5.44,
+  "fim": 5.58
+ },
+ {
+  "palavra": "vida",
+  "inicio": 5.58,
+  "fim": 5.78
+ },
+ {
+  "palavra": "inteira",
+  "inicio": 5.78,
+  "fim": 6.18
+ },
+ {
+  "palavra": "me",
+  "inicio": 6.18,
+  "fim": 6.34
+ },
+ {
+  "palavra": "mandaram",
+  "inicio": 6.34,
+  "fim": 6.62
+ },
+ {
+  "palavra": "sentar",
+  "inicio": 6.62,
+  "fim": 6.96
+ },
+ {
+  "palavra": "reto.",
+  "inicio": 6.96,
+  "fim": 7.3
+ },
+ {
+  "palavra": "Pois",
+  "inicio": 7.68,
+  "fim": 8.08
+ },
+ {
+  "palavra": "é,",
+  "inicio": 8.08,
+  "fim": 8.22
+ },
+ {
+  "palavra": "mas",
+  "inicio": 8.5,
+  "fim": 8.82
+ },
+ {
+  "palavra": "uma",
+  "inicio": 8.82,
+  "fim": 9.0
+ },
+ {
+  "palavra": "grande",
+  "inicio": 9.0,
+  "fim": 9.4
+ },
+ {
+  "palavra": "revisão",
+  "inicio": 9.4,
+  "fim": 9.94
+ },
+ {
+  "palavra": "que",
+  "inicio": 9.94,
+  "fim": 10.2
+ },
+ {
+  "palavra": "juntou",
+  "inicio": 10.2,
+  "fim": 10.62
+ },
+ {
+  "palavra": "41",
+  "inicio": 10.62,
+  "fim": 11.12
+ },
+ {
+  "palavra": "revisões",
+  "inicio": 11.12,
+  "fim": 12.0
+ },
+ {
+  "palavra": "sistemáticas",
+  "inicio": 12.0,
+  "fim": 12.68
+ },
+ {
+  "palavra": "não",
+  "inicio": 12.68,
+  "fim": 13.0
+ },
+ {
+  "palavra": "encontrou",
+  "inicio": 13.0,
+  "fim": 13.38
+ },
+ {
+  "palavra": "consenso",
+  "inicio": 13.38,
+  "fim": 13.96
+ },
+ {
+  "palavra": "de",
+  "inicio": 13.96,
+  "fim": 14.08
+ },
+ {
+  "palavra": "que",
+  "inicio": 14.08,
+  "fim": 14.22
+ },
+ {
+  "palavra": "alguma",
+  "inicio": 14.22,
+  "fim": 14.56
+ },
+ {
+  "palavra": "postura",
+  "inicio": 14.56,
+  "fim": 15.02
+ },
+ {
+  "palavra": "cause",
+  "inicio": 15.02,
+  "fim": 15.3
+ },
+ {
+  "palavra": "dor",
+  "inicio": 15.3,
+  "fim": 15.46
+ },
+ {
+  "palavra": "nas",
+  "inicio": 15.46,
+  "fim": 15.64
+ },
+ {
+  "palavra": "costas.",
+  "inicio": 15.64,
+  "fim": 16.02
+ },
+ {
+  "palavra": "E",
+  "inicio": 16.22,
+  "fim": 16.66
+ },
+ {
+  "palavra": "não",
+  "inicio": 16.66,
+  "fim": 16.76
+ },
+ {
+  "palavra": "existe",
+  "inicio": 16.76,
+  "fim": 17.0
+ },
+ {
+  "palavra": "uma",
+  "inicio": 17.0,
+  "fim": 17.16
+ },
+ {
+  "palavra": "única",
+  "inicio": 17.16,
+  "fim": 17.44
+ },
+ {
+  "palavra": "postura",
+  "inicio": 17.44,
+  "fim": 17.8
+ },
+ {
+  "palavra": "correta.",
+  "inicio": 17.8,
+  "fim": 18.24
+ },
+ {
+  "palavra": "A",
+  "inicio": 18.42,
+  "fim": 18.64
+ },
+ {
+  "palavra": "coluna",
+  "inicio": 18.64,
+  "fim": 18.96
+ },
+ {
+  "palavra": "de",
+  "inicio": 18.96,
+  "fim": 19.1
+ },
+ {
+  "palavra": "cada",
+  "inicio": 19.1,
+  "fim": 19.28
+ },
+ {
+  "palavra": "pessoa",
+  "inicio": 19.28,
+  "fim": 19.62
+ },
+ {
+  "palavra": "tem",
+  "inicio": 19.62,
+  "fim": 19.86
+ },
+ {
+  "palavra": "curvas",
+  "inicio": 19.86,
+  "fim": 20.18
+ },
+ {
+  "palavra": "diferentes.",
+  "inicio": 20.18,
+  "fim": 20.62
+ },
+ {
+  "palavra": "Então",
+  "inicio": 21.26,
+  "fim": 21.6
+ },
+ {
+  "palavra": "eu",
+  "inicio": 21.6,
+  "fim": 21.8
+ },
+ {
+  "palavra": "posso",
+  "inicio": 21.8,
+  "fim": 21.94
+ },
+ {
+  "palavra": "ficar",
+  "inicio": 21.94,
+  "fim": 22.22
+ },
+ {
+  "palavra": "torto",
+  "inicio": 22.22,
+  "fim": 22.62
+ },
+ {
+  "palavra": "o",
+  "inicio": 22.62,
+  "fim": 22.88
+ },
+ {
+  "palavra": "dia",
+  "inicio": 22.88,
+  "fim": 22.98
+ },
+ {
+  "palavra": "inteiro?",
+  "inicio": 22.98,
+  "fim": 23.3
+ },
+ {
+  "palavra": "Não",
+  "inicio": 23.84,
+  "fim": 24.34
+ },
+ {
+  "palavra": "é",
+  "inicio": 24.34,
+  "fim": 24.46
+ },
+ {
+  "palavra": "bem",
+  "inicio": 24.46,
+  "fim": 24.62
+ },
+ {
+  "palavra": "isso.",
+  "inicio": 24.62,
+  "fim": 24.94
+ },
+ {
+  "palavra": "O",
+  "inicio": 25.16,
+  "fim": 25.52
+ },
+ {
+  "palavra": "problema",
+  "inicio": 25.52,
+  "fim": 25.84
+ },
+ {
+  "palavra": "não",
+  "inicio": 25.84,
+  "fim": 26.04
+ },
+ {
+  "palavra": "é",
+  "inicio": 26.04,
+  "fim": 26.18
+ },
+ {
+  "palavra": "a",
+  "inicio": 26.18,
+  "fim": 26.34
+ },
+ {
+  "palavra": "posição.",
+  "inicio": 26.34,
+  "fim": 26.8
+ },
+ {
+  "palavra": "É",
+  "inicio": 27.12,
+  "fim": 27.34
+ },
+ {
+  "palavra": "ficar",
+  "inicio": 27.34,
+  "fim": 27.6
+ },
+ {
+  "palavra": "parado",
+  "inicio": 27.6,
+  "fim": 28.14
+ },
+ {
+  "palavra": "nela",
+  "inicio": 28.14,
+  "fim": 28.4
+ },
+ {
+  "palavra": "por",
+  "inicio": 28.4,
+  "fim": 28.56
+ },
+ {
+  "palavra": "muito",
+  "inicio": 28.56,
+  "fim": 28.74
+ },
+ {
+  "palavra": "tempo.",
+  "inicio": 28.74,
+  "fim": 29.0
+ },
+ {
+  "palavra": "Por",
+  "inicio": 29.0,
+  "fim": 29.74
+ },
+ {
+  "palavra": "isso",
+  "inicio": 29.74,
+  "fim": 29.9
+ },
+ {
+  "palavra": "se",
+  "inicio": 29.9,
+  "fim": 30.06
+ },
+ {
+  "palavra": "diz",
+  "inicio": 30.06,
+  "fim": 30.28
+ },
+ {
+  "palavra": "que",
+  "inicio": 30.28,
+  "fim": 30.4
+ },
+ {
+  "palavra": "a",
+  "inicio": 30.4,
+  "fim": 30.52
+ },
+ {
+  "palavra": "melhor",
+  "inicio": 30.52,
+  "fim": 30.76
+ },
+ {
+  "palavra": "postura",
+  "inicio": 30.76,
+  "fim": 31.24
+ },
+ {
+  "palavra": "é",
+  "inicio": 31.24,
+  "fim": 31.4
+ },
+ {
+  "palavra": "a",
+  "inicio": 31.4,
+  "fim": 31.58
+ },
+ {
+  "palavra": "próxima.",
+  "inicio": 31.58,
+  "fim": 31.98
+ },
+ {
+  "palavra": "Muda",
+  "inicio": 32.52,
+  "fim": 32.72
+ },
+ {
+  "palavra": "de",
+  "inicio": 32.72,
+  "fim": 32.84
+ },
+ {
+  "palavra": "posição,",
+  "inicio": 32.84,
+  "fim": 33.22
+ },
+ {
+  "palavra": "levanta,",
+  "inicio": 33.7,
+  "fim": 34.36
+ },
+ {
+  "palavra": "se",
+  "inicio": 34.58,
+  "fim": 34.78
+ },
+ {
+  "palavra": "espreguiça,",
+  "inicio": 34.78,
+  "fim": 35.42
+ },
+ {
+  "palavra": "anda",
+  "inicio": 35.78,
+  "fim": 35.94
+ },
+ {
+  "palavra": "um",
+  "inicio": 35.94,
+  "fim": 36.04
+ },
+ {
+  "palavra": "pouco.",
+  "inicio": 36.04,
+  "fim": 36.26
+ },
+ {
+  "palavra": "E",
+  "inicio": 36.6,
+  "fim": 36.92
+ },
+ {
+  "palavra": "se",
+  "inicio": 36.92,
+  "fim": 37.02
+ },
+ {
+  "palavra": "as",
+  "inicio": 37.02,
+  "fim": 37.14
+ },
+ {
+  "palavra": "costas",
+  "inicio": 37.14,
+  "fim": 37.44
+ },
+ {
+  "palavra": "já",
+  "inicio": 37.44,
+  "fim": 37.58
+ },
+ {
+  "palavra": "estiverem",
+  "inicio": 37.58,
+  "fim": 37.98
+ },
+ {
+  "palavra": "doendo?",
+  "inicio": 37.98,
+  "fim": 38.3
+ },
+ {
+  "palavra": "Se",
+  "inicio": 38.52,
+  "fim": 38.9
+ },
+ {
+  "palavra": "mexer",
+  "inicio": 38.9,
+  "fim": 39.14
+ },
+ {
+  "palavra": "costuma",
+  "inicio": 39.14,
+  "fim": 39.46
+ },
+ {
+  "palavra": "ajudar",
+  "inicio": 39.46,
+  "fim": 39.66
+ },
+ {
+  "palavra": "mais",
+  "inicio": 39.66,
+  "fim": 40.02
+ },
+ {
+  "palavra": "do",
+  "inicio": 40.02,
+  "fim": 40.14
+ },
+ {
+  "palavra": "que",
+  "inicio": 40.14,
+  "fim": 40.22
+ },
+ {
+  "palavra": "ficar",
+  "inicio": 40.22,
+  "fim": 40.4
+ },
+ {
+  "palavra": "travado.",
+  "inicio": 40.4,
+  "fim": 40.82
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 41.0,
+  "fim": 41.42
+ },
+ {
+  "palavra": "se",
+  "inicio": 41.42,
+  "fim": 41.56
+ },
+ {
+  "palavra": "a",
+  "inicio": 41.56,
+  "fim": 41.64
+ },
+ {
+  "palavra": "dor",
+  "inicio": 41.64,
+  "fim": 41.72
+ },
+ {
+  "palavra": "for",
+  "inicio": 41.72,
+  "fim": 41.94
+ },
+ {
+  "palavra": "forte,",
+  "inicio": 41.94,
+  "fim": 42.46
+ },
+ {
+  "palavra": "durar",
+  "inicio": 42.68,
+  "fim": 42.88
+ },
+ {
+  "palavra": "semanas",
+  "inicio": 42.88,
+  "fim": 43.4
+ },
+ {
+  "palavra": "ou",
+  "inicio": 43.4,
+  "fim": 43.84
+ },
+ {
+  "palavra": "vier",
+  "inicio": 43.84,
+  "fim": 44.08
+ },
+ {
+  "palavra": "com",
+  "inicio": 44.08,
+  "fim": 44.28
+ },
+ {
+  "palavra": "formigamento,",
+  "inicio": 44.28,
+  "fim": 45.14
+ },
+ {
+  "palavra": "procura",
+  "inicio": 45.5,
+  "fim": 45.78
+ },
+ {
+  "palavra": "um",
+  "inicio": 45.78,
+  "fim": 45.86
+ },
+ {
+  "palavra": "profissional.",
+  "inicio": 45.86,
+  "fim": 46.26
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 46.76,
+  "fim": 47.24
+ },
+ {
+  "palavra": "Postura",
+  "inicio": 47.5,
+  "fim": 47.98
+ },
+ {
+  "palavra": "perfeita",
+  "inicio": 47.98,
+  "fim": 48.5
+ },
+ {
+  "palavra": "não",
+  "inicio": 48.5,
+  "fim": 48.76
+ },
+ {
+  "palavra": "existe.",
+  "inicio": 48.76,
+  "fim": 49.16
+ },
+ {
+  "palavra": "A",
+  "inicio": 49.36,
+  "fim": 49.52
+ },
+ {
+  "palavra": "melhor",
+  "inicio": 49.52,
+  "fim": 49.76
+ },
+ {
+  "palavra": "é",
+  "inicio": 49.76,
+  "fim": 50.14
+ },
+ {
+  "palavra": "a",
+  "inicio": 50.14,
+  "fim": 50.28
+ },
+ {
+  "palavra": "próxima.",
+  "inicio": 50.28,
+  "fim": 50.58
+ },
+ {
+  "palavra": "O",
+  "inicio": 51.02,
+  "fim": 51.18
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 51.18,
+  "fim": 51.48
+ },
+ {
+  "palavra": "é",
+  "inicio": 51.48,
+  "fim": 51.56
+ },
+ {
+  "palavra": "variar.",
+  "inicio": 51.56,
+  "fim": 51.88
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 52.16,
+  "fim": 52.52
+ },
+ {
+  "palavra": "aí",
+  "inicio": 52.52,
+  "fim": 52.78
+ },
+ {
+  "palavra": "manda",
+  "inicio": 52.78,
+  "fim": 53.34
+ },
+ {
+  "palavra": "para",
+  "inicio": 53.34,
+  "fim": 53.44
+ },
+ {
+  "palavra": "quem",
+  "inicio": 53.44,
+  "fim": 53.6
+ },
+ {
+  "palavra": "vive",
+  "inicio": 53.6,
+  "fim": 53.82
+ },
+ {
+  "palavra": "corrigindo",
+  "inicio": 53.82,
+  "fim": 54.44
+ },
+ {
+  "palavra": "a",
+  "inicio": 54.44,
+  "fim": 54.56
+ },
+ {
+  "palavra": "sua",
+  "inicio": 54.56,
+  "fim": 54.66
+ },
+ {
+  "palavra": "postura.",
+  "inicio": 54.66,
+  "fim": 55.16
+ },
+ {
+  "palavra": "E",
+  "inicio": 55.16,
+  "fim": 55.64
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 55.64,
+  "fim": 56.1
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 56.26,
+  "fim": 56.6
+ },
+ {
+  "palavra": "a",
+  "inicio": 56.6,
+  "fim": 56.84
+ },
+ {
+  "palavra": "próxima",
+  "inicio": 56.84,
+  "fim": 57.22
+ },
+ {
+  "palavra": "se",
+  "inicio": 57.22,
+  "fim": 57.52
+ },
+ {
+  "palavra": "você",
+  "inicio": 57.52,
+  "fim": 57.74
+ },
+ {
+  "palavra": "está",
+  "inicio": 57.74,
+  "fim": 57.88
+ },
+ {
+  "palavra": "torto",
+  "inicio": 57.88,
+  "fim": 58.2
+ },
+ {
+  "palavra": "agora.",
+  "inicio": 58.2,
+  "fim": 58.68
+ },
+ {
+  "palavra": "E",
+  "inicio": 58.9,
+  "fim": 59.12
+ },
+ {
+  "palavra": "segue",
+  "inicio": 59.12,
+  "fim": 59.38
+ },
+ {
+  "palavra": "para",
+  "inicio": 59.38,
+  "fim": 59.52
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 59.52,
+  "fim": 59.82
+ }
+]
