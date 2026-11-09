@@ -79,7 +79,10 @@ Flashcard "What is this called?" (ref. R1): `flash.json` → `python3 scripts/mo
 as respostas podem vir numa fala só, cortada nas pausas; figuras numa grade 2x4 gerada de uma vez e recortada).
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
-## Vozes e cotas (decisão do usuário em 09/11: continuar no plano GRATUITO do Gemini)
+## Vozes e cotas
+
+**09/11 (tarde): o usuário passou uma chave do Gemini com créditos (plano pago): sem limite diário; imagem no Gemini liberada.**
+(Histórico: antes disso, plano gratuito com 10 falas/dia por modelo.)
 
 - Voz aprovada: Gemini **Achird nas DUAS línguas** (o usuário não quer voz feminina no inglês junto da masculina).
   pt no `gemini-3.8-flash-tts`, en no `gemini-3.8-flash-lite-tts` (ou `gemini-2.5-flash-preview-tts`). `velocidade_pt` 1.0 (não acelerar).

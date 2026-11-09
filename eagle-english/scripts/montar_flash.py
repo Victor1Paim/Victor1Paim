@@ -88,18 +88,18 @@ def main(pasta):
                 "en": it["en"], "pron": it["pron"], "pt": it["pt"]}
         especs.append((f"{n:02d}_q", {**base, "mascote": aberta}))
         sons.append((fx["whoosh"], t, 0.5)); sons.append((q_arq, t + 0.15, 1.0))
-        d = q_d + 0.35; cenas.append((f"{n:02d}_q", d)); t += d
+        d = q_d + 0.2; cenas.append((f"{n:02d}_q", d)); t += d
         for s in (3, 2, 1):
             especs.append((f"{n:02d}_t{s}", {**base, "timer": s, "mascote": fechada}))
             sons.append((fx["tique"], t, 0.8)); cenas.append((f"{n:02d}_t{s}", conta)); t += conta
         especs.append((f"{n:02d}_r", {**base, "revelar": True, "mascote": aberta}))
         r_arq, r_d = resps[n - 1]
-        sons.append((fx["ding"], t, 0.6)); sons.append((r_arq, t + 0.3, 1.0))
-        d = 0.3 + r_d + 0.25
+        sons.append((fx["ding"], t, 0.6)); sons.append((r_arq, t + 0.2, 1.0))
+        d = 0.2 + r_d + 0.15
         if trads[n - 1]:
             tr_arq, tr_d = trads[n - 1]
             sons.append((tr_arq, t + d, 1.0)); d += tr_d
-        d += 0.6
+        d += 0.4
         cenas.append((f"{n:02d}_r", d)); t += d
 
     # placar + CTA (telas do padrão, renderizadas antes e coladas como imagem)

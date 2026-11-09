@@ -17,7 +17,7 @@
  "audio_pergunta": "q_en",
  "audio_respostas": "respostas_en",
  "audio_traducoes": "traducoes_pt",
- "segundos_contagem": 0.8,
+ "segundos_contagem": 0.7,
  "fundo_cta": "img/fundo_cta.png",
  "itens": [
   {
@@ -71,7 +71,7 @@
  ],
  "cta": {
   "audio": "cta",
-  "segundos_placar": 4.5,
+  "segundos_placar": 3.5,
   "sub_placar": "Salva pra praticar depois 📌",
   "telas": [
    [

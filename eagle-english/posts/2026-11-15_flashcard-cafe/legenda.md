@@ -1,9 +1,11 @@
 # Produção 3 (v2) — Flashcard "Você sabe dizer isso em inglês?" — Café da manhã (A1, V3)
 
-STATUS: imagens, telas e prévia prontas; as 5 falas (Achird, gemini-2.5-flash-preview-tts) entram no agendamento de 10/11 05h15.
+STATUS: PRONTO — 68,7 s, voz Achird (pt e en), as 8 respostas e 8 traduções conferidas uma a uma pelo Whisper, -15 LUFS.
 Abertura em pt com o mascote grande no centro → 8 cartões (pergunta e resposta em inglês + tradução falada em pt) → placar → CTA.
 Gabarito: Coffee · Bread · Eggs · Milk · Orange juice · Bananas · Cheese · Butter.
 (A versão "objetos de viagem", toda em inglês, foi substituída por esta.)
+
+Vídeo: `video/final.mp4` · Capa: `video/capa.png` (abertura com o mascote no centro) · Horário sugerido: sexta 15h.
 
 ## Legenda (igual para Instagram e TikTok — formato V3)
 ```

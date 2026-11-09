@@ -1,33 +1,22 @@
-# Produção 2 — "No aeroporto" (estilo R4, mapa real pág. 5)
+# Produção 2 — "No aeroporto" (mapa real pág. 5)
 
-STATUS: roteiro, fundo e prévia prontos; vozes (Achird pt e en, gancho novo) agendadas para 10/11 05h15.
-CTA: mesmo áudio da produção 1 (texto idêntico). Horário sugerido: quinta 16h.
+STATUS: PRONTO — 56,1 s, voz Achird (pt e en), conferido pelo Whisper (falas e vídeo final), -14,1 LUFS.
+Vídeo: `video/final.mp4` · Capa: `video/capa.png` · Horário sugerido: quinta 16h.
 
-## Legenda (Reels e TikTok)
+## Legenda (Instagram e TikTok — formato V3)
 ```
-✈️ Vai viajar pra fora? 6 frases pra passar pelo aeroporto sem travar!
+✈️ Chegou no aeroporto lá fora e é tudo em inglês? 6 frases pra não travar!
 
-Salva pra sua próxima viagem 📌
+Salva pra praticar depois 📌
 
-📘 Essas frases são de um mapa do Eagle 350: 35 situações e 2.100 frases com tradução e pronúncia escrita + 4 bônus. R$ 19,90, pagamento único. Link na bio!
+🦅 Siga @eagle.english.br e evolua seu inglês todo dia!
 
-Segue @eagle.english.br e evolua seu inglês todo dia 🦅
+📘 Conheça o Eagle 350: 2.100 frases por R$ 19,90. Link na bio!
 
-#inglesparabrasileiros #inglesdodiaadia #frasesemingles #inglespratico #inglesparaviagem
-```
-
-## Legenda resumida
-```
-✈️ 6 frases pro aeroporto em inglês: check-in, segurança, portão e bagagem. Salva 📌 Eagle 350 no link da bio 📘
 #inglesparabrasileiros #inglesdodiaadia #frasesemingles #inglespratico #inglesparaviagem
 ```
 
 ## Comentário fixado
 ```
-📘 Eagle 350 – Inglês por Situação: 350 mapas em 35 situações, 2.100 frases com tradução e pronúncia escrita + 4 bônus (Guia de 21 Dias, Cards de Gramática, 500 Frases e 100 Combinações de Verbos). R$ 19,90, pagamento único, garantia de 7 dias. Link na bio 👆 Pra onde você vai viajar?
-```
-
-## Resposta para "eu quero"
-```
-Oi! O Eagle 350 tá no link da bio 👆 Qualquer dúvida, me chama!
+Pra onde você vai viajar? 👇 📘 Essas frases estão num mapa do Eagle 350: 35 situações, 2.100 frases com tradução e pronúncia escrita + 4 bônus. R$ 19,90, pagamento único, garantia de 7 dias. Link na bio!
 ```
