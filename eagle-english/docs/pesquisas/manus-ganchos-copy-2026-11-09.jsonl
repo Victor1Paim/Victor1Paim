@@ -1,0 +1,168 @@
+{"tipo":"gancho","formato":"Repita","tema":"acordar","categoria":"situação","fala":"Acabou de acordar? Repete estas frases comigo.","tela":"Sua manhã em inglês ☀️"}
+{"tipo":"gancho","formato":"Repita","tema":"café da manhã","categoria":"utilidade","fala":"Vamos pedir café em inglês, uma frase por vez?","tela":"Peça seu café ☕"}
+{"tipo":"gancho","formato":"Repita","tema":"antes de dormir","categoria":"identificação","fala":"Vai dormir? Vamos falar isso em inglês.","tela":"Inglês antes de dormir 🌙"}
+{"tipo":"gancho","formato":"Repita","tema":"arrumar o quarto","categoria":"situação","fala":"Seu quarto virou bagunça? Repete comigo em inglês.","tela":"Arrumando o quarto 🛏️"}
+{"tipo":"gancho","formato":"Repita","tema":"pedir ajuda","categoria":"utilidade","fala":"Precisa de ajuda? Treine como pedir em inglês.","tela":"Peça ajuda em inglês 🙋"}
+{"tipo":"gancho","formato":"Repita","tema":"agradecer","categoria":"pergunta","fala":"Como você agradece em inglês? Vamos variar juntos.","tela":"Além de obrigado 💛"}
+{"tipo":"gancho","formato":"Repita","tema":"pedir licença","categoria":"situação","fala":"Quer passar? Treine como pedir licença em inglês.","tela":"Licença, por favor 🚶"}
+{"tipo":"gancho","formato":"Repita","tema":"não entendi","categoria":"identificação","fala":"Não entendeu? Treine uma frase para avisar em inglês.","tela":"Não entendi. E agora? 💬"}
+{"tipo":"gancho","formato":"Repita","tema":"despedida","categoria":"utilidade","fala":"Vai sair? Repete estas despedidas comigo.","tela":"Até mais, em inglês 👋"}
+{"tipo":"gancho","formato":"Repita","tema":"convidar amigos","categoria":"situação","fala":"Quer chamar um amigo? Vamos convidar em inglês.","tela":"Bora convidar alguém? 🍿"}
+{"tipo":"gancho","formato":"Repita","tema":"estar cansado","categoria":"identificação","fala":"Bateu o cansaço? Vamos dizer isso em inglês.","tela":"Cansaço em inglês 😴"}
+{"tipo":"gancho","formato":"Repita","tema":"estar com fome","categoria":"situação","fala":"Deu fome? Repete estas frases comigo.","tela":"Estou com fome 🍽️"}
+{"tipo":"gancho","formato":"Flashcard","tema":"frutas","categoria":"pergunta","fala":"Você sabe o nome desta fruta em inglês?","tela":"Que fruta é esta? 🍎"}
+{"tipo":"gancho","formato":"Flashcard","tema":"objetos de casa","categoria":"teste","fala":"Olha este objeto. Como ele se chama em inglês?","tela":"Qual é o nome? 🏠"}
+{"tipo":"gancho","formato":"Flashcard","tema":"roupas","categoria":"pergunta","fala":"Como você chama esta roupa em inglês?","tela":"Você conhece esta roupa? 👕"}
+{"tipo":"gancho","formato":"Flashcard","tema":"animais","categoria":"teste","fala":"Consegue lembrar o nome deste animal em inglês?","tela":"Que animal é este? 🐶"}
+{"tipo":"gancho","formato":"Flashcard","tema":"bebidas","categoria":"pergunta","fala":"Qual é o nome desta bebida em inglês?","tela":"Que bebida é esta? 🥤"}
+{"tipo":"gancho","formato":"Flashcard","tema":"café da manhã","categoria":"teste","fala":"Antes da resposta: como se chama isto em inglês?","tela":"Café da manhã: teste ☕"}
+{"tipo":"gancho","formato":"Flashcard","tema":"praia","categoria":"situação","fala":"Você levou isto à praia. Como fala em inglês?","tela":"Na bolsa de praia 🏖️"}
+{"tipo":"gancho","formato":"Flashcard","tema":"parque","categoria":"pergunta","fala":"Você vê isto no parque. Sabe falar em inglês?","tela":"No parque: qual nome? 🌳"}
+{"tipo":"gancho","formato":"Flashcard","tema":"quarto","categoria":"teste","fala":"Olhe a figura. Qual é o nome em inglês?","tela":"Objetos do quarto 🛏️"}
+{"tipo":"gancho","formato":"Flashcard","tema":"cozinha","categoria":"pergunta","fala":"Como se chama este objeto da cozinha em inglês?","tela":"Você sabe este nome? 🍳"}
+{"tipo":"gancho","formato":"Flashcard","tema":"cores","categoria":"teste","fala":"Olha esta cor. Responda antes de eu falar.","tela":"Que cor é esta? 🎨"}
+{"tipo":"gancho","formato":"Flashcard","tema":"sorvete","categoria":"pergunta","fala":"Você sabe dizer sorvete em inglês?","tela":"Como fala sorvete? 🍦"}
+{"tipo":"gancho","formato":"Prova","tema":"cores","categoria":"teste","fala":"Dez cores em inglês: quantas você reconhece?","tela":"Seu placar de cores 🎨"}
+{"tipo":"gancho","formato":"Prova","tema":"animais","categoria":"teste","fala":"Vamos testar dez animais? Vale tentar sem medo.","tela":"Animais: qual seu placar? 🐱"}
+{"tipo":"gancho","formato":"Prova","tema":"frutas","categoria":"teste","fala":"Dez frutas em inglês. Conte seus acertos.","tela":"Teste das frutas 🍌"}
+{"tipo":"gancho","formato":"Prova","tema":"roupas","categoria":"teste","fala":"Reconhece estas dez roupas em inglês?","tela":"Roupas: conte seus acertos 👕"}
+{"tipo":"gancho","formato":"Prova","tema":"objetos de casa","categoria":"teste","fala":"Dez objetos da sua casa. Vamos testar em inglês?","tela":"Teste da casa 🏠"}
+{"tipo":"gancho","formato":"Prova","tema":"comidas","categoria":"teste","fala":"Quais destas dez comidas você conhece em inglês?","tela":"Comidas: teste seu vocabulário 🍽️"}
+{"tipo":"gancho","formato":"Prova","tema":"bebidas","categoria":"teste","fala":"Dez bebidas: tente responder antes de mim.","tela":"Bebidas em inglês 🥤"}
+{"tipo":"gancho","formato":"Prova","tema":"sentimentos","categoria":"teste","fala":"Consegue reconhecer estes dez sentimentos em inglês?","tela":"Como você se sente? 💛"}
+{"tipo":"gancho","formato":"Prova","tema":"rotina","categoria":"teste","fala":"Dez ações da rotina: quais você já sabe?","tela":"Sua rotina em inglês ☀️"}
+{"tipo":"gancho","formato":"Prova","tema":"praia","categoria":"teste","fala":"Dez palavras da praia. Vamos contar seus acertos?","tela":"Teste de praia 🏖️"}
+{"tipo":"gancho","formato":"Prova","tema":"parque","categoria":"teste","fala":"Reconhece estas dez palavras de um passeio no parque?","tela":"Passeio no parque 🌳"}
+{"tipo":"gancho","formato":"Prova","tema":"cozinha","categoria":"teste","fala":"Dez palavras da cozinha: tente antes da resposta.","tela":"Cozinha: qual seu placar? 🍳"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"acordar","categoria":"lista","fala":"Sua manhã em seis frases. Vamos falar juntos?","tela":"Acordou? Bora praticar ☀️"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"café da manhã","categoria":"lista","fala":"Seis frases para acompanhar seu café da manhã.","tela":"Inglês no café ☕"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"antes de dormir","categoria":"lista","fala":"Seis frases para terminar o dia em inglês.","tela":"Antes de dormir 🌙"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"padaria","categoria":"situação","fala":"Entrou na padaria? Treine estas frases em inglês.","tela":"Seu pedido na padaria 🥖"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"compras","categoria":"utilidade","fala":"Vai comprar? Comece por estas frases em inglês.","tela":"Inglês nas compras 🛍️"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"cinema","categoria":"situação","fala":"Vai ao cinema? Vamos praticar estas frases.","tela":"Inglês no cinema 🎬"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"praia","categoria":"lista","fala":"Sol e praia: vamos nomear o que aparece?","tela":"Palavras de praia 🏖️"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"parque","categoria":"lista","fala":"Um passeio no parque, uma palavra por vez.","tela":"Inglês no parque 🌳"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"arrumar o quarto","categoria":"lista","fala":"Vamos arrumar o quarto e praticar inglês juntos?","tela":"Organize e pratique 🛏️"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"lanche","categoria":"utilidade","fala":"Quer um lanche? Treine como pedir em inglês.","tela":"Hora do lanche 🥪"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"amigos","categoria":"situação","fala":"Encontrou seus amigos? Vamos conversar em inglês.","tela":"Conversa com amigos 💬"}
+{"tipo":"gancho","formato":"Lista com emoji","tema":"agradecer","categoria":"lista","fala":"Pequenos agradecimentos para treinar em inglês hoje.","tela":"Jeitos de agradecer 💛"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"grande × pequeno","categoria":"escolha","fala":"Grande ou pequeno? Escolha a palavra para esta imagem.","tela":"Big ou small? 📦"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"quente × frio","categoria":"escolha","fala":"Quente ou frio? Qual palavra combina com esta bebida?","tela":"Hot ou cold? ☕"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"feliz × triste","categoria":"escolha","fala":"Feliz ou triste? Qual palavra combina com a carinha?","tela":"Happy ou sad? 🙂"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"pedir ajuda","categoria":"escolha","fala":"Precisa de ajuda? Qual frase você usaria?","tela":"Qual pede ajuda? 🙋"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"agradecer","categoria":"escolha","fala":"Recebeu uma ajuda. Qual destas frases você usa?","tela":"Como você agradece? 💛"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"pedir licença","categoria":"escolha","fala":"Quer passar. Qual destas frases combina com a situação?","tela":"Qual você usa? 🚶"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"não entendi","categoria":"escolha","fala":"Não entendeu a frase. Qual resposta você escolhe?","tela":"Como pedir clareza? 💬"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"despedida","categoria":"escolha","fala":"Você está indo embora. Qual destas frases combina?","tela":"Hora de se despedir 👋"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"estar com fome","categoria":"escolha","fala":"Fome ou sede? Escolha a frase para esta cena.","tela":"Hungry ou thirsty? 🍽️"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"estar cansado","categoria":"escolha","fala":"Cansado ou animado? Qual palavra descreve esta cena?","tela":"Tired ou excited? 😴"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"convidar amigos","categoria":"escolha","fala":"Quer convidar alguém? Qual frase combina com a cena?","tela":"Vamos chamar um amigo? 🍿"}
+{"tipo":"gancho","formato":"Qual você usa?","tema":"roupas","categoria":"escolha","fala":"Camiseta ou sapato? Qual palavra combina com a imagem?","tela":"T-shirt ou shoe? 👕"}
+{"tipo":"regancho","texto":"Agora, tente antes de mim."}
+{"tipo":"regancho","texto":"Sua vez de falar sozinho."}
+{"tipo":"regancho","texto":"Vamos usar isso numa frase."}
+{"tipo":"regancho","texto":"Faltam duas. Continue comigo."}
+{"tipo":"regancho","texto":"Agora, uma frase para pedir ajuda."}
+{"tipo":"regancho","texto":"Repete olhando só o inglês."}
+{"tipo":"regancho","texto":"Conseguiu? Vamos para a próxima."}
+{"tipo":"regancho","texto":"Pode errar. Vamos tentar juntos."}
+{"tipo":"regancho","texto":"Agora, lembre sem olhar."}
+{"tipo":"regancho","texto":"Esta serve para agradecer."}
+{"tipo":"regancho","texto":"Vamos trocar só uma palavra."}
+{"tipo":"regancho","texto":"Imagine você nessa situação."}
+{"tipo":"regancho","texto":"Responda antes da contagem terminar."}
+{"tipo":"regancho","texto":"Qual combina com esta cena?"}
+{"tipo":"regancho","texto":"Agora, repita no seu ritmo."}
+{"tipo":"regancho","texto":"Guarde esta para o café."}
+{"tipo":"regancho","texto":"Hora de conferir sua resposta."}
+{"tipo":"regancho","texto":"Veja a diferença nesta imagem."}
+{"tipo":"regancho","texto":"Fale comigo mais uma vez."}
+{"tipo":"regancho","texto":"Agora, junte as duas partes."}
+{"tipo":"regancho","texto":"Vamos conferir seu placar?"}
+{"tipo":"regancho","texto":"Mais uma para a sua rotina."}
+{"tipo":"regancho","texto":"Tente dizer sem a tradução."}
+{"tipo":"regancho","texto":"Ouça primeiro. Depois, repita."}
+{"tipo":"regancho","texto":"Chegou a frase do convite."}
+{"tipo":"regancho","texto":"Agora, escolha uma das duas."}
+{"tipo":"regancho","texto":"Lembra da primeira? Repete agora."}
+{"tipo":"regancho","texto":"Falta a despedida. Vamos juntos."}
+{"tipo":"regancho","texto":"Vamos praticar numa cena diferente."}
+{"tipo":"regancho","texto":"A resposta vem depois da contagem."}
+{"tipo":"cta_engajamento","formato":"Flashcard","acao":"comentar","fala":"Comenta seu placar de hoje.","tela":"Qual foi seu placar?"}
+{"tipo":"cta_engajamento","formato":"Prova","acao":"comentar","fala":"Comenta quantas você acertou.","tela":"Seu placar aqui"}
+{"tipo":"cta_engajamento","formato":"Qual você usa?","acao":"comentar","fala":"Comenta qual opção você escolheu.","tela":"A ou B?"}
+{"tipo":"cta_engajamento","formato":"Repita","acao":"comentar","fala":"Comenta qual frase você usaria hoje.","tela":"Qual frase você usaria?"}
+{"tipo":"cta_engajamento","formato":"Lista com emoji","acao":"comentar","fala":"Comenta qual tema você quer praticar.","tela":"Qual será o próximo tema?"}
+{"tipo":"cta_engajamento","formato":"Repita","acao":"salvar","fala":"Salva para repetir amanhã.","tela":"Salve para praticar"}
+{"tipo":"cta_engajamento","formato":"Flashcard","acao":"salvar","fala":"Salva para testar sua memória depois.","tela":"Teste de novo depois"}
+{"tipo":"cta_engajamento","formato":"Prova","acao":"salvar","fala":"Salva para refazer sem olhar as respostas.","tela":"Refaça depois"}
+{"tipo":"cta_engajamento","formato":"Lista com emoji","acao":"salvar","fala":"Salva para consultar antes do passeio.","tela":"Leve para seu passeio"}
+{"tipo":"cta_engajamento","formato":"Qual você usa?","acao":"salvar","fala":"Salva para revisar estas duas opções.","tela":"Revise depois"}
+{"tipo":"cta_engajamento","formato":"Repita","acao":"enviar","fala":"Envia para quem pratica inglês com você.","tela":"Pratiquem juntos"}
+{"tipo":"cta_engajamento","formato":"Flashcard","acao":"enviar","fala":"Envia para um amigo tentar também.","tela":"Convide um amigo"}
+{"tipo":"cta_engajamento","formato":"Prova","acao":"enviar","fala":"Envia para alguém comparar o placar.","tela":"Compare os acertos"}
+{"tipo":"cta_engajamento","formato":"Lista com emoji","acao":"enviar","fala":"Envia para quem vai passear com você.","tela":"Inglês para o passeio"}
+{"tipo":"cta_engajamento","formato":"Qual você usa?","acao":"enviar","fala":"Envia para alguém escolher também.","tela":"Qual opção a pessoa escolhe?"}
+{"tipo":"cta_engajamento","formato":"Repita","acao":"seguir","fala":"Siga o perfil para praticar outras situações.","tela":"Seu inglês decolando"}
+{"tipo":"cta_engajamento","formato":"Flashcard","acao":"seguir","fala":"Siga para encontrar mais testes de vocabulário.","tela":"Mais vocabulário por aqui"}
+{"tipo":"cta_engajamento","formato":"Prova","acao":"comentar","fala":"Comenta a palavra que foi novidade para você.","tela":"Qual foi novidade?"}
+{"tipo":"cta_engajamento","formato":"Lista com emoji","acao":"comentar","fala":"Comenta qual destas palavras você já conhecia.","tela":"Qual você já sabia?"}
+{"tipo":"cta_engajamento","formato":"Qual você usa?","acao":"comentar","fala":"Comenta onde você usaria essa frase.","tela":"Em qual situação?"}
+{"tipo":"cta_produto","fala":"Quer consultar frases por situação? Conheça o Eagle 350, nosso ebook em PDF. Link na bio.","tela":"Eagle 350 | PDF | Link na bio"}
+{"tipo":"cta_produto","fala":"Para encontrar a frase certa por situação, veja o Eagle 350. O link está na bio.","tela":"Frases por situação | Link na bio"}
+{"tipo":"cta_produto","fala":"O Eagle 350 reúne 35 situações do dia a dia em PDF. Conheça pelo link na bio.","tela":"35 situações | PDF | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer mais frases para consultar? O Eagle 350 tem 2.100 frases. Link na bio.","tela":"2.100 frases | Link na bio"}
+{"tipo":"cta_produto","fala":"No Eagle 350, você encontra frases com tradução e pronúncia escrita. Veja o link na bio.","tela":"Tradução + pronúncia escrita | Link na bio"}
+{"tipo":"cta_produto","fala":"Prefere consultar mapas visuais? Conheça os 350 mapas do Eagle 350. Link na bio.","tela":"350 mapas visuais | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer consultar inglês por situação? Conheça o PDF Eagle 350. O link está na bio.","tela":"Inglês por situação | Link na bio"}
+{"tipo":"cta_produto","fala":"O Eagle 350 é um ebook em PDF para consultar frases por situação. Confira na bio.","tela":"Ebook em PDF | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer um material organizado por situações? Conheça o Eagle 350, por R$ 19,90. Link na bio.","tela":"R$ 19,90 | Link na bio"}
+{"tipo":"cta_produto","fala":"O Eagle 350 custa R$ 19,90, em pagamento único. Conheça o PDF pelo link na bio.","tela":"Pagamento único | Link na bio"}
+{"tipo":"cta_produto","fala":"Para consultar inglês do dia a dia, conheça o Eagle 350. São 35 situações. Link na bio.","tela":"35 situações do dia a dia | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer conhecer o material? Confira os detalhes do ebook Eagle 350 pelo link na bio.","tela":"Veja os detalhes | Link na bio"}
+{"tipo":"cta_produto","fala":"O Eagle 350 tem 350 mapas visuais e quatro bônus. Veja os detalhes na bio.","tela":"350 mapas + 4 bônus | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer consultar a tradução junto da frase? Conheça o PDF Eagle 350. Link na bio.","tela":"Frase + tradução | Link na bio"}
+{"tipo":"cta_produto","fala":"Para consultar frases com pronúncia escrita, conheça o Eagle 350. O link está na bio.","tela":"Pronúncia escrita | Link na bio"}
+{"tipo":"cta_produto","fala":"Gostou de praticar por situação? Conheça o ebook Eagle 350. Veja o link na bio.","tela":"Eagle 350 | Inglês por Situação"}
+{"tipo":"cta_produto","fala":"O Eagle 350 reúne 2.100 frases com tradução e pronúncia escrita. Conheça no link da bio.","tela":"2.100 frases | Link na bio"}
+{"tipo":"cta_produto","fala":"Quer conferir antes de decidir? Veja a descrição do Eagle 350 no link da bio.","tela":"Confira a descrição | Link na bio"}
+{"tipo":"cta_produto","fala":"O Eagle 350 tem pagamento único e garantia de sete dias. Confira os detalhes na bio.","tela":"Garantia de 7 dias | Link na bio"}
+{"tipo":"cta_produto","fala":"Ache a frase certa em inglês para cada situação, sem travar na hora. Eagle 350: link na bio.","tela":"Eagle 350 | Link na bio"}
+{"tipo":"legenda_linha1","texto":"Seu café da manhã também pode ter inglês. ☕"}
+{"tipo":"legenda_linha1","texto":"Como pedir ajuda em inglês? Comece por aqui."}
+{"tipo":"legenda_linha1","texto":"Deu fome? Treine estas frases do dia a dia."}
+{"tipo":"legenda_linha1","texto":"Quantas palavras da sua casa você já conhece?"}
+{"tipo":"legenda_linha1","texto":"Antes de dormir, pratique uma frase. 🌙"}
+{"tipo":"legenda_linha1","texto":"Você escolheria A ou B nesta situação?"}
+{"tipo":"legenda_linha1","texto":"Seu quarto, suas coisas, novas palavras em inglês."}
+{"tipo":"legenda_linha1","texto":"Um convite simples para praticar com amigos."}
+{"tipo":"legenda_linha1","texto":"Qual palavra desta lista foi novidade?"}
+{"tipo":"legenda_linha1","texto":"Inglês para a hora do lanche. 🥪"}
+{"tipo":"legenda_linha1","texto":"Vamos à praia? Leve estas palavras com você."}
+{"tipo":"legenda_linha1","texto":"Acerte no seu ritmo: hoje é dia de vocabulário."}
+{"tipo":"legenda_linha1","texto":"Como agradecer em inglês sem complicar?"}
+{"tipo":"legenda_linha1","texto":"Um passeio no parque e um pouco de inglês."}
+{"tipo":"legenda_linha1","texto":"Não entendeu? Veja como avisar em inglês."}
+{"tipo":"legenda_linha1","texto":"Frio ou quente? Escolha a palavra da cena."}
+{"tipo":"legenda_linha1","texto":"Uma despedida para usar no dia a dia."}
+{"tipo":"legenda_linha1","texto":"Teste das frutas: tente antes da resposta. 🍎"}
+{"tipo":"legenda_linha1","texto":"Sua rotina rende boas frases em inglês."}
+{"tipo":"legenda_linha1","texto":"Inglês para iniciantes: uma situação de cada vez."}
+{"tipo":"comentario_fixado","texto":"Seu placar vale como ponto de partida. Quantas você acertou?"}
+{"tipo":"comentario_fixado","texto":"Qual frase você gostaria de praticar no próximo vídeo?"}
+{"tipo":"comentario_fixado","texto":"Prefere treinar café da manhã ou antes de dormir?"}
+{"tipo":"comentario_fixado","texto":"Que objeto da sua casa você quer ver aqui?"}
+{"tipo":"comentario_fixado","texto":"Qual destas palavras você usaria hoje?"}
+{"tipo":"comentario_fixado","texto":"Você escolheu A ou B?"}
+{"tipo":"comentario_fixado","texto":"Aqui você pode tentar, errar e tentar de novo."}
+{"tipo":"comentario_fixado","texto":"Qual situação faz você sentir falta de uma frase em inglês?"}
+{"tipo":"comentario_fixado","texto":"Que comida você quer aprender a pedir?"}
+{"tipo":"comentario_fixado","texto":"O Eagle 350 é um ebook em PDF. Detalhes no link da bio."}
+{"tipo":"comentario_fixado","texto":"São 350 mapas visuais e 35 situações no Eagle 350. Link na bio."}
+{"tipo":"comentario_fixado","texto":"O PDF tem 2.100 frases com tradução e pronúncia escrita. Link na bio."}
+{"tipo":"comentario_fixado","texto":"O Eagle 350 custa R$ 19,90, em pagamento único. Link na bio."}
+{"tipo":"comentario_fixado","texto":"A garantia do Eagle 350 é de sete dias. Detalhes no link da bio."}
+{"tipo":"comentario_fixado","texto":"O Eagle 350 inclui quatro bônus. Confira os detalhes no link da bio."}
+{"tipo":"comentario_fixado","texto":"Quer conhecer o material? A descrição está no link da bio."}
+{"tipo":"comentario_fixado","texto":"Eagle 350: Inglês por Situação. Confira o ebook no link da bio."}
+{"tipo":"comentario_fixado","texto":"Você encontra os detalhes do PDF e da compra no link da bio."}

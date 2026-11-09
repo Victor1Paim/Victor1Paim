@@ -14,6 +14,9 @@ evitar burocracia/bancos/reclamação formal. Legendas no formato V3 (5 hashtags
 **Vídeo sempre abre em PORTUGUÊS com o mascote GRANDE no centro falando com quem assiste** (gancho/convite
 para se testar); o inglês vem nas frases, e toda frase/resposta em inglês ganha a tradução falada em português.
 
+Ganchos, re-ganchos, CTAs e legendas: escolher da biblioteca adaptada `docs/GANCHOS_E_COPY.md`
+(uma ação de engajamento por vídeo; pausa para repetir com `"pausa_repetir": 1.2`).
+
 ## PADRÃO VISUAL (manda sobre o resto deste arquivo)
 
 Todo vídeo segue `docs/PADRAO_VIDEO.md` (medido nos Reels publicados): foto do cenário em cor cheia,

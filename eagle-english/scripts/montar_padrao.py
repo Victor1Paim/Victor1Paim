@@ -109,7 +109,7 @@ def main(pasta, previa=False):
             a, c = f"{n:02d}_frase", f"{n:02d}_frase_pt"
             base = {"tipo": "frase", "en": b["en"], "pron": b.get("pron"), "pt": b.get("pt")}
             especs += [(a, base), (c, {**base, "mostrar_pt": True})]
-            fim = falar([b["audio_en"]], t + 0.1); d1 = fim - t + 0.2
+            fim = falar([b["audio_en"]], t + 0.1); d1 = fim - t + 0.2 + r.get("pausa_repetir", 0)   # tempo pra pessoa repetir
             cenas.append((a, d1)); ini_pt = t + d1
             fim = falar([b["audio_pt"]], ini_pt) if b.get("audio_pt") else ini_pt + 1.2
             d2 = fim - ini_pt + 0.3
