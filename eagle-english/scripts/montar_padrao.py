@@ -85,6 +85,36 @@ def boca_aberta(sons, total):
     return abertos
 
 
+def antes_do_corpo(post, r, vozes, corpo):
+    """Junta [abertura animada (scripts/abertura.py)] + [publi (vídeo pronto)] + corpo. Devolve o arquivo juntado (sem loudness)."""
+    from montar_quiz import sfx
+    v = post / "video"; partes = []
+    if r.get("abertura"):
+        import abertura
+        a = r["abertura"]; arq, d = vozes[a["audio"]]
+        qs, dab = abertura.render_abertura(post, a, (arq, d))
+        ab = v / "_abertura.mp4"; w = int((dab - 0.55) * 1000)
+        sh("-framerate", str(FPS), "-i", str(qs[0].parent / "q%04d.png"), "-i", str(arq), "-i", str(sfx()["whoosh"]),
+           "-filter_complex", f"[1:a]adelay=150|150[a1];[2:a]volume=0.6,adelay={w}|{w}[a2];"
+           f"[a1][a2]amix=inputs=2:normalize=0,apad=whole_dur={dab:.3f},atrim=0:{dab:.3f}[a]",
+           "-map", "0:v", "-map", "[a]", "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le",
+           "-f", "matroska", str(ab))
+        partes.append(ab)
+    if r.get("publi"):
+        partes.append((post / r["publi"]).resolve())
+    partes.append(corpo)
+    ent = sum((["-i", str(x)] for x in partes), [])
+    fc = "".join(f"[{i}:v]fps={FPS},scale=1080:1920,setsar=1,format=yuv420p[v{i}];[{i}:a]aresample=48000,aformat=channel_layouts=stereo[a{i}];"
+                 for i in range(len(partes)))
+    fc += "".join(f"[v{i}][a{i}]" for i in range(len(partes))) + f"concat=n={len(partes)}:v=1:a=1[v][a]"
+    junto = v / "_junto.mkv"
+    sh(*ent, "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "17", "-c:a", "pcm_s16le", str(junto))
+    for x in partes:
+        if x.name.startswith("_abertura"):
+            x.unlink()
+    return junto
+
+
 def main(pasta, previa=False):
     post = Path(pasta).resolve()
     r = json.loads((post / "roteiro.json").read_text())
@@ -252,6 +282,8 @@ def main(pasta, previa=False):
         sh("-i", str(com_masc), "-i", str(voz), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "pcm_s16le",
            "-f", "matroska", str(bruto))
         fonte = bruto
+    if r.get("abertura") or r.get("publi"):   # abertura animada + anúncio ANTES das frases (série Natal)
+        fonte = antes_do_corpo(post, r, vozes, fonte)
     alvo = "I=-14:TP=-1.5:LRA=11"
     m = subprocess.run(["ffmpeg", "-nostdin", "-i", str(fonte), "-af", f"loudnorm={alvo}:print_format=json", "-f", "null", "-"],
                        capture_output=True, text=True).stderr
@@ -260,7 +292,7 @@ def main(pasta, previa=False):
        f"loudnorm={alvo}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
        f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(final))
-    for x in (lista, base, com_masc, voz, bruto):
+    for x in (lista, base, com_masc, voz, bruto, v / "_junto.mkv"):
         x.unlink(missing_ok=True)
     print(f"ok -> {final.relative_to(PROJ)}  ({dur(final):.1f} s)")
 

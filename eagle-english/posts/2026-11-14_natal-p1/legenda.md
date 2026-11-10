@@ -1,6 +1,7 @@
 # "Natal em inglês · Parte 1" 🎄 (Flashcard · ESCOLHA · A1) — TESTE COM ANÚNCIO DE AFILIADO
 
-STATUS: PRONTO — 68,8 s, -14,0 LUFS, Whisper conferiu todas as falas.
+STATUS: PRONTO (v2, 10/11) — 63,4 s, -14,0 LUFS. Corrigido: respostas e traduções geradas numa fala só e cortadas nas pausas
+(sotaque igual e tradução em português, sem "Un sino"/"Balá"); estalos no fim das falas removidos (r6_en e CTA). Whisper conferiu tudo.
 Abertura animada (0–5,5 s) → PUBLI do molde (5,5–19,6 s: clipes animados no Gemini Omni a partir de imagens fiéis ao molde,
 som ambiente, selo PUBLI + "Algumas imagens geradas por IA") → "Agora, vamos descobrir essas formas em inglês!" →
 6 rodadas (star · bell · Christmas tree · candy · Santa Claus · gingerbread man) → placar → telas do molde + link.

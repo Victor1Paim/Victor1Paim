@@ -86,6 +86,17 @@
    "id": "cta",
    "lingua": "pt",
    "texto": "Quantas você acertou? Comenta! O molde tá no produto vinculado ao vídeo. E amanhã tem a parte dois!"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Star...\n\nBell...\n\nChristmas tree...\n\nCandy...\n\nSanta Claus...\n\nGingerbread man."
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Estrela...\n\nSino...\n\nÁrvore de Natal...\n\nBala...\n\nPapai Noel...\n\nBoneco de gengibre."
   }
  ]
 }

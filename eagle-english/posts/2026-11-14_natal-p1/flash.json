@@ -43,49 +43,37 @@
    "img": "img/star.png",
    "en": "Star",
    "pron": "/STÁR/",
-   "pt": "Estrela",
-   "audio_resposta": "r1_en",
-   "audio_traducao": "r1_pt"
+   "pt": "Estrela"
   },
   {
    "img": "img/bell.png",
    "en": "Bell",
    "pron": "/BÉL/",
-   "pt": "Sino",
-   "audio_resposta": "r2_en",
-   "audio_traducao": "r2_pt"
+   "pt": "Sino"
   },
   {
    "img": "img/tree.png",
    "en": "Christmas tree",
    "pron": "/KRÍS-mâs TRÍI/",
-   "pt": "Árvore de Natal",
-   "audio_resposta": "r3_en",
-   "audio_traducao": "r3_pt"
+   "pt": "Árvore de Natal"
   },
   {
    "img": "img/candy.png",
    "en": "Candy",
    "pron": "/KÉN-di/",
-   "pt": "Bala",
-   "audio_resposta": "r4_en",
-   "audio_traducao": "r4_pt"
+   "pt": "Bala"
   },
   {
    "img": "img/santa.png",
    "en": "Santa Claus",
    "pron": "/SÉN-ta CLÓZ/",
-   "pt": "Papai Noel",
-   "audio_resposta": "r5_en",
-   "audio_traducao": "r5_pt"
+   "pt": "Papai Noel"
   },
   {
    "img": "img/gingerbread.png",
    "en": "Gingerbread man",
    "pron": "/DJÍN-djer-bréd MÉN/",
-   "pt": "Boneco de gengibre",
-   "audio_resposta": "r6_en",
-   "audio_traducao": "r6_pt"
+   "pt": "Boneco de gengibre"
   }
  ],
  "cta": {
@@ -102,5 +90,7 @@
     "img/cores.png"
    ]
   ]
- }
+ },
+ "audio_respostas": "respostas_en",
+ "audio_traducoes": "traducoes_pt"
 }

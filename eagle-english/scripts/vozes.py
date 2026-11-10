@@ -174,6 +174,39 @@ def _gravar(pcm, saida):
                         "-i", f.name, "-af",
                         f"{apara},areverse,{apara},afade=t=in:d=0.06,areverse,afade=t=in:d=0.01,apad=pad_dur=0.15",
                         "-ar", "48000", str(saida)], check=True)
+    limpar_estalo_wav(saida)
+
+
+def limpar_estalo_wav(arq):
+    """Rede de segurança no .wav final: o TTS às vezes termina com uma rajada de ruído alta e chapada (~0,1–0,3 s) depois
+    de um respiro curto. Se o último trecho com som for curto (< 0,35 s), bem alto (mediana > 0,3) e vier depois de >= 30 ms
+    de quase-silêncio, corta a partir do respiro e refaz o fade + 150 ms de silêncio. Devolve True se cortou."""
+    import numpy as np, wave
+    with wave.open(str(arq)) as w:
+        sr, ch, sw = w.getframerate(), w.getnchannels(), w.getsampwidth(); x = np.frombuffer(w.readframes(w.getnframes()), np.int16)
+    if ch != 1 or sw != 2:
+        return False
+    k = sr // 100; n = len(x) // k
+    rms = np.sqrt((x[:n * k].astype(float).reshape(n, k) / 32768) ** 2).mean(axis=1) if False else \
+        np.sqrt(((x[:n * k].astype(float) / 32768).reshape(n, k) ** 2).mean(axis=1))
+    som = np.nonzero(rms > 0.01)[0]
+    if not len(som):
+        return False
+    fim = som[-1]; ini = fim
+    while ini > 0 and rms[ini - 1] > 0.01:
+        ini -= 1
+    gap = 0; j = ini - 1
+    while j >= 0 and rms[j] <= 0.01:
+        gap += 1; j -= 1
+    if not (fim - ini + 1 < 35 and np.median(rms[ini:fim + 1]) > 0.3 and gap >= 3 and j > 0):
+        return False
+    corte = (ini - gap // 2) * k
+    y = x[:corte].astype(float)
+    f = min(len(y), int(sr * 0.06)); y[-f:] *= np.linspace(1, 0, f)
+    y = np.concatenate([y, np.zeros(int(sr * 0.15))]).astype(np.int16)
+    with wave.open(str(arq), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(y.tobytes())
+    return True
 
 
 _WHISPER = None
