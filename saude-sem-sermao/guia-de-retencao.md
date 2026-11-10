@@ -225,5 +225,6 @@ Numa mesma leva de ideias, **variar as estruturas** para depois comparar qual re
 | 03 | Postura perfeita existe? | Contradição |
 | 04 | Celular antes de dormir | Contradição |
 | 05 | Intestino preso | Problema |
+| 06 | Grão-de-bico (R) | Evolução (primeiro feito pelo guia) |
 
 Até aqui o canal está concentrado em Contradição; o cronograma a partir do #6 distribui as 5 estruturas.

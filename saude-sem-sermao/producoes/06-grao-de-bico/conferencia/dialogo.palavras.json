@@ -1,0 +1,782 @@
+[
+ {
+  "palavra": "Uma",
+  "inicio": 0.0,
+  "fim": 0.34
+ },
+ {
+  "palavra": "lata",
+  "inicio": 0.34,
+  "fim": 0.62
+ },
+ {
+  "palavra": "de",
+  "inicio": 0.62,
+  "fim": 0.76
+ },
+ {
+  "palavra": "grão",
+  "inicio": 0.76,
+  "fim": 0.94
+ },
+ {
+  "palavra": "de",
+  "inicio": 0.94,
+  "fim": 1.06
+ },
+ {
+  "palavra": "bico",
+  "inicio": 1.06,
+  "fim": 1.46
+ },
+ {
+  "palavra": "e",
+  "inicio": 1.46,
+  "fim": 1.7
+ },
+ {
+  "palavra": "10",
+  "inicio": 1.7,
+  "fim": 2.0
+ },
+ {
+  "palavra": "minutos.",
+  "inicio": 2.0,
+  "fim": 2.46
+ },
+ {
+  "palavra": "Vira",
+  "inicio": 2.76,
+  "fim": 3.2
+ },
+ {
+  "palavra": "almoço",
+  "inicio": 3.2,
+  "fim": 3.52
+ },
+ {
+  "palavra": "de",
+  "inicio": 3.52,
+  "fim": 3.66
+ },
+ {
+  "palavra": "verdade?",
+  "inicio": 3.66,
+  "fim": 4.08
+ },
+ {
+  "palavra": "Salada?",
+  "inicio": 4.66,
+  "fim": 5.26
+ },
+ {
+  "palavra": "Daqui",
+  "inicio": 5.58,
+  "fim": 6.0
+ },
+ {
+  "palavra": "a",
+  "inicio": 6.0,
+  "fim": 6.08
+ },
+ {
+  "palavra": "uma",
+  "inicio": 6.08,
+  "fim": 6.18
+ },
+ {
+  "palavra": "hora",
+  "inicio": 6.18,
+  "fim": 6.36
+ },
+ {
+  "palavra": "eu",
+  "inicio": 6.36,
+  "fim": 6.48
+ },
+ {
+  "palavra": "tô",
+  "inicio": 6.48,
+  "fim": 6.5
+ },
+ {
+  "palavra": "com",
+  "inicio": 6.5,
+  "fim": 6.64
+ },
+ {
+  "palavra": "fome",
+  "inicio": 6.64,
+  "fim": 6.84
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.84,
+  "fim": 6.98
+ },
+ {
+  "palavra": "novo.",
+  "inicio": 6.98,
+  "fim": 7.24
+ },
+ {
+  "palavra": "Minuto",
+  "inicio": 7.82,
+  "fim": 8.16
+ },
+ {
+  "palavra": "1.",
+  "inicio": 8.16,
+  "fim": 8.3
+ },
+ {
+  "palavra": "Escorre",
+  "inicio": 8.9,
+  "fim": 9.5
+ },
+ {
+  "palavra": "e",
+  "inicio": 9.5,
+  "fim": 9.7
+ },
+ {
+  "palavra": "lava",
+  "inicio": 9.7,
+  "fim": 10.0
+ },
+ {
+  "palavra": "o",
+  "inicio": 10.0,
+  "fim": 10.12
+ },
+ {
+  "palavra": "grão.",
+  "inicio": 10.12,
+  "fim": 10.34
+ },
+ {
+  "palavra": "Minuto",
+  "inicio": 10.74,
+  "fim": 11.14
+ },
+ {
+  "palavra": "3.",
+  "inicio": 11.14,
+  "fim": 11.42
+ },
+ {
+  "palavra": "Tomate,",
+  "inicio": 11.94,
+  "fim": 12.54
+ },
+ {
+  "palavra": "pepino",
+  "inicio": 12.7,
+  "fim": 13.08
+ },
+ {
+  "palavra": "e",
+  "inicio": 13.08,
+  "fim": 13.18
+ },
+ {
+  "palavra": "cebola",
+  "inicio": 13.18,
+  "fim": 13.5
+ },
+ {
+  "palavra": "em",
+  "inicio": 13.5,
+  "fim": 13.62
+ },
+ {
+  "palavra": "cubinhos.",
+  "inicio": 13.62,
+  "fim": 14.0
+ },
+ {
+  "palavra": "E",
+  "inicio": 14.26,
+  "fim": 14.56
+ },
+ {
+  "palavra": "o",
+  "inicio": 14.56,
+  "fim": 14.66
+ },
+ {
+  "palavra": "tempero?",
+  "inicio": 14.66,
+  "fim": 15.1
+ },
+ {
+  "palavra": "Vai",
+  "inicio": 15.24,
+  "fim": 15.5
+ },
+ {
+  "palavra": "ser",
+  "inicio": 15.5,
+  "fim": 15.6
+ },
+ {
+  "palavra": "sem",
+  "inicio": 15.6,
+  "fim": 15.74
+ },
+ {
+  "palavra": "graça?",
+  "inicio": 15.74,
+  "fim": 16.0
+ },
+ {
+  "palavra": "Minuto",
+  "inicio": 16.32,
+  "fim": 16.84
+ },
+ {
+  "palavra": "6.",
+  "inicio": 16.84,
+  "fim": 17.18
+ },
+ {
+  "palavra": "Limão,",
+  "inicio": 17.66,
+  "fim": 18.2
+ },
+ {
+  "palavra": "azeite,",
+  "inicio": 18.5,
+  "fim": 19.14
+ },
+ {
+  "palavra": "sal",
+  "inicio": 19.58,
+  "fim": 19.76
+ },
+ {
+  "palavra": "e",
+  "inicio": 19.76,
+  "fim": 19.86
+ },
+ {
+  "palavra": "salsinha.",
+  "inicio": 19.86,
+  "fim": 20.32
+ },
+ {
+  "palavra": "Mexe",
+  "inicio": 20.5,
+  "fim": 20.88
+ },
+ {
+  "palavra": "bem.",
+  "inicio": 20.88,
+  "fim": 21.0
+ },
+ {
+  "palavra": "Minuto",
+  "inicio": 21.44,
+  "fim": 21.94
+ },
+ {
+  "palavra": "8.",
+  "inicio": 21.94,
+  "fim": 22.18
+ },
+ {
+  "palavra": "Um",
+  "inicio": 22.48,
+  "fim": 22.84
+ },
+ {
+  "palavra": "ovo",
+  "inicio": 22.84,
+  "fim": 23.1
+ },
+ {
+  "palavra": "cozido",
+  "inicio": 23.1,
+  "fim": 23.62
+ },
+ {
+  "palavra": "ou",
+  "inicio": 23.62,
+  "fim": 23.78
+ },
+ {
+  "palavra": "queijo",
+  "inicio": 23.78,
+  "fim": 24.06
+ },
+ {
+  "palavra": "branco,",
+  "inicio": 24.06,
+  "fim": 24.42
+ },
+ {
+  "palavra": "se",
+  "inicio": 24.5,
+  "fim": 24.58
+ },
+ {
+  "palavra": "quiser",
+  "inicio": 24.58,
+  "fim": 24.8
+ },
+ {
+  "palavra": "mais",
+  "inicio": 24.8,
+  "fim": 24.98
+ },
+ {
+  "palavra": "proteína.",
+  "inicio": 24.98,
+  "fim": 25.44
+ },
+ {
+  "palavra": "Minuto",
+  "inicio": 25.76,
+  "fim": 26.28
+ },
+ {
+  "palavra": "10.",
+  "inicio": 26.28,
+  "fim": 26.66
+ },
+ {
+  "palavra": "Pronto.",
+  "inicio": 27.12,
+  "fim": 27.54
+ },
+ {
+  "palavra": "E",
+  "inicio": 27.82,
+  "fim": 28.24
+ },
+ {
+  "palavra": "aqui",
+  "inicio": 28.24,
+  "fim": 28.46
+ },
+ {
+  "palavra": "vem",
+  "inicio": 28.46,
+  "fim": 28.66
+ },
+ {
+  "palavra": "o",
+  "inicio": 28.66,
+  "fim": 28.76
+ },
+ {
+  "palavra": "segredo.",
+  "inicio": 28.76,
+  "fim": 29.28
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 29.28,
+  "fim": 29.82
+ },
+ {
+  "palavra": "prato",
+  "inicio": 29.82,
+  "fim": 30.16
+ },
+ {
+  "palavra": "tem",
+  "inicio": 30.16,
+  "fim": 30.36
+ },
+ {
+  "palavra": "uns",
+  "inicio": 30.36,
+  "fim": 30.54
+ },
+ {
+  "palavra": "10",
+  "inicio": 30.54,
+  "fim": 30.8
+ },
+ {
+  "palavra": "gramas",
+  "inicio": 30.8,
+  "fim": 31.14
+ },
+ {
+  "palavra": "de",
+  "inicio": 31.14,
+  "fim": 31.24
+ },
+ {
+  "palavra": "fibra.",
+  "inicio": 31.24,
+  "fim": 31.58
+ },
+ {
+  "palavra": "É",
+  "inicio": 31.7,
+  "fim": 31.94
+ },
+ {
+  "palavra": "perto",
+  "inicio": 31.94,
+  "fim": 32.16
+ },
+ {
+  "palavra": "de",
+  "inicio": 32.16,
+  "fim": 32.3
+ },
+ {
+  "palavra": "metade",
+  "inicio": 32.3,
+  "fim": 32.72
+ },
+ {
+  "palavra": "do",
+  "inicio": 32.72,
+  "fim": 32.88
+ },
+ {
+  "palavra": "que",
+  "inicio": 32.88,
+  "fim": 32.98
+ },
+ {
+  "palavra": "a",
+  "inicio": 32.98,
+  "fim": 33.1
+ },
+ {
+  "palavra": "OMS",
+  "inicio": 33.1,
+  "fim": 33.44
+ },
+ {
+  "palavra": "recomenda",
+  "inicio": 33.44,
+  "fim": 33.98
+ },
+ {
+  "palavra": "pro",
+  "inicio": 33.98,
+  "fim": 34.14
+ },
+ {
+  "palavra": "dia",
+  "inicio": 34.14,
+  "fim": 34.3
+ },
+ {
+  "palavra": "inteiro.",
+  "inicio": 34.3,
+  "fim": 34.72
+ },
+ {
+  "palavra": "Fibra",
+  "inicio": 35.28,
+  "fim": 35.8
+ },
+ {
+  "palavra": "e",
+  "inicio": 35.8,
+  "fim": 36.02
+ },
+ {
+  "palavra": "proteína",
+  "inicio": 36.02,
+  "fim": 36.46
+ },
+ {
+  "palavra": "do",
+  "inicio": 36.46,
+  "fim": 36.6
+ },
+ {
+  "palavra": "grão.",
+  "inicio": 36.6,
+  "fim": 36.84
+ },
+ {
+  "palavra": "É",
+  "inicio": 36.98,
+  "fim": 37.24
+ },
+ {
+  "palavra": "isso",
+  "inicio": 37.24,
+  "fim": 37.5
+ },
+ {
+  "palavra": "que",
+  "inicio": 37.5,
+  "fim": 37.62
+ },
+ {
+  "palavra": "segura",
+  "inicio": 37.62,
+  "fim": 37.96
+ },
+ {
+  "palavra": "a",
+  "inicio": 37.96,
+  "fim": 38.1
+ },
+ {
+  "palavra": "fome.",
+  "inicio": 38.1,
+  "fim": 38.3
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 39.14,
+  "fim": 39.66
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 40.08,
+  "fim": 40.52
+ },
+ {
+  "palavra": "lata,",
+  "inicio": 40.52,
+  "fim": 40.9
+ },
+ {
+  "palavra": "10",
+  "inicio": 41.1,
+  "fim": 41.32
+ },
+ {
+  "palavra": "minutos",
+  "inicio": 41.32,
+  "fim": 41.64
+ },
+ {
+  "palavra": "e",
+  "inicio": 41.64,
+  "fim": 41.82
+ },
+ {
+  "palavra": "quase",
+  "inicio": 41.82,
+  "fim": 42.08
+ },
+ {
+  "palavra": "metade",
+  "inicio": 42.08,
+  "fim": 42.6
+ },
+ {
+  "palavra": "da",
+  "inicio": 42.6,
+  "fim": 42.76
+ },
+ {
+  "palavra": "fibra",
+  "inicio": 42.76,
+  "fim": 43.04
+ },
+ {
+  "palavra": "do",
+  "inicio": 43.04,
+  "fim": 43.16
+ },
+ {
+  "palavra": "dia.",
+  "inicio": 43.16,
+  "fim": 43.4
+ },
+ {
+  "palavra": "Assim",
+  "inicio": 43.72,
+  "fim": 44.24
+ },
+ {
+  "palavra": "a",
+  "inicio": 44.24,
+  "fim": 44.4
+ },
+ {
+  "palavra": "fome",
+  "inicio": 44.4,
+  "fim": 44.6
+ },
+ {
+  "palavra": "demora",
+  "inicio": 44.6,
+  "fim": 44.92
+ },
+ {
+  "palavra": "pra",
+  "inicio": 44.92,
+  "fim": 45.04
+ },
+ {
+  "palavra": "voltar.",
+  "inicio": 45.04,
+  "fim": 45.32
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 45.96,
+  "fim": 46.24
+ },
+ {
+  "palavra": "lata",
+  "inicio": 46.24,
+  "fim": 46.52
+ },
+ {
+  "palavra": "e",
+  "inicio": 46.52,
+  "fim": 46.62
+ },
+ {
+  "palavra": "10",
+  "inicio": 46.62,
+  "fim": 46.78
+ },
+ {
+  "palavra": "minutos.",
+  "inicio": 46.78,
+  "fim": 47.2
+ },
+ {
+  "palavra": "Vira",
+  "inicio": 47.36,
+  "fim": 47.72
+ },
+ {
+  "palavra": "almoço",
+  "inicio": 47.72,
+  "fim": 48.0
+ },
+ {
+  "palavra": "de",
+  "inicio": 48.0,
+  "fim": 48.12
+ },
+ {
+  "palavra": "verdade",
+  "inicio": 48.12,
+  "fim": 48.38
+ },
+ {
+  "palavra": "sim.",
+  "inicio": 48.38,
+  "fim": 48.66
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 49.02,
+  "fim": 49.34
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 49.34,
+  "fim": 49.46
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 49.78,
+  "fim": 50.14
+ },
+ {
+  "palavra": "pra",
+  "inicio": 50.14,
+  "fim": 50.26
+ },
+ {
+  "palavra": "quem",
+  "inicio": 50.26,
+  "fim": 50.44
+ },
+ {
+  "palavra": "diz",
+  "inicio": 50.44,
+  "fim": 50.62
+ },
+ {
+  "palavra": "que",
+  "inicio": 50.62,
+  "fim": 50.72
+ },
+ {
+  "palavra": "salada",
+  "inicio": 50.72,
+  "fim": 51.14
+ },
+ {
+  "palavra": "não",
+  "inicio": 51.14,
+  "fim": 51.3
+ },
+ {
+  "palavra": "sustenta.",
+  "inicio": 51.3,
+  "fim": 51.78
+ },
+ {
+  "palavra": "E",
+  "inicio": 51.94,
+  "fim": 52.2
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 52.2,
+  "fim": 52.6
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 52.88,
+  "fim": 53.28
+ },
+ {
+  "palavra": "grão,",
+  "inicio": 53.28,
+  "fim": 53.76
+ },
+ {
+  "palavra": "se",
+  "inicio": 53.84,
+  "fim": 54.0
+ },
+ {
+  "palavra": "você",
+  "inicio": 54.0,
+  "fim": 54.16
+ },
+ {
+  "palavra": "vai",
+  "inicio": 54.16,
+  "fim": 54.3
+ },
+ {
+  "palavra": "fazer,",
+  "inicio": 54.3,
+  "fim": 54.6
+ },
+ {
+  "palavra": "e",
+  "inicio": 54.82,
+  "fim": 55.12
+ },
+ {
+  "palavra": "segue",
+  "inicio": 55.12,
+  "fim": 55.44
+ },
+ {
+  "palavra": "pra",
+  "inicio": 55.44,
+  "fim": 55.6
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 55.6,
+  "fim": 55.84
+ }
+]
