@@ -1,0 +1,39 @@
+{
+ "ambiente": 0.25,
+ "cenas": [
+  {
+   "video": "clipes/c1_mostra.mp4",
+   "ini": 0.3,
+   "fala": "a1",
+   "texto": "As formas do desafio\nvieram *daqui* 👀"
+  },
+  {
+   "video": "clipes/teste_despeja.mp4",
+   "ini": 0.0,
+   "fala": "a2",
+   "texto": "Derrete e *despeja* 🍫"
+  },
+  {
+   "video": "clipes/c3_geladeira.mp4",
+   "ini": 0.2,
+   "fala": "a3",
+   "texto": "*Geladeira* ❄️"
+  },
+  {
+   "video": "clipes/c4_desenforma.mp4",
+   "ini": 1.6,
+   "fala": "a4",
+   "texto": "Sai *inteirinho* ✨"
+  },
+  {
+   "video": "clipes/c5_mesa.mp4",
+   "ini": 1.5,
+   "fala": [
+    "a5",
+    "a6"
+   ],
+   "texto": "Chocolate de Natal\n*em família* 🎄",
+   "link": "Link do produto no vídeo 👇"
+  }
+ ]
+}

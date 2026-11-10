@@ -1,0 +1,106 @@
+{
+ "selo": "DESAFIO DE NATAL 🎄",
+ "segundos_contagem": 0.7,
+ "fundo_cta": "img/sala.png",
+ "publi": "../ugc-molde-natal/video/ugc10.mp4",
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/sala.png",
+  "selo": "Desafio · Parte 1 🎄",
+  "titulo": "Natal em\n*inglês* 🎅",
+  "sub": "<b>6 formas</b> · 3 segundos cada",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": [
+   {
+    "img": "img/star.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/bell.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/tree.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/candy.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/santa.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/gingerbread.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "audio_pergunta": "q_en",
+ "itens": [
+  {
+   "img": "img/star.png",
+   "en": "Star",
+   "pron": "/STÁR/",
+   "pt": "Estrela",
+   "audio_resposta": "r1_en",
+   "audio_traducao": "r1_pt"
+  },
+  {
+   "img": "img/bell.png",
+   "en": "Bell",
+   "pron": "/BÉL/",
+   "pt": "Sino",
+   "audio_resposta": "r2_en",
+   "audio_traducao": "r2_pt"
+  },
+  {
+   "img": "img/tree.png",
+   "en": "Christmas tree",
+   "pron": "/KRÍS-mâs TRÍI/",
+   "pt": "Árvore de Natal",
+   "audio_resposta": "r3_en",
+   "audio_traducao": "r3_pt"
+  },
+  {
+   "img": "img/candy.png",
+   "en": "Candy",
+   "pron": "/KÉN-di/",
+   "pt": "Bala",
+   "audio_resposta": "r4_en",
+   "audio_traducao": "r4_pt"
+  },
+  {
+   "img": "img/santa.png",
+   "en": "Santa Claus",
+   "pron": "/SÉN-ta CLÓZ/",
+   "pt": "Papai Noel",
+   "audio_resposta": "r5_en",
+   "audio_traducao": "r5_pt"
+  },
+  {
+   "img": "img/gingerbread.png",
+   "en": "Gingerbread man",
+   "pron": "/DJÍN-djer-bréd MÉN/",
+   "pt": "Boneco de gengibre",
+   "audio_resposta": "r6_en",
+   "audio_traducao": "r6_pt"
+  }
+ ],
+ "cta": {
+  "audio": "cta",
+  "segundos_placar": 3.5,
+  "sub_placar": "Comenta seu placar 👇",
+  "telas": [
+   [
+    "*Molde natalino* 🎄",
+    "img/prato.png"
+   ],
+   [
+    "*Link do produto* no vídeo 👇",
+    "img/cores.png"
+   ]
+  ]
+ }
+}

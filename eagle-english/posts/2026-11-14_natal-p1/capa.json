@@ -1,0 +1,24 @@
+{
+ "fundo": "img/sala.png",
+ "selo": "Desafio · Parte 1",
+ "titulo": "Natal em\n*inglês* 🎅",
+ "sub": "<b>6 formas</b> · quantas você acerta?",
+ "figuras": [
+  {
+   "img": "img/star.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/santa.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/tree.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/gingerbread.png",
+   "txt": "?"
+  }
+ ]
+}

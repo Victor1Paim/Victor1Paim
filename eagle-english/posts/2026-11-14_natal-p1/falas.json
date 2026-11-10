@@ -1,0 +1,91 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Desafio de Natal! Seis formas. Você sabe o nome de todas em inglês?"
+  },
+  {
+   "id": "q_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What is this called?"
+  },
+  {
+   "id": "r1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Star."
+  },
+  {
+   "id": "r1_pt",
+   "lingua": "pt",
+   "texto": "Estrela."
+  },
+  {
+   "id": "r2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Bell."
+  },
+  {
+   "id": "r2_pt",
+   "lingua": "pt",
+   "texto": "Um sino."
+  },
+  {
+   "id": "r3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Christmas tree."
+  },
+  {
+   "id": "r3_pt",
+   "lingua": "pt",
+   "texto": "Árvore de Natal."
+  },
+  {
+   "id": "r4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Candy."
+  },
+  {
+   "id": "r4_pt",
+   "lingua": "pt",
+   "texto": "Bala."
+  },
+  {
+   "id": "r5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Santa Claus."
+  },
+  {
+   "id": "r5_pt",
+   "lingua": "pt",
+   "texto": "Papai Noel."
+  },
+  {
+   "id": "r6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Gingerbread man."
+  },
+  {
+   "id": "r6_pt",
+   "lingua": "pt",
+   "texto": "Boneco de gengibre."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta! O molde tá no produto vinculado ao vídeo. E amanhã tem a parte dois!"
+  }
+ ]
+}

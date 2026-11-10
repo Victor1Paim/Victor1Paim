@@ -16,9 +16,9 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | sex 13/11 | 12h | Na padaria 🥖 | Repita | Problema | "Entrou na padaria? Treine estas frases em inglês." | salvar | ✅ |
 | sex 13/11 | 19h | Quente ou frio? ☕ | Qual você usa? | Escolha | "Quente ou frio? Qual palavra combina com esta bebida?" | comentar A/B | ✅ |
 | sáb 14/11 | 12h | Estou com fome 🍽️ | Repita | Evolução | "Deu fome? Repete estas frases comigo." | salvar | 🎬 |
-| sáb 14/11 | 19h | Prova de inglês: cores 🎨 | Prova (1 a 8) | Escolha | "Oito cores em inglês: quantas você reconhece?" | placar | 🧩 |
+| sáb 14/11 | 19h | Natal em inglês · Parte 1 🎄 (TikTok + PUBLI do molde) | Flashcard + anúncio | Escolha | "Desafio de Natal! Seis formas. Você sabe todas em inglês?" | placar + link do produto | ✅ |
 | dom 15/11 | 12h | Objetos do quarto 🛏️ | Lista com emoji | Evolução | "Vamos arrumar o quarto e praticar inglês juntos?" | comentar palavra | 🧩 |
-| dom 15/11 | 19h | Pedir ajuda 🙋 | Repita | Problema | "Precisa de ajuda? Treine como pedir em inglês." | salvar | 🎬 |
+| dom 15/11 | 19h | Natal em inglês · Parte 2 🎁 (sem anúncio: controle) | Repita | Jornada | "Parte dois! A águia vai pra uma ceia de Natal… só em inglês." | salvar | 🎬 |
 | seg 16/11 | 12h | Animais 🐶 | Flashcard | Escolha | "Consegue lembrar o nome deste animal em inglês?" | placar | 🎬 |
 | seg 16/11 | 19h | Jeitos de agradecer 💛 | Repita | Contradição | "Como você agradece em inglês? Vamos variar juntos." | salvar | 🎬 |
 | ter 17/11 | 12h | Convidar amigos 🍿 | Repita | Jornada | "Quer chamar um amigo? Vamos convidar em inglês." | enviar | 🎬 |
@@ -35,6 +35,8 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | dom 22/11 | 19h | Prova de inglês: comidas 🍽️ | Prova | Escolha | "Quais destas comidas você conhece em inglês?" | placar | 🧩 |
 | seg 23/11 | 12h | Bateu o cansaço 😴 | Repita | Contradição | "Bateu o cansaço? Vamos dizer isso em inglês." | salvar | 🎬 |
 | seg 23/11 | 19h | Na cozinha 🍳 | Flashcard | Escolha | "Como se chama este objeto da cozinha em inglês?" | placar | 🎬 |
+
+Remanejados pelo teste de Natal: **ter 24/11 12h** Prova de inglês: cores 🎨 (🧩) · **ter 24/11 19h** Pedir ajuda 🙋 (🎬).
 
 Depois: sazonais **Thanksgiving (~25/11)** e **Black Friday (~26/11)** como Repita avulsos; continuar a rotação.
 

@@ -11,7 +11,7 @@
   .txt { position:absolute; left:70px; right:150px; top:360px; color:#fff; font-weight:900; font-size:84px; line-height:1.04;
          letter-spacing:-0.03em; paint-order:stroke fill; -webkit-text-stroke:16px #000; text-wrap:balance; }
   .txt .am { color:var(--amarelo); }
-  .link { position:absolute; left:50%; transform:translateX(-50%); top:1300px; background:var(--vermelho); color:#fff; font-family:"Oswald";
+  .link { position:absolute; left:50%; transform:translateX(-50%); top:640px; background:var(--vermelho); color:#fff; font-family:"Oswald";
           font-weight:700; font-size:78px; padding:6px 50px 12px; border-radius:26px; border:6px solid #fff; white-space:nowrap;
           box-shadow:0 10px 30px rgba(0,0,0,.4); }
   .ia { position:absolute; left:60px; top:1470px; color:#fff; font-weight:700; font-size:26px; opacity:.9;
@@ -22,6 +22,6 @@ const d = window.DADOS || {texto:"As formas do desafio\nvieram *daqui* 👀"};
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const cor = s => esc(s).replace(/\*(.+?)\*/g, '<span class="am">$1</span>').replace(/\n/g, "<br>");
 document.getElementById("c").innerHTML = `<div class="publi">PUBLI</div><div class="txt">${cor(d.texto)}</div>
-  ${d.link ? `<div class="link">${esc(d.link)}</div>` : ""}<div class="ia">Imagens ilustrativas geradas por IA</div>`;
+  ${d.link ? `<div class="link">${esc(d.link)}</div>` : ""}<div class="ia">${esc(d.aviso || "Algumas imagens geradas por IA")}</div>`;
 document.fonts.ready.then(() => document.body.dataset.pronto = "1");
 </script></body></html>

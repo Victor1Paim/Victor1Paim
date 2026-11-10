@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bloco de anúncio UGC (afiliado) animado a partir de fotos: posts/<post>/ugc.json -> video/ugc.mp4.
 
-ugc.json: {"cenas": [{"img": "img/1.png", "fala": "u1", "texto": "As formas vieram *daqui* 👀", "mov": "in"|"out"|"esq"|"dir",
+ugc.json: {"cenas": [{"img": "img/1.png" OU "video": "clipes/c1.mp4" + "ini": 0.3, "fala": "u1" (ou lista de falas), "texto": "As formas vieram *daqui* 👀", "mov": "in"|"out"|"esq"|"dir",
                       "link": "Link no vídeo 👇" (opcional)}]}
 Cada cena dura a fala + 0,25 s; movimento de câmera (zoom/deslize) + tremido leve de celular; corte com transição rápida
 (xfade 0,2 s); camada templates/ugc.html (PUBLI, texto, aviso de IA). Voz pelas falas do falas.json (vozes.py gerar).
@@ -31,19 +31,25 @@ def camadas(post, cenas):
     return out
 
 
-def main(pasta):
+def main(pasta, cfg="ugc.json"):
     post = Path(pasta).resolve()
-    u = json.loads((post / "ugc.json").read_text()); cenas = u["cenas"]
+    u = json.loads((post / cfg).read_text()); cenas = u["cenas"]
     vozes = preparar_vozes(post, u, 1.0)
     cam = camadas(post, cenas)
     v = post / "video"; X = 0.2
-    durs = [vozes[c["fala"]][1] - 0.2 + (X if i < len(cenas) - 1 else 0.4) for i, c in enumerate(cenas)]   # fala já tem ~0,25 s de respiro nas pontas
+    falas = [c["fala"] if isinstance(c["fala"], list) else [c["fala"]] for c in cenas]
+    durs = [sum(vozes[f][1] - 0.2 for f in fs) + (X if i < len(cenas) - 1 else 0.4) for i, fs in enumerate(falas)]   # fala já tem ~0,25 s de respiro nas pontas
     clipes = []
     for i, (c, d) in enumerate(zip(cenas, durs)):
         n = int(round(d * FPS)); mov = c.get("mov", "in")
         z = {"in": f"1.0+0.14*on/{n}", "out": f"1.14-0.14*on/{n}"}.get(mov, "1.12")
         x = {"esq": f"(iw-iw/zoom)*(1-on/{n})", "dir": f"(iw-iw/zoom)*on/{n}"}.get(mov, "(iw-iw/zoom)/2")
         saida = v / f"_ugc{i}.mp4"; clipes.append(saida)
+        if c.get("video"):   # clipe animado (Gemini Omni): trecho bom + camada; som ambiente vai separado
+            sh("-ss", f"{c.get('ini', 0):.2f}", "-t", f"{d + 0.05:.3f}", "-i", str(post / c["video"]), "-loop", "1", "-i", str(cam / f"c{i}.png"),
+               "-filter_complex", f"[0:v]fps={FPS},scale=1080:1920:flags=lanczos,setsar=1[b];[b][1:v]overlay=0:0,format=yuv420p[v]",
+               "-map", "[v]", "-frames:v", str(n), "-c:v", "libx264", "-crf", "17", str(saida))
+            continue
         # 1024x1536 -> preenche 9:16 em 2x (zoompan suave), tremido leve de celular com crop variável
         sh("-i", str(post / c["img"]), "-loop", "1", "-i", str(cam / f"c{i}.png"), "-filter_complex",
            f"[0:v]scale=-2:3840,crop=2160:3840,zoompan=z='{z}':x='{x}':y='(ih-ih/zoom)/2':d={n}:s=1188x2112:fps={FPS},"
@@ -59,13 +65,20 @@ def main(pasta):
     mudo = v / "_ugc_mudo.mp4"
     sh(*ent, "-filter_complex", ";".join(fc), "-map", ult, "-c:v", "libx264", "-crf", "17", str(mudo))
     # áudio: cada fala no começo da sua cena
-    ent, fil, ini = [], [], 0.0
+    ent, fil, ini, k = [], [], 0.0, 0
     for i, c in enumerate(cenas):
-        arq, _ = vozes[c["fala"]]; ent += ["-i", str(arq)]; ms = int(round(max(0, ini - 0.15) * 1000))
-        fil.append(f"[{i}:a]aresample={SR},aformat=channel_layouts=mono,adelay={ms}|{ms}[s{i}]"); ini += durs[i] - X
-    fil.append("".join(f"[s{i}]" for i in range(len(cenas))) + f"amix=inputs={len(cenas)}:normalize=0,apad=whole_dur={t:.3f},"
+        p = ini
+        for f in falas[i]:
+            arq, dd = vozes[f]; ent += ["-i", str(arq)]; ms = int(round(max(0, p - 0.15) * 1000))
+            fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,adelay={ms}|{ms}[s{k}]"); k += 1; p += dd - 0.2
+        if c.get("video"):   # som ambiente do clipe, baixo
+            ent += ["-ss", f"{c.get('ini', 0):.2f}", "-t", f"{durs[i]:.3f}", "-i", str(post / c["video"])]; ms = int(round(ini * 1000))
+            fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={u.get('ambiente', 0.25)},afade=t=in:d=0.15,"
+                       f"adelay={ms}|{ms}[s{k}]"); k += 1
+        ini += durs[i] - X
+    fil.append("".join(f"[s{i}]" for i in range(k)) + f"amix=inputs={k}:normalize=0,apad=whole_dur={t:.3f},"
                f"atrim=0:{t:.3f},loudnorm=I=-14:TP=-1.5:LRA=11,aformat=channel_layouts=stereo[a]")
-    final = v / "ugc.mp4"
+    final = v / cfg.replace(".json", ".mp4")
     sh("-i", str(mudo), *ent, "-filter_complex", ";".join(f.replace(f"[{i}:a]", f"[{i + 1}:a]") for i, f in enumerate(fil[:-1]))
        + ";" + fil[-1], "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
        "-movflags", "+faststart", str(final))
@@ -81,6 +94,6 @@ def main(pasta):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         sys.exit(__doc__)
-    main(sys.argv[1])
+    main(sys.argv[1], *(sys.argv[2:3]))   # 2º argumento opcional: outro json (ex.: ugc10.json -> video/ugc10.mp4)

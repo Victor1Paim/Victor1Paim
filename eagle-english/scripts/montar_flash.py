@@ -90,6 +90,17 @@ def main(pasta):
         cenas.append(("00_intro_f", total - cur))
         t = total
 
+    if c.get("publi"):   # bloco de anúncio (vídeo pronto, ex.: montar_ugc.py) logo depois da abertura
+        pv = (post / c["publi"]).resolve(); pasta = post / "video" / "publi"; pasta.mkdir(parents=True, exist_ok=True)
+        for x in pasta.glob("*.png"):
+            x.unlink()
+        sh("-i", str(pv), "-vf", "fps=30", str(pasta / "q%04d.png"))
+        som = post / "audio" / "_mix" / "_publi.wav"
+        sh("-i", str(pv), "-vn", "-ac", "1", "-ar", str(SR), str(som))
+        qs = sorted(pasta.glob("*.png")); cenas += [(str(q), 1 / 30) for q in qs]
+        sons.append((som, t, 1.0)); t += len(qs) / 30
+        sons.append((fx["whoosh"], max(0, t - 0.15), 0.6))
+
     for n, it in enumerate(itens, 1):
         base = {"tipo": "pergunta", "n": n, "total": len(itens), "img": (post / it["img"]).as_uri(), "selo": c.get("selo"),
                 "en": it["en"], "pron": it["pron"], "pt": it["pt"]}
