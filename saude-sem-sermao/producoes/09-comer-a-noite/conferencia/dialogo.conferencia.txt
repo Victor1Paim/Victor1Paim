@@ -1,0 +1,3 @@
+semelhança: 97.4%
+delete: roteiro='corpo não tem um relógio que transforma comida em' voz='' pos=81
+Nota: o Whisper turbo pulou 27,3–30,0 s ('o corpo não tem um relógio que transforma a comida em'); conferido com o modelo medium: a voz fala a frase. Tempos inseridos à mão no .palavras.json.

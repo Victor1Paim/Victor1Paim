@@ -1,0 +1,71 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:22px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:44px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:66px;line-height:1;}
+
+  .bg{background:#fff;}
+  #virada-rel{position:absolute;left:330px;top:300px;width:420px;height:420px;}
+  #virada-selo{left:290px;top:420px;color:var(--laranja);border-color:var(--laranja);font-size:84px;}
+  #virada-t2{position:absolute;left:80px;top:220px;width:920px;font-family:'Playfair Display',serif;font-weight:700;font-size:84px;line-height:1.05;}
+  #virada-t2 em{color:var(--laranja);}
+  #virada-pilha{position:absolute;left:80px;top:440px;width:920px;display:flex;flex-direction:column;gap:12px;}
+  .bloco{height:88px;border-radius:20px;display:flex;align-items:center;padding:0 30px;font-weight:900;font-size:40px;color:#fff;}
+</style>
+<div id="root" data-composition-id="virada" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <svg id="virada-rel" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#FDF3ED" stroke="#2F483A" stroke-width="6"/>
+    <line x1="50" y1="50" x2="50" y2="20" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round"/>
+    <line x1="50" y1="50" x2="30" y2="62" stroke="#2B2B2B" stroke-width="5" stroke-linecap="round"/></svg>
+  <div class="selo" id="virada-selo">✕ MITO</div>
+  <h1 id="virada-t2">O que pesa: <em>o total do dia</em></h1>
+  <div id="virada-pilha"><div class="bloco" id="virada-b0" style="background:#E2B04A">☀️ café</div><div class="bloco" id="virada-b1" style="background:#95A185">🍽️ almoço</div><div class="bloco" id="virada-b2" style="background:#2F483A">🌙 jantar</div><div class="bloco" id="virada-b3" style="background:#D45F2B">🍪 belisco</div><div class="bloco" id="virada-b4" style="background:#D45F2B">🍫 belisco</div><div class="bloco" id="virada-b5" style="background:#D45F2B">🥨 belisco</div></div>
+  <div class="wipe" id="virada-wipe" style="background:#F7E5DD"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#virada-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#virada-rel",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.4,ease:"back.out(1.8)"},0.2);
+  tl.fromTo("#virada-selo",{opacity:0,scale:2.6,rotation:-16},{opacity:1,scale:1,rotation:-8,duration:0.22,ease:"power4.in"},2.67);
+  tl.fromTo("#root",{x:0},{x:10,duration:0.04,yoyo:true,repeat:5,ease:"none"},2.89);
+  tl.to(["#virada-rel","#virada-selo"],{opacity:0,y:-40,duration:0.3},5.54);
+  tl.fromTo("#virada-t2",{opacity:0,y:30},{opacity:1,y:0,duration:0.4,ease:"power3.out"},5.79);
+  tl.fromTo("#virada-b0",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},5.89); tl.fromTo("#virada-b1",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},6.23); tl.fromTo("#virada-b2",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},6.35); tl.fromTo("#virada-b3",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},11.61); tl.fromTo("#virada-b4",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},11.91); tl.fromTo("#virada-b5",{opacity:0,x:-120},{opacity:1,x:0,duration:0.3,ease:"back.out(1.6)"},12.17);
+  tl.fromTo(["#virada-b3","#virada-b4","#virada-b5"],{scale:1},{scale:1.04,duration:0.15,yoyo:true,repeat:1,stagger:0.08},12.47);
+
+  window.__timelines["virada"] = tl;
+</script>
+</template>
