@@ -1,0 +1,36 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Você sabe o nome dessas frutas em inglês? Teste rápido, vem comigo!"
+  },
+  {
+   "id": "q_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What is this called?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Apple...\n\nMango...\n\nOrange...\n\nGrapes...\n\nStrawberry...\n\nPineapple...\n\nWatermelon...\n\nLemon."
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Maçã...\n\nManga...\n\nLaranja...\n\nUvas...\n\nMorango...\n\nAbacaxi...\n\nMelancia...\n\nLimão."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

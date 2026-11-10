@@ -1,0 +1,119 @@
+{
+ "fundo": "img/fachada.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "beats": [
+  {
+   "tipo": "abertura",
+   "texto": "Seu pedido na padaria 🥖",
+   "audio": [
+    "00_gancho"
+   ],
+   "fundo": "img/fachada.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'd like some bread.",
+   "pron": "/áid LÁIK sâm BRÉD/",
+   "pt": "Eu queria pão.",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/paes.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "A coffee, please.",
+   "pron": "/a CÓ-fi, PLÍIZ/",
+   "pt": "Um café, por favor.",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Is it fresh?",
+   "pron": "/iz it FRÉX/",
+   "pt": "Está fresquinho?",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/vitrine.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Repete olhando só o inglês 👀",
+   "audio": [
+    "regancho"
+   ],
+   "fundo": "img/fachada.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "How much is it?",
+   "pron": "/HÁU MÂTCH iz it/",
+   "pt": "Quanto custa?",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/balcao.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "For here or to go?",
+   "pron": "/for RÍER ór tu GÔU/",
+   "pt": "Pra comer aqui ou pra levar?",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/balcao.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "To go, please.",
+   "pron": "/tu GÔU, PLÍIZ/",
+   "pt": "Pra levar, por favor.",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/balcao.png",
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

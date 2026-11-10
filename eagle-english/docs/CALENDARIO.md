@@ -12,8 +12,8 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | qua 11/11 | 12h | Inglês antes de dormir 🌙 | Repita | "Vai dormir? Vamos falar isso em inglês." (teste B: situação) | salvar | ✅ |
 | qua 11/11 | 19h | Café da manhã ☕ | Flashcard | "Teste rápido! Você sabe dizer isso em inglês?" | placar | ✅ |
 | qui 12/11 | 12h | No aeroporto ✈️ | Repita (mapa real) | "Você chega no aeroporto lá fora… e tudo em inglês." | salvar | ✅ |
-| qui 12/11 | 19h | Frutas 🍎 | Flashcard | "Você sabe o nome desta fruta em inglês?" | placar | 🎬 |
-| sex 13/11 | 12h | Na padaria 🥖 | Repita | "Entrou na padaria? Treine estas frases em inglês." | salvar | 🎬 |
+| qui 12/11 | 19h | Frutas 🍎 | Flashcard | "Você sabe o nome desta fruta em inglês?" | placar | ✅ |
+| sex 13/11 | 12h | Na padaria 🥖 | Repita | "Entrou na padaria? Treine estas frases em inglês." | salvar | ✅ |
 | sex 13/11 | 19h | Quente ou frio? ☕ | Qual você usa? | "Quente ou frio? Qual palavra combina com esta bebida?" | comentar A/B | 🧩 |
 | sáb 14/11 | 12h | Estou com fome 🍽️ | Repita | "Deu fome? Repete estas frases comigo." | salvar | 🎬 |
 | sáb 14/11 | 19h | Prova de inglês: cores 🎨 | Prova (1 a 8) | "Oito cores em inglês: quantas você reconhece?" | placar | 🧩 |

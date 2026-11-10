@@ -1,0 +1,90 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "00_gancho",
+   "lingua": "pt",
+   "texto": "Entrou na padaria? Treine estas frases em inglês."
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'd like some bread."
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Eu queria pão."
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "A coffee, please."
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Um café, por favor."
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Is it fresh?"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Está fresquinho?"
+  },
+  {
+   "id": "regancho",
+   "lingua": "pt",
+   "texto": "Agora, repete olhando só o inglês."
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "How much is it?"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Quanto custa?"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "For here or to go?"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Pra comer aqui ou pra levar?"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "To go, please."
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Pra levar, por favor."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
