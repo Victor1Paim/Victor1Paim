@@ -1,0 +1,3 @@
+semelhança: 99.0%
+insert: roteiro='' voz='o' pos=74
+replace: roteiro='pros' voz='para os' pos=141

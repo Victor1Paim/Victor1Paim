@@ -17,7 +17,7 @@ Estrutura de retenção (uma por vídeo, sem misturar): Contradição · Problem
 | 4 | ✅ Celular antes de dormir faz mal? (produzido 09/11) | Tela na Mão | Bem-estar | A | Contradição | 🟢 | Revisões sobre luz azul/telas e sono; Associação Brasileira do Sono |
 | 5 | ✅ Intestino preso: o que ajuda de verdade (produzido 09/11) | Intestino sem Drama | Comida sem culpa | A | Problema | 🟡 | Guia Alimentar; diretrizes de constipação |
 | 6 | ✅ Grão-de-bico: salada de fibra em 10 minutos (produzido 10/11) | Receita sem moral | Comida sem culpa | R | Evolução | 🟢 | Guia Alimentar (fibras) |
-| 7 | Levantar a cada 30 minutos funciona? | Costas na Cadeira | Movimento possível | A | Escolha | 🟢 | Revisões sobre pausas ativas e comportamento sedentário |
+| 7 | ✅ Levantar a cada 30 minutos funciona? (produzido 10/11) | Costas na Cadeira | Movimento possível | A | Escolha | 🟢 | Revisões sobre pausas ativas e comportamento sedentário |
 | 8 | Respiração 4-7-8 funciona? | Mente sem Nó | Sono e mente | A | Evolução | 🟡 | Revisão sobre respiração diafragmática e estresse |
 | 9 | ✅ Comer à noite engorda? (produzido 10/11) | Mito, contexto e fonte | Mito x verdade | A | Contradição | 🟢 | Revisões de crononutrição |
 | 10 | ✅ Ronco: só barulho ou sinal de alerta? (produzido 10/11) | Mito, contexto e fonte | Sono e mente | A | Jornada | 🟡 | Associação Brasileira do Sono (apneia) |

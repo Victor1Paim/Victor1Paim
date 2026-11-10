@@ -1,0 +1,3 @@
+{"quando": "2026-11-10T19:45:34", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 270, "saida_audio": 1656}, "usd": 0.015039}
+{"quando": "2026-11-10T19:45:42", "etapa": "imagens", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 107, "entrada_imagem": 1024, "saida_imagem": 1756}, "usd": 0.061407}
+{"quando": "2026-11-10T19:49:12", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 268, "saida_audio": 1664}, "usd": 0.01511}
