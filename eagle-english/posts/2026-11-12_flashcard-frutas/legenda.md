@@ -1,14 +1,16 @@
 # Flashcard "Frutas" 🍎 (A1)
 
-STATUS: PRONTO — 64,9 s, voz Achird (pt e en), 8 respostas e 8 traduções conferidas pelo Whisper.
+STATUS: PRONTO (v2, 10/11) — 64,9 s, ABERTURA ANIMADA no estilo da capa (selo DESAFIO, frutas voando e flutuando, faixa
+"Fala antes da resposta!", tudo sai voando antes da 1ª pergunta), fundo de feira, voz Achird (pt e en), 8 respostas e 8 traduções
+conferidas pelo Whisper, -14,1 LUFS. Gancho falado: "Desafio! Oito frutas, três segundos cada. Fala o nome em inglês antes de mim!"
 Vídeo: `video/final.mp4` · Capa: `video/capa.png` · Postar: quinta 12/11 às 19h.
 Gabarito: Apple · Mango · Orange · Grapes · Strawberry · Pineapple · Watermelon · Lemon.
 
 ## Legenda (Instagram e TikTok — formato V3)
 ```
-🍎 Teste das frutas: tente antes da resposta! 8 frutas em inglês, 3 segundos cada.
+🍎 Desafio: 8 frutas em inglês, 3 segundos cada. Fala antes da resposta!
 
-Salva pra praticar depois 📌
+Quantas você acertou? Comenta seu placar 👇
 
 🦅 Siga @eagle.english.br e evolua seu inglês todo dia!
 

@@ -109,5 +109,39 @@
    }
   ]
  },
- "selo": "QUIZ DAS FRUTAS 🍎"
+ "selo": "QUIZ DAS FRUTAS 🍎",
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/feira.png",
+  "selo": "Desafio 🧠",
+  "titulo": "Frutas em\n*inglês* 🍎",
+  "sub": "<b>8 frutas</b> · 3 segundos cada",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": [
+   {
+    "img": "img/apple.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/pineapple.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/strawberry.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/watermelon.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/grapes.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/mango.png",
+    "txt": "?"
+   }
+  ]
+ }
 }
