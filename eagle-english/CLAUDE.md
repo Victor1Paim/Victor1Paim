@@ -44,6 +44,16 @@ pra dentro e flutuam, faixa amarela do DESAFIO pulsa, mascote sobe e fala; nos �
 `templates/abertura.html` + `scripts/abertura.py` (quadro a quadro, 30 fps, ~2,5 min de render). No `flash.json`, a chave
 `"abertura"` substitui a `"intro"` parada (exemplo: `posts/2026-11-12_flashcard-frutas/`). Gancho falado em tom de desafio.
 
+## TESTE: ANÚNCIO UGC DE AFILIADO (10/11/2026)
+
+Bloco de 10–13 s logo depois da abertura, ligado ao tema do vídeo (molde de Natal → "Natal em inglês"). `posts/ugc-molde-natal/`:
+fotos do produto geradas no gpt-image-2 COM as fotos da loja como referência (`imagem_gemini.py --ref a.jpg,b.jpg`), animadas
+por `scripts/montar_ugc.py` (zoom/deslize, tremido de celular, xfade, camada `templates/ugc.html` com PUBLI + aviso de IA).
+Regras: selo PUBLI e #publi, rótulo de conteúdo comercial e de IA no TikTok, nunca "eu comprei/testei", sem medidas/capacidade
+(a página do vendedor se contradiz). Nesse teste o vídeo NÃO leva o CTA do Eagle 350 (CTA = link do produto).
+Veo/Sora: nenhuma das chaves libera modelo de vídeo (10/11); se liberar, trocar o zoom das fotos por clipes animados.
+Pesquisa: `docs/PROMPT_MANUS_UGC_MOLDE.md`.
+
 ## Sempre
 
 - Formato 1080x1920 (9:16), 30 fps, H.264 + AAC. **Duração padrão: 40 s a 1 min 10 s** (a partir das

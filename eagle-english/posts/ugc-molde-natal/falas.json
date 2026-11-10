@@ -1,0 +1,34 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "u1",
+   "lingua": "pt",
+   "texto": "As formas do desafio vieram daqui!"
+  },
+  {
+   "id": "u2",
+   "lingua": "pt",
+   "texto": "Derrete o chocolate e despeja."
+  },
+  {
+   "id": "u3",
+   "lingua": "pt",
+   "texto": "Desenforma inteirinho."
+  },
+  {
+   "id": "u4",
+   "lingua": "pt",
+   "texto": "Seis formas num molde só."
+  },
+  {
+   "id": "u5",
+   "lingua": "pt",
+   "texto": "Vermelho, verde ou cinza. Tá no link do vídeo!"
+  }
+ ]
+}

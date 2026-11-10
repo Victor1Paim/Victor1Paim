@@ -1,0 +1,35 @@
+{
+ "cenas": [
+  {
+   "img": "img/1_mostra.png",
+   "fala": "u1",
+   "texto": "As formas do desafio\nvieram *daqui* 👀",
+   "mov": "in"
+  },
+  {
+   "img": "img/2_despeja.png",
+   "fala": "u2",
+   "texto": "Derrete e *despeja* 🍫",
+   "mov": "out"
+  },
+  {
+   "img": "img/3_desenforma.png",
+   "fala": "u3",
+   "texto": "Desenforma\n*inteirinho* ✨",
+   "mov": "in"
+  },
+  {
+   "img": "img/4_prato.png",
+   "fala": "u4",
+   "texto": "*6 formas* de Natal 🎄",
+   "mov": "esq"
+  },
+  {
+   "img": "img/5_cores.png",
+   "fala": "u5",
+   "texto": "Vermelho, verde\nou *cinza*",
+   "mov": "in",
+   "link": "Link no vídeo 👇"
+  }
+ ]
+}

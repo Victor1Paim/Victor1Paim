@@ -51,6 +51,27 @@ def gerar_openai(prompt, saida, post, proporcao, transparente, modelo):
     return saida
 
 
+def editar_openai(prompt, saida, post, proporcao, refs, modelo):
+    """gpt-image-2 com fotos de referência (images/edits, várias imagens): o produto sai fiel ao real."""
+    import os, time, requests
+    arqs = [("image[]", (Path(r).name, open(r, "rb"), "image/png" if r.endswith(".png") else "image/jpeg")) for r in refs]
+    dados = {"model": modelo, "prompt": prompt, "size": TAMANHO.get(proporcao, "1024x1536"), "quality": QUALIDADE, "n": "1"}
+    for tentativa in range(3):
+        r = requests.post("https://api.openai.com/v1/images/edits", data=dados, files=arqs, timeout=600,
+                          headers={"Authorization": "Bearer " + os.environ.get("OPENAI_API_KEY", "proxy-injected")})
+        if r.status_code in (500, 502, 503, 504) and tentativa < 2:
+            print(f"  erro {r.status_code} da OpenAI; tentando de novo...", flush=True); time.sleep(10)
+            for _, (_, f, _) in arqs: f.seek(0)
+            continue
+        r.raise_for_status(); d = r.json(); break
+    u = d.get("usage", {}); det = u.get("input_tokens_details", {})
+    registrar(post, modelo, "imagem", entrada_texto=det.get("text_tokens", u.get("input_tokens", 0)),
+              entrada_imagem=det.get("image_tokens", 0), saida_imagem=u.get("output_tokens", 0))
+    Path(saida).parent.mkdir(parents=True, exist_ok=True)
+    Path(saida).write_bytes(base64.b64decode(d["data"][0]["b64_json"]))
+    return saida
+
+
 def gerar(prompt, saida, post, proporcao="9:16", ref=None, modelo=MODELO):
     partes = [{"text": prompt}]
     if ref:
@@ -104,7 +125,9 @@ def main():
     if a.verde:  # gpt-image-2 não aceita background=transparent: fundo verde + recorte
         prompt += (" Place the character alone on a perfectly flat, solid pure green background (#00FF00), "
                    "no shadow on the background, no floor, no other objects, no text.")
-    if a.modelo.startswith("gpt"):
+    if a.modelo.startswith("gpt") and a.ref:   # --ref a.jpg,b.jpg: referências do produto
+        editar_openai(prompt, a.saida, a.post, a.proporcao, a.ref.split(","), a.modelo)
+    elif a.modelo.startswith("gpt"):
         gerar_openai(prompt, a.saida, a.post, a.proporcao, False, a.modelo)
     else:
         gerar(prompt, a.saida, a.post, a.proporcao, a.ref, a.modelo)
