@@ -42,7 +42,7 @@ Duração: **40 s a 1 min 10 s** (padrão desde 08/11/2026; os vídeos de 30–4
 | Sermão x Realidade | 60–90s | Conselho exagerado comparado com a evidência |
 | Série em partes | 2 × 60–90s | Tema grande dividido em Parte 1 e Parte 2 |
 
-Estrutura base:
+Estrutura base (detalhada por tipo em `guia-de-retencao.md`: cada vídeo declara 1 das 5 estruturas de retenção):
 1. **0–3s:** gancho (o conselho que todo mundo ouve, ou uma contradição). Sem "olá".
 2. **3–10s:** a dúvida que o vídeo resolve.
 3. **Meio:** 2–4 beats, cada um com uma informação nova.

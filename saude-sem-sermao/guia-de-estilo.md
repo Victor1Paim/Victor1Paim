@@ -20,6 +20,8 @@ Extraído em 08/11/2026 dos vídeos publicados **002 "Treinar 2× por semana adi
 
 ## 2. Estrutura do vídeo
 
+> **Desde 10/11/2026, a estrutura e o ritmo de cada roteiro seguem `guia-de-retencao.md`** (uma das 5 estruturas por vídeo: Contradição, Problema, Escolha, Evolução, Jornada; pergunta aberta nos 3 s; virada perto de 70%; fecho que ecoa o gancho). A tabela abaixo continua valendo para visual, papéis e CTA.
+
 **Duração padrão a partir das próximas produções: 40 s a 1 min 10 s.** Estrutura detalhada, ganchos e o porquê de cada regra: `pesquisa-hooks-e-cta.md` (08/11/2026). A tabela abaixo é o formato dos vídeos já publicados; as mudanças valem do próximo vídeo em diante.
 
 **Regras novas de gancho:** fala do gancho em até 2 s, texto do gancho e imagem forte já no quadro 1, Tito com a objeção até os 5 s, 3 ganchos de fórmulas diferentes por roteiro antes de escolher, nova informação ou pergunta a cada 10–15 s e mudança visual a cada 2–4 s; em vídeos acima de 55 s, o Tito pergunta 2× no meio.
