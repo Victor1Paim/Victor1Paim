@@ -20,7 +20,7 @@ Estrutura de retenção (uma por vídeo, sem misturar): Contradição · Problem
 | 7 | Levantar a cada 30 minutos funciona? | Costas na Cadeira | Movimento possível | A | Escolha | 🟢 | Revisões sobre pausas ativas e comportamento sedentário |
 | 8 | Respiração 4-7-8 funciona? | Mente sem Nó | Sono e mente | A | Evolução | 🟡 | Revisão sobre respiração diafragmática e estresse |
 | 9 | ✅ Comer à noite engorda? (produzido 10/11) | Mito, contexto e fonte | Mito x verdade | A | Contradição | 🟢 | Revisões de crononutrição |
-| 10 | Ronco: só barulho ou sinal de alerta? | Mito, contexto e fonte | Sono e mente | A | Jornada | 🟡 | Associação Brasileira do Sono (apneia) |
+| 10 | ✅ Ronco: só barulho ou sinal de alerta? (produzido 10/11) | Mito, contexto e fonte | Sono e mente | A | Jornada | 🟡 | Associação Brasileira do Sono (apneia) |
 
 ## Lote 2 (fim de novembro, 27/11 Dia Nacional de Combate ao Câncer)
 | # | Tema | Série | Pilar | Fmt | Estrutura | Risco | Fonte |
