@@ -1,70 +1,77 @@
 {
-  "_sobre": "Preços em USD por 1M de tokens (camada paga, modo Standard). Conferidos em 08/11/2026 nas páginas oficiais. Atualizar quando mudarem e trocar a data.",
-  "_fontes": {
-    "gemini": "https://ai.google.dev/gemini-api/docs/pricing",
-    "openai": "https://platform.openai.com/docs/pricing"
+ "_sobre": "Preços em USD por 1M de tokens (camada paga, modo Standard). Conferidos em 08/11/2026 nas páginas oficiais. Atualizar quando mudarem e trocar a data.",
+ "_fontes": {
+  "gemini": "https://ai.google.dev/gemini-api/docs/pricing",
+  "openai": "https://platform.openai.com/docs/pricing"
+ },
+ "conferido_em": "2026-11-08",
+ "cambio_brl_por_usd": 5.4,
+ "_cambio": "Câmbio aproximado para mostrar em reais; ajustar quando quiser.",
+ "modelos": {
+  "gemini-3.8-flash-tts": {
+   "entrada_texto": 0.5,
+   "saida_audio": 9.0,
+   "obs": "até 31/12/2026; a partir de 01/01/2027: 1.00 / 18.00. 25 tokens de áudio por segundo."
   },
-  "conferido_em": "2026-11-08",
-  "cambio_brl_por_usd": 5.4,
-  "_cambio": "Câmbio aproximado para mostrar em reais; ajustar quando quiser.",
-  "modelos": {
-    "gemini-3.8-flash-tts": {
-      "entrada_texto": 0.5,
-      "saida_audio": 9.0,
-      "obs": "até 31/12/2026; a partir de 01/01/2027: 1.00 / 18.00. 25 tokens de áudio por segundo."
-    },
-    "gemini-3.8-flash-lite-tts": {
-      "entrada_texto": 0.5,
-      "saida_audio": 9.0,
-      "obs": "conferir valores de 2027 na página"
-    },
-    "gemini-2.5-flash-preview-tts": {
-      "entrada_texto": 0.5,
-      "saida_audio": 10.0
-    },
-    "gemini-2.5-pro-preview-tts": {
-      "entrada_texto": 1.0,
-      "saida_audio": 20.0
-    },
-    "gpt-image-2": {
-      "entrada_texto": 5.0,
-      "entrada_imagem": 8.0,
-      "saida_imagem": 30.0,
-      "obs": "Standard; Batch custa metade"
-    },
-    "gpt-image-2.5-sunburst": {
-      "entrada_texto": 5.0,
-      "entrada_imagem": 8.0,
-      "saida_imagem": 30.0
-    },
-    "gpt-image-2.5-flare": {
-      "entrada_texto": 5.0,
-      "entrada_imagem": 8.0,
-      "saida_imagem": 30.0
-    },
-    "gpt-image-2.6-sunburst": {
-      "entrada_texto": 5.0,
-      "entrada_imagem": 8.0,
-      "saida_imagem": 30.0
-    },
-    "gpt-image-2.6-flare": {
-      "entrada_texto": 5.0,
-      "entrada_imagem": 8.0,
-      "saida_imagem": 30.0
-    },
-    "gemini-2.5-flash-image": {
-      "entrada_texto": 0.3,
-      "saida_imagem": 30.0,
-      "obs": "~1290 tokens por imagem (~US$ 0,039). Conferir na página de preços."
-    },
-    "gpt-4o-mini-tts": {
-      "minuto_audio": 0.015,
-      "obs": "Estimativa da OpenAI: ~US$ 0,015 por minuto de áudio (texto US$ 0,60/1M + áudio US$ 12/1M tokens). Conferir na página de preços."
-    }
+  "gemini-3.8-flash-lite-tts": {
+   "entrada_texto": 0.5,
+   "saida_audio": 9.0,
+   "obs": "conferir valores de 2027 na página"
   },
-  "gratis": [
-    "whisper local (openai-whisper)",
-    "ffmpeg",
-    "Remotion/HyperFrames render local"
-  ]
+  "gemini-2.5-flash-preview-tts": {
+   "entrada_texto": 0.5,
+   "saida_audio": 10.0
+  },
+  "gemini-2.5-pro-preview-tts": {
+   "entrada_texto": 1.0,
+   "saida_audio": 20.0
+  },
+  "gpt-image-2": {
+   "entrada_texto": 5.0,
+   "entrada_imagem": 8.0,
+   "saida_imagem": 30.0,
+   "obs": "Standard; Batch custa metade"
+  },
+  "gpt-image-2.5-sunburst": {
+   "entrada_texto": 5.0,
+   "entrada_imagem": 8.0,
+   "saida_imagem": 30.0
+  },
+  "gpt-image-2.5-flare": {
+   "entrada_texto": 5.0,
+   "entrada_imagem": 8.0,
+   "saida_imagem": 30.0
+  },
+  "gpt-image-2.6-sunburst": {
+   "entrada_texto": 5.0,
+   "entrada_imagem": 8.0,
+   "saida_imagem": 30.0
+  },
+  "gpt-image-2.6-flare": {
+   "entrada_texto": 5.0,
+   "entrada_imagem": 8.0,
+   "saida_imagem": 30.0
+  },
+  "gemini-2.5-flash-image": {
+   "entrada_texto": 0.3,
+   "saida_imagem": 30.0,
+   "obs": "~1290 tokens por imagem (~US$ 0,039). Conferir na página de preços."
+  },
+  "gpt-4o-mini-tts": {
+   "minuto_audio": 0.015,
+   "obs": "Estimativa da OpenAI: ~US$ 0,015 por minuto de áudio (texto US$ 0,60/1M + áudio US$ 12/1M tokens). Conferir na página de preços."
+  },
+  "gemini-omni-1.2-flash": {
+   "entrada_texto": 1.5,
+   "entrada_imagem": 1.5,
+   "saida_texto": 9.0,
+   "saida_video": 12.0,
+   "_nota": "vídeo 720p = 5.792 tokens/s (~US$ 0,07/s); pensamento cobrado como saída de texto. aistudio.google.com/docs/pricing, 10/11/2026"
+  }
+ },
+ "gratis": [
+  "whisper local (openai-whisper)",
+  "ffmpeg",
+  "Remotion/HyperFrames render local"
+ ]
 }
