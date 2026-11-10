@@ -1,0 +1,11 @@
+{
+ "fundo": "img/sala.png",
+ "selo": "Parte 2",
+ "titulo": "A ceia de Natal\nem *inglês* 🎄",
+ "sub": "<b>6 frases</b> pra usar na sua ceia",
+ "balao": {
+  "en": "Merry Christmas!",
+  "pron": "/MÉ-ri KRÍS-mâs/",
+  "lado": "dir"
+ }
+}

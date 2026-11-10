@@ -1,0 +1,95 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Parte dois! A águia vai pra uma ceia de Natal, e só pode falar inglês. Será que ela consegue?"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Merry Christmas!"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Feliz Natal!"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "This is for you!"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Isto é pra você!"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Thank you, I love it!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Obrigado, eu amei!"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm full, thank you!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Estou satisfeito, obrigado!"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Mas aí… ofereceram mais comida, e ela já estava cheia!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Cheers!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Saúde!"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Happy New Year!"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Feliz Ano Novo!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Chegou desejando feliz Natal e saiu desejando feliz Ano Novo. Ela conseguiu! Salva pra usar na sua ceia."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E o molde do chocolate da ceia tá no produto vinculado ao vídeo!"
+  }
+ ]
+}

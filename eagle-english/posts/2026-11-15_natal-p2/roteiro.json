@@ -1,0 +1,121 @@
+{
+ "fundo": "img/sala.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.9,
+ "publi": "../ugc-molde-natal/video/ugc10_p2.mp4",
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/sala.png",
+  "selo": "Parte 2 🎁",
+  "titulo": "A ceia de Natal\nem *inglês* 🎄",
+  "sub": "<b>6 frases</b> · do começo ao fim",
+  "desafio": "Ela consegue? 👀",
+  "figuras": [
+   {
+    "img": "img/porta.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/mesa.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/brinde.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/fogos.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "Merry Christmas!",
+   "pron": "/MÉ-ri KRÍS-mâs/",
+   "pt": "Feliz Natal!",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/porta.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "This is for you!",
+   "pron": "/THIS iz for IÚ/",
+   "pt": "Isto é pra você!",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Thank you, I love it!",
+   "pron": "/THÉNK iú, ái LÂV it/",
+   "pt": "Obrigado, eu amei!",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Mas aí… mais comida! 😅",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm full, thank you!",
+   "pron": "/áim FÚL, THÉNK iú/",
+   "pt": "Estou satisfeito, obrigado!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Cheers!",
+   "pron": "/TCHÍRZ/",
+   "pt": "Saúde!",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/brinde.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Happy New Year!",
+   "pron": "/RÉ-pi NIÚ ÍIR/",
+   "pt": "Feliz Ano Novo!",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt",
+   "fundo": "img/fogos.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Ela conseguiu! 🎉\nSalva pra sua ceia 📌",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/fogos.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/sala.png",
+   "telas": [
+    [
+     "*Molde natalino* 🎄",
+     "img/prato.png"
+    ],
+    [
+     "*Link do produto* no vídeo 👇",
+     "img/cores.png"
+    ]
+   ]
+  }
+ ]
+}
