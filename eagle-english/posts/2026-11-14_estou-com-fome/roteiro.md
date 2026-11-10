@@ -7,9 +7,9 @@ GANCHO (0–3s):
 - Na tela: "Hungry → ? 🍽️" + mascote grande no centro
 
 DESENVOLVIMENTO (a frase vai ganhando peças na tela; cada passo com pausa para repetir + tradução falada):
-1. "Hungry." /RÂN-gri/ · Com fome. (~6 s)
-2. "I'm hungry." /áim RÂN-gri/ · Estou com fome. (~6 s)
-3. "I'm so hungry!" /áim SÔU RÂN-gri/ · Estou com muita fome! (~6 s)
+1. "Hungry." /HÂN-gri/ · Com fome. (~6 s)
+2. "I'm hungry." /áim HÂN-gri/ · Estou com fome. (~6 s)
+3. "I'm so hungry!" /áim SÔU HÂN-gri/ · Estou com muita fome! (~6 s)
 4. "I'm so hungry. Let's eat!" /… LÉTS ÍIT/ · Estou morrendo de fome. Vamos comer! (~7 s)
 
 VIRADA (~70%):
@@ -23,6 +23,6 @@ FECHO:
 - Na tela: as 5 versões empilhadas, da menor para a maior.
 
 NOTAS DE PRODUÇÃO: cenários que evoluem junto (sofá → cozinha vazia → geladeira aberta → mesa posta); selo "1/5…5/5";
-efeito de "encaixe" quando entra a peça nova; pronúncia: hungry = /RÂN-gri/ (h aspirado como R brasileiro de "rato").
+efeito de "encaixe" quando entra a peça nova; pronúncia igual ao V3: hungry = /HÂN-gri/.
 CHECKLIST: [x] estrutura única [x] pergunta em 3 s [x] meio sem entregar [x] virada ~70% [x] fecho responde e ecoa
 [x] número cumprido (5 passos) [x] CTA depois [x] frases úteis [x] gancho honesto
