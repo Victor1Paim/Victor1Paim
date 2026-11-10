@@ -54,6 +54,26 @@
                   border-radius:30px; border:6px solid #fff; box-shadow:0 10px 30px rgba(0,0,0,.35); }
   .preco .prazo { background:var(--vermelho); color:#fff; font-family:"Poppins"; font-weight:800; font-size:34px; padding:8px 24px;
                   border-radius:14px; transform:rotate(-3deg); }
+  /* formato "Qual você usa?" (escolha A×B): cena num cartão, 2 opções, contagem, revelação */
+  .cena { position:absolute; left:50%; transform:translateX(-50%); top:250px; width:700px; height:540px; background:#fff;
+          border:7px solid var(--marinho); border-radius:40px; display:flex; align-items:center; justify-content:center;
+          box-shadow:0 14px 40px rgba(0,0,0,.35); }
+  .cena img { max-width:86%; max-height:86%; }
+  .ops { position:absolute; left:80px; right:80px; top:830px; display:flex; gap:40px; }
+  .op { flex:1; position:relative; background:var(--creme); border:7px solid var(--marinho); border-radius:30px; text-align:center;
+        font-family:"Poppins"; font-weight:900; font-size:72px; color:var(--marinho); padding:18px 6px 14px; letter-spacing:-0.02em;
+        box-shadow:0 10px 26px rgba(0,0,0,.3); white-space:nowrap; }
+  .op i { position:absolute; left:50%; top:-30px; transform:translateX(-50%); font-style:normal; background:var(--marinho); color:#fff;
+          font-size:34px; width:56px; height:56px; line-height:56px; border-radius:50%; border:4px solid #fff; }
+  .op.certa { background:var(--amarelo); border-color:#111; color:#111; transform:scale(1.06); }
+  .op.certa i { background:#1f9d3a; }
+  .op.errada { background:#d9d9d9; color:#777; text-decoration:line-through; text-decoration-color:var(--vermelho); text-decoration-thickness:8px; }
+  .op.errada i { background:var(--vermelho); }
+  .conta { position:absolute; left:780px; top:190px; width:170px; height:170px; border-radius:50%; background:var(--vermelho);
+           border:8px solid #fff; color:#fff; font-family:"Oswald"; font-weight:700; font-size:120px; line-height:146px; text-align:center;
+           box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .leg.baixa { top:1030px; }
+  .leg.baixa .en { font-size:70px; } .leg.baixa .pron { font-size:36px; margin-top:8px; } .leg.baixa .pt { font-size:54px; margin-top:8px; }
 </style></head>
 <body>
 <div id="fundo"></div><div id="topo"></div>
@@ -64,7 +84,7 @@ document.getElementById("fundo").style.backgroundImage = d.fundo ? `url('${d.fun
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
 let h = "";
-if (d.tipo === "abertura") h = `<div class="leg"><div class="branco">${esc(d.texto)}</div></div>`;
+if (d.tipo === "abertura") h = `<div class="leg"><div class="branco">${esc(d.texto).replace(/\n/g, "<br>")}</div></div>`;
 else if (d.tipo === "frase") h = `${d.progresso ? `<div class="prog">${esc(d.progresso)}</div>` : ""}<div class="leg"><div class="en">${esc(d.en)}</div>
      ${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}${d.mostrar_pt && d.pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>`;
 else if (d.tipo === "ponte") h = `<div class="cartao">${red(d.texto).replace(/\n/g, "<br>")}</div>`;
@@ -79,10 +99,16 @@ else if (d.tipo === "preco") { h = `<div class="tag">${red(d.tag)}</div><div cla
        <div class="chips">${d.chips.map(c=>`<div class="chip">${esc(c)}</div>`).join("")}</div>
        ${d.prazo ? `<div class="prazo">${esc(d.prazo)}</div>` : ""}
        <div class="botao">Link na bio 👆</div></div>`; document.getElementById("topo").style.display = "none"; }
+else if (d.tipo === "escolha") { const ok = d.estado === "revela";
+  const op = (k, txt) => `<div class="op ${ok ? (d.certa === k ? "certa" : "errada") : ""}"><i>${ok ? (d.certa === k ? "✓" : "✗") : k.toUpperCase()}</i>${esc(txt)}</div>`;
+  h = `${d.progresso ? `<div class="prog">${esc(d.progresso)}</div>` : ""}<div class="cena"><img src="${d.img}"></div>
+       <div class="ops">${op("a", d.a)}${op("b", d.b)}</div>${d.num ? `<div class="conta">${esc(d.num)}</div>` : ""}
+       ${d.en ? `<div class="leg baixa" data-max="250"><div class="en">${esc(d.en)}</div>${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}
+       ${d.mostrar_pt && d.pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>` : ""}`; }
 document.getElementById("c").innerHTML = h;
 // encolhe a legenda até caber acima da cabeça do mascote (topo do bloco em 260 px, limite 520 px de altura)
 const leg = document.querySelector(".leg");
-if (leg) document.fonts.ready.then(() => { let f = 1; while (leg.offsetHeight > 520 && f > 0.6) { f -= 0.04;
+if (leg) document.fonts.ready.then(() => { let f = 1; const lim = +(leg.dataset.max || 520); while (leg.offsetHeight > lim && f > 0.5) { f -= 0.04;
   leg.querySelectorAll("div").forEach(el => { el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * (f / (f + 0.04))) + "px"; }); } });
 </script>
 </body></html>

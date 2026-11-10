@@ -13,6 +13,8 @@ roteiro.json:
     {"tipo": "frase", "en": "…", "pron": "/…/", "pt": "…", "audio_en": "f1_en", "audio_pt": "f1_pt"},
     {"tipo": "ponte", "texto": "Não sei se você *ficou sabendo*,\\nmas …", "audio": ["ponte"]},
     {"tipo": "produto", "audio": ["produto"], "telas": [["O *Eagle 350*", "ebook_capa"], ["350 mapas · *35 situações*", "mapa_x"]]},
+    {"tipo": "escolha", "img": "img/cafe.png", "a": "hot", "b": "cold", "certa": "a", "audio_q": "q1",
+     "en": "The coffee is hot.", "pron": "/…/", "pt": "…", "audio_en": "r1_en", "audio_pt": "r1_pt"},   # "Qual você usa?"
     {"tipo": "oferta", "audio": "original"}   # ou o id de uma fala nossa (o vídeo da oferta fica mudo)
   ]
 }
@@ -33,6 +35,7 @@ MASC = PROJ / "assets" / "mascote" / "oficial"
 OFERTA = PROJ / "assets" / "marca" / "fechamento_oferta.mp4"
 GRANDE = (860, 1730)   # altura do mascote, linha do chão (y) — centro da tela
 PEQUENO = (400, 1560)  # altura, chão — canto inferior esquerdo
+MEDIO = (380, 1640)    # altura, chão — centro, abaixo da legenda (formato "Qual você usa?")
 
 
 def pagina(post, nome):
@@ -87,6 +90,8 @@ def main(pasta, previa=False):
     r = json.loads((post / "roteiro.json").read_text())
     vozes = preparar_vozes(post, r, r.get("velocidade_pt", 1.0))
     fundo = (post / r.get("fundo", "img/fundo.png")).as_uri()
+    from montar_quiz import sfx
+    fx = sfx(); efeitos = []   # tique/ding: entram no áudio, mas não abrem o bico do mascote
     especs, cenas, sons, janelas = [], [], [], []   # janelas do mascote: (inicio, fim, "grande"/"pequeno")
     t, oferta = 0.0, None
 
@@ -117,6 +122,27 @@ def main(pasta, previa=False):
             fim = falar([b["audio_pt"]], ini_pt) if b.get("audio_pt") else ini_pt + 1.2
             d2 = fim - ini_pt + 0.3
             cenas.append((c, d2)); janelas.append((t, t + d1 + d2, "grande")); t += d1 + d2
+        elif tp == "escolha":   # cena → A×B → contagem 3-2-1 → revela → frase em inglês → tradução
+            ne = sum(1 for x in r["beats"][:n + 1] if x["tipo"] == "escolha")
+            te = sum(1 for x in r["beats"] if x["tipo"] == "escolha")
+            base = {"tipo": "escolha", "img": (post / b["img"]).as_uri(), "a": b["a"], "b": b["b"], "certa": b["certa"],
+                    "progresso": f"{ne}/{te}"}
+            t0 = t
+            fim = falar(b["audio_q"] if isinstance(b["audio_q"], list) else [b["audio_q"]], t + 0.1)
+            nome = f"{n:02d}_esc_q"; especs.append((nome, base)); d = fim - t + 0.2; cenas.append((nome, d)); t += d
+            for k in (3, 2, 1):
+                nome = f"{n:02d}_esc_{k}"; especs.append((nome, {**base, "num": str(k)}))
+                efeitos.append((fx["tique"], t, 0.8)); cenas.append((nome, r.get("segundos_contagem", 0.7)))
+                t += r.get("segundos_contagem", 0.7)
+            rv = {**base, "estado": "revela"}
+            nome = f"{n:02d}_esc_rv"; especs.append((nome, rv)); efeitos.append((fx["ding"], t, 0.7))
+            cenas.append((nome, 0.5)); t += 0.5
+            frase = {**rv, "en": b["en"], "pron": b.get("pron"), "pt": b.get("pt")}
+            nome = f"{n:02d}_esc_en"; especs.append((nome, frase))
+            fim = falar([b["audio_en"]], t + 0.05); d = fim - t + 0.2 + r.get("pausa_repetir", 0); cenas.append((nome, d)); t += d
+            nome = f"{n:02d}_esc_pt"; especs.append((nome, {**frase, "mostrar_pt": True}))
+            fim = falar([b["audio_pt"]], t); d = fim - t + 0.3; cenas.append((nome, d)); t += d
+            janelas.append((t0, t, "medio"))
         elif tp == "produto":
             fim = falar(b["audio"], t + 0.1); total = fim - t + 0.3
             telas = b["telas"]; cada = total / len(telas)
@@ -145,12 +171,15 @@ def main(pasta, previa=False):
     folha = Image.new("RGB", (cols * 270, lin * 480), "white")
     for i, (nm, dados) in enumerate(especs):
         im = Image.open(q / f"{nm}.png").convert("RGBA")
-        h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else GRANDE
+        h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else MEDIO if dados["tipo"] == "escolha" else GRANDE
         m = mf.resize((int(mf.width * h / mf.height), h))
         x = 20 if dados["tipo"] in ("produto", "kit", "preco") else (1080 - m.width) // 2
         im.alpha_composite(m, (x, chao - h))
         folha.paste(im.convert("RGB").resize((270, 480)), ((i % cols) * 270, (i // cols) * 480))
     folha.save(post / "video" / "contato.jpg", quality=85)
+    capa = Image.open(q / f"{especs[0][0]}.png").convert("RGBA")
+    h, chao = GRANDE; m = mf.resize((int(mf.width * h / mf.height), h))
+    capa.alpha_composite(m, ((1080 - m.width) // 2, chao - h)); capa.convert("RGB").save(post / "video" / "capa.png")
     if previa:
         print(f"prévia: {len(especs)} quadros, ~{t:.1f} s + oferta -> video/contato.jpg"); return
 
@@ -167,12 +196,12 @@ def main(pasta, previa=False):
     abertos = boca_aberta(sons, t)
     ent = ["-i", str(base)]
     fc, ultimo, k = [], "[0:v]", 1
-    for tam in ("grande", "pequeno"):
+    for tam in ("grande", "pequeno", "medio"):
         js = [j for j in janelas if j[2] == tam]
         if not js:
             continue
-        h, chao = GRANDE if tam == "grande" else PEQUENO
-        x = "(W-w)/2" if tam == "grande" else "20"
+        h, chao = {"grande": GRANDE, "pequeno": PEQUENO, "medio": MEDIO}[tam]
+        x = "20" if tam == "pequeno" else "(W-w)/2"
         y = f"{chao}-h+6*sin(2*PI*t*0.9)"
         dentro = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b, _ in js)
         abre = "+".join(f"between(t,{a},{b})" for a, b in abertos
@@ -187,6 +216,7 @@ def main(pasta, previa=False):
 
     # áudio das falas
     ent, fil = [], []
+    sons = sons + efeitos
     for i, (arq, ini, vol) in enumerate(sons):
         ent += ["-i", str(arq)]; ms = int(round(ini * 1000))
         fil.append(f"[{i}:a]aresample={SR},aformat=channel_layouts=mono,volume={vol},adelay={ms}|{ms}[s{i}]")

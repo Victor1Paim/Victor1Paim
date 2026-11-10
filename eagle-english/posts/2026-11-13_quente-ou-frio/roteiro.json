@@ -1,0 +1,128 @@
+{
+ "fundo": "img/fundo.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.6,
+ "segundos_contagem": 0.5,
+ "beats": [
+  {
+   "tipo": "abertura",
+   "texto": "Hot ou cold? 🔥❄️\n5 rodadas",
+   "audio": [
+    "00_gancho"
+   ]
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/cafe.png",
+   "a": "hot",
+   "b": "cold",
+   "certa": "a",
+   "audio_q": "q1",
+   "en": "The coffee is hot.",
+   "pron": "/the CÓ-fi iz HÓT/",
+   "pt": "O café está quente.",
+   "audio_en": "r1_en",
+   "audio_pt": "r1_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/sorvete.png",
+   "a": "hot",
+   "b": "cold",
+   "certa": "b",
+   "audio_q": "q2",
+   "en": "The ice cream is cold.",
+   "pron": "/thi ÁIS KRÍIM iz KÔULD/",
+   "pt": "O sorvete está gelado.",
+   "audio_en": "r2_en",
+   "audio_pt": "r2_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/praia.png",
+   "a": "hot",
+   "b": "cold",
+   "certa": "a",
+   "audio_q": "q3",
+   "en": "It's so hot today!",
+   "pron": "/its SÔU HÓT tu-DÊI/",
+   "pt": "Está muito quente hoje!",
+   "audio_en": "r3_en",
+   "audio_pt": "r3_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/banho.png",
+   "a": "cold",
+   "b": "warm",
+   "certa": "b",
+   "audio_q": "q4",
+   "en": "The water is warm.",
+   "pron": "/the UÓ-ter iz UÓRM/",
+   "pt": "A água está morna.",
+   "audio_en": "r4_en",
+   "audio_pt": "r4_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/neve.png",
+   "a": "cold",
+   "b": "freezing",
+   "certa": "b",
+   "audio_q": "q5",
+   "en": "It's freezing!",
+   "pron": "/its FRÍI-zin/",
+   "pt": "Está congelando!",
+   "audio_en": "r5_en",
+   "audio_pt": "r5_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "hot · cold · warm · freezing\nQuantas você acertou? 👇",
+   "audio": [
+    "fecho"
+   ]
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

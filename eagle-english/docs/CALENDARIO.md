@@ -14,7 +14,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | qui 12/11 | 12h | No aeroporto ✈️ | Repita (mapa real) | Jornada | "Você chega no aeroporto lá fora… e tudo em inglês." | salvar | ✅ |
 | qui 12/11 | 19h | Frutas 🍎 | Flashcard | Escolha | "Você sabe o nome desta fruta em inglês?" | placar | ✅ |
 | sex 13/11 | 12h | Na padaria 🥖 | Repita | Problema | "Entrou na padaria? Treine estas frases em inglês." | salvar | ✅ |
-| sex 13/11 | 19h | Quente ou frio? ☕ | Qual você usa? | Escolha | "Quente ou frio? Qual palavra combina com esta bebida?" | comentar A/B | 🧩 |
+| sex 13/11 | 19h | Quente ou frio? ☕ | Qual você usa? | Escolha | "Quente ou frio? Qual palavra combina com esta bebida?" | comentar A/B | ✅ |
 | sáb 14/11 | 12h | Estou com fome 🍽️ | Repita | Evolução | "Deu fome? Repete estas frases comigo." | salvar | 🎬 |
 | sáb 14/11 | 19h | Prova de inglês: cores 🎨 | Prova (1 a 8) | Escolha | "Oito cores em inglês: quantas você reconhece?" | placar | 🧩 |
 | dom 15/11 | 12h | Objetos do quarto 🛏️ | Lista com emoji | Evolução | "Vamos arrumar o quarto e praticar inglês juntos?" | comentar palavra | 🧩 |
@@ -51,7 +51,7 @@ Comparar os resultados POR ESTRUTURA depois de 2 semanas.
 - Teste de gancho da semana 1: Sua manhã (pergunta) × Antes de dormir (situação).
 
 ## Produção
-- 4 prontos; 24 a produzir. Formatos novos (Qual você usa?, Prova, Lista com emoji): construir os templates na
+- 9 prontos. "Qual você usa?" já tem template (`montar_padrao.py`, beat "escolha"). Formatos novos (Prova, Lista com emoji): construir os templates na
   semana 1, antes de 13/11.
 - Ritmo: produzir sempre os 2 vídeos do dia seguinte, com vídeo + capa + legenda + comentário fixado entregues até
   o fim da tarde da véspera.

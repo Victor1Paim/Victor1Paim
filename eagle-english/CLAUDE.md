@@ -87,6 +87,9 @@ Pronúncia: `pronuncia.json` → `python3 scripts/montar_pronuncia.py <post>` (g
 Escada de velocidade: `escada.json` → `python3 scripts/montar_escada.py <post>` (lenta/normal/nativo por atempo).
 Flashcard "What is this called?" (ref. R1): `flash.json` → `python3 scripts/montar_flash.py <post>` (template `flash.html`;
 as respostas podem vir numa fala só, cortada nas pausas; figuras numa grade 2x4 gerada de uma vez e recortada).
+"Qual você usa?" (A×B, estrutura Escolha): beat `"escolha"` no `roteiro.json` do `montar_padrao.py` (img branca da cena num cartão,
+opções A/B só em inglês, contagem 3-2-1 com tique, revela com ding, frase en + tradução; mascote médio embaixo). Exemplo:
+`posts/2026-11-13_quente-ou-frio/`. Cabe em 70 s com 5 rodadas se as perguntas faladas forem curtas.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas

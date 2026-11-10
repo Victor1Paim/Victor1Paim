@@ -1,0 +1,104 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "00_gancho",
+   "lingua": "pt",
+   "texto": "Quente ou frio? Cinco cenas. Escolhe antes de mim!"
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Café fumegando. Qual combina?"
+  },
+  {
+   "id": "r1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "The coffee is hot."
+  },
+  {
+   "id": "r1_pt",
+   "lingua": "pt",
+   "texto": "O café está quente."
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "E o sorvete?"
+  },
+  {
+   "id": "r2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "The ice cream is cold."
+  },
+  {
+   "id": "r2_pt",
+   "lingua": "pt",
+   "texto": "O sorvete está gelado."
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Praia, sol forte."
+  },
+  {
+   "id": "r3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's so hot today!"
+  },
+  {
+   "id": "r3_pt",
+   "lingua": "pt",
+   "texto": "Está muito quente hoje!"
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Agora a que pega: a água do banho. Nem quente, nem fria."
+  },
+  {
+   "id": "r4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "The water is warm."
+  },
+  {
+   "id": "r4_pt",
+   "lingua": "pt",
+   "texto": "A água está morna."
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "A última: neve!"
+  },
+  {
+   "id": "r5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's freezing!"
+  },
+  {
+   "id": "r5_pt",
+   "lingua": "pt",
+   "texto": "Está congelando!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Quente, frio, morno e congelando: quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
