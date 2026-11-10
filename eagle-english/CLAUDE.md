@@ -52,7 +52,12 @@ por `scripts/montar_ugc.py` (zoom/deslize, tremido de celular, xfade, camada `te
 Regras: selo PUBLI e #publi, rótulo de conteúdo comercial e de IA no TikTok, nunca "eu comprei/testei", sem medidas/capacidade
 (a página do vendedor se contradiz). Nesse teste o vídeo NÃO leva o CTA do Eagle 350 (CTA = link do produto).
 Veo/Sora: nenhuma das chaves libera modelo de vídeo (10/11); se liberar, trocar o zoom das fotos por clipes animados.
-Pesquisa: `docs/PROMPT_MANUS_UGC_MOLDE.md`.
+Pesquisa: `docs/PROMPT_MANUS_UGC_MOLDE.md` → resultado `docs/pesquisas/manus-ugc-molde-natal-2026-11-10.pdf`:
+ângulo família > lembrancinhas > versatilidade (sem "renda extra"/"parece de confeitaria"); publi de 8–10 s dentro da aula;
+volta: "Agora, vamos descobrir essas formas em inglês!"; CTA "Toque no produto vinculado ao vídeo"; legenda com #publi +
+comissão + "Algumas imagens deste vídeo foram geradas por IA". TikTok Shop BR proíbe demonstração falsa: molde idêntico ao
+real em toda cena sintética e resultado final com as fotos reais da loja. Roteiros: `posts/2026-11-14_natal-p1/` e `-15_natal-p2/`.
+Vídeo (Veo): pelo Flow (`docs/FLOW_PROMPTS_MOLDE.md`) ou API quando a chave liberar.
 
 ## Sempre
 
