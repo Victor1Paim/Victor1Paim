@@ -53,7 +53,7 @@ def main(pasta):
     if c.get("audio_respostas"):
         resps = cortar_respostas(vozes[c["audio_respostas"]][0], len(itens), post / "audio" / "_mix")
     else:
-        resps = [vozes[i["audio_resposta"]] for i in itens]
+        resps = [vozes[i["audio_resposta"]] for i in itens]   # uma fala por item (ex.: série em partes)
     aberta, fechada = (MASC / "boca_aberta.png").as_uri(), (MASC / "boca_fechada.png").as_uri()
     conta = c.get("segundos_contagem", 0.8)
     especs, cenas, sons, t = [], [], [], 0.0
@@ -62,7 +62,7 @@ def main(pasta):
     if c.get("audio_traducoes"):
         trads = cortar_respostas(vozes[c["audio_traducoes"]][0], len(itens), post / "audio" / "_mix", "trad")
     else:
-        trads = [None] * len(itens)
+        trads = [vozes[i["audio_traducao"]] if i.get("audio_traducao") else None for i in itens]
 
     # ABERTURA em português: mascote grande no centro, bico abrindo com a voz
     it0 = c.get("intro")
