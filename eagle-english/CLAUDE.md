@@ -39,6 +39,10 @@ cenário, selo vermelho ("6 frases"/"Teste rápido"/"5 rodadas"), título Poppin
 pílula marinho, balão com uma frase em inglês + pronúncia (Repita) ou 4 figuras com "?" (Flashcard/Qual você usa?), mascote
 oficial com contorno branco e brilho. Tudo importante entre y 260 e 1640 (recorte 3:4 da grade). `montar_padrao.py` usa
 a capa produzida sempre que existir `capa.json`. Não revelar respostas de teste na capa.
+**Abertura animada (motion graphics, 10/11):** mesma linguagem da capa, em movimento (selo cai, título pula, figuras voam
+pra dentro e flutuam, faixa amarela do DESAFIO pulsa, mascote sobe e fala; nos últimos 0,6 s tudo voa pra fora + whoosh).
+`templates/abertura.html` + `scripts/abertura.py` (quadro a quadro, 30 fps, ~2,5 min de render). No `flash.json`, a chave
+`"abertura"` substitui a `"intro"` parada (exemplo: `posts/2026-11-12_flashcard-frutas/`). Gancho falado em tom de desafio.
 
 ## Sempre
 

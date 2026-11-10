@@ -89,8 +89,10 @@ def finalizar(post, especs, cenas, sons, t, fundo, template="quiz.html", capa="0
     lista = post / "video" / "cenas.txt"
     with open(lista, "w") as f:
         for nome, d in cenas:
-            f.write(f"file '{quadros / (nome + '.png')}'\nduration {round(d * FPS) / FPS:.4f}\n")
-        f.write(f"file '{quadros / (cenas[-1][0] + '.png')}'\n")
+            arq = nome if str(nome).startswith("/") else quadros / (nome + ".png")   # caminho absoluto = quadro pronto (abertura animada)
+            f.write(f"file '{arq}'\nduration {round(d * FPS) / FPS:.4f}\n")
+        ult = cenas[-1][0]
+        f.write(f"file '{ult if str(ult).startswith('/') else quadros / (ult + '.png')}'\n")
     mudo = post / "video" / "_mudo.mp4"
     sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p",
        "-c:v", "libx264", "-preset", "medium", "-crf", "18", str(mudo))
@@ -120,6 +122,14 @@ def finalizar(post, especs, cenas, sons, t, fundo, template="quiz.html", capa="0
        "-shortest", "-movflags", "+faststart", str(final))
     for x in (mudo, audio, lista):
         x.unlink()
+    # conferência: o AAC às vezes fica ~1,5 dB abaixo da meta; corrige o ganho até ficar a ±0,5 dB de -14 LUFS
+    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    lufs = float(r[r.rindex("I:"):].split()[1])
+    if abs(lufs + 14) > 0.5:
+        tmp = final.with_name("_ganho.mp4")
+        sh("-i", str(final), "-c:v", "copy", "-af", f"volume={-14 - lufs:.2f}dB,alimiter=limit=0.89:level=false",
+           "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(tmp))
+        tmp.replace(final); print(f"  loudness {lufs:.1f} -> ajustado para ~-14 LUFS")
 
     # capa + folha de contato (1 quadro por cena) + linha do tempo
     import shutil

@@ -66,7 +66,14 @@ def main(pasta):
 
     # ABERTURA em português: mascote grande no centro, bico abrindo com a voz
     it0 = c.get("intro")
-    if it0:
+    if c.get("abertura"):   # abertura ANIMADA no estilo da capa (scripts/abertura.py), substitui a intro parada
+        import abertura
+        ab = c["abertura"]; a_arq, a_d = vozes[ab["audio"]]
+        qs, t = abertura.render_abertura(post, ab, (a_arq, a_d))
+        sons.append((a_arq, 0.15, 1.0)); sons.append((fx["whoosh"], t - 0.55, 0.6))
+        cenas += [(str(q), 1 / 30) for q in qs]
+        it0 = None
+    elif it0:
         base = {"tipo": "intro", "selo": it0["selo"], "titulo": it0["titulo"], "sub": it0["sub"],
                 "previa": [(post / x).as_uri() for x in it0.get("previa", [])]}
         especs.append(("00_intro_f", {**base, "mascote": fechada}))
@@ -130,6 +137,9 @@ def main(pasta):
         cenas.append((f"{nome}_m", resto / len(telas)))
     t += seg_placar + resto
     finalizar(post, especs, cenas, sons, t, fundo_cta, template="flash.html", capa=("00_intro_f" if it0 else "01_q"))
+    if (post / "capa.json").exists():   # capa produzida (templates/capa.html)
+        import capa
+        capa.capas([post])
 
 
 if __name__ == "__main__":

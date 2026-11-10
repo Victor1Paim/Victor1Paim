@@ -1,129 +1,665 @@
 {
- "duracao": 64.87,
+ "duracao": 64.86,
  "cenas": [
   [
-   "00_intro_f",
-   0.5
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0000.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0001.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0002.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0003.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0004.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0005.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0006.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0007.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0008.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0009.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0010.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0011.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0012.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0013.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0014.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0015.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0016.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0017.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0018.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0019.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0020.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0021.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.38
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0022.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0023.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0024.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0025.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.62
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0026.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0027.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0028.png",
+   0.03
   ],
   [
-   "00_intro_a",
-   0.12
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0029.png",
+   0.03
   ],
   [
-   "00_intro_f",
-   0.64
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0030.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0031.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0032.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0033.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0034.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0035.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0036.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0037.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0038.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0039.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0040.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0041.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0042.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0043.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0044.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0045.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0046.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0047.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0048.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0049.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0050.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0051.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0052.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0053.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0054.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0055.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0056.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0057.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0058.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0059.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0060.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0061.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0062.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0063.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0064.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0065.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0066.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0067.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0068.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0069.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0070.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0071.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0072.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0073.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0074.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0075.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0076.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0077.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0078.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0079.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0080.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0081.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0082.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0083.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0084.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0085.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0086.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0087.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0088.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0089.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0090.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0091.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0092.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0093.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0094.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0095.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0096.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0097.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0098.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0099.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0100.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0101.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0102.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0103.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0104.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0105.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0106.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0107.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0108.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0109.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0110.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0111.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0112.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0113.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0114.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0115.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0116.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0117.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0118.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0119.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0120.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0121.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0122.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0123.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0124.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0125.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0126.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0127.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0128.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0129.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0130.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0131.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0132.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0133.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0134.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0135.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0136.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0137.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0138.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0139.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0140.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0141.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0142.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0143.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0144.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0145.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0146.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0147.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0148.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0149.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0150.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0151.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0152.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0153.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0154.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0155.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0156.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0157.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0158.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0159.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0160.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0161.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0162.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0163.png",
+   0.03
+  ],
+  [
+   "/home/user/Victor1Paim/eagle-english/posts/2026-11-12_flashcard-frutas/video/abertura/q0164.png",
+   0.03
   ],
   [
    "01_q",
@@ -309,267 +845,271 @@
   ],
   [
    "whoosh.wav",
-   5.51
+   4.95
+  ],
+  [
+   "whoosh.wav",
+   5.5
   ],
   [
    "q_en.wav",
-   5.66
+   5.65
   ],
   [
    "tique.wav",
-   7.01
+   7.0
   ],
   [
    "tique.wav",
-   7.71
+   7.7
   ],
   [
    "tique.wav",
-   8.41
+   8.4
   ],
   [
    "ding.wav",
-   9.11
+   9.1
   ],
   [
    "_resp_1.wav",
-   9.31
+   9.3
   ],
   [
    "_trad_1.wav",
-   10.2
+   10.19
   ],
   [
    "whoosh.wav",
-   11.54
+   11.53
   ],
   [
    "q_en.wav",
-   11.69
+   11.68
   ],
   [
    "tique.wav",
-   13.04
+   13.03
   ],
   [
    "tique.wav",
-   13.74
+   13.73
   ],
   [
    "tique.wav",
-   14.44
+   14.43
   ],
   [
    "ding.wav",
-   15.14
+   15.13
   ],
   [
    "_resp_2.wav",
-   15.34
+   15.33
   ],
   [
    "_trad_2.wav",
-   16.07
+   16.06
   ],
   [
    "whoosh.wav",
-   17.04
+   17.02
   ],
   [
    "q_en.wav",
-   17.19
+   17.17
   ],
   [
    "tique.wav",
-   18.54
+   18.52
   ],
   [
    "tique.wav",
-   19.24
+   19.22
   ],
   [
    "tique.wav",
-   19.94
+   19.92
   ],
   [
    "ding.wav",
-   20.64
+   20.62
   ],
   [
    "_resp_3.wav",
-   20.84
+   20.82
   ],
   [
    "_trad_3.wav",
-   21.59
+   21.58
   ],
   [
    "whoosh.wav",
-   22.68
+   22.67
   ],
   [
    "q_en.wav",
-   22.83
+   22.82
   ],
   [
    "tique.wav",
-   24.18
+   24.17
   ],
   [
    "tique.wav",
-   24.88
+   24.87
   ],
   [
    "tique.wav",
-   25.58
+   25.57
   ],
   [
    "ding.wav",
-   26.28
+   26.27
   ],
   [
    "_resp_4.wav",
-   26.48
+   26.47
   ],
   [
    "_trad_4.wav",
-   27.24
+   27.23
   ],
   [
    "whoosh.wav",
-   28.23
+   28.22
   ],
   [
    "q_en.wav",
-   28.38
+   28.37
   ],
   [
    "tique.wav",
-   29.73
+   29.72
   ],
   [
    "tique.wav",
-   30.43
+   30.42
   ],
   [
    "tique.wav",
-   31.13
+   31.12
   ],
   [
    "ding.wav",
-   31.83
+   31.82
   ],
   [
    "_resp_5.wav",
-   32.03
+   32.02
   ],
   [
    "_trad_5.wav",
-   32.9
+   32.89
   ],
   [
    "whoosh.wav",
-   33.93
+   33.92
   ],
   [
    "q_en.wav",
-   34.08
+   34.07
   ],
   [
    "tique.wav",
-   35.43
+   35.42
   ],
   [
    "tique.wav",
-   36.13
+   36.12
   ],
   [
    "tique.wav",
-   36.83
+   36.82
   ],
   [
    "ding.wav",
-   37.53
+   37.52
   ],
   [
    "_resp_6.wav",
-   37.73
+   37.72
   ],
   [
    "_trad_6.wav",
-   38.49
+   38.48
   ],
   [
    "whoosh.wav",
-   39.58
+   39.56
   ],
   [
    "q_en.wav",
-   39.73
+   39.71
   ],
   [
    "tique.wav",
-   41.08
+   41.06
   ],
   [
    "tique.wav",
-   41.78
+   41.76
   ],
   [
    "tique.wav",
-   42.48
+   42.46
   ],
   [
    "ding.wav",
-   43.18
+   43.16
   ],
   [
    "_resp_7.wav",
-   43.38
+   43.36
   ],
   [
    "_trad_7.wav",
-   44.32
+   44.3
   ],
   [
    "whoosh.wav",
-   45.42
+   45.41
   ],
   [
    "q_en.wav",
-   45.57
+   45.56
   ],
   [
    "tique.wav",
-   46.92
+   46.91
   ],
   [
    "tique.wav",
-   47.62
+   47.61
   ],
   [
    "tique.wav",
-   48.32
+   48.31
   ],
   [
    "ding.wav",
-   49.02
+   49.01
   ],
   [
    "_resp_8.wav",
-   49.22
+   49.21
   ],
   [
    "_trad_8.wav",
-   49.86
+   49.85
   ],
   [
    "whoosh.wav",
-   50.75
+   50.73
   ],
   [
    "cta.wav",
-   50.95
+   50.93
   ]
  ]
 }
