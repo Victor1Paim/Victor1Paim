@@ -1,0 +1,24 @@
+{
+ "fundo": "img/fundo_cta.png",
+ "selo": "Teste rápido",
+ "titulo": "Café da manhã\nem *inglês?* ☕",
+ "sub": "<b>8 itens</b> · quantos você sabe?",
+ "figuras": [
+  {
+   "img": "img/coffee.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/eggs.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/orange_juice.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/bread.png",
+   "txt": "?"
+  }
+ ]
+}

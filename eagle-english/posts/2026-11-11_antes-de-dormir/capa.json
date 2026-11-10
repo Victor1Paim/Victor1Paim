@@ -1,0 +1,11 @@
+{
+ "fundo": "img/cama.png",
+ "selo": "6 frases",
+ "titulo": "Inglês antes\nde *dormir* 🌙",
+ "sub": "Repete comigo · <b>A1</b>",
+ "balao": {
+  "en": "Sweet dreams!",
+  "pron": "/SUÍIT DRÍIMZ/",
+  "lado": "dir"
+ }
+}

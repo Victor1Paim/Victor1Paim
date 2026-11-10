@@ -1,0 +1,11 @@
+{
+ "fundo": "img/fundo.png",
+ "selo": "6 frases",
+ "titulo": "No *aeroporto*\nlá fora ✈️",
+ "sub": "Do check-in até a <b>bagagem</b>",
+ "balao": {
+  "en": "Where is gate twelve?",
+  "pron": "/UÉR iz GÊIT TUÉLV/",
+  "lado": "dir"
+ }
+}

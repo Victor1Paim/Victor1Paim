@@ -1,0 +1,24 @@
+{
+ "fundo": "img/fundo.png",
+ "selo": "5 rodadas",
+ "titulo": "Quente\nou *frio?* 🔥❄️",
+ "sub": "<b>hot</b>, <b>cold</b>... ou outra?",
+ "figuras": [
+  {
+   "img": "img/cafe.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/sorvete.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/banho.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/neve.png",
+   "txt": "A ou B?"
+  }
+ ]
+}

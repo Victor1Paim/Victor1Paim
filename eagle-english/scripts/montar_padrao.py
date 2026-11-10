@@ -180,6 +180,9 @@ def main(pasta, previa=False):
     capa = Image.open(q / f"{especs[0][0]}.png").convert("RGBA")
     h, chao = GRANDE; m = mf.resize((int(mf.width * h / mf.height), h))
     capa.alpha_composite(m, ((1080 - m.width) // 2, chao - h)); capa.convert("RGB").save(post / "video" / "capa.png")
+    if (post / "capa.json").exists():   # capa produzida (templates/capa.html) substitui a simples
+        import capa as capa_prod
+        capa_prod.capas([post])
     if previa:
         print(f"prévia: {len(especs)} quadros, ~{t:.1f} s + oferta -> video/contato.jpg"); return
 

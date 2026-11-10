@@ -32,6 +32,14 @@ pronúncia branca, tradução verde), cartão de ponte, telas do ebook e a ofert
 (`assets/marca/fechamento_oferta.mp4`). Montagem: `scripts/montar_padrao.py`. Os templates `quiz.html`,
 `card_*.html` e os mascotes `assets/mascote/pensando.png`/`positivo.png` são do visual antigo: não usar.
 
+## CAPA (10/11/2026)
+
+Capa produzida: `posts/<post>/capa.json` → `python3 scripts/capa.py posts/<post>` (template `templates/capa.html`): foto do
+cenário, selo vermelho ("6 frases"/"Teste rápido"/"5 rodadas"), título Poppins com contorno (palavra-chave em amarelo),
+pílula marinho, balão com uma frase em inglês + pronúncia (Repita) ou 4 figuras com "?" (Flashcard/Qual você usa?), mascote
+oficial com contorno branco e brilho. Tudo importante entre y 260 e 1640 (recorte 3:4 da grade). `montar_padrao.py` usa
+a capa produzida sempre que existir `capa.json`. Não revelar respostas de teste na capa.
+
 ## Sempre
 
 - Formato 1080x1920 (9:16), 30 fps, H.264 + AAC. **Duração padrão: 40 s a 1 min 10 s** (a partir das

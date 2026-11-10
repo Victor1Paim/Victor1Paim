@@ -1,0 +1,24 @@
+{
+ "fundo": "img/fundo_cta.png",
+ "selo": "Teste rápido",
+ "titulo": "Frutas em\n*inglês* 🍎",
+ "sub": "<b>8 frutas</b> · quantas você acerta?",
+ "figuras": [
+  {
+   "img": "img/apple.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/pineapple.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/strawberry.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/watermelon.png",
+   "txt": "?"
+  }
+ ]
+}

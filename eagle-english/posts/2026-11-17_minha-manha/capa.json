@@ -1,0 +1,11 @@
+{
+ "fundo": "img/quarto.png",
+ "selo": "7 frases",
+ "titulo": "Sua *manhã*\nem inglês ☀️",
+ "sub": "Do <b>Good morning</b> até sair de casa",
+ "balao": {
+  "en": "Good morning!",
+  "pron": "/gud MÓR-nin/",
+  "lado": "dir"
+ }
+}

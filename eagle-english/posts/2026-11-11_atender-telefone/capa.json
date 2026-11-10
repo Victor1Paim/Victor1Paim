@@ -1,0 +1,11 @@
+{
+ "fundo": "img/fundo.png",
+ "selo": "6 frases",
+ "titulo": "O telefone tocou\nem *inglês* 📞",
+ "sub": "Você sabe o que <b>dizer?</b>",
+ "balao": {
+  "en": "Hello, who's calling?",
+  "pron": "/re-LÔU, RÚZ KÓ-lin/",
+  "lado": "dir"
+ }
+}

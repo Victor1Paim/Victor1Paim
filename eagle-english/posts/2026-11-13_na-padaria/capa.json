@@ -1,0 +1,11 @@
+{
+ "fundo": "img/paes.png",
+ "selo": "6 frases",
+ "titulo": "Seu pedido\nna *padaria* 🥖",
+ "sub": "Pede em inglês <b>sem travar</b>",
+ "balao": {
+  "en": "I'd like some bread.",
+  "pron": "/áid LÁIK sâm BRÉD/",
+  "lado": "dir"
+ }
+}
