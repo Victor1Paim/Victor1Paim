@@ -107,7 +107,10 @@ def main(pasta, previa=False):
             cenas.append((nome, d)); janelas.append((t, t + d, "grande")); t += d
         elif tp == "frase":
             a, c = f"{n:02d}_frase", f"{n:02d}_frase_pt"
-            base = {"tipo": "frase", "en": b["en"], "pron": b.get("pron"), "pt": b.get("pt")}
+            nfrase = sum(1 for x in r["beats"][:n + 1] if x["tipo"] == "frase")
+            tfrase = sum(1 for x in r["beats"] if x["tipo"] == "frase")
+            base = {"tipo": "frase", "en": b["en"], "pron": b.get("pron"), "pt": b.get("pt"),
+                    "progresso": f"{nfrase}/{tfrase}" if r.get("progresso", True) else ""}
             especs += [(a, base), (c, {**base, "mostrar_pt": True})]
             fim = falar([b["audio_en"]], t + 0.1); d1 = fim - t + 0.2 + r.get("pausa_repetir", 0)   # tempo pra pessoa repetir
             cenas.append((a, d1)); ini_pt = t + d1

@@ -17,6 +17,13 @@ para se testar); o inglês vem nas frases, e toda frase/resposta em inglês ganh
 Ganchos, re-ganchos, CTAs e legendas: escolher da biblioteca adaptada `docs/GANCHOS_E_COPY.md`
 (uma ação de engajamento por vídeo; pausa para repetir com `"pausa_repetir": 1.2`).
 
+## RETENÇÃO (10/11/2026) — `docs/RETENCAO.md` (manda sobre os outros guias de roteiro)
+
+Todo vídeo: UMA estrutura declarada (Contradição, Problema, Escolha, Evolução ou Jornada — sem misturar), uma
+PERGUNTA ABERTA em até 3 s que só o final responde, virada perto de 70%, o melhor por último, fecho que ecoa a 1ª
+frase, CTA só depois da entrega, progresso visível ("3/6"). Antes de produzir, escrever `posts/<post>/roteiro.md`
+no formato do guia e passar o checklist. Contradições têm que ser verdadeiras.
+
 ## PADRÃO VISUAL (manda sobre o resto deste arquivo)
 
 Todo vídeo segue `docs/PADRAO_VIDEO.md` (medido nos Reels publicados): foto do cenário em cor cheia,

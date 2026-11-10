@@ -24,6 +24,10 @@
             border-radius:34px; padding:34px 30px; text-align:center; text-wrap:balance; font-family:"Oswald"; font-weight:500;
             color:var(--marinho); font-size:66px; line-height:1.16; box-shadow:0 10px 30px rgba(0,0,0,.25); }
   .vermelho { color:var(--vermelho); }
+  /* progresso visível (promessa numerada): "3/6" acima da legenda */
+  .prog { position:absolute; left:50%; transform:translateX(-50%); top:176px; background:var(--marinho); color:#fff;
+          font-family:"Poppins"; font-weight:800; font-size:34px; padding:6px 26px; border-radius:40px;
+          border:4px solid #fff; box-shadow:0 6px 18px rgba(0,0,0,.3); }
   .tag { position:absolute; left:50%; transform:translateX(-50%); top:240px; background:var(--creme);
          border:6px solid var(--marinho); border-radius:24px; padding:6px 30px; font-family:"Oswald"; font-weight:500;
          font-size:76px; color:var(--marinho); white-space:nowrap; box-shadow:0 8px 24px rgba(0,0,0,.25); }
@@ -61,7 +65,7 @@ const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;"
 const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
 let h = "";
 if (d.tipo === "abertura") h = `<div class="leg"><div class="branco">${esc(d.texto)}</div></div>`;
-else if (d.tipo === "frase") h = `<div class="leg"><div class="en">${esc(d.en)}</div>
+else if (d.tipo === "frase") h = `${d.progresso ? `<div class="prog">${esc(d.progresso)}</div>` : ""}<div class="leg"><div class="en">${esc(d.en)}</div>
      ${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}${d.mostrar_pt && d.pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>`;
 else if (d.tipo === "ponte") h = `<div class="cartao">${red(d.texto).replace(/\n/g, "<br>")}</div>`;
 else if (d.tipo === "produto") { h = `<div class="tag">${red(d.tag)}</div>${d.pagina ? `<img class="pagina" src="${d.pagina}">` : ""}`;
