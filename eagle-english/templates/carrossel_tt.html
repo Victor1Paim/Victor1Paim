@@ -26,6 +26,12 @@
   .cta .botao { display:inline-block; margin-top:50px; background:var(--vermelho); color:#fff; font-weight:800; font-size:64px; padding:14px 60px 18px;
                 border-radius:30px; }
   .cta img { width:300px; margin-bottom:24px; }
+  /* CTA com o print do perfil + seta vermelha apontando o link */
+  .perfil { position:absolute; left:70px; width:940px; top:250px; }
+  .perfil img { width:100%; display:block; }
+  .seta { position:absolute; left:0; top:0; width:1080px; height:1440px; }
+  .legperfil { position:absolute; left:90px; right:90px; top:1010px; text-align:center; font-weight:400; font-size:56px; line-height:1.3;
+               color:#111; text-wrap:balance; }
 </style></head><body><div id="c"></div>
 <script>
 const d = window.DADOS || {tipo:"frase", pt:"Uma mesa para dois, por favor.", en:"A table for two, please.", pron:"a TÊI-bol for TÚ, PLÍIZ"};
@@ -40,6 +46,10 @@ else if (d.tipo === "frase") h = `<div class="lista">
   <div class="lin pr"><div class="e">🗣️</div><div>${esc(d.pron)}</div></div></div>`;
 else if (d.tipo === "cta") h = `<div class="cta">${d.mascote ? `<img src="${d.mascote}">` : ""}<h1>${red(d.titulo)}</h1><p>${red(d.texto)}</p>
   <div class="botao">${esc(d.botao || "Link na bio 👆")}</div></div>`;
+else if (d.tipo === "perfil") h = `<div class="perfil"><img src="${d.src}"></div>
+  <svg class="seta" viewBox="0 0 1080 1440"><path d="M640 930 C 690 820, 660 760, 560 712" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/>
+  <path d="M552 708 L 608 690 M552 708 L 590 752" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/></svg>
+  <div class="legperfil">${esc(d.texto)}</div>`;
 else if (d.tipo === "imagem") h = `<div id="foto" style="background-image:url('${d.src}');background-size:contain;background-repeat:no-repeat"></div>`;
 document.getElementById("c").innerHTML = h;
 document.fonts.ready.then(() => document.body.dataset.pronto = "1");
