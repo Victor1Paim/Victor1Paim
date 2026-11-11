@@ -1,0 +1,6 @@
+{"quando": "2026-11-11T18:32:43", "etapa": "voz 01_gancho", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.08666666666666667}, "usd": 0.0013}
+{"quando": "2026-11-11T18:32:46", "etapa": "voz 02_tres", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.09416666666666668}, "usd": 0.001413}
+{"quando": "2026-11-11T18:32:49", "etapa": "voz 03_imposto", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.19166666666666668}, "usd": 0.002875}
+{"quando": "2026-11-11T18:32:52", "etapa": "voz 04_taxa", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.1825}, "usd": 0.002737}
+{"quando": "2026-11-11T18:32:55", "etapa": "voz 05_melhoria", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.11333333333333333}, "usd": 0.0017}
+{"quando": "2026-11-11T18:32:57", "etapa": "voz 06_fecho", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.18333333333333332}, "usd": 0.00275}

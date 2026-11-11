@@ -1,0 +1,13 @@
+{
+  "modelo": "gpt-4o-mini-tts",
+  "voz": "ash",
+  "instrucoes": "Português do Brasil, sotaque brasileiro neutro. Tom de conversa leve e confiante, como um professor simpático explicando para um amigo. Ritmo ágil, mas com pausas curtas entre as ideias.",
+  "falas": [
+    {"id": "01_gancho", "modo": "dividida", "texto": "Tudo o que você paga pro governo é imposto? Pela lei, não."},
+    {"id": "02_tres", "modo": "motion", "texto": "O Código Tributário Nacional separa três tipos clássicos de tributo."},
+    {"id": "03_imposto", "modo": "motion", "texto": "O imposto não depende de nenhum serviço feito pra você. Você paga porque tem renda, compra ou patrimônio, e o dinheiro vai pro caixa geral."},
+    {"id": "04_taxa", "modo": "motion", "texto": "A taxa é diferente: ela é cobrada por um serviço público específico, tipo a coleta do lixo da sua casa, ou pela fiscalização do Estado."},
+    {"id": "05_melhoria", "modo": "motion", "texto": "E a contribuição de melhoria aparece quando uma obra pública valoriza o seu imóvel."},
+    {"id": "06_fecho", "modo": "dividida", "texto": "Então: imposto banca o geral, taxa paga um serviço, e a melhoria cobra pela obra. Salva pra lembrar na próxima cobrança."}
+  ]
+}
