@@ -1,6 +1,6 @@
 # Modo Replay — kit dos perfis
 
-**Nome:** Modo Replay · **@:** `@modoreplay_10` no Instagram e no YouTube (criados) · TikTok: usar o mesmo `modoreplay_10`
+**Nome:** Modo Replay · **@:** Instagram e YouTube `@modoreplay_10` · TikTok `@modoreplay.10` · nos vídeos aparece só o nome **Modo Replay** (vale igual nas três redes)
 **Cores:** rosa `#ff4fa3` · amarelo `#ffd23f` · roxo `#5b2bd6` · fundo `#0d0718`
 **Fontes:** Anton (títulos) · Inter 800/600 (textos)
 
@@ -15,7 +15,7 @@ Fonte editável: `perfil.html`, `banner.html`, `estilo.css` (renderizar com Play
 2. **Instagram**.
 3. **TikTok**.
 
-Status: ✅ Instagram `@modoreplay_10` · ✅ YouTube `@modoreplay_10` · ⏳ TikTok (usar `modoreplay_10`).
+Status: ✅ Instagram `@modoreplay_10` · ✅ YouTube `@modoreplay_10` · ✅ TikTok `@modoreplay.10`.
 
 ---
 
@@ -52,7 +52,7 @@ Notícias, detalhes escondidos, gameplay e as maiores polêmicas, sempre com cr�
 
 ## TikTok
 
-- Criar conta → usuário **modoreplay_10** → nome **Modo Replay** → **Configurações → Conta → Mudar para conta comercial? NÃO** — usar conta **pessoal/criador** (conta comercial perde acesso a sons em alta).
+- Criar conta → usuário **modoreplay.10** → nome **Modo Replay** → **Configurações → Conta → Mudar para conta comercial? NÃO** — usar conta **pessoal/criador** (conta comercial perde acesso a sons em alta).
 - **Foto:** `perfil.png`
 - **Bio** (até 80 caracteres):
 
