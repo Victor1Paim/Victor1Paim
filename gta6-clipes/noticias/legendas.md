@@ -18,7 +18,7 @@ Dados checados em 11/11/2026 (fontes no fim). Se algum mudar antes de postar, aj
 | 18/11 (qua) | **n3 · Que horas libera** (vídeo + carrossel) | Véspera: pico de busca pelo horário |
 | 19/11 (qui) | Lançamento — cortes de lives do dia | |
 
-Horário: entre 18h e 21h (Brasília). Cortes do Davy só depois da autorização dele.
+Horário: entre 18h e 21h (Brasília). Cortes do Davy: crédito fixo na tela e link do vídeo original na descrição; se ele pedir remoção, remover na hora.
 
 ---
 

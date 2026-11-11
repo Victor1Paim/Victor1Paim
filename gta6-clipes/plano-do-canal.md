@@ -71,7 +71,7 @@ Vídeos brutos ficam fora do git (`gravacoes/` no `.gitignore`).
 
 Canal de cortes vive ou morre pela relação com os criadores. Regras:
 
-- **Prefira criadores que autorizam cortes.** Muitos streamers liberam cortes (às vezes com programa de clipadores e divisão de receita). Peça autorização por escrito quando não houver regra pública e guarde em `pautas/autorizacoes.md`.
+- **Decisão do canal: postar cortes de grandes criadores sem pedir autorização antes**, assumindo o risco de reivindicação/derrubada. Para reduzir o risco: prefira criadores que liberam cortes publicamente. Muitos streamers liberam cortes (às vezes com programa de clipadores e divisão de receita). Peça autorização por escrito quando não houver regra pública e guarde em `pautas/autorizacoes.md`.
 - **Crédito sempre**: @ do criador na tela durante todo o corte e na descrição, com link para a live/vídeo original.
 - **Transformar, não só recortar**: gancho próprio, legenda, edição, contexto. Corte cru sem edição cai na regra de "conteúdo reutilizado" do YouTube e é derrubado com facilidade.
 - Se o criador pedir para remover, remover na hora.

@@ -78,5 +78,5 @@ Notícias, detalhes escondidos, gameplay e as maiores polêmicas, sempre com cr�
 ## Antes do primeiro post
 
 - [ ] Três perfis criados com foto, bio e banner.
-- [ ] Autorização do Davy Jones (guardar em `../pautas/autorizacoes.md`).
+- [ ] Descrição de cada corte com crédito e link do vídeo original.
 - [ ] 3 posts de aquecimento prontos (notícias do lançamento) para não estrear com o perfil vazio.
