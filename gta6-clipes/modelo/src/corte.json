@@ -1,0 +1,62 @@
+{
+  "video": "base.mp4",
+  "duracao": 82.95,
+  "gancho": [
+    "O TRAILER FINAL",
+    "DE GTA 6 SAIU"
+  ],
+  "destaque": "GTA 6",
+  "cabecalho": "GTA 6 · Trailer de lançamento",
+  "selo": "LANÇA 19/11",
+  "credito": "Trailer oficial: Rockstar Games",
+  "canal": "@seucanal",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "legendas": [
+    {
+      "inicio": 0.35,
+      "fim": 4.05,
+      "texto": "Me meti em encrenca no exército. Não saí numa boa."
+    },
+    {
+      "inicio": 4.05,
+      "fim": 7.45,
+      "texto": "Não dão empréstimo nem nada pra gente como eu."
+    },
+    {
+      "inicio": 8.05,
+      "fim": 11.25,
+      "texto": "Esta é uma ligação gratuita de Lucia Caminos."
+    },
+    {
+      "inicio": 59.95,
+      "fim": 61.45,
+      "texto": "A gente vai ficar bem?"
+    },
+    {
+      "inicio": 62.45,
+      "fim": 65.55,
+      "texto": "A gente ficou junto em tudo. Só precisa passar por isso."
+    },
+    {
+      "inicio": 76.65,
+      "fim": 78.35,
+      "texto": "Grand Theft Auto VI."
+    },
+    {
+      "inicio": 78.55,
+      "fim": 80.15,
+      "texto": "Chega dia 19 de novembro."
+    }
+  ],
+  "destaques": [
+    "Lucia",
+    "Caminos",
+    "exército",
+    "bem?",
+    "junto",
+    "19",
+    "novembro.",
+    "VI."
+  ],
+  "inicioFinal": 80.25
+}
