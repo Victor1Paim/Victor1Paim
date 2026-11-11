@@ -20,4 +20,5 @@ req = urllib.request.Request(f'https://generativelanguage.googleapis.com/v1beta/
 d = json.load(urllib.request.urlopen(req, timeout=300))
 pcm = base64.b64decode(d['candidates'][0]['content']['parts'][0]['inlineData']['data'])
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 's16le', '-ar', '24000', '-ac', '1', '-i', '-', '-b:a', '128k', saida], input=pcm, check=True)
-print(saida)
+# o Gemini deixa um estalo nos últimos ~150 ms: limpar sempre
+subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'limpar-fim-audio.py'), saida], check=True)
