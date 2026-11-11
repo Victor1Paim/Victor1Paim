@@ -1,0 +1,61 @@
+{
+ "nome": "n2-preco",
+ "gancho": [
+  "QUANTO CUSTA",
+  "GTA 6 NO BRASIL?"
+ ],
+ "destaque": "GTA 6",
+ "texto": "Quanto custa GTA 6 no Brasil? A edição Standard sai por R$ 449,90 nas lojas digitais, e a Ultimate Edition por R$ 549,90. Quem reservou dentro da oferta ainda leva o Pacote Vintage Vice City e um mês de GTA+. O jogo sai pra PlayStation 5 e Xbox Series, e não tem versão de PC por enquanto. Lá fora, a Standard custa US$ 79,99. E aí, vale o preço ou tá caro? Comenta aí.",
+ "trechos": [
+  [
+   18,
+   0
+  ],
+  [
+   44,
+   0
+  ],
+  [
+   66,
+   0
+  ]
+ ],
+ "destaques": [
+  "449,90",
+  "549,90",
+  "79,99.",
+  "PC",
+  "caro?",
+  "Standard",
+  "Ultimate"
+ ],
+ "cartoes": [
+  {
+   "em": "449,90",
+   "grande": "R$ 449,90",
+   "pequeno": "edição Standard"
+  },
+  {
+   "em": "549,90.",
+   "grande": "R$ 549,90",
+   "pequeno": "Ultimate Edition"
+  },
+  {
+   "em": "PlayStation",
+   "grande": "PS5 · XBOX",
+   "pequeno": "sem versão de PC por enquanto",
+   "dur": 4.5
+  },
+  {
+   "em": "79,99.",
+   "grande": "US$ 79,99",
+   "pequeno": "preço lá fora"
+  }
+ ],
+ "fonte": "/home/user/Victor1Paim/gta6-clipes/gravacoes/trailers/launch-trailer.mp4",
+ "canal": "Modo Replay",
+ "credito": "Imagens: trailer oficial Rockstar Games",
+ "cabecalho": "GTA 6 · Notícia",
+ "narracao": "n2-preco.mp3",
+ "transcricao": "n2-preco.json"
+}

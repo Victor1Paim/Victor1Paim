@@ -1,0 +1,425 @@
+{
+ "dados": {
+  "video": "n2-preco.mp4",
+  "duracao": 39.35,
+  "gancho": [
+   "QUANTO CUSTA",
+   "GTA 6 NO BRASIL?"
+  ],
+  "destaque": "GTA 6",
+  "cabecalho": "GTA 6 · Notícia",
+  "selo": "LANÇA 19/11",
+  "credito": "Imagens: trailer oficial Rockstar Games",
+  "canal": "Modo Replay",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 36.7,
+  "legendas": [],
+  "destaques": [
+   "449,90",
+   "549,90",
+   "79,99.",
+   "PC",
+   "caro?",
+   "Standard",
+   "Ultimate"
+  ],
+  "palavras": [
+   {
+    "texto": "Quanto",
+    "inicio": 0.0,
+    "fim": 0.46
+   },
+   {
+    "texto": "custa",
+    "inicio": 0.46,
+    "fim": 1.04
+   },
+   {
+    "texto": "GTA",
+    "inicio": 1.04,
+    "fim": 1.5
+   },
+   {
+    "texto": "6",
+    "inicio": 1.5,
+    "fim": 1.94
+   },
+   {
+    "texto": "no",
+    "inicio": 1.94,
+    "fim": 2.1
+   },
+   {
+    "texto": "Brasil?",
+    "inicio": 2.1,
+    "fim": 2.52
+   },
+   {
+    "texto": "A",
+    "inicio": 3.42,
+    "fim": 3.46
+   },
+   {
+    "texto": "edição",
+    "inicio": 3.46,
+    "fim": 3.88
+   },
+   {
+    "texto": "Standard",
+    "inicio": 3.88,
+    "fim": 4.64
+   },
+   {
+    "texto": "sai",
+    "inicio": 4.64,
+    "fim": 5.1
+   },
+   {
+    "texto": "por",
+    "inicio": 5.1,
+    "fim": 5.46
+   },
+   {
+    "texto": "R$",
+    "inicio": 5.46,
+    "fim": 5.78
+   },
+   {
+    "texto": "449,90",
+    "inicio": 5.78,
+    "fim": 7.66
+   },
+   {
+    "texto": "nas",
+    "inicio": 7.66,
+    "fim": 8.18
+   },
+   {
+    "texto": "lojas",
+    "inicio": 8.18,
+    "fim": 8.5
+   },
+   {
+    "texto": "digitais,",
+    "inicio": 8.5,
+    "fim": 9.24
+   },
+   {
+    "texto": "e",
+    "inicio": 9.24,
+    "fim": 9.96
+   },
+   {
+    "texto": "a",
+    "inicio": 9.96,
+    "fim": 10.24
+   },
+   {
+    "texto": "Ultimate",
+    "inicio": 10.24,
+    "fim": 10.6
+   },
+   {
+    "texto": "Edition",
+    "inicio": 10.6,
+    "fim": 11.06
+   },
+   {
+    "texto": "por",
+    "inicio": 11.06,
+    "fim": 11.52
+   },
+   {
+    "texto": "R$",
+    "inicio": 11.52,
+    "fim": 12.0
+   },
+   {
+    "texto": "549,90.",
+    "inicio": 12.0,
+    "fim": 14.52
+   },
+   {
+    "texto": "Quem",
+    "inicio": 14.52,
+    "fim": 14.52
+   },
+   {
+    "texto": "reservou",
+    "inicio": 14.52,
+    "fim": 15.12
+   },
+   {
+    "texto": "dentro",
+    "inicio": 15.12,
+    "fim": 15.5
+   },
+   {
+    "texto": "da",
+    "inicio": 15.5,
+    "fim": 16.24
+   },
+   {
+    "texto": "oferta",
+    "inicio": 16.24,
+    "fim": 16.24
+   },
+   {
+    "texto": "ainda",
+    "inicio": 16.24,
+    "fim": 16.94
+   },
+   {
+    "texto": "leva",
+    "inicio": 16.94,
+    "fim": 17.22
+   },
+   {
+    "texto": "o",
+    "inicio": 17.22,
+    "fim": 18.04
+   },
+   {
+    "texto": "Pacote",
+    "inicio": 18.04,
+    "fim": 18.04
+   },
+   {
+    "texto": "Vintage",
+    "inicio": 18.04,
+    "fim": 18.5
+   },
+   {
+    "texto": "Vice",
+    "inicio": 18.5,
+    "fim": 18.86
+   },
+   {
+    "texto": "City",
+    "inicio": 18.86,
+    "fim": 19.18
+   },
+   {
+    "texto": "e",
+    "inicio": 19.18,
+    "fim": 19.64
+   },
+   {
+    "texto": "um",
+    "inicio": 19.64,
+    "fim": 20.04
+   },
+   {
+    "texto": "mês",
+    "inicio": 20.04,
+    "fim": 20.04
+   },
+   {
+    "texto": "de",
+    "inicio": 20.04,
+    "fim": 20.3
+   },
+   {
+    "texto": "GTA+.",
+    "inicio": 20.3,
+    "fim": 21.12
+   },
+   {
+    "texto": "O",
+    "inicio": 21.44,
+    "fim": 22.36
+   },
+   {
+    "texto": "jogo",
+    "inicio": 22.36,
+    "fim": 22.36
+   },
+   {
+    "texto": "sai",
+    "inicio": 22.36,
+    "fim": 22.82
+   },
+   {
+    "texto": "pra",
+    "inicio": 22.82,
+    "fim": 23.06
+   },
+   {
+    "texto": "PlayStation",
+    "inicio": 23.06,
+    "fim": 23.56
+   },
+   {
+    "texto": "5",
+    "inicio": 23.56,
+    "fim": 24.16
+   },
+   {
+    "texto": "e",
+    "inicio": 24.16,
+    "fim": 24.6
+   },
+   {
+    "texto": "Xbox",
+    "inicio": 24.6,
+    "fim": 25.12
+   },
+   {
+    "texto": "Series,",
+    "inicio": 25.12,
+    "fim": 25.56
+   },
+   {
+    "texto": "e",
+    "inicio": 25.56,
+    "fim": 26.1
+   },
+   {
+    "texto": "não",
+    "inicio": 26.1,
+    "fim": 26.34
+   },
+   {
+    "texto": "tem",
+    "inicio": 26.34,
+    "fim": 26.62
+   },
+   {
+    "texto": "versão",
+    "inicio": 26.62,
+    "fim": 26.92
+   },
+   {
+    "texto": "de",
+    "inicio": 26.92,
+    "fim": 27.44
+   },
+   {
+    "texto": "PC",
+    "inicio": 27.44,
+    "fim": 27.44
+   },
+   {
+    "texto": "por",
+    "inicio": 27.44,
+    "fim": 27.76
+   },
+   {
+    "texto": "enquanto.",
+    "inicio": 27.76,
+    "fim": 28.02
+   },
+   {
+    "texto": "Lá",
+    "inicio": 28.02,
+    "fim": 29.2
+   },
+   {
+    "texto": "fora,",
+    "inicio": 29.2,
+    "fim": 29.48
+   },
+   {
+    "texto": "a",
+    "inicio": 29.8,
+    "fim": 30.16
+   },
+   {
+    "texto": "Standard",
+    "inicio": 30.16,
+    "fim": 30.48
+   },
+   {
+    "texto": "custa",
+    "inicio": 30.48,
+    "fim": 30.88
+   },
+   {
+    "texto": "US$",
+    "inicio": 30.88,
+    "fim": 32.48
+   },
+   {
+    "texto": "79,99.",
+    "inicio": 32.48,
+    "fim": 34.08
+   },
+   {
+    "texto": "E",
+    "inicio": 34.08,
+    "fim": 34.18
+   },
+   {
+    "texto": "aí,",
+    "inicio": 34.18,
+    "fim": 34.34
+   },
+   {
+    "texto": "vale",
+    "inicio": 34.86,
+    "fim": 35.06
+   },
+   {
+    "texto": "o",
+    "inicio": 35.06,
+    "fim": 35.58
+   },
+   {
+    "texto": "preço",
+    "inicio": 35.58,
+    "fim": 35.58
+   },
+   {
+    "texto": "ou",
+    "inicio": 35.58,
+    "fim": 35.94
+   },
+   {
+    "texto": "tá",
+    "inicio": 35.94,
+    "fim": 36.14
+   },
+   {
+    "texto": "caro?",
+    "inicio": 36.14,
+    "fim": 36.4
+   },
+   {
+    "texto": "Comenta",
+    "inicio": 36.4,
+    "fim": 36.6
+   },
+   {
+    "texto": "aí.",
+    "inicio": 36.6,
+    "fim": 36.8
+   }
+  ],
+  "cartoes": [
+   {
+    "inicio": 5.78,
+    "fim": 9.28,
+    "grande": "R$ 449,90",
+    "pequeno": "edição Standard"
+   },
+   {
+    "inicio": 12.0,
+    "fim": 15.5,
+    "grande": "R$ 549,90",
+    "pequeno": "Ultimate Edition"
+   },
+   {
+    "inicio": 23.06,
+    "fim": 27.56,
+    "grande": "PS5 · XBOX",
+    "pequeno": "sem versão de PC por enquanto"
+   },
+   {
+    "inicio": 32.48,
+    "fim": 35.98,
+    "grande": "US$ 79,99",
+    "pequeno": "preço lá fora"
+   }
+  ]
+ }
+}

@@ -1,0 +1,501 @@
+{
+ "dados": {
+  "video": "n1-212gb.mp4",
+  "duracao": 40.91,
+  "gancho": [
+   "GTA 6 VAI PESAR",
+   "212 GB"
+  ],
+  "destaque": "212 GB",
+  "cabecalho": "GTA 6 · Notícia",
+  "selo": "LANÇA 19/11",
+  "credito": "Imagens: trailer oficial Rockstar Games",
+  "canal": "Modo Replay",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 38.26,
+  "legendas": [],
+  "destaques": [
+   "212",
+   "223",
+   "10,",
+   "19.",
+   "lenta",
+   "Xfinity",
+   "espaço"
+  ],
+  "palavras": [
+   {
+    "texto": "GTA",
+    "inicio": 0.0,
+    "fim": 0.64
+   },
+   {
+    "texto": "6",
+    "inicio": 0.64,
+    "fim": 1.18
+   },
+   {
+    "texto": "vai",
+    "inicio": 1.18,
+    "fim": 1.44
+   },
+   {
+    "texto": "ocupar",
+    "inicio": 1.44,
+    "fim": 1.94
+   },
+   {
+    "texto": "até",
+    "inicio": 1.94,
+    "fim": 2.56
+   },
+   {
+    "texto": "212",
+    "inicio": 2.56,
+    "fim": 3.9
+   },
+   {
+    "texto": "gigas",
+    "inicio": 3.9,
+    "fim": 4.34
+   },
+   {
+    "texto": "no",
+    "inicio": 4.34,
+    "fim": 4.56
+   },
+   {
+    "texto": "seu",
+    "inicio": 4.56,
+    "fim": 5.0
+   },
+   {
+    "texto": "console.",
+    "inicio": 5.0,
+    "fim": 5.3
+   },
+   {
+    "texto": "E",
+    "inicio": 6.04,
+    "fim": 6.14
+   },
+   {
+    "texto": "no",
+    "inicio": 6.14,
+    "fim": 6.34
+   },
+   {
+    "texto": "PS5,",
+    "inicio": 6.34,
+    "fim": 7.26
+   },
+   {
+    "texto": "a",
+    "inicio": 7.26,
+    "fim": 8.04
+   },
+   {
+    "texto": "loja",
+    "inicio": 8.04,
+    "fim": 8.04
+   },
+   {
+    "texto": "já",
+    "inicio": 8.04,
+    "fim": 8.72
+   },
+   {
+    "texto": "mostra",
+    "inicio": 8.72,
+    "fim": 8.72
+   },
+   {
+    "texto": "cerca",
+    "inicio": 8.72,
+    "fim": 9.14
+   },
+   {
+    "texto": "de",
+    "inicio": 9.14,
+    "fim": 9.38
+   },
+   {
+    "texto": "223.",
+    "inicio": 9.38,
+    "fim": 10.9
+   },
+   {
+    "texto": "O",
+    "inicio": 11.62,
+    "fim": 12.02
+   },
+   {
+    "texto": "pré-carregamento",
+    "inicio": 12.02,
+    "fim": 12.88
+   },
+   {
+    "texto": "foi",
+    "inicio": 12.88,
+    "fim": 13.18
+   },
+   {
+    "texto": "liberado",
+    "inicio": 13.18,
+    "fim": 13.64
+   },
+   {
+    "texto": "no",
+    "inicio": 13.64,
+    "fim": 13.86
+   },
+   {
+    "texto": "dia",
+    "inicio": 13.86,
+    "fim": 14.06
+   },
+   {
+    "texto": "10,",
+    "inicio": 14.06,
+    "fim": 14.5
+   },
+   {
+    "texto": "e",
+    "inicio": 15.04,
+    "fim": 15.14
+   },
+   {
+    "texto": "o",
+    "inicio": 15.14,
+    "fim": 15.42
+   },
+   {
+    "texto": "download",
+    "inicio": 15.42,
+    "fim": 15.74
+   },
+   {
+    "texto": "é",
+    "inicio": 15.74,
+    "fim": 16.0
+   },
+   {
+    "texto": "tão",
+    "inicio": 16.0,
+    "fim": 16.22
+   },
+   {
+    "texto": "pesado",
+    "inicio": 16.22,
+    "fim": 16.74
+   },
+   {
+    "texto": "que",
+    "inicio": 16.74,
+    "fim": 17.24
+   },
+   {
+    "texto": "um",
+    "inicio": 17.24,
+    "fim": 17.48
+   },
+   {
+    "texto": "provedor",
+    "inicio": 17.48,
+    "fim": 17.96
+   },
+   {
+    "texto": "de",
+    "inicio": 18.1,
+    "fim": 18.78
+   },
+   {
+    "texto": "internet",
+    "inicio": 18.78,
+    "fim": 18.78
+   },
+   {
+    "texto": "do",
+    "inicio": 18.78,
+    "fim": 18.98
+   },
+   {
+    "texto": "Reino",
+    "inicio": 18.98,
+    "fim": 19.24
+   },
+   {
+    "texto": "Unido",
+    "inicio": 19.24,
+    "fim": 19.58
+   },
+   {
+    "texto": "avisou",
+    "inicio": 19.58,
+    "fim": 20.5
+   },
+   {
+    "texto": "que",
+    "inicio": 20.5,
+    "fim": 20.6
+   },
+   {
+    "texto": "a",
+    "inicio": 20.6,
+    "fim": 20.84
+   },
+   {
+    "texto": "conexão",
+    "inicio": 20.84,
+    "fim": 21.18
+   },
+   {
+    "texto": "dos",
+    "inicio": 21.18,
+    "fim": 21.5
+   },
+   {
+    "texto": "clientes",
+    "inicio": 21.5,
+    "fim": 22.0
+   },
+   {
+    "texto": "ficou",
+    "inicio": 22.0,
+    "fim": 22.32
+   },
+   {
+    "texto": "mais",
+    "inicio": 22.32,
+    "fim": 23.04
+   },
+   {
+    "texto": "lenta",
+    "inicio": 23.04,
+    "fim": 23.04
+   },
+   {
+    "texto": "por",
+    "inicio": 23.04,
+    "fim": 23.32
+   },
+   {
+    "texto": "causa",
+    "inicio": 23.32,
+    "fim": 23.66
+   },
+   {
+    "texto": "dele.",
+    "inicio": 23.66,
+    "fim": 23.96
+   },
+   {
+    "texto": "Nos",
+    "inicio": 24.56,
+    "fim": 24.98
+   },
+   {
+    "texto": "Estados",
+    "inicio": 24.98,
+    "fim": 25.5
+   },
+   {
+    "texto": "Unidos,",
+    "inicio": 25.5,
+    "fim": 25.94
+   },
+   {
+    "texto": "a",
+    "inicio": 26.42,
+    "fim": 26.68
+   },
+   {
+    "texto": "Xfinity",
+    "inicio": 26.68,
+    "fim": 27.06
+   },
+   {
+    "texto": "tá",
+    "inicio": 27.06,
+    "fim": 27.28
+   },
+   {
+    "texto": "até",
+    "inicio": 27.28,
+    "fim": 27.7
+   },
+   {
+    "texto": "dando",
+    "inicio": 27.7,
+    "fim": 27.88
+   },
+   {
+    "texto": "um",
+    "inicio": 27.88,
+    "fim": 28.44
+   },
+   {
+    "texto": "aumento",
+    "inicio": 28.44,
+    "fim": 28.44
+   },
+   {
+    "texto": "temporário",
+    "inicio": 28.44,
+    "fim": 29.16
+   },
+   {
+    "texto": "de",
+    "inicio": 29.16,
+    "fim": 29.42
+   },
+   {
+    "texto": "velocidade",
+    "inicio": 29.42,
+    "fim": 29.98
+   },
+   {
+    "texto": "pra",
+    "inicio": 29.98,
+    "fim": 30.5
+   },
+   {
+    "texto": "quem",
+    "inicio": 30.5,
+    "fim": 30.76
+   },
+   {
+    "texto": "for",
+    "inicio": 30.76,
+    "fim": 31.04
+   },
+   {
+    "texto": "baixar.",
+    "inicio": 31.04,
+    "fim": 31.96
+   },
+   {
+    "texto": "Então",
+    "inicio": 32.12,
+    "fim": 32.3
+   },
+   {
+    "texto": "a",
+    "inicio": 32.3,
+    "fim": 32.7
+   },
+   {
+    "texto": "dica",
+    "inicio": 32.7,
+    "fim": 32.7
+   },
+   {
+    "texto": "é:",
+    "inicio": 32.7,
+    "fim": 32.98
+   },
+   {
+    "texto": "libera",
+    "inicio": 33.68,
+    "fim": 33.8
+   },
+   {
+    "texto": "espaço",
+    "inicio": 33.8,
+    "fim": 34.22
+   },
+   {
+    "texto": "agora",
+    "inicio": 34.22,
+    "fim": 34.68
+   },
+   {
+    "texto": "e",
+    "inicio": 34.68,
+    "fim": 35.14
+   },
+   {
+    "texto": "começa",
+    "inicio": 35.14,
+    "fim": 35.56
+   },
+   {
+    "texto": "o",
+    "inicio": 35.56,
+    "fim": 35.72
+   },
+   {
+    "texto": "download",
+    "inicio": 35.72,
+    "fim": 36.2
+   },
+   {
+    "texto": "antes",
+    "inicio": 36.2,
+    "fim": 36.7
+   },
+   {
+    "texto": "do",
+    "inicio": 36.7,
+    "fim": 37.02
+   },
+   {
+    "texto": "dia",
+    "inicio": 37.02,
+    "fim": 37.14
+   },
+   {
+    "texto": "19.",
+    "inicio": 37.14,
+    "fim": 37.68
+   },
+   {
+    "texto": "Você",
+    "inicio": 37.68,
+    "fim": 37.88
+   },
+   {
+    "texto": "já",
+    "inicio": 37.88,
+    "fim": 38.08
+   },
+   {
+    "texto": "baixou?",
+    "inicio": 38.08,
+    "fim": 38.28
+   }
+  ],
+  "cartoes": [
+   {
+    "inicio": 2.56,
+    "fim": 6.06,
+    "grande": "212 GB",
+    "pequeno": "tamanho do download"
+   },
+   {
+    "inicio": 9.38,
+    "fim": 12.88,
+    "grande": "~223 GB",
+    "pequeno": "na loja do PS5"
+   },
+   {
+    "inicio": 14.06,
+    "fim": 17.56,
+    "grande": "10/11",
+    "pequeno": "pré-carregamento liberado"
+   },
+   {
+    "inicio": 23.04,
+    "fim": 26.54,
+    "grande": "INTERNET LENTA",
+    "pequeno": "provedor do Reino Unido avisou"
+   },
+   {
+    "inicio": 33.8,
+    "fim": 38.3,
+    "grande": "LIBERE ESPAÇO",
+    "pequeno": "baixe antes de 19/11"
+   }
+  ]
+ }
+}

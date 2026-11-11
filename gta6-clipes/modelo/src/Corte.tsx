@@ -22,7 +22,9 @@ export type Dados = {
   video: string; duracao: number; gancho: string[]; destaque: string; cabecalho: string; selo: string;
   credito: string; canal: string; chamadaFinal: string; inicioFinal: number; legendas: Legenda[]; destaques: string[];
   palavras?: PalavraFonte[];
+  cartoes?: Cartao[];
 };
+type Cartao = {inicio: number; fim: number; grande: string; pequeno: string};
 
 // Divide cada frase em palavras com tempo proporcional ao tamanho, e agrupa de 2 a 4 palavras por tela.
 type Palavra = {texto: string; inicio: number; fim: number};
@@ -182,11 +184,35 @@ const Final: React.FC<{dados: Dados}> = ({dados}) => {
   );
 };
 
+// Cartão de informação (número grande + linha de apoio) no centro do quadro.
+const Cartoes: React.FC<{cartoes: Cartao[]}> = ({cartoes}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const t = frame / fps;
+  const c = cartoes.find((x) => t >= x.inicio && t < x.fim);
+  if (!c) return null;
+  const s = spring({frame: frame - Math.round(c.inicio * fps), fps, config: {damping: 12, mass: 0.7}});
+  const saida = interpolate(t, [c.fim - 0.25, c.fim], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', top: 640, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: saida}}>
+      <div style={{
+        transform: `scale(${interpolate(s, [0, 1], [0.6, 1])}) rotate(${interpolate(s, [0, 1], [-6, -2])}deg)`, opacity: s,
+        background: 'rgba(13,7,24,0.82)', border: `6px solid ${AMARELO}`, borderRadius: 34, padding: '34px 56px', textAlign: 'center',
+        boxShadow: '0 14px 0 #000', maxWidth: 940,
+      }}>
+        <div style={{fontFamily: anton, fontSize: 150, lineHeight: 1, color: AMARELO, WebkitTextStroke: '8px #000', paintOrder: 'stroke fill'}}>{c.grande}</div>
+        <div style={{fontFamily: inter, fontWeight: 800, fontSize: 46, color: '#fff', marginTop: 14, textTransform: 'uppercase'}}>{c.pequeno}</div>
+      </div>
+    </div>
+  );
+};
+
 export const Corte: React.FC<{dados: Dados}> = ({dados}) => (
   <AbsoluteFill style={{backgroundColor: '#000'}}>
     <OffthreadVideo src={staticFile(dados.video)} />
     <Gancho dados={dados} />
     <Selo texto={dados.selo} />
+    {dados.cartoes && <Cartoes cartoes={dados.cartoes} />}
     <Legendas dados={dados} />
     <Credito texto={dados.credito} canal={dados.canal} />
     <Final dados={dados} />

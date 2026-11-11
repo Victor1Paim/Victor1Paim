@@ -1,0 +1,61 @@
+{
+ "nome": "n3-horario",
+ "gancho": [
+  "QUE HORAS",
+  "GTA 6 LIBERA?"
+ ],
+ "destaque": "GTA 6",
+ "texto": "Que horas GTA 6 libera? O lançamento é na quinta-feira, dia 19 de novembro, e o jogo deve liberar à meia-noite no horário local de cada região. Ou seja, na virada de quarta pra quinta. No PS5, a liberação acontece país por país. E se você comprou a versão digital, o pré-carregamento já tá aberto: dá pra deixar tudo baixado e jogar no primeiro minuto. Vai virar a noite jogando? Segue o Modo Replay pra não perder nada.",
+ "trechos": [
+  [
+   10,
+   0
+  ],
+  [
+   36,
+   0
+  ],
+  [
+   60,
+   0
+  ]
+ ],
+ "destaques": [
+  "19",
+  "meia-noite",
+  "quinta.",
+  "digital,",
+  "primeiro",
+  "país"
+ ],
+ "cartoes": [
+  {
+   "em": "19",
+   "grande": "QUINTA · 19/11",
+   "pequeno": "dia do lançamento"
+  },
+  {
+   "em": "meia-noite",
+   "grande": "00:00",
+   "pequeno": "horário local de cada região",
+   "dur": 4.5
+  },
+  {
+   "em": "PS5,",
+   "grande": "PS5",
+   "pequeno": "libera país por país"
+  },
+  {
+   "em": "pré-carregamento",
+   "grande": "PRÉ-LOAD ABERTO",
+   "pequeno": "baixe e jogue no 1º minuto",
+   "dur": 4.5
+  }
+ ],
+ "fonte": "/home/user/Victor1Paim/gta6-clipes/gravacoes/trailers/launch-trailer.mp4",
+ "canal": "Modo Replay",
+ "credito": "Imagens: trailer oficial Rockstar Games",
+ "cabecalho": "GTA 6 · Notícia",
+ "narracao": "n3-horario.mp3",
+ "transcricao": "n3-horario.json"
+}

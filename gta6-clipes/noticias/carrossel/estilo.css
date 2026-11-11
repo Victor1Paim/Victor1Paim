@@ -1,0 +1,9 @@
+@font-face{font-family:Anton;src:url(anton.woff2)}
+@font-face{font-family:Inter;font-weight:800;src:url(inter-800.woff2)}
+@font-face{font-family:Inter;font-weight:600;src:url(inter-600.woff2)}
+:root{--rosa:#ff4fa3;--amarelo:#ffd23f;--roxo:#5b2bd6;--fundo:#0d0718}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--fundo)}
+.fundo{position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,#ff4fa355,transparent 55%),radial-gradient(circle at 80% 90%,#5b2bd688,transparent 60%),linear-gradient(160deg,#1a0b2e,#0d0718)}
+.grade{position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 2px,transparent 2px),linear-gradient(90deg,#ffffff0d 2px,transparent 2px);background-size:60px 60px}
+.contorno{-webkit-text-stroke:10px #000;paint-order:stroke fill}
