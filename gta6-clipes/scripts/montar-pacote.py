@@ -14,11 +14,17 @@ for p in posts:
         shutil.copy(video, os.path.join(pasta, f"video-{p['nome']}.mp4"))
     else:
         faltando.append(p['video'])
+    capa = os.path.join(raiz, 'capas', f"{p['dia']}-{p['nome']}.jpg")
+    if os.path.exists(capa):
+        shutil.copy(capa, os.path.join(pasta, f"capa-{p['nome']}.jpg"))
+    else:
+        faltando.append('capa ' + p['nome'])
     if p.get('carrossel'):
         for i in range(1, 6):
             shutil.copy(os.path.join(raiz, 'noticias', 'carrossel', f"{p['carrossel']}-{i}.png"), os.path.join(pasta, f"carrossel-{i}.png"))
     with open(os.path.join(pasta, 'legendas.txt'), 'w') as f:
         f.write(f"POST {p['dia']} — {p['nome']}\n\n")
+        f.write("Capa: capa-" + p['nome'] + ".jpg (TikTok: Editar capa > Enviar · Reels: Editar capa > Adicionar da galeria · Shorts: escolher no app)\n\n")
         f.write("=== TIKTOK / REELS (vídeo) ===\n" + p['tiktok'] + "\n\n")
         f.write("=== YOUTUBE SHORTS ===\nTítulo: " + p['shorts_titulo'] + "\nDescrição:\n" + p['shorts_desc'] + "\n\n")
         f.write("=== INSTAGRAM (" + ("carrossel" if p.get('carrossel') else "legenda do Reels") + ") ===\n" + p['instagram'] + "\n")
