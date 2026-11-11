@@ -1,6 +1,6 @@
 # Modo Replay — kit dos perfis
 
-**Nome:** Modo Replay · **@:** `modoreplay` (igual nas três redes)
+**Nome:** Modo Replay · **@:** `@modoreplay_10` no Instagram e no YouTube (criados) · TikTok: usar o mesmo `modoreplay_10`
 **Cores:** rosa `#ff4fa3` · amarelo `#ffd23f` · roxo `#5b2bd6` · fundo `#0d0718`
 **Fontes:** Anton (títulos) · Inter 800/600 (textos)
 
@@ -15,13 +15,13 @@ Fonte editável: `perfil.html`, `banner.html`, `estilo.css` (renderizar com Play
 2. **Instagram**.
 3. **TikTok**.
 
-Se o `@modoreplay` estiver ocupado em alguma: `@modoreplay.br` → `@modoreplayoficial` → `@omodoreplay` (usar a mesma variação nas três, se possível).
+Status: ✅ Instagram `@modoreplay_10` · ✅ YouTube `@modoreplay_10` · ⏳ TikTok (usar `modoreplay_10`).
 
 ---
 
 ## YouTube
 
-- App do YouTube → foto do perfil → **Seu canal** → **Criar canal** → nome **Modo Replay** → identificador **@modoreplay**.
+- App do YouTube → foto do perfil → **Seu canal** → **Criar canal** → nome **Modo Replay** → identificador **@modoreplay_10**.
 - **Foto:** `perfil.png` · **Banner:** `banner.png` (YouTube Studio → Personalização → Branding).
 - **Descrição:**
 
@@ -40,7 +40,7 @@ Notícias, detalhes escondidos, gameplay e as maiores polêmicas, sempre com cr�
 
 ## Instagram
 
-- Criar conta → nome **Modo Replay** → usuário **modoreplay** → depois **Configurações → Tipo de conta → Conta profissional → Criador de conteúdo → categoria "Criador de vídeo games"** (libera estatísticas).
+- Criar conta → nome **Modo Replay** → usuário **modoreplay_10** → depois **Configurações → Tipo de conta → Conta profissional → Criador de conteúdo → categoria "Criador de vídeo games"** (libera estatísticas).
 - **Foto:** `perfil.png`
 - **Bio** (até 150 caracteres):
 
@@ -52,7 +52,7 @@ Notícias, detalhes escondidos, gameplay e as maiores polêmicas, sempre com cr�
 
 ## TikTok
 
-- Criar conta → usuário **modoreplay** → nome **Modo Replay** → **Configurações → Conta → Mudar para conta comercial? NÃO** — usar conta **pessoal/criador** (conta comercial perde acesso a sons em alta).
+- Criar conta → usuário **modoreplay_10** → nome **Modo Replay** → **Configurações → Conta → Mudar para conta comercial? NÃO** — usar conta **pessoal/criador** (conta comercial perde acesso a sons em alta).
 - **Foto:** `perfil.png`
 - **Bio** (até 80 caracteres):
 
