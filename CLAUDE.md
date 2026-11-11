@@ -11,3 +11,4 @@ Canal de séries em capítulos (@halftone.tv1). Série atual: **Ano Zero · T1 A
 - Antes de entregar um episódio: `cd halftone && npm run checar -- series/ano-zero/t1/epNN/ep.json`.
 - Segundo canal: **Desvendando Ideias** (@desvendandoideias.ofc) — curiosidades/ciência/mistérios, curtos e longos. Pasta `desvendando-ideias/` — leia `desvendando-ideias/plano-do-canal.md`. Independente do Halftone.
 - Idioma de trabalho com o usuário: português do Brasil.
+- Terceiro canal: **clipes de GTA 6** (nome a definir) — cortes curtos de gameplay + compilados. Pasta `gta6-clipes/` — leia `gta6-clipes/plano-do-canal.md`. Independente dos outros.
