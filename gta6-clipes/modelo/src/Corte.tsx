@@ -163,7 +163,6 @@ const Final: React.FC<{dados: Dados}> = ({dados}) => {
 export const Corte: React.FC<{dados: Dados}> = ({dados}) => (
   <AbsoluteFill style={{backgroundColor: '#000'}}>
     <OffthreadVideo src={staticFile(dados.video)} />
-    <div style={{position: 'absolute', top: VIDEO_TOPO, left: 0, width: 1080, height: VIDEO_ALTURA, boxShadow: 'inset 0 0 0 6px rgba(255,79,163,0.9)'}} />
     <Gancho dados={dados} />
     <Selo texto={dados.selo} />
     <Legendas dados={dados} />
