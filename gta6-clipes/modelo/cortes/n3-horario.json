@@ -1,7 +1,7 @@
 {
  "dados": {
   "video": "n3-horario.mp4",
-  "duracao": 37.91,
+  "duracao": 26.7,
   "gancho": [
    "QUE HORAS",
    "GTA 6 LIBERA?"
@@ -12,7 +12,7 @@
   "credito": "Imagens: trailer oficial Rockstar Games",
   "canal": "Modo Replay",
   "chamadaFinal": "Segue pra não perder nada de GTA 6",
-  "inicioFinal": 35.26,
+  "inicioFinal": 24.05,
   "legendas": [],
   "destaques": [
    "19",
@@ -26,416 +26,416 @@
    {
     "texto": "Que",
     "inicio": 0.0,
-    "fim": 0.3
+    "fim": 0.44
    },
    {
     "texto": "horas",
-    "inicio": 0.3,
-    "fim": 0.74
+    "inicio": 0.44,
+    "fim": 0.92
    },
    {
     "texto": "GTA",
-    "inicio": 0.74,
-    "fim": 1.38
+    "inicio": 0.92,
+    "fim": 1.4
    },
    {
     "texto": "6",
-    "inicio": 1.38,
-    "fim": 1.94
+    "inicio": 1.4,
+    "fim": 1.86
    },
    {
     "texto": "libera?",
-    "inicio": 1.94,
+    "inicio": 1.86,
     "fim": 2.46
    },
    {
     "texto": "O",
-    "inicio": 3.12,
-    "fim": 3.34
+    "inicio": 2.68,
+    "fim": 2.82
    },
    {
     "texto": "lançamento",
-    "inicio": 3.34,
-    "fim": 3.84
+    "inicio": 2.82,
+    "fim": 3.14
    },
    {
     "texto": "é",
-    "inicio": 3.84,
-    "fim": 4.0
+    "inicio": 3.14,
+    "fim": 3.28
    },
    {
     "texto": "na",
-    "inicio": 4.0,
-    "fim": 4.26
+    "inicio": 3.28,
+    "fim": 3.52
    },
    {
     "texto": "quinta-feira,",
-    "inicio": 4.26,
-    "fim": 5.36
+    "inicio": 3.52,
+    "fim": 4.18
    },
    {
     "texto": "dia",
-    "inicio": 5.36,
-    "fim": 5.5
+    "inicio": 4.18,
+    "fim": 4.24
    },
    {
     "texto": "19",
-    "inicio": 5.5,
-    "fim": 6.06
+    "inicio": 4.24,
+    "fim": 4.62
    },
    {
     "texto": "de",
-    "inicio": 6.06,
-    "fim": 6.36
+    "inicio": 4.62,
+    "fim": 4.8
    },
    {
     "texto": "novembro,",
-    "inicio": 6.36,
-    "fim": 6.74
+    "inicio": 4.8,
+    "fim": 5.18
    },
    {
     "texto": "e",
-    "inicio": 6.8,
-    "fim": 7.36
+    "inicio": 5.2,
+    "fim": 5.6
    },
    {
     "texto": "o",
-    "inicio": 7.36,
-    "fim": 7.58
+    "inicio": 5.6,
+    "fim": 5.88
    },
    {
     "texto": "jogo",
-    "inicio": 7.58,
-    "fim": 7.82
+    "inicio": 5.88,
+    "fim": 5.88
    },
    {
     "texto": "deve",
-    "inicio": 7.82,
-    "fim": 8.1
+    "inicio": 5.88,
+    "fim": 6.1
    },
    {
     "texto": "liberar",
-    "inicio": 8.1,
-    "fim": 8.66
+    "inicio": 6.1,
+    "fim": 6.42
    },
    {
     "texto": "à",
-    "inicio": 8.66,
-    "fim": 8.96
+    "inicio": 6.42,
+    "fim": 6.58
    },
    {
     "texto": "meia-noite",
-    "inicio": 8.96,
-    "fim": 9.56
+    "inicio": 6.58,
+    "fim": 7.18
    },
    {
     "texto": "no",
-    "inicio": 9.56,
-    "fim": 10.2
+    "inicio": 7.18,
+    "fim": 7.4
    },
    {
     "texto": "horário",
-    "inicio": 10.2,
-    "fim": 10.42
+    "inicio": 7.4,
+    "fim": 7.48
    },
    {
     "texto": "local",
-    "inicio": 10.42,
-    "fim": 10.94
+    "inicio": 7.48,
+    "fim": 7.9
    },
    {
     "texto": "de",
-    "inicio": 10.94,
-    "fim": 11.26
+    "inicio": 7.9,
+    "fim": 8.14
    },
    {
     "texto": "cada",
-    "inicio": 11.26,
-    "fim": 11.54
+    "inicio": 8.14,
+    "fim": 8.36
    },
    {
     "texto": "região.",
-    "inicio": 11.54,
-    "fim": 11.92
+    "inicio": 8.36,
+    "fim": 8.66
    },
    {
     "texto": "Ou",
-    "inicio": 12.66,
-    "fim": 13.06
+    "inicio": 9.02,
+    "fim": 9.22
    },
    {
     "texto": "seja,",
-    "inicio": 13.06,
-    "fim": 13.14
+    "inicio": 9.22,
+    "fim": 9.48
    },
    {
     "texto": "na",
-    "inicio": 13.62,
-    "fim": 13.94
+    "inicio": 9.62,
+    "fim": 9.8
    },
    {
     "texto": "virada",
-    "inicio": 13.94,
-    "fim": 14.18
+    "inicio": 9.8,
+    "fim": 9.9
    },
    {
     "texto": "de",
-    "inicio": 14.18,
-    "fim": 14.9
+    "inicio": 9.9,
+    "fim": 10.36
    },
    {
     "texto": "quarta",
-    "inicio": 14.9,
-    "fim": 14.9
+    "inicio": 10.36,
+    "fim": 10.46
    },
    {
     "texto": "pra",
-    "inicio": 14.9,
-    "fim": 15.16
+    "inicio": 10.46,
+    "fim": 10.74
    },
    {
     "texto": "quinta.",
-    "inicio": 15.16,
-    "fim": 15.76
+    "inicio": 10.74,
+    "fim": 11.06
    },
    {
     "texto": "No",
-    "inicio": 16.24,
-    "fim": 16.44
+    "inicio": 11.44,
+    "fim": 11.64
    },
    {
     "texto": "PS5,",
-    "inicio": 16.44,
-    "fim": 17.32
+    "inicio": 11.64,
+    "fim": 12.22
    },
    {
     "texto": "a",
-    "inicio": 17.58,
-    "fim": 18.14
+    "inicio": 12.28,
+    "fim": 12.62
    },
    {
     "texto": "liberação",
-    "inicio": 18.14,
-    "fim": 18.26
+    "inicio": 12.62,
+    "fim": 12.7
    },
    {
     "texto": "acontece",
-    "inicio": 18.26,
-    "fim": 18.86
+    "inicio": 12.7,
+    "fim": 13.12
    },
    {
     "texto": "país",
-    "inicio": 18.86,
-    "fim": 19.42
+    "inicio": 13.12,
+    "fim": 13.56
    },
    {
     "texto": "por",
-    "inicio": 19.42,
-    "fim": 19.7
+    "inicio": 13.56,
+    "fim": 13.76
    },
    {
     "texto": "país.",
-    "inicio": 19.7,
-    "fim": 20.06
+    "inicio": 13.76,
+    "fim": 14.04
    },
    {
     "texto": "E",
-    "inicio": 20.72,
-    "fim": 20.9
+    "inicio": 14.36,
+    "fim": 14.5
    },
    {
     "texto": "se",
-    "inicio": 20.9,
-    "fim": 21.02
+    "inicio": 14.5,
+    "fim": 14.56
    },
    {
     "texto": "você",
-    "inicio": 21.02,
-    "fim": 21.5
+    "inicio": 14.56,
+    "fim": 14.94
    },
    {
     "texto": "comprou",
-    "inicio": 21.5,
-    "fim": 21.68
+    "inicio": 14.94,
+    "fim": 14.96
    },
    {
     "texto": "a",
-    "inicio": 21.68,
-    "fim": 22.2
+    "inicio": 14.96,
+    "fim": 15.28
    },
    {
     "texto": "versão",
-    "inicio": 22.2,
-    "fim": 22.2
+    "inicio": 15.28,
+    "fim": 15.28
    },
    {
     "texto": "digital,",
-    "inicio": 22.2,
-    "fim": 22.72
+    "inicio": 15.28,
+    "fim": 15.72
    },
    {
     "texto": "o",
-    "inicio": 23.32,
-    "fim": 23.52
+    "inicio": 15.86,
+    "fim": 16.0
    },
    {
     "texto": "pré-carregamento",
-    "inicio": 23.52,
-    "fim": 24.3
+    "inicio": 16.0,
+    "fim": 16.56
    },
    {
     "texto": "já",
-    "inicio": 24.3,
-    "fim": 24.64
+    "inicio": 16.56,
+    "fim": 16.86
    },
    {
     "texto": "tá",
-    "inicio": 24.64,
-    "fim": 24.84
+    "inicio": 16.86,
+    "fim": 17.06
    },
    {
     "texto": "aberto:",
-    "inicio": 24.8,
-    "fim": 25.12
+    "inicio": 17.0,
+    "fim": 17.24
    },
    {
     "texto": "dá",
-    "inicio": 25.74,
-    "fim": 25.82
+    "inicio": 17.7,
+    "fim": 17.74
    },
    {
     "texto": "pra",
-    "inicio": 25.82,
-    "fim": 26.02
+    "inicio": 17.74,
+    "fim": 17.94
    },
    {
     "texto": "deixar",
-    "inicio": 25.98,
-    "fim": 26.24
+    "inicio": 17.88,
+    "fim": 18.02
    },
    {
     "texto": "tudo",
-    "inicio": 26.24,
-    "fim": 26.7
+    "inicio": 18.02,
+    "fim": 18.32
    },
    {
     "texto": "baixado",
-    "inicio": 26.7,
-    "fim": 27.22
+    "inicio": 18.32,
+    "fim": 18.8
    },
    {
     "texto": "e",
-    "inicio": 27.22,
-    "fim": 27.72
+    "inicio": 18.8,
+    "fim": 18.98
    },
    {
     "texto": "jogar",
-    "inicio": 27.72,
-    "fim": 27.96
+    "inicio": 18.98,
+    "fim": 19.1
    },
    {
     "texto": "no",
-    "inicio": 27.96,
-    "fim": 28.16
+    "inicio": 19.1,
+    "fim": 19.32
    },
    {
     "texto": "primeiro",
-    "inicio": 28.16,
-    "fim": 28.6
+    "inicio": 19.32,
+    "fim": 19.78
    },
    {
     "texto": "minuto.",
-    "inicio": 28.6,
-    "fim": 29.0
+    "inicio": 19.78,
+    "fim": 20.1
    },
    {
     "texto": "Vai",
-    "inicio": 29.0,
-    "fim": 30.04
+    "inicio": 20.54,
+    "fim": 20.64
    },
    {
     "texto": "virar",
-    "inicio": 30.04,
-    "fim": 30.36
+    "inicio": 20.64,
+    "fim": 20.84
    },
    {
     "texto": "a",
-    "inicio": 30.36,
-    "fim": 30.64
+    "inicio": 20.84,
+    "fim": 21.04
    },
    {
     "texto": "noite",
-    "inicio": 30.64,
-    "fim": 30.64
+    "inicio": 21.04,
+    "fim": 21.04
    },
    {
     "texto": "jogando?",
-    "inicio": 30.64,
-    "fim": 31.1
+    "inicio": 21.04,
+    "fim": 21.38
    },
    {
     "texto": "Segue",
-    "inicio": 31.98,
-    "fim": 32.04
+    "inicio": 21.74,
+    "fim": 21.92
    },
    {
     "texto": "o",
-    "inicio": 32.04,
-    "fim": 32.4
+    "inicio": 21.92,
+    "fim": 22.14
    },
    {
     "texto": "Modo",
-    "inicio": 32.4,
-    "fim": 32.5
+    "inicio": 22.14,
+    "fim": 22.18
    },
    {
     "texto": "Replay",
-    "inicio": 32.5,
-    "fim": 32.84
+    "inicio": 22.18,
+    "fim": 22.5
    },
    {
     "texto": "pra",
-    "inicio": 32.84,
-    "fim": 33.3
+    "inicio": 22.5,
+    "fim": 22.7
    },
    {
     "texto": "não",
-    "inicio": 33.3,
-    "fim": 33.72
+    "inicio": 22.68,
+    "fim": 22.94
    },
    {
     "texto": "perder",
-    "inicio": 33.72,
-    "fim": 33.96
+    "inicio": 22.94,
+    "fim": 23.06
    },
    {
     "texto": "nada.",
-    "inicio": 33.96,
-    "fim": 34.4
+    "inicio": 23.06,
+    "fim": 23.4
    }
   ],
   "cartoes": [
    {
-    "inicio": 5.5,
-    "fim": 8.86,
+    "inicio": 4.24,
+    "fim": 6.48,
     "grande": "QUINTA · 19/11",
     "pequeno": "dia do lançamento"
    },
    {
-    "inicio": 8.96,
-    "fim": 13.46,
+    "inicio": 6.58,
+    "fim": 11.08,
     "grande": "00:00",
     "pequeno": "horário local de cada região"
    },
    {
-    "inicio": 16.44,
-    "fim": 19.94,
+    "inicio": 11.64,
+    "fim": 15.14,
     "grande": "PS5",
     "pequeno": "libera país por país"
    },
    {
-    "inicio": 23.52,
-    "fim": 28.02,
+    "inicio": 16.0,
+    "fim": 20.5,
     "grande": "PRÉ-LOAD ABERTO",
     "pequeno": "baixe e jogue no 1º minuto"
    }
