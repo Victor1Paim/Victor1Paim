@@ -1,0 +1,984 @@
+{
+ "dados": {
+  "video": "davy-2-mapa.mp4",
+  "duracao": 62.05,
+  "gancho": [
+   "O MAPA DO GTA 6",
+   "É O DOBRO DO 5"
+  ],
+  "destaque": "DOBRO",
+  "cabecalho": "GTA 6 · quem viu antes contou",
+  "selo": "LANÇA 19/11",
+  "credito": "Davy Jones GTA 6 (YouTube)",
+  "canal": "@seucanal",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 59.7,
+  "legendas": [],
+  "destaques": [
+   "dobro",
+   "triplo",
+   "enorme",
+   "grande",
+   "mapa",
+   "vazio",
+   "contas"
+  ],
+  "palavras": [
+   {
+    "texto": "qual",
+    "inicio": 0.12,
+    "fim": 0.16
+   },
+   {
+    "texto": "é",
+    "inicio": 0.16,
+    "fim": 0.4
+   },
+   {
+    "texto": "o",
+    "inicio": 0.4,
+    "fim": 0.98
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 0.98,
+    "fim": 0.98
+   },
+   {
+    "texto": "do",
+    "inicio": 0.98,
+    "fim": 1.58
+   },
+   {
+    "texto": "mapa",
+    "inicio": 1.58,
+    "fim": 1.58
+   },
+   {
+    "texto": "do",
+    "inicio": 1.58,
+    "fim": 2.2
+   },
+   {
+    "texto": "GTA",
+    "inicio": 2.2,
+    "fim": 2.56
+   },
+   {
+    "texto": "6",
+    "inicio": 2.56,
+    "fim": 2.92
+   },
+   {
+    "texto": "Eu",
+    "inicio": 3.06,
+    "fim": 3.26
+   },
+   {
+    "texto": "fiz",
+    "inicio": 3.26,
+    "fim": 3.3
+   },
+   {
+    "texto": "essa",
+    "inicio": 3.3,
+    "fim": 3.48
+   },
+   {
+    "texto": "pergunta",
+    "inicio": 3.48,
+    "fim": 3.82
+   },
+   {
+    "texto": "assim",
+    "inicio": 3.82,
+    "fim": 4.76
+   },
+   {
+    "texto": "tá",
+    "inicio": 5.18,
+    "fim": 5.44
+   },
+   {
+    "texto": "E",
+    "inicio": 6.22,
+    "fim": 6.46
+   },
+   {
+    "texto": "ele",
+    "inicio": 6.46,
+    "fim": 6.66
+   },
+   {
+    "texto": "me",
+    "inicio": 6.66,
+    "fim": 7.22
+   },
+   {
+    "texto": "respondeu",
+    "inicio": 7.22,
+    "fim": 7.38
+   },
+   {
+    "texto": "né",
+    "inicio": 8.16,
+    "fim": 8.7
+   },
+   {
+    "texto": "Ele",
+    "inicio": 9.22,
+    "fim": 9.44
+   },
+   {
+    "texto": "respondeu",
+    "inicio": 9.44,
+    "fim": 9.76
+   },
+   {
+    "texto": "exatamente",
+    "inicio": 9.76,
+    "fim": 10.28
+   },
+   {
+    "texto": "o",
+    "inicio": 10.28,
+    "fim": 10.38
+   },
+   {
+    "texto": "que",
+    "inicio": 10.38,
+    "fim": 10.38
+   },
+   {
+    "texto": "eu",
+    "inicio": 10.38,
+    "fim": 10.58
+   },
+   {
+    "texto": "perguntei",
+    "inicio": 10.58,
+    "fim": 10.94
+   },
+   {
+    "texto": "O",
+    "inicio": 10.94,
+    "fim": 11.24
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 11.24,
+    "fim": 11.64
+   },
+   {
+    "texto": "do",
+    "inicio": 11.64,
+    "fim": 12.14
+   },
+   {
+    "texto": "mapa",
+    "inicio": 12.14,
+    "fim": 12.14
+   },
+   {
+    "texto": "do",
+    "inicio": 12.14,
+    "fim": 12.36
+   },
+   {
+    "texto": "GTA",
+    "inicio": 12.36,
+    "fim": 12.6
+   },
+   {
+    "texto": "6",
+    "inicio": 12.6,
+    "fim": 12.98
+   },
+   {
+    "texto": "é",
+    "inicio": 12.98,
+    "fim": 13.28
+   },
+   {
+    "texto": "equivalente",
+    "inicio": 13.28,
+    "fim": 13.82
+   },
+   {
+    "texto": "ao",
+    "inicio": 13.82,
+    "fim": 14.9
+   },
+   {
+    "texto": "dobro",
+    "inicio": 14.9,
+    "fim": 15.66
+   },
+   {
+    "texto": "do",
+    "inicio": 15.66,
+    "fim": 16.3
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 16.3,
+    "fim": 16.62
+   },
+   {
+    "texto": "em",
+    "inicio": 16.62,
+    "fim": 17.02
+   },
+   {
+    "texto": "área",
+    "inicio": 17.02,
+    "fim": 17.02
+   },
+   {
+    "texto": "total",
+    "inicio": 17.02,
+    "fim": 17.82
+   },
+   {
+    "texto": "do",
+    "inicio": 17.82,
+    "fim": 18.24
+   },
+   {
+    "texto": "GTA",
+    "inicio": 18.24,
+    "fim": 18.67
+   },
+   {
+    "texto": "5",
+    "inicio": 18.67,
+    "fim": 19.1
+   },
+   {
+    "texto": "tá",
+    "inicio": 19.16,
+    "fim": 19.62
+   },
+   {
+    "texto": "Lembrando",
+    "inicio": 19.62,
+    "fim": 19.8
+   },
+   {
+    "texto": "que",
+    "inicio": 19.8,
+    "fim": 19.94
+   },
+   {
+    "texto": "o",
+    "inicio": 19.94,
+    "fim": 20.08
+   },
+   {
+    "texto": "mapa",
+    "inicio": 20.08,
+    "fim": 20.08
+   },
+   {
+    "texto": "do",
+    "inicio": 20.08,
+    "fim": 20.3
+   },
+   {
+    "texto": "GTA",
+    "inicio": 20.3,
+    "fim": 20.39
+   },
+   {
+    "texto": "5",
+    "inicio": 20.39,
+    "fim": 20.48
+   },
+   {
+    "texto": "já",
+    "inicio": 20.48,
+    "fim": 20.62
+   },
+   {
+    "texto": "é",
+    "inicio": 20.62,
+    "fim": 20.7
+   },
+   {
+    "texto": "enorme",
+    "inicio": 20.7,
+    "fim": 20.88
+   },
+   {
+    "texto": "Mas",
+    "inicio": 21.24,
+    "fim": 21.3
+   },
+   {
+    "texto": "ele",
+    "inicio": 21.3,
+    "fim": 21.46
+   },
+   {
+    "texto": "falou",
+    "inicio": 21.46,
+    "fim": 21.6
+   },
+   {
+    "texto": "que",
+    "inicio": 21.6,
+    "fim": 21.78
+   },
+   {
+    "texto": "é",
+    "inicio": 21.78,
+    "fim": 22.08
+   },
+   {
+    "texto": "mais",
+    "inicio": 22.08,
+    "fim": 22.36
+   },
+   {
+    "texto": "que",
+    "inicio": 22.36,
+    "fim": 22.7
+   },
+   {
+    "texto": "o",
+    "inicio": 22.7,
+    "fim": 23.18
+   },
+   {
+    "texto": "triplo",
+    "inicio": 23.18,
+    "fim": 23.78
+   },
+   {
+    "texto": "de",
+    "inicio": 23.78,
+    "fim": 24.74
+   },
+   {
+    "texto": "áreas",
+    "inicio": 24.74,
+    "fim": 24.74
+   },
+   {
+    "texto": "habitadas",
+    "inicio": 24.74,
+    "fim": 25.7
+   },
+   {
+    "texto": "com",
+    "inicio": 25.7,
+    "fim": 26.04
+   },
+   {
+    "texto": "prédios",
+    "inicio": 26.04,
+    "fim": 26.24
+   },
+   {
+    "texto": "com",
+    "inicio": 26.52,
+    "fim": 26.52
+   },
+   {
+    "texto": "coisas",
+    "inicio": 26.52,
+    "fim": 26.6
+   },
+   {
+    "texto": "Então",
+    "inicio": 26.72,
+    "fim": 26.74
+   },
+   {
+    "texto": "assim",
+    "inicio": 26.84,
+    "fim": 27.24
+   },
+   {
+    "texto": "vai",
+    "inicio": 27.26,
+    "fim": 27.38
+   },
+   {
+    "texto": "ser",
+    "inicio": 27.38,
+    "fim": 27.48
+   },
+   {
+    "texto": "um",
+    "inicio": 27.48,
+    "fim": 27.8
+   },
+   {
+    "texto": "mapa",
+    "inicio": 27.8,
+    "fim": 27.8
+   },
+   {
+    "texto": "muito",
+    "inicio": 27.8,
+    "fim": 28.28
+   },
+   {
+    "texto": "grande",
+    "inicio": 28.28,
+    "fim": 28.62
+   },
+   {
+    "texto": "mas",
+    "inicio": 29.04,
+    "fim": 29.24
+   },
+   {
+    "texto": "que",
+    "inicio": 29.24,
+    "fim": 29.5
+   },
+   {
+    "texto": "não",
+    "inicio": 29.5,
+    "fim": 29.58
+   },
+   {
+    "texto": "vai",
+    "inicio": 29.58,
+    "fim": 29.82
+   },
+   {
+    "texto": "ser",
+    "inicio": 29.82,
+    "fim": 30.48
+   },
+   {
+    "texto": "tão",
+    "inicio": 30.48,
+    "fim": 30.74
+   },
+   {
+    "texto": "vazio",
+    "inicio": 30.74,
+    "fim": 31.76
+   },
+   {
+    "texto": "quanto",
+    "inicio": 31.76,
+    "fim": 32.02
+   },
+   {
+    "texto": "algumas",
+    "inicio": 32.02,
+    "fim": 32.68
+   },
+   {
+    "texto": "pessoas",
+    "inicio": 32.68,
+    "fim": 32.92
+   },
+   {
+    "texto": "achavam",
+    "inicio": 32.92,
+    "fim": 33.14
+   },
+   {
+    "texto": "o",
+    "inicio": 33.14,
+    "fim": 33.36
+   },
+   {
+    "texto": "GTA",
+    "inicio": 33.36,
+    "fim": 33.44
+   },
+   {
+    "texto": "5",
+    "inicio": 33.44,
+    "fim": 33.52
+   },
+   {
+    "texto": "Eu",
+    "inicio": 33.56,
+    "fim": 33.7
+   },
+   {
+    "texto": "não",
+    "inicio": 33.7,
+    "fim": 33.82
+   },
+   {
+    "texto": "acho",
+    "inicio": 33.82,
+    "fim": 33.9
+   },
+   {
+    "texto": "o",
+    "inicio": 33.9,
+    "fim": 34.06
+   },
+   {
+    "texto": "mapa",
+    "inicio": 34.06,
+    "fim": 34.06
+   },
+   {
+    "texto": "do",
+    "inicio": 34.06,
+    "fim": 34.24
+   },
+   {
+    "texto": "GTA",
+    "inicio": 34.24,
+    "fim": 34.39
+   },
+   {
+    "texto": "5",
+    "inicio": 34.39,
+    "fim": 34.54
+   },
+   {
+    "texto": "vazio",
+    "inicio": 34.54,
+    "fim": 34.62
+   },
+   {
+    "texto": "não",
+    "inicio": 34.62,
+    "fim": 34.74
+   },
+   {
+    "texto": "tá",
+    "inicio": 34.76,
+    "fim": 35.02
+   },
+   {
+    "texto": "Mas",
+    "inicio": 35.14,
+    "fim": 35.44
+   },
+   {
+    "texto": "tinha",
+    "inicio": 35.44,
+    "fim": 35.72
+   },
+   {
+    "texto": "espaços",
+    "inicio": 35.72,
+    "fim": 36.14
+   },
+   {
+    "texto": "realmente",
+    "inicio": 36.14,
+    "fim": 36.64
+   },
+   {
+    "texto": "com",
+    "inicio": 36.64,
+    "fim": 37.16
+   },
+   {
+    "texto": "muita",
+    "inicio": 37.16,
+    "fim": 37.38
+   },
+   {
+    "texto": "vegetação",
+    "inicio": 37.38,
+    "fim": 37.9
+   },
+   {
+    "texto": "montanhas",
+    "inicio": 38.48,
+    "fim": 38.5
+   },
+   {
+    "texto": "não",
+    "inicio": 38.58,
+    "fim": 38.78
+   },
+   {
+    "texto": "sei",
+    "inicio": 38.78,
+    "fim": 38.78
+   },
+   {
+    "texto": "o",
+    "inicio": 38.78,
+    "fim": 38.78
+   },
+   {
+    "texto": "que",
+    "inicio": 38.78,
+    "fim": 38.78
+   },
+   {
+    "texto": "que",
+    "inicio": 38.86,
+    "fim": 38.9
+   },
+   {
+    "texto": "tinha",
+    "inicio": 38.9,
+    "fim": 38.98
+   },
+   {
+    "texto": "pouca",
+    "inicio": 38.98,
+    "fim": 39.18
+   },
+   {
+    "texto": "coisa",
+    "inicio": 39.18,
+    "fim": 39.34
+   },
+   {
+    "texto": "lá",
+    "inicio": 39.34,
+    "fim": 39.48
+   },
+   {
+    "texto": "Ele",
+    "inicio": 39.48,
+    "fim": 39.58
+   },
+   {
+    "texto": "falou",
+    "inicio": 39.58,
+    "fim": 39.68
+   },
+   {
+    "texto": "que",
+    "inicio": 39.68,
+    "fim": 39.92
+   },
+   {
+    "texto": "o",
+    "inicio": 39.92,
+    "fim": 40.38
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 40.38,
+    "fim": 40.44
+   },
+   {
+    "texto": "do",
+    "inicio": 40.44,
+    "fim": 40.82
+   },
+   {
+    "texto": "mapa",
+    "inicio": 40.82,
+    "fim": 40.82
+   },
+   {
+    "texto": "é",
+    "inicio": 40.82,
+    "fim": 41.06
+   },
+   {
+    "texto": "o",
+    "inicio": 41.06,
+    "fim": 41.36
+   },
+   {
+    "texto": "dobro",
+    "inicio": 41.36,
+    "fim": 41.38
+   },
+   {
+    "texto": "em",
+    "inicio": 41.38,
+    "fim": 41.96
+   },
+   {
+    "texto": "área",
+    "inicio": 41.96,
+    "fim": 42.0
+   },
+   {
+    "texto": "total",
+    "inicio": 42.0,
+    "fim": 42.46
+   },
+   {
+    "texto": "ok",
+    "inicio": 42.46,
+    "fim": 42.7
+   },
+   {
+    "texto": "A",
+    "inicio": 43.4,
+    "fim": 43.44
+   },
+   {
+    "texto": "gente",
+    "inicio": 43.44,
+    "fim": 43.44
+   },
+   {
+    "texto": "pode",
+    "inicio": 43.44,
+    "fim": 43.52
+   },
+   {
+    "texto": "fazer",
+    "inicio": 43.52,
+    "fim": 43.64
+   },
+   {
+    "texto": "as",
+    "inicio": 43.64,
+    "fim": 43.9
+   },
+   {
+    "texto": "contas",
+    "inicio": 43.9,
+    "fim": 43.94
+   },
+   {
+    "texto": "aí",
+    "inicio": 43.94,
+    "fim": 44.14
+   },
+   {
+    "texto": "Galera",
+    "inicio": 44.26,
+    "fim": 44.46
+   },
+   {
+    "texto": "façam",
+    "inicio": 44.5,
+    "fim": 44.66
+   },
+   {
+    "texto": "as",
+    "inicio": 44.66,
+    "fim": 44.9
+   },
+   {
+    "texto": "contas",
+    "inicio": 44.9,
+    "fim": 45.02
+   },
+   {
+    "texto": "aí",
+    "inicio": 45.02,
+    "fim": 45.26
+   },
+   {
+    "texto": "Qual",
+    "inicio": 45.4,
+    "fim": 45.4
+   },
+   {
+    "texto": "é",
+    "inicio": 45.4,
+    "fim": 45.48
+   },
+   {
+    "texto": "o",
+    "inicio": 45.48,
+    "fim": 45.78
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 45.78,
+    "fim": 45.78
+   },
+   {
+    "texto": "desse",
+    "inicio": 45.78,
+    "fim": 45.98
+   },
+   {
+    "texto": "mapa",
+    "inicio": 45.98,
+    "fim": 46.14
+   },
+   {
+    "texto": "aí",
+    "inicio": 46.14,
+    "fim": 46.52
+   },
+   {
+    "texto": "É",
+    "inicio": 46.64,
+    "fim": 46.8
+   },
+   {
+    "texto": "o",
+    "inicio": 46.8,
+    "fim": 47.2
+   },
+   {
+    "texto": "dobro",
+    "inicio": 47.2,
+    "fim": 47.22
+   },
+   {
+    "texto": "do",
+    "inicio": 47.22,
+    "fim": 47.56
+   },
+   {
+    "texto": "GTA",
+    "inicio": 47.56,
+    "fim": 47.79
+   },
+   {
+    "texto": "5",
+    "inicio": 47.79,
+    "fim": 48.02
+   },
+   {
+    "texto": "e",
+    "inicio": 48.02,
+    "fim": 48.42
+   },
+   {
+    "texto": "o",
+    "inicio": 48.42,
+    "fim": 49.2
+   },
+   {
+    "texto": "triplo",
+    "inicio": 49.2,
+    "fim": 49.2
+   },
+   {
+    "texto": "em",
+    "inicio": 49.2,
+    "fim": 50.18
+   },
+   {
+    "texto": "área",
+    "inicio": 50.18,
+    "fim": 50.22
+   },
+   {
+    "texto": "povoada",
+    "inicio": 50.22,
+    "fim": 50.98
+   },
+   {
+    "texto": "digamos",
+    "inicio": 51.12,
+    "fim": 51.32
+   },
+   {
+    "texto": "assim",
+    "inicio": 51.32,
+    "fim": 51.54
+   },
+   {
+    "texto": "tá",
+    "inicio": 51.64,
+    "fim": 51.9
+   },
+   {
+    "texto": "Então",
+    "inicio": 52.08,
+    "fim": 52.56
+   },
+   {
+    "texto": "muito",
+    "inicio": 52.56,
+    "fim": 53.04
+   },
+   {
+    "texto": "muito",
+    "inicio": 53.42,
+    "fim": 53.42
+   },
+   {
+    "texto": "grande",
+    "inicio": 53.42,
+    "fim": 53.6
+   },
+   {
+    "texto": "Vai",
+    "inicio": 53.86,
+    "fim": 53.98
+   },
+   {
+    "texto": "ter",
+    "inicio": 53.98,
+    "fim": 54.18
+   },
+   {
+    "texto": "muita",
+    "inicio": 54.18,
+    "fim": 54.76
+   },
+   {
+    "texto": "coisa",
+    "inicio": 54.76,
+    "fim": 55.0
+   },
+   {
+    "texto": "pra",
+    "inicio": 55.0,
+    "fim": 55.16
+   },
+   {
+    "texto": "fazer",
+    "inicio": 55.16,
+    "fim": 55.32
+   },
+   {
+    "texto": "nesse",
+    "inicio": 55.32,
+    "fim": 55.6
+   },
+   {
+    "texto": "mapa",
+    "inicio": 55.6,
+    "fim": 55.84
+   },
+   {
+    "texto": "E",
+    "inicio": 56.5,
+    "fim": 56.74
+   },
+   {
+    "texto": "vai",
+    "inicio": 56.74,
+    "fim": 56.94
+   },
+   {
+    "texto": "ser",
+    "inicio": 56.94,
+    "fim": 57.48
+   },
+   {
+    "texto": "uma",
+    "inicio": 57.48,
+    "fim": 58.02
+   },
+   {
+    "texto": "delícia",
+    "inicio": 58.02,
+    "fim": 58.36
+   },
+   {
+    "texto": "explorar",
+    "inicio": 58.36,
+    "fim": 58.92
+   },
+   {
+    "texto": "tudo",
+    "inicio": 58.92,
+    "fim": 59.06
+   },
+   {
+    "texto": "isso",
+    "inicio": 59.06,
+    "fim": 59.34
+   }
+  ]
+ }
+}

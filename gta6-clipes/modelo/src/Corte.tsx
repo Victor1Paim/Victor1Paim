@@ -17,13 +17,33 @@ const VIDEO_TOPO = 400;
 const VIDEO_ALTURA = 1080;
 
 type Legenda = {inicio: number; fim: number; texto: string};
+type PalavraFonte = {texto: string; inicio: number; fim: number};
 export type Dados = {
   video: string; duracao: number; gancho: string[]; destaque: string; cabecalho: string; selo: string;
   credito: string; canal: string; chamadaFinal: string; inicioFinal: number; legendas: Legenda[]; destaques: string[];
+  palavras?: PalavraFonte[];
 };
 
 // Divide cada frase em palavras com tempo proporcional ao tamanho, e agrupa de 2 a 4 palavras por tela.
 type Palavra = {texto: string; inicio: number; fim: number};
+const agrupar = (palavras: Palavra[]): Palavra[][] => {
+  const grupos: Palavra[][] = [];
+  let atual: Palavra[] = [];
+  palavras.forEach((w, i) => {
+    atual.push(w);
+    const fimDeFrase = /[.?!,]$/.test(w.texto);
+    const pausa = palavras[i + 1] && palavras[i + 1].inicio - w.fim > 0.35;
+    const proxima = palavras[i + 1]?.texto.length ?? 0;
+    const largo = atual.reduce((n, x) => n + x.texto.length + 1, 0) + proxima > 17;
+    if (atual.length >= 4 || largo || ((fimDeFrase || pausa) && atual.length >= 1)) {
+      grupos.push(atual);
+      atual = [];
+    }
+  });
+  if (atual.length) grupos.push(atual);
+  return grupos;
+};
+
 const quebrar = (l: Legenda): Palavra[][] => {
   const ps = l.texto.split(' ');
   const pesos = ps.map((p) => p.length + 2);
@@ -53,7 +73,8 @@ const Legendas: React.FC<{dados: Dados}> = ({dados}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
-  const grupos = dados.legendas.flatMap(quebrar);
+  // Com tempo real de cada palavra (transcrição), usa direto; senão, distribui pelas frases.
+  const grupos = dados.palavras?.length ? agrupar(dados.palavras) : dados.legendas.flatMap(quebrar);
   const g = grupos.find((gr, i) => {
     const fim = Math.min(gr[gr.length - 1].fim + 0.25, grupos[i + 1]?.[0].inicio ?? Infinity);
     return t >= gr[0].inicio && t < fim;
@@ -67,7 +88,8 @@ const Legendas: React.FC<{dados: Dados}> = ({dados}) => {
     }}>
       {g.map((w, i) => {
         const falando = t >= w.inicio && t < w.fim + 0.05;
-        const destaque = dados.destaques.includes(w.texto);
+        const limpa = w.texto.replace(/[.,!?]/g, '').toLowerCase();
+        const destaque = dados.destaques.some((d) => d.replace(/[.,!?]/g, '').toLowerCase() === limpa);
         return (
           <span key={i} style={{
             fontFamily: anton, fontSize: 92, lineHeight: 1.15, textTransform: 'uppercase', margin: '0 12px',

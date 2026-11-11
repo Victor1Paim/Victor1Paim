@@ -1,0 +1,885 @@
+{
+ "dados": {
+  "video": "davy-1-30fps.mp4",
+  "duracao": 62.65,
+  "gancho": [
+   "GTA 6 VAI RODAR",
+   "A 30 FPS?"
+  ],
+  "destaque": "30 FPS",
+  "cabecalho": "GTA 6 · quem viu antes contou",
+  "selo": "LANÇA 19/11",
+  "credito": "Davy Jones GTA 6 (YouTube)",
+  "canal": "@seucanal",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 60.3,
+  "legendas": [],
+  "destaques": [
+   "30",
+   "60",
+   "FPS",
+   "PS5",
+   "Pro",
+   "limite",
+   "estável",
+   "tecnologia"
+  ],
+  "palavras": [
+   {
+    "texto": "O",
+    "inicio": 0.1,
+    "fim": 0.12
+   },
+   {
+    "texto": "GTA",
+    "inicio": 0.12,
+    "fim": 0.42
+   },
+   {
+    "texto": "6",
+    "inicio": 0.42,
+    "fim": 0.78
+   },
+   {
+    "texto": "vai",
+    "inicio": 0.78,
+    "fim": 0.94
+   },
+   {
+    "texto": "ser",
+    "inicio": 0.94,
+    "fim": 1.08
+   },
+   {
+    "texto": "30",
+    "inicio": 1.08,
+    "fim": 1.7
+   },
+   {
+    "texto": "FPS",
+    "inicio": 1.7,
+    "fim": 2.22
+   },
+   {
+    "texto": "ou",
+    "inicio": 2.22,
+    "fim": 2.54
+   },
+   {
+    "texto": "vai",
+    "inicio": 2.54,
+    "fim": 2.86
+   },
+   {
+    "texto": "ser",
+    "inicio": 2.86,
+    "fim": 2.86
+   },
+   {
+    "texto": "60",
+    "inicio": 2.86,
+    "fim": 4.18
+   },
+   {
+    "texto": "FPS",
+    "inicio": 4.18,
+    "fim": 4.88
+   },
+   {
+    "texto": "Essa",
+    "inicio": 5.78,
+    "fim": 6.26
+   },
+   {
+    "texto": "é",
+    "inicio": 6.26,
+    "fim": 6.74
+   },
+   {
+    "texto": "uma",
+    "inicio": 6.74,
+    "fim": 6.92
+   },
+   {
+    "texto": "pergunta",
+    "inicio": 6.92,
+    "fim": 7.24
+   },
+   {
+    "texto": "bem",
+    "inicio": 7.24,
+    "fim": 8.3
+   },
+   {
+    "texto": "relevante",
+    "inicio": 8.3,
+    "fim": 9.26
+   },
+   {
+    "texto": "tá",
+    "inicio": 9.36,
+    "fim": 9.98
+   },
+   {
+    "texto": "gente",
+    "inicio": 9.98,
+    "fim": 10.2
+   },
+   {
+    "texto": "Mas",
+    "inicio": 12.04,
+    "fim": 12.52
+   },
+   {
+    "texto": "mas",
+    "inicio": 12.52,
+    "fim": 13.0
+   },
+   {
+    "texto": "E",
+    "inicio": 13.0,
+    "fim": 13.24
+   },
+   {
+    "texto": "eu",
+    "inicio": 13.24,
+    "fim": 13.34
+   },
+   {
+    "texto": "perguntei",
+    "inicio": 13.34,
+    "fim": 14.2
+   },
+   {
+    "texto": "E",
+    "inicio": 14.78,
+    "fim": 14.92
+   },
+   {
+    "texto": "eles",
+    "inicio": 14.92,
+    "fim": 15.14
+   },
+   {
+    "texto": "falaram",
+    "inicio": 15.14,
+    "fim": 15.3
+   },
+   {
+    "texto": "que",
+    "inicio": 15.3,
+    "fim": 15.42
+   },
+   {
+    "texto": "eles",
+    "inicio": 15.42,
+    "fim": 15.74
+   },
+   {
+    "texto": "estão",
+    "inicio": 15.74,
+    "fim": 15.8
+   },
+   {
+    "texto": "mirando",
+    "inicio": 15.8,
+    "fim": 16.16
+   },
+   {
+    "texto": "no",
+    "inicio": 16.16,
+    "fim": 16.4
+   },
+   {
+    "texto": "30",
+    "inicio": 16.4,
+    "fim": 16.76
+   },
+   {
+    "texto": "FPS",
+    "inicio": 16.76,
+    "fim": 17.04
+   },
+   {
+    "texto": "tá",
+    "inicio": 17.14,
+    "fim": 17.34
+   },
+   {
+    "texto": "galera",
+    "inicio": 17.34,
+    "fim": 17.46
+   },
+   {
+    "texto": "E",
+    "inicio": 17.46,
+    "fim": 17.82
+   },
+   {
+    "texto": "eles",
+    "inicio": 17.82,
+    "fim": 18.1
+   },
+   {
+    "texto": "claro",
+    "inicio": 18.38,
+    "fim": 18.46
+   },
+   {
+    "texto": "justificaram",
+    "inicio": 18.78,
+    "fim": 19.36
+   },
+   {
+    "texto": "falando",
+    "inicio": 19.36,
+    "fim": 19.74
+   },
+   {
+    "texto": "do",
+    "inicio": 19.74,
+    "fim": 20.06
+   },
+   {
+    "texto": "tamanho",
+    "inicio": 20.06,
+    "fim": 20.32
+   },
+   {
+    "texto": "do",
+    "inicio": 20.32,
+    "fim": 20.6
+   },
+   {
+    "texto": "jogo",
+    "inicio": 20.6,
+    "fim": 20.6
+   },
+   {
+    "texto": "massivo",
+    "inicio": 20.6,
+    "fim": 20.92
+   },
+   {
+    "texto": "Realmente",
+    "inicio": 21.02,
+    "fim": 21.18
+   },
+   {
+    "texto": "se",
+    "inicio": 21.3,
+    "fim": 21.32
+   },
+   {
+    "texto": "você",
+    "inicio": 21.32,
+    "fim": 21.46
+   },
+   {
+    "texto": "ver",
+    "inicio": 21.46,
+    "fim": 21.6
+   },
+   {
+    "texto": "é",
+    "inicio": 21.72,
+    "fim": 21.72
+   },
+   {
+    "texto": "uma",
+    "inicio": 21.72,
+    "fim": 21.86
+   },
+   {
+    "texto": "coisa",
+    "inicio": 21.86,
+    "fim": 22.02
+   },
+   {
+    "texto": "absurda",
+    "inicio": 22.02,
+    "fim": 22.46
+   },
+   {
+    "texto": "É",
+    "inicio": 23.28,
+    "fim": 23.32
+   },
+   {
+    "texto": "um",
+    "inicio": 23.32,
+    "fim": 23.74
+   },
+   {
+    "texto": "negócio",
+    "inicio": 23.74,
+    "fim": 23.74
+   },
+   {
+    "texto": "colossal",
+    "inicio": 23.74,
+    "fim": 24.06
+   },
+   {
+    "texto": "um",
+    "inicio": 24.18,
+    "fim": 24.42
+   },
+   {
+    "texto": "negócio",
+    "inicio": 24.42,
+    "fim": 24.42
+   },
+   {
+    "texto": "absurdo",
+    "inicio": 24.42,
+    "fim": 24.86
+   },
+   {
+    "texto": "E",
+    "inicio": 25.0,
+    "fim": 25.08
+   },
+   {
+    "texto": "que",
+    "inicio": 25.08,
+    "fim": 25.28
+   },
+   {
+    "texto": "eles",
+    "inicio": 25.28,
+    "fim": 25.7
+   },
+   {
+    "texto": "estão",
+    "inicio": 25.7,
+    "fim": 25.96
+   },
+   {
+    "texto": "mirando",
+    "inicio": 25.96,
+    "fim": 26.2
+   },
+   {
+    "texto": "pra",
+    "inicio": 26.2,
+    "fim": 26.38
+   },
+   {
+    "texto": "fazer",
+    "inicio": 26.38,
+    "fim": 26.52
+   },
+   {
+    "texto": "o",
+    "inicio": 26.52,
+    "fim": 27.04
+   },
+   {
+    "texto": "30",
+    "inicio": 27.04,
+    "fim": 27.14
+   },
+   {
+    "texto": "FPS",
+    "inicio": 27.14,
+    "fim": 27.58
+   },
+   {
+    "texto": "Eles",
+    "inicio": 27.78,
+    "fim": 27.94
+   },
+   {
+    "texto": "falaram",
+    "inicio": 27.94,
+    "fim": 28.08
+   },
+   {
+    "texto": "pra",
+    "inicio": 28.08,
+    "fim": 28.26
+   },
+   {
+    "texto": "mim",
+    "inicio": 28.26,
+    "fim": 28.4
+   },
+   {
+    "texto": "cara",
+    "inicio": 29.18,
+    "fim": 29.18
+   },
+   {
+    "texto": "que",
+    "inicio": 29.18,
+    "fim": 29.42
+   },
+   {
+    "texto": "o",
+    "inicio": 29.42,
+    "fim": 29.94
+   },
+   {
+    "texto": "GTA",
+    "inicio": 29.94,
+    "fim": 30.22
+   },
+   {
+    "texto": "6",
+    "inicio": 30.22,
+    "fim": 30.94
+   },
+   {
+    "texto": "é",
+    "inicio": 30.94,
+    "fim": 31.22
+   },
+   {
+    "texto": "o",
+    "inicio": 31.22,
+    "fim": 31.6
+   },
+   {
+    "texto": "jogo",
+    "inicio": 31.6,
+    "fim": 31.6
+   },
+   {
+    "texto": "que",
+    "inicio": 31.6,
+    "fim": 31.8
+   },
+   {
+    "texto": "vai",
+    "inicio": 31.8,
+    "fim": 32.04
+   },
+   {
+    "texto": "empurrar",
+    "inicio": 32.04,
+    "fim": 32.24
+   },
+   {
+    "texto": "a",
+    "inicio": 32.24,
+    "fim": 32.8
+   },
+   {
+    "texto": "tecnologia",
+    "inicio": 32.8,
+    "fim": 32.8
+   },
+   {
+    "texto": "ao",
+    "inicio": 32.8,
+    "fim": 33.38
+   },
+   {
+    "texto": "limite",
+    "inicio": 33.38,
+    "fim": 33.38
+   },
+   {
+    "texto": "dessa",
+    "inicio": 33.38,
+    "fim": 33.74
+   },
+   {
+    "texto": "geração",
+    "inicio": 33.74,
+    "fim": 34.1
+   },
+   {
+    "texto": "de",
+    "inicio": 34.1,
+    "fim": 34.7
+   },
+   {
+    "texto": "console",
+    "inicio": 34.7,
+    "fim": 35.0
+   },
+   {
+    "texto": "tá",
+    "inicio": 35.14,
+    "fim": 35.36
+   },
+   {
+    "texto": "Eles",
+    "inicio": 35.6,
+    "fim": 35.86
+   },
+   {
+    "texto": "falaram",
+    "inicio": 35.86,
+    "fim": 36.06
+   },
+   {
+    "texto": "isso",
+    "inicio": 36.06,
+    "fim": 36.58
+   },
+   {
+    "texto": "com",
+    "inicio": 36.58,
+    "fim": 36.96
+   },
+   {
+    "texto": "essas",
+    "inicio": 36.96,
+    "fim": 37.16
+   },
+   {
+    "texto": "palavras",
+    "inicio": 37.16,
+    "fim": 37.4
+   },
+   {
+    "texto": "tá",
+    "inicio": 37.5,
+    "fim": 37.92
+   },
+   {
+    "texto": "Eles",
+    "inicio": 37.92,
+    "fim": 38.14
+   },
+   {
+    "texto": "não",
+    "inicio": 38.14,
+    "fim": 38.3
+   },
+   {
+    "texto": "conseguiram",
+    "inicio": 38.3,
+    "fim": 38.74
+   },
+   {
+    "texto": "colocar",
+    "inicio": 38.74,
+    "fim": 39.06
+   },
+   {
+    "texto": "Aí",
+    "inicio": 39.32,
+    "fim": 39.42
+   },
+   {
+    "texto": "eu",
+    "inicio": 39.48,
+    "fim": 39.58
+   },
+   {
+    "texto": "perguntei",
+    "inicio": 39.58,
+    "fim": 40.0
+   },
+   {
+    "texto": "E",
+    "inicio": 40.42,
+    "fim": 40.5
+   },
+   {
+    "texto": "no",
+    "inicio": 40.5,
+    "fim": 40.6
+   },
+   {
+    "texto": "PS5",
+    "inicio": 40.6,
+    "fim": 40.94
+   },
+   {
+    "texto": "Pro",
+    "inicio": 40.94,
+    "fim": 41.28
+   },
+   {
+    "texto": "vai",
+    "inicio": 41.28,
+    "fim": 41.86
+   },
+   {
+    "texto": "ter",
+    "inicio": 41.86,
+    "fim": 41.98
+   },
+   {
+    "texto": "condições",
+    "inicio": 41.98,
+    "fim": 42.38
+   },
+   {
+    "texto": "de",
+    "inicio": 42.38,
+    "fim": 42.66
+   },
+   {
+    "texto": "chegar",
+    "inicio": 42.66,
+    "fim": 42.72
+   },
+   {
+    "texto": "a",
+    "inicio": 42.72,
+    "fim": 42.82
+   },
+   {
+    "texto": "60",
+    "inicio": 42.82,
+    "fim": 43.08
+   },
+   {
+    "texto": "FPS",
+    "inicio": 43.08,
+    "fim": 43.22
+   },
+   {
+    "texto": "Eles",
+    "inicio": 43.22,
+    "fim": 44.04
+   },
+   {
+    "texto": "não",
+    "inicio": 44.04,
+    "fim": 44.58
+   },
+   {
+    "texto": "me",
+    "inicio": 44.58,
+    "fim": 45.22
+   },
+   {
+    "texto": "deram",
+    "inicio": 45.22,
+    "fim": 45.52
+   },
+   {
+    "texto": "uma",
+    "inicio": 45.52,
+    "fim": 45.78
+   },
+   {
+    "texto": "resposta",
+    "inicio": 45.78,
+    "fim": 46.14
+   },
+   {
+    "texto": "final",
+    "inicio": 46.14,
+    "fim": 46.64
+   },
+   {
+    "texto": "sobre",
+    "inicio": 46.64,
+    "fim": 46.86
+   },
+   {
+    "texto": "isso",
+    "inicio": 46.86,
+    "fim": 47.34
+   },
+   {
+    "texto": "tá",
+    "inicio": 47.38,
+    "fim": 47.58
+   },
+   {
+    "texto": "Eles",
+    "inicio": 48.04,
+    "fim": 48.24
+   },
+   {
+    "texto": "falaram",
+    "inicio": 48.24,
+    "fim": 48.34
+   },
+   {
+    "texto": "que",
+    "inicio": 48.34,
+    "fim": 48.42
+   },
+   {
+    "texto": "eles",
+    "inicio": 48.42,
+    "fim": 48.6
+   },
+   {
+    "texto": "não",
+    "inicio": 48.6,
+    "fim": 48.7
+   },
+   {
+    "texto": "tinham",
+    "inicio": 48.7,
+    "fim": 48.84
+   },
+   {
+    "texto": "essa",
+    "inicio": 48.84,
+    "fim": 49.04
+   },
+   {
+    "texto": "informação",
+    "inicio": 49.04,
+    "fim": 49.32
+   },
+   {
+    "texto": "ali",
+    "inicio": 49.32,
+    "fim": 49.72
+   },
+   {
+    "texto": "O",
+    "inicio": 50.0,
+    "fim": 50.06
+   },
+   {
+    "texto": "que",
+    "inicio": 50.06,
+    "fim": 50.16
+   },
+   {
+    "texto": "faz",
+    "inicio": 50.16,
+    "fim": 50.56
+   },
+   {
+    "texto": "eu",
+    "inicio": 50.56,
+    "fim": 50.86
+   },
+   {
+    "texto": "acreditar",
+    "inicio": 50.86,
+    "fim": 51.28
+   },
+   {
+    "texto": "que",
+    "inicio": 51.28,
+    "fim": 51.48
+   },
+   {
+    "texto": "não",
+    "inicio": 51.48,
+    "fim": 51.66
+   },
+   {
+    "texto": "vai",
+    "inicio": 51.66,
+    "fim": 51.82
+   },
+   {
+    "texto": "ter",
+    "inicio": 51.82,
+    "fim": 51.98
+   },
+   {
+    "texto": "Mas",
+    "inicio": 52.64,
+    "fim": 52.8
+   },
+   {
+    "texto": "existe",
+    "inicio": 53.34,
+    "fim": 53.36
+   },
+   {
+    "texto": "uma",
+    "inicio": 53.36,
+    "fim": 54.16
+   },
+   {
+    "texto": "micro",
+    "inicio": 54.16,
+    "fim": 54.64
+   },
+   {
+    "texto": "esperança",
+    "inicio": 54.64,
+    "fim": 55.14
+   },
+   {
+    "texto": "tá",
+    "inicio": 55.64,
+    "fim": 56.08
+   },
+   {
+    "texto": "Mas",
+    "inicio": 56.08,
+    "fim": 56.24
+   },
+   {
+    "texto": "não",
+    "inicio": 56.24,
+    "fim": 56.4
+   },
+   {
+    "texto": "é",
+    "inicio": 56.4,
+    "fim": 56.56
+   },
+   {
+    "texto": "muita",
+    "inicio": 56.56,
+    "fim": 56.84
+   },
+   {
+    "texto": "Eles",
+    "inicio": 57.3,
+    "fim": 57.3
+   },
+   {
+    "texto": "estão",
+    "inicio": 57.3,
+    "fim": 57.56
+   },
+   {
+    "texto": "mirando",
+    "inicio": 57.56,
+    "fim": 57.92
+   },
+   {
+    "texto": "em",
+    "inicio": 57.92,
+    "fim": 58.24
+   },
+   {
+    "texto": "fazer",
+    "inicio": 58.24,
+    "fim": 58.24
+   },
+   {
+    "texto": "um",
+    "inicio": 58.24,
+    "fim": 58.48
+   },
+   {
+    "texto": "jogo",
+    "inicio": 58.48,
+    "fim": 58.48
+   },
+   {
+    "texto": "estável",
+    "inicio": 58.48,
+    "fim": 58.94
+   },
+   {
+    "texto": "a",
+    "inicio": 58.94,
+    "fim": 59.28
+   },
+   {
+    "texto": "30",
+    "inicio": 59.28,
+    "fim": 59.56
+   },
+   {
+    "texto": "FPS",
+    "inicio": 59.56,
+    "fim": 59.98
+   }
+  ]
+ }
+}

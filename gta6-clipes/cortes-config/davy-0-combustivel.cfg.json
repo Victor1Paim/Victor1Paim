@@ -1,0 +1,41 @@
+{
+ "fonte": "/home/user/Victor1Paim/gta6-clipes/gravacoes/fontes/davy-antes-de-comprar.mp4",
+ "transcricoes": [
+  {
+   "arquivo": "partes/p00.json",
+   "offset": 0
+  }
+ ],
+ "credito": "Davy Jones GTA 6 (YouTube)",
+ "canal": "@seucanal",
+ "cabecalho": "GTA 6 · quem viu antes contou",
+ "correcoes": {
+  "Battlefield V Pro": "PS5 Pro",
+  "VI": "6",
+  "Lúcia": "Lucia",
+  "Lucy": "Lucia",
+  "GTA V": "GTA 5",
+  "resta -te -be -fun": "it's gotta be fun",
+  "porra": "p*rra"
+ },
+ "nome": "davy-0-combustivel",
+ "inicio": 17.85,
+ "fim": 101.4,
+ "gancho": [
+  "GTA 6 VAI TER",
+  "GASOLINA NO CARRO"
+ ],
+ "destaque": "GASOLINA",
+ "destaques": [
+  "combustível",
+  "gasolina",
+  "elétrico",
+  "abastecer",
+  "abastecer,",
+  "chato,",
+  "diversão,",
+  "polêmico",
+  "combustível,",
+  "pouco,"
+ ]
+}

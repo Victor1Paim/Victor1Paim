@@ -1,0 +1,1130 @@
+{
+ "dados": {
+  "video": "davy-3-policia.mp4",
+  "duracao": 68.15,
+  "gancho": [
+   "A POLÍCIA DO GTA 6",
+   "MUDOU TUDO"
+  ],
+  "destaque": "MUDOU TUDO",
+  "cabecalho": "GTA 6 · quem viu antes contou",
+  "selo": "LANÇA 19/11",
+  "credito": "Davy Jones GTA 6 (YouTube)",
+  "canal": "@seucanal",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 65.8,
+  "legendas": [],
+  "destaques": [
+   "denunciado",
+   "câmera",
+   "máscara",
+   "roupa",
+   "carro",
+   "estrelas",
+   "símbolos",
+   "polícia"
+  ],
+  "palavras": [
+   {
+    "texto": "Como",
+    "inicio": 0.1,
+    "fim": 0.5
+   },
+   {
+    "texto": "que",
+    "inicio": 0.5,
+    "fim": 1.1
+   },
+   {
+    "texto": "aumentou",
+    "inicio": 1.1,
+    "fim": 1.48
+   },
+   {
+    "texto": "ainda",
+    "inicio": 1.48,
+    "fim": 1.74
+   },
+   {
+    "texto": "mais",
+    "inicio": 1.74,
+    "fim": 1.86
+   },
+   {
+    "texto": "a",
+    "inicio": 1.86,
+    "fim": 1.98
+   },
+   {
+    "texto": "imersão",
+    "inicio": 1.98,
+    "fim": 2.22
+   },
+   {
+    "texto": "da",
+    "inicio": 2.22,
+    "fim": 2.44
+   },
+   {
+    "texto": "perseguição",
+    "inicio": 2.44,
+    "fim": 2.7
+   },
+   {
+    "texto": "policial",
+    "inicio": 2.7,
+    "fim": 3.12
+   },
+   {
+    "texto": "Por",
+    "inicio": 3.12,
+    "fim": 3.5
+   },
+   {
+    "texto": "exemplo",
+    "inicio": 3.5,
+    "fim": 3.8
+   },
+   {
+    "texto": "você",
+    "inicio": 4.76,
+    "fim": 4.98
+   },
+   {
+    "texto": "matou",
+    "inicio": 4.98,
+    "fim": 5.2
+   },
+   {
+    "texto": "alguém",
+    "inicio": 5.2,
+    "fim": 5.36
+   },
+   {
+    "texto": "na",
+    "inicio": 5.36,
+    "fim": 5.88
+   },
+   {
+    "texto": "rua",
+    "inicio": 5.88,
+    "fim": 5.88
+   },
+   {
+    "texto": "tá",
+    "inicio": 6.08,
+    "fim": 6.4
+   },
+   {
+    "texto": "No",
+    "inicio": 7.04,
+    "fim": 7.14
+   },
+   {
+    "texto": "GTA",
+    "inicio": 7.14,
+    "fim": 7.42
+   },
+   {
+    "texto": "6",
+    "inicio": 7.42,
+    "fim": 7.74
+   },
+   {
+    "texto": "você",
+    "inicio": 7.74,
+    "fim": 8.0
+   },
+   {
+    "texto": "só",
+    "inicio": 8.0,
+    "fim": 8.52
+   },
+   {
+    "texto": "vai",
+    "inicio": 8.52,
+    "fim": 8.84
+   },
+   {
+    "texto": "ser",
+    "inicio": 8.84,
+    "fim": 9.06
+   },
+   {
+    "texto": "perseguido",
+    "inicio": 9.06,
+    "fim": 9.28
+   },
+   {
+    "texto": "pela",
+    "inicio": 9.28,
+    "fim": 9.48
+   },
+   {
+    "texto": "polícia",
+    "inicio": 9.48,
+    "fim": 9.64
+   },
+   {
+    "texto": "se",
+    "inicio": 9.64,
+    "fim": 9.78
+   },
+   {
+    "texto": "você",
+    "inicio": 9.78,
+    "fim": 9.96
+   },
+   {
+    "texto": "for",
+    "inicio": 9.96,
+    "fim": 10.26
+   },
+   {
+    "texto": "denunciado",
+    "inicio": 10.26,
+    "fim": 11.36
+   },
+   {
+    "texto": "por",
+    "inicio": 11.36,
+    "fim": 11.76
+   },
+   {
+    "texto": "alguém",
+    "inicio": 11.76,
+    "fim": 11.96
+   },
+   {
+    "texto": "Alguém",
+    "inicio": 12.84,
+    "fim": 12.84
+   },
+   {
+    "texto": "tem",
+    "inicio": 12.84,
+    "fim": 13.02
+   },
+   {
+    "texto": "que",
+    "inicio": 13.02,
+    "fim": 13.3
+   },
+   {
+    "texto": "ter",
+    "inicio": 13.3,
+    "fim": 13.4
+   },
+   {
+    "texto": "visto",
+    "inicio": 13.4,
+    "fim": 13.4
+   },
+   {
+    "texto": "o",
+    "inicio": 13.4,
+    "fim": 13.72
+   },
+   {
+    "texto": "crime",
+    "inicio": 13.72,
+    "fim": 13.72
+   },
+   {
+    "texto": "que",
+    "inicio": 13.72,
+    "fim": 13.86
+   },
+   {
+    "texto": "você",
+    "inicio": 13.86,
+    "fim": 14.06
+   },
+   {
+    "texto": "viu",
+    "inicio": 14.06,
+    "fim": 14.14
+   },
+   {
+    "texto": "Pode",
+    "inicio": 14.32,
+    "fim": 14.32
+   },
+   {
+    "texto": "ser",
+    "inicio": 14.32,
+    "fim": 14.42
+   },
+   {
+    "texto": "uma",
+    "inicio": 14.42,
+    "fim": 14.64
+   },
+   {
+    "texto": "câmera",
+    "inicio": 14.64,
+    "fim": 14.86
+   },
+   {
+    "texto": "pode",
+    "inicio": 15.22,
+    "fim": 15.38
+   },
+   {
+    "texto": "ser",
+    "inicio": 15.38,
+    "fim": 15.38
+   },
+   {
+    "texto": "uma",
+    "inicio": 15.38,
+    "fim": 15.56
+   },
+   {
+    "texto": "pessoa",
+    "inicio": 15.56,
+    "fim": 15.86
+   },
+   {
+    "texto": "pode",
+    "inicio": 16.06,
+    "fim": 16.12
+   },
+   {
+    "texto": "ser",
+    "inicio": 16.12,
+    "fim": 16.12
+   },
+   {
+    "texto": "um",
+    "inicio": 16.12,
+    "fim": 16.22
+   },
+   {
+    "texto": "monte",
+    "inicio": 16.22,
+    "fim": 16.22
+   },
+   {
+    "texto": "de",
+    "inicio": 16.22,
+    "fim": 16.4
+   },
+   {
+    "texto": "coisa",
+    "inicio": 16.4,
+    "fim": 16.4
+   },
+   {
+    "texto": "Você",
+    "inicio": 16.64,
+    "fim": 16.8
+   },
+   {
+    "texto": "tem",
+    "inicio": 16.8,
+    "fim": 16.92
+   },
+   {
+    "texto": "que",
+    "inicio": 16.92,
+    "fim": 16.98
+   },
+   {
+    "texto": "ser",
+    "inicio": 16.98,
+    "fim": 17.12
+   },
+   {
+    "texto": "denunciado",
+    "inicio": 17.12,
+    "fim": 17.64
+   },
+   {
+    "texto": "Então",
+    "inicio": 17.96,
+    "fim": 18.08
+   },
+   {
+    "texto": "se",
+    "inicio": 18.08,
+    "fim": 18.16
+   },
+   {
+    "texto": "você",
+    "inicio": 18.16,
+    "fim": 18.32
+   },
+   {
+    "texto": "realmente",
+    "inicio": 18.32,
+    "fim": 18.62
+   },
+   {
+    "texto": "quiser",
+    "inicio": 18.62,
+    "fim": 18.78
+   },
+   {
+    "texto": "fazer",
+    "inicio": 18.78,
+    "fim": 18.96
+   },
+   {
+    "texto": "um",
+    "inicio": 18.96,
+    "fim": 19.24
+   },
+   {
+    "texto": "crime",
+    "inicio": 19.24,
+    "fim": 19.3
+   },
+   {
+    "texto": "bem",
+    "inicio": 19.3,
+    "fim": 19.7
+   },
+   {
+    "texto": "escondido",
+    "inicio": 19.7,
+    "fim": 20.18
+   },
+   {
+    "texto": "ninguém",
+    "inicio": 20.62,
+    "fim": 20.72
+   },
+   {
+    "texto": "vai",
+    "inicio": 20.72,
+    "fim": 20.92
+   },
+   {
+    "texto": "atrás",
+    "inicio": 20.92,
+    "fim": 21.06
+   },
+   {
+    "texto": "de",
+    "inicio": 21.06,
+    "fim": 21.46
+   },
+   {
+    "texto": "você",
+    "inicio": 21.46,
+    "fim": 21.46
+   },
+   {
+    "texto": "tá",
+    "inicio": 21.86,
+    "fim": 22.04
+   },
+   {
+    "texto": "Então",
+    "inicio": 22.68,
+    "fim": 23.06
+   },
+   {
+    "texto": "beleza",
+    "inicio": 23.06,
+    "fim": 23.34
+   },
+   {
+    "texto": "tem",
+    "inicio": 23.36,
+    "fim": 23.56
+   },
+   {
+    "texto": "isso",
+    "inicio": 23.56,
+    "fim": 23.74
+   },
+   {
+    "texto": "no",
+    "inicio": 23.74,
+    "fim": 23.82
+   },
+   {
+    "texto": "GTA",
+    "inicio": 23.82,
+    "fim": 23.94
+   },
+   {
+    "texto": "5",
+    "inicio": 23.94,
+    "fim": 24.06
+   },
+   {
+    "texto": "que",
+    "inicio": 24.06,
+    "fim": 24.18
+   },
+   {
+    "texto": "tinha",
+    "inicio": 24.18,
+    "fim": 24.32
+   },
+   {
+    "texto": "algo",
+    "inicio": 24.32,
+    "fim": 24.82
+   },
+   {
+    "texto": "assim",
+    "inicio": 24.82,
+    "fim": 25.14
+   },
+   {
+    "texto": "também",
+    "inicio": 25.14,
+    "fim": 25.44
+   },
+   {
+    "texto": "mas",
+    "inicio": 25.58,
+    "fim": 25.72
+   },
+   {
+    "texto": "nesse",
+    "inicio": 25.72,
+    "fim": 25.94
+   },
+   {
+    "texto": "é",
+    "inicio": 25.94,
+    "fim": 26.1
+   },
+   {
+    "texto": "mais",
+    "inicio": 26.1,
+    "fim": 26.42
+   },
+   {
+    "texto": "E",
+    "inicio": 26.7,
+    "fim": 26.82
+   },
+   {
+    "texto": "aí",
+    "inicio": 26.82,
+    "fim": 26.9
+   },
+   {
+    "texto": "o",
+    "inicio": 26.9,
+    "fim": 26.98
+   },
+   {
+    "texto": "que",
+    "inicio": 26.98,
+    "fim": 27.02
+   },
+   {
+    "texto": "acontece",
+    "inicio": 27.02,
+    "fim": 27.38
+   },
+   {
+    "texto": "Tem",
+    "inicio": 27.6,
+    "fim": 27.74
+   },
+   {
+    "texto": "as",
+    "inicio": 27.74,
+    "fim": 28.0
+   },
+   {
+    "texto": "estrelas",
+    "inicio": 28.0,
+    "fim": 28.26
+   },
+   {
+    "texto": "Embaixo",
+    "inicio": 28.78,
+    "fim": 29.06
+   },
+   {
+    "texto": "das",
+    "inicio": 29.06,
+    "fim": 29.34
+   },
+   {
+    "texto": "estrelas",
+    "inicio": 29.34,
+    "fim": 29.9
+   },
+   {
+    "texto": "vão",
+    "inicio": 29.9,
+    "fim": 30.64
+   },
+   {
+    "texto": "aparecer",
+    "inicio": 30.64,
+    "fim": 30.96
+   },
+   {
+    "texto": "símbolos",
+    "inicio": 30.96,
+    "fim": 31.58
+   },
+   {
+    "texto": "E",
+    "inicio": 31.58,
+    "fim": 32.08
+   },
+   {
+    "texto": "esses",
+    "inicio": 32.08,
+    "fim": 32.36
+   },
+   {
+    "texto": "símbolos",
+    "inicio": 32.36,
+    "fim": 32.9
+   },
+   {
+    "texto": "são",
+    "inicio": 32.9,
+    "fim": 33.88
+   },
+   {
+    "texto": "o",
+    "inicio": 33.88,
+    "fim": 34.9
+   },
+   {
+    "texto": "quanto",
+    "inicio": 34.9,
+    "fim": 34.9
+   },
+   {
+    "texto": "a",
+    "inicio": 34.9,
+    "fim": 35.68
+   },
+   {
+    "texto": "polícia",
+    "inicio": 35.68,
+    "fim": 35.68
+   },
+   {
+    "texto": "está",
+    "inicio": 35.68,
+    "fim": 35.96
+   },
+   {
+    "texto": "te",
+    "inicio": 35.96,
+    "fim": 36.38
+   },
+   {
+    "texto": "identificando",
+    "inicio": 36.38,
+    "fim": 36.9
+   },
+   {
+    "texto": "Por",
+    "inicio": 37.14,
+    "fim": 37.26
+   },
+   {
+    "texto": "exemplo",
+    "inicio": 37.26,
+    "fim": 37.66
+   },
+   {
+    "texto": "você",
+    "inicio": 38.04,
+    "fim": 38.16
+   },
+   {
+    "texto": "está",
+    "inicio": 38.16,
+    "fim": 38.36
+   },
+   {
+    "texto": "com",
+    "inicio": 38.36,
+    "fim": 38.5
+   },
+   {
+    "texto": "uma",
+    "inicio": 38.5,
+    "fim": 38.84
+   },
+   {
+    "texto": "máscara",
+    "inicio": 38.84,
+    "fim": 39.02
+   },
+   {
+    "texto": "vai",
+    "inicio": 39.3,
+    "fim": 39.44
+   },
+   {
+    "texto": "aparecer",
+    "inicio": 39.44,
+    "fim": 39.82
+   },
+   {
+    "texto": "ali",
+    "inicio": 39.82,
+    "fim": 40.1
+   },
+   {
+    "texto": "que",
+    "inicio": 40.1,
+    "fim": 40.2
+   },
+   {
+    "texto": "a",
+    "inicio": 40.2,
+    "fim": 40.54
+   },
+   {
+    "texto": "polícia",
+    "inicio": 40.54,
+    "fim": 40.54
+   },
+   {
+    "texto": "está",
+    "inicio": 40.54,
+    "fim": 40.72
+   },
+   {
+    "texto": "perseguindo",
+    "inicio": 40.72,
+    "fim": 40.94
+   },
+   {
+    "texto": "alguém",
+    "inicio": 40.94,
+    "fim": 41.16
+   },
+   {
+    "texto": "que",
+    "inicio": 41.16,
+    "fim": 41.44
+   },
+   {
+    "texto": "estava",
+    "inicio": 41.44,
+    "fim": 41.44
+   },
+   {
+    "texto": "de",
+    "inicio": 41.44,
+    "fim": 41.8
+   },
+   {
+    "texto": "máscara",
+    "inicio": 41.8,
+    "fim": 41.86
+   },
+   {
+    "texto": "Você",
+    "inicio": 42.28,
+    "fim": 42.44
+   },
+   {
+    "texto": "estava",
+    "inicio": 42.44,
+    "fim": 42.56
+   },
+   {
+    "texto": "com",
+    "inicio": 42.56,
+    "fim": 42.72
+   },
+   {
+    "texto": "a",
+    "inicio": 42.72,
+    "fim": 42.82
+   },
+   {
+    "texto": "roupa",
+    "inicio": 42.82,
+    "fim": 43.02
+   },
+   {
+    "texto": "tal",
+    "inicio": 43.02,
+    "fim": 43.28
+   },
+   {
+    "texto": "vai",
+    "inicio": 43.66,
+    "fim": 44.26
+   },
+   {
+    "texto": "aparecer",
+    "inicio": 44.26,
+    "fim": 44.38
+   },
+   {
+    "texto": "um",
+    "inicio": 44.38,
+    "fim": 44.96
+   },
+   {
+    "texto": "símbolo",
+    "inicio": 44.96,
+    "fim": 45.22
+   },
+   {
+    "texto": "que",
+    "inicio": 45.22,
+    "fim": 45.6
+   },
+   {
+    "texto": "indica",
+    "inicio": 45.6,
+    "fim": 45.78
+   },
+   {
+    "texto": "que",
+    "inicio": 45.78,
+    "fim": 45.86
+   },
+   {
+    "texto": "a",
+    "inicio": 45.86,
+    "fim": 46.22
+   },
+   {
+    "texto": "polícia",
+    "inicio": 46.22,
+    "fim": 46.22
+   },
+   {
+    "texto": "sabe",
+    "inicio": 46.22,
+    "fim": 46.42
+   },
+   {
+    "texto": "a",
+    "inicio": 46.42,
+    "fim": 46.64
+   },
+   {
+    "texto": "roupa",
+    "inicio": 46.64,
+    "fim": 46.68
+   },
+   {
+    "texto": "que",
+    "inicio": 46.68,
+    "fim": 46.8
+   },
+   {
+    "texto": "você",
+    "inicio": 46.8,
+    "fim": 47.06
+   },
+   {
+    "texto": "está",
+    "inicio": 47.06,
+    "fim": 47.12
+   },
+   {
+    "texto": "Você",
+    "inicio": 47.64,
+    "fim": 47.88
+   },
+   {
+    "texto": "fugiu",
+    "inicio": 47.88,
+    "fim": 48.16
+   },
+   {
+    "texto": "no",
+    "inicio": 48.16,
+    "fim": 48.36
+   },
+   {
+    "texto": "carro",
+    "inicio": 48.36,
+    "fim": 48.5
+   },
+   {
+    "texto": "tal",
+    "inicio": 48.5,
+    "fim": 48.88
+   },
+   {
+    "texto": "vai",
+    "inicio": 49.42,
+    "fim": 49.8
+   },
+   {
+    "texto": "aparecer",
+    "inicio": 49.8,
+    "fim": 50.08
+   },
+   {
+    "texto": "que",
+    "inicio": 50.08,
+    "fim": 50.24
+   },
+   {
+    "texto": "a",
+    "inicio": 50.24,
+    "fim": 50.6
+   },
+   {
+    "texto": "polícia",
+    "inicio": 50.6,
+    "fim": 50.6
+   },
+   {
+    "texto": "sabe",
+    "inicio": 50.6,
+    "fim": 50.8
+   },
+   {
+    "texto": "qual",
+    "inicio": 50.8,
+    "fim": 51.08
+   },
+   {
+    "texto": "carro",
+    "inicio": 51.08,
+    "fim": 51.24
+   },
+   {
+    "texto": "que",
+    "inicio": 51.24,
+    "fim": 51.4
+   },
+   {
+    "texto": "você",
+    "inicio": 51.4,
+    "fim": 51.6
+   },
+   {
+    "texto": "está",
+    "inicio": 51.6,
+    "fim": 51.7
+   },
+   {
+    "texto": "E",
+    "inicio": 52.36,
+    "fim": 52.6
+   },
+   {
+    "texto": "se",
+    "inicio": 52.6,
+    "fim": 52.66
+   },
+   {
+    "texto": "você",
+    "inicio": 52.66,
+    "fim": 52.86
+   },
+   {
+    "texto": "conseguir",
+    "inicio": 52.86,
+    "fim": 53.1
+   },
+   {
+    "texto": "se",
+    "inicio": 53.1,
+    "fim": 54.0
+   },
+   {
+    "texto": "livrar",
+    "inicio": 54.0,
+    "fim": 54.2
+   },
+   {
+    "texto": "desses",
+    "inicio": 54.2,
+    "fim": 54.78
+   },
+   {
+    "texto": "ícones",
+    "inicio": 54.78,
+    "fim": 55.46
+   },
+   {
+    "texto": "você",
+    "inicio": 55.88,
+    "fim": 56.12
+   },
+   {
+    "texto": "vai",
+    "inicio": 56.12,
+    "fim": 56.28
+   },
+   {
+    "texto": "conseguir",
+    "inicio": 56.28,
+    "fim": 56.58
+   },
+   {
+    "texto": "fugir",
+    "inicio": 56.58,
+    "fim": 56.74
+   },
+   {
+    "texto": "com",
+    "inicio": 56.74,
+    "fim": 56.86
+   },
+   {
+    "texto": "mais",
+    "inicio": 56.86,
+    "fim": 57.04
+   },
+   {
+    "texto": "facilidade",
+    "inicio": 57.04,
+    "fim": 57.34
+   },
+   {
+    "texto": "da",
+    "inicio": 57.34,
+    "fim": 57.54
+   },
+   {
+    "texto": "polícia",
+    "inicio": 57.54,
+    "fim": 57.84
+   },
+   {
+    "texto": "Entende",
+    "inicio": 58.54,
+    "fim": 58.8
+   },
+   {
+    "texto": "Trocar",
+    "inicio": 59.34,
+    "fim": 59.36
+   },
+   {
+    "texto": "o",
+    "inicio": 59.36,
+    "fim": 59.64
+   },
+   {
+    "texto": "carro",
+    "inicio": 59.64,
+    "fim": 59.64
+   },
+   {
+    "texto": "trocar",
+    "inicio": 59.76,
+    "fim": 59.96
+   },
+   {
+    "texto": "a",
+    "inicio": 59.96,
+    "fim": 60.14
+   },
+   {
+    "texto": "roupa",
+    "inicio": 60.14,
+    "fim": 60.16
+   },
+   {
+    "texto": "trocar",
+    "inicio": 60.3,
+    "fim": 60.44
+   },
+   {
+    "texto": "a",
+    "inicio": 60.44,
+    "fim": 60.7
+   },
+   {
+    "texto": "máscara",
+    "inicio": 60.7,
+    "fim": 60.7
+   },
+   {
+    "texto": "não",
+    "inicio": 60.8,
+    "fim": 60.9
+   },
+   {
+    "texto": "sei",
+    "inicio": 60.9,
+    "fim": 60.9
+   },
+   {
+    "texto": "o",
+    "inicio": 60.9,
+    "fim": 61.0
+   },
+   {
+    "texto": "quê",
+    "inicio": 61.0,
+    "fim": 61.0
+   },
+   {
+    "texto": "Você",
+    "inicio": 61.0,
+    "fim": 61.54
+   },
+   {
+    "texto": "vai",
+    "inicio": 61.54,
+    "fim": 61.82
+   },
+   {
+    "texto": "conseguir",
+    "inicio": 61.82,
+    "fim": 62.2
+   },
+   {
+    "texto": "se",
+    "inicio": 62.2,
+    "fim": 63.04
+   },
+   {
+    "texto": "desvencilhar",
+    "inicio": 63.04,
+    "fim": 63.36
+   },
+   {
+    "texto": "da",
+    "inicio": 63.36,
+    "fim": 63.52
+   },
+   {
+    "texto": "polícia",
+    "inicio": 63.52,
+    "fim": 63.68
+   },
+   {
+    "texto": "de",
+    "inicio": 63.68,
+    "fim": 63.96
+   },
+   {
+    "texto": "outras",
+    "inicio": 63.96,
+    "fim": 64.32
+   },
+   {
+    "texto": "maneiras",
+    "inicio": 64.32,
+    "fim": 64.66
+   },
+   {
+    "texto": "também",
+    "inicio": 64.66,
+    "fim": 65.04
+   },
+   {
+    "texto": "entendeu",
+    "inicio": 65.24,
+    "fim": 65.24
+   }
+  ]
+ }
+}

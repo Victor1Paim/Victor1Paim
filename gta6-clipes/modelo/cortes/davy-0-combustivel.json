@@ -1,0 +1,1402 @@
+{
+ "dados": {
+  "video": "davy-0-combustivel.mp4",
+  "duracao": 86.1,
+  "gancho": [
+   "GTA 6 VAI TER",
+   "GASOLINA NO CARRO"
+  ],
+  "destaque": "GASOLINA",
+  "cabecalho": "GTA 6 · quem viu antes contou",
+  "selo": "LANÇA 19/11",
+  "credito": "Davy Jones GTA 6 (YouTube)",
+  "canal": "@seucanal",
+  "chamadaFinal": "Segue pra não perder nada de GTA 6",
+  "inicioFinal": 83.75,
+  "legendas": [],
+  "destaques": [
+   "combustível",
+   "gasolina",
+   "elétrico",
+   "abastecer",
+   "abastecer,",
+   "chato,",
+   "diversão,",
+   "polêmico",
+   "combustível,",
+   "pouco,"
+  ],
+  "palavras": [
+   {
+    "texto": "GTA",
+    "inicio": 0.07,
+    "fim": 0.63
+   },
+   {
+    "texto": "6",
+    "inicio": 0.63,
+    "fim": 1.61
+   },
+   {
+    "texto": "terá",
+    "inicio": 1.61,
+    "fim": 2.37
+   },
+   {
+    "texto": "sistema",
+    "inicio": 2.37,
+    "fim": 2.83
+   },
+   {
+    "texto": "de",
+    "inicio": 2.83,
+    "fim": 3.07
+   },
+   {
+    "texto": "combustível",
+    "inicio": 3.07,
+    "fim": 3.71
+   },
+   {
+    "texto": "nos",
+    "inicio": 3.71,
+    "fim": 3.89
+   },
+   {
+    "texto": "carros",
+    "inicio": 3.89,
+    "fim": 4.35
+   },
+   {
+    "texto": "Pois",
+    "inicio": 5.31,
+    "fim": 5.71
+   },
+   {
+    "texto": "é",
+    "inicio": 5.71,
+    "fim": 5.93
+   },
+   {
+    "texto": "Então",
+    "inicio": 5.93,
+    "fim": 6.71
+   },
+   {
+    "texto": "o",
+    "inicio": 6.71,
+    "fim": 6.91
+   },
+   {
+    "texto": "que",
+    "inicio": 6.91,
+    "fim": 6.91
+   },
+   {
+    "texto": "acontece",
+    "inicio": 6.91,
+    "fim": 7.27
+   },
+   {
+    "texto": "galera,",
+    "inicio": 7.27,
+    "fim": 7.57
+   },
+   {
+    "texto": "você",
+    "inicio": 7.89,
+    "fim": 8.09
+   },
+   {
+    "texto": "vai",
+    "inicio": 8.09,
+    "fim": 8.21
+   },
+   {
+    "texto": "ter",
+    "inicio": 8.21,
+    "fim": 8.39
+   },
+   {
+    "texto": "que",
+    "inicio": 8.39,
+    "fim": 8.49
+   },
+   {
+    "texto": "abastecer",
+    "inicio": 8.49,
+    "fim": 8.85
+   },
+   {
+    "texto": "seu",
+    "inicio": 8.85,
+    "fim": 8.97
+   },
+   {
+    "texto": "carro,",
+    "inicio": 8.97,
+    "fim": 9.29
+   },
+   {
+    "texto": "ele",
+    "inicio": 9.81,
+    "fim": 9.91
+   },
+   {
+    "texto": "vai",
+    "inicio": 9.91,
+    "fim": 10.27
+   },
+   {
+    "texto": "ficar",
+    "inicio": 10.27,
+    "fim": 10.73
+   },
+   {
+    "texto": "sem",
+    "inicio": 10.73,
+    "fim": 10.93
+   },
+   {
+    "texto": "combustível",
+    "inicio": 10.93,
+    "fim": 11.47
+   },
+   {
+    "texto": "e",
+    "inicio": 11.47,
+    "fim": 11.65
+   },
+   {
+    "texto": "vai",
+    "inicio": 11.65,
+    "fim": 11.85
+   },
+   {
+    "texto": "poder,",
+    "inicio": 11.85,
+    "fim": 12.23
+   },
+   {
+    "texto": "vai",
+    "inicio": 12.31,
+    "fim": 12.49
+   },
+   {
+    "texto": "parar",
+    "inicio": 12.49,
+    "fim": 12.87
+   },
+   {
+    "texto": "se",
+    "inicio": 12.87,
+    "fim": 13.15
+   },
+   {
+    "texto": "não",
+    "inicio": 13.15,
+    "fim": 13.23
+   },
+   {
+    "texto": "tiver",
+    "inicio": 13.23,
+    "fim": 13.45
+   },
+   {
+    "texto": "o",
+    "inicio": 13.45,
+    "fim": 13.55
+   },
+   {
+    "texto": "combustível",
+    "inicio": 13.55,
+    "fim": 14.05
+   },
+   {
+    "texto": "Vai",
+    "inicio": 14.05,
+    "fim": 14.25
+   },
+   {
+    "texto": "ter",
+    "inicio": 14.25,
+    "fim": 14.37
+   },
+   {
+    "texto": "combustível,",
+    "inicio": 14.37,
+    "fim": 14.85
+   },
+   {
+    "texto": "pô,",
+    "inicio": 14.97,
+    "fim": 14.99
+   },
+   {
+    "texto": "de",
+    "inicio": 15.05,
+    "fim": 15.07
+   },
+   {
+    "texto": "gasolina",
+    "inicio": 15.07,
+    "fim": 15.39
+   },
+   {
+    "texto": "normal",
+    "inicio": 15.39,
+    "fim": 15.75
+   },
+   {
+    "texto": "e",
+    "inicio": 15.75,
+    "fim": 16.07
+   },
+   {
+    "texto": "vai",
+    "inicio": 16.07,
+    "fim": 16.19
+   },
+   {
+    "texto": "ter",
+    "inicio": 16.19,
+    "fim": 16.31
+   },
+   {
+    "texto": "também",
+    "inicio": 16.31,
+    "fim": 16.55
+   },
+   {
+    "texto": "de",
+    "inicio": 16.55,
+    "fim": 16.73
+   },
+   {
+    "texto": "carro",
+    "inicio": 16.73,
+    "fim": 16.93
+   },
+   {
+    "texto": "elétrico,",
+    "inicio": 16.93,
+    "fim": 17.41
+   },
+   {
+    "texto": "tá?",
+    "inicio": 17.55,
+    "fim": 17.89
+   },
+   {
+    "texto": "Isso",
+    "inicio": 18.31,
+    "fim": 18.45
+   },
+   {
+    "texto": "vai",
+    "inicio": 18.45,
+    "fim": 18.73
+   },
+   {
+    "texto": "ter",
+    "inicio": 18.73,
+    "fim": 18.97
+   },
+   {
+    "texto": "no",
+    "inicio": 18.97,
+    "fim": 19.09
+   },
+   {
+    "texto": "jogo",
+    "inicio": 19.09,
+    "fim": 19.35
+   },
+   {
+    "texto": "Aí",
+    "inicio": 19.35,
+    "fim": 19.57
+   },
+   {
+    "texto": "eu",
+    "inicio": 19.57,
+    "fim": 19.67
+   },
+   {
+    "texto": "perguntei,",
+    "inicio": 19.67,
+    "fim": 20.05
+   },
+   {
+    "texto": "pô,",
+    "inicio": 20.15,
+    "fim": 20.41
+   },
+   {
+    "texto": "né?",
+    "inicio": 23.35,
+    "fim": 24.33
+   },
+   {
+    "texto": "É",
+    "inicio": 25.37,
+    "fim": 25.61
+   },
+   {
+    "texto": "um",
+    "inicio": 25.61,
+    "fim": 26.23
+   },
+   {
+    "texto": "bagulho",
+    "inicio": 26.23,
+    "fim": 26.41
+   },
+   {
+    "texto": "polêmico",
+    "inicio": 26.41,
+    "fim": 27.09
+   },
+   {
+    "texto": "isso,",
+    "inicio": 27.09,
+    "fim": 27.33
+   },
+   {
+    "texto": "o",
+    "inicio": 27.41,
+    "fim": 27.49
+   },
+   {
+    "texto": "que",
+    "inicio": 27.49,
+    "fim": 27.49
+   },
+   {
+    "texto": "que",
+    "inicio": 27.49,
+    "fim": 27.59
+   },
+   {
+    "texto": "vocês,",
+    "inicio": 27.59,
+    "fim": 27.99
+   },
+   {
+    "texto": "qual",
+    "inicio": 28.63,
+    "fim": 28.75
+   },
+   {
+    "texto": "foi",
+    "inicio": 28.75,
+    "fim": 28.93
+   },
+   {
+    "texto": "a",
+    "inicio": 28.93,
+    "fim": 29.05
+   },
+   {
+    "texto": "intenção",
+    "inicio": 29.05,
+    "fim": 29.37
+   },
+   {
+    "texto": "que",
+    "inicio": 29.37,
+    "fim": 29.51
+   },
+   {
+    "texto": "qual",
+    "inicio": 29.51,
+    "fim": 29.67
+   },
+   {
+    "texto": "foi",
+    "inicio": 29.67,
+    "fim": 29.81
+   },
+   {
+    "texto": "a",
+    "inicio": 29.81,
+    "fim": 29.89
+   },
+   {
+    "texto": "ideia",
+    "inicio": 29.89,
+    "fim": 30.11
+   },
+   {
+    "texto": "Bom,",
+    "inicio": 30.11,
+    "fim": 30.43
+   },
+   {
+    "texto": "galera,",
+    "inicio": 30.47,
+    "fim": 30.53
+   },
+   {
+    "texto": "o",
+    "inicio": 30.55,
+    "fim": 30.67
+   },
+   {
+    "texto": "que",
+    "inicio": 30.67,
+    "fim": 30.69
+   },
+   {
+    "texto": "eles",
+    "inicio": 30.69,
+    "fim": 30.79
+   },
+   {
+    "texto": "me",
+    "inicio": 30.79,
+    "fim": 30.89
+   },
+   {
+    "texto": "disseram",
+    "inicio": 30.89,
+    "fim": 31.21
+   },
+   {
+    "texto": "em",
+    "inicio": 31.21,
+    "fim": 31.25
+   },
+   {
+    "texto": "relação",
+    "inicio": 31.25,
+    "fim": 31.39
+   },
+   {
+    "texto": "a",
+    "inicio": 31.39,
+    "fim": 31.81
+   },
+   {
+    "texto": "questão",
+    "inicio": 31.81,
+    "fim": 32.01
+   },
+   {
+    "texto": "do",
+    "inicio": 32.01,
+    "fim": 32.13
+   },
+   {
+    "texto": "combustível",
+    "inicio": 32.13,
+    "fim": 32.51
+   },
+   {
+    "texto": "foi",
+    "inicio": 32.51,
+    "fim": 32.67
+   },
+   {
+    "texto": "o",
+    "inicio": 32.67,
+    "fim": 32.77
+   },
+   {
+    "texto": "seguinte",
+    "inicio": 32.77,
+    "fim": 32.93
+   },
+   {
+    "texto": "Que",
+    "inicio": 32.93,
+    "fim": 33.49
+   },
+   {
+    "texto": "o",
+    "inicio": 33.49,
+    "fim": 33.65
+   },
+   {
+    "texto": "objetivo",
+    "inicio": 33.65,
+    "fim": 33.99
+   },
+   {
+    "texto": "não",
+    "inicio": 33.99,
+    "fim": 34.43
+   },
+   {
+    "texto": "é",
+    "inicio": 34.43,
+    "fim": 34.67
+   },
+   {
+    "texto": "deixar",
+    "inicio": 34.67,
+    "fim": 34.93
+   },
+   {
+    "texto": "um",
+    "inicio": 34.93,
+    "fim": 35.01
+   },
+   {
+    "texto": "negócio",
+    "inicio": 35.01,
+    "fim": 35.13
+   },
+   {
+    "texto": "chato,",
+    "inicio": 35.13,
+    "fim": 35.59
+   },
+   {
+    "texto": "toda",
+    "inicio": 35.75,
+    "fim": 35.97
+   },
+   {
+    "texto": "hora",
+    "inicio": 35.97,
+    "fim": 36.47
+   },
+   {
+    "texto": "eles",
+    "inicio": 36.47,
+    "fim": 36.73
+   },
+   {
+    "texto": "utilizavam",
+    "inicio": 36.73,
+    "fim": 37.49
+   },
+   {
+    "texto": "a",
+    "inicio": 37.49,
+    "fim": 37.77
+   },
+   {
+    "texto": "palavra",
+    "inicio": 37.77,
+    "fim": 38.15
+   },
+   {
+    "texto": "diversão,",
+    "inicio": 38.15,
+    "fim": 39.37
+   },
+   {
+    "texto": "ok?",
+    "inicio": 39.57,
+    "fim": 39.79
+   },
+   {
+    "texto": "Fun,",
+    "inicio": 40.21,
+    "fim": 40.49
+   },
+   {
+    "texto": "né?",
+    "inicio": 40.85,
+    "fim": 41.01
+   },
+   {
+    "texto": "Tem",
+    "inicio": 41.15,
+    "fim": 41.57
+   },
+   {
+    "texto": "que",
+    "inicio": 41.57,
+    "fim": 41.73
+   },
+   {
+    "texto": "ser,",
+    "inicio": 41.73,
+    "fim": 41.93
+   },
+   {
+    "texto": "it's",
+    "inicio": 42.29,
+    "fim": 42.53
+   },
+   {
+    "texto": "gotta",
+    "inicio": 42.53,
+    "fim": 42.77
+   },
+   {
+    "texto": "be",
+    "inicio": 42.77,
+    "fim": 43.01
+   },
+   {
+    "texto": "fun",
+    "inicio": 43.01,
+    "fim": 43.25
+   },
+   {
+    "texto": "Então",
+    "inicio": 43.25,
+    "fim": 43.69
+   },
+   {
+    "texto": "assim,",
+    "inicio": 43.69,
+    "fim": 43.83
+   },
+   {
+    "texto": "é",
+    "inicio": 44.23,
+    "fim": 44.33
+   },
+   {
+    "texto": "óbvio",
+    "inicio": 44.33,
+    "fim": 44.79
+   },
+   {
+    "texto": "que",
+    "inicio": 44.79,
+    "fim": 44.97
+   },
+   {
+    "texto": "o",
+    "inicio": 44.97,
+    "fim": 45.01
+   },
+   {
+    "texto": "jogo",
+    "inicio": 45.01,
+    "fim": 45.17
+   },
+   {
+    "texto": "do",
+    "inicio": 45.17,
+    "fim": 45.27
+   },
+   {
+    "texto": "videogame,",
+    "inicio": 45.27,
+    "fim": 45.51
+   },
+   {
+    "texto": "p*rra",
+    "inicio": 45.77,
+    "fim": 46.01
+   },
+   {
+    "texto": "tem",
+    "inicio": 46.01,
+    "fim": 46.17
+   },
+   {
+    "texto": "que",
+    "inicio": 46.17,
+    "fim": 46.25
+   },
+   {
+    "texto": "ser",
+    "inicio": 46.25,
+    "fim": 46.33
+   },
+   {
+    "texto": "divertido,",
+    "inicio": 46.33,
+    "fim": 46.77
+   },
+   {
+    "texto": "o",
+    "inicio": 46.85,
+    "fim": 46.87
+   },
+   {
+    "texto": "objetivo",
+    "inicio": 46.87,
+    "fim": 47.01
+   },
+   {
+    "texto": "é",
+    "inicio": 47.01,
+    "fim": 47.21
+   },
+   {
+    "texto": "isso",
+    "inicio": 47.21,
+    "fim": 47.31
+   },
+   {
+    "texto": "E",
+    "inicio": 47.31,
+    "fim": 47.69
+   },
+   {
+    "texto": "a",
+    "inicio": 47.69,
+    "fim": 47.77
+   },
+   {
+    "texto": "ideia",
+    "inicio": 47.77,
+    "fim": 48.07
+   },
+   {
+    "texto": "deles",
+    "inicio": 48.07,
+    "fim": 48.39
+   },
+   {
+    "texto": "com",
+    "inicio": 48.39,
+    "fim": 48.53
+   },
+   {
+    "texto": "esses",
+    "inicio": 48.53,
+    "fim": 48.65
+   },
+   {
+    "texto": "sistemas",
+    "inicio": 48.65,
+    "fim": 48.91
+   },
+   {
+    "texto": "não",
+    "inicio": 48.91,
+    "fim": 49.29
+   },
+   {
+    "texto": "é",
+    "inicio": 49.29,
+    "fim": 49.61
+   },
+   {
+    "texto": "deixar",
+    "inicio": 49.61,
+    "fim": 49.83
+   },
+   {
+    "texto": "chato,",
+    "inicio": 49.83,
+    "fim": 50.29
+   },
+   {
+    "texto": "não",
+    "inicio": 50.51,
+    "fim": 50.73
+   },
+   {
+    "texto": "é",
+    "inicio": 50.73,
+    "fim": 50.97
+   },
+   {
+    "texto": "te",
+    "inicio": 50.97,
+    "fim": 51.13
+   },
+   {
+    "texto": "encher",
+    "inicio": 51.13,
+    "fim": 51.27
+   },
+   {
+    "texto": "o",
+    "inicio": 51.27,
+    "fim": 51.41
+   },
+   {
+    "texto": "saco",
+    "inicio": 51.41,
+    "fim": 51.65
+   },
+   {
+    "texto": "com",
+    "inicio": 51.65,
+    "fim": 51.79
+   },
+   {
+    "texto": "isso,",
+    "inicio": 51.79,
+    "fim": 51.95
+   },
+   {
+    "texto": "não",
+    "inicio": 52.07,
+    "fim": 52.11
+   },
+   {
+    "texto": "é",
+    "inicio": 52.11,
+    "fim": 52.37
+   },
+   {
+    "texto": "ficar",
+    "inicio": 52.37,
+    "fim": 52.49
+   },
+   {
+    "texto": "ultra",
+    "inicio": 52.49,
+    "fim": 52.85
+   },
+   {
+    "texto": "realista,",
+    "inicio": 52.85,
+    "fim": 53.31
+   },
+   {
+    "texto": "não",
+    "inicio": 53.35,
+    "fim": 53.47
+   },
+   {
+    "texto": "é",
+    "inicio": 53.47,
+    "fim": 53.71
+   },
+   {
+    "texto": "Eu",
+    "inicio": 53.71,
+    "fim": 54.27
+   },
+   {
+    "texto": "perguntei",
+    "inicio": 54.27,
+    "fim": 54.63
+   },
+   {
+    "texto": "sobre",
+    "inicio": 54.63,
+    "fim": 54.71
+   },
+   {
+    "texto": "a",
+    "inicio": 54.71,
+    "fim": 54.81
+   },
+   {
+    "texto": "questão",
+    "inicio": 54.81,
+    "fim": 54.99
+   },
+   {
+    "texto": "do",
+    "inicio": 54.99,
+    "fim": 55.09
+   },
+   {
+    "texto": "realismo",
+    "inicio": 55.09,
+    "fim": 55.43
+   },
+   {
+    "texto": "também,",
+    "inicio": 55.43,
+    "fim": 55.75
+   },
+   {
+    "texto": "eu",
+    "inicio": 56.17,
+    "fim": 56.39
+   },
+   {
+    "texto": "vou",
+    "inicio": 56.39,
+    "fim": 56.49
+   },
+   {
+    "texto": "chegar",
+    "inicio": 56.49,
+    "fim": 56.65
+   },
+   {
+    "texto": "lá",
+    "inicio": 56.65,
+    "fim": 56.99
+   },
+   {
+    "texto": "Mas",
+    "inicio": 56.99,
+    "fim": 57.37
+   },
+   {
+    "texto": "não",
+    "inicio": 57.37,
+    "fim": 57.71
+   },
+   {
+    "texto": "é,",
+    "inicio": 57.71,
+    "fim": 57.95
+   },
+   {
+    "texto": "tanto",
+    "inicio": 58.07,
+    "fim": 58.33
+   },
+   {
+    "texto": "que",
+    "inicio": 58.33,
+    "fim": 58.63
+   },
+   {
+    "texto": "quando",
+    "inicio": 58.63,
+    "fim": 59.09
+   },
+   {
+    "texto": "você",
+    "inicio": 59.09,
+    "fim": 59.25
+   },
+   {
+    "texto": "dirigir",
+    "inicio": 59.25,
+    "fim": 59.45
+   },
+   {
+    "texto": "um",
+    "inicio": 59.45,
+    "fim": 59.59
+   },
+   {
+    "texto": "carro",
+    "inicio": 59.59,
+    "fim": 59.77
+   },
+   {
+    "texto": "você",
+    "inicio": 59.77,
+    "fim": 59.97
+   },
+   {
+    "texto": "nem",
+    "inicio": 59.97,
+    "fim": 60.19
+   },
+   {
+    "texto": "vê",
+    "inicio": 60.19,
+    "fim": 60.59
+   },
+   {
+    "texto": "o",
+    "inicio": 60.59,
+    "fim": 61.13
+   },
+   {
+    "texto": "quanto",
+    "inicio": 61.13,
+    "fim": 61.41
+   },
+   {
+    "texto": "de",
+    "inicio": 61.41,
+    "fim": 61.59
+   },
+   {
+    "texto": "combustível",
+    "inicio": 61.59,
+    "fim": 61.91
+   },
+   {
+    "texto": "tem",
+    "inicio": 61.91,
+    "fim": 62.15
+   },
+   {
+    "texto": "Só",
+    "inicio": 62.15,
+    "fim": 62.53
+   },
+   {
+    "texto": "começa",
+    "inicio": 62.53,
+    "fim": 62.89
+   },
+   {
+    "texto": "a",
+    "inicio": 62.89,
+    "fim": 63.03
+   },
+   {
+    "texto": "aparecer",
+    "inicio": 63.03,
+    "fim": 63.27
+   },
+   {
+    "texto": "o",
+    "inicio": 63.27,
+    "fim": 63.41
+   },
+   {
+    "texto": "combustível",
+    "inicio": 63.41,
+    "fim": 64.03
+   },
+   {
+    "texto": "quando",
+    "inicio": 64.03,
+    "fim": 64.19
+   },
+   {
+    "texto": "tem",
+    "inicio": 64.19,
+    "fim": 64.43
+   },
+   {
+    "texto": "pouco,",
+    "inicio": 64.43,
+    "fim": 64.91
+   },
+   {
+    "texto": "eles",
+    "inicio": 65.13,
+    "fim": 65.31
+   },
+   {
+    "texto": "falaram",
+    "inicio": 65.31,
+    "fim": 65.63
+   },
+   {
+    "texto": "com",
+    "inicio": 65.63,
+    "fim": 65.77
+   },
+   {
+    "texto": "o",
+    "inicio": 65.77,
+    "fim": 65.87
+   },
+   {
+    "texto": "objetivo",
+    "inicio": 65.87,
+    "fim": 66.25
+   },
+   {
+    "texto": "disso,",
+    "inicio": 66.25,
+    "fim": 66.81
+   },
+   {
+    "texto": "quando",
+    "inicio": 66.95,
+    "fim": 67.05
+   },
+   {
+    "texto": "tem",
+    "inicio": 67.05,
+    "fim": 67.15
+   },
+   {
+    "texto": "pouco",
+    "inicio": 67.15,
+    "fim": 67.25
+   },
+   {
+    "texto": "você",
+    "inicio": 67.25,
+    "fim": 67.45
+   },
+   {
+    "texto": "tem",
+    "inicio": 67.45,
+    "fim": 67.55
+   },
+   {
+    "texto": "que",
+    "inicio": 67.55,
+    "fim": 67.59
+   },
+   {
+    "texto": "abastecer",
+    "inicio": 67.59,
+    "fim": 67.91
+   },
+   {
+    "texto": "O",
+    "inicio": 67.91,
+    "fim": 68.47
+   },
+   {
+    "texto": "objetivo",
+    "inicio": 68.47,
+    "fim": 68.73
+   },
+   {
+    "texto": "disso",
+    "inicio": 68.73,
+    "fim": 69.03
+   },
+   {
+    "texto": "é",
+    "inicio": 69.03,
+    "fim": 69.15
+   },
+   {
+    "texto": "dar",
+    "inicio": 69.15,
+    "fim": 69.23
+   },
+   {
+    "texto": "mais",
+    "inicio": 69.23,
+    "fim": 69.41
+   },
+   {
+    "texto": "uma",
+    "inicio": 69.41,
+    "fim": 69.57
+   },
+   {
+    "texto": "camada",
+    "inicio": 69.57,
+    "fim": 69.85
+   },
+   {
+    "texto": "de",
+    "inicio": 69.85,
+    "fim": 70.03
+   },
+   {
+    "texto": "imersão",
+    "inicio": 70.03,
+    "fim": 70.51
+   },
+   {
+    "texto": "no",
+    "inicio": 70.51,
+    "fim": 70.67
+   },
+   {
+    "texto": "jogo",
+    "inicio": 70.67,
+    "fim": 70.93
+   },
+   {
+    "texto": "e",
+    "inicio": 70.93,
+    "fim": 71.13
+   },
+   {
+    "texto": "não",
+    "inicio": 71.13,
+    "fim": 71.29
+   },
+   {
+    "texto": "deixar",
+    "inicio": 71.29,
+    "fim": 71.61
+   },
+   {
+    "texto": "o",
+    "inicio": 71.61,
+    "fim": 71.75
+   },
+   {
+    "texto": "jogo",
+    "inicio": 71.75,
+    "fim": 71.89
+   },
+   {
+    "texto": "chato",
+    "inicio": 71.89,
+    "fim": 72.27
+   },
+   {
+    "texto": "Claro",
+    "inicio": 72.27,
+    "fim": 72.87
+   },
+   {
+    "texto": "que",
+    "inicio": 72.87,
+    "fim": 73.17
+   },
+   {
+    "texto": "temos",
+    "inicio": 73.17,
+    "fim": 74.15
+   },
+   {
+    "texto": "que",
+    "inicio": 74.15,
+    "fim": 75.05
+   },
+   {
+    "texto": "ver",
+    "inicio": 75.05,
+    "fim": 76.91
+   },
+   {
+    "texto": "para",
+    "inicio": 76.91,
+    "fim": 77.09
+   },
+   {
+    "texto": "entender",
+    "inicio": 77.09,
+    "fim": 77.49
+   },
+   {
+    "texto": "exatamente",
+    "inicio": 77.49,
+    "fim": 77.89
+   },
+   {
+    "texto": "como",
+    "inicio": 77.89,
+    "fim": 78.17
+   },
+   {
+    "texto": "vai",
+    "inicio": 78.17,
+    "fim": 78.29
+   },
+   {
+    "texto": "ser",
+    "inicio": 78.29,
+    "fim": 78.37
+   },
+   {
+    "texto": "esse",
+    "inicio": 78.37,
+    "fim": 78.49
+   },
+   {
+    "texto": "sistema",
+    "inicio": 78.49,
+    "fim": 78.79
+   },
+   {
+    "texto": "Durante",
+    "inicio": 78.79,
+    "fim": 79.21
+   },
+   {
+    "texto": "o",
+    "inicio": 79.21,
+    "fim": 79.29
+   },
+   {
+    "texto": "período",
+    "inicio": 79.29,
+    "fim": 79.41
+   },
+   {
+    "texto": "que",
+    "inicio": 79.41,
+    "fim": 79.55
+   },
+   {
+    "texto": "ele",
+    "inicio": 79.55,
+    "fim": 79.61
+   },
+   {
+    "texto": "estava",
+    "inicio": 79.61,
+    "fim": 79.71
+   },
+   {
+    "texto": "jogando",
+    "inicio": 79.71,
+    "fim": 79.89
+   },
+   {
+    "texto": "comigo,",
+    "inicio": 79.89,
+    "fim": 80.17
+   },
+   {
+    "texto": "ele",
+    "inicio": 80.35,
+    "fim": 80.53
+   },
+   {
+    "texto": "entrou",
+    "inicio": 80.53,
+    "fim": 80.79
+   },
+   {
+    "texto": "em",
+    "inicio": 80.79,
+    "fim": 80.85
+   },
+   {
+    "texto": "diversos",
+    "inicio": 80.85,
+    "fim": 81.09
+   },
+   {
+    "texto": "carros,",
+    "inicio": 81.09,
+    "fim": 81.41
+   },
+   {
+    "texto": "ele",
+    "inicio": 81.49,
+    "fim": 81.53
+   },
+   {
+    "texto": "usou",
+    "inicio": 81.53,
+    "fim": 81.67
+   },
+   {
+    "texto": "vários",
+    "inicio": 81.67,
+    "fim": 81.85
+   },
+   {
+    "texto": "carros",
+    "inicio": 81.85,
+    "fim": 82.21
+   },
+   {
+    "texto": "e",
+    "inicio": 82.21,
+    "fim": 82.37
+   },
+   {
+    "texto": "ele",
+    "inicio": 82.37,
+    "fim": 82.61
+   },
+   {
+    "texto": "não",
+    "inicio": 82.61,
+    "fim": 82.71
+   },
+   {
+    "texto": "abasteceu",
+    "inicio": 82.71,
+    "fim": 83.09
+   },
+   {
+    "texto": "a",
+    "inicio": 83.09,
+    "fim": 83.19
+   },
+   {
+    "texto": "hora",
+    "inicio": 83.19,
+    "fim": 83.27
+   },
+   {
+    "texto": "nenhuma,",
+    "inicio": 83.27,
+    "fim": 83.43
+   },
+   {
+    "texto": "tá?",
+    "inicio": 83.45,
+    "fim": 83.69
+   }
+  ]
+ }
+}

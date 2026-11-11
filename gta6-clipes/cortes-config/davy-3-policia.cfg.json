@@ -1,0 +1,45 @@
+{
+ "fonte": "/home/user/Victor1Paim/gta6-clipes/gravacoes/fontes/davy-antes-de-comprar.mp4",
+ "transcricoes": [
+  {
+   "arquivo": "partes/p01.json",
+   "offset": 480
+  },
+  {
+   "arquivo": "partes/p02.json",
+   "offset": 960
+  },
+  {
+   "arquivo": "partes/p03.json",
+   "offset": 1440
+  }
+ ],
+ "credito": "Davy Jones GTA 6 (YouTube)",
+ "canal": "@seucanal",
+ "cabecalho": "GTA 6 · quem viu antes contou",
+ "correcoes": {
+  "Battlefield V Pro": "PS5 Pro",
+  "VI": "6",
+  "Lúcia": "Lucia",
+  "Lucy": "Lucia",
+  "GTA V": "GTA 5"
+ },
+ "nome": "davy-3-policia",
+ "inicio": 1489.8,
+ "fim": 1555.4,
+ "gancho": [
+  "A POLÍCIA DO GTA 6",
+  "MUDOU TUDO"
+ ],
+ "destaque": "MUDOU TUDO",
+ "destaques": [
+  "denunciado",
+  "câmera",
+  "máscara",
+  "roupa",
+  "carro",
+  "estrelas",
+  "símbolos",
+  "polícia"
+ ]
+}

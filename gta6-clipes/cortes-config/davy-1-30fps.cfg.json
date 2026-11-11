@@ -1,0 +1,45 @@
+{
+ "fonte": "/home/user/Victor1Paim/gta6-clipes/gravacoes/fontes/davy-antes-de-comprar.mp4",
+ "transcricoes": [
+  {
+   "arquivo": "partes/p01.json",
+   "offset": 480
+  },
+  {
+   "arquivo": "partes/p02.json",
+   "offset": 960
+  },
+  {
+   "arquivo": "partes/p03.json",
+   "offset": 1440
+  }
+ ],
+ "credito": "Davy Jones GTA 6 (YouTube)",
+ "canal": "@seucanal",
+ "cabecalho": "GTA 6 · quem viu antes contou",
+ "correcoes": {
+  "Battlefield V Pro": "PS5 Pro",
+  "VI": "6",
+  "Lúcia": "Lucia",
+  "Lucy": "Lucia",
+  "GTA V": "GTA 5"
+ },
+ "nome": "davy-1-30fps",
+ "inicio": 1769.7,
+ "fim": 1829.8,
+ "gancho": [
+  "GTA 6 VAI RODAR",
+  "A 30 FPS?"
+ ],
+ "destaque": "30 FPS",
+ "destaques": [
+  "30",
+  "60",
+  "FPS",
+  "PS5",
+  "Pro",
+  "limite",
+  "estável",
+  "tecnologia"
+ ]
+}
