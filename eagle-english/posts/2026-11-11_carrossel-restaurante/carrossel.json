@@ -1,0 +1,43 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do restaurante"
+ },
+ "frases": [
+  {
+   "pt": "Uma mesa para dois, por favor.",
+   "en": "A table for two, please.",
+   "pron": "a TÊI-bol for TÚ, PLÍIZ"
+  },
+  {
+   "pt": "Posso ver o cardápio?",
+   "en": "Can I see the menu?",
+   "pron": "kén ái SÍI the MÉ-niu?"
+  },
+  {
+   "pt": "Eu queria o frango, por favor.",
+   "en": "I'd like the chicken, please.",
+   "pron": "áid LÁIK the TCHÍ-ken, PLÍIZ"
+  },
+  {
+   "pt": "Pode me trazer uma água?",
+   "en": "Can I have some water?",
+   "pron": "kén ái HÉV sâm UÓ-ter?"
+  },
+  {
+   "pt": "Está delicioso!",
+   "en": "It's delicious!",
+   "pron": "its di-LÍ-xâs!"
+  },
+  {
+   "pt": "A conta, por favor.",
+   "en": "The check, please.",
+   "pron": "the TCHÉK, PLÍIZ"
+  }
+ ],
+ "cta": {
+  "titulo": "Quer *2.100 frases*\ncomo essas?",
+  "texto": "Eagle 350: frases de 35 situações do dia a dia, com tradução e pronúncia escrita.",
+  "botao": "Link na bio 👆"
+ }
+}

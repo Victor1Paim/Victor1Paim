@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap">
+<!-- Carrossel de FOTOS (TikTok "Foto" / Instagram), 1080x1440 (3:4). Ref.: perfil de inglês "Repita até aprender".
+     capa = foto natural chamativa + mensagem · frase = fundo branco, 🇧🇷 pt-BR / 🇺🇸 inglês / 🗣️ pronúncia · cta = simples. -->
+<style>
+  :root { --amarelo:#FDDF33; --marinho:#0B1F4B; --vermelho:#E63946; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1440px; overflow:hidden; font-family:"Poppins"; }
+  body { background:#fff; position:relative; }
+  #foto { position:absolute; inset:0; background-size:cover; background-position:center; }
+  #veu { position:absolute; inset:0; background:linear-gradient(rgba(0,0,0,0) 45%, rgba(0,0,0,.35) 100%); }
+  .capa { position:absolute; left:60px; right:60px; top:930px; text-align:center; color:#fff; font-weight:800; font-size:76px;
+          line-height:1.12; letter-spacing:-0.02em; text-shadow:0 3px 12px rgba(0,0,0,.55), 0 1px 2px rgba(0,0,0,.6); text-wrap:balance; }
+  .capa .band { font-size:96px; display:block; margin-bottom:18px; text-shadow:none; }
+  .lista { position:absolute; left:110px; right:120px; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:86px; }
+  .lin { display:flex; gap:26px; align-items:flex-start; font-weight:400; font-size:62px; line-height:1.3; color:#111; letter-spacing:-0.01em; }
+  .lin .e { flex:0 0 74px; font-size:58px; line-height:1.38; }
+  .lin.en { font-weight:500; }
+  .lin.pr { color:#333; }
+  .num { position:absolute; right:60px; top:50px; background:#F1F1F1; color:#666; font-weight:600; font-size:32px; padding:6px 22px; border-radius:30px; }
+  .cta { position:absolute; left:80px; right:80px; top:50%; transform:translateY(-55%); text-align:center; }
+  .cta h1 { font-weight:800; font-size:76px; line-height:1.1; color:#111; letter-spacing:-0.02em; }
+  .cta h1 span { color:var(--vermelho); }
+  .cta p { font-weight:500; font-size:44px; color:#333; margin-top:30px; line-height:1.35; text-wrap:balance; }
+  .cta .botao { display:inline-block; margin-top:50px; background:var(--vermelho); color:#fff; font-weight:800; font-size:64px; padding:14px 60px 18px;
+                border-radius:30px; }
+  .cta img { width:300px; margin-bottom:24px; }
+</style></head><body><div id="c"></div>
+<script>
+const d = window.DADOS || {tipo:"frase", pt:"Uma mesa para dois, por favor.", en:"A table for two, please.", pron:"a TÊI-bol for TÚ, PLÍIZ"};
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const red = s => esc(s).replace(/\*(.+?)\*/g, '<span>$1</span>').replace(/\n/g, "<br>");
+let h = "";
+if (d.tipo === "capa") h = `<div id="foto" style="background-image:url('${d.foto}')"></div><div id="veu"></div>
+  <div class="capa"><span class="band">🇺🇸</span>${esc(d.texto).replace(/\n/g, "<br>")}</div>`;
+else if (d.tipo === "frase") h = `<div class="lista">
+  <div class="lin"><div class="e">🇧🇷</div><div>${esc(d.pt)}</div></div>
+  <div class="lin en"><div class="e">🇺🇸</div><div>${esc(d.en)}</div></div>
+  <div class="lin pr"><div class="e">🗣️</div><div>${esc(d.pron)}</div></div></div>`;
+else if (d.tipo === "cta") h = `<div class="cta">${d.mascote ? `<img src="${d.mascote}">` : ""}<h1>${red(d.titulo)}</h1><p>${red(d.texto)}</p>
+  <div class="botao">${esc(d.botao || "Link na bio 👆")}</div></div>`;
+else if (d.tipo === "imagem") h = `<div id="foto" style="background-image:url('${d.src}');background-size:contain;background-repeat:no-repeat"></div>`;
+document.getElementById("c").innerHTML = h;
+document.fonts.ready.then(() => document.body.dataset.pronto = "1");
+</script></body></html>
