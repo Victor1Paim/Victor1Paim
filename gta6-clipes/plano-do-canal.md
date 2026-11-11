@@ -8,7 +8,7 @@ Cortes de **streamers e criadores reagindo / jogando** — começando por GTA 6 
 | Instagram | Reels, 50s a 1m30 |
 | YouTube | Shorts + compilados de 8 a 12 min |
 
-Decisões abertas: nome do canal, @, bio, se haverá voz/narração ou só gameplay com legenda.
+Nome: **Modo Replay** (@modoreplay). Kit dos perfis em `marca/perfis.md`.
 
 ---
 
