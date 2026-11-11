@@ -1,0 +1,84 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Uma palavra só em inglês. Vamos ver no que ela vira?"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Hungry."
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Com fome."
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm hungry."
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Estou com fome."
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm so hungry!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Estou com muita fome!"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm so hungry. Let's eat!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Estou com muita fome. Vamos comer!"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Agora ela vira um pedido!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm so hungry. Can we eat now?"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Estou com muita fome. Podemos comer agora?"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Começou com uma palavra só. Terminou num pedido inteiro!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

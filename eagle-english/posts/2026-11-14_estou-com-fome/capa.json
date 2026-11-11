@@ -1,0 +1,11 @@
+{
+ "fundo": "img/mesa.png",
+ "selo": "5 passos",
+ "titulo": "De *hungry*\naté um pedido 🍽️",
+ "sub": "Repete comigo · <b>A1</b>",
+ "balao": {
+  "en": "I'm so hungry!",
+  "pron": "/áim SÔU HÂN-gri/",
+  "lado": "dir"
+ }
+}

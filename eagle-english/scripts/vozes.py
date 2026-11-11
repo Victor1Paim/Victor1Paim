@@ -220,6 +220,14 @@ def conferir(saida, texto, lingua):
     if _WHISPER is None:
         _WHISPER = whisper.load_model(os.environ.get("WHISPER_MODELO", "turbo"))
     ouvido = _WHISPER.transcribe(str(saida), language=lingua, fp16=False)["text"].strip()
+    # o TTS às vezes "escorrega" de idioma em fala curta (ex.: "Un sino" em espanhol): detecta a língua e reprova
+    audio = whisper.pad_or_trim(whisper.load_audio(str(saida)))
+    mel = whisper.log_mel_spectrogram(audio, n_mels=_WHISPER.dims.n_mels).to(_WHISPER.device)
+    _, probs = _WHISPER.detect_language(mel)
+    rival = {"pt": "es", "en": "pt"}.get(lingua)
+    if rival and probs.get(rival, 0) > probs.get(lingua, 0):
+        print(f"    whisper: {ouvido}  [IDIOMA ERRADO: soa {rival} ({probs[rival]:.0%}) em vez de {lingua}]")
+        return 0.0
     norm = lambda t: re.sub(r"[^\wáéíóúâêôãõçà' ]", " ", t.lower()).split()
     pct = round(difflib.SequenceMatcher(None, norm(texto), norm(ouvido)).ratio() * 100, 1)
     print(f"    whisper: {ouvido}")

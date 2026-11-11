@@ -1,0 +1,136 @@
+{
+ "fundo": "img/sofa.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/sofa.png",
+  "selo": "1 palavra → 1 pedido",
+  "titulo": "Hungry\n→ *?* 🍽️",
+  "sub": "<b>5 passos</b> · repete comigo",
+  "desafio": "No que ela vira? 👀",
+  "figuras": [
+   {
+    "img": "img/pizza.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/burger.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/arroz.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/macarrao.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "Hungry.",
+   "pron": "/HÂN-gri/",
+   "pt": "Com fome.",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/sofa.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm hungry.",
+   "pron": "/áim HÂN-gri/",
+   "pt": "Estou com fome.",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm so hungry!",
+   "pron": "/áim SÔU HÂN-gri/",
+   "pt": "Estou com muita fome!",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm so hungry. Let's eat!",
+   "pron": "/áim SÔU HÂN-gri. LÉTS ÍIT/",
+   "pt": "Estou com muita fome. Vamos comer!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/geladeira.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Agora ela vira\num pedido! 👀",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/geladeira.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I'm so hungry. Can we eat now?",
+   "pron": "/áim SÔU HÂN-gri. kén uí ÍIT NÁU/",
+   "pt": "Estou com muita fome. Podemos comer agora?",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Hungry →\nCan we eat now? ✅",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/mesa.png",
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}
