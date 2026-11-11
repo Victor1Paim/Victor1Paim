@@ -3,7 +3,10 @@
 Perfil de vídeos verticais (9:16) sobre Direito Tributário brasileiro. Base editorial: o PDF
 "Prompt Mestre — Direito Tributário com movimento" (v1.0, 10/11/2026). Independente do Halftone.
 
-**Formato:** tela dividida (apresentador em cima, 40% da altura; explicação embaixo, 60%). Nos trechos
+**Formatos (alternar ao longo do vídeo, por fala em `falas.json` → `modo`):** `apresentador` (tela cheia, com
+etiquetas de motion por cima), `dividida` (40/60) e `motion` (explicação em tela cheia).
+
+**Formato original:** tela dividida (apresentador em cima, 40% da altura; explicação embaixo, 60%). Nos trechos
 que pedem explicação, a explicação "sobe" e toma a tela inteira em motion; no fecho a tela volta a dividir.
 
 **Estilo visual:** cartum em papel creme, traço de nanquim que "ferve" (redesenho a ~8 quadros/s),
@@ -15,6 +18,8 @@ cores apagadas (teal e laranja da identidade do PDF + mostarda, sálvia, jeans),
 1. `testes/<id>/falas.json` — roteiro dividido em falas, cada uma com `modo` = `dividida` ou `motion`.
 2. Voz: `python3 scripts/vozes_openai.py testes/<id>` (gpt-4o-mini-tts; custo vai para `custos.jsonl`).
    Quando houver gravação real do apresentador, ela substitui a voz e o boneco do painel de cima.
+   Apresentador ilustrado (sem gravação): `scripts/imagem_openai.py gerar|editar` (gpt-image-2: base, boca aberta,
+   olhos fechados) e `scripts/recortes_apresentador.py testes/<id>`. A OpenAI desta conta não tem modelo de vídeo.
 3. Tempos: `python3 scripts/preparar_dados.py testes/<id>` (Whisper local, grátis) → `video/src/dados-<id>.json`.
 4. Cenas em `video/src/Cenas.tsx` (uma por fala, sincronizadas por palavra com `quando(fala, 'palavra')`).
 5. Render: `cd video && npx remotion render src/index.ts <id> ../testes/<id>/<id>.mp4`

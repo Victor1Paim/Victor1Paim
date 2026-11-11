@@ -1,0 +1,9 @@
+{"quando": "2026-11-11T18:55:26", "etapa": "teste de conexão", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 9, "saida_imagem": 196}, "usd": 0.005925}
+{"quando": "2026-11-11T18:56:31", "etapa": "imagem apresentador", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 191, "entrada_imagem": 0, "saida_imagem": 1372}, "usd": 0.042115}
+{"quando": "2026-11-11T18:57:02", "etapa": "edição olhos-fechados", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 66, "entrada_imagem": 1536, "saida_imagem": 1372}, "usd": 0.053778}
+{"quando": "2026-11-11T18:57:04", "etapa": "edição boca-aberta", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 76, "entrada_imagem": 1536, "saida_imagem": 1372}, "usd": 0.053828}
+{"quando": "2026-11-11T18:57:41", "etapa": "voz 01_gancho", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.13333333333333333}, "usd": 0.002}
+{"quando": "2026-11-11T18:57:43", "etapa": "voz 02_resposta", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.08666666666666667}, "usd": 0.0013}
+{"quando": "2026-11-11T18:57:45", "etapa": "voz 03_fonte", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.15333333333333332}, "usd": 0.0023}
+{"quando": "2026-11-11T18:57:48", "etapa": "voz 04_balanca", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.1408333333333333}, "usd": 0.002112}
+{"quando": "2026-11-11T18:57:49", "etapa": "voz 05_cta", "modelo": "gpt-4o-mini-tts", "tokens": {"minuto_audio": 0.065}, "usd": 0.000975}

@@ -4,7 +4,7 @@ import {COR, tinta, W, DIVISA} from './estilo';
 
 // Apresentador PROVISÓRIO (desenhado) no lugar da gravação real da câmera.
 // boca = abertura 0..1 (volume da voz); gesto = 0..1 braço levantado.
-export const Apresentador: React.FC<{boca: number; gesto: number}> = ({boca, gesto}) => {
+export const Apresentador: React.FC<{boca: number; gesto: number; alt?: number}> = ({boca, gesto}) => {
   const f = useCurrentFrame();
   const piscando = f % 96 > 90;
   const bob = Math.sin(f / 9) * 3 + boca * 6;

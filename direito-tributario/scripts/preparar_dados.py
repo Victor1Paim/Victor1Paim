@@ -57,7 +57,12 @@ def main(post):
     saida = []
     for f in d["falas"]:
         arq = post / "audio" / f"{f['id']}.wav"
-        shutil.copy(arq, pub / arq.name)
+        vel = d.get("velocidade", 1)
+        if vel != 1:  # acelera sem mudar o tom (falas.json: "velocidade": 1.15)
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(arq), "-af", f"atempo={vel}", str(pub / arq.name)], check=True)
+        else:
+            shutil.copy(arq, pub / arq.name)
+        arq = pub / arq.name
         env, dur = envelope(arq)
         r = modelo.transcribe(str(arq), language="pt", word_timestamps=True, fp16=False)
         ws = [w for s in r["segments"] for w in s["words"]]

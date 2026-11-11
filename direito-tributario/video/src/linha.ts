@@ -3,7 +3,7 @@ import {FPS} from './estilo';
 export type Palavra = {t: string; ini: number; fim: number};
 export type Fala = {
   id: string;
-  modo: 'dividida' | 'motion';
+  modo: 'apresentador' | 'dividida' | 'motion';
   texto: string;
   audio: string;
   duracao: number;

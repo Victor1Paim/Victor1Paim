@@ -1,0 +1,13 @@
+{
+  "modelo": "gpt-4o-mini-tts",
+  "voz": "coral",
+  "velocidade": 1.15,
+  "instrucoes": "Português do Brasil, sotaque brasileiro neutro. Voz de mulher jovem, simpática e segura, explicando para um amigo. Ritmo ágil de vídeo curto, com pausas curtas entre as ideias. Na primeira frase, tom de curiosidade.",
+  "falas": [
+    {"id": "01_gancho", "modo": "apresentador", "texto": "Por que no Imposto de Renda tem gente que recebe dinheiro de volta, e tem gente que paga?"},
+    {"id": "02_resposta", "modo": "dividida", "texto": "A resposta está no que foi descontado do seu salário durante o ano."},
+    {"id": "03_fonte", "modo": "motion", "texto": "Pra quem recebe salário, todo mês parte do imposto já é retida na fonte. Na declaração, entra a conta do ano inteiro."},
+    {"id": "04_balanca", "modo": "motion", "texto": "Se foi retido mais do que o devido, você recebe a restituição. Se foi retido menos, paga a diferença."},
+    {"id": "05_cta", "modo": "dividida", "texto": "Salva esse vídeo pra época da declaração."}
+  ]
+}
