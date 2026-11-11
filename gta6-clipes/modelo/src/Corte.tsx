@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AbsoluteFill, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing,
+  AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing,
 } from 'remotion';
 import {loadFont} from '@remotion/fonts';
 
@@ -134,9 +134,10 @@ const Gancho: React.FC<{dados: Dados}> = ({dados}) => {
         })}
       </div>
       <div style={{
-        position: 'absolute', top: 250, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: recolher,
+        position: 'absolute', top: 150, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, opacity: recolher,
         transform: `translateY(${40 * (1 - recolher)}px)`,
       }}>
+        <Marca tamanho={78} />
         <div style={{fontFamily: inter, fontWeight: 800, fontSize: 46, color: '#fff', background: 'rgba(0,0,0,0.55)', padding: '14px 30px', borderRadius: 999, border: `3px solid ${ROSA}`}}>
           {dados.cabecalho}
         </div>
@@ -144,6 +145,16 @@ const Gancho: React.FC<{dados: Dados}> = ({dados}) => {
     </>
   );
 };
+
+// Logo do canal: ícone + "MODO REPLAY".
+const Marca: React.FC<{tamanho: number}> = ({tamanho}) => (
+  <div style={{display: 'flex', alignItems: 'center', gap: tamanho * 0.22}}>
+    <Img src={staticFile('logo.svg')} style={{width: tamanho, height: tamanho, filter: 'drop-shadow(0 5px 0 #000)'}} />
+    <div style={{fontFamily: anton, fontSize: tamanho * 0.72, color: '#fff', WebkitTextStroke: `${Math.round(tamanho / 12)}px #000`, paintOrder: 'stroke fill', letterSpacing: 2}}>
+      MODO <span style={{color: AMARELO}}>REPLAY</span>
+    </div>
+  </div>
+);
 
 const Selo: React.FC<{texto: string}> = ({texto}) => {
   const frame = useCurrentFrame();
@@ -172,13 +183,11 @@ const Final: React.FC<{dados: Dados}> = ({dados}) => {
   if (frame < inicio) return null;
   return (
     <AbsoluteFill style={{background: `rgba(0,0,0,${0.55 * s})`, alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{transform: `scale(${interpolate(s, [0, 1], [0.6, 1])})`, opacity: s, textAlign: 'center', padding: 60}}>
+      <div style={{transform: `scale(${interpolate(s, [0, 1], [0.6, 1])})`, opacity: s, textAlign: 'center', padding: 60, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{fontFamily: anton, fontSize: 104, lineHeight: 1.05, color: '#fff', WebkitTextStroke: '10px #000', paintOrder: 'stroke fill'}}>
           {dados.chamadaFinal.toUpperCase()}
         </div>
-        <div style={{marginTop: 40, display: 'inline-block', fontFamily: inter, fontWeight: 800, fontSize: 56, color: '#000', background: AMARELO, padding: '14px 40px', borderRadius: 999}}>
-          {dados.canal}
-        </div>
+        <div style={{marginTop: 50}}><Marca tamanho={130} /></div>
       </div>
     </AbsoluteFill>
   );
