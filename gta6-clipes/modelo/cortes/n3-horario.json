@@ -439,6 +439,10 @@
     "grande": "PRÉ-LOAD ABERTO",
     "pequeno": "baixe e jogue no 1º minuto"
    }
-  ]
+  ],
+  "layout": {
+   "topo": 654,
+   "altura": 612
+  }
  }
 }

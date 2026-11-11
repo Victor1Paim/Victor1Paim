@@ -420,6 +420,10 @@
     "grande": "US$ 79,99",
     "pequeno": "preço lá fora"
    }
-  ]
+  ],
+  "layout": {
+   "topo": 654,
+   "altura": 612
+  }
  }
 }

@@ -496,6 +496,10 @@
     "grande": "LIBERE ESPAÇO",
     "pequeno": "baixe antes de 19/11"
    }
-  ]
+  ],
+  "layout": {
+   "topo": 654,
+   "altura": 612
+  }
  }
 }

@@ -23,7 +23,9 @@ export type Dados = {
   credito: string; canal: string; chamadaFinal: string; inicioFinal: number; legendas: Legenda[]; destaques: string[];
   palavras?: PalavraFonte[];
   cartoes?: Cartao[];
+  layout?: {topo: number; altura: number};
 };
+const layoutDe = (d: Dados) => d.layout ?? {topo: VIDEO_TOPO, altura: VIDEO_ALTURA};
 type Cartao = {inicio: number; fim: number; grande: string; pequeno: string};
 
 // Divide cada frase em palavras com tempo proporcional ao tamanho, e agrupa de 2 a 4 palavras por tela.
@@ -85,7 +87,7 @@ const Legendas: React.FC<{dados: Dados}> = ({dados}) => {
   const entrada = spring({frame: frame - Math.round(g[0].inicio * fps), fps, config: {damping: 14, mass: 0.6}});
   return (
     <div style={{
-      position: 'absolute', top: VIDEO_TOPO + VIDEO_ALTURA + 50, left: 60, right: 60, textAlign: 'center',
+      position: 'absolute', top: layoutDe(dados).topo + layoutDe(dados).altura + 50, left: 60, right: 60, textAlign: 'center',
       transform: `scale(${interpolate(entrada, [0, 1], [0.85, 1])})`, opacity: entrada,
     }}>
       {g.map((w, i) => {
@@ -156,14 +158,14 @@ const Marca: React.FC<{tamanho: number}> = ({tamanho}) => (
   </div>
 );
 
-const Selo: React.FC<{texto: string}> = ({texto}) => {
+const Selo: React.FC<{texto: string; topo: number}> = ({texto, topo}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = spring({frame: frame - 20, fps, config: {damping: 10}});
   const pulso = 1 + 0.04 * Math.sin(frame / 8);
   return (
     <div style={{
-      position: 'absolute', top: VIDEO_TOPO - 34, right: 40, transform: `rotate(-4deg) scale(${s * pulso})`,
+      position: 'absolute', top: topo - 34, right: 40, transform: `rotate(-4deg) scale(${s * pulso})`,
       fontFamily: anton, fontSize: 54, color: '#000', background: AMARELO, padding: '6px 22px', borderRadius: 10, boxShadow: '0 8px 0 #000',
     }}>{texto}</div>
   );
@@ -194,7 +196,7 @@ const Final: React.FC<{dados: Dados}> = ({dados}) => {
 };
 
 // Cartão de informação (número grande + linha de apoio) no centro do quadro.
-const Cartoes: React.FC<{cartoes: Cartao[]}> = ({cartoes}) => {
+const Cartoes: React.FC<{cartoes: Cartao[]; topo: number}> = ({cartoes, topo}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
@@ -203,7 +205,7 @@ const Cartoes: React.FC<{cartoes: Cartao[]}> = ({cartoes}) => {
   const s = spring({frame: frame - Math.round(c.inicio * fps), fps, config: {damping: 12, mass: 0.7}});
   const saida = interpolate(t, [c.fim - 0.25, c.fim], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <div style={{position: 'absolute', top: 640, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: saida}}>
+    <div style={{position: 'absolute', top: topo, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: saida}}>
       <div style={{
         transform: `scale(${interpolate(s, [0, 1], [0.6, 1])}) rotate(${interpolate(s, [0, 1], [-6, -2])}deg)`, opacity: s,
         background: 'rgba(13,7,24,0.82)', border: `6px solid ${AMARELO}`, borderRadius: 34, padding: '34px 56px', textAlign: 'center',
@@ -220,8 +222,8 @@ export const Corte: React.FC<{dados: Dados}> = ({dados}) => (
   <AbsoluteFill style={{backgroundColor: '#000'}}>
     <OffthreadVideo src={staticFile(dados.video)} />
     <Gancho dados={dados} />
-    <Selo texto={dados.selo} />
-    {dados.cartoes && <Cartoes cartoes={dados.cartoes} />}
+    <Selo texto={dados.selo} topo={layoutDe(dados).topo} />
+    {dados.cartoes && <Cartoes cartoes={dados.cartoes} topo={dados.layout ? layoutDe(dados).topo + layoutDe(dados).altura / 2 - 150 : 640} />}
     <Legendas dados={dados} />
     <Credito texto={dados.credito} canal={dados.canal} />
     <Final dados={dados} />

@@ -58,5 +58,9 @@
     "novembro.",
     "VI."
   ],
-  "inicioFinal": 80.25
+  "inicioFinal": 80.25,
+  "layout": {
+    "topo": 654,
+    "altura": 612
+  }
 }

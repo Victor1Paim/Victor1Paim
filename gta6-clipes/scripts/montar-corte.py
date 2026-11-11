@@ -35,13 +35,13 @@ for errado, certo in cfg.get('correcoes', {}).items():
         else:
             i += 1
 
-# 2) vídeo base 9:16
+# 2) vídeo base 9:16: vídeo inteiro no centro (1080x608) + reflexo espelhado, desfocado e em baixa resolução em cima e embaixo
+REFLEXO = "split=3[c][a][b];[a]vflip,scale=270:-2,boxblur=8:2,scale=1080:{h},eq=brightness=-0.28:saturation=1.1[t];[b]vflip,scale=270:-2,boxblur=8:2,scale=1080:{h},eq=brightness=-0.28:saturation=1.1[bo];[t][c][bo]vstack=3,format=yuv420p[v]"
 dur = cfg['fim'] - cfg['inicio'] + 2.6  # + tela final
 publico = os.path.join(modelo, 'public')
 video = f"{cfg['nome']}.mp4"
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(cfg['inicio']), '-t', str(dur), '-i', cfg['fonte'],
-    '-filter_complex', '[0:v]split[a][b];[a]scale=-2:1920,crop=1080:1920,boxblur=40:4,eq=brightness=-0.25:saturation=1.2[bg];'
-    '[b]crop=1080:1080:420:0[fg];[bg][fg]overlay=0:400,format=yuv420p[v]',
+    '-filter_complex', '[0:v]scale=1080:608,setsar=1,' + REFLEXO.format(h=656),
     '-map', '[v]', '-map', '0:a', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-c:a', 'aac', '-b:a', '192k',
     os.path.join(publico, video)], check=True)
 
@@ -50,7 +50,7 @@ props = {'dados': {
     'video': video, 'duracao': round(dur - 0.05, 2), 'gancho': cfg['gancho'], 'destaque': cfg['destaque'],
     'cabecalho': cfg['cabecalho'], 'selo': cfg.get('selo', 'LANÇA 19/11'), 'credito': cfg['credito'], 'canal': cfg['canal'],
     'chamadaFinal': cfg.get('chamadaFinal', 'Segue pra não perder nada de GTA 6'),
-    'inicioFinal': round(cfg['fim'] - cfg['inicio'] + 0.2, 2), 'legendas': [], 'destaques': cfg['destaques'], 'palavras': palavras}}
+    'inicioFinal': round(cfg['fim'] - cfg['inicio'] + 0.2, 2), 'legendas': [], 'destaques': cfg['destaques'], 'palavras': palavras, 'layout': {'topo': 656, 'altura': 608}}}
 saida = os.path.join(modelo, 'cortes', f"{cfg['nome']}.json")
 os.makedirs(os.path.dirname(saida), exist_ok=True)
 json.dump(props, open(saida, 'w'), ensure_ascii=False, indent=1)

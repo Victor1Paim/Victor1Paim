@@ -46,6 +46,7 @@ for k, c in enumerate(cartoes):
     prox = cartoes[k + 1]['inicio'] if k + 1 < len(cartoes) else 1e9
     c['fim'] = round(min(c['inicio'] + c.pop('dur'), prox - 0.1), 2)
 
+REFLEXO = "split=3[c][a][b];[a]vflip,scale=270:-2,boxblur=8:2,scale=1080:{h},eq=brightness=-0.28:saturation=1.1[t];[b]vflip,scale=270:-2,boxblur=8:2,scale=1080:{h},eq=brightness=-0.28:saturation=1.1[bo];[t][c][bo]vstack=3,format=yuv420p[v]"
 # 3) fundo: trechos do trailer em 9:16 cheio, escurecido, sem o áudio original + narração
 dur = dur_audio + 2.8
 publico = os.path.join(modelo, 'public')
@@ -55,8 +56,8 @@ cada = dur / n
 entradas, filtros = [], []
 for i, (ini, _) in enumerate(cfg['trechos']):
     entradas += ['-ss', str(ini), '-t', str(cada + 0.1), '-i', cfg['fonte']]
-    filtros.append(f"[{i}:v]crop=1920:816:0:198,crop=459:816:730:0,scale=1080:1920,setsar=1,eq=brightness=-0.12,trim=0:{cada:.3f},setpts=PTS-STARTPTS[v{i}]")
-filtros.append(''.join(f'[v{i}]' for i in range(n)) + f'concat=n={n}:v=1:a=0,format=yuv420p[v]')
+    filtros.append(f"[{i}:v]crop=1920:816:0:198,crop=1440:816:240:0,scale=1080:612,setsar=1,trim=0:{cada:.3f},setpts=PTS-STARTPTS[v{i}]")
+filtros.append(''.join(f'[v{i}]' for i in range(n)) + f'concat=n={n}:v=1:a=0,' + REFLEXO.format(h=654))
 subprocess.run(['ffmpeg', '-y', '-v', 'error', *entradas, '-i', caminho(cfg['narracao']),
     '-filter_complex', ';'.join(filtros), '-map', '[v]', '-map', f'{n}:a', '-af', 'apad', '-t', f'{dur:.2f}',
     '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-c:a', 'aac', '-b:a', '192k', os.path.join(publico, video)], check=True)
@@ -65,7 +66,7 @@ props = {'dados': {
     'video': video, 'duracao': round(dur - 0.05, 2), 'gancho': cfg['gancho'], 'destaque': cfg['destaque'],
     'cabecalho': cfg['cabecalho'], 'selo': cfg.get('selo', 'LANÇA 19/11'), 'credito': cfg['credito'], 'canal': cfg['canal'],
     'chamadaFinal': cfg.get('chamadaFinal', 'Segue pra não perder nada de GTA 6'), 'inicioFinal': round(dur_audio + 0.1, 2),
-    'legendas': [], 'destaques': cfg['destaques'], 'palavras': palavras, 'cartoes': cartoes}}
+    'legendas': [], 'destaques': cfg['destaques'], 'palavras': palavras, 'cartoes': cartoes, 'layout': {'topo': 654, 'altura': 612}}}
 saida = os.path.join(modelo, 'cortes', f"{cfg['nome']}.json")
 json.dump(props, open(saida, 'w'), ensure_ascii=False, indent=1)
 print(saida, round(dur, 1), 's', len(palavras), 'palavras', len(cartoes), 'cartões')
