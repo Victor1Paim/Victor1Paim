@@ -1,11 +1,11 @@
 # Canal de clipes de GTA 6 — Plano do canal
 
-Cortes de gameplay de GTA 6: momentos engraçados, perseguições, física absurda, segredos e detalhes do mapa.
+Cortes de **streamers e criadores reagindo / jogando** — começando por GTA 6 (lançamento em 19/11) e depois outros jogos. Os melhores momentos de cada live ou react, em 50s a 1m30.
 
 | Plataforma | Formato principal |
 |---|---|
-| TikTok | Curto, 15s a 60s |
-| Instagram | Reels, 15s a 60s |
+| TikTok | Curto, 50s a 1m30 |
+| Instagram | Reels, 50s a 1m30 |
 | YouTube | Shorts + compilados de 8 a 12 min |
 
 Decisões abertas: nome do canal, @, bio, se haverá voz/narração ou só gameplay com legenda.
@@ -34,7 +34,7 @@ Regra de equilíbrio: nenhum pilar passa de 40% do mês.
 
 ## 3. Formatos
 
-### Curtos (15s a 60s)
+### Curtos (50s a 1m30)
 1. **0–2s:** o momento mais forte primeiro (o acidente, o susto, o segredo). Sem introdução.
 2. **Texto de gancho** na tela no primeiro frame ("ninguém percebeu isso no GTA 6").
 3. **Meio:** o clipe com cortes secos, zoom nos detalhes, slow-motion no pico.
@@ -47,13 +47,13 @@ Regra de equilíbrio: nenhum pilar passa de 40% do mês.
 
 ## 4. Fluxo de produção
 
-1. **Gravar**: sessões de jogo com gravação contínua (replay/clip do console ou OBS no PC). Marcar os tempos dos bons momentos na hora.
-2. **Selecionar**: lista de momentos em `pautas/` (arquivo, tempo, pilar, gancho).
-3. **Cortar**: ffmpeg para extrair trechos; reenquadrar 16:9 → 9:16 (crop no centro de ação, ou blur de fundo).
-4. **Montar**: Remotion ou HyperFrames para texto de gancho, legendas, zoom, contador, vinheta.
-5. **Publicar**: mesmo corte nas três plataformas, exportado limpo, com título e legenda adaptados.
+1. **Fonte**: live ou react de um criador (de preferência que autorize cortes — ver seção 7), ou trailer oficial.
+2. **Transcrever e escolher**: SupoClip (`scripts/supoclip.sh`) transcreve com Whisper local e usa a OpenAI para escolher e pontuar os trechos (gancho, engajamento, valor, compartilhamento). Duração `medium`/`long` para 50s–1m30.
+3. **Reenquadrar**: 9:16 com o rosto do criador centralizado (`vertical`), tela dividida rosto + jogo (`vertical_split`) ou quadro inteiro com fundo (`vertical_fit`).
+4. **Acabamento com a marca do canal**: Remotion/HyperFrames para gancho, legenda, vinheta e **crédito fixo do criador** na tela.
+5. **Publicar**: mesmo corte nas três plataformas, título e legenda adaptados, @ do criador na descrição.
 
-Arquivos de gravação são grandes: ficam fora do git (`gravacoes/` no `.gitignore`).
+Vídeos brutos ficam fora do git (`gravacoes/` no `.gitignore`).
 
 ## 5. Cadência sugerida
 
@@ -69,10 +69,15 @@ Arquivos de gravação são grandes: ficam fora do git (`gravacoes/` no `.gitign
 
 ## 7. Direitos e regras (importante neste nicho)
 
-- **Só gameplay próprio.** Nada de reupload de clipes de outros criadores sem permissão; é o motivo nº 1 de derrubada e de recusa de monetização.
-- **Nada de vazamentos.** A Rockstar/Take-Two derruba conteúdo vazado; usar só material oficial lançado (jogo, trailers oficiais com crédito).
-- Conferir a política de vídeos da Rockstar/Take-Two antes de monetizar e as regras de "conteúdo reutilizado" do YouTube: corte cru sem edição corre risco. Edição com intenção (gancho, texto, comentário, montagem) é o que protege o canal.
-- Não usar logo ou marca da Rockstar como se o canal fosse oficial. Nome e identidade visual próprios.
+Canal de cortes vive ou morre pela relação com os criadores. Regras:
+
+- **Prefira criadores que autorizam cortes.** Muitos streamers liberam cortes (às vezes com programa de clipadores e divisão de receita). Peça autorização por escrito quando não houver regra pública e guarde em `pautas/autorizacoes.md`.
+- **Crédito sempre**: @ do criador na tela durante todo o corte e na descrição, com link para a live/vídeo original.
+- **Transformar, não só recortar**: gancho próprio, legenda, edição, contexto. Corte cru sem edição cai na regra de "conteúdo reutilizado" do YouTube e é derrubado com facilidade.
+- Se o criador pedir para remover, remover na hora.
+- **Músicas**: trilhas licenciadas (rádio do jogo, música da live, música dos trailers) geram reivindicação de direitos autorais. Cortar ou abaixar o trecho de música.
+- **Trailers oficiais**: usar com crédito à Rockstar, sempre com reação/comentário por cima; nada de vazamentos.
+- Não usar logo ou marca da Rockstar como se o canal fosse oficial.
 - Spoilers da história: avisar no título/texto nas primeiras semanas após o lançamento.
 
 ## 8. Próximos passos
