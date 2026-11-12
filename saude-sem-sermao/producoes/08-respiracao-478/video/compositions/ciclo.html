@@ -1,0 +1,83 @@
+<template>
+<style>
+  :root{--verde:#2F483A;--laranja:#D45F2B;--terracota:#CE6840;--creme:#FDF3ED;--creme2:#F2ECE2;
+        --pessego:#F7E5DD;--salvia:#95A185;--cinza:#8C8580;--tinta:#2B2B2B;--mostarda:#E2B04A;}
+  #root{position:absolute;inset:0;overflow:hidden;font-family:'Nunito',sans-serif;color:var(--tinta);}
+  .bg{position:absolute;inset:0;}
+  .titulo{position:absolute;left:80px;top:230px;width:920px;font-family:'Playfair Display',serif;
+          font-weight:700;font-size:96px;line-height:1.04;letter-spacing:-0.01em;}
+  .titulo em{font-style:italic;color:var(--laranja);}
+  .tag{position:absolute;left:80px;top:180px;display:inline-flex;gap:8px;align-items:center;padding:6px 18px;
+       border-radius:999px;font-weight:900;font-size:28px;letter-spacing:.06em;}
+  .fonte{position:absolute;left:80px;font-size:28px;color:#8a837d;font-weight:700;}
+  .tito-mini{position:absolute;right:40px;top:1330px;width:300px;height:330px;}
+  .tito-grande{position:absolute;left:190px;top:640px;width:700px;height:770px;}
+  .balao{position:absolute;left:80px;top:230px;width:920px;background:#fff;border-radius:36px;
+         box-shadow:0 18px 50px rgba(120,60,30,.12);padding:40px 48px 48px;}
+  .balao .rot{font-weight:900;font-size:28px;letter-spacing:.12em;color:var(--laranja);margin-bottom:18px;}
+  .balao .txt{font-weight:800;font-size:60px;line-height:1.18;}
+  .balao .rabo{position:absolute;left:420px;bottom:-26px;width:52px;height:52px;background:#fff;
+               transform:rotate(45deg);border-radius:6px;}
+  .w{display:inline-block;opacity:0;}
+
+  .wipe{position:absolute;inset:0;z-index:50;}
+  .img{position:absolute;}
+  .img img{width:100%;height:100%;object-fit:contain;display:block;}
+  .card{position:absolute;background:#fff;border-radius:28px;box-shadow:0 14px 40px rgba(80,40,20,.12);}
+
+  .card2{position:absolute;left:80px;width:920px;background:#fff;border-radius:30px;box-shadow:0 14px 40px rgba(40,60,40,.12);
+         padding:30px 38px;font-weight:900;font-size:40px;line-height:1.25;}
+  .card2 .q{font-size:30px;letter-spacing:.08em;color:#CE6840;margin-bottom:10px;}
+  .selo{position:absolute;padding:10px 26px;border:6px solid;border-radius:16px;font-weight:900;font-size:56px;letter-spacing:.08em;background:rgba(255,255,255,.85);}
+
+  .chip{position:absolute;left:80px;width:920px;padding:22px 34px;border-radius:26px;background:#fff;box-shadow:0 12px 34px rgba(80,40,20,.12);
+        font-weight:900;font-size:44px;display:flex;align-items:center;gap:24px;}
+  .chip .i{font-size:66px;line-height:1;}
+  .num{position:absolute;width:190px;height:190px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+       font-family:'Playfair Display',serif;font-weight:800;font-size:130px;color:#fff;box-shadow:0 12px 34px rgba(0,0,0,.25);}
+  .relo{position:absolute;left:730px;top:190px;width:270px;padding:12px 0;border-radius:999px;background:rgba(18,22,18,.85);color:#fff;
+        text-align:center;font-weight:900;font-size:52px;font-variant-numeric:tabular-nums;}
+
+  .bg{background:#fff;}
+  #ciclo-fase{position:absolute;left:80px;top:200px;padding:12px 30px;border-radius:999px;background:var(--verde);color:#fff;font-weight:900;font-size:46px;letter-spacing:.06em;}
+  #ciclo-pulm{position:absolute;left:180px;top:380px;width:480px;height:560px;transform-origin:50% 60%;}
+  #ciclo-cor{position:absolute;left:720px;top:520px;font-size:150px;}
+  #ciclo-bpm{position:absolute;left:680px;top:720px;width:300px;text-align:center;font-weight:900;font-size:40px;}
+  #ciclo-l{position:absolute;left:80px;top:1000px;width:920px;text-align:center;font-weight:900;font-size:42px;color:#5b524c;}
+</style>
+<div id="root" data-composition-id="ciclo" data-width="1080" data-height="1920">
+
+  <div class="bg"></div>
+  <div class="relo" id="ciclo-rel">0 s</div>
+  <div id="ciclo-fase">INSPIRA · 4</div>
+  <svg id="ciclo-pulm" viewBox="0 0 240 280"><path d="M120 20 L120 110" stroke="#2F483A" stroke-width="14" stroke-linecap="round"/>
+    <path d="M112 100 C70 70 20 110 20 180 C20 240 60 262 100 250 C112 246 116 230 116 210 L116 120 Z" fill="#E8907A" stroke="#C2563A" stroke-width="6"/>
+    <path d="M128 100 C170 70 220 110 220 180 C220 240 180 262 140 250 C128 246 124 230 124 210 L124 120 Z" fill="#E8907A" stroke="#C2563A" stroke-width="6"/></svg>
+  <div id="ciclo-cor">❤️</div>
+  <div id="ciclo-bpm">coração <span id="ciclo-seta" style="color:var(--laranja)">▲</span></div>
+  <div id="ciclo-l">pelo nariz</div>
+  <div class="wipe" id="ciclo-wipe" style="background:#FDF3ED"></div>
+
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  
+  tl.fromTo("#ciclo-wipe",{xPercent:0},{xPercent:-100,duration:0.38,ease:"power3.inOut"},0);
+  tl.fromTo("#ciclo-pulm",{scale:0.72},{scale:1.0,duration:2.64,ease:"sine.inOut"},1.23);
+  tl.to("#ciclo-cor",{scale:1.18,duration:0.22,yoyo:true,repeat:11,ease:"sine.inOut"},2.29);
+  tl.fromTo("#ciclo-rel",{opacity:0.5},{opacity:1,duration:0.2},0.17);
+  tl.set("#ciclo-rel",{textContent:"4 s"},4.55);
+  tl.set("#ciclo-fase",{textContent:"SEGURA · 7",background:"#E2B04A",color:"#1F3328"},4.55);
+  tl.set("#ciclo-l",{textContent:"segura o ar"},4.55);
+  tl.set("#ciclo-seta",{textContent:"="},4.55);
+  tl.set("#ciclo-rel",{textContent:"11 s"},7.11);
+  tl.set("#ciclo-fase",{textContent:"SOLTA · 8",background:"#D45F2B",color:"#fff"},7.11);
+  tl.set("#ciclo-l",{textContent:"pela boca, devagar"},7.11);
+  tl.to("#ciclo-pulm",{scale:0.7,duration:3.58,ease:"sine.inOut"},8.25);
+  tl.set("#ciclo-seta",{textContent:"▼"},11.39);
+  tl.to("#ciclo-cor",{scale:1.1,duration:0.5,yoyo:true,repeat:3,ease:"sine.inOut"},11.39);
+  tl.set("#ciclo-rel",{textContent:"19 s"},12.13);
+
+  window.__timelines["ciclo"] = tl;
+</script>
+</template>

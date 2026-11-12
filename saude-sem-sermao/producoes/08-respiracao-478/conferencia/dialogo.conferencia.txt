@@ -1,0 +1,5 @@
+semelhança: 95.6%
+replace: roteiro='quatro sete' voz='quatrocentos e setenta e' pos=1
+replace: roteiro='quatro sete' voz='quatrocentos e setenta e' pos=130
+replace: roteiro='como' voz='com' pos=134
+Nota: reprovação falsa no gancho: o Whisper escreve '478' e a normalização vira 'quatrocentos e setenta e oito'. Conferido com o modelo medium (com prompt): a voz diz 'quatro, sete, oito'. '478' separado em 3 palavras no .palavras.json.

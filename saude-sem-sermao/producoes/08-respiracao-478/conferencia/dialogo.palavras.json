@@ -1,0 +1,782 @@
+[
+ {
+  "palavra": "Respiração",
+  "inicio": 0.0,
+  "fim": 0.74
+ },
+ {
+  "palavra": "quatro,",
+  "inicio": 0.74,
+  "fim": 1.11
+ },
+ {
+  "palavra": "sete,",
+  "inicio": 1.13,
+  "fim": 1.49
+ },
+ {
+  "palavra": "oito.",
+  "inicio": 1.51,
+  "fim": 1.88
+ },
+ {
+  "palavra": "O",
+  "inicio": 2.1,
+  "fim": 2.46
+ },
+ {
+  "palavra": "que",
+  "inicio": 2.46,
+  "fim": 2.58
+ },
+ {
+  "palavra": "ela",
+  "inicio": 2.58,
+  "fim": 2.72
+ },
+ {
+  "palavra": "faz",
+  "inicio": 2.72,
+  "fim": 2.94
+ },
+ {
+  "palavra": "no",
+  "inicio": 2.94,
+  "fim": 3.06
+ },
+ {
+  "palavra": "seu",
+  "inicio": 3.06,
+  "fim": 3.2
+ },
+ {
+  "palavra": "corpo",
+  "inicio": 3.2,
+  "fim": 3.52
+ },
+ {
+  "palavra": "em",
+  "inicio": 3.52,
+  "fim": 3.72
+ },
+ {
+  "palavra": "um",
+  "inicio": 3.72,
+  "fim": 3.86
+ },
+ {
+  "palavra": "minuto?",
+  "inicio": 3.86,
+  "fim": 4.26
+ },
+ {
+  "palavra": "Respirar",
+  "inicio": 4.58,
+  "fim": 5.02
+ },
+ {
+  "palavra": "contando?",
+  "inicio": 5.02,
+  "fim": 5.58
+ },
+ {
+  "palavra": "Parece",
+  "inicio": 5.82,
+  "fim": 6.34
+ },
+ {
+  "palavra": "coisa",
+  "inicio": 6.34,
+  "fim": 6.56
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.56,
+  "fim": 6.7
+ },
+ {
+  "palavra": "coach.",
+  "inicio": 6.7,
+  "fim": 7.02
+ },
+ {
+  "palavra": "Segundo",
+  "inicio": 7.62,
+  "fim": 7.98
+ },
+ {
+  "palavra": "zero.",
+  "inicio": 7.98,
+  "fim": 8.32
+ },
+ {
+  "palavra": "Inspira",
+  "inicio": 8.68,
+  "fim": 9.0
+ },
+ {
+  "palavra": "pelo",
+  "inicio": 9.0,
+  "fim": 9.2
+ },
+ {
+  "palavra": "nariz",
+  "inicio": 9.2,
+  "fim": 9.54
+ },
+ {
+  "palavra": "até",
+  "inicio": 9.54,
+  "fim": 9.74
+ },
+ {
+  "palavra": "4,",
+  "inicio": 9.74,
+  "fim": 10.18
+ },
+ {
+  "palavra": "o",
+  "inicio": 10.34,
+  "fim": 10.54
+ },
+ {
+  "palavra": "coração",
+  "inicio": 10.54,
+  "fim": 10.82
+ },
+ {
+  "palavra": "acelera",
+  "inicio": 10.82,
+  "fim": 11.22
+ },
+ {
+  "palavra": "um",
+  "inicio": 11.22,
+  "fim": 11.32
+ },
+ {
+  "palavra": "pouquinho.",
+  "inicio": 11.32,
+  "fim": 11.58
+ },
+ {
+  "palavra": "Segundo",
+  "inicio": 12.0,
+  "fim": 12.52
+ },
+ {
+  "palavra": "quatro.",
+  "inicio": 12.52,
+  "fim": 12.92
+ },
+ {
+  "palavra": "Segura",
+  "inicio": 13.26,
+  "fim": 13.56
+ },
+ {
+  "palavra": "até",
+  "inicio": 13.56,
+  "fim": 13.72
+ },
+ {
+  "palavra": "7.",
+  "inicio": 13.72,
+  "fim": 14.12
+ },
+ {
+  "palavra": "Segundo",
+  "inicio": 14.56,
+  "fim": 15.06
+ },
+ {
+  "palavra": "onze.",
+  "inicio": 15.06,
+  "fim": 15.42
+ },
+ {
+  "palavra": "Solta",
+  "inicio": 15.7,
+  "fim": 16.08
+ },
+ {
+  "palavra": "pela",
+  "inicio": 16.08,
+  "fim": 16.28
+ },
+ {
+  "palavra": "boca",
+  "inicio": 16.28,
+  "fim": 16.6
+ },
+ {
+  "palavra": "até",
+  "inicio": 16.6,
+  "fim": 16.82
+ },
+ {
+  "palavra": "8.",
+  "inicio": 16.82,
+  "fim": 17.16
+ },
+ {
+  "palavra": "Na",
+  "inicio": 17.58,
+  "fim": 17.8
+ },
+ {
+  "palavra": "expiração",
+  "inicio": 17.8,
+  "fim": 18.32
+ },
+ {
+  "palavra": "longa,",
+  "inicio": 18.32,
+  "fim": 18.74
+ },
+ {
+  "palavra": "o",
+  "inicio": 18.84,
+  "fim": 18.9
+ },
+ {
+  "palavra": "coração",
+  "inicio": 18.9,
+  "fim": 19.28
+ },
+ {
+  "palavra": "desacelera.",
+  "inicio": 19.28,
+  "fim": 20.0
+ },
+ {
+  "palavra": "E",
+  "inicio": 20.32,
+  "fim": 20.62
+ },
+ {
+  "palavra": "depois",
+  "inicio": 20.62,
+  "fim": 20.84
+ },
+ {
+  "palavra": "de",
+  "inicio": 20.84,
+  "fim": 20.98
+ },
+ {
+  "palavra": "um",
+  "inicio": 20.98,
+  "fim": 21.06
+ },
+ {
+  "palavra": "minuto?",
+  "inicio": 21.06,
+  "fim": 21.38
+ },
+ {
+  "palavra": "Depois",
+  "inicio": 21.76,
+  "fim": 22.2
+ },
+ {
+  "palavra": "de",
+  "inicio": 22.2,
+  "fim": 22.34
+ },
+ {
+  "palavra": "uns",
+  "inicio": 22.34,
+  "fim": 22.46
+ },
+ {
+  "palavra": "quatro",
+  "inicio": 22.46,
+  "fim": 22.76
+ },
+ {
+  "palavra": "ciclos,",
+  "inicio": 22.76,
+  "fim": 23.28
+ },
+ {
+  "palavra": "entra",
+  "inicio": 23.42,
+  "fim": 23.64
+ },
+ {
+  "palavra": "o",
+  "inicio": 23.64,
+  "fim": 23.82
+ },
+ {
+  "palavra": "freio",
+  "inicio": 23.82,
+  "fim": 24.1
+ },
+ {
+  "palavra": "do",
+  "inicio": 24.1,
+  "fim": 24.22
+ },
+ {
+  "palavra": "corpo.",
+  "inicio": 24.22,
+  "fim": 24.56
+ },
+ {
+  "palavra": "Num",
+  "inicio": 24.8,
+  "fim": 25.0
+ },
+ {
+  "palavra": "estudo",
+  "inicio": 25.0,
+  "fim": 25.28
+ },
+ {
+  "palavra": "pequeno,",
+  "inicio": 25.28,
+  "fim": 25.76
+ },
+ {
+  "palavra": "um",
+  "inicio": 25.92,
+  "fim": 26.14
+ },
+ {
+  "palavra": "sinal",
+  "inicio": 26.14,
+  "fim": 26.38
+ },
+ {
+  "palavra": "de",
+  "inicio": 26.38,
+  "fim": 26.5
+ },
+ {
+  "palavra": "relaxamento",
+  "inicio": 26.5,
+  "fim": 27.02
+ },
+ {
+  "palavra": "do",
+  "inicio": 27.02,
+  "fim": 27.16
+ },
+ {
+  "palavra": "coração",
+  "inicio": 27.16,
+  "fim": 27.46
+ },
+ {
+  "palavra": "subiu",
+  "inicio": 27.46,
+  "fim": 27.92
+ },
+ {
+  "palavra": "logo",
+  "inicio": 27.92,
+  "fim": 28.16
+ },
+ {
+  "palavra": "depois.",
+  "inicio": 28.16,
+  "fim": 28.5
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 28.88,
+  "fim": 29.16
+ },
+ {
+  "palavra": "o",
+  "inicio": 29.16,
+  "fim": 29.28
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 29.28,
+  "fim": 29.72
+ },
+ {
+  "palavra": "não",
+  "inicio": 29.72,
+  "fim": 29.86
+ },
+ {
+  "palavra": "são",
+  "inicio": 29.86,
+  "fim": 30.06
+ },
+ {
+  "palavra": "os",
+  "inicio": 30.06,
+  "fim": 30.22
+ },
+ {
+  "palavra": "números.",
+  "inicio": 30.22,
+  "fim": 30.52
+ },
+ {
+  "palavra": "É",
+  "inicio": 30.8,
+  "fim": 31.04
+ },
+ {
+  "palavra": "respirar",
+  "inicio": 31.04,
+  "fim": 31.44
+ },
+ {
+  "palavra": "devagar,",
+  "inicio": 31.44,
+  "fim": 31.92
+ },
+ {
+  "palavra": "soltando",
+  "inicio": 32.16,
+  "fim": 32.72
+ },
+ {
+  "palavra": "o",
+  "inicio": 32.72,
+  "fim": 32.82
+ },
+ {
+  "palavra": "ar",
+  "inicio": 32.82,
+  "fim": 32.92
+ },
+ {
+  "palavra": "bem",
+  "inicio": 32.92,
+  "fim": 33.3
+ },
+ {
+  "palavra": "devagar.",
+  "inicio": 33.3,
+  "fim": 33.8
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 34.12,
+  "fim": 34.38
+ },
+ {
+  "palavra": "meta",
+  "inicio": 34.38,
+  "fim": 34.6
+ },
+ {
+  "palavra": "-análise",
+  "inicio": 34.6,
+  "fim": 35.02
+ },
+ {
+  "palavra": "viu",
+  "inicio": 35.02,
+  "fim": 35.3
+ },
+ {
+  "palavra": "que",
+  "inicio": 35.3,
+  "fim": 35.44
+ },
+ {
+  "palavra": "técnicas",
+  "inicio": 35.44,
+  "fim": 35.9
+ },
+ {
+  "palavra": "de",
+  "inicio": 35.9,
+  "fim": 36.06
+ },
+ {
+  "palavra": "respiração",
+  "inicio": 36.06,
+  "fim": 36.66
+ },
+ {
+  "palavra": "reduzem",
+  "inicio": 36.66,
+  "fim": 37.08
+ },
+ {
+  "palavra": "um",
+  "inicio": 37.08,
+  "fim": 37.2
+ },
+ {
+  "palavra": "pouco",
+  "inicio": 37.2,
+  "fim": 37.4
+ },
+ {
+  "palavra": "o",
+  "inicio": 37.4,
+  "fim": 37.5
+ },
+ {
+  "palavra": "estresse.",
+  "inicio": 37.5,
+  "fim": 37.82
+ },
+ {
+  "palavra": "Ficou",
+  "inicio": 38.2,
+  "fim": 38.58
+ },
+ {
+  "palavra": "tonto?",
+  "inicio": 38.58,
+  "fim": 38.86
+ },
+ {
+  "palavra": "Volta",
+  "inicio": 39.08,
+  "fim": 39.5
+ },
+ {
+  "palavra": "ao",
+  "inicio": 39.5,
+  "fim": 39.58
+ },
+ {
+  "palavra": "normal.",
+  "inicio": 39.58,
+  "fim": 39.82
+ },
+ {
+  "palavra": "Ansiedade",
+  "inicio": 40.32,
+  "fim": 40.88
+ },
+ {
+  "palavra": "frequente?",
+  "inicio": 40.88,
+  "fim": 41.42
+ },
+ {
+  "palavra": "Procure",
+  "inicio": 41.62,
+  "fim": 42.02
+ },
+ {
+  "palavra": "ajuda.",
+  "inicio": 42.02,
+  "fim": 42.28
+ },
+ {
+  "palavra": "Entendi.",
+  "inicio": 42.88,
+  "fim": 43.44
+ },
+ {
+  "palavra": "Não",
+  "inicio": 43.74,
+  "fim": 44.2
+ },
+ {
+  "palavra": "é",
+  "inicio": 44.2,
+  "fim": 44.32
+ },
+ {
+  "palavra": "mágica",
+  "inicio": 44.32,
+  "fim": 44.68
+ },
+ {
+  "palavra": "dos",
+  "inicio": 44.68,
+  "fim": 44.86
+ },
+ {
+  "palavra": "números.",
+  "inicio": 44.86,
+  "fim": 45.2
+ },
+ {
+  "palavra": "É",
+  "inicio": 45.26,
+  "fim": 45.52
+ },
+ {
+  "palavra": "expirar",
+  "inicio": 45.52,
+  "fim": 46.14
+ },
+ {
+  "palavra": "devagar",
+  "inicio": 46.14,
+  "fim": 46.7
+ },
+ {
+  "palavra": "que",
+  "inicio": 46.7,
+  "fim": 46.96
+ },
+ {
+  "palavra": "puxa",
+  "inicio": 46.96,
+  "fim": 47.24
+ },
+ {
+  "palavra": "o",
+  "inicio": 47.24,
+  "fim": 47.36
+ },
+ {
+  "palavra": "freio",
+  "inicio": 47.36,
+  "fim": 47.54
+ },
+ {
+  "palavra": "do",
+  "inicio": 47.54,
+  "fim": 47.62
+ },
+ {
+  "palavra": "corpo.",
+  "inicio": 47.62,
+  "fim": 47.92
+ },
+ {
+  "palavra": "Então",
+  "inicio": 48.32,
+  "fim": 48.58
+ },
+ {
+  "palavra": "quatro,",
+  "inicio": 48.58,
+  "fim": 48.83
+ },
+ {
+  "palavra": "sete,",
+  "inicio": 48.85,
+  "fim": 49.09
+ },
+ {
+  "palavra": "oito",
+  "inicio": 49.11,
+  "fim": 49.36
+ },
+ {
+  "palavra": "funciona?",
+  "inicio": 49.38,
+  "fim": 49.78
+ },
+ {
+  "palavra": "Com",
+  "inicio": 50.14,
+  "fim": 50.4
+ },
+ {
+  "palavra": "respiração",
+  "inicio": 50.4,
+  "fim": 50.92
+ },
+ {
+  "palavra": "lenta,",
+  "inicio": 50.92,
+  "fim": 51.24
+ },
+ {
+  "palavra": "sim.",
+  "inicio": 51.38,
+  "fim": 51.62
+ },
+ {
+  "palavra": "Isso",
+  "inicio": 51.96,
+  "fim": 52.26
+ },
+ {
+  "palavra": "aí.",
+  "inicio": 52.26,
+  "fim": 52.4
+ },
+ {
+  "palavra": "Manda",
+  "inicio": 52.6,
+  "fim": 52.8
+ },
+ {
+  "palavra": "para",
+  "inicio": 52.8,
+  "fim": 52.94
+ },
+ {
+  "palavra": "quem",
+  "inicio": 52.94,
+  "fim": 53.1
+ },
+ {
+  "palavra": "vive",
+  "inicio": 53.1,
+  "fim": 53.36
+ },
+ {
+  "palavra": "acelerado.",
+  "inicio": 53.36,
+  "fim": 53.96
+ },
+ {
+  "palavra": "E",
+  "inicio": 54.14,
+  "fim": 54.38
+ },
+ {
+  "palavra": "curte,",
+  "inicio": 54.38,
+  "fim": 54.74
+ },
+ {
+  "palavra": "comenta",
+  "inicio": 54.84,
+  "fim": 55.12
+ },
+ {
+  "palavra": "Respira",
+  "inicio": 55.12,
+  "fim": 55.66
+ },
+ {
+  "palavra": "se",
+  "inicio": 55.66,
+  "fim": 55.8
+ },
+ {
+  "palavra": "vai",
+  "inicio": 55.8,
+  "fim": 55.92
+ },
+ {
+  "palavra": "testar",
+  "inicio": 55.92,
+  "fim": 56.3
+ },
+ {
+  "palavra": "e",
+  "inicio": 56.3,
+  "fim": 56.6
+ },
+ {
+  "palavra": "segue",
+  "inicio": 56.6,
+  "fim": 56.84
+ },
+ {
+  "palavra": "para",
+  "inicio": 56.84,
+  "fim": 56.96
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 56.96,
+  "fim": 57.18
+ }
+]

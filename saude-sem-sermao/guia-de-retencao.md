@@ -228,6 +228,7 @@ Numa mesma leva de ideias, **variar as estruturas** para depois comparar qual re
 | 06 | Grão-de-bico (R) | Evolução (primeiro feito pelo guia) |
 | 09 | Comer à noite engorda? | Contradição |
 | 07 | Levantar a cada 30 min | Escolha |
+| 08 | Respiração 4-7-8 | Evolução |
 | 10 | Ronco | Jornada |
 
 Até aqui o canal está concentrado em Contradição; o cronograma a partir do #6 distribui as 5 estruturas.

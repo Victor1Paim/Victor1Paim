@@ -1,0 +1,71 @@
+<template>
+<style>
+  #root{position:absolute;inset:0;font-family:'Nunito',sans-serif;pointer-events:none;}
+  .leg{position:absolute;left:80px;top:1180px;max-width:640px;background:#fff;border-radius:24px;padding:18px 30px;
+        font-weight:900;font-size:50px;line-height:1.15;color:#2B2B2B;box-shadow:0 12px 34px rgba(80,40,20,.14);
+        opacity:0;visibility:hidden;}
+  .leg b{color:#D45F2B;font-weight:900;}
+</style>
+<div id="root" data-composition-id="legendas" data-width="1080" data-height="1920" data-layout-allow-caption-zone>
+<div class="leg" id="leg-0">Respiração <b>4, 7, 8</b>:</div>
+<div class="leg" id="leg-1">o que ela faz <b>no seu corpo</b> em 1 minuto?</div>
+<div class="leg" id="leg-2"><b>Segundo 0</b>: inspira pelo nariz até 4.</div>
+<div class="leg" id="leg-3">O coração <b>acelera um pouquinho</b>.</div>
+<div class="leg" id="leg-4"><b>Segundo 4</b>: segura até 7.</div>
+<div class="leg" id="leg-5"><b>Segundo 11</b>: solta pela boca até 8.</div>
+<div class="leg" id="leg-6">Na <b>expiração longa</b>,</div>
+<div class="leg" id="leg-7">o coração <b>desacelera</b>.</div>
+<div class="leg" id="leg-8">Depois de <b>uns 4 ciclos</b>,</div>
+<div class="leg" id="leg-9">entra <b>o freio do corpo</b>.</div>
+<div class="leg" id="leg-10">Num <b>estudo pequeno</b>,</div>
+<div class="leg" id="leg-11">um <b>sinal de relaxamento</b> do coração</div>
+<div class="leg" id="leg-12"><b>subiu</b> logo depois.</div>
+<div class="leg" id="leg-13">Mas o segredo <b>não são os números</b>.</div>
+<div class="leg" id="leg-14">É <b>respirar devagar</b>,</div>
+<div class="leg" id="leg-15"><b>soltando o ar bem devagar</b>.</div>
+<div class="leg" id="leg-16">Uma <b>meta-análise</b> viu que</div>
+<div class="leg" id="leg-17">técnicas de respiração</div>
+<div class="leg" id="leg-18"><b>reduzem um pouco o estresse</b>.</div>
+<div class="leg" id="leg-19">Ficou tonto? <b>Volta ao normal.</b></div>
+<div class="leg" id="leg-20">Ansiedade frequente? <b>Procure ajuda.</b></div>
+<div class="leg" id="leg-21">Então, <b>4, 7, 8 funciona?</b></div>
+<div class="leg" id="leg-22"><b>Como respiração lenta, sim.</b></div>
+<div class="leg" id="leg-23"><b>Isso aí.</b></div>
+<div class="leg" id="leg-24">Manda pra quem vive <b>acelerado</b>.</div>
+<div class="leg" id="leg-25">E <b>curte</b>,</div>
+<div class="leg" id="leg-26"><b>comenta RESPIRA</b> se vai testar</div>
+<div class="leg" id="leg-27">e <b>segue pra mais!</b></div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#leg-0",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},0.15);tl.to("#leg-0",{opacity:0,duration:0.1,ease:"power2.in"},1.90);tl.set("#leg-0",{opacity:0,visibility:"hidden"},2.00);
+  tl.fromTo("#leg-1",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},2.02);tl.to("#leg-1",{opacity:0,duration:0.1,ease:"power2.in"},4.34);tl.set("#leg-1",{opacity:0,visibility:"hidden"},4.44);
+  tl.fromTo("#leg-2",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},7.54);tl.to("#leg-2",{opacity:0,duration:0.1,ease:"power2.in"},10.14);tl.set("#leg-2",{opacity:0,visibility:"hidden"},10.24);
+  tl.fromTo("#leg-3",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},10.26);tl.to("#leg-3",{opacity:0,duration:0.1,ease:"power2.in"},11.66);tl.set("#leg-3",{opacity:0,visibility:"hidden"},11.76);
+  tl.fromTo("#leg-4",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},11.92);tl.to("#leg-4",{opacity:0,duration:0.1,ease:"power2.in"},14.20);tl.set("#leg-4",{opacity:0,visibility:"hidden"},14.30);
+  tl.fromTo("#leg-5",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},14.48);tl.to("#leg-5",{opacity:0,duration:0.1,ease:"power2.in"},17.24);tl.set("#leg-5",{opacity:0,visibility:"hidden"},17.34);
+  tl.fromTo("#leg-6",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},17.50);tl.to("#leg-6",{opacity:0,duration:0.1,ease:"power2.in"},18.64);tl.set("#leg-6",{opacity:0,visibility:"hidden"},18.74);
+  tl.fromTo("#leg-7",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},18.76);tl.to("#leg-7",{opacity:0,duration:0.1,ease:"power2.in"},20.08);tl.set("#leg-7",{opacity:0,visibility:"hidden"},20.18);
+  tl.fromTo("#leg-8",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},21.68);tl.to("#leg-8",{opacity:0,duration:0.1,ease:"power2.in"},23.22);tl.set("#leg-8",{opacity:0,visibility:"hidden"},23.32);
+  tl.fromTo("#leg-9",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},23.34);tl.to("#leg-9",{opacity:0,duration:0.1,ease:"power2.in"},24.60);tl.set("#leg-9",{opacity:0,visibility:"hidden"},24.70);
+  tl.fromTo("#leg-10",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},24.72);tl.to("#leg-10",{opacity:0,duration:0.1,ease:"power2.in"},25.72);tl.set("#leg-10",{opacity:0,visibility:"hidden"},25.82);
+  tl.fromTo("#leg-11",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},25.84);tl.to("#leg-11",{opacity:0,duration:0.1,ease:"power2.in"},27.26);tl.set("#leg-11",{opacity:0,visibility:"hidden"},27.36);
+  tl.fromTo("#leg-12",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},27.38);tl.to("#leg-12",{opacity:0,duration:0.1,ease:"power2.in"},28.58);tl.set("#leg-12",{opacity:0,visibility:"hidden"},28.68);
+  tl.fromTo("#leg-13",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},28.80);tl.to("#leg-13",{opacity:0,duration:0.1,ease:"power2.in"},30.60);tl.set("#leg-13",{opacity:0,visibility:"hidden"},30.70);
+  tl.fromTo("#leg-14",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},30.72);tl.to("#leg-14",{opacity:0,duration:0.1,ease:"power2.in"},31.96);tl.set("#leg-14",{opacity:0,visibility:"hidden"},32.06);
+  tl.fromTo("#leg-15",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},32.08);tl.to("#leg-15",{opacity:0,duration:0.1,ease:"power2.in"},33.88);tl.set("#leg-15",{opacity:0,visibility:"hidden"},33.98);
+  tl.fromTo("#leg-16",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},34.04);tl.to("#leg-16",{opacity:0,duration:0.1,ease:"power2.in"},35.24);tl.set("#leg-16",{opacity:0,visibility:"hidden"},35.34);
+  tl.fromTo("#leg-17",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},35.36);tl.to("#leg-17",{opacity:0,duration:0.1,ease:"power2.in"},36.46);tl.set("#leg-17",{opacity:0,visibility:"hidden"},36.56);
+  tl.fromTo("#leg-18",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},36.58);tl.to("#leg-18",{opacity:0,duration:0.1,ease:"power2.in"},37.90);tl.set("#leg-18",{opacity:0,visibility:"hidden"},38.00);
+  tl.fromTo("#leg-19",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},38.12);tl.to("#leg-19",{opacity:0,duration:0.1,ease:"power2.in"},39.90);tl.set("#leg-19",{opacity:0,visibility:"hidden"},40.00);
+  tl.fromTo("#leg-20",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},40.24);tl.to("#leg-20",{opacity:0,duration:0.1,ease:"power2.in"},42.36);tl.set("#leg-20",{opacity:0,visibility:"hidden"},42.46);
+  tl.fromTo("#leg-21",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},48.24);tl.to("#leg-21",{opacity:0,duration:0.1,ease:"power2.in"},49.86);tl.set("#leg-21",{opacity:0,visibility:"hidden"},49.96);
+  tl.fromTo("#leg-22",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},50.06);tl.to("#leg-22",{opacity:0,duration:0.1,ease:"power2.in"},51.70);tl.set("#leg-22",{opacity:0,visibility:"hidden"},51.80);
+  tl.fromTo("#leg-23",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},51.88);tl.to("#leg-23",{opacity:0,duration:0.1,ease:"power2.in"},52.40);tl.set("#leg-23",{opacity:0,visibility:"hidden"},52.50);
+  tl.fromTo("#leg-24",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},52.52);tl.to("#leg-24",{opacity:0,duration:0.1,ease:"power2.in"},53.94);tl.set("#leg-24",{opacity:0,visibility:"hidden"},54.04);
+  tl.fromTo("#leg-25",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},54.06);tl.to("#leg-25",{opacity:0,duration:0.1,ease:"power2.in"},54.64);tl.set("#leg-25",{opacity:0,visibility:"hidden"},54.74);
+  tl.fromTo("#leg-26",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},54.76);tl.to("#leg-26",{opacity:0,duration:0.1,ease:"power2.in"},56.10);tl.set("#leg-26",{opacity:0,visibility:"hidden"},56.20);
+  tl.fromTo("#leg-27",{opacity:0,y:16,visibility:"visible"},{opacity:1,y:0,duration:0.14,ease:"power2.out"},56.22);tl.to("#leg-27",{opacity:0,duration:0.1,ease:"power2.in"},57.26);tl.set("#leg-27",{opacity:0,visibility:"hidden"},57.36);
+  window.__timelines["legendas"] = tl;
+</script>
+</template>
