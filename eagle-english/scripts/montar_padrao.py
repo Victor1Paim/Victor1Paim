@@ -45,7 +45,7 @@ def pagina(post, nome):
     return post / nome
 
 
-def render(post, especs, fundo):
+def render(post, especs, fundo, transparente=False):
     import os
     from playwright.sync_api import sync_playwright
     q = post / "video" / "quadros"; q.mkdir(parents=True, exist_ok=True)
@@ -54,10 +54,13 @@ def render(post, especs, fundo):
         nav = pw.chromium.launch(executable_path=cam) if cam else pw.chromium.launch()
         for nome, dados in especs:
             pg = nav.new_page(viewport={"width": 1080, "height": 1920})
-            pg.add_init_script(f"window.DADOS = {json.dumps({'fundo': fundo, **dados}, ensure_ascii=False)};")
+            dd = {'fundo': fundo, **dados}
+            if transparente and dd.get("tipo") not in ("imagem",):
+                dd["transparente"] = True
+            pg.add_init_script(f"window.DADOS = {json.dumps(dd, ensure_ascii=False)};")
             pg.goto((PROJ / "templates" / "padrao.html").as_uri())
             pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready")
-            pg.screenshot(path=str(q / f"{nome}.png")); pg.close()
+            pg.screenshot(path=str(q / f"{nome}.png"), omit_background=transparente); pg.close()
         nav.close()
     return q
 
@@ -83,6 +86,30 @@ def boca_aberta(sons, total):
             abertos.append((round(i * passo, 3), round((i + 1) * passo, 3)))
         i += 1
     return abertos
+
+
+def clipes_fundo(r):
+    """Lista de clipes de fundo: "fundo_video": "maldivas" (biblioteca) ou lista de caminhos relativos ao projeto."""
+    fv = r.get("fundo_video")
+    if fv == "maldivas":
+        lst = [x for x in json.loads((PROJ / "assets/fundos/maldivas.json").read_text()) if not x.get("evitar")]
+        ini = r.get("fundo_inicio", 0) % len(lst)
+        return [PROJ / x["arquivo"] for x in lst[ini:] + lst[:ini]]
+    return [PROJ / x for x in fv]
+
+
+def trilha_fundo(post, r, trechos, total):
+    """Monta o fundo em vídeo: uma cena por trecho (rodada/frase), cortes secos como nas referências."""
+    cl = clipes_fundo(r); v = post / "video"; ent, fc = [], []
+    for i, (a, b) in enumerate(trechos):
+        d = max(0.1, b - a); arq = cl[i % len(cl)]
+        ent += ["-stream_loop", "-1", "-t", f"{d:.3f}", "-i", str(arq)]
+        fc.append(f"[{i}:v]fps={FPS},scale=1080:1920,setsar=1,trim=0:{d:.3f},setpts=PTS-STARTPTS[f{i}]")
+    fc.append("".join(f"[f{i}]" for i in range(len(trechos))) + f"concat=n={len(trechos)}:v=1:a=0,tpad=stop_mode=clone:stop_duration=5,"
+              f"trim=0:{total:.3f},format=yuv420p[v]")
+    saida = v / "_bg.mp4"
+    sh(*ent, "-filter_complex", ";".join(fc), "-map", "[v]", "-c:v", "libx264", "-crf", "18", str(saida))
+    return saida
 
 
 def antes_do_corpo(post, r, vozes, corpo):
@@ -130,8 +157,9 @@ def main(pasta, previa=False):
             arq, d = vozes[i]; sons.append((arq, ini, 1.0)); ini += d + gap
         return ini - gap
 
+    trechos = []
     for n, b in enumerate(r["beats"]):
-        k0 = len(especs)
+        k0 = len(especs); t_beat = t
         tp = b["tipo"]
         if tp == "oferta":
             oferta = b; break
@@ -207,18 +235,28 @@ def main(pasta, previa=False):
                 especs.append((nome, dados))
                 cenas.append((nome, tela.get("segundos", cada) if isinstance(tela, dict) else cada))
             janelas.append((t, t + total, "pequeno")); t += total
+        if t > t_beat:
+            trechos.append((t_beat, t))
         if b.get("fundo"):   # cenário próprio deste trecho (regra de cenários do V3)
             for i in range(k0, len(especs)):
                 especs[i] = (especs[i][0], {**especs[i][1], "fundo": (post / b["fundo"]).as_uri()})
 
-    q = render(post, especs, fundo)
+    video_fundo = bool(r.get("fundo_video"))
+    q = render(post, especs, fundo, transparente=video_fundo)
     # folha de contato (com o mascote por cima, como vai ficar)
     from PIL import Image
     mf = Image.open(MASC / "boca_fechada.png")
+    base_img = None
+    if video_fundo:
+        qf = post / "video" / "_fundo_q.png"
+        sh("-ss", "3", "-i", str(clipes_fundo(r)[0]), "-frames:v", "1", "-vf", "scale=1080:1920", str(qf))
+        base_img = Image.open(qf).convert("RGBA")
     cols = 6; lin = (len(especs) + cols - 1) // cols
     folha = Image.new("RGB", (cols * 270, lin * 480), "white")
     for i, (nm, dados) in enumerate(especs):
         im = Image.open(q / f"{nm}.png").convert("RGBA")
+        if base_img is not None:
+            im = Image.alpha_composite(base_img, im)
         h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else MEDIO if dados["tipo"] == "escolha" else GRANDE
         m = mf.resize((int(mf.width * h / mf.height), h))
         x = 20 if dados["tipo"] in ("produto", "kit", "preco") else (1080 - m.width) // 2
@@ -226,6 +264,8 @@ def main(pasta, previa=False):
         folha.paste(im.convert("RGB").resize((270, 480)), ((i % cols) * 270, (i // cols) * 480))
     folha.save(post / "video" / "contato.jpg", quality=85)
     capa = Image.open(q / f"{especs[0][0]}.png").convert("RGBA")
+    if base_img is not None:
+        capa = Image.alpha_composite(base_img, capa)
     h, chao = GRANDE; m = mf.resize((int(mf.width * h / mf.height), h))
     capa.alpha_composite(m, ((1080 - m.width) // 2, chao - h)); capa.convert("RGB").save(post / "video" / "capa.png")
     if (post / "capa.json").exists():   # capa produzida (templates/capa.html) substitui a simples
@@ -241,7 +281,14 @@ def main(pasta, previa=False):
             f.write(f"file '{q / (nome + '.png')}'\nduration {round(d * FPS) / FPS:.4f}\n")
         f.write(f"file '{q / (cenas[-1][0] + '.png')}'\n")
     base = v / "_base.mp4"
-    sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p", "-c:v", "libx264", "-crf", "17", str(base))
+    if video_fundo:   # quadros transparentes por cima do vídeo de fundo
+        bg = trilha_fundo(post, r, trechos, t)
+        sh("-i", str(bg), "-f", "concat", "-safe", "0", "-i", str(lista), "-filter_complex",
+           f"[1:v]fps={FPS},format=rgba[t];[0:v][t]overlay=0:0:shortest=1,format=yuv420p[v]", "-map", "[v]",
+           "-c:v", "libx264", "-crf", "17", "-t", f"{t:.3f}", str(base))
+        bg.unlink(missing_ok=True)
+    else:
+        sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p", "-c:v", "libx264", "-crf", "17", str(base))
 
     # mascote: fechado sempre (na janela) + aberto por cima nos instantes de fala; balanço leve
     abertos = boca_aberta(sons, t)

@@ -1,0 +1,109 @@
+[
+ {
+  "arquivo": "assets/fundos/maldivas/m01.mp4",
+  "origem_s": 60,
+  "cena": "por do sol"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m02.mp4",
+  "origem_s": 90,
+  "cena": "píer"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m03.mp4",
+  "origem_s": 120,
+  "cena": "bangalôs de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m04.mp4",
+  "origem_s": 210,
+  "cena": "tartaruga"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m05.mp4",
+  "origem_s": 240,
+  "cena": "tartaruga 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m06.mp4",
+  "origem_s": 300,
+  "cena": "bangalôs na água"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m07.mp4",
+  "origem_s": 360,
+  "cena": "barco na praia"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m08.mp4",
+  "origem_s": 480,
+  "cena": "recife de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m09.mp4",
+  "origem_s": 540,
+  "cena": "banco de areia com barco"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m10.mp4",
+  "origem_s": 600,
+  "cena": "barco no mar turquesa"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m11.mp4",
+  "origem_s": 660,
+  "cena": "barco na areia de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m12.mp4",
+  "origem_s": 720,
+  "cena": "praia branca"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m13.mp4",
+  "origem_s": 780,
+  "cena": "passarela dos bangalôs",
+  "evitar": true
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m14.mp4",
+  "origem_s": 900,
+  "cena": "coqueiro e bangalô"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m15.mp4",
+  "origem_s": 960,
+  "cena": "pôr do sol no mar"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m16.mp4",
+  "origem_s": 1020,
+  "cena": "banco de areia com barcos",
+  "evitar": true
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m17.mp4",
+  "origem_s": 1140,
+  "cena": "ondas de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m18.mp4",
+  "origem_s": 1260,
+  "cena": "pôr do sol com barco"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m19.mp4",
+  "origem_s": 1380,
+  "cena": "coqueiros"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m20.mp4",
+  "origem_s": 1530,
+  "cena": "veleiro de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m21.mp4",
+  "origem_s": 1710,
+  "cena": "banco de areia"
+ }
+]

@@ -93,6 +93,7 @@
 <script>
 const d = window.DADOS || {tipo:"frase", en:"What did you say?", pron:"/UÓT did iú SÊI/", pt:"O que você disse?"};
 document.getElementById("fundo").style.backgroundImage = d.fundo ? `url('${d.fundo}')` : "";
+if (d.transparente) { document.body.style.background = "transparent"; document.getElementById("fundo").style.display = "none"; }
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="vermelho">$1</span>');
 let h = "";

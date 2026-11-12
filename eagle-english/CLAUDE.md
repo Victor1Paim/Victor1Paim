@@ -119,6 +119,9 @@ opções A/B só em inglês, contagem 3-2-1 com tique, revela com ding, frase en
 `posts/2026-11-13_quente-ou-frio/`. Cabe em 70 s com 5 rodadas se as perguntas faladas forem curtas.
 "Em inglês, como se diz…?" (ref. 12/11, `docs/REF_COMO_SE_DIZ.md`): beat `"comosediz"` no `montar_padrao.py` — começa direto na
 1ª pergunta, 3 rodadas A/B/C, contagem 5→1, certa em verde + pronúncia, resposta falada 2x; fim com CTA curto (~30 s no total).
+FUNDO EM VÍDEO (12/11): `"fundo_video": "maldivas"` no roteiro.json → quadros transparentes por cima de uma cena diferente por trecho
+(biblioteca `assets/fundos/maldivas/` gerada por `scripts/fundos_maldivas.py` a partir do vídeo do Drive do usuário; os .mp4 ficam
+fora do git). `"fundo_inicio": N` muda a primeira cena para não repetir entre vídeos. Capa: um quadro das Maldivas em `capa.json`.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas
