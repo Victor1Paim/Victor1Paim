@@ -1,0 +1,100 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Vamos arrumar o quarto em inglês? Seis objetos. No fim, ele fica arrumadinho!"
+  },
+  {
+   "id": "i1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Bed."
+  },
+  {
+   "id": "i1_pt",
+   "lingua": "pt",
+   "texto": "A cama."
+  },
+  {
+   "id": "i2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Lamp."
+  },
+  {
+   "id": "i2_pt",
+   "lingua": "pt",
+   "texto": "A luminária."
+  },
+  {
+   "id": "i3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Clock."
+  },
+  {
+   "id": "i3_pt",
+   "lingua": "pt",
+   "texto": "O relógio."
+  },
+  {
+   "id": "i4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Chair."
+  },
+  {
+   "id": "i4_pt",
+   "lingua": "pt",
+   "texto": "A cadeira."
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Agora, a que mais gente erra!"
+  },
+  {
+   "id": "i5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Mirror."
+  },
+  {
+   "id": "i5_pt",
+   "lingua": "pt",
+   "texto": "O espelho."
+  },
+  {
+   "id": "i6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Window."
+  },
+  {
+   "id": "i6_pt",
+   "lingua": "pt",
+   "texto": "A janela."
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Quarto arrumado, e seis palavras novas! Comenta qual você não sabia."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "A cama...\n\nA luminária...\n\nO relógio...\n\nA cadeira...\n\nO espelho...\n\nA janela."
+  }
+ ]
+}

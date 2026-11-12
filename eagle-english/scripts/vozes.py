@@ -251,7 +251,7 @@ def conferir(saida, texto, lingua):
     mel = whisper.log_mel_spectrogram(audio, n_mels=_WHISPER.dims.n_mels).to(_WHISPER.device)
     _, probs = _WHISPER.detect_language(mel)
     rival = {"pt": "es", "en": "pt"}.get(lingua)
-    if rival and probs.get(rival, 0) > probs.get(lingua, 0):
+    if rival and probs.get(rival, 0) > max(0.5, probs.get(lingua, 0)):   # só reprova se o rival for o mais provável e > 50%
         print(f"    whisper: {ouvido}  [IDIOMA ERRADO: soa {rival} ({probs[rival]:.0%}) em vez de {lingua}]")
         return 0.0
     norm = lambda t: re.sub(r"[^\wáéíóúâêôãõçà' ]", " ", t.lower()).split()

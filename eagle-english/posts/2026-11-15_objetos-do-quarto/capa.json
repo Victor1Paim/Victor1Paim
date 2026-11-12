@@ -1,0 +1,24 @@
+{
+ "fundo": "img/arrumado.png",
+ "selo": "6 objetos",
+ "titulo": "Arrume o quarto\nem *inglês* 🛏️",
+ "sub": "Quantos você já sabe? · <b>A1</b>",
+ "figuras": [
+  {
+   "img": "img/cama.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/luminaria.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/relogio.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/espelho.png",
+   "txt": "?"
+  }
+ ]
+}

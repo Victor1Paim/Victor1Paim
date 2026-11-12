@@ -150,7 +150,7 @@ else if (d.tipo === "item" || d.tipo === "lista_fim") {
   document.getElementById("topo").style.display = "none"; }
 document.getElementById("c").innerHTML = h;
 const lst = document.getElementById("lst"), big = document.getElementById("big");
-if (lst && big) big.style.top = (lst.offsetTop + lst.offsetHeight + 24) + "px";
+if (lst && big) { const pos = () => { big.style.top = (lst.offsetTop + lst.offsetHeight + 40) + "px"; }; pos(); document.fonts.ready.then(pos); }
 // encolhe a legenda até caber acima da cabeça do mascote (topo do bloco em 260 px, limite 520 px de altura)
 const leg = document.querySelector(".leg");
 if (leg) document.fonts.ready.then(() => { let f = 1; const lim = +(leg.dataset.max || 520); while (leg.offsetHeight > lim && f > 0.5) { f -= 0.04;

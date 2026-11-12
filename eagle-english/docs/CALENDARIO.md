@@ -17,7 +17,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | sex 13/11 | 19h | Quente ou frio? ☕ | Qual você usa? | Escolha | "Quente ou frio? Qual palavra combina com esta bebida?" | comentar A/B | ✅ |
 | sáb 14/11 | 12h | Estou com fome 🍽️ | Repita | Evolução | "Uma palavra só em inglês. Vamos ver no que ela vira?" | salvar | ✅ |
 | sáb 14/11 | 19h | Natal em inglês · Parte 1 🎄 (TikTok + PUBLI do molde) | Flashcard + anúncio | Escolha | "Desafio de Natal! Seis formas. Você sabe todas em inglês?" | placar + link do produto | ✅ |
-| dom 15/11 | 12h | Objetos do quarto 🛏️ | Lista com emoji | Evolução | "Vamos arrumar o quarto e praticar inglês juntos?" | comentar palavra | 🧩 |
+| dom 15/11 | 12h | Objetos do quarto 🛏️ | Lista com emoji | Evolução | "Vamos arrumar o quarto em inglês? Seis objetos." | comentar palavra | ✅ |
 | dom 15/11 | 19h | Natal em inglês · Parte 2 🎁 (TikTok + mesmo anúncio) | Repita | Jornada | "Parte dois! A águia vai pra uma ceia de Natal… só em inglês." | salvar + link do produto | ✅ |
 | seg 16/11 | 12h | Animais 🐶 | Flashcard | Escolha | "Consegue lembrar o nome deste animal em inglês?" | placar | 🎬 |
 | seg 16/11 | 19h | Jeitos de agradecer 💛 | Repita | Contradição | "Como você agradece em inglês? Vamos variar juntos." | salvar | 🎬 |

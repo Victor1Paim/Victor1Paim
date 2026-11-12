@@ -1,0 +1,147 @@
+{
+ "fundo": "img/baguncado.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/baguncado.png",
+  "selo": "Lista do quarto 🛏️",
+  "titulo": "Arrume o quarto\nem *inglês*",
+  "sub": "<b>6 objetos</b> · repete comigo",
+  "desafio": "Quantos você já sabe? 👀",
+  "figuras": [
+   {
+    "img": "img/cama.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/luminaria.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/relogio.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/espelho.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "item",
+   "emoji": "🛏️",
+   "en": "Bed",
+   "pron": "/BÉD/",
+   "pt": "a cama",
+   "audio_en": "i1_en",
+   "audio_pt": "i1_pt",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "💡",
+   "en": "Lamp",
+   "pron": "/LÉMP/",
+   "pt": "a luminária",
+   "audio_en": "i2_en",
+   "audio_pt": "i2_pt",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "⏰",
+   "en": "Clock",
+   "pron": "/KLÓK/",
+   "pt": "o relógio",
+   "audio_en": "i3_en",
+   "audio_pt": "i3_pt",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🪑",
+   "en": "Chair",
+   "pron": "/TCHÉR/",
+   "pt": "a cadeira",
+   "audio_en": "i4_en",
+   "audio_pt": "i4_pt",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Agora, a que\nmais gente erra! 👀",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🪞",
+   "en": "Mirror",
+   "pron": "/MÍ-rer/",
+   "pt": "o espelho",
+   "audio_en": "i5_en",
+   "audio_pt": "i5_pt",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🪟",
+   "en": "Window",
+   "pron": "/UÍN-dôu/",
+   "pt": "a janela",
+   "audio_en": "i6_en",
+   "audio_pt": "i6_pt",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "lista_fim",
+   "texto": "Quarto arrumado ✅\nQual você não sabia? 👇",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/arrumado.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

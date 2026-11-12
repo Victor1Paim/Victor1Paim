@@ -130,6 +130,10 @@ felizes (revelação). O montar_padrao usa sozinho nos beats "comosediz" e "esco
 Fundo Maldivas: 47 cenas (44 usáveis) — dá ~10 vídeos sem repetir cena; variar "fundo_inicio" a cada vídeo (ex.: +5).
 ÁUDIO LIMPO (12/11): `vozes.py` apara cada fala pelo Whisper (silêncio antes da 1ª e depois da última palavra) + corta rajada final:
 sem chiado/estalo entre as falas. Para falas antigas: `aparar_com_whisper(arq, lingua)`.
+"Lista com emoji" (12/11): beats `"item"` (emoji, en, pron, pt, audio_en, audio_pt) + `"lista_fim"` no `montar_padrao.py` — a lista inteira
+aparece desde o início com "?" e vai se completando (ideia da ref. "Prova de inglês"); item atual grande embaixo; mascote médio.
+Exemplo: `posts/2026-11-15_objetos-do-quarto/`. TRADUÇÕES CURTAS (1–2 palavras): gerar TODAS numa fala só com pausas e cortar
+(`cortar_respostas`), senão a voz escorrega para o espanhol. Pico > -1 dB é limitado sozinho no fim do montar_padrao.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas

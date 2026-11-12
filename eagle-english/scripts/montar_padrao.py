@@ -59,7 +59,7 @@ def render(post, especs, fundo, transparente=False):
                 dd["transparente"] = True
             pg.add_init_script(f"window.DADOS = {json.dumps(dd, ensure_ascii=False)};")
             pg.goto((PROJ / "templates" / "padrao.html").as_uri())
-            pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready")
+            pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready.then(() => new Promise(r => requestAnimationFrame(r)))")
             pg.screenshot(path=str(q / f"{nome}.png"), omit_background=transparente); pg.close()
         nav.close()
     return q
