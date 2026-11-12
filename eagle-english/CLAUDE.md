@@ -125,6 +125,9 @@ fora do git). `"fundo_inicio": N` muda a primeira cena para não repetir entre v
 MASCOTE ANIMADO (12/11): `assets/mascote/oficial/poses/{a,b,c}_{fechada,aberta}.png` (a = normal, b = asa acenando, c = asa baixa;
 asas geradas por edição com máscara e coladas no desenho oficial). O `montar_padrao.py` balança o tronco com pivô nos pés e troca
 a pose da asa a cada 0,6 s enquanto ele fala (não sobe e desce mais).
+REAÇÕES (12/11): d = apontando para cima (início da pergunta), e = pensando, asa no queixo (contagem), f = joinha + olhos
+felizes (revelação). O montar_padrao usa sozinho nos beats "comosediz" e "escolha"; nos outros, o "apontando" entra no ciclo.
+Fundo Maldivas: 47 cenas (44 usáveis) — dá ~10 vídeos sem repetir cena; variar "fundo_inicio" a cada vídeo (ex.: +5).
 ÁUDIO LIMPO (12/11): `vozes.py` apara cada fala pelo Whisper (silêncio antes da 1ª e depois da última palavra) + corta rajada final:
 sem chiado/estalo entre as falas. Para falas antigas: `aparar_com_whisper(arq, lingua)`.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.

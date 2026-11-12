@@ -105,5 +105,136 @@
   "arquivo": "assets/fundos/maldivas/m21.mp4",
   "origem_s": 1710,
   "cena": "banco de areia"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m22.mp4",
+  "origem_s": 150,
+  "cena": "recife com bangalô de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m23.mp4",
+  "origem_s": 180,
+  "cena": "coqueiro visto de baixo"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m24.mp4",
+  "origem_s": 270,
+  "cena": "ilha de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m25.mp4",
+  "origem_s": 330,
+  "cena": "ondas e bangalôs"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m26.mp4",
+  "origem_s": 450,
+  "cena": "coqueiro na beira d'água"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m27.mp4",
+  "origem_s": 510,
+  "cena": "banco de areia de cima 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m28.mp4",
+  "origem_s": 570,
+  "cena": "barco no banco de areia"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m29.mp4",
+  "origem_s": 630,
+  "cena": "barco na areia 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m30.mp4",
+  "origem_s": 750,
+  "cena": "praia com vegetação",
+  "evitar": true
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m31.mp4",
+  "origem_s": 810,
+  "cena": "guarda-sóis de palha"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m32.mp4",
+  "origem_s": 870,
+  "cena": "coqueiro na praia"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m33.mp4",
+  "origem_s": 930,
+  "cena": "bangalô e céu azul"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m34.mp4",
+  "origem_s": 990,
+  "cena": "mar profundo de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m35.mp4",
+  "origem_s": 1080,
+  "cena": "píer com ondas"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m36.mp4",
+  "origem_s": 1170,
+  "cena": "recife azul"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m37.mp4",
+  "origem_s": 1290,
+  "cena": "píer ao sol"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m38.mp4",
+  "origem_s": 1320,
+  "cena": "piscina de cima"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m39.mp4",
+  "origem_s": 1350,
+  "cena": "coqueiros 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m40.mp4",
+  "origem_s": 1440,
+  "cena": "tartaruga 3"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m41.mp4",
+  "origem_s": 1470,
+  "cena": "recife raso"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m42.mp4",
+  "origem_s": 1500,
+  "cena": "bangalôs com ondas"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m43.mp4",
+  "origem_s": 1560,
+  "cena": "barco na praia 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m44.mp4",
+  "origem_s": 1590,
+  "cena": "praia branca 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m45.mp4",
+  "origem_s": 1680,
+  "cena": "barco de cima 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m46.mp4",
+  "origem_s": 1740,
+  "cena": "banco de areia 2"
+ },
+ {
+  "arquivo": "assets/fundos/maldivas/m47.mp4",
+  "origem_s": 1770,
+  "cena": "praia e céu"
  }
 ]

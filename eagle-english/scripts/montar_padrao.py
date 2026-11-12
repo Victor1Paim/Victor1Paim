@@ -158,6 +158,7 @@ def main(pasta, previa=False):
         return ini - gap
 
     trechos = []
+    reacoes = []   # (início, fim, pose): d = aponta, e = pensando, f = joinha + olhos felizes
     for n, b in enumerate(r["beats"]):
         k0 = len(especs); t_beat = t
         tp = b["tipo"]
@@ -188,13 +189,14 @@ def main(pasta, previa=False):
             t0 = t
             fim = falar(b["audio_q"] if isinstance(b["audio_q"], list) else [b["audio_q"]], t + 0.1)
             nome = f"{n:02d}_esc_q"; especs.append((nome, base)); d = fim - t + 0.2; cenas.append((nome, d)); t += d
+            reacoes.append((t, t + 3 * r.get("segundos_contagem", 0.7), "e"))
             for k in (3, 2, 1):
                 nome = f"{n:02d}_esc_{k}"; especs.append((nome, {**base, "num": str(k)}))
                 efeitos.append((fx["tique"], t, 0.8)); cenas.append((nome, r.get("segundos_contagem", 0.7)))
                 t += r.get("segundos_contagem", 0.7)
             rv = {**base, "estado": "revela"}
             nome = f"{n:02d}_esc_rv"; especs.append((nome, rv)); efeitos.append((fx["ding"], t, 0.7))
-            cenas.append((nome, 0.5)); t += 0.5
+            cenas.append((nome, 0.5)); reacoes.append((t, t + 0.5 + 2.5, "f")); t += 0.5
             frase = {**rv, "en": b["en"], "pron": b.get("pron"), "pt": b.get("pt")}
             nome = f"{n:02d}_esc_en"; especs.append((nome, frase))
             fim = falar([b["audio_en"]], t + 0.05); d = fim - t + 0.2 + r.get("pausa_repetir", 0); cenas.append((nome, d)); t += d
@@ -208,8 +210,9 @@ def main(pasta, previa=False):
                     "progresso": f"{ne}/{te}"}
             t0 = t
             fim = falar([b["audio_q"]], t + 0.05)
-            nome = f"{n:02d}_csd_q"; especs.append((nome, base)); d = fim - t + 0.15; cenas.append((nome, d)); t += d
-            seg = r.get("segundos_contagem", 0.5)
+            nome = f"{n:02d}_csd_q"; especs.append((nome, base)); d = fim - t + 0.15; cenas.append((nome, d))
+            reacoes.append((t, t + min(1.0, d), "d")); t += d
+            seg = r.get("segundos_contagem", 0.5); reacoes.append((t, t + seg * r.get("contagem", 5), "e"))
             for k in range(r.get("contagem", 5), 0, -1):
                 nome = f"{n:02d}_csd_{k}"; especs.append((nome, {**base, "num": str(k)}))
                 efeitos.append((fx["tique"], t, 0.7)); cenas.append((nome, seg)); t += seg
@@ -217,7 +220,7 @@ def main(pasta, previa=False):
             ini = t + 0.15
             for _ in range(b.get("repetir", 2)):
                 ini = falar([b["audio_r"]], ini) + 0.35
-            d = ini - t + 0.1; cenas.append((nome, d)); t += d
+            d = ini - t + 0.1; cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
             janelas.append((t0, t, "grande"))
         elif tp == "produto":
             fim = falar(b["audio"], t + 0.1); total = fim - t + 0.3
@@ -295,16 +298,25 @@ def main(pasta, previa=False):
     # ~0,6 s (gesto de quem explica); calado, fica na pose normal. Bico abre com a voz.
     abertos = boca_aberta(sons, t)
     POSES = MASC / "poses"
-    passo, ciclo = 0.6, ["b", "a", "c", "a"]
-    pose_int = {"a": [], "b": [], "c": []}
-    nps = int(t / passo) + 1; idx = 0
-    for i in range(nps):
-        a0, a1 = round(i * passo, 3), round((i + 1) * passo, 3)
-        fala = any(x < a1 and y > a0 for x, y in abertos)
-        p = ciclo[idx % 4] if fala else "a"
-        if fala:
-            idx += 1
-        pose_int[p].append((a0, a1))
+    passo, ciclo = 0.6, ["b", "a", "c", "a", "d", "a"]
+    grade = 0.1; ncel = int(t / grade) + 1; pose_cel = []; idx = 0; ult_bloco = -1
+    for i in range(ncel):
+        a0, a1 = i * grade, (i + 1) * grade
+        reac = [p for x, y, p in reacoes if x < a1 and y > a0]
+        if reac:
+            pose_cel.append(reac[-1]); continue
+        bloco = int(a0 / passo); b0, b1 = bloco * passo, (bloco + 1) * passo
+        fala = any(x < b1 and y > b0 for x, y in abertos)
+        if fala and bloco != ult_bloco:
+            idx += 1; ult_bloco = bloco
+        pose_cel.append(ciclo[idx % len(ciclo)] if fala else "a")
+    pose_int = {p: [] for p in "abcdef"}
+    i = 0
+    while i < ncel:
+        j = i
+        while j + 1 < ncel and pose_cel[j + 1] == pose_cel[i]:
+            j += 1
+        pose_int[pose_cel[i]].append((round(i * grade, 3), round((j + 1) * grade, 3))); i = j + 1
     ent = ["-i", str(base)]
     fc, ultimo, k = [], "[0:v]", 1
     from PIL import Image as _Im

@@ -15,7 +15,14 @@ CENAS = {60: "por do sol", 90: "píer", 120: "bangalôs de cima", 210: "tartarug
          360: "barco na praia", 480: "recife de cima", 540: "banco de areia com barco", 600: "barco no mar turquesa",
          660: "barco na areia de cima", 720: "praia branca", 780: "passarela dos bangalôs", 900: "coqueiro e bangalô",
          960: "pôr do sol no mar", 1020: "banco de areia com barcos", 1140: "ondas de cima", 1260: "pôr do sol com barco",
-         1380: "coqueiros", 1530: "veleiro de cima", 1710: "banco de areia"}
+         1380: "coqueiros", 1530: "veleiro de cima", 1710: "banco de areia",
+         # ampliação 12/11 (sem pessoas, cenas diferentes das 21 primeiras)
+         150: "recife com bangalô de cima", 180: "coqueiro visto de baixo", 270: "ilha de cima", 330: "ondas e bangalôs",
+         450: "coqueiro na beira d'água", 510: "banco de areia de cima 2", 570: "barco no banco de areia", 630: "barco na areia 2",
+         750: "praia com vegetação", 810: "guarda-sóis de palha", 870: "coqueiro na praia", 930: "bangalô e céu azul",
+         990: "mar profundo de cima", 1080: "píer com ondas", 1170: "recife azul", 1290: "píer ao sol",
+         1320: "piscina de cima", 1350: "coqueiros 2", 1440: "tartaruga 3", 1470: "recife raso", 1500: "bangalôs com ondas",
+         1560: "barco na praia 2", 1590: "praia branca 2", 1680: "barco de cima 2", 1740: "banco de areia 2", 1770: "praia e céu"}
 
 
 def main(orig):
