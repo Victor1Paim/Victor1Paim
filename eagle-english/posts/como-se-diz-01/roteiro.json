@@ -1,0 +1,99 @@
+{
+ "fundo": "img/f1.png",
+ "velocidade_pt": 1.0,
+ "segundos_contagem": 0.5,
+ "contagem": 5,
+ "beats": [
+  {
+   "tipo": "comosediz",
+   "pergunta": "Não sei",
+   "opcoes": [
+    "I know not",
+    "I don't know",
+    "I no know"
+   ],
+   "certa": 1,
+   "pron": "/ái DÔUNT NÔU/",
+   "audio_q": "q1",
+   "audio_r": "r1",
+   "repetir": 2,
+   "fundo": "img/f1.png"
+  },
+  {
+   "tipo": "comosediz",
+   "pergunta": "Estou com fome",
+   "opcoes": [
+    "I have hunger",
+    "I'm hunger",
+    "I'm hungry"
+   ],
+   "certa": 2,
+   "pron": "/áim HÂN-gri/",
+   "audio_q": "q2",
+   "audio_r": "r2",
+   "repetir": 2,
+   "fundo": "img/f2.png"
+  },
+  {
+   "tipo": "comosediz",
+   "pergunta": "Quantos anos você tem?",
+   "opcoes": [
+    "How old are you?",
+    "How many years you have?",
+    "How years you have?"
+   ],
+   "certa": 0,
+   "pron": "/HÁU ÔULD ar IÚ/",
+   "audio_q": "q3",
+   "audio_r": "r3",
+   "repetir": 2,
+   "fundo": "img/f3.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Quantas você\nacertou? 👇",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/f3.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/f3.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

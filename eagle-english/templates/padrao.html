@@ -74,6 +74,18 @@
            box-shadow:0 10px 30px rgba(0,0,0,.4); }
   .leg.baixa { top:1030px; }
   .leg.baixa .en { font-size:70px; } .leg.baixa .pron { font-size:36px; margin-top:8px; } .leg.baixa .pt { font-size:54px; margin-top:8px; }
+  /* formato "Como se diz?" (ref.: quiz A/B/C com contagem 5-1, revelação em verde) */
+  .csd { position:absolute; left:60px; right:60px; top:330px; display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .csd .tagq { background:var(--amarelo); color:var(--marinho); font-family:"Poppins"; font-weight:900; font-size:58px; padding:6px 30px 10px;
+               border-radius:12px; text-transform:uppercase; letter-spacing:-0.01em; box-shadow:0 8px 20px rgba(0,0,0,.35); text-align:center; }
+  .csd .opc { background:rgba(11,31,75,.92); color:#fff; font-family:"Poppins"; font-weight:700; font-size:50px; padding:4px 26px 8px;
+              border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.3); }
+  .csd .ok { background:#1f9d3a; color:#fff; font-family:"Poppins"; font-weight:800; font-size:62px; padding:6px 30px 10px; border-radius:14px;
+             box-shadow:0 8px 20px rgba(0,0,0,.35); }
+  .csd .okp { background:#1f9d3a; color:#fff; font-family:"Poppins"; font-weight:700; font-size:50px; padding:4px 26px 8px; border-radius:12px; margin-top:6px; }
+  .csd .num { width:150px; height:150px; border-radius:50%; background:rgba(17,17,17,.9); border:7px solid #fff; color:#fff; font-family:"Poppins";
+              font-weight:900; font-size:96px; line-height:132px; text-align:center; margin-top:18px; box-shadow:0 8px 20px rgba(0,0,0,.4); }
+  .prog.verm { background:var(--vermelho); top:250px; }
 </style></head>
 <body>
 <div id="fundo"></div><div id="topo"></div>
@@ -105,6 +117,12 @@ else if (d.tipo === "escolha") { const ok = d.estado === "revela";
        <div class="ops">${op("a", d.a)}${op("b", d.b)}</div>${d.num ? `<div class="conta">${esc(d.num)}</div>` : ""}
        ${d.en ? `<div class="leg baixa" data-max="250"><div class="en">${esc(d.en)}</div>${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}
        ${d.mostrar_pt && d.pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>` : ""}`; }
+else if (d.tipo === "comosediz") {
+  const L = "ABC";
+  h = `${d.progresso ? `<div class="prog verm">${esc(d.progresso)}</div>` : ""}<div class="csd">` + (d.revela
+    ? `<div class="ok">${L[d.certa]}) ${esc(d.opcoes[d.certa])}</div><div class="okp">${esc(d.pron)}</div>`
+    : `<div class="tagq">${esc(d.pergunta)}</div>${d.opcoes.map((o,i)=>`<div class="opc">${L[i]}) ${esc(o)}</div>`).join("")}
+       ${d.num ? `<div class="num">${esc(d.num)}</div>` : ""}`) + `</div>`; }
 document.getElementById("c").innerHTML = h;
 // encolhe a legenda até caber acima da cabeça do mascote (topo do bloco em 260 px, limite 520 px de altura)
 const leg = document.querySelector(".leg");

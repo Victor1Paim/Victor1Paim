@@ -1,0 +1,52 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: não sei?"
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I don't know."
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: estou com fome?"
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm hungry."
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "E como se diz: quantos anos você tem?"
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "How old are you?"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

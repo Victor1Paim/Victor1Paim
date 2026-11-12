@@ -117,6 +117,8 @@ as respostas podem vir numa fala só, cortada nas pausas; figuras numa grade 2x4
 "Qual você usa?" (A×B, estrutura Escolha): beat `"escolha"` no `roteiro.json` do `montar_padrao.py` (img branca da cena num cartão,
 opções A/B só em inglês, contagem 3-2-1 com tique, revela com ding, frase en + tradução; mascote médio embaixo). Exemplo:
 `posts/2026-11-13_quente-ou-frio/`. Cabe em 70 s com 5 rodadas se as perguntas faladas forem curtas.
+"Em inglês, como se diz…?" (ref. 12/11, `docs/REF_COMO_SE_DIZ.md`): beat `"comosediz"` no `montar_padrao.py` — começa direto na
+1ª pergunta, 3 rodadas A/B/C, contagem 5→1, certa em verde + pronúncia, resposta falada 2x; fim com CTA curto (~30 s no total).
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas

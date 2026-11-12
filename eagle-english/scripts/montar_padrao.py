@@ -173,6 +173,24 @@ def main(pasta, previa=False):
             nome = f"{n:02d}_esc_pt"; especs.append((nome, {**frase, "mostrar_pt": True}))
             fim = falar([b["audio_pt"]], t); d = fim - t + 0.3; cenas.append((nome, d)); t += d
             janelas.append((t0, t, "medio"))
+        elif tp == "comosediz":   # "Em inglês, como se diz…?" A/B/C → contagem 5-1 → certa em verde + pronúncia (falada 2x)
+            ne = sum(1 for x in r["beats"][:n + 1] if x["tipo"] == "comosediz")
+            te = sum(1 for x in r["beats"] if x["tipo"] == "comosediz")
+            base = {"tipo": "comosediz", "pergunta": b["pergunta"], "opcoes": b["opcoes"], "certa": b["certa"], "pron": b["pron"],
+                    "progresso": f"{ne}/{te}"}
+            t0 = t
+            fim = falar([b["audio_q"]], t + 0.05)
+            nome = f"{n:02d}_csd_q"; especs.append((nome, base)); d = fim - t + 0.15; cenas.append((nome, d)); t += d
+            seg = r.get("segundos_contagem", 0.5)
+            for k in range(r.get("contagem", 5), 0, -1):
+                nome = f"{n:02d}_csd_{k}"; especs.append((nome, {**base, "num": str(k)}))
+                efeitos.append((fx["tique"], t, 0.7)); cenas.append((nome, seg)); t += seg
+            nome = f"{n:02d}_csd_ok"; especs.append((nome, {**base, "revela": True})); efeitos.append((fx["ding"], t, 0.6))
+            ini = t + 0.15
+            for _ in range(b.get("repetir", 2)):
+                ini = falar([b["audio_r"]], ini) + 0.35
+            d = ini - t + 0.1; cenas.append((nome, d)); t += d
+            janelas.append((t0, t, "grande"))
         elif tp == "produto":
             fim = falar(b["audio"], t + 0.1); total = fim - t + 0.3
             telas = b["telas"]; cada = total / len(telas)
