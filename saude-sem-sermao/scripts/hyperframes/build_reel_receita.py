@@ -98,7 +98,7 @@ def cta(ini, fim, titulo, comenta, eco_foto, eco_tit, i_manda, i_aviao, i_curte,
     wh, wj = wipe("cta", "#1c211c")
     cta_ovo = src3[src3.index('cena("cta", d, """'):src3.index("GRUPOS = [")]
     loc = dict(globals()); loc.update(d=d, ini=ini, TOTAL=total, wh=wh, wj=wj)
-    cta_ovo = (cta_ovo.replace('Manda pra quem tem <em>medo de ovo</em>', titulo)
+    cta_ovo = (cta_ovo.replace('Manda pra quem tem <em>medo de ovo</em>', f'<span style="font-size:84px">{titulo}</span>')
                .replace('"🥕 cenoura!"', comenta)
                .replace('assets/capa.jpg', f'assets/{eco_foto}.jpg')
                .replace('Ovo aumenta o <em>colesterol?</em>', eco_tit)
@@ -213,7 +213,7 @@ if NOME == "arroz-feijao":
               [("feijão no fim de semana", t(89), MOS), ("congela em porções", t(94), VERDE_), ("❄️ até 3 meses", t(99), SAL)])
     tito_foto("resumo", 35.0, 39.15, "Entendi! Arroz com feijão não é vilão. O segredo é o prato todo.", 35.06, 38.6, "capa",
               rot="💡 O QUE O TITO ENTENDEU", destaque=(1, 2, 3, 4, 5, 6, 9, 10, 11, 12), bracos="acena", tam=58)
-    cta(39.15, TOTAL, "Manda pra quem acha que <em>arroz com feijão engorda</em>", '"🍗 frango!"', "capa",
+    cta(39.15, TOTAL, "Manda pra quem <em>tem medo do PF</em>", '"🍗 frango!"', "capa",
         "Arroz com feijão <em>engorda?</em>", 119, 123, 128, 130, 139, TOTAL)
     legendas([
         ("Arroz com feijão *engorda?*", 0, 4), ("Na verdade, a dupla *pode até ajudar*.", 4, 7),

@@ -253,7 +253,8 @@ ini, fim = 47.4, TOTAL
 d = add("cta", ini, fim)
 wh, wj = wipe("cta", "#1c211c")
 cena("cta", d, """
-  .bg{background:var(--laranja);}
+  .bg{background:var(--verde);}
+  #cta-tito{filter:drop-shadow(0 0 2px #FDF3ED) drop-shadow(0 0 2px #FDF3ED);}
   .titulo{color:#fff;top:220px;}
   .titulo em{color:var(--creme2);}
   #cta-card{position:absolute;left:150px;top:470px;width:780px;height:300px;background:#fff;border-radius:36px;box-shadow:0 24px 60px rgba(80,30,10,.25);}
