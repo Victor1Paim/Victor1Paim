@@ -122,6 +122,11 @@ opções A/B só em inglês, contagem 3-2-1 com tique, revela com ding, frase en
 FUNDO EM VÍDEO (12/11): `"fundo_video": "maldivas"` no roteiro.json → quadros transparentes por cima de uma cena diferente por trecho
 (biblioteca `assets/fundos/maldivas/` gerada por `scripts/fundos_maldivas.py` a partir do vídeo do Drive do usuário; os .mp4 ficam
 fora do git). `"fundo_inicio": N` muda a primeira cena para não repetir entre vídeos. Capa: um quadro das Maldivas em `capa.json`.
+MASCOTE ANIMADO (12/11): `assets/mascote/oficial/poses/{a,b,c}_{fechada,aberta}.png` (a = normal, b = asa acenando, c = asa baixa;
+asas geradas por edição com máscara e coladas no desenho oficial). O `montar_padrao.py` balança o tronco com pivô nos pés e troca
+a pose da asa a cada 0,6 s enquanto ele fala (não sobe e desce mais).
+ÁUDIO LIMPO (12/11): `vozes.py` apara cada fala pelo Whisper (silêncio antes da 1ª e depois da última palavra) + corta rajada final:
+sem chiado/estalo entre as falas. Para falas antigas: `aparar_com_whisper(arq, lingua)`.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas

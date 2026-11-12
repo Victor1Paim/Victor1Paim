@@ -1,6 +1,6 @@
 # "Em inglês, como se diz…?" #1 (formato novo · ESTRUTURA: ESCOLHA · A1)
 
-STATUS: PRONTO — 39,6 s, -14,2 LUFS, fundo em vídeo das Maldivas (uma cena por rodada), mascote grande falando,
+STATUS: PRONTO (v2, 12/11) — 38,0 s, -14,1 LUFS, sem chiados (falas aparadas pelo Whisper), mascote com tronco balançando e asas gesticulando, fundo em vídeo das Maldivas (uma cena por rodada), mascote grande falando,
 3 rodadas A/B/C com contagem 5→1, resposta certa em verde + pronúncia, resposta falada 2x, Whisper conferiu tudo
 (com checagem de idioma). Começa direto na pergunta (ref. 12/11). Fim: "Quantas você acertou? Comenta!" + CTA curto do Eagle 350.
 Rodadas: Não sei → I don't know · Estou com fome → I'm hungry · Quantos anos você tem? → How old are you?

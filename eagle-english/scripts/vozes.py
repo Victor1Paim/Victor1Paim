@@ -209,6 +209,30 @@ def limpar_estalo_wav(arq):
     return True
 
 
+def aparar_com_whisper(arq, lingua, palavras=None):
+    """Silencia tudo antes da 1ª palavra e depois da última (marcadas pelo Whisper), com folga de 0,12 s antes e 0,28 s depois
+    + fades: some qualquer estalo/chiado que o TTS solta fora da fala. Devolve (início, fim) mantidos."""
+    import numpy as np, wave
+    global _WHISPER
+    if palavras is None:
+        import whisper
+        if _WHISPER is None:
+            _WHISPER = whisper.load_model(os.environ.get("WHISPER_MODELO", "turbo"))
+        r = _WHISPER.transcribe(str(arq), language=lingua, fp16=False, word_timestamps=True)
+        palavras = [(w["start"], w["end"]) for sg in r["segments"] for w in sg.get("words", [])]
+    if not palavras:
+        return None
+    with wave.open(str(arq)) as w:
+        sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(float)
+    a = max(0, int((palavras[0][0] - 0.12) * sr)); b = min(len(x), int((palavras[-1][1] + 0.28) * sr))
+    y = np.zeros_like(x); y[a:b] = x[a:b]
+    fi, fo = int(sr * 0.02), int(sr * 0.08)
+    y[a:a + fi] *= np.linspace(0, 1, len(y[a:a + fi])); y[max(a, b - fo):b] *= np.linspace(1, 0, len(y[max(a, b - fo):b]))
+    with wave.open(str(arq), "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(y.astype(np.int16).tobytes())
+    return a / sr, b / sr
+
+
 _WHISPER = None
 
 
@@ -219,7 +243,9 @@ def conferir(saida, texto, lingua):
     import whisper
     if _WHISPER is None:
         _WHISPER = whisper.load_model(os.environ.get("WHISPER_MODELO", "turbo"))
-    ouvido = _WHISPER.transcribe(str(saida), language=lingua, fp16=False)["text"].strip()
+    res = _WHISPER.transcribe(str(saida), language=lingua, fp16=False, word_timestamps=True)
+    ouvido = res["text"].strip()
+    aparar_com_whisper(saida, lingua, [(w["start"], w["end"]) for sg in res["segments"] for w in sg.get("words", [])])
     # o TTS às vezes "escorrega" de idioma em fala curta (ex.: "Un sino" em espanhol): detecta a língua e reprova
     audio = whisper.pad_or_trim(whisper.load_audio(str(saida)))
     mel = whisper.log_mel_spectrogram(audio, n_mels=_WHISPER.dims.n_mels).to(_WHISPER.device)

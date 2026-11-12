@@ -290,25 +290,47 @@ def main(pasta, previa=False):
     else:
         sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=yuv420p", "-c:v", "libx264", "-crf", "17", str(base))
 
-    # mascote: fechado sempre (na janela) + aberto por cima nos instantes de fala; balanço leve
+    # mascote: 3 poses de asa (assets/mascote/oficial/poses: a = normal, b = acenando, c = asa baixa) × bico fechado/aberto.
+    # O tronco balança devagar a partir dos pés (rotação com pivô nos pés) e, enquanto ele fala, a asa troca de pose a cada
+    # ~0,6 s (gesto de quem explica); calado, fica na pose normal. Bico abre com a voz.
     abertos = boca_aberta(sons, t)
+    POSES = MASC / "poses"
+    passo, ciclo = 0.6, ["b", "a", "c", "a"]
+    pose_int = {"a": [], "b": [], "c": []}
+    nps = int(t / passo) + 1; idx = 0
+    for i in range(nps):
+        a0, a1 = round(i * passo, 3), round((i + 1) * passo, 3)
+        fala = any(x < a1 and y > a0 for x, y in abertos)
+        p = ciclo[idx % 4] if fala else "a"
+        if fala:
+            idx += 1
+        pose_int[p].append((a0, a1))
     ent = ["-i", str(base)]
     fc, ultimo, k = [], "[0:v]", 1
+    from PIL import Image as _Im
+    pw, ph = _Im.open(POSES / "a_fechada.png").size
     for tam in ("grande", "pequeno", "medio"):
         js = [j for j in janelas if j[2] == tam]
         if not js:
             continue
         h, chao = {"grande": GRANDE, "pequeno": PEQUENO, "medio": MEDIO}[tam]
-        x = "20" if tam == "pequeno" else "(W-w)/2"
-        y = f"{chao}-h+6*sin(2*PI*t*0.9)"
+        w0 = pw * h / ph
+        cx = 20 + w0 / 2 if tam == "pequeno" else 540
+        ang = "0.035*sin(2*PI*t*0.55)" if tam != "pequeno" else "0.02*sin(2*PI*t*0.55)"
+        x = f"{cx}+{h / 2}*sin({ang})-w/2"
+        y = f"{chao}-{h / 2}*cos({ang})-h/2"
         dentro = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b, _ in js)
-        abre = "+".join(f"between(t,{a},{b})" for a, b in abertos
-                        if any(ja <= a < jb for ja, jb, _ in js)) or "0"
-        for estado, en in (("fechada", dentro), ("aberta", f"({dentro})*({abre})")):
-            ent += ["-loop", "1", "-i", str(MASC / f"boca_{estado}.png")]
-            fc.append(f"[{k}:v]scale=-1:{h},format=rgba[m{k}]")
-            fc.append(f"{ultimo}[m{k}]overlay=x={x}:y='{y}':enable='{en}':shortest=1[v{k}]")
-            ultimo, k = f"[v{k}]", k + 1
+        abre = "+".join(f"between(t,{a},{b})" for a, b in abertos if any(ja <= a < jb for ja, jb, _ in js)) or "0"
+        for pose, ints in pose_int.items():
+            ints = [(a, b) for a, b in ints if any(a < jb and b > ja for ja, jb, _ in js)]
+            if not ints:
+                continue
+            ep = "+".join(f"between(t,{a},{b})" for a, b in ints)
+            for estado, en in (("fechada", f"({dentro})*({ep})"), ("aberta", f"({dentro})*({ep})*({abre})")):
+                ent += ["-loop", "1", "-i", str(POSES / f"{pose}_{estado}.png")]
+                fc.append(f"[{k}:v]scale=-1:{h},format=rgba,rotate=a='{ang}':c=none:ow=rotw(0.06):oh=roth(0.06)[m{k}]")
+                fc.append(f"{ultimo}[m{k}]overlay=x='{x}':y='{y}':enable='{en}':shortest=1[v{k}]")
+                ultimo, k = f"[v{k}]", k + 1
     com_masc = v / "_masc.mp4"
     sh(*ent, "-filter_complex", ";".join(fc), "-map", ultimo, "-c:v", "libx264", "-crf", "17", "-t", f"{t:.3f}", str(com_masc))
 
