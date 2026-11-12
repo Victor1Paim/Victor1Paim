@@ -10,6 +10,9 @@ Produção: `posts/<data>_carrossel-<tema>/carrossel.json` → `python3 scripts/
 Capa: `python3 scripts/imagem_gemini.py "<PROMPT>" posts/<post>/img/capa.png --post posts/<post> --proporcao 3:4 --modelo gemini-2.5-flash-image`
 (~R$ 0,21). CTA: `{"perfil": "img/perfil.png", "texto": "..."}` (copiar o perfil.png do carrossel do restaurante).
 
+**Regra do usuário (12/11): VARIAR SEMPRE o cenário da capa** — nunca repetir o tipo de lugar/luz/enquadramento do carrossel
+anterior (ex.: restaurante ao pôr do sol → bangalô nas Maldivas → janela de avião ao amanhecer → café em NY no outono…).
+
 Final comum de todos os prompts de capa (já incluído abaixo):
 "…cinematic, rich natural colors, shallow depth of field, vertical 3:4, the lower third slightly darker and calm (space for
 text), no people faces, no text, no letters, no signs, no logos."

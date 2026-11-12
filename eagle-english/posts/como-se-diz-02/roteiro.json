@@ -1,0 +1,96 @@
+{
+ "fundo": "img/f1.png",
+ "velocidade_pt": 1.0,
+ "segundos_contagem": 0.5,
+ "contagem": 5,
+ "beats": [
+  {
+   "tipo": "comosediz",
+   "pergunta": "Onde fica o banheiro?",
+   "opcoes": [
+    "Where stay the bathroom?",
+    "Where is the bathroom?",
+    "Where is bathroom?"
+   ],
+   "certa": 1,
+   "pron": "/UÉR iz the BÉTH-rum/",
+   "audio_q": "q1",
+   "audio_r": "r1",
+   "repetir": 2
+  },
+  {
+   "tipo": "comosediz",
+   "pergunta": "Quanto custa?",
+   "opcoes": [
+    "How much is it?",
+    "How many costs?",
+    "How much it costs?"
+   ],
+   "certa": 0,
+   "pron": "/HÁU MÂTCH iz it/",
+   "audio_q": "q2",
+   "audio_r": "r2",
+   "repetir": 2
+  },
+  {
+   "tipo": "comosediz",
+   "pergunta": "Estou perdido",
+   "opcoes": [
+    "I'm lose",
+    "I'm losing",
+    "I'm lost"
+   ],
+   "certa": 2,
+   "pron": "/áim LÓST/",
+   "audio_q": "q3",
+   "audio_r": "r3",
+   "repetir": 2
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Quantas você\nacertou? 👇",
+   "audio": [
+    "fecho"
+   ]
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ],
+ "fundo_video": "maldivas",
+ "fundo_inicio": 5
+}

@@ -1,0 +1,52 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: onde fica o banheiro?"
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Where is the bathroom?"
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: quanto custa?"
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "How much is it?"
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "E como se diz: estou perdido?"
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm lost."
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
