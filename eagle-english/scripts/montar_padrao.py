@@ -222,6 +222,26 @@ def main(pasta, previa=False):
                 ini = falar([b["audio_r"]], ini) + 0.35
             d = ini - t + 0.1; cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
             janelas.append((t0, t, "grande"))
+        elif tp in ("item", "lista_fim"):   # "Lista com emoji": lista completa com "?" que vai se preenchendo
+            itens = [x for x in r["beats"] if x["tipo"] == "item"]
+            lista = [{"emoji": x["emoji"], "en": x["en"], "pt": x["pt"]} for x in itens]
+            t0 = t
+            if tp == "item":
+                k = sum(1 for x in r["beats"][:n] if x["tipo"] == "item")
+                base = {"tipo": "item", "lista": lista, "atual": k, "emoji": b["emoji"], "en": b["en"], "pron": b.get("pron"),
+                        "pt": b["pt"], "progresso": f"{k + 1}/{len(itens)}"}
+                a, c = f"{n:02d}_item", f"{n:02d}_item_pt"
+                especs += [(a, base), (c, {**base, "mostrar_pt": True})]
+                efeitos.append((fx["whoosh"], t, 0.4))
+                fim = falar([b["audio_en"]], t + 0.1); d1 = fim - t + 0.2 + r.get("pausa_repetir", 0)
+                cenas.append((a, d1)); reacoes.append((t, t + 0.8, "d")); ini_pt = t + d1
+                fim = falar([b["audio_pt"]], ini_pt); d2 = fim - ini_pt + 0.3
+                cenas.append((c, d2)); t += d1 + d2
+            else:
+                nome = f"{n:02d}_lista_fim"; especs.append((nome, {"tipo": "lista_fim", "lista": lista, "atual": -1, "texto": b["texto"]}))
+                efeitos.append((fx["ding"], t, 0.5))
+                fim = falar(b["audio"], t + 0.1); d = fim - t + 0.35; cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
+            janelas.append((t0, t, "medio"))
         elif tp == "produto":
             fim = falar(b["audio"], t + 0.1); total = fim - t + 0.3
             telas = b["telas"]; cada = total / len(telas)
@@ -260,7 +280,7 @@ def main(pasta, previa=False):
         im = Image.open(q / f"{nm}.png").convert("RGBA")
         if base_img is not None:
             im = Image.alpha_composite(base_img, im)
-        h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else MEDIO if dados["tipo"] == "escolha" else GRANDE
+        h, chao = PEQUENO if dados["tipo"] in ("produto", "kit", "preco") else MEDIO if dados["tipo"] in ("escolha", "item", "lista_fim") else GRANDE
         m = mf.resize((int(mf.width * h / mf.height), h))
         x = 20 if dados["tipo"] in ("produto", "kit", "preco") else (1080 - m.width) // 2
         im.alpha_composite(m, (x, chao - h))
@@ -391,6 +411,13 @@ def main(pasta, previa=False):
        f"loudnorm={alvo}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
        f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(final))
+    # pico acima de -1 dBTP (estoura no celular): limitador sem mexer no volume médio
+    rp = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
+    pico = float(rp[rp.rindex("Peak:"):].split()[1])
+    if pico > -1.0:
+        tmp = final.with_name("_lim.mp4")
+        sh("-i", str(final), "-c:v", "copy", "-af", "alimiter=limit=0.84:attack=2:release=50:level=false", "-c:a", "aac", "-b:a", "192k",
+           "-movflags", "+faststart", str(tmp)); tmp.replace(final); print(f"  pico {pico:.1f} dB -> limitado a ~-1,5 dB")
     for x in (lista, base, com_masc, voz, bruto, v / "_junto.mkv", v / "_fundo_q.png"):
         x.unlink(missing_ok=True)
     print(f"ok -> {final.relative_to(PROJ)}  ({dur(final):.1f} s)")
