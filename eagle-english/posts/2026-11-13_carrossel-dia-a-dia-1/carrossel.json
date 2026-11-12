@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do dia a dia"
+ },
+ "frases": [
+  {
+   "pt": "Tô atrasado!",
+   "en": "I'm running late!",
+   "pron": "áim RÂ-nin LÊIT!"
+  },
+  {
+   "pt": "Já volto.",
+   "en": "I'll be right back.",
+   "pron": "áil bi RÁIT BÉK"
+  },
+  {
+   "pt": "Não esquenta.",
+   "en": "No worries.",
+   "pron": "NÔU UÂ-riz"
+  },
+  {
+   "pt": "Faz sentido.",
+   "en": "That makes sense.",
+   "pron": "THÉT MÊIKS SÉNS"
+  },
+  {
+   "pt": "Tanto faz pra mim.",
+   "en": "I don't mind.",
+   "pron": "ái DÔUNT MÁIND"
+  },
+  {
+   "pt": "Deixa comigo!",
+   "en": "Leave it to me!",
+   "pron": "LÍIV it tu MÍ!"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}

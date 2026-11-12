@@ -1,3 +1,6 @@
+> **13/11: análise das capas de referência em `docs/REF_CAPAS_CARROSSEL.md` — capa = PAISAGEM NATURAL ÉPICA (não precisa
+> combinar com o tema) + 🇺🇸 "Repita até aprender o inglês do dia a dia". Manda sobre as ideias de capa abaixo.**
+
 # Próximos carrosséis "Repita até aprender…" (capa realista + slides 🇧🇷/🇺🇸/🗣️ + CTA do perfil)
 
 Por que a capa do restaurante funcionou: foto natural com cara de foto de viagem (não ilustração), luz de pôr do sol,
