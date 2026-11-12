@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do aeroporto"
+ },
+ "frases": [
+  {
+   "pt": "Onde fica o portão 12?",
+   "en": "Where is gate 12?",
+   "pron": "UÉR iz GÊIT TUÉLV?"
+  },
+  {
+   "pt": "Posso ficar na janela?",
+   "en": "Could I have a window seat?",
+   "pron": "kud ái HÉV a UÍN-dôu SÍIT?"
+  },
+  {
+   "pt": "Este voo está no horário?",
+   "en": "Is this flight on time?",
+   "pron": "iz THIS FLÁIT ón TÁIM?"
+  },
+  {
+   "pt": "Onde fica a esteira de bagagem?",
+   "en": "Where is baggage claim?",
+   "pron": "UÉR iz BÉ-guidj KLÊIM?"
+  },
+  {
+   "pt": "Eu tenho uma conexão.",
+   "en": "I have a connecting flight.",
+   "pron": "ái HÉV a kâ-NÉK-tin FLÁIT"
+  },
+  {
+   "pt": "Quanto tempo de atraso?",
+   "en": "How long is the delay?",
+   "pron": "HÁU LÓNG iz the di-LÊI?"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}
