@@ -357,7 +357,7 @@ def main(pasta, previa=False):
        f"loudnorm={alvo}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
        f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(final))
-    for x in (lista, base, com_masc, voz, bruto, v / "_junto.mkv"):
+    for x in (lista, base, com_masc, voz, bruto, v / "_junto.mkv", v / "_fundo_q.png"):
         x.unlink(missing_ok=True)
     print(f"ok -> {final.relative_to(PROJ)}  ({dur(final):.1f} s)")
 
