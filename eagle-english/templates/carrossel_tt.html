@@ -36,14 +36,16 @@
 <script>
 const d = window.DADOS || {tipo:"frase", pt:"Uma mesa para dois, por favor.", en:"A table for two, please.", pron:"a TÊI-bol for TÚ, PLÍIZ"};
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+// palavras com hífen (check-out, Wi-Fi, PÉS-uârd) nunca quebram no meio
+const nb = s => esc(s).split(" ").map(w => w.includes("-") ? `<span style="white-space:nowrap">${w}</span>` : w).join(" ");
 const red = s => esc(s).replace(/\*(.+?)\*/g, '<span>$1</span>').replace(/\n/g, "<br>");
 let h = "";
 if (d.tipo === "capa") h = `<div id="foto" style="background-image:url('${d.foto}')"></div><div id="veu"></div>
   <div class="capa"><span class="band">🇺🇸</span>${esc(d.texto).replace(/\n/g, "<br>")}</div>`;
 else if (d.tipo === "frase") h = `<div class="lista">
-  <div class="lin"><div class="e">🇧🇷</div><div>${esc(d.pt)}</div></div>
-  <div class="lin en"><div class="e">🇺🇸</div><div>${esc(d.en)}</div></div>
-  <div class="lin pr"><div class="e">🗣️</div><div>${esc(d.pron)}</div></div></div>`;
+  <div class="lin"><div class="e">🇧🇷</div><div style="text-wrap:balance">${nb(d.pt)}</div></div>
+  <div class="lin en"><div class="e">🇺🇸</div><div style="text-wrap:balance">${nb(d.en)}</div></div>
+  <div class="lin pr"><div class="e">🗣️</div><div style="text-wrap:balance">${nb(d.pron)}</div></div></div>`;
 else if (d.tipo === "cta") h = `<div class="cta">${d.mascote ? `<img src="${d.mascote}">` : ""}<h1>${red(d.titulo)}</h1><p>${red(d.texto)}</p>
   <div class="botao">${esc(d.botao || "Link na bio 👆")}</div></div>`;
 else if (d.tipo === "perfil") h = `<div class="perfil"><img src="${d.src}"></div>

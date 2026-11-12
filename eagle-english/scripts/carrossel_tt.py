@@ -15,7 +15,10 @@ PROJ = Path(__file__).resolve().parents[1]
 
 def main(pasta):
     post = Path(pasta).resolve(); c = json.loads((post / "carrossel.json").read_text())
-    slides = [{"tipo": "capa", "foto": (post / c["capa"]["foto"]).as_uri(), "texto": c["capa"]["texto"]}]
+    # a capa (foto realista com o texto) pode vir pronta do usuário: sem a foto, gera do slide 02 em diante
+    foto = post / c["capa"]["foto"]
+    slides = [{"tipo": "capa", "foto": foto.as_uri(), "texto": c["capa"]["texto"]}] if foto.exists() else []
+    inicio = 1 if foto.exists() else 2
     slides += [{"tipo": "frase", **f} for f in c["frases"]]
     k = c["cta"]
     slides.append({"tipo": "perfil", "src": (post / k["perfil"]).as_uri(), "texto": k.get("texto", "")} if k.get("perfil") else
@@ -28,13 +31,13 @@ def main(pasta):
     with sync_playwright() as pw:
         cam = os.environ.get("CHROMIUM_PATH")
         nav = pw.chromium.launch(executable_path=cam) if cam else pw.chromium.launch()
-        for i, s in enumerate(slides, 1):
+        for i, s in enumerate(slides, inicio):
             pg = nav.new_page(viewport={"width": 1080, "height": 1440})
             pg.add_init_script(f"window.DADOS = {json.dumps(s, ensure_ascii=False)};")
             pg.goto((PROJ / "templates" / "carrossel_tt.html").as_uri()); pg.wait_for_selector("body[data-pronto='1']")
             pg.wait_for_load_state("networkidle"); pg.screenshot(path=str(out / f"{i:02d}.png")); pg.close()
         nav.close()
-    print(f"ok -> {len(slides)} slides em {out.relative_to(PROJ)}")
+    print(f"ok -> {len(slides)} slides ({inicio:02d} a {inicio + len(slides) - 1:02d}) em {out.relative_to(PROJ)}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do hotel"
+ },
+ "frases": [
+  {
+   "pt": "Tenho uma reserva no meu nome.",
+   "en": "I have a reservation under my name.",
+   "pron": "ái HÉV a ré-zer-VÊI-xân ÂN-der mái NÊIM"
+  },
+  {
+   "pt": "Que horas é o check-out?",
+   "en": "What time is check-out?",
+   "pron": "UÓT TÁIM iz TCHÉK-áut?"
+  },
+  {
+   "pt": "O café da manhã está incluído?",
+   "en": "Is breakfast included?",
+   "pron": "iz BRÉK-fâst in-KLÚ-did?"
+  },
+  {
+   "pt": "Qual é a senha do Wi-Fi?",
+   "en": "What's the Wi-Fi password?",
+   "pron": "UÓTS the UÁI-fái PÉS-uârd?"
+  },
+  {
+   "pt": "Posso deixar minhas malas aqui?",
+   "en": "Can I leave my bags here?",
+   "pron": "kén ái LÍIV mái BÉGZ RÍER?"
+  },
+  {
+   "pt": "Pode me chamar um táxi?",
+   "en": "Could you call me a taxi?",
+   "pron": "kud iú KÓL mi a TÉK-si?"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}

@@ -3,6 +3,9 @@
 Por que a capa do restaurante funcionou: foto natural com cara de foto de viagem (não ilustração), luz de pôr do sol,
 cena desejável ligada ao tema, terço de baixo calmo para o texto branco. Repetir a fórmula.
 
+**Fluxo combinado (12/11):** o usuário gera a CAPA (foto realista com o texto) pelo prompt; nós geramos os slides 02–08
+(sem `img/capa.png`, o script começa no 02). Entregar: slides 02–08 + prompt da capa + legenda + comentário fixado.
+
 Produção: `posts/<data>_carrossel-<tema>/carrossel.json` → `python3 scripts/carrossel_tt.py posts/<post>` (8 slides 1080x1440).
 Capa: `python3 scripts/imagem_gemini.py "<PROMPT>" posts/<post>/img/capa.png --post posts/<post> --proporcao 3:4 --modelo gemini-2.5-flash-image`
 (~R$ 0,21). CTA: `{"perfil": "img/perfil.png", "texto": "..."}` (copiar o perfil.png do carrossel do restaurante).
