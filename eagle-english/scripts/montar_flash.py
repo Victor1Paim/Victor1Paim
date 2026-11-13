@@ -24,9 +24,9 @@ def cortar_respostas(arq, n, pasta, prefixo="resp"):
                        capture_output=True, text=True).stderr
     ini = [float(x) for x in re.findall(r"silence_start: ([0-9.]+)", r)]
     fim = [float(x) for x in re.findall(r"silence_end: ([0-9.]+)", r)]
-    pausas = [(a + b) / 2 for a, b in zip(ini, fim) if a > 0.05]
     total = dur(arq)
-    pausas = [p for p in pausas if p < total - 0.2]
+    # ignora o silêncio do começo e o que encosta no fim do arquivo (sobra da limpeza pelo Whisper)
+    pausas = [(a + b) / 2 for a, b in zip(ini, fim) if a > 0.05 and b < total - 0.05]
     if len(pausas) != n - 1 and not (pasta.parent / arq.name).exists():   # prévia sem áudio: divide igual
         pausas = [total * (i + 1) / n for i in range(n - 1)]
     if len(pausas) != n - 1:

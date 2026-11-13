@@ -1,0 +1,95 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Você só agradece de um jeito em inglês? Os nativos usam vários. Olha só!"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Thanks!"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Valeu!"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Thanks a lot!"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Muito obrigado!"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Thank you so much!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Muito obrigado mesmo!"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I appreciate it."
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Eu agradeço."
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "E quando alguém te salva de verdade?"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "You're a lifesaver!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Você me salvou!"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I owe you one!"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Fico te devendo uma!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Agora você tem seis jeitos de agradecer, do mais simples ao mais forte!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

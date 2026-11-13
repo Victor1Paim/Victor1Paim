@@ -1,0 +1,132 @@
+{
+ "audio_pergunta": "q_en",
+ "audio_respostas": "respostas_en",
+ "audio_traducoes": "traducoes_pt",
+ "segundos_contagem": 0.7,
+ "fundo_cta": "img/fazenda.png",
+ "itens": [
+  {
+   "img": "img/dog.png",
+   "en": "Dog",
+   "pron": "/DÓG/",
+   "pt": "Cachorro"
+  },
+  {
+   "img": "img/cat.png",
+   "en": "Cat",
+   "pron": "/KÉT/",
+   "pt": "Gato"
+  },
+  {
+   "img": "img/bird.png",
+   "en": "Bird",
+   "pron": "/BÂRD/",
+   "pt": "Pássaro"
+  },
+  {
+   "img": "img/fish.png",
+   "en": "Fish",
+   "pron": "/FÍX/",
+   "pt": "Peixe"
+  },
+  {
+   "img": "img/horse.png",
+   "en": "Horse",
+   "pron": "/RÓRS/",
+   "pt": "Cavalo"
+  },
+  {
+   "img": "img/cow.png",
+   "en": "Cow",
+   "pron": "/KÁU/",
+   "pt": "Vaca"
+  },
+  {
+   "img": "img/rabbit.png",
+   "en": "Rabbit",
+   "pron": "/RÉ-bit/",
+   "pt": "Coelho"
+  },
+  {
+   "img": "img/turtle.png",
+   "en": "Turtle",
+   "pron": "/TÂR-tol/",
+   "pt": "Tartaruga"
+  }
+ ],
+ "cta": {
+  "audio": "cta",
+  "segundos_placar": 3.5,
+  "sub_placar": "Comenta seu placar 👇",
+  "telas": [
+   [
+    "*35 situações* do dia a dia",
+    "sumario-ebook"
+   ],
+   {
+    "tipo": "kit",
+    "tag": "Ebook + *4 bônus*",
+    "capas": [
+     "capa-guia",
+     "capa-cards",
+     "capa-ebook",
+     "capa-500",
+     "capa-verbos"
+    ],
+    "itens": [
+     "*350 mapas* · 2.100 frases",
+     "Guia de 21 Dias · *15 min/dia*",
+     "20 Cards de Gramática",
+     "500 Frases · 100 Verbos"
+    ]
+   },
+   {
+    "tipo": "preco",
+    "tag": "Pagamento *único*",
+    "de": "R$ 123,70",
+    "por": "R$ 19,90",
+    "chips": [
+     "PDF no seu e-mail",
+     "Garantia de 7 dias",
+     "Celular, tablet ou impresso"
+    ],
+    "prazo": "Oferta até 25/12"
+   }
+  ]
+ },
+ "selo": "QUIZ DOS ANIMAIS 🐶",
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/fazenda.png",
+  "selo": "Desafio 🧠",
+  "titulo": "Animais em\n*inglês* 🐶",
+  "sub": "<b>8 animais</b> · 3 segundos cada",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": [
+   {
+    "img": "img/dog.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/cat.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/horse.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/cow.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/rabbit.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/turtle.png",
+    "txt": "?"
+   }
+  ]
+ }
+}

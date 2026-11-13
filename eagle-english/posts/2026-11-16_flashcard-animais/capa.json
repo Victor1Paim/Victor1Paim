@@ -1,0 +1,24 @@
+{
+ "fundo": "img/fazenda.png",
+ "selo": "Teste rápido",
+ "titulo": "Animais em\n*inglês* 🐶",
+ "sub": "<b>8 animais</b> · quantos você acerta?",
+ "figuras": [
+  {
+   "img": "img/dog.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/horse.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/rabbit.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/turtle.png",
+   "txt": "?"
+  }
+ ]
+}

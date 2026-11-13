@@ -1,0 +1,11 @@
+{
+ "fundo": "img/presente.png",
+ "selo": "6 jeitos",
+ "titulo": "Só *thank you*?\nTem mais! 💛",
+ "sub": "Do <b>Thanks!</b> ao <b>I owe you one!</b>",
+ "balao": {
+  "en": "You're a lifesaver!",
+  "pron": "/iór a LÁIF-sêi-ver/",
+  "lado": "dir"
+ }
+}

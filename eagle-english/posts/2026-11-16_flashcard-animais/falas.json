@@ -1,0 +1,36 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Desafio! Oito animais, três segundos cada. Fala o nome em inglês antes de mim!"
+  },
+  {
+   "id": "q_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What is this called?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Dog...\n\nCat...\n\nBird...\n\nFish...\n\nHorse...\n\nCow...\n\nRabbit...\n\nTurtle."
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Cachorro...\n\nGato...\n\nPássaro...\n\nPeixe...\n\nCavalo...\n\nVaca...\n\nCoelho...\n\nTartaruga."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
