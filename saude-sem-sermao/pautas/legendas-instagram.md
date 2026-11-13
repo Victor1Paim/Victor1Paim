@@ -534,3 +534,34 @@ Conteúdo educativo, não substitui orientação profissional.
 ```
 
 ---
+
+## 18. 11 · Câncer: o que dá pra mudar no risco · 🟡
+Pasta: `producoes/11-cancer-risco/`
+
+```
+Câncer parece loteria. Mas uma parte grande não é sorte nem azar 🎗️
+
+Genética pesa, sim. Mas um estudo grande estimou que 4 em cada 10 casos estão ligados a coisas que dá pra mudar. As 5 principais:
+
+1. 🚬 Cigarro: o maior de todos. E parar ajuda em qualquer idade.
+2. ⚖️ Excesso de peso.
+3. 🍺 Álcool: pra câncer, não existe dose totalmente segura.
+4. ☀️ Sol sem proteção: pesa no câncer de pele.
+5. 💉 Vacina (a que pouca gente lembra): HPV e hepatite B previnem câncer, e estão no SUS.
+
+Isso diminui o risco, não zera. Ninguém tem câncer por merecer 💛 E os exames de rastreamento, a gente combina com o médico.
+
+Manda pra quem acha que é tudo genética. E comenta qual dos 5 te surpreendeu 👇
+
+Fontes: Islami et al., CA Cancer J Clin 2024 (EUA) · INCA · OMS (álcool e câncer) · Ministério da Saúde (PNI).
+Conteúdo educativo, não substitui orientação profissional.
+
+#cancer #prevencao #saude
+```
+
+**Comentário fixado:**
+```
+📚 Fontes: Islami et al. 2024 (ACS) · INCA · OMS · Ministério da Saúde. Vacina de HPV e hepatite B no SUS: procure a UBS 💉 Qual dos 5 te surpreendeu?
+```
+
+---

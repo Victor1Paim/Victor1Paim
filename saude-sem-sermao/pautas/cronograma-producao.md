@@ -25,7 +25,7 @@ Estrutura de retenção (uma por vídeo, sem misturar): Contradição · Problem
 ## Lote 2 (fim de novembro, 27/11 Dia Nacional de Combate ao Câncer)
 | # | Tema | Série | Pilar | Fmt | Estrutura | Risco | Fonte |
 |---|---|---|---|---|---|---|---|
-| 11 | Câncer: o que dá pra mudar no risco | Mito, contexto e fonte (27/11) | Corpo explicado | A | Problema | 🟡 | INCA (fatores de risco modificáveis) |
+| 11 | ✅ Câncer: o que dá pra mudar no risco (produzido 13/11) | Mito, contexto e fonte (27/11) | Corpo explicado | A | Problema | 🟡 | INCA (fatores de risco modificáveis) |
 | 12 | AVC: os sinais e o tempo que importa | Sinal de Alerta | Bem-estar | A | Jornada | 🔴 | Ministério da Saúde; SAMU 192 |
 | 13 | Por que não consigo parar de rolar o feed? | Tela na Mão | Bem-estar | A | Contradição | 🟢 | Revisões sobre uso problemático de smartphone |
 | 14 | Celular dá dor no pescoço? ("text neck") | Costas na Cadeira | Corpo explicado | A | Escolha | 🟢 | Estudos sobre postura cervical e dispositivos |

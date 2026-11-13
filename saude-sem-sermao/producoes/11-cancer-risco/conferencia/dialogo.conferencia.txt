@@ -1,0 +1,2 @@
+semelhança: 99.4%
+replace: roteiro='tão' voz='estão' pos=139
