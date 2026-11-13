@@ -55,7 +55,7 @@ pela metade.
   `design-system`, `brand`, `ui-styling`, `banner-design`; depois `impeccable`
   para polir e auditar o design antes de entregar.
 - **Texto**: `humanizer` em toda copy, para tirar cara de texto de IA.
-- **Pesquisa de mercado**: `last30days` (o que o público fala do tema/nicho agora).
+- **Pesquisa de mercado**: busca na web primeiro; Reddit/X/redes → `prompt-de-pesquisa` (prompts prontos para o usuário colar no Grok/Perplexity/ChatGPT/Google). `last30days` só depois que as chaves forem cadastradas.
 - **Diagramas** (arquitetura, fluxo do funil): `diagram-design`.
 - **Processo**: `brainstorming` → `writing-plans` → `executing-plans`;
   `systematic-debugging` em bug; `verification-before-completion` antes de dizer "pronto";

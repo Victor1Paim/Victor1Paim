@@ -22,6 +22,7 @@ O Claude segue a skill `dev-senior`: briefing curto → plano → build → QA �
 | `ui-ux-pro-max`, `impeccable`, `design-system`, `brand` | Design e polimento visual |
 | `humanizer` | Copy com cara de gente |
 | `last30days` | Pesquisa do que o público fala agora |
+| `prompt-de-pesquisa` | Prompts prontos para pesquisar Reddit, X e redes fora daqui |
 | `diagram-design` | Diagramas |
 | `superpowers` (brainstorming, writing-plans, …) | Processo de desenvolvimento |
 | `ponytail`, `caveman` | Código enxuto e respostas curtas |
