@@ -20,7 +20,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | dom 15/11 | 12h | Objetos do quarto 🛏️ | Lista com emoji | Evolução | "Vamos arrumar o quarto em inglês? Seis objetos." | comentar palavra | ✅ |
 | dom 15/11 | 19h | Natal em inglês · Parte 2 🎁 (TikTok + mesmo anúncio) | Repita | Jornada | "Parte dois! A águia vai pra uma ceia de Natal… só em inglês." | salvar + link do produto | ✅ |
 | seg 16/11 | 12h | Animais 🐶 | Flashcard | Escolha | "Desafio! Oito animais, três segundos cada." | placar | ✅ |
-| seg 16/11 | 19h | Jeitos de agradecer 💛 | Repita | Contradição | "Como você agradece em inglês? Vamos variar juntos." | salvar | 🎬 |
+| seg 16/11 | 19h | Jeitos de agradecer 💛 | Repita | Contradição | "Você só agradece de um jeito em inglês? Os nativos usam vários." | salvar | ✅ |
 | ter 17/11 | 12h | Convidar amigos 🍿 | Repita | Jornada | "Quer chamar um amigo? Vamos convidar em inglês." | enviar | 🎬 |
 | ter 17/11 | 19h | Feliz ou triste? 🙂 | Qual você usa? | Escolha | "Feliz ou triste? Qual palavra combina com a carinha?" | comentar A/B | 🧩 |
 | qua 18/11 | 12h | Não entendi 💬 | Repita | Problema | "Não entendeu? Treine uma frase para avisar em inglês." | salvar | 🎬 |
