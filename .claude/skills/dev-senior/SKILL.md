@@ -50,4 +50,14 @@ pela metade.
 
 `pagina-de-vendas` · `site-e-app` · `deploy-web` · `qa` · `browser-use` ·
 `lean-build` (escopo enxuto) · `surgical-patch` (correções) · `safe-refactor`.
+
+- **Visual/UI**: `ui-ux-pro-max` (estilos, paletas, fontes por tipo de produto),
+  `design-system`, `brand`, `ui-styling`, `banner-design`; depois `impeccable`
+  para polir e auditar o design antes de entregar.
+- **Texto**: `humanizer` em toda copy, para tirar cara de texto de IA.
+- **Pesquisa de mercado**: `last30days` (o que o público fala do tema/nicho agora).
+- **Diagramas** (arquitetura, fluxo do funil): `diagram-design`.
+- **Processo**: `brainstorming` → `writing-plans` → `executing-plans`;
+  `systematic-debugging` em bug; `verification-before-completion` antes de dizer "pronto";
+  `ponytail` contra código inchado.
 Design: Figma/Canva via MCP quando o usuário trouxer referência de lá.

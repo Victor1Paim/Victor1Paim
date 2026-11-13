@@ -19,6 +19,14 @@ O Claude segue a skill `dev-senior`: briefing curto → plano → build → QA �
 | `site-e-app` | Sites (Astro), web apps (Next.js + Supabase), mobile (Expo) |
 | `deploy-web` | Preview, Vercel/Netlify, domínio, checklist |
 | `qa` | Nota de qualidade 1–5 testando no navegador |
+| `ui-ux-pro-max`, `impeccable`, `design-system`, `brand` | Design e polimento visual |
+| `humanizer` | Copy com cara de gente |
+| `last30days` | Pesquisa do que o público fala agora |
+| `diagram-design` | Diagramas |
+| `superpowers` (brainstorming, writing-plans, …) | Processo de desenvolvimento |
+| `ponytail`, `caveman` | Código enxuto e respostas curtas |
+
+Lista completa e origem: `.claude/skills/TERCEIROS.md`.
 
 ## Estrutura
 ```
