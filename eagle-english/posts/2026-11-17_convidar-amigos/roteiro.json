@@ -1,0 +1,132 @@
+{
+ "fundo": "img/sala.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/cinema.png",
+  "selo": "Missão: cinema 🍿",
+  "titulo": "Chamar um amigo\npro *cinema*",
+  "sub": "<b>5 frases</b> · em inglês",
+  "desafio": "Ela consegue? 👀",
+  "figuras": [
+   {
+    "img": "img/sala.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/cinema.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/rua.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/sala_cinema.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "Are you free tonight?",
+   "pron": "/ar iú FRÍI tu-NÁIT/",
+   "pt": "Você está livre hoje à noite?",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Do you want to see a movie?",
+   "pron": "/du iú UÓNT tu SÍI a MÚ-vi/",
+   "pt": "Quer ver um filme?",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/cinema.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Mas o amigo\nnão pode hoje… 😬",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "No problem! How about tomorrow?",
+   "pron": "/NÔU PRÓ-blem! HÁU a-BÁUT tu-MÓ-rôu/",
+   "pt": "Sem problema! Que tal amanhã?",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "See you at seven!",
+   "pron": "/SÍI iú at SÉ-ven/",
+   "pt": "Te vejo às sete!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/rua.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "I can't wait!",
+   "pron": "/ái KÉNT UÊIT/",
+   "pt": "Mal posso esperar!",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/sala_cinema.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Ela conseguiu! 🍿\nManda pro seu amigo 📲",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/sala_cinema.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/sala_cinema.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

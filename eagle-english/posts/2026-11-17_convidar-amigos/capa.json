@@ -1,0 +1,11 @@
+{
+ "fundo": "img/cinema.png",
+ "selo": "5 frases",
+ "titulo": "Chame um amigo\npro *cinema* 🍿",
+ "sub": "Em inglês · <b>A1</b>",
+ "balao": {
+  "en": "Are you free tonight?",
+  "pron": "/ar iú FRÍI tu-NÁIT/",
+  "lado": "dir"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "fundo": "img/capa_fundo.png",
+ "selo": "5 rodadas",
+ "titulo": "Feliz ou\n*triste?* 🙂",
+ "sub": "Como ele se sente <b>em inglês</b>?",
+ "figuras": [
+  {
+   "img": "img/feliz.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/triste.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/cansado.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/animado.png",
+   "txt": "A ou B?"
+  }
+ ]
+}

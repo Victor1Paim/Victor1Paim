@@ -1,0 +1,84 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "A águia quer chamar um amigo americano pro cinema. Será que ela consegue?"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Are you free tonight?"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Você está livre hoje à noite?"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Do you want to see a movie?"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Quer ver um filme?"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Mas o amigo não pode hoje…"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "No problem! How about tomorrow?"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Sem problema! Que tal amanhã?"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "See you at seven!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Te vejo às sete!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I can't wait!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Mal posso esperar!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Ela queria chamar o amigo pro cinema… e conseguiu! Manda esse vídeo pro amigo que você quer chamar."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

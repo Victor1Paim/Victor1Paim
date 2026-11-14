@@ -1,0 +1,109 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Feliz ou triste? Cinco cenas. Escolhe antes de mim!"
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Rodada um: ganhou sorvete! Como ele está?"
+  },
+  {
+   "id": "r1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm happy!"
+  },
+  {
+   "id": "r1_pt",
+   "lingua": "pt",
+   "texto": "Estou feliz!"
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "E agora? O sorvete caiu!"
+  },
+  {
+   "id": "r2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm sad."
+  },
+  {
+   "id": "r2_pt",
+   "lingua": "pt",
+   "texto": "Estou triste."
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Acordou cedo demais…"
+  },
+  {
+   "id": "r3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm tired."
+  },
+  {
+   "id": "r3_pt",
+   "lingua": "pt",
+   "texto": "Estou cansado."
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Agora a que confunde: esperou uma hora na fila!"
+  },
+  {
+   "id": "r4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm angry!"
+  },
+  {
+   "id": "r4_pt",
+   "lingua": "pt",
+   "texto": "Estou com raiva!"
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "A última: ganhou um presente surpresa!"
+  },
+  {
+   "id": "r5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I'm so excited!"
+  },
+  {
+   "id": "r5_pt",
+   "lingua": "pt",
+   "texto": "Estou muito animado!"
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Estou feliz!...\n\nEstou triste....\n\nEstou cansado....\n\nEstou com raiva!...\n\nEstou muito animado!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Feliz, triste, cansado, com raiva e animado! Quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

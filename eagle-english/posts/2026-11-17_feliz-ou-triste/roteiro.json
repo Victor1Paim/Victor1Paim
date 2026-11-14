@@ -1,0 +1,145 @@
+{
+ "fundo": "img/capa_fundo.png",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 10,
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.6,
+ "segundos_contagem": 0.5,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/capa_fundo.png",
+  "selo": "Desafio · 5 rodadas",
+  "titulo": "Feliz ou\n*triste?* 🙂",
+  "sub": "<b>happy</b> ou <b>sad</b>... ou outra?",
+  "desafio": "Escolhe antes de mim! ⏱️",
+  "figuras": [
+   {
+    "img": "img/feliz.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/triste.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/cansado.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/raiva.png",
+    "txt": "A ou B?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "escolha",
+   "img": "img/feliz.png",
+   "a": "happy",
+   "b": "sad",
+   "certa": "a",
+   "audio_q": "q1",
+   "en": "I'm happy!",
+   "pron": "/áim RÉ-pi/",
+   "pt": "Estou feliz!",
+   "audio_en": "r1_en",
+   "audio_pt": "r1_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/triste.png",
+   "a": "happy",
+   "b": "sad",
+   "certa": "b",
+   "audio_q": "q2",
+   "en": "I'm sad.",
+   "pron": "/áim SÉD/",
+   "pt": "Estou triste.",
+   "audio_en": "r2_en",
+   "audio_pt": "r2_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/cansado.png",
+   "a": "tired",
+   "b": "angry",
+   "certa": "a",
+   "audio_q": "q3",
+   "en": "I'm tired.",
+   "pron": "/áim TÁIRD/",
+   "pt": "Estou cansado.",
+   "audio_en": "r3_en",
+   "audio_pt": "r3_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/raiva.png",
+   "a": "hungry",
+   "b": "angry",
+   "certa": "b",
+   "audio_q": "q4",
+   "en": "I'm angry!",
+   "pron": "/áim ÉN-gri/",
+   "pt": "Estou com raiva!",
+   "audio_en": "r4_en",
+   "audio_pt": "r4_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/animado.png",
+   "a": "excited",
+   "b": "scared",
+   "certa": "a",
+   "audio_q": "q5",
+   "en": "I'm so excited!",
+   "pron": "/áim SÔU ik-SÁI-tid/",
+   "pt": "Estou muito animado!",
+   "audio_en": "r5_en",
+   "audio_pt": "r5_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "happy · sad · tired\nangry · excited\nQuantas você acertou? 👇",
+   "audio": [
+    "fecho"
+   ]
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}
