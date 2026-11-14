@@ -1,6 +1,6 @@
 # "Feliz ou triste?" 🙂 (Qual você usa? · ESTRUTURA: ESCOLHA · A1)
 
-STATUS: PRONTO — ~69 s, -14 LUFS. Abertura animada ("Desafio · 5 rodadas", cenas flutuando com "A ou B?") → 5 rodadas A×B
+STATUS: PRONTO — 69,3 s, -14,2 LUFS, pico -1,7 dB. Abertura animada ("Desafio · 5 rodadas", cenas flutuando com "A ou B?") → 5 rodadas A×B
 com contagem 3-2-1 (mascote pensando) e revelação (joinha sorrindo), frase em inglês + tradução falada (traduções numa fala só),
 fundo em vídeo das Maldivas (uma cena por rodada) → virada "a mais difícil": hungry × angry → I'm so excited! por último →
 fecho → CTA curto Eagle 350. Pergunta aberta: "Eu acerto como cada um se sente em inglês?"
