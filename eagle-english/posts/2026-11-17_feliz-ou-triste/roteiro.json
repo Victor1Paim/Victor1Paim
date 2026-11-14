@@ -3,8 +3,8 @@
  "fundo_video": "maldivas",
  "fundo_inicio": 10,
  "velocidade_pt": 1.0,
- "pausa_repetir": 0.6,
- "segundos_contagem": 0.5,
+ "pausa_repetir": 0.3,
+ "segundos_contagem": 0.45,
  "abertura": {
   "audio": "intro",
   "fundo": "img/capa_fundo.png",

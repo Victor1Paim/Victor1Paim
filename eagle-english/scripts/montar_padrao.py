@@ -416,7 +416,7 @@ def main(pasta, previa=False):
     pico = float(rp[rp.rindex("Peak:"):].split()[1])
     if pico > -1.0:
         tmp = final.with_name("_lim.mp4")
-        sh("-i", str(final), "-c:v", "copy", "-af", "alimiter=limit=0.84:attack=2:release=50:level=false", "-c:a", "aac", "-b:a", "192k",
+        sh("-i", str(final), "-c:v", "copy", "-af", "alimiter=limit=0.79:attack=2:release=50:level=false", "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", str(tmp)); tmp.replace(final); print(f"  pico {pico:.1f} dB -> limitado a ~-1,5 dB")
     for x in (lista, base, com_masc, voz, bruto, v / "_junto.mkv", v / "_fundo_q.png"):
         x.unlink(missing_ok=True)
