@@ -1,0 +1,160 @@
+{
+ "fundo": "img/baguncado.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.3,
+ "segundos_contagem": 0.5,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/baguncado.png",
+  "selo": "Prova de inglês 📝",
+  "titulo": "Do pijama até\n*sair de casa*",
+  "sub": "<b>8 peças</b> · quantas você acerta?",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": [
+   {
+    "img": "img/pijama.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/camiseta.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/tenis.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/oculos.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "prova",
+   "emoji": "🛌",
+   "en": "Pajamas",
+   "pron": "/pâ-DJÁ-mâz/",
+   "pt": "pijama",
+   "audio_q": "q1",
+   "audio_r": "r1",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "👕",
+   "en": "T-shirt",
+   "pron": "/TÍI-xârt/",
+   "pt": "camiseta",
+   "audio_q": "q2",
+   "audio_r": "r2",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "👖",
+   "en": "Jeans",
+   "pron": "/DJÍINZ/",
+   "pt": "calça jeans",
+   "audio_q": "q3",
+   "audio_r": "r3",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🧦",
+   "en": "Socks",
+   "pron": "/SÓKS/",
+   "pt": "meias",
+   "audio_q": "q4",
+   "audio_r": "r4",
+   "fundo": "img/baguncado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🧥",
+   "en": "Jacket",
+   "pron": "/DJÉ-kit/",
+   "pt": "jaqueta",
+   "audio_q": "q5",
+   "audio_r": "r5",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "👟",
+   "en": "Sneakers",
+   "pron": "/SNÍI-kerz/",
+   "pt": "tênis",
+   "audio_q": "q6",
+   "audio_r": "r6",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🧢",
+   "en": "Cap",
+   "pron": "/KÉP/",
+   "pt": "boné",
+   "audio_q": "q7",
+   "audio_r": "r7",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🕶️",
+   "en": "Sunglasses",
+   "pron": "/SÂN-glé-siz/",
+   "pt": "óculos de sol",
+   "audio_q": "q8",
+   "audio_r": "r8",
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "lista_fim",
+   "texto": "Pronto pra sair! ✅\nQuantas você acertou? 👇",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/arrumado.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/arrumado.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

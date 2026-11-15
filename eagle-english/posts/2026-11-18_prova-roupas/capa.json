@@ -1,0 +1,24 @@
+{
+ "fundo": "img/arrumado.png",
+ "selo": "Prova de inglês",
+ "titulo": "Roupas em\n*inglês* 👕",
+ "sub": "<b>8 peças</b> · quantas você acerta?",
+ "figuras": [
+  {
+   "img": "img/pijama.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/camiseta.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/tenis.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/oculos.png",
+   "txt": "?"
+  }
+ ]
+}

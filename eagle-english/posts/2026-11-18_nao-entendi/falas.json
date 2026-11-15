@@ -1,0 +1,95 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Falaram rápido demais em inglês e você não entendeu? Calma, tem frase pra isso!"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Sorry?"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Como é que é?"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Can you say that again?"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Pode falar de novo?"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Slowly, please."
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Devagar, por favor."
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "E se for uma palavra que você não conhece?"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What's that?"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "O que é isso?"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Can you write it down?"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Pode escrever pra mim?"
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Oh, I get it now!"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Ah, agora entendi!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Não entendeu? Agora você sabe o que dizer até entender!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

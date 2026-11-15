@@ -1,0 +1,11 @@
+{
+ "fundo": "img/estacao.png",
+ "selo": "6 frases",
+ "titulo": "Não entendeu\nem *inglês*? 💬",
+ "sub": "Fala isso e <b>destrava</b>",
+ "balao": {
+  "en": "Can you say that again?",
+  "pron": "/kén iú SÊI THÉT a-GUÉN/",
+  "lado": "dir"
+ }
+}

@@ -222,8 +222,26 @@ def main(pasta, previa=False):
                 ini = falar([b["audio_r"]], ini) + 0.35
             d = ini - t + 0.1; cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
             janelas.append((t0, t, "grande"))
+        elif tp == "prova":   # "Prova de inglês": pergunta pt na tela + contagem 3-2-1 → resposta entra na lista
+            itens = [x for x in r["beats"] if x["tipo"] == "prova"]
+            lista = [{"emoji": x["emoji"], "en": x["en"], "pt": x["pt"]} for x in itens]
+            k = sum(1 for x in r["beats"][:n] if x["tipo"] == "prova")
+            base = {"tipo": "item", "lista": lista, "atual": k, "emoji": b["emoji"], "en": b["en"], "pron": b.get("pron"),
+                    "pt": b["pt"], "progresso": f"{k + 1}/{len(itens)}"}
+            t0 = t
+            q = {**base, "pergunta": b["pt"]}
+            nome = f"{n:02d}_prova_q"; especs.append((nome, q))
+            fim = falar([b["audio_q"]], t + 0.05); d = fim - t + 0.15; cenas.append((nome, d)); reacoes.append((t, t + min(1.0, d), "d")); t += d
+            seg = r.get("segundos_contagem", 0.6); reacoes.append((t, t + 3 * seg, "e"))
+            for c in (3, 2, 1):
+                nome = f"{n:02d}_prova_{c}"; especs.append((nome, {**q, "num": str(c)}))
+                efeitos.append((fx["tique"], t, 0.7)); cenas.append((nome, seg)); t += seg
+            nome = f"{n:02d}_prova_ok"; especs.append((nome, {**base, "mostrar_pt": True})); efeitos.append((fx["ding"], t, 0.6))
+            fim = falar([b["audio_r"]], t + 0.15); d = fim - t + 0.2 + r.get("pausa_repetir", 0)
+            cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
+            janelas.append((t0, t, "medio"))
         elif tp in ("item", "lista_fim"):   # "Lista com emoji": lista completa com "?" que vai se preenchendo
-            itens = [x for x in r["beats"] if x["tipo"] == "item"]
+            itens = [x for x in r["beats"] if x["tipo"] in ("item", "prova")]
             lista = [{"emoji": x["emoji"], "en": x["en"], "pt": x["pt"]} for x in itens]
             t0 = t
             if tp == "item":

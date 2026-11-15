@@ -1,0 +1,131 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Prova de inglês! Do pijama até sair de casa: oito peças. Quantas você acerta?"
+  },
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Como se diz pijama em inglês?...\n\nE camiseta?...\n\nCalça jeans?...\n\nE as meias?...\n\nJaqueta?...\n\nAgora a que pega: tênis!...\n\nBoné?...\n\nE a última: óculos de sol!"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Pajamas...\n\nT-shirt...\n\nJeans...\n\nSocks...\n\nJacket...\n\nSneakers...\n\nCap...\n\nSunglasses."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Como se diz pijama em inglês?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Pajamas",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "E camiseta?",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "T-shirt",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Calça jeans?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Jeans",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "E as meias?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "Socks",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Jaqueta?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Jacket",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Agora a que pega: tênis!",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "Sneakers",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Boné?",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "Cap",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "E a última: óculos de sol!",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "Sunglasses",
+   "recorte": true
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Do pijama até sair de casa: oito peças! Quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

@@ -140,11 +140,14 @@ else if (d.tipo === "comosediz") {
     : `<div class="tagq">${esc(d.pergunta)}</div>${d.opcoes.map((o,i)=>`<div class="opc">${L[i]}) ${esc(o)}</div>`).join("")}
        ${d.num ? `<div class="num">${esc(d.num)}</div>` : ""}`) + `</div>`; }
 else if (d.tipo === "item" || d.tipo === "lista_fim") {
-  const rows = d.lista.map((it, i) => { const ok = d.tipo === "lista_fim" || i <= d.atual;
+  const rows = d.lista.map((it, i) => { const ok = d.tipo === "lista_fim" || i < d.atual || (i === d.atual && !d.pergunta);
     return `<div class="row ${ok ? "" : "vazio"} ${i === d.atual ? "atual" : ""}"><div class="em">${ok ? it.emoji : "❔"}</div>
       <div class="w">${ok ? esc(it.en) : "?"}</div><div class="p">${ok && (i < d.atual || d.mostrar_pt || d.tipo === "lista_fim") ? esc(it.pt) : ""}</div></div>`; }).join("");
   h = `${d.progresso ? `<div class="prog">${esc(d.progresso)}</div>` : ""}<div class="lst" id="lst">${rows}</div>`;
-  if (d.tipo === "item") h += `<div class="big" id="big"><div class="e2">${d.emoji}</div><div class="en">${esc(d.en)}</div>
+  if (d.tipo === "item" && d.pergunta) h += `<div class="big" id="big"><div class="txt">Como se diz</div>
+      <div class="en" style="color:#fff;font-size:104px">${esc(d.pergunta).toUpperCase()}?</div>
+      ${d.num ? `<div class="csd" style="position:static;margin-top:16px"><div class="num" style="margin:0 auto">${esc(d.num)}</div></div>` : ""}</div>`;
+  else if (d.tipo === "item") h += `<div class="big" id="big"><div class="e2">${d.emoji}</div><div class="en">${esc(d.en)}</div>
       ${d.pron ? `<div class="pron">${esc(d.pron)}</div>` : ""}${d.mostrar_pt ? `<div class="pt">${esc(d.pt)}</div>` : ""}</div>`;
   else h += `<div class="big" id="big"><div class="txt">${esc(d.texto).replace(/\n/g, "<br>")}</div></div>`;
   document.getElementById("topo").style.display = "none"; }
