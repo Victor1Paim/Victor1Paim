@@ -236,7 +236,7 @@ def main(pasta, previa=False):
             for c in (3, 2, 1):
                 nome = f"{n:02d}_prova_{c}"; especs.append((nome, {**q, "num": str(c)}))
                 efeitos.append((fx["tique"], t, 0.7)); cenas.append((nome, seg)); t += seg
-            nome = f"{n:02d}_prova_ok"; especs.append((nome, {**base, "mostrar_pt": True})); efeitos.append((fx["ding"], t, 0.6))
+            nome = f"{n:02d}_prova_ok"; especs.append((nome, base));   # tradução já aparece na lista (não cobre o mascote) efeitos.append((fx["ding"], t, 0.6))
             fim = falar([b["audio_r"]], t + 0.15); d = fim - t + 0.2 + r.get("pausa_repetir", 0)
             cenas.append((nome, d)); reacoes.append((t, t + d, "f")); t += d
             janelas.append((t0, t, "medio"))
