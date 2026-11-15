@@ -134,6 +134,11 @@ sem chiado/estalo entre as falas. Para falas antigas: `aparar_com_whisper(arq, l
 aparece desde o início com "?" e vai se completando (ideia da ref. "Prova de inglês"); item atual grande embaixo; mascote médio.
 Exemplo: `posts/2026-11-15_objetos-do-quarto/`. TRADUÇÕES CURTAS (1–2 palavras): gerar TODAS numa fala só com pausas e cortar
 (`cortar_respostas`), senão a voz escorrega para o espanhol. Pico > -1 dB é limitado sozinho no fim do montar_padrao.
+"Prova de inglês" (15/11): beat `"prova"` (emoji, en, pron, pt, audio_q, audio_r) + `"lista_fim"` no `montar_padrao.py` — lista 1…N
+vazia que se completa; "Como se diz X?" na tela + contagem 3-2-1 → resposta entra na lista. Perguntas e respostas: UMA fala
+cada (todas juntas) cortada com `cortar_respostas`. Exemplo: `posts/2026-11-18_prova-roupas/`.
+PRODUÇÃO NA MÁQUINA DA NUVEM (4 núcleos): rodar geração/conferência/montagem EM FILA (um script bash em segundo plano),
+nunca em paralelo — o Whisper satura a CPU e os comandos estouram o tempo.
 Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `assets/mascote/`.
 
 ## Vozes e cotas
