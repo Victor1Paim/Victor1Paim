@@ -80,8 +80,8 @@
   ];
 
   const ITEMS = new Map();
-  MENU.forEach((cat) => cat.items.forEach(([id, name, detail, price, photo, acomp]) => {
-    ITEMS.set(id, { id, name, detail, price, photo, acomp, cat: cat.title });
+  MENU.forEach((cat) => cat.items.forEach(([id, name, detail, price, photo]) => {
+    ITEMS.set(id, { id, name, detail, price, photo, cat: cat.title });
   }));
 
   const $ = (s, r = document) => r.querySelector(s);
@@ -123,13 +123,12 @@
           <figure class="cat__img"><img src="/assets/img/${c.img}" alt="${esc(c.alt)}" loading="lazy" decoding="async"></figure>
         </div>
         <ul class="items">
-          ${c.items.map(([id, name, detail, price, photo, acomp]) => `
+          ${c.items.map(([id, name, detail, price, photo]) => `
             <li class="item" data-item="${id}">
               ${photo ? `<img class="item__ph" src="/assets/img/${photo}-640.webp" alt="" loading="lazy" decoding="async">` : ''}
               <div class="item__txt">
                 <p class="item__name">${esc(name)}</p>
                 ${detail ? `<p class="item__detail">${esc(detail)}</p>` : ''}
-                ${acomp ? `<p class="item__acomp"><span>Acompanha</span> ${esc(acomp)}</p>` : ''}
               </div>
               <p class="item__price">${money(price)}</p>
               <div class="item__ctl" data-ctl="${id}"></div>
@@ -281,7 +280,6 @@
         const it = ITEMS.get(id), q = cart[id];
         const det = it.detail ? ` (${it.detail.split(' · ')[0]})` : '';
         lines.push(`• ${q}x ${it.name}${det} — ${money(it.price * q)}`);
-        if (it.acomp) lines.push(`   _acompanha ${it.acomp}_`);
       });
       lines.push('');
     });

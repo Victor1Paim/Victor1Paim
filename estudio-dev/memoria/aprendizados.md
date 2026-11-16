@@ -1,5 +1,6 @@
 # Aprendizados
 
+- Cache: nunca cache longo em JS/CSS sem versão. Barra Deck usa `?v=<hash>` no index.html + `max-age=0, must-revalidate` para css/js (vercel.json). Ao editar CSS/JS, atualizar o `?v=` (hash md5 de 8 caracteres).
 - Quando o usuário manda um cardápio antigo, confirmar antes se é para misturar com o atual. A fonte da verdade do Barra Deck é o PDF 2026.
 - Copy: nunca colocar escassez não confirmada ("se a produção esgotar") nem promessas operacionais (aquecer, travessa, chefs) sem o cliente confirmar.
 - Remotion aqui: o Chrome do render não confia no certificado do proxy → fontes do Google falham. Baixar fontes para `public/` (script) e usar `@remotion/fonts`.

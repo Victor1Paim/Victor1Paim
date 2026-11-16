@@ -11,6 +11,9 @@ Site estático de pré-pedido. O cliente monta o carrinho e o pedido é enviado
 
 Depois de 10/12/2026 23:59 o site mostra "Encomendas encerradas" e esconde os botões.
 
+## Depois de editar CSS ou JS
+Atualize o `?v=` de `style.css` e `app.js` no `index.html` (qualquer valor novo). Sem isso, quem já visitou o site pode continuar vendo a versão antiga.
+
 ## Rodar local
 ```bash
 npx serve .
