@@ -1,0 +1,15 @@
+# "Fazer Pix gera imposto?" (~30 s) · Estrutura: Contradição
+# Fontes: Pix é meio de pagamento (BCB, Resolução BCB 1/2020); tributação incide sobre a renda (Lei 7.713/1988;
+# CTN art. 43). Conferir antes de publicar — o tema volta sempre com boatos novos.
+
+# ela
+Fazer [icone pix] Pix gera imposto? [pergunta] Não.
+
+# motion mito | Todo Pix vai ser taxado
+Essa história circula toda hora, mas é [destaque Mito] mito: o Pix é só um meio de pagamento.
+
+# dividida comparacao | Caminho x Renda
+O Pix, a [esquerda Pix, TED, dinheiro | icone=pix] TED e o dinheiro vivo são só o caminho. O que entra na conta do imposto é a [direita salário, venda, serviço | icone=carteira] renda.
+
+# ela
+Então, se você recebe pelo seu [icone empresa] trabalho, a regra é a de sempre: [etiqueta declare a renda | verde] declarar a renda, não importa por onde ela chegou. Salva e manda pro [icone marcador] grupo da família.

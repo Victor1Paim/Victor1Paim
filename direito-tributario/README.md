@@ -25,3 +25,11 @@ cores apagadas (teal e laranja da identidade do PDF + mostarda, sálvia, jeans),
 5. Render: `cd video && npx remotion render src/index.ts <id> ../testes/<id>/<id>.mp4`
    (conferir quadros: `node scripts/quadros.mjs <id> <pasta> 120 400 ...`).
 6. Custo: `python3 ../scripts/custos.py relatorio direito-tributario/testes/<id>`.
+
+## Kit da apresentadora (gravação real + elementos flutuantes)
+Guia de uso: `LEIA-ME.md` (rascunho até chegar a pesquisa). Motor: `scripts/kit.py` (novo · ler · preparar · render · tudo)
+→ `video/public/videos/<nome>/dados.json` → composição Remotion `kit` (`video/src/kit/`).
+Modos por trecho do roteiro: `ela` (tela cheia + adesivos), `dividida` (cartão embaixo), `motion` (cartão em tela cheia).
+Roteiros marcados em `roteiros/`; banco de ideias em `roteiros/ideias.md`; prompt de pesquisa em `pesquisa/prompt-manus.md`.
+Demo: `videos/demo-cafezinho/` (gravação simulada com a apresentadora ilustrada do teste 02 + voz do teste 03,
+composição `gravacao-demo`).

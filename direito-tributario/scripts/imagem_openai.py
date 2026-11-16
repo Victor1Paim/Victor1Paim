@@ -9,8 +9,7 @@ Na nuvem o proxy injeta a chave; no notebook, defina OPENAI_API_KEY. Nunca grave
 import base64, json, os, subprocess, sys, uuid
 from pathlib import Path
 
-RAIZ = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(RAIZ / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # custos.py local (o kit roda sozinho)
 from custos import registrar  # noqa: E402
 
 MODELO = "gpt-image-2"

@@ -1,0 +1,11 @@
+# "IPTU, IPVA e ITBI: quem cobra cada um?" (~30 s) · Estrutura: Escolha
+# Fontes: CF/88 art. 155, III (IPVA — estados) e art. 156, I e II (IPTU e ITBI — municípios). Conferir.
+
+# ela
+IPTU, [etiqueta IPTU · IPVA · ITBI | amarelo] IPVA e ITBI: você sabe quem cobra cada um? [pergunta]
+
+# motion lista | Quem cobra?
+O [item IPTU: prefeitura | icone=casa] IPTU, do imóvel, é da prefeitura. O [item IPVA: estado | icone=carro] IPVA, do veículo, é do estado. E o [item ITBI: prefeitura | icone=documento] ITBI, que aparece quando você compra um imóvel, também é municipal.
+
+# ela
+Por isso cada cidade e cada estado tem [etiqueta regras locais | azul] regras e valores próprios. [icone alerta] Antes de pagar, confere no site oficial da sua prefeitura ou do seu estado. [zoom] Salva esse.

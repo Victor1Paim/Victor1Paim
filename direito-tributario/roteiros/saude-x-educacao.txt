@@ -1,0 +1,15 @@
+# "Saúde ou escola: qual abate mais no IR?" (~32 s) · Estrutura: Escolha
+# Fontes: Lei 9.250/1995, art. 8º, II, "a" (saúde, sem limite) e "b" (educação, com limite anual por pessoa).
+# Não citar o valor do teto sem conferir o vigente no ano da declaração.
+
+# ela
+Gasto com [icone saude] saúde e com [icone livro] escola: qual abate mais no Imposto de Renda? [pergunta]
+
+# dividida comparacao | Saúde x Educação
+Despesa médica [esquerda sem limite de valor | icone=saude] não tem limite de valor pra deduzir. Já a de educação [direita tem teto por pessoa | icone=livro] tem um teto anual por pessoa.
+
+# motion lista | Nos dois casos
+Nos dois casos, só vale na [item declaração completa | icone=declaracao] declaração completa, e você precisa [item guardar os comprovantes | icone=nota] guardar os comprovantes.
+
+# ela
+Salva pra época da [icone calendario] declaração e manda pra quem sempre perde os recibos.

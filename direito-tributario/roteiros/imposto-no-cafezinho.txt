@@ -1,0 +1,20 @@
+# Demo do kit: "Você paga imposto até no cafezinho" (~35 s)
+# Fontes: Lei 12.741/2012 (valor aproximado dos tributos na nota). Conferir antes de publicar.
+
+# ela
+Você paga [icone cafe] imposto até no [zoom] cafezinho. E nem [pergunta] percebe.
+
+# dividida lista | Imposto embutido
+Isso porque boa parte dos [item tributos sobre consumo | icone=sacola] tributos sobre consumo já vem [item embutida no preço | icone=moedas] embutida no preço.
+
+# motion passos | Quem paga?
+A [item a loja recolhe | icone=loja] loja recolhe pro governo, mas quem [item você paga no preço | icone=carteira] paga no fim é você, o consumidor.
+
+# ela
+Quer ver? Olha a [icone nota] nota fiscal: por [etiqueta Lei 12.741/2012 | azul] lei, ela precisa mostrar um [icone lupa] valor aproximado dos tributos.
+
+# motion mito | Não tenho empresa, então não pago imposto
+Ah, mas eu não tenho empresa. [destaque Mito] Paga sim, todo dia, [item no mercado, na conta de luz, no café] no consumo.
+
+# ela
+Salva esse vídeo [etiqueta salva! | vermelho] e manda pra quem acha que não [moedas] paga imposto.
