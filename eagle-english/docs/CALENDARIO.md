@@ -25,8 +25,8 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | ter 17/11 | 19h | Feliz ou triste? 🙂 | Qual você usa? | Escolha | "Feliz ou triste? Cinco cenas. Escolhe antes de mim!" | comentar A/B | ✅ |
 | qua 18/11 | 12h | Não entendi 💬 | Repita | Problema | "Falaram rápido demais em inglês e você não entendeu?" | salvar | ✅ |
 | qua 18/11 | 19h | Prova de inglês: roupas 👕 | Prova | Evolução | "Prova de inglês! Do pijama até sair de casa: oito peças." | placar | ✅ |
-| qui 19/11 | 12h | Na praia 🏖️ | Repita | Jornada | "Vamos à praia? Leve estas frases com você." | enviar | 🎬 |
-| qui 19/11 | 19h | Objetos de casa 🏠 | Flashcard | Escolha | "Olha este objeto. Como ele se chama em inglês?" | placar | 🎬 |
+| qui 19/11 | 12h | Na praia 🏖️ | Repita | Jornada | "Vamos à praia? Leve estas frases com você." | enviar | ✅ |
+| qui 19/11 | 19h | Objetos de casa 🏠 | Flashcard | Escolha | "Olha este objeto. Como ele se chama em inglês?" | placar | ✅ |
 | sex 20/11 | 12h | Despedidas 👋 | Repita | Contradição | "Vai sair? Repete estas despedidas comigo." | salvar | 🎬 |
 | sex 20/11 | 19h | Hora do lanche 🥪 | Lista com emoji | Problema | "Quer um lanche? Treine como pedir em inglês." | comentar palavra | 🧩 |
 | sáb 21/11 | 12h | Passeio no parque 🌳 | Repita | Jornada | "Um passeio no parque, uma frase por vez." | enviar | 🎬 |
