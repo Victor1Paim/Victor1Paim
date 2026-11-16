@@ -201,6 +201,26 @@
   drawer.addEventListener('close', () => document.body.classList.remove('lock'));
   drawer.addEventListener('click', (e) => { if (e.target === drawer) closeCart(); });
 
+  /* ---------- pop-up do cardápio em PDF ---------- */
+  function promo() {
+    const dlg = $('[data-promo]');
+    const KEY = 'barradeck-promo-pdf';
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+    try { if (localStorage.getItem(KEY)) return; } catch (_) { /* sem storage: mostra mesmo assim */ }
+    const fechar = () => {
+      try { localStorage.setItem(KEY, '1'); } catch (_) {}
+      if (dlg.open) dlg.close();
+    };
+    dlg.addEventListener('click', (e) => {
+      if (e.target === dlg || e.target.closest('[data-promo-close]')) fechar();
+      if (e.target.closest('[data-promo-dl]')) setTimeout(fechar, 300);
+    });
+    dlg.addEventListener('cancel', () => { try { localStorage.setItem(KEY, '1'); } catch (_) {} });
+    setTimeout(() => {
+      if (!$('[data-drawer]').open) dlg.showModal();
+    }, 1500);
+  }
+
   /* ---------- toast ---------- */
   let toastT;
   function toast(msg) {
@@ -349,6 +369,7 @@
   document.documentElement.classList.add('js');
   buildMenu();
   renderDeadline();
+  promo();
   render();
   observe();
   onScroll();

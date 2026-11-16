@@ -369,3 +369,26 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lembrete strong { color: var(--brown); }
 .btn--pdf { margin-top: 22px; gap: 8px; }
 .delivery__card .btn { text-align: center; line-height: 1.25; padding-block: 10px; }
+
+/* ---------- pop-up do cardápio ---------- */
+.promo {
+  border: 0; padding: 34px 28px 22px; width: min(400px, calc(100vw - 32px)); border-radius: 24px;
+  background: var(--paper); color: var(--ink); text-align: center; box-shadow: 0 40px 80px -30px rgba(42, 20, 9, .6);
+  border-top: 4px solid var(--copper);
+}
+.promo[open] { animation: promoIn .45s var(--ease); }
+.promo::backdrop { background: rgba(42, 20, 9, .5); backdrop-filter: blur(3px); }
+@keyframes promoIn { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
+.promo__close { position: absolute; top: 12px; right: 12px; }
+.promo__logo { width: 120px; height: auto; margin: 0 auto 14px; }
+.promo__eyebrow { font: 600 12px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--copper-ink); }
+.promo h2 { font-size: 34px; margin: 10px 0 10px; }
+.promo__text { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+.promo__skip { margin-top: 8px; font-size: 15px; }
+@media (max-width: 560px) {
+  .promo { margin: auto auto 0; width: 100vw; max-width: 100vw; border-radius: 24px 24px 0 0; padding-bottom: calc(22px + env(safe-area-inset-bottom)); }
+  .promo[open] { animation: promoUp .45s var(--ease); }
+  @keyframes promoUp { from { transform: translateY(100%); } to { transform: none; } }
+}
+.promo__skip { background: transparent; border: 0; }
+.btn--link { background: transparent; border: 0; }
