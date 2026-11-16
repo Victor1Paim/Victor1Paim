@@ -1,7 +1,7 @@
 # Preferências
 
 ## Barra Deck — dados fixos
-- Endereço: No Clube da Aeronáutica · Av. Rachel de Queiroz, s/n – Barra da Tijuca, Rio de Janeiro – RJ (sem CEP visível no site).
+- Endereço: No Clube da Aeronáutica da Barra da Tijuca · Av. Rachel de Queiroz, s/n · Rio de Janeiro – RJ (sem CEP visível no site).
 - WhatsApp (21) 98171-6022 · site https://barradeck.vercel.app
 
 ## Trabalho
