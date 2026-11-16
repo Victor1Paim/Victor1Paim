@@ -72,7 +72,7 @@
         ['torta-limao', 'Torta de limão', '', 150],
         ['cheesecake-damasco', 'Cheesecake de damasco', 'unidade', 175],
         ['cheesecake-frutas', 'Cheesecake de frutas vermelhas', 'unidade', 175, 'cheesecake'],
-        ['pave-chocolate', 'Pavê de chocolate', 'unidade', 175, 'pave-morango'],
+        ['pave-chocolate', 'Pavê de chocolate', 'unidade', 175],
         ['pave-pacoca', 'Pavê de paçoca', 'unidade', 175],
         ['pave-oreo', 'Pavê de Oreo', 'unidade', 175, 'pave-oreo'],
       ],
