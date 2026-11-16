@@ -363,3 +363,4 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .faq__item summary::after { content: '+'; font: 400 26px/1 var(--sans); color: var(--copper); transition: transform .25s var(--ease); }
 .faq__item[open] summary::after { transform: rotate(45deg); }
 .faq__item p { color: var(--muted); padding-bottom: 20px; }
+@media (max-width: 959px) { .orb { left: -4%; } }
