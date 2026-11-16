@@ -54,6 +54,7 @@
           </div>
           <dl class="hero__facts">
             <div><dt>Encomendas até</dt><dd>10 de dezembro</dd></div>
+            <div><dt>Retirada</dt><dd>24/12 · 10h às 15h</dd></div>
             <div><dt>Status</dt><dd data-deadline>Pedidos abertos</dd></div>
           </dl>
         </div>
@@ -73,6 +74,8 @@
       <div class="wrap band__in">
         <p><strong>Pré-pedidos até 10/12/2026</strong></p>
         <span class="band__dot" aria-hidden="true">✦</span>
+        <p>Retirada 24/12, das 10h às 15h</p>
+        <span class="band__dot" aria-hidden="true">✦</span>
         <p>Entrega: consulte seu endereço e a taxa pelo WhatsApp</p>
         <span class="band__dot" aria-hidden="true">✦</span>
         <p><a href="https://wa.me/5521981716022" target="_blank" rel="noopener">(21) 98171-6022</a></p>
@@ -87,7 +90,7 @@
         </header>
         <ol class="steps__list">
           <li class="reveal"><span class="steps__n">01</span><h3>Escolha os pratos</h3><p>Adicione ao carrinho o que quiser na sua mesa. Aqui não tem pagamento: o site só organiza o seu pedido.</p></li>
-          <li class="reveal"><span class="steps__n">02</span><h3>Envie pelo WhatsApp</h3><p>Informe nome, data e se prefere retirar (das 10h às 15h) ou receber. O pré-pedido chega organizado no nosso WhatsApp.</p></li>
+          <li class="reveal"><span class="steps__n">02</span><h3>Envie pelo WhatsApp</h3><p>Informe nome e se prefere retirar (24/12, das 10h às 15h) ou receber. O pré-pedido chega organizado no nosso WhatsApp.</p></li>
           <li class="reveal"><span class="steps__n">03</span><h3>Confirmamos com você</h3><p>Respondemos para confirmar disponibilidade, taxa de entrega, valor final, pagamento e horário.</p></li>
         </ol>
       </div>
@@ -98,7 +101,7 @@
         <div class="delivery__card reveal">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1v-9.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
           <h3>Retirada no restaurante</h3>
-          <p>Sem taxa. Você escolhe o horário de retirada <strong>entre 10h e 15h</strong> ao montar o pedido.</p>
+          <p>Sem taxa. Retirada no dia <strong>24/12, entre 10h e 15h</strong>. Você escolhe o horário ao montar o pedido.</p>
           <address>Av. Rachel de Queiroz, Barra da Tijuca<br>Rio de Janeiro · RJ · 22793-100</address>
           <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Barra%20Deck%2C%20Av.%20Rachel%20de%20Queiroz%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro" target="_blank" rel="noopener">Ver no mapa</a>
         </div>
@@ -137,6 +140,7 @@
         <figure class="reveal"><img src="/assets/img/cheesecake-640.webp" alt="Cheesecake de frutas vermelhas" width="640" height="780" loading="lazy"><figcaption>Cheesecake de frutas vermelhas</figcaption></figure>
         <figure class="reveal"><img src="/assets/img/pudim-640.webp" alt="Pudim com calda de caramelo" width="640" height="808" loading="lazy"><figcaption>Pudim</figcaption></figure>
         <figure class="reveal"><img src="/assets/img/pave-oreo-640.webp" alt="Pavê de Oreo" width="640" height="779" loading="lazy"><figcaption>Pavê de Oreo</figcaption></figure>
+        <figure class="reveal"><img src="/assets/img/cuscuz-doce-640.webp" alt="Cuscuz doce com coco ralado" width="640" height="645" loading="lazy"><figcaption>Cuscuz doce</figcaption></figure>
       </div>
     </section>
 
@@ -212,13 +216,11 @@
           <textarea name="endereco" rows="2" autocomplete="street-address"></textarea>
           <small class="err" data-err="endereco">Informe o endereço para entrega.</small>
         </label>
-        <fieldset class="field">
-          <legend>Data</legend>
-          <div class="seg">
-            <label><input type="radio" name="data" value="23/12 (quarta)"><span>23/12 · quarta</span></label>
-            <label><input type="radio" name="data" value="24/12 (quinta)" checked><span>24/12 · quinta</span></label>
-          </div>
-        </fieldset>
+        <div class="field">
+          <span>Data</span>
+          <p class="fixed-date"><strong>24/12 · quinta-feira</strong> · véspera de Natal</p>
+          <input type="hidden" name="data" value="24/12 (quinta)">
+        </div>
         <fieldset class="field" data-horario>
           <legend>Horário de retirada</legend>
           <div class="seg seg--3">
