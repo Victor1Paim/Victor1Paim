@@ -234,6 +234,7 @@
     if (e.target.name === 'recebimento') {
       const ent = e.target.value === 'Entrega';
       endereco.hidden = !ent;
+      $('[data-horario]').hidden = ent;
       $('[data-entrega-aviso]').hidden = !ent;
     }
   });
@@ -252,13 +253,15 @@
       nome: f.nome.value.trim().length < 3,
       telefone: f.telefone.value.replace(/\D/g, '').length < 10,
       endereco: f.recebimento.value === 'Entrega' && f.endereco.value.trim().length < 8,
+      horario: f.recebimento.value !== 'Entrega' && !f.horario.value,
     };
     let first = null;
     for (const [k, bad] of Object.entries(errs)) {
       const field = f[k];
-      field.setAttribute('aria-invalid', bad);
+      const el = field instanceof RadioNodeList ? field[0] : field;
+      if (!(field instanceof RadioNodeList)) field.setAttribute('aria-invalid', bad);
       $(`[data-err="${k}"]`).classList.toggle('on', bad);
-      if (bad && !first) first = field;
+      if (bad && !first) first = el;
     }
     if (first) first.focus();
     return !first;
@@ -294,6 +297,7 @@
       `*Recebimento:* ${f.recebimento.value}`,
       ...(entrega ? [`*Endereço:* ${f.endereco.value.trim()}`, '_Por favor, confirmem se entregam neste endereço e o valor da taxa._'] : []),
       `*Data:* ${f.data.value}`,
+      ...(entrega ? [] : [`*Horário de retirada:* ${f.horario.value}`]),
       ...(f.obs.value.trim() ? [`*Observações:* ${f.obs.value.trim()}`] : []),
       '',
       'Aguardo a confirmação da disponibilidade, do valor final e da forma de pagamento. Obrigado!',

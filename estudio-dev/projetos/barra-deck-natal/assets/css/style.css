@@ -22,6 +22,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 140px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
@@ -347,3 +348,4 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .delivery__card address { font-style: normal; color: var(--brown); font-weight: 600; line-height: 1.45; }
 .footer__addr { font-weight: 500 !important; color: var(--muted) !important; text-decoration: none; }
 .footer__addr:hover { color: var(--brown) !important; text-decoration: underline; }
+.seg--3 { grid-template-columns: repeat(3, 1fr); }
