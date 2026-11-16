@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-16 | Barra Deck: acompanhamentos dos principais vindos do cardápio anterior (lombo, maminha, tender, bacalhaus, chester, pernil); preços/pesos/itens de 2026 mantidos | Pedido do usuário; o PDF 2026 dizia "sem acompanhamento" |
 | 2026-11-16 | Barra Deck publicado via Vercel CLI (sem integração GitHub) | Conta Vercel sem conexão GitHub; login por autorização do usuário |
 | 2026-11-16 | Barra Deck: site estático (HTML/CSS/JS, sem build) na Vercel | Página única; deploy e manutenção mais simples |
 | 2026-11-16 | Barra Deck: pedido → WhatsApp (21) 98171-6022, sem pagamento; entrega/taxa sob consulta | Pedido do cliente |

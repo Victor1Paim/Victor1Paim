@@ -30,17 +30,17 @@
       ],
     },
     {
-      id: 'principais', title: 'Principais', note: 'Sem acompanhamento', img: 'principais.webp', alt: 'Chester assado com farofa e laranjas',
+      id: 'principais', title: 'Principais', note: 'Alguns pratos já acompanham guarnição', img: 'principais.webp', alt: 'Chester assado com farofa e laranjas',
       items: [
-        ['lombo', 'Lombo suíno', '1 kg', 125],
-        ['maminha', 'Maminha recheada', '1 kg', 150],
-        ['tender', 'Tender bolinha', 'unidade', 190],
+        ['lombo', 'Lombo suíno', '1 kg', 125, null, 'arroz, farofa e abacaxi'],
+        ['maminha', 'Maminha recheada', '1 kg', 150, null, 'farofa'],
+        ['tender', 'Tender bolinha', 'unidade', 190, null, 'molho de laranja, farofa e decoração'],
         ['escondidinho-carne-seca', 'Escondidinho de carne-seca', '', 240],
         ['escondidinho-camarao', 'Escondidinho de camarão', '', 300],
-        ['bacalhau-desfiado', 'Bacalhau desfiado à portuguesa', '1,3 kg', 275],
-        ['postas-bacalhau', 'Postas de bacalhau dessalgado', '1,3 kg', 300],
-        ['chester', 'Chester', 'unidade', 275],
-        ['pernil', 'Pernil sem osso', '3 kg', 300],
+        ['bacalhau-desfiado', 'Bacalhau desfiado à portuguesa', '1,3 kg', 275, null, 'cuscuz marroquino'],
+        ['postas-bacalhau', 'Postas de bacalhau dessalgado', '1,3 kg', 300, null, 'cuscuz marroquino'],
+        ['chester', 'Chester', 'unidade', 275, null, 'farofa e decoração'],
+        ['pernil', 'Pernil sem osso', '3 kg', 300, null, 'farofa e decoração'],
         ['arroz-polvo', 'Arroz de polvo', 'serve 3 pessoas', 280],
         ['arroz-frutos-mar', 'Arroz de frutos do mar', 'serve 3 pessoas', 320],
         ['arroz-camarao', 'Arroz de camarão', 'serve 3 pessoas', 280],
@@ -80,8 +80,8 @@
   ];
 
   const ITEMS = new Map();
-  MENU.forEach((cat) => cat.items.forEach(([id, name, detail, price, photo]) => {
-    ITEMS.set(id, { id, name, detail, price, photo, cat: cat.title });
+  MENU.forEach((cat) => cat.items.forEach(([id, name, detail, price, photo, acomp]) => {
+    ITEMS.set(id, { id, name, detail, price, photo, acomp, cat: cat.title });
   }));
 
   const $ = (s, r = document) => r.querySelector(s);
@@ -123,12 +123,13 @@
           <figure class="cat__img"><img src="/assets/img/${c.img}" alt="${esc(c.alt)}" loading="lazy" decoding="async"></figure>
         </div>
         <ul class="items">
-          ${c.items.map(([id, name, detail, price, photo]) => `
+          ${c.items.map(([id, name, detail, price, photo, acomp]) => `
             <li class="item" data-item="${id}">
               ${photo ? `<img class="item__ph" src="/assets/img/${photo}-640.webp" alt="" loading="lazy" decoding="async">` : ''}
               <div class="item__txt">
                 <p class="item__name">${esc(name)}</p>
                 ${detail ? `<p class="item__detail">${esc(detail)}</p>` : ''}
+                ${acomp ? `<p class="item__acomp"><span>Acompanha</span> ${esc(acomp)}</p>` : ''}
               </div>
               <p class="item__price">${money(price)}</p>
               <div class="item__ctl" data-ctl="${id}"></div>
@@ -280,6 +281,7 @@
         const it = ITEMS.get(id), q = cart[id];
         const det = it.detail ? ` (${it.detail.split(' · ')[0]})` : '';
         lines.push(`• ${q}x ${it.name}${det} — ${money(it.price * q)}`);
+        if (it.acomp) lines.push(`   _acompanha ${it.acomp}_`);
       });
       lines.push('');
     });

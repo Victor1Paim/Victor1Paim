@@ -351,3 +351,5 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .seg--3 { grid-template-columns: repeat(3, 1fr); }
 .fixed-date { background: #fff; border: 1px solid var(--line-strong); border-radius: 12px; padding: 13px 14px; color: var(--muted); font-size: 15px; }
 .fixed-date strong { color: var(--brown); }
+.item__acomp { font-size: 14px; color: var(--ink); margin-top: 4px; line-height: 1.4; }
+.item__acomp span { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--copper-ink); background: #FBE7D8; border-radius: 999px; padding: 2px 8px; margin-right: 4px; vertical-align: 1px; }
