@@ -364,3 +364,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .faq__item[open] summary::after { transform: rotate(45deg); }
 .faq__item p { color: var(--muted); padding-bottom: 20px; }
 @media (max-width: 959px) { .orb { left: -4%; } }
+.lembrete { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; background: #FFF6EE; border: 1px solid rgba(192, 101, 47, .35); border-radius: 12px; padding: 11px 13px; font-size: 13.5px; line-height: 1.45; color: var(--ink); }
+.lembrete svg { flex: none; color: var(--copper); margin-top: 1px; }
+.lembrete strong { color: var(--brown); }
