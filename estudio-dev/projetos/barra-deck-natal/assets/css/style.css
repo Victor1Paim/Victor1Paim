@@ -227,7 +227,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 160px 160px 18px 18px; box-shadow: var(--shadow); }
 .gallery figcaption { font: italic 500 21px/1.2 var(--serif); color: var(--brown); text-align: center; margin-top: 14px; }
 @media (min-width: 960px) {
-  .gallery__track { grid-auto-flow: initial; grid-template-columns: repeat(5, 1fr); width: min(1180px, 100%); margin-inline: auto; overflow: visible; gap: 24px; }
+  .gallery__track { grid-auto-flow: initial; grid-template-columns: repeat(4, 1fr); width: min(1180px, 100%); margin-inline: auto; overflow: visible; gap: 24px; }
   .gallery figure:nth-child(even) { transform: translateY(36px); }
   .gallery { padding-bottom: 150px; }
 }
