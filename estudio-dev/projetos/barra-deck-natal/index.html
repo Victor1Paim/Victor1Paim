@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=b9de1219">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3509d9fe">
   <link rel="preload" as="image" href="/assets/img/cheesecake-1200.webp" imagesrcset="/assets/img/cheesecake-640.webp 640w, /assets/img/cheesecake-1200.webp 1200w" imagesizes="(min-width: 960px) 40vw, 80vw">
 </head>
 <body>
@@ -199,12 +199,12 @@
       <form class="form" data-form novalidate hidden>
         <h3>Seus dados</h3>
         <label class="field">
-          <span>Nome completo</span>
+          <span>Nome completo <i class="req">obrigatório</i></span>
           <input name="nome" autocomplete="name" required>
           <small class="err" data-err="nome">Informe seu nome.</small>
         </label>
         <label class="field">
-          <span>WhatsApp</span>
+          <span>Telefone / WhatsApp <i class="req">obrigatório</i></span>
           <input name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(21) 90000-0000" required>
           <small class="err" data-err="telefone">Informe um telefone com DDD.</small>
           <p class="lembrete" role="note">
@@ -222,18 +222,23 @@
         <div class="notice" data-entrega-aviso hidden>
           <strong>Entrega sujeita a consulta.</strong> Antes de confirmar, nossa equipe verifica se atendemos o seu endereço e informa a taxa pelo WhatsApp.
         </div>
-        <label class="field" data-endereco hidden>
-          <span>Endereço de entrega</span>
-          <textarea name="endereco" rows="2" autocomplete="street-address"></textarea>
-          <small class="err" data-err="endereco">Informe o endereço para entrega.</small>
-        </label>
+        <fieldset class="field endereco" data-endereco hidden>
+          <legend>Endereço de entrega <i>(opcional, pode completar no WhatsApp)</i></legend>
+          <label class="sub"><span>Rua / Avenida</span><input name="rua" autocomplete="address-line1"></label>
+          <div class="endereco__linha">
+            <label class="sub"><span>Número</span><input name="numero" inputmode="numeric" autocomplete="off"></label>
+            <label class="sub"><span>Complemento</span><input name="complemento" placeholder="Bloco, apto" autocomplete="address-line2"></label>
+          </div>
+          <label class="sub"><span>Bairro</span><input name="bairro" autocomplete="address-level3"></label>
+          <label class="sub"><span>Ponto de referência</span><input name="referencia" placeholder="Ex.: em frente à padaria"></label>
+        </fieldset>
         <div class="field">
           <span>Data</span>
           <p class="fixed-date"><strong>24/12 · quinta-feira</strong> · véspera de Natal</p>
           <input type="hidden" name="data" value="24/12 (quinta)">
         </div>
         <fieldset class="field" data-horario>
-          <legend>Horário de retirada</legend>
+          <legend>Horário de retirada <i>(opcional)</i></legend>
           <div class="seg seg--3">
             <label><input type="radio" name="horario" value="10h"><span>10h</span></label>
             <label><input type="radio" name="horario" value="11h"><span>11h</span></label>
@@ -243,15 +248,14 @@
             <label><input type="radio" name="horario" value="15h"><span>15h</span></label>
           </div>
           <small class="hint">Retiradas entre 10h e 15h.</small>
-          <small class="err" data-err="horario">Escolha um horário de retirada.</small>
         </fieldset>
         <label class="field">
           <span>Observações <i>(opcional)</i></span>
           <textarea name="obs" rows="2" placeholder="Quantas pessoas, alergias, recados"></textarea>
         </label>
-        <button class="btn btn--primary btn--block" type="submit" data-send>
+        <button class="btn btn--whats btn--block" type="submit" data-send>
           <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
-          Enviar meu pré-pedido no WhatsApp
+          Enviar pedido no WhatsApp
         </button>
         <p class="fine">Nenhum pagamento é feito no site. O pedido só fica garantido depois da confirmação da equipe.</p>
       </form>
@@ -282,6 +286,6 @@
    "address":{"@type":"PostalAddress","streetAddress":"Avenida Rachel de Queiroz, s/n (Clube da Aeronáutica da Barra da Tijuca)","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22793-100","addressCountry":"BR"},
    "servesCuisine":"Brasileira","slogan":"Sabor, Hospitalidade e Boa Companhia"}
   </script>
-  <script src="/assets/js/app.js?v=badbfb8c" defer></script>
+  <script src="/assets/js/app.js?v=29f5cf7f" defer></script>
 </body>
 </html>

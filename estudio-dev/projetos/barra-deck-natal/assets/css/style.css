@@ -392,3 +392,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .promo__skip { background: transparent; border: 0; }
 .btn--link { background: transparent; border: 0; }
+
+/* ---------- botão WhatsApp e campos da comanda ---------- */
+.btn--whats { background: #1A9E57; color: #fff; font-size: 17px; white-space: nowrap; box-shadow: 0 12px 26px -14px rgba(26, 158, 87, .9); }
+.btn--whats:hover { background: #178F4F; transform: translateY(-1px); }
+.btn--whats:active { transform: none; }
+.req { font-style: normal; font-weight: 600; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--copper-ink); margin-left: 4px; }
+.endereco { gap: 10px; }
+.endereco legend i { font-weight: 400; }
+.endereco .sub { display: grid; gap: 4px; }
+.endereco .sub > span { font-size: 13px; font-weight: 600; color: var(--muted); }
+.endereco__linha { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; }

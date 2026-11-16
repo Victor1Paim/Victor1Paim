@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-16 | Barra Deck: formulário espelha a comanda de papel (cliente, telefone, recebimento, data, horário, endereço em campos, ponto de referência); só nome e telefone obrigatórios; botão de envio verde WhatsApp #1A9E57 | Pedido do usuário (foto da comanda) |
 | 2026-11-16 | Barra Deck: **seguir exatamente o PDF 2026** (`Ceia_de_Natal_2026_Barra_Deck.pdf`); principais SEM acompanhamento. Revertido o acréscimo do cardápio antigo | Usuário pediu explicitamente |
 | 2026-11-16 | Barra Deck: nova copy ("O fogão é nosso. A noite é sua.", CTA "Montar minha ceia", fechamento "Sabor de casa, capricho de restaurante") + seção Dúvidas | Pesquisa de copy do usuário; só fatos confirmados (sem chefs, kits por pessoa, aquecimento) |
 | 2026-11-16 | Barra Deck: acompanhamentos dos principais vindos do cardápio anterior (lombo, maminha, tender, bacalhaus, chester, pernil); preços/pesos/itens de 2026 mantidos | Pedido do usuário; o PDF 2026 dizia "sem acompanhamento" |

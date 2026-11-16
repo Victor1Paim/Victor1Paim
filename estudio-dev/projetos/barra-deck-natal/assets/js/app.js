@@ -272,8 +272,6 @@
     const errs = {
       nome: f.nome.value.trim().length < 3,
       telefone: f.telefone.value.replace(/\D/g, '').length < 10,
-      endereco: f.recebimento.value === 'Entrega' && f.endereco.value.trim().length < 8,
-      horario: f.recebimento.value !== 'Entrega' && !f.horario.value,
     };
     let first = null;
     for (const [k, bad] of Object.entries(errs)) {
@@ -306,19 +304,35 @@
     const d = new Date();
     const code = `BD-${String(d.getDate()).padStart(2, '0')}${String(d.getMonth() + 1).padStart(2, '0')}-${String(Date.now()).slice(-4)}`;
     const entrega = f.recebimento.value === 'Entrega';
+    const v = (n) => (f[n] && f[n].value ? f[n].value.trim() : '');
+    // mesma ordem da comanda de papel: cliente, telefone, recebimento, data, horário, endereço, pedido
+    const cliente = [
+      `*Cliente:* ${v('nome')}`,
+      `*Telefone:* ${v('telefone')}`,
+      `*Recebimento:* ${entrega ? 'Entrega' : 'Retirada'}`,
+      `*Data:* ${v('data')}`,
+    ];
+    if (!entrega) {
+      cliente.push(`*Horário:* ${v('horario') || 'a combinar (entre 10h e 15h)'}`);
+      cliente.push('*Local:* Clube da Aeronáutica da Barra da Tijuca – Av. Rachel de Queiroz, s/n');
+    } else {
+      const rua = v('rua'), num = v('numero');
+      const linhaRua = [rua, num && `nº ${num}`].filter(Boolean).join(', ');
+      cliente.push(`*Endereço:* ${linhaRua || 'a informar'}`);
+      if (v('complemento')) cliente.push(`*Complemento:* ${v('complemento')}`);
+      if (v('bairro')) cliente.push(`*Bairro:* ${v('bairro')}`);
+      if (v('referencia')) cliente.push(`*Ponto de referência:* ${v('referencia')}`);
+      cliente.push('_Por favor, confirmem se entregam neste endereço e o valor da taxa._');
+    }
     const msg = [
       `Olá, Barra Deck! Segue meu *pré-pedido da Ceia de Natal 2026* (nº ${code}).`,
       '',
+      ...cliente,
+      '',
+      '*Descrição do pedido*',
       ...lines,
       `*Total estimado:* ${money(total())}${entrega ? ' + taxa de entrega' : ''}`,
-      '',
-      `*Nome:* ${f.nome.value.trim()}`,
-      `*WhatsApp:* ${f.telefone.value.trim()}`,
-      `*Recebimento:* ${f.recebimento.value}`,
-      ...(entrega ? [`*Endereço:* ${f.endereco.value.trim()}`, '_Por favor, confirmem se entregam neste endereço e o valor da taxa._'] : []),
-      `*Data:* ${f.data.value}`,
-      ...(entrega ? [] : [`*Horário de retirada:* ${f.horario.value}`]),
-      ...(f.obs.value.trim() ? [`*Observações:* ${f.obs.value.trim()}`] : []),
+      ...(v('obs') ? ['', `*Observações:* ${v('obs')}`] : []),
       '',
       'Aguardo a confirmação da disponibilidade, do valor final e da forma de pagamento. Obrigado!',
     ].join('\n');
