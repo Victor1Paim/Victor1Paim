@@ -16,4 +16,10 @@
 - claude-mem descartado na nuvem; memória fica nesta pasta.
 
 ## Gosto visual
-- (a preencher no primeiro projeto)
+- Design **premium**, com as cores tiradas da logo do cliente.
+- Usar fotos reais do cliente sempre que houver.
+
+## Formato de site de pedidos (padrão aprovado)
+- Carrinho no site **sem pagamento**; o pedido sai organizado para o **WhatsApp** do cliente.
+- Sempre avisar que **endereço de entrega e taxa são sob consulta** pelo WhatsApp.
+- Hospedagem: **Vercel**.
