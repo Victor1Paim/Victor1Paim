@@ -1,5 +1,6 @@
 # Aprendizados
 
+- Quando o usuário manda um cardápio antigo, confirmar antes se é para misturar com o atual. A fonte da verdade do Barra Deck é o PDF 2026.
 - Copy: nunca colocar escassez não confirmada ("se a produção esgotar") nem promessas operacionais (aquecer, travessa, chefs) sem o cliente confirmar.
 - Remotion aqui: o Chrome do render não confia no certificado do proxy → fontes do Google falham. Baixar fontes para `public/` (script) e usar `@remotion/fonts`.
 - Voz: OpenAI `gpt-4o-mini-tts` (proxy já tem a chave) + Whisper `verbose_json` com tempos por palavra para sincronizar cenas. Gemini só existe no `.env` do notebook (branch eagle-english).
