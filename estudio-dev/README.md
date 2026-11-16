@@ -23,6 +23,7 @@ O Claude segue a skill `dev-senior`: briefing curto → plano → build → QA �
 | `humanizer` | Copy com cara de gente |
 | `last30days` | Pesquisa do que o público fala agora |
 | `prompt-de-pesquisa` | Prompts prontos para pesquisar Reddit, X e redes fora daqui |
+| `memoria` | Memória entre sessões em `estudio-dev/memoria/` |
 | `diagram-design` | Diagramas |
 | `superpowers` (brainstorming, writing-plans, …) | Processo de desenvolvimento |
 | `ponytail`, `caveman` | Código enxuto e respostas curtas |
@@ -33,6 +34,7 @@ Lista completa e origem: `.claude/skills/TERCEIROS.md`.
 ```
 estudio-dev/
   README.md
+  memoria/              ← preferências, decisões, projetos, aprendizados
   projetos/
     <slug-do-projeto>/   ← um projeto por pasta, cada um com seu README
 ```

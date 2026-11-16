@@ -14,6 +14,6 @@ atualizar: clonar de novo e copiar a pasta da skill por cima.
 | obra/superpowers | 22f0b46 | brainstorming, writing-plans, executing-plans, test-driven-development, systematic-debugging, verification-before-completion, requesting/receiving-code-review, subagent-driven-development, dispatching-parallel-agents, using-git-worktrees, finishing-a-development-branch, writing-skills, using-superpowers, diagnosing-superpowers |
 | JuliusBrussee/caveman | b4ee71d | caveman e família (atualizadas), lean-build, surgical-patch, safe-refactor, migration, investigate-first, verify-and-stop |
 
-Não instalado: **thedotmack/claude-mem** — é um plugin com serviço em segundo
+Não instalado: **thedotmack/claude-mem** (substituído pela memória em `estudio-dev/memoria/`, skill `memoria`) — é um plugin com serviço em segundo
 plano e hooks, e grava a memória num banco local que se perde quando o
 contêiner da sessão é apagado.

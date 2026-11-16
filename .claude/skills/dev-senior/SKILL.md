@@ -11,6 +11,7 @@ pela metade.
 
 ## Fluxo obrigatório
 
+0. **Memória**: ler `estudio-dev/memoria/` (skill `memoria`); ao terminar, gravar o que mudou.
 1. **Briefing curto** (no máximo 5 perguntas, só o que muda o resultado):
    objetivo/conversão, público, oferta/funcionalidades, referência visual,
    prazo/onde vai rodar. Se o usuário já respondeu, não pergunte de novo.
