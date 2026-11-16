@@ -1,0 +1,37 @@
+# Isabela · teste 01 — "A reforma tributária pode fazer empresas perderem clientes" (2 min 37 s)
+# Roteiro montado a partir da fala gravada (transcrição do Whisper, corrigida).
+# Fontes a conferir: EC 132/2023 e LC 214/2025 (créditos de IBS/CBS; opção do Simples por recolher IBS/CBS
+# no regime regular); LC 123/2006 (Simples Nacional, DAS).
+
+# ela
+A [etiqueta Reforma tributária | amarelo | icone=balanca | topo] reforma tributária pode fazer com que [icone empresa | direita-alto] empresas percam clientes, ainda que, hipoteticamente, não mexam na carga tributária delas. É [zoom] estranho, mas é [carimbo É verdade | vermelho | esquerda-baixo] verdade. Fica aqui pra gente entender como isso funciona.
+
+# dividida lista | Regimes de tributação
+Primeiro, a gente tem que saber quais são os regimes de tributação. A gente tem o [item Simples Nacional | icone=empresa] Simples Nacional, que é um regime simplificado, de forma com que o empresário consiga recolher os impostos em uma [item uma guia só: o DAS | icone=documento] guia só, chamada DAS.
+
+# ela
+Não existe [carimbo DAS não é imposto | vermelho | topo] imposto DAS. O DAS é o nome da [icone documento | direita-baixo] guia.
+
+# motion comparacao | Lucro presumido x Lucro real
+Temos também o lucro presumido, no qual é feita uma [esquerda imposto sobre uma estimativa | icone=grafico] estimativa de quanto aquela empresa lucrou, e o imposto é cobrado em cima dessa estimativa. E o lucro real, no qual a empresa [direita imposto sobre o lucro demonstrado | icone=documento] demonstra efetivamente quanto foi lucrado no mês, no período, e o imposto é cobrado em cima dessa demonstração.
+
+# ela
+Tudo certo até [pergunta | direita-alto] aí? Agora a gente precisa entender o que é o [etiqueta Crédito | verde | topo] crédito. Imagine o crédito como um [etiqueta vale-desconto | laranja | icone=nota | esquerda-baixo] vale-desconto.
+
+# dividida passos | Como o crédito funciona
+As empresas vão vendendo os produtos, e essas [item cada venda carrega imposto | icone=sacola] vendas são carregadas com os impostos, certo? Cada imposto cobrado em cada operação [item o imposto vira crédito | icone=nota] gera um crédito a ser [item o comprador abate lá na frente | icone=carteira] abatido lá na frente com o comprador, pra não haver uma tributação em cima de tributação.
+
+# motion passos | Exemplo: o bolo no supermercado | icone=loja
+Vamos imaginar agora um supermercado. O supermercado tem vários fornecedores de bolo. Esses fornecedores compram os [item compram os insumos | icone=sacola] insumos, [item produzem o bolo | icone=cafe] produzem o bolo e vendem ao supermercado. Na venda ao supermercado, eles vendem o bolo com o [item vendem com o vale-desconto | icone=nota] vale-desconto pra abater o imposto das operações anteriores.
+
+# ela
+É aqui que a [zoom] reforma pode mudar a situação. Em alguns regimes de tributação, esse vale-desconto pode ser [icone alerta | direita-alto] alterado. A reforma trouxe [etiqueta novas regras | azul | esquerda-alto] novas regras pra aplicabilidade desse desconto. E é aqui que o [etiqueta Simples Nacional | laranja | icone=empresa | topo] Simples pode ser prejudicado. Vejam, disse pode.
+
+# motion mito | O Simples não vai gerar crédito
+Não quer dizer que o Simples não vai gerar [destaque Não é bem assim] crédito. Quer dizer que [item gera, mas com novas regras | icone=documento] novas regras foram instituídas pra criação desse crédito.
+
+# dividida lista | Antes de decidir
+Não se desespere, não precisa sair do Simples agora pra ontem. Calma. Você precisa fazer [item faça os cálculos | icone=grafico] cálculos, senta com o seu [item fale com contador e advogado | icone=livro] contador e com o seu advogado, vejam todos os [item compare os cenários | icone=balanca] cenários e optem pelo que mais beneficia a sua operação. Porque as regras afetam de forma diferente.
+
+# ela
+No [etiqueta próximo vídeo | amarelo | icone=calendario | topo] próximo vídeo, eu vou explicar como essa regra pode ser afetada no regime híbrido do Simples Nacional e no regime normal do Simples Nacional. E aí, com esses detalhes, vocês vão poder tomar uma [icone check | direita-alto] decisão mais acertada. Tá bom? Até [icone marcador | esquerda-baixo] mais!

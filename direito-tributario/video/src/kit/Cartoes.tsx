@@ -55,7 +55,7 @@ const Destaque: React.FC<{it?: ItemCartao; k: number; cor?: string}> = ({it, k, 
     <div style={{display: 'flex', justifyContent: 'center', margin: `${20 * k}px 0`}}>
       <div style={{position: 'relative', transform: `scale(${p})`}}>
         <div style={{position: 'absolute', left: -20, right: -20, bottom: 26 * k, height: 50 * k, background: cor, opacity: 0.8, borderRadius: 12}} />
-        <Escrito tam={130 * k} style={{position: 'relative'}}>{it.texto}</Escrito>
+        <Escrito tam={130 * k * Math.min(1, 9 / Math.max(1, (it.texto ?? '').length))} style={{position: 'relative'}}>{it.texto}</Escrito>
       </div>
     </div>
   );
@@ -142,7 +142,7 @@ const Mito: React.FC<{tr: Trecho; k: number}> = ({tr, k}) => {
       {d && f >= Math.round(d.ini * FPS) && (
         <div style={{marginTop: 30 * k, border: `${10 * k}px solid ${c}`, borderRadius: 20, padding: `${10 * k}px ${40 * k}px 0`,
           transform: `rotate(-8deg) scale(${2 - p})`, opacity: Math.min(1, p * 1.5), background: 'rgba(251,248,241,0.85)'}}>
-          <Escrito tam={130 * k} cor={c}>{d.texto}</Escrito>
+          <Escrito tam={130 * k * Math.min(1, 7 / Math.max(1, (d.texto ?? '').length))} cor={c} style={{whiteSpace: 'nowrap'}}>{d.texto}</Escrito>
         </div>
       )}
       <div style={{width: '100%', marginTop: 16 * k}}>{tr.itens.filter((i) => i.tipo === 'item').map((it, n) => <Linha key={n} it={it} k={k * 0.85} n={n} />)}</div>
