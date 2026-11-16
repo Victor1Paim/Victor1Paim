@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-16 | Barra Deck publicado via Vercel CLI (sem integração GitHub) | Conta Vercel sem conexão GitHub; login por autorização do usuário |
 | 2026-11-16 | Barra Deck: site estático (HTML/CSS/JS, sem build) na Vercel | Página única; deploy e manutenção mais simples |
 | 2026-11-16 | Barra Deck: pedido → WhatsApp (21) 98171-6022, sem pagamento; entrega/taxa sob consulta | Pedido do cliente |
 | 2026-11-16 | Memória em `estudio-dev/memoria/` em vez do claude-mem | claude-mem guarda em `~/.claude-mem`, apagado ao fim da sessão na nuvem; exige conta |

@@ -17,6 +17,14 @@ npx serve .
 ```
 
 ## Publicar na Vercel
-1. vercel.com → Add New → Project → importar o repositório `Victor1Paim/Victor1Paim`.
-2. **Root Directory**: `estudio-dev/projetos/barra-deck-natal` · Framework: **Other** · sem build.
-3. Production Branch: `estudio-dev` (Settings → Git) ou fazer merge na branch principal.
+No ar: **https://barra-deck-natal.vercel.app** (projeto `barra-deck-natal`, conta Vercel do Victor).
+
+Para atualizar depois de editar (dentro desta pasta):
+```bash
+npx vercel login
+```
+```bash
+npx vercel deploy --prod --yes
+```
+O login é por link de autorização (device code) e se perde quando a sessão na nuvem acaba.
+`.vercelignore` impede que `.env*` e `.vercel` sejam publicados.
