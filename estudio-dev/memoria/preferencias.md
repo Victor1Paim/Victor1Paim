@@ -1,5 +1,9 @@
 # Preferências
 
+## Barra Deck — dados fixos
+- Endereço: No Clube da Aeronáutica · Av. Rachel de Queiroz, s/n – Barra da Tijuca, Rio de Janeiro – RJ (sem CEP visível no site).
+- WhatsApp (21) 98171-6022 · site https://barradeck.vercel.app
+
 ## Trabalho
 - Idioma: português do Brasil, linguagem simples, direto ao ponto.
 - Quer o Claude como **dev sênior**: decide, constrói e entrega funcionando.
