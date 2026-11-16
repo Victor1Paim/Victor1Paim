@@ -11,6 +11,10 @@ Site estático de pré-pedido. O cliente monta o carrinho e o pedido é enviado
 
 Depois de 10/12/2026 23:59 o site mostra "Encomendas encerradas" e esconde os botões.
 
+## Cardápio em PDF e QR code
+- PDF para download: `cardapio-ceia-natal-2026-barra-deck.pdf` (links no menu, no cardápio e no rodapé). Para trocar, substitua o arquivo mantendo o nome.
+- QR code e cartões para impressão: `impressos/` (gerados por `impressos/gerar_qr.py`; a pasta não é publicada).
+
 ## Depois de editar CSS ou JS
 Atualize o `?v=` de `style.css` e `app.js` no `index.html` (qualquer valor novo). Sem isso, quem já visitou o site pode continuar vendo a versão antiga.
 
