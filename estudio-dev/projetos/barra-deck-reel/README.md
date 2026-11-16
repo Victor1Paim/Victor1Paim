@@ -1,11 +1,15 @@
 # Barra Deck · Reel Ceia de Natal 2026
 
-Vídeo vertical 1080×1920, 24 s, 30 fps, narração em pt-BR. Cores e fontes da marca.
+Vídeo vertical 1080×1920, 26,5 s, 30 fps. Motion graphics (sem fotos de produto), fundos gerados por IA,
+narração masculina estilo apresentador (OpenAI `gpt-4o-mini-tts`, voz *ash*, acelerada 1,1×). Cores e fontes da marca.
 
 | Arquivo | O quê |
 |---|---|
 | `src/Reel.tsx` | cenas, tempos e textos (tempos amarrados à narração em `t()`) |
-| `scripts/narracao.py` | gera a voz (OpenAI `gpt-4o-mini-tts`, voz *coral*) e os tempos por palavra (Whisper) |
+| `scripts/vozes_teste.py` | gera a narração em vozes masculinas (ash, onyx, echo) para escolher |
+| `scripts/narracao.py` | função de transcrição (Whisper) com tempos por palavra |
+| `scripts/gerar_fundos.py` | gera os 5 fundos de motion graphics (OpenAI `gpt-image-2`) |
+| `custos.jsonl` | registro de uso das gerações de imagem |
 | `scripts/baixar_fontes.py` | baixa Cormorant Garamond e Karla para `public/fontes` |
 | `legenda.md` | legenda e hashtags para o post |
 
@@ -23,4 +27,4 @@ ffmpeg -i out/barra-deck-natal-reel.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA
 
 Música: adicionar pelo próprio Instagram (biblioteca licenciada), volume baixo sob a narração.
 
-Custo de API desta versão (estimado): TTS ~US$ 0,005 + Whisper ~US$ 0,002 ≈ **US$ 0,01 (≈ R$ 0,06)**.
+Custo de API (estimado): v1 ≈ US$ 0,01 · v2: 5 fundos ≈ US$ 0,27 + 3 vozes ≈ US$ 0,02 + Whisper ≈ US$ 0,003 → **≈ US$ 0,30 (≈ R$ 1,70)**.

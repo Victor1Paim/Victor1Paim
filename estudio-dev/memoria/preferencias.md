@@ -17,6 +17,7 @@
 
 ## Gosto visual
 - Design **premium**, com as cores tiradas da logo do cliente.
+- Vídeos: motion graphics dinâmico, **sem fotos de produto**; fundos gerados por IA na paleta; voz masculina estilo apresentador (TTS feminina "coral" soou robótica).
 - Usar fotos reais do cliente sempre que houver.
 
 ## Formato de site de pedidos (padrão aprovado)
