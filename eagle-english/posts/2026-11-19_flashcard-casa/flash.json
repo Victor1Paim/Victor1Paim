@@ -1,0 +1,132 @@
+{
+ "audio_pergunta": "q_en",
+ "audio_respostas": "respostas_en",
+ "audio_traducoes": "traducoes_pt",
+ "segundos_contagem": 0.7,
+ "fundo_cta": "img/sala.png",
+ "itens": [
+  {
+   "img": "img/door.png",
+   "en": "Door",
+   "pron": "/DÓR/",
+   "pt": "Porta"
+  },
+  {
+   "img": "img/table.png",
+   "en": "Table",
+   "pron": "/TÊI-bol/",
+   "pt": "Mesa"
+  },
+  {
+   "img": "img/sofa.png",
+   "en": "Sofa",
+   "pron": "/SÔU-fa/",
+   "pt": "Sofá"
+  },
+  {
+   "img": "img/pillow.png",
+   "en": "Pillow",
+   "pron": "/PÍ-lôu/",
+   "pt": "Travesseiro"
+  },
+  {
+   "img": "img/fridge.png",
+   "en": "Fridge",
+   "pron": "/FRÍDJ/",
+   "pt": "Geladeira"
+  },
+  {
+   "img": "img/fork.png",
+   "en": "Fork",
+   "pron": "/FÓRK/",
+   "pt": "Garfo"
+  },
+  {
+   "img": "img/towel.png",
+   "en": "Towel",
+   "pron": "/TÁU-el/",
+   "pt": "Toalha"
+  },
+  {
+   "img": "img/remote.png",
+   "en": "Remote control",
+   "pron": "/ri-MÔUT kon-TRÔUL/",
+   "pt": "Controle remoto"
+  }
+ ],
+ "cta": {
+  "audio": "cta",
+  "segundos_placar": 3.5,
+  "sub_placar": "Comenta seu placar 👇",
+  "telas": [
+   [
+    "*35 situações* do dia a dia",
+    "sumario-ebook"
+   ],
+   {
+    "tipo": "kit",
+    "tag": "Ebook + *4 bônus*",
+    "capas": [
+     "capa-guia",
+     "capa-cards",
+     "capa-ebook",
+     "capa-500",
+     "capa-verbos"
+    ],
+    "itens": [
+     "*350 mapas* · 2.100 frases",
+     "Guia de 21 Dias · *15 min/dia*",
+     "20 Cards de Gramática",
+     "500 Frases · 100 Verbos"
+    ]
+   },
+   {
+    "tipo": "preco",
+    "tag": "Pagamento *único*",
+    "de": "R$ 123,70",
+    "por": "R$ 19,90",
+    "chips": [
+     "PDF no seu e-mail",
+     "Garantia de 7 dias",
+     "Celular, tablet ou impresso"
+    ],
+    "prazo": "Oferta até 25/12"
+   }
+  ]
+ },
+ "selo": "QUIZ DA CASA 🏠",
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/sala.png",
+  "selo": "Desafio 🧠",
+  "titulo": "Objetos de casa\nem *inglês* 🏠",
+  "sub": "<b>8 objetos</b> · 3 segundos cada",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": [
+   {
+    "img": "img/door.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/sofa.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/fridge.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/fork.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/towel.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/remote.png",
+    "txt": "?"
+   }
+  ]
+ }
+}

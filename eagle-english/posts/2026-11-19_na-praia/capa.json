@@ -1,0 +1,11 @@
+{
+ "fundo": "img/f21.png",
+ "selo": "5 frases",
+ "titulo": "Inglês na\n*praia* 🏝️",
+ "sub": "Do guarda-sol ao <b>paraíso</b>",
+ "balao": {
+  "en": "This is paradise!",
+  "pron": "/THIS iz PÉ-ra-dáis/",
+  "lado": "dir"
+ }
+}

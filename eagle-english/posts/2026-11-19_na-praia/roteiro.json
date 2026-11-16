@@ -1,0 +1,109 @@
+{
+ "fundo": "img/f2.png",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 15,
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/f2.png",
+  "selo": "Missão: praia 🏝️",
+  "titulo": "Um dia de\n*praia* lá fora",
+  "sub": "<b>5 frases</b> · em inglês",
+  "desafio": "Ela consegue? 👀",
+  "figuras": []
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "Can I rent an umbrella?",
+   "pron": "/kén ái RÉNT an âm-BRÉ-la/",
+   "pt": "Posso alugar um guarda-sol?",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "How much for two chairs?",
+   "pron": "/HÁU MÂTCH for TÚ TCHÉRZ/",
+   "pt": "Quanto custam duas cadeiras?",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Mas aí… o sol tá\nforte demais! 🥵",
+   "audio": [
+    "virada"
+   ]
+  },
+  {
+   "tipo": "frase",
+   "en": "Do you have sunscreen?",
+   "pron": "/du iú HÉV SÂN-skríin/",
+   "pt": "Você tem protetor solar?",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "Is the water cold?",
+   "pron": "/iz the UÓ-ter KÔULD/",
+   "pt": "A água está fria?",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt"
+  },
+  {
+   "tipo": "frase",
+   "en": "This is paradise!",
+   "pron": "/THIS iz PÉ-ra-dáis/",
+   "pt": "Isso é o paraíso!",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Dia perfeito! 🏝️\nManda pra quem vai\nviajar com você 📲",
+   "audio": [
+    "fecho"
+   ]
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

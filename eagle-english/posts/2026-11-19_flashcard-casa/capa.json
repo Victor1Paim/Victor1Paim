@@ -1,0 +1,24 @@
+{
+ "fundo": "img/sala.png",
+ "selo": "Teste rápido",
+ "titulo": "Objetos de casa\nem *inglês* 🏠",
+ "sub": "<b>8 objetos</b> · quantos você acerta?",
+ "figuras": [
+  {
+   "img": "img/sofa.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/fridge.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/towel.png",
+   "txt": "?"
+  },
+  {
+   "img": "img/remote.png",
+   "txt": "?"
+  }
+ ]
+}

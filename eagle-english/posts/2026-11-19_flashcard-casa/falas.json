@@ -1,0 +1,36 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Desafio! Oito objetos da sua casa, três segundos cada. Fala o nome em inglês antes de mim!"
+  },
+  {
+   "id": "q_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What is this called?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Door...\n\nTable...\n\nSofa...\n\nPillow...\n\nFridge...\n\nFork...\n\nTowel...\n\nRemote control."
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Porta...\n\nMesa...\n\nSofá...\n\nTravesseiro...\n\nGeladeira...\n\nGarfo...\n\nToalha...\n\nControle remoto."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

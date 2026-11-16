@@ -1,0 +1,84 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "A águia foi pra praia lá fora e quer o dia perfeito. Será que ela consegue?"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Can I rent an umbrella?"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Posso alugar um guarda-sol?"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "How much for two chairs?"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Quanto custam duas cadeiras?"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Mas aí… o sol tá forte demais!"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Do you have sunscreen?"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Você tem protetor solar?"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Is the water cold?"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "A água está fria?"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "This is paradise!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Isso é o paraíso!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Ela queria um dia perfeito… e conseguiu! Manda pra quem vai viajar com você."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
