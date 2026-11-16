@@ -17,7 +17,7 @@ npx serve .
 ```
 
 ## Publicar na Vercel
-No ar: **https://barra-deck-natal.vercel.app** (projeto `barra-deck-natal`, conta Vercel do Victor).
+No ar: **https://barradeck.vercel.app** (endereço antigo barra-deck-natal.vercel.app continua funcionando; projeto `barra-deck-natal`, conta Vercel do Victor).
 
 Para atualizar depois de editar (dentro desta pasta):
 ```bash
