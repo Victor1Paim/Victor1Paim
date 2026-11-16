@@ -353,3 +353,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .fixed-date strong { color: var(--brown); }
 .item__acomp { font-size: 14px; color: var(--ink); margin-top: 4px; line-height: 1.4; }
 .item__acomp span { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--copper-ink); background: #FBE7D8; border-radius: 999px; padding: 2px 8px; margin-right: 4px; vertical-align: 1px; }
+
+/* ---------- dúvidas ---------- */
+.faq { padding-block: clamp(72px, 10vw, 110px); background: var(--paper); border-top: 1px solid var(--line); }
+.faq__list { max-width: 760px; margin: 44px auto 0; display: grid; gap: 12px; }
+.faq__item { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; }
+.faq__item summary { list-style: none; cursor: pointer; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font: 600 22px/1.2 var(--serif); color: var(--brown); }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: '+'; font: 400 26px/1 var(--sans); color: var(--copper); transition: transform .25s var(--ease); }
+.faq__item[open] summary::after { transform: rotate(45deg); }
+.faq__item p { color: var(--muted); padding-bottom: 20px; }

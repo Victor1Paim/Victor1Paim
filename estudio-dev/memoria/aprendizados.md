@@ -1,5 +1,6 @@
 # Aprendizados
 
+- Copy: nunca colocar escassez não confirmada ("se a produção esgotar") nem promessas operacionais (aquecer, travessa, chefs) sem o cliente confirmar.
 - Remotion aqui: o Chrome do render não confia no certificado do proxy → fontes do Google falham. Baixar fontes para `public/` (script) e usar `@remotion/fonts`.
 - Voz: OpenAI `gpt-4o-mini-tts` (proxy já tem a chave) + Whisper `verbose_json` com tempos por palavra para sincronizar cenas. Gemini só existe no `.env` do notebook (branch eagle-english).
 - Fotos recortadas do PDF são de baixa resolução: em vídeo, usar dentro de moldura com fundo desfocado, nunca em tela cheia.
