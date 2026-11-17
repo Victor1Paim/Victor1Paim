@@ -14,7 +14,7 @@ EST=("Leia em português do Brasil, com sotaque carioca natural, como "+("um loc
 bruto=f'{D}/voz_{voz}.wav'
 import whisper
 m=whisper.load_model("turbo")
-for tent in range(4):
+for tent in range(5):
     body={"contents":[{"parts":[{"text":EST+" ".join(SEG)}]}],"generationConfig":{"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voz}}}}}
     req=urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-preview-tts:generateContent",data=json.dumps(body).encode(),headers={"x-goog-api-key":chave(),"Content-Type":"application/json"})
     for k in range(4):
@@ -26,7 +26,7 @@ for tent in range(4):
     W=[(w['start'],w['end'],w['word']) for s in r['segments'] for w in s['words']]
     print('whisper:',r['text'].strip(),flush=True)
     txt=r['text'].lower()
-    ok=('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt)
+    ok=('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt) and not any(x in txt for x in ('dinâmico','ritmo','entonação','reticências','bill')) and txt.strip().startswith('ceia')
     print('tentativa',tent+1,'conteúdo ok' if ok else 'ERRO de conteúdo',flush=True)
     if ok: break
 norm=lambda s: unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode().strip(' .,!?…')
