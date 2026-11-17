@@ -6,28 +6,36 @@ D='/home/user/Victor1Paim/barra-deck'; voz=sys.argv[1]; g=sys.argv[2]
 SEG=["Ceia de Natal do Barra Déqui!","O fogão é nosso. A noite é sua!","Tem entradas deliciosas…","quiches…",
      "pratos principais que deixam sua mesa completa…","acompanhamentos…","e sobremesas… e muitas outras opções!",
      "Encomendas até dez de dezembro. Retirada dia vinte e quatro, das dez às quinze horas.","Monte sua ceia pelo link que tá na bio!"]
-ANC=[("ceia",0),("fogao",1),("tem",0),("quiches",0),("pratos",0),("acompanhamentos",0),("sobremesas",1),("encomendas",0),("monte",0)]
+ANC=[("ceia",0),(("fogao","foga","nosso"),None),("tem",0),("quiches",0),("pratos",0),("acompanhamentos",0),("sobremesas",1),("encomendas",0),("monte",0)]
 CENA=[0,3.37,7.57,9.73,12.13,14.53,16.93,19.57,24.57,30.0]
 EST=("Leia em português do Brasil, com sotaque carioca natural, como "+("um locutor" if g=="m" else "uma locutora")+
  " de comercial de Natal para Reels: MUITO dinâmico e empolgado, ritmo rápido e cheio de energia, sorriso na voz, entonação variada, "
  "valorizando as palavras importantes, pausas bem curtas nas reticências, como quem convida um amigo para a melhor ceia do ano. Texto: ")
 bruto=f'{D}/voz_{voz}.wav'
-body={"contents":[{"parts":[{"text":EST+" ".join(SEG)}]}],"generationConfig":{"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voz}}}}}
-req=urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-preview-tts:generateContent",data=json.dumps(body).encode(),headers={"x-goog-api-key":chave(),"Content-Type":"application/json"})
-for k in range(4):
-    try: d=pedir(req); break
-    except Exception as e: print(' erro',e,flush=True); time.sleep(15)
-u=d.get("usageMetadata",{}); registrar(D,"gemini-2.5-pro-preview-tts","voz",entrada_texto=u.get("promptTokenCount",0),saida_audio=u.get("candidatesTokenCount",0))
-_gravar(tirar_estalo(base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])),bruto)
 import whisper
-m=whisper.load_model("turbo"); r=m.transcribe(bruto,language='pt',word_timestamps=True)
-W=[(w['start'],w['end'],w['word']) for s in r['segments'] for w in s['words']]
-print('whisper:',r['text'].strip(),flush=True)
+m=whisper.load_model("turbo")
+for tent in range(4):
+    body={"contents":[{"parts":[{"text":EST+" ".join(SEG)}]}],"generationConfig":{"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voz}}}}}
+    req=urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-preview-tts:generateContent",data=json.dumps(body).encode(),headers={"x-goog-api-key":chave(),"Content-Type":"application/json"})
+    for k in range(4):
+        try: d=pedir(req); break
+        except Exception as e: print(' erro',e,flush=True); time.sleep(15)
+    u=d.get("usageMetadata",{}); registrar(D,"gemini-2.5-pro-preview-tts","voz",entrada_texto=u.get("promptTokenCount",0),saida_audio=u.get("candidatesTokenCount",0))
+    _gravar(tirar_estalo(base64.b64decode(d["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])),bruto)
+    r=m.transcribe(bruto,language='pt',word_timestamps=True)
+    W=[(w['start'],w['end'],w['word']) for s in r['segments'] for w in s['words']]
+    print('whisper:',r['text'].strip(),flush=True)
+    txt=r['text'].lower()
+    ok=('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt)
+    print('tentativa',tent+1,'conteúdo ok' if ok else 'ERRO de conteúdo',flush=True)
+    if ok: break
 norm=lambda s: unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode().strip(' .,!?…')
 cortes=[];j=0
 for a,back in ANC:
-    while j<len(W) and a not in norm(W[j][2]): j+=1
+    alts=a if isinstance(a,tuple) else (a,)
+    while j<len(W) and not any(x in norm(W[j][2]) for x in alts): j+=1
     if j>=len(W): sys.exit(f'âncora não achada: {a}')
+    if back is None: back=0 if norm(W[j][2]).startswith('o') and len(norm(W[j][2]))<3 else (2 if 'nosso' in norm(W[j][2]) else 1)
     i=j-back; ini=W[i][0]; fimprev=W[i-1][1] if i>0 else 0.0
     cortes.append(max(0.0,(fimprev+ini)/2) if i>0 else 0.0); j+=1
 dur=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',bruto],capture_output=True,text=True).stdout)
