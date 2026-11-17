@@ -30,7 +30,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | sex 20/11 | 12h | Despedidas 👋 | Repita | Contradição | "Vai sair? Repete estas despedidas comigo." | salvar | ✅ |
 | sex 20/11 | 19h | Hora do lanche 🥪 | Lista com emoji | Problema | "Quer um lanche? Treine como pedir em inglês." | comentar palavra | ✅ |
 | sáb 21/11 | 12h | Passeio no parque 🌳 | Repita | Jornada | "Um passeio no parque, uma frase por vez." | enviar | ✅ |
-| sáb 21/11 | 19h | Grande ou pequeno? 📦 | Qual você usa? | Escolha | "Grande ou pequeno? Escolha a palavra para esta imagem." | comentar A/B | 🧩 |
+| sáb 21/11 | 19h | Grande ou pequeno? 📦 | Qual você usa? | Escolha | "Grande ou pequeno? Escolha a palavra para esta imagem." | comentar A/B | ✅ |
 | dom 22/11 | 12h | Tomando sorvete 🍦 | Repita | Jornada | "Você sabe pedir sorvete em inglês?" | salvar | 🎬 |
 | dom 22/11 | 19h | Prova de inglês: comidas 🍽️ | Prova | Escolha | "Quais destas comidas você conhece em inglês?" | placar | 🧩 |
 | seg 23/11 | 12h | Bateu o cansaço 😴 | Repita | Contradição | "Bateu o cansaço? Vamos dizer isso em inglês." | salvar | 🎬 |
