@@ -186,11 +186,15 @@ AMOSTRA DO CHAT:
 
 Regras: NÃO invente contexto que não está na transcrição ou no chat. Se não houver fala clara, só aprove se o chat
 mostrar claramente uma reação forte a algo visual, e diga isso no motivo. Na dúvida, reprove (vale=false).
+GANCHO (texto grande na tela nos 3 primeiros segundos): NÃO copie palavras da fala. Resuma o que acontece de forma
+chamativa e curiosa, em MAIÚSCULAS, 2 linhas de até 16 letras cada, usando o nome do streamer quando ajudar.
+Exemplos de estilo: ["ALANZOKA NÃO", "ACREDITOU"], ["ELE FOI ATÉ", "O LIMITE"], ["O CHAT", "PERDEU A LINHA"].
+"destaque" é UMA palavra do gancho que vai em amarelo.
 Decida se vale um corte. Um bom corte tem gancho nos primeiros 3s, se entende sozinho e termina numa reação/fecho.
 Escolha início e fim (entre 45 e 90 segundos, dentro da janela) começando um pouco antes do que gerou a reação.
 Responda SOMENTE JSON:
 {{"vale": true/false, "nota": 0-10, "motivo": "...", "inicio": s, "fim": s,
- "gancho": ["LINHA 1 (até 16 letras)", "LINHA 2 (até 16 letras)"], "destaque": "palavra do gancho em amarelo",
+ "gancho": ["LINHA 1", "LINHA 2"], "destaque": "palavra do gancho em amarelo",
  "titulo": "frase curta do que aconteceu", "destaques": ["5 a 8 palavras-chave faladas"],
  "tiktok": "legenda TikTok/Reels com 1 emoji, pergunta para comentar e 4 hashtags", "shorts_titulo": "até 60 caracteres com #shorts",
  "instagram": "legenda Instagram de 2-3 linhas com hashtags"}}"""
