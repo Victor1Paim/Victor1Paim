@@ -19,6 +19,7 @@ RAIZ = os.path.dirname(AQUI)
 MODELO = os.path.join(RAIZ, 'modelo')
 CANAL = sys.argv[1].lower()
 TESTE = '--teste' in sys.argv
+UM_SO = '--um' in sys.argv   # para depois do primeiro corte entregue
 TRAB = os.path.join(AQUI, 'trabalho', CANAL)
 SEG = os.path.join(TRAB, 'segmentos')
 SAIDA = os.path.join(AQUI, 'saida', CANAL)
@@ -196,8 +197,8 @@ Responda SOMENTE JSON:
 {{"vale": true/false, "nota": 0-10, "motivo": "...", "inicio": s, "fim": s,
  "gancho": ["LINHA 1", "LINHA 2"], "destaque": "palavra do gancho em amarelo",
  "titulo": "frase curta do que aconteceu", "destaques": ["5 a 8 palavras-chave faladas"],
- "tiktok": "legenda TikTok/Reels com 1 emoji, pergunta para comentar e 4 hashtags", "shorts_titulo": "até 60 caracteres com #shorts",
- "instagram": "legenda Instagram de 2-3 linhas com hashtags"}}"""
+ "tiktok": "legenda TikTok/Reels com 1 emoji, pergunta para comentar e 4 hashtags (sempre #{CANAL} e o jogo/assunto)", "shorts_titulo": "até 60 caracteres com #shorts",
+ "instagram": "legenda Instagram de 2-3 linhas com hashtags (sempre #{CANAL})"}}"""
     resp = openai('chat/completions', {'model': 'gpt-5.4-mini', 'messages': [{'role': 'user', 'content': prompt}],
                                        'response_format': {'type': 'json_object'}})
     dec = json.loads(resp['choices'][0]['message']['content'])
@@ -257,6 +258,8 @@ def montar(pasta, janela, tr, dec, ini, fim):
         try: os.remove(os.path.join(pasta, f))
         except FileNotFoundError: pass
     log('NOVO_CORTE', pasta)
+    if UM_SO:
+        log('modo --um: encerrando'); os._exit(0)
 
 
 def trabalhador():
