@@ -1,0 +1,11 @@
+{
+ "fundo": "img/rua.png",
+ "selo": "6 despedidas",
+ "titulo": "Good night\npra *chegar*? ❌",
+ "sub": "Em inglês é <b>despedida</b>!",
+ "balao": {
+  "en": "Good evening!",
+  "pron": "/gud ÍIV-nin/",
+  "lado": "dir"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "fundo": "img/cafe.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/rua.png",
+  "selo": "Cuidado com o good night",
+  "titulo": "Good night\npra *chegar*? ❌",
+  "sub": "<b>6 despedidas</b> em inglês",
+  "desafio": "Você erra essa? 👀",
+  "figuras": [
+   {
+    "img": "img/cafe.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/escritorio.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/porta.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/sala.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "Bye!",
+   "pron": "/BÁI/",
+   "pt": "Tchau!",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/cafe.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "See you later!",
+   "pron": "/SÍI iú LÊI-ter/",
+   "pt": "Até mais!",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/cafe.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "See you tomorrow!",
+   "pron": "/SÍI iú tu-MÓ-rôu/",
+   "pt": "Até amanhã!",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/escritorio.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Have a nice day!",
+   "pron": "/HÉV a NÁIS DÊI/",
+   "pt": "Tenha um bom dia!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/porta.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "E se você chega\nà noite? 🌙",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/rua.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Good evening!",
+   "pron": "/gud ÍIV-nin/",
+   "pt": "Boa noite! (pra chegar)",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/rua.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Good night!",
+   "pron": "/gud NÁIT/",
+   "pt": "Boa noite! (pra ir embora)",
+   "audio_en": "f6_en",
+   "audio_pt": "f6_pt",
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Chegou? Good evening 👋\nFoi embora? Good night 🌙",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/sala.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/escritorio.png",
+   "telas": [
+    [
+     "*35 situações* do dia a dia",
+     "sumario-ebook"
+    ],
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

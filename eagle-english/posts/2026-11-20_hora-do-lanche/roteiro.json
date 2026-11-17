@@ -1,0 +1,130 @@
+{
+ "fundo": "img/lanchonete.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.0,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/lanchonete.png",
+  "selo": "Hora do lanche 🥪",
+  "titulo": "O cardápio é\ntodo em *inglês*",
+  "sub": "<b>6 lanches</b> · sabe pedir?",
+  "desafio": "Quantos você conhece? 👀",
+  "figuras": []
+ },
+ "beats": [
+  {
+   "tipo": "item",
+   "emoji": "🥪",
+   "en": "Sandwich",
+   "pron": "/SÉND-uitch/",
+   "pt": "sanduíche",
+   "audio_en": "i1_en",
+   "audio_pt": "i1_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🧃",
+   "en": "Juice",
+   "pron": "/DJÚUS/",
+   "pt": "suco",
+   "audio_en": "i2_en",
+   "audio_pt": "i2_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🍪",
+   "en": "Cookie",
+   "pron": "/KÚ-ki/",
+   "pt": "biscoito",
+   "audio_en": "i3_en",
+   "audio_pt": "i3_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🧁",
+   "en": "Muffin",
+   "pron": "/MÂ-fin/",
+   "pt": "bolinho",
+   "audio_en": "i4_en",
+   "audio_pt": "i4_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "E aquele que todo\nbrasileiro procura? 😋",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🧀",
+   "en": "Cheese bread",
+   "pron": "/TCHÍIZ BRÉD/",
+   "pt": "pão de queijo",
+   "audio_en": "i5_en",
+   "audio_pt": "i5_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "item",
+   "emoji": "🍿",
+   "en": "Popcorn",
+   "pron": "/PÓP-kórn/",
+   "pt": "pipoca",
+   "audio_en": "i6_en",
+   "audio_pt": "i6_pt",
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "lista_fim",
+   "texto": "Lanche resolvido ✅\nQual você não sabia? 👇",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/lanchonete.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/lanchonete.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

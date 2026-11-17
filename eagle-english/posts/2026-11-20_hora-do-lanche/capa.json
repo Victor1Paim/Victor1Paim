@@ -1,0 +1,11 @@
+{
+ "fundo": "img/lanchonete.png",
+ "selo": "6 lanches",
+ "titulo": "Hora do lanche\nem *inglês* 🥪",
+ "sub": "Inclusive o <b>pão de queijo</b>!",
+ "balao": {
+  "en": "Cheese bread, please!",
+  "pron": "/TCHÍIZ BRÉD, PLÍIZ/",
+  "lado": "dir"
+ }
+}

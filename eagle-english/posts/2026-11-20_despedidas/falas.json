@@ -1,0 +1,95 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Você fala boa noite quando chega? Em inglês, cuidado: o boa noite de chegar é outro!"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Bye!"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Tchau!"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "See you later!"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Até mais!"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "See you tomorrow!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Até amanhã!"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Have a nice day!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Tenha um bom dia!"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "E se você chega à noite?"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Good evening!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Boa noite! Pra chegar."
+  },
+  {
+   "id": "f6_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Good night!"
+  },
+  {
+   "id": "f6_pt",
+   "lingua": "pt",
+   "texto": "Boa noite! Pra ir embora."
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Chegou à noite? Good evening. Vai embora? Good night!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra repetir amanhã! E se você quer achar a frase certa em inglês pra cada situação, sem travar na hora: Ígol trezentos e cinquenta. Duas mil e cem frases, com tradução e pronúncia escrita, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

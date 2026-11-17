@@ -1,0 +1,112 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Bateu a fome numa lanchonete lá fora… e o cardápio é todo em inglês. Sabe o que pedir?"
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "Sanduíche...\n\nSuco...\n\nBiscoito...\n\nBolinho...\n\nPão de queijo...\n\nPipoca."
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Sandwich...\n\nJuice...\n\nCookie...\n\nMuffin...\n\nCheese bread...\n\nPopcorn."
+  },
+  {
+   "id": "i1_en",
+   "lingua": "en",
+   "texto": "Sandwich",
+   "recorte": true
+  },
+  {
+   "id": "i1_pt",
+   "lingua": "pt",
+   "texto": "sanduíche",
+   "recorte": true
+  },
+  {
+   "id": "i2_en",
+   "lingua": "en",
+   "texto": "Juice",
+   "recorte": true
+  },
+  {
+   "id": "i2_pt",
+   "lingua": "pt",
+   "texto": "suco",
+   "recorte": true
+  },
+  {
+   "id": "i3_en",
+   "lingua": "en",
+   "texto": "Cookie",
+   "recorte": true
+  },
+  {
+   "id": "i3_pt",
+   "lingua": "pt",
+   "texto": "biscoito",
+   "recorte": true
+  },
+  {
+   "id": "i4_en",
+   "lingua": "en",
+   "texto": "Muffin",
+   "recorte": true
+  },
+  {
+   "id": "i4_pt",
+   "lingua": "pt",
+   "texto": "bolinho",
+   "recorte": true
+  },
+  {
+   "id": "i5_en",
+   "lingua": "en",
+   "texto": "Cheese bread",
+   "recorte": true
+  },
+  {
+   "id": "i5_pt",
+   "lingua": "pt",
+   "texto": "pão de queijo",
+   "recorte": true
+  },
+  {
+   "id": "i6_en",
+   "lingua": "en",
+   "texto": "Popcorn",
+   "recorte": true
+  },
+  {
+   "id": "i6_pt",
+   "lingua": "pt",
+   "texto": "pipoca",
+   "recorte": true
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "E aquele que todo brasileiro procura?"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Lanche resolvido! Comenta qual palavra você não sabia."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}
