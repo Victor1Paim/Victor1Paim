@@ -259,7 +259,9 @@ def montar(pasta, janela, tr, dec, ini, fim):
         except FileNotFoundError: pass
     log('NOVO_CORTE', pasta)
     if UM_SO:
-        log('modo --um: encerrando'); os._exit(0)
+        log('modo --um: encerrando')
+        subprocess.run(['pkill', '-f', f'twitch.tv/{CANAL}'])   # derruba streamlink/ffmpeg da gravação
+        os._exit(0)
 
 
 def trabalhador():
