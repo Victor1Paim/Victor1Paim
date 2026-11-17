@@ -1,0 +1,4 @@
+semelhança: 99.5%
+delete: roteiro='e' voz='' pos=106
+insert: roteiro='' voz='a' pos=197
+Nota: áudio acelerado 4% (atempo 1.04, sem mudar o tom) para caber em 70 s com o eco final; original de 69,6 s. Conferência refeita no áudio final: 99,5%.

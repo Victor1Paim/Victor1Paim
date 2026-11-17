@@ -565,3 +565,35 @@ Conteúdo educativo, não substitui orientação profissional.
 ```
 
 ---
+
+## 19. 13 · Por que não consigo parar de rolar o feed? · 🟢
+Pasta: `producoes/13-rolar-o-feed/`
+
+```
+Você abre o app pra ver uma coisinha e, quando vê, passou uma hora. Falta de força de vontade? 📱
+
+📊 O brasileiro passa quase 4 horas por dia nas redes, um dos maiores tempos do mundo. Não dá pra ser só fraqueza de todo mundo.
+
+📖 Uma revista acaba: a última página é um ponto de parada. O feed não tem última página.
+🎰 Vídeo chato, chato… e de repente um ótimo. Recompensa que você não sabe quando vem: é o mesmo princípio do caça-níquel.
+🎙️ E o criador da rolagem infinita disse publicamente que se arrepende. Ela foi feita pra não ter fim.
+
+A saída é devolver os pontos de parada:
+⏲️ limite de tempo no app
+📲 app fora da tela inicial
+🛏️ celular longe na hora de dormir
+
+Manda pra quem vive no "só mais um vídeo" 😅 E comenta FIM se você vai criar o seu ponto de parada ⏹️
+
+Fontes: DataReportal/We Are Social (via Statista, 2025) · psicologia comportamental (reforço variável) · entrevistas de Aza Raskin.
+Conteúdo educativo, não substitui orientação profissional.
+
+#celular #redessociais #saude
+```
+
+**Comentário fixado:**
+```
+📚 Fontes: DataReportal 2025 (tempo nas redes) · reforço variável (psicologia comportamental) · entrevistas de Aza Raskin. Comenta FIM e conta qual ponto de parada você vai testar ⏹️
+```
+
+---

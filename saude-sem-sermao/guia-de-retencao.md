@@ -231,5 +231,6 @@ Numa mesma leva de ideias, **variar as estruturas** para depois comparar qual re
 | 08 | Respiração 4-7-8 | Evolução |
 | 10 | Ronco | Jornada |
 | 11 | Câncer: o que dá pra mudar | Problema (lista 1/5→5/5) |
+| 13 | Parar de rolar o feed | Contradição |
 
 Até aqui o canal está concentrado em Contradição; o cronograma a partir do #6 distribui as 5 estruturas.
