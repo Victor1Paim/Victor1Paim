@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect, useRef, useState} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {COR, Escrito, FPS, W, entre, mola} from '../estilo';
 import {ICONES} from '../icones2';
@@ -30,7 +30,7 @@ const Titulo: React.FC<{tr: Trecho; k: number}> = ({tr, k}) => {
       <div style={{transform: `scale(${p}) rotate(-2deg)`, display: 'flex', alignItems: 'center', gap: 16, background: COR.mostarda,
         border: `5px solid ${COR.tinta}`, borderRadius: 14, padding: `${6 * k}px ${36 * k}px 0`, maxWidth: 940}}>
         {tr.icone && <Icone nome={tr.icone} tam={110 * k} />}
-        <Escrito tam={74 * k}>{tr.titulo}</Escrito>
+        <Escrito tam={74 * k * Math.max(0.65, Math.min(1, 18 / Math.max(1, tr.titulo.length)))}>{tr.titulo}</Escrito>
       </div>
     </div>
   );
@@ -83,13 +83,13 @@ const Passos: React.FC<{tr: Trecho; k: number}> = ({tr, k}) => (
 );
 
 const Comparacao: React.FC<{tr: Trecho; k: number}> = ({tr, k: kIn}) => {
-  const k = Math.min(kIn, 1.05); // duas colunas: não pode crescer como os outros
+  const k = Math.min(kIn, 1.15); // duas colunas: não pode crescer como os outros
   const [a, b] = tr.titulo.split(/\s+(?:x|vs\.?|versus)\s+/i);
   const col = (lado: 'esquerda' | 'direita', nome: string | undefined, c: string, n: number) => (
     <div style={{flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
       <div style={{background: c, border: `5px solid ${COR.tinta}`, borderRadius: 16, padding: `${6 * k}px 0 0`, marginBottom: 10 * k,
         transform: `rotate(${n ? 1.5 : -1.5}deg)`}}>
-        <Escrito tam={70 * k}>{nome ?? lado}</Escrito>
+        <Escrito tam={(nome && nome.length > 10 ? 54 : 70) * k}>{nome ?? lado}</Escrito>
       </div>
       {tr.itens.filter((i) => i.tipo === lado).map((it, j) => <Linha key={j} it={it} k={k * 0.85} n={j + n} marca={it.icone ? undefined : <span />} />)}
     </div>
@@ -164,7 +164,7 @@ const Ilustracao: React.FC<{tr: Trecho}> = ({tr}) => {
   return (
     <div style={{display: 'flex', justifyContent: 'center', marginTop: 30, transform: `scale(${p}) rotate(${Math.sin(f / 20) * 3}deg) translateY(${Math.sin(f / 15) * 8}px)`,
       filter: 'url(#adesivo)'}}>
-      <Icone nome={nome} tam={380} />
+      <Icone nome={nome} tam={tr.itens.length >= 3 ? 330 : 440} />
     </div>
   );
 };
@@ -172,12 +172,25 @@ const Ilustracao: React.FC<{tr: Trecho}> = ({tr}) => {
 export const Cartao: React.FC<{tr: Trecho; area: Area}> = ({tr, area}) => {
   const M = MODELOS[tr.modelo ?? 'lista'] ?? Lista;
   const cheia = area.h > 1000;
-  const k = cheia ? 1.45 : 0.92;
+  const k = cheia ? 1.75 : 1.12;
+  // Cabe na área: mede o conteúdo e encolhe só o necessário (grande quando há pouco texto, nunca estoura).
+  const ref = useRef<HTMLDivElement>(null);
+  const [fit, setFit] = useState(1);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    // offsetHeight ignora transform (itens entrando de lado não contam); a largura já quebra linha sozinha
+    const h = el.offsetHeight;
+    const novo = Math.min(1, (area.h - 20) / Math.max(1, h));
+    if (Math.abs(novo - fit) > 0.01) setFit(novo);
+  });
   return (
     <div style={{position: 'absolute', left: 60, width: W - 120, top: area.top, height: area.h, display: 'flex', flexDirection: 'column',
       justifyContent: 'center', filter: 'url(#boil)'}}>
-      <M tr={tr} k={k} />
-      {cheia && <Ilustracao tr={tr} />}
+      <div ref={ref} style={{transform: `scale(${fit})`, transformOrigin: '50% 50%'}}>
+        <M tr={tr} k={k} />
+        {cheia && <Ilustracao tr={tr} />}
+      </div>
     </div>
   );
 };

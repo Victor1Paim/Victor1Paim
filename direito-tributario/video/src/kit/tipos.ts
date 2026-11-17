@@ -23,5 +23,7 @@ export type Dados = {
   trechos: Trecho[];
   elementos: Elemento[];
   legenda: boolean;
+  cortes?: number[]; // instantes (s) dos cortes de pausa, já na linha do tempo cortada
+  zoomNosCortes?: boolean; // alterna um leve zoom a cada corte (disfarça o salto); padrão true
   enquadramentoDividida?: number; // deslocamento vertical (px) do vídeo na tela dividida; padrão -170
 };

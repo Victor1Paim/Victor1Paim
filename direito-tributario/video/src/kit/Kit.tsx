@@ -48,6 +48,9 @@ export const Kit: React.FC<PropsKit> = ({dados}) => {
     return z + interpolate(f, [a, a + 5, b - 6, b], [0, 0.13, 0.13, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: suave});
   }, 0);
   const modoEm = (seg: number) => trechoEm(ts, seg).modo;
+  // corte de pausa: alterna enquadramento (1,00 / 1,07) para o salto parecer troca de câmera
+  const nCorte = (dados.cortes ?? []).filter((c) => s >= c).length;
+  const zoomCorte = dados.zoomNosCortes === false ? 0 : (nCorte % 2) * 0.07;
 
   return (
     <AbsoluteFill style={{background: COR.papel}}>
@@ -61,13 +64,13 @@ export const Kit: React.FC<PropsKit> = ({dados}) => {
         if (t.modo === 'ela' || f < a || f > b + TRANS) return null;
         return (
           <SaiDeLado key={i} de={a} ate={b}>
-            <Cartao tr={t} area={t.modo === 'motion' ? {top: 120, h: 1400} : {top: 975, h: 580}} />
+            <Cartao tr={t} area={t.modo === 'motion' ? {top: 90, h: 1460} : {top: 968, h: 595}} />
           </SaiDeLado>
         );
       })}
       {/* gravação: sempre tocando (a voz continua no motion); o painel sobe/encolhe conforme o modo */}
       <AbsoluteFill style={{height: painel, transform: `translateY(${Math.min(0, alt - 960)}px)`, overflow: 'hidden'}}>
-        <AbsoluteFill style={{transform: `translateY(${desloc}px) scale(${1 + zoom})`, transformOrigin: '50% 35%'}}>
+        <AbsoluteFill style={{transform: `translateY(${desloc}px) scale(${1 + zoom + zoomCorte})`, transformOrigin: '50% 35%'}}>
           <OffthreadVideo src={staticFile(dados.video)} style={{width: W, height: H}} />
         </AbsoluteFill>
         {alt < H - 2 && (

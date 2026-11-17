@@ -104,7 +104,7 @@ const Flutuante: React.FC<{e: Elemento; modo: Modo; i: number}> = ({e, modo, i})
   const fim = ini + Math.round(e.dur * FPS);
   if (f < ini || f > fim) return null;
   const [x, y] = LUGAR[modo][e.lugar ?? 'direita-alto'] ?? LUGAR[modo]['direita-alto'] ?? [540, 400];
-  const k = modo === 'dividida' ? 0.75 : 1.05;
+  const k = modo === 'dividida' ? 0.95 : 1.35; // maiores: precisam ler bem no celular
   const ent = entre(f, ini, 12, 0, 1, mola);
   const sai = 1 - entre(f, fim - 8, 8);
   const lado = x < W / 2 ? -1 : x > W / 2 ? 1 : 0;

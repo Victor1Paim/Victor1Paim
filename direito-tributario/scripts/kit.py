@@ -233,24 +233,118 @@ def transcrever(video, modelo):
             for s in r["segments"] for w in s["words"] if w["word"].strip()]
 
 
+PAUSA_MAX = 0.4    # pausa entre palavras acima disso é cortada (s)
+FOLGA_ANTES = 0.08  # mantém antes da 1ª palavra de cada trecho (s)
+FOLGA_DEPOIS = 0.16 # mantém depois da última palavra (o Whisper costuma marcar o fim cedo) (s)
+
+
+def duracao(arq):
+    return float(rodar(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(arq)]).strip())
+
+
+def segmentos_de_fala(ws, dur, pausa_max=PAUSA_MAX):
+    """Trechos (ini, fim) a manter: fala + folgas; pausas maiores que pausa_max saem."""
+    segs = []
+    a = max(0.0, ws[0]["ini"] - FOLGA_ANTES)
+    for w, prox in zip(ws, ws[1:] + [None]):
+        if prox is None:
+            segs.append((a, min(dur, w["fim"] + FOLGA_DEPOIS + 0.25)))
+        elif prox["ini"] - w["fim"] > pausa_max:
+            fim = w["fim"] + FOLGA_DEPOIS
+            ini = prox["ini"] - FOLGA_ANTES
+            if ini - fim > 0.05:
+                segs.append((a, fim))
+                a = ini
+    return [(round(x, 3), round(y, 3)) for x, y in segs if y - x > 0.05]
+
+
+def cortar(original, destino, segs):
+    """Recorta cada trecho num arquivo (com microfade no áudio, sem estalo) e junta tudo.
+    Um trecho por vez: pouca memória, funciona em qualquer computador."""
+    if len(segs) == 1 and segs[0][0] < 0.01:
+        shutil.copy(original, destino)
+        return
+    print(f"cortando pausas ({len(segs)} trechos)...")
+    tmp = destino.parent / "_trechos"
+    shutil.rmtree(tmp, ignore_errors=True)
+    tmp.mkdir()
+    lista = []
+    for i, (a, b) in enumerate(segs):
+        d = b - a
+        arq = tmp / f"t{i:04d}.mp4"
+        rodar(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.3f}", "-i", str(original), "-t", f"{d:.3f}",
+               "-af", f"afade=t=in:d=0.012,afade=t=out:st={max(0, d - 0.012):.3f}:d=0.012",
+               "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(arq)])
+        lista.append(f"file '{arq.name}'")
+    (tmp / "lista.txt").write_text("\n".join(lista) + "\n", encoding="utf-8")
+    rodar(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(tmp / "lista.txt"),
+           "-c", "copy", "-movflags", "+faststart", str(destino)])
+    shutil.rmtree(tmp, ignore_errors=True)
+
+
+def remapear(ws, segs):
+    """Leva os tempos das palavras para a linha do tempo já cortada."""
+    out, base = [], []
+    acc = 0.0
+    for a, b in segs:
+        base.append((a, b, acc))
+        acc += b - a
+
+    def novo(t):
+        for a, b, off in base:
+            if t <= b:
+                return off + max(0.0, t - a)
+        a, b, off = base[-1]
+        return off + (b - a)
+
+    for w in ws:
+        out.append({**w, "ini": round(novo(w["ini"]), 3), "fim": round(novo(w["fim"]), 3)})
+    return out
+
+
 def cmd_preparar(nome, modelo="small", refazer=False):
     pasta = VIDEOS / nome
     if not pasta.exists():
         sys.exit(f"pasta {pasta} não existe (python scripts/kit.py novo {nome})")
     grav = achar_gravacao(pasta)
     pub = PUBLIC / nome
-    video = pub / "gravacao.mp4"
-    if refazer or not video.exists() or video.stat().st_mtime < grav.stat().st_mtime:
-        converter(grav, video)
-    dur = float(rodar(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)]).strip())
+    cfg_arq = pasta / "ajustes.json"
+    cfg = json.loads(cfg_arq.read_text(encoding="utf-8")) if cfg_arq.exists() else {}
+    original = pub / "original.mp4"  # gravação convertida, sem cortes
+    if refazer or not original.exists() or original.stat().st_mtime < grav.stat().st_mtime:
+        converter(grav, original)
 
     cache = pasta / "transcricao.json"
-    if refazer or not cache.exists() or cache.stat().st_mtime < video.stat().st_mtime:
-        ws = transcrever(video, modelo)
+    if refazer or not cache.exists() or cache.stat().st_mtime < original.stat().st_mtime:
+        ws = transcrever(original, modelo)
         cache.write_text(json.dumps(ws, ensure_ascii=False, indent=0), encoding="utf-8")
     ws = json.loads(cache.read_text(encoding="utf-8"))
     if not ws:
         sys.exit("o Whisper não ouviu fala nenhuma na gravação")
+
+    # corte automático das pausas (respiração, hesitação, silêncio no começo/fim)
+    dur_orig = duracao(original)
+    video = pub / "gravacao.mp4"
+    if cfg.get("cortarPausas", True):
+        segs = segmentos_de_fala(ws, dur_orig, cfg.get("pausaMaxima", PAUSA_MAX))
+    else:
+        segs = [(0.0, dur_orig)]
+    chave = json.dumps([[round(a, 3), round(b, 3)] for a, b in segs])
+    marca = pub / "cortes.json"
+    if refazer or not video.exists() or not marca.exists() or marca.read_text() != chave or video.stat().st_mtime < original.stat().st_mtime:
+        cortar(original, video, segs)
+        marca.write_text(chave)
+    ws = remapear(ws, segs)
+    cortes = []
+    acc = 0.0
+    for a, b in segs[:-1]:
+        acc += b - a
+        cortes.append(round(acc, 3))
+    if len(segs) > 1:
+        print(f"pausas cortadas: {len(segs) - 1} cortes, {dur_orig - sum(b - a for a, b in segs):.1f}s a menos "
+              f"({dur_orig:.1f}s -> {sum(b - a for a, b in segs):.1f}s)")
+    dur = duracao(video)
 
     rot = pasta / "roteiro.txt"
     trechos, elementos, itens_cartao = [], [], []
@@ -308,9 +402,8 @@ def cmd_preparar(nome, modelo="small", refazer=False):
 
     dados = {"nome": nome, "duracao": round(dur, 3), "video": f"videos/{nome}/gravacao.mp4",
              "palavras": palavras, "trechos": trechos, "elementos": finais, "legenda": True}
-    cfg = pasta / "ajustes.json"
-    if cfg.exists():
-        dados.update(json.loads(cfg.read_text(encoding="utf-8")))
+    dados["cortes"] = cortes
+    dados.update({k: v for k, v in cfg.items() if k not in ("cortarPausas", "pausaMaxima")})
     (pub / "dados.json").write_text(json.dumps(dados, ensure_ascii=False), encoding="utf-8")
     (PUBLIC / "ultimo.json").write_text(json.dumps({"nome": nome}), encoding="utf-8")
     print(f"ok: {len(trechos)} trechos, {len(finais)} elementos flutuantes, {dur:.1f}s")
