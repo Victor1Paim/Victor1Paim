@@ -1,3 +1,4 @@
 node_modules/
 out/
 amostras/
+*.mp3.json

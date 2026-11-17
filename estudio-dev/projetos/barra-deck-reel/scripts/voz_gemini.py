@@ -62,7 +62,12 @@ if __name__ == '__main__':
     ap.add_argument('--voz', default='Fenrir')
     ap.add_argument('--estilo', default=ESTILO_PADRAO)
     a = ap.parse_args()
-    texto = open(a.arquivo).read().strip() if a.arquivo else a.texto
+    if a.arquivo:
+        if a.texto and a.saida == ap.get_default('saida'):
+            a.saida = a.texto  # com --arquivo, o único posicional é a saída
+        texto = open(a.arquivo).read().strip()
+    else:
+        texto = a.texto
     if not texto:
         ap.error('informe o texto ou --arquivo')
     print(gerar(texto, a.saida, a.voz, a.estilo))

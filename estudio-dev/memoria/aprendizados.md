@@ -1,5 +1,6 @@
 # Aprendizados
 
+- Narração Gemini TTS: gerar 2 tomadas por modelo e passar `scripts/checar_audio.py` (Whisper + silêncio digital + pausas). gemini-3.8-flash-tts às vezes lê a instrução de estilo em voz alta; 2.5-pro-preview-tts deu a tomada mais limpa. Sincronizar cenas pelos tempos das palavras.
 - Narração com corte: transcrever com Whisper (tempos por palavra) + RMS/espectro para achar o trecho; o "s" final da TTS do outro chat (voz Gemini fenrir) veio separado por silêncio digital. Correção: mover o fragmento para junto da palavra e jogar o silêncio para depois, mantendo a duração e a sincronia.
 - Fotos de pratos com IA: `impressos/gerar_fotos.py` (estilo único no prompt, 6 em paralelo, retry). Miniaturas 240px em `pratos/mini/`; originais 640px fora do deploy (`.vercelignore`). ~US$ 0,07 por imagem 1024² medium.
 - Modo escuro forçado (Chrome/Samsung no Android) inverte cores de sites claros. Sites com identidade clara: `<meta name="color-scheme" content="only light">` + `color-scheme: only light` em `:root`/`html` + fundo explícito no `html`. Teste: Chromium com `--blink-settings=forceDarkModeEnabled=true`.

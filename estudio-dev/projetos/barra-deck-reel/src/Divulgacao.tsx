@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AbsoluteFill, Easing, Img, OffthreadVideo, Sequence, interpolate, random, staticFile, useCurrentFrame,
+  AbsoluteFill, Audio, Easing, Img, OffthreadVideo, Sequence, interpolate, random, staticFile, useCurrentFrame,
 } from 'remotion';
 import { loadFont } from '@remotion/fonts';
 import FONTES from './fontes.json';
@@ -19,7 +19,16 @@ const C = {
 
 const FPS = 30;
 const s = (sec: number) => Math.round(sec * FPS);
-export const DURACAO_DIVULGACAO = s(30);
+// Linha do tempo amarrada à narração (public/audio/divulgacao-fenrir.mp3, palavras via Whisper).
+const VOZ = 0.5; // a voz começa em 0,5 s
+const em = (palavra: number) => palavra + VOZ - 0.15;
+const T = {
+  abre: 0, manchete: em(2.94), cardapio: em(5.82), infos: em(15.26), chamada: em(24.52),
+  cats: [em(5.94), em(7.28), em(8.08), em(10.32), em(11.82)],      // entradas, quiches, chester, os acompanhamentos, sobremesas
+  agenda: [em(15.26), em(17.48), em(21.26), em(21.26) + 0.35],      // encomendas, retirada, clube, entrega
+  link: em(25.46), qr: em(26.6),
+};
+export const DURACAO_DIVULGACAO = s(31);
 
 const ease = Easing.bezier(0.16, 1, 0.3, 1);
 const io = (f: number, a: number, b: number) =>
@@ -77,7 +86,7 @@ const Linha: React.FC<{ p: number; cor?: string; w?: number }> = ({ p, cor = C.c
 const Abertura: React.FC = () => {
   const f = useCurrentFrame();
   const a = io(f, 0, 22), b = io(f, 14, 34), c = io(f, 24, 44);
-  const fim = sai(f, s(3.3), s(3.8));
+  const fim = sai(f, s(T.manchete - 0.45), s(T.manchete));
   return (
     <AbsoluteFill style={{ opacity: fim }}>
       <div style={{ position: 'absolute', top: 520, width: '100%', display: 'flex', justifyContent: 'center', opacity: a, transform: `scale(${0.85 + a * 0.15})` }}>
@@ -94,7 +103,7 @@ const Abertura: React.FC = () => {
 const Manchete: React.FC = () => {
   const f = useCurrentFrame();
   const a = io(f, 0, 16), b = io(f, 12, 30), c = io(f, 26, 44);
-  const fim = sai(f, s(3.3), s(3.8));
+  const fim = sai(f, s(T.cardapio - T.manchete - 0.45), s(T.cardapio - T.manchete));
   return (
     <AbsoluteFill style={{ opacity: fim }}>
       <div style={{ position: 'absolute', top: 640, left: 70, right: 70, textAlign: 'center' }}>
@@ -134,7 +143,6 @@ const CARDAPIO: { titulo: string; nota?: string; pratos: Prato[] }[] = [
     { img: 'rabanada', nome: 'Rabanada', det: 'unidade', preco: 'R$ 8' },
   ] },
 ];
-const DUR_CAT = s(2.4);
 
 const Cartao: React.FC<{ p: Prato; entra: number; saida: number; i: number }> = ({ p, entra, saida, i }) => {
   const f = useCurrentFrame();
@@ -159,10 +167,14 @@ const Cartao: React.FC<{ p: Prato; entra: number; saida: number; i: number }> = 
 
 const Cardapio: React.FC = () => {
   const f = useCurrentFrame();
-  const idx = Math.min(CARDAPIO.length - 1, Math.floor(f / DUR_CAT));
+  const inis = T.cats.map((c) => s(c - T.cardapio));
+  let idx = 0;
+  inis.forEach((v, i) => { if (f >= v) idx = i; });
   const cat = CARDAPIO[idx];
-  const ini = idx * DUR_CAT, fimCat = ini + DUR_CAT;
-  const t = io(f, ini, ini + 12), tOut = idx === CARDAPIO.length - 1 ? 1 : sai(f, fimCat - 8, fimCat);
+  const ini = inis[idx];
+  const ultimo = idx === CARDAPIO.length - 1;
+  const fimCat = ultimo ? s(T.infos - T.cardapio) : inis[idx + 1];
+  const t = io(f, ini, ini + 10), tOut = ultimo ? 1 : sai(f, fimCat - 6, fimCat);
   const topo = io(f, 0, 14);
   return (
     <AbsoluteFill>
@@ -175,10 +187,9 @@ const Cardapio: React.FC = () => {
       </div>
       <div style={{ position: 'absolute', top: 560, left: 64, right: 64, display: 'grid', gap: 30 }}>
         {cat.pratos.map((p, i) => (
-          <Cartao key={`${idx}-${p.img}`} p={p} i={i} entra={ini + 4 + i * 5} saida={idx === CARDAPIO.length - 1 ? 99999 : fimCat - 10} />
+          <Cartao key={`${idx}-${p.img}`} p={p} i={i} entra={ini + i * 3} saida={ultimo ? 99999 : fimCat - 7} />
         ))}
       </div>
-      {/* barra de progresso das categorias */}
       <div style={{ position: 'absolute', top: 1520, width: '100%', display: 'flex', justifyContent: 'center', gap: 14, opacity: topo }}>
         {CARDAPIO.map((c, i) => (
           <div key={c.titulo} style={{ width: i === idx ? 54 : 14, height: 14, borderRadius: 99, background: i <= idx ? C.copperLight : 'rgba(247,201,165,.3)' }} />
@@ -196,7 +207,7 @@ const Infos: React.FC = () => {
     ['ONDE', 'Clube da Aeronáutica\nda Barra da Tijuca'],
     ['ENTREGA', 'sob consulta no WhatsApp'],
   ];
-  const fim = sai(f, s(4.5), s(5));
+  const fim = sai(f, s(T.chamada - T.infos - 0.45), s(T.chamada - T.infos));
   return (
     <AbsoluteFill style={{ opacity: fim }}>
       <div style={{ position: 'absolute', top: 360, left: 80, right: 80 }}>
@@ -206,7 +217,8 @@ const Infos: React.FC = () => {
         </div>
         <div style={{ marginTop: 60, display: 'grid', gap: 26 }}>
           {linhas.map(([r, v], i) => {
-            const p = io(f, 10 + i * 8, 26 + i * 8);
+            const st = s(T.agenda[i] - T.infos);
+            const p = io(f, st, st + 14);
             return (
               <div key={r} style={{ opacity: p, transform: `translateY(${(1 - p) * 30}px)`, padding: '24px 34px', borderRadius: 26, background: `${FELTRO} 0 0 / 360px 360px, ${C.paper}`, boxShadow: '0 24px 50px -26px rgba(0,0,0,.7)', borderLeft: 'none', border: '2px solid rgba(192,101,47,.35)' }}>
                 <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 8, color: C.copperInk }}>{r}</div>
@@ -222,7 +234,8 @@ const Infos: React.FC = () => {
 
 const Chamada: React.FC = () => {
   const f = useCurrentFrame();
-  const a = io(f, 0, 16), b = io(f, 10, 28), c = io(f, 22, 40), d = io(f, 34, 52);
+  const L = s(T.link - T.chamada), Q = s(T.qr - T.chamada);
+  const a = io(f, 0, 16), b = io(f, 4, 22), c = io(f, Q - 4, Q + 12), cl = io(f, L - 3, L + 12), d = io(f, Q + 8, Q + 26);
   const pulso = 1 + Math.sin(f / 7) * 0.02 * c;
   return (
     <AbsoluteFill>
@@ -236,7 +249,7 @@ const Chamada: React.FC = () => {
         <div style={{ opacity: c, transform: `scale(${(0.85 + c * 0.15) * pulso})`, margin: '54px auto 0', width: 380, padding: 26, borderRadius: 32, background: '#fff', boxShadow: '0 30px 60px -24px rgba(0,0,0,.8)' }}>
           <Img src={staticFile('img/qrcode.png')} style={{ width: '100%', display: 'block' }} />
         </div>
-        <div style={{ opacity: c, marginTop: 30, display: 'inline-block', padding: '20px 46px', borderRadius: 999, background: 'linear-gradient(180deg, #B25A28, #8A3F16)', fontFamily: SANS, fontWeight: 700, fontSize: 44, color: '#fff' }}>barradeck.vercel.app</div>
+        <div style={{ opacity: cl, marginTop: 30, display: 'inline-block', padding: '20px 46px', borderRadius: 999, background: 'linear-gradient(180deg, #B25A28, #8A3F16)', fontFamily: SANS, fontWeight: 700, fontSize: 44, color: '#fff' }}>barradeck.vercel.app</div>
         <div style={{ opacity: d, marginTop: 34, fontFamily: SANS, fontWeight: 600, fontSize: 34, lineHeight: 1.5, color: '#F1E1D4' }}>
           Cardápio completo em PDF no site<br /><span style={{ color: C.peach }}>WhatsApp (21) 98171-6022</span>
         </div>
@@ -251,8 +264,6 @@ const Varredura: React.FC = () => {
   return <AbsoluteFill style={{ background: `linear-gradient(105deg, transparent 0%, ${C.copperLight} 40%, ${C.copper} 50%, ${C.brown} 60%, transparent 100%)`, transform: `translateX(${x}%)`, opacity: 0.9 }} />;
 };
 
-// linha do tempo (segundos)
-const T = { abre: 0, manchete: 3.8, cardapio: 7.6, infos: 7.6 + 12, chamada: 7.6 + 12 + 5 };
 
 export const Divulgacao: React.FC = () => (
   <AbsoluteFill style={{ background: C.espresso }}>
@@ -266,6 +277,7 @@ export const Divulgacao: React.FC = () => (
     <Sequence from={s(T.cardapio)} durationInFrames={s(T.infos - T.cardapio)}><Cardapio /></Sequence>
     <Sequence from={s(T.infos)} durationInFrames={s(T.chamada - T.infos)}><Infos /></Sequence>
     <Sequence from={s(T.chamada)}><Chamada /></Sequence>
+    <Sequence from={s(VOZ)}><Audio src={staticFile('audio/divulgacao-fenrir.mp3')} /></Sequence>
     {[T.cardapio, T.infos, T.chamada].map((c) => (
       <Sequence key={c} from={s(c) - 6} durationInFrames={14}><Varredura /></Sequence>
     ))}
