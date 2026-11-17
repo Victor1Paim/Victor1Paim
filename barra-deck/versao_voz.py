@@ -3,9 +3,9 @@ import json, sys, base64, urllib.request, time, subprocess, re, unicodedata
 sys.path.insert(0,'/home/user/Victor1Paim/eagle-english/scripts')
 from vozes import chave, pedir, tirar_estalo, _gravar, registrar, limpar_estalo_wav
 D='/home/user/Victor1Paim/barra-deck'; voz=sys.argv[1]; g=sys.argv[2]
-SEG=["Ceia de Natal do Barra Déqui!","O fogão é nosso. A noite é sua!","Tem entradas deliciosas…","quiches…",
+SEG=["Ceia de Natal do Barra Déqui!","O fogão é nosso. A noite é sua!","Tem entradas…","quiches…",
      "pratos principais que deixam sua mesa completa…","acompanhamentos…","e sobremesas… e muitas outras opções!",
-     "Encomendas até dez de dezembro. Retirada dia vinte e quatro, das dez às quinze horas.","Monte sua ceia pelo link que tá na bio!"]
+     "Encomendas até dez de dezembro. Retirada dia vinte e quatro, das dez às quinze horas.","Monte sua ceia pelo QR code ou pelo link que tá na bio!"]
 ANC=[("ceia",0),(("fogao","foga","nosso"),None),("tem",0),("quiches",0),("pratos",0),("acompanhamentos",0),("sobremesas",1),("encomendas",0),("monte",0)]
 CENA=[0,3.37,7.57,9.73,12.13,14.53,16.93,19.57,24.57,30.0]
 EST=("Leia em português do Brasil, com sotaque carioca natural, como "+("um locutor" if g=="m" else "uma locutora")+
@@ -26,7 +26,7 @@ for tent in range(5):
     W=[(w['start'],w['end'],w['word']) for s in r['segments'] for w in s['words']]
     print('whisper:',r['text'].strip(),flush=True)
     txt=r['text'].lower()
-    ok=('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt) and not any(x in txt for x in ('dinâmico','ritmo','entonação','reticências','bill')) and txt.strip().startswith('ceia')
+    ok=('qr' in txt) and ('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt) and not any(x in txt for x in ('dinâmico','ritmo','entonação','reticências','bill')) and txt.strip().startswith('ceia')
     print('tentativa',tent+1,'conteúdo ok' if ok else 'ERRO de conteúdo',flush=True)
     if ok: break
 norm=lambda s: unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode().strip(' .,!?…')
