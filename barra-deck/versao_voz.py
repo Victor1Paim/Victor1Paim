@@ -39,10 +39,14 @@ import numpy as np, wave as _wave
 with _wave.open(bruto) as _w:
     _sr=_w.getframerate(); _x=np.frombuffer(_w.readframes(_w.getnframes()),np.int16).astype(float)
 def silencio(a,b):
-    """ponto de menor energia (janelas de 10 ms) entre a e b: corta no silêncio de verdade, nunca no fim da palavra"""
-    k=_sr//100; i0=max(0,int(a*_sr)); i1=max(i0+k,int(b*_sr)); seg=_x[i0:i1]
-    n=max(1,len(seg)//k); e=[np.sqrt((seg[q*k:(q+1)*k]**2).mean()) for q in range(n)]
-    return (i0+int(np.argmin(e))*k+k//2)/_sr
+    """corta no ÚLTIMO trecho silencioso antes da palavra seguinte (fim fraco tipo o "s" de "acompanhamentos" fica com a palavra)"""
+    k=_sr//100; i0=max(0,int(a*_sr)); i1=max(i0+k,int(b*_sr)); seg=_x[i0:i1]/32768
+    n=max(1,len(seg)//k); e=np.array([np.sqrt((seg[q*k:(q+1)*k]**2).mean()) for q in range(n)])
+    mudo=e<0.004
+    if not mudo.any(): return (i0+int(np.argmin(e))*k+k//2)/_sr
+    fim=np.nonzero(mudo)[0][-1]; ini=fim
+    while ini>0 and mudo[ini-1]: ini-=1
+    return (i0+((ini+fim+1)//2)*k)/_sr
 norm=lambda s: unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode().strip(' .,!?…')
 cortes=[];j=0
 for a,back in ANC:
@@ -59,7 +63,7 @@ CENA_ORIG=[(0,3.37),(3.37,7.57),(7.57,9.73),(9.73,12.13),(12.13,14.53),(14.53,16
 SRC=f'{D}/video-com-texto.mp4'; partes=[]; ent=[];fil=[];rel=[]; t=0.0
 for k in range(9):
     a,b=cortes[k],cortes[k+1]; p=f'{D}/_p{k}.wav'
-    sh('-i',bruto,'-af',f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,areverse,afade=t=in:d=0.08,areverse','-ar','48000','-ac','1',p)
+    sh('-i',bruto,'-af',f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,areverse,afade=t=in:d=0.03,areverse','-ar','48000','-ac','1',p)
     L=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',p],capture_output=True,text=True).stdout)
     so,eo=CENA_ORIG[k]; Lo=eo-so
     N=max(L+0.25+(0.12 if k==0 else 0.05), 1.4 if k not in (0,8) else 2.5)
