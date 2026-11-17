@@ -27,7 +27,8 @@ cores apagadas (teal e laranja da identidade do PDF + mostarda, sálvia, jeans),
 6. Custo: `python3 ../scripts/custos.py relatorio direito-tributario/testes/<id>`.
 
 ## Kit da apresentadora (gravação real + elementos flutuantes)
-Guia de uso: `LEIA-ME.md` (rascunho até chegar a pesquisa). Motor: `scripts/kit.py` (novo · ler · preparar · render · tudo)
+Pacote da Isabela: `LEIA-ME.md` (comece aqui), `GUIA-COMPLETO.md`, `SKILLS-E-PROMPTS.md`, `CLAUDE.md`.
+Pesquisa Manus: `pesquisa/manus-2026-11-16/`. Zip para ela: `python3 scripts/empacotar.py`. Motor: `scripts/kit.py` (novo · ler · preparar · render · tudo)
 → `video/public/videos/<nome>/dados.json` → composição Remotion `kit` (`video/src/kit/`).
 Modos por trecho do roteiro: `ela` (tela cheia + adesivos), `dividida` (cartão embaixo), `motion` (cartão em tela cheia).
 Roteiros marcados em `roteiros/`; banco de ideias em `roteiros/ideias.md`; prompt de pesquisa em `pesquisa/prompt-manus.md`.

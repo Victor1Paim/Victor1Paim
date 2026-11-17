@@ -1,0 +1,18 @@
+# "Pagar o DAS não resolve tudo" (~35 s) · Estrutura: Contradição · Pauta 2 da pesquisa (prioridade alta)
+# Público: MEI. Fontes: LC 123/2006 (art. 18-A e art. 26); Res. CGSN 140/2018; Portal do Simples Nacional;
+# serviço DASN-SIMEI (gov.br). Conferir prazos do ano antes de postar (DASN-SIMEI: até 31/05, em regra).
+
+# ela
+Você é MEI e paga o [icone documento | direita-alto] DAS todo mês? Ótimo. Mas isso [carimbo não é tudo | vermelho | esquerda-baixo] não resolve tudo.
+
+# motion lista | Além do DAS
+Além do pagamento mensal, tem a [item declaração anual (DASN-SIMEI) | icone=declaracao] declaração anual do MEI, a DASN-SIMEI. Em várias vendas, a [item nota fiscal, quando exigida | icone=nota] nota fiscal. E o [item registro mensal das receitas | icone=calendario] registro das receitas de cada mês, com os comprovantes guardados.
+
+# ela
+E atenção: essa declaração do MEI [etiqueta DASN-SIMEI ≠ IR | laranja | topo] não é o seu Imposto de Renda de pessoa física. São coisas diferentes.
+
+# dividida lista | Onde conferir
+Pra conferir, use só os [item Portal do Simples Nacional | icone=lupa] canais oficiais, e desconfie de cobrança que [item cobrança estranha? desconfie | icone=alerta] chega por mensagem.
+
+# ela
+Salva pra não [icone marcador | direita-alto] esquecer, e manda pra um amigo MEI.

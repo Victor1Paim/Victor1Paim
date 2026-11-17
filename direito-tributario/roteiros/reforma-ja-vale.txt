@@ -1,0 +1,15 @@
+# "A reforma tributária já mudou tudo?" (~40 s) · Estrutura: Evolução · Pauta 39 da pesquisa
+# Fontes: EC 132/2023; LC 214/2025; Receita Federal — "Reforma Tributária do Consumo: entenda".
+# Cronograma conferido no relatório de 16/11/2026: revalidar atos posteriores antes de postar.
+
+# ela
+Viu um post dizendo que a [etiqueta Reforma tributária | amarelo | icone=balanca | topo] reforma tributária já mudou tudo? [pergunta | direita-alto] Calma.
+
+# motion passos | A reforma entra aos poucos
+Ela foi aprovada, mas entra aos poucos. [item 2026: ano de teste | icone=calendario] 2026 é ano de teste, com alíquotas pequenas. Em [item 2027: começa a CBS | icone=documento] 2027 começa a CBS. E o ICMS e o ISS vão [item 2029 a 2032: ICMS e ISS diminuem | icone=grafico] diminuindo até [item 2033: novo modelo completo | icone=check] 2033.
+
+# dividida lista | Antes de compartilhar, confira
+Então, antes de compartilhar qualquer notícia, confere três coisas: [item qual é a norma | icone=documento] qual é a norma, [item quando começa a valer | icone=calendario] quando ela começa a valer, e [item a fonte oficial | icone=lupa] se a fonte é oficial.
+
+# ela
+Segue pra acompanhar a reforma [icone check | direita-alto] sem pânico.

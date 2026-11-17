@@ -1,6 +1,7 @@
 # "Fazer Pix gera imposto?" (~30 s) · Estrutura: Contradição
-# Fontes: Pix é meio de pagamento (BCB, Resolução BCB 1/2020); tributação incide sobre a renda (Lei 7.713/1988;
-# CTN art. 43). Conferir antes de publicar — o tema volta sempre com boatos novos.
+# Pauta 20 da pesquisa (prioridade alta, potencial viral). Fontes: CTN art. 43; Lei 7.713/1988; Lei 9.430/1996;
+# Brasil Contra Fake/Secom: "É falso que movimentações acima de R$ 5 mil estarão sujeitas a taxação" (29/12/2025,
+# atualização 27/10/2026) e desmentido da Receita sobre fiscalização de Pix (20/04/2026). Revalidar antes de postar.
 
 # ela
 Fazer [icone pix] Pix gera imposto? [pergunta] Não.
