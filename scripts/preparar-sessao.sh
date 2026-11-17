@@ -17,5 +17,6 @@ fi
 # Clipes de GTA 6: transcrição local e download de vídeos.
 python3 -c "import faster_whisper" >/dev/null 2>&1 || pip install -q --break-system-packages faster-whisper >/dev/null 2>&1 || echo "aviso: faster-whisper falhou"
 command -v yt-dlp >/dev/null 2>&1 || pip install -q --break-system-packages yt-dlp >/dev/null 2>&1 || echo "aviso: yt-dlp falhou"
+command -v streamlink >/dev/null 2>&1 || pip install -q --break-system-packages streamlink "websockets>=15" chat-downloader >/dev/null 2>&1 || echo "aviso: streamlink/chat falhou"
 # SupoClip (clipador) é opcional e pesado: subir com scripts/supoclip.sh quando for usar.
 exit 0
