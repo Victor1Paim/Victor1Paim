@@ -12,3 +12,4 @@ Canal de séries em capítulos (@halftone.tv1). Série atual: **Ano Zero · T1 A
 - Segundo canal: **Desvendando Ideias** (@desvendandoideias.ofc) — curiosidades/ciência/mistérios, curtos e longos. Pasta `desvendando-ideias/` — leia `desvendando-ideias/plano-do-canal.md`. Independente do Halftone.
 - Idioma de trabalho com o usuário: português do Brasil.
 - **Estúdio Dev** (branch `estudio-dev`): páginas de vendas, sites e apps. Pasta `estudio-dev/` — leia `estudio-dev/README.md`. Pedidos de site/página/app → skill `dev-senior` (+ `pagina-de-vendas`, `site-e-app`, `deploy-web`). Projetos em `estudio-dev/projetos/<slug>/`. **Memória**: ler `estudio-dev/memoria/` no início e atualizar ao fim (skill `memoria`).
+- **Estúdio de Ofertas** (branch `estudio-ofertas`): criação de ofertas e páginas de vendas. Pasta `ofertas/` — leia `ofertas/README.md`. Pedidos de oferta/página de vendas/lançamento → skill `criar-oferta`. Projetos em `ofertas/projetos/<slug>/`.
