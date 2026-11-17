@@ -3,7 +3,13 @@
 
   const WHATSAPP = '5521981716022';
   // Fim do prazo: 10/12/2026 23:59:59 (horário de Brasília)
-  const DEADLINE = new Date('2026-12-10T23:59:59-03:00');
+  // Ocasiões: cada uma tem data de retirada e prazo próprio de encomenda (horário de Brasília)
+  const OCASIOES = [
+    { id: 'natal', nome: 'Natal', dia: '24/12', semana: 'quinta', prazo: new Date('2026-12-10T23:59:59-03:00'), prazoTxt: '10/12' },
+    { id: 'reveillon', nome: 'Réveillon', dia: '31/12', semana: 'quinta', prazo: new Date('2026-12-20T23:59:59-03:00'), prazoTxt: '20/12' },
+  ];
+  const aberta = (o) => Date.now() <= o.prazo.getTime();
+  const DEADLINE = new Date(Math.max(...OCASIOES.map((o) => o.prazo.getTime())));
   const STORAGE_KEY = 'barradeck-natal-2026';
 
   const MENU = [
@@ -185,8 +191,14 @@
   function renderDeadline() {
     const el = $('[data-deadline]');
     if (isClosed()) { el.textContent = 'Encomendas encerradas'; document.body.classList.add('is-closed'); return; }
-    const days = Math.ceil((DEADLINE - Date.now()) / 86400000);
-    el.textContent = days <= 1 ? 'Último dia para pedir' : `Faltam ${days} dias`;
+    const prox = OCASIOES.find(aberta);
+    const days = Math.ceil((prox.prazo - Date.now()) / 86400000);
+    el.textContent = days <= 1 ? `Último dia · ${prox.nome}` : `Faltam ${days} dias · ${prox.nome}`;
+    // ocasião com prazo vencido fica indisponível no pedido
+    OCASIOES.forEach((o) => {
+      const inp = $(`input[name="ocasiao"][value="${o.id}"]`);
+      if (inp && !aberta(o)) { inp.disabled = true; inp.closest('label').classList.add('is-off'); inp.closest('label').title = 'Encomendas encerradas'; }
+    });
   }
 
   /* ---------- gaveta ---------- */
@@ -250,7 +262,17 @@
   /* ---------- formulário ---------- */
   const form = $('[data-form]');
   const endereco = $('[data-endereco]');
+  const ocasiaoSel = () => OCASIOES.find((o) => o.id === (form.elements.ocasiao && form.elements.ocasiao.value));
+  function renderOcasiao() {
+    const o = ocasiaoSel();
+    const conf = $('[data-ocasiao-ok]');
+    if (!o) { conf.hidden = true; return; }
+    conf.hidden = false;
+    conf.innerHTML = `<strong>Pedido para o ${o.nome}</strong> · retirada ou entrega em ${o.dia} (${o.semana}-feira).`;
+    form.elements.data.value = `${o.dia} (${o.semana}) – ${o.nome}`;
+  }
   form.addEventListener('change', (e) => {
+    if (e.target.name === 'ocasiao') { renderOcasiao(); $('[data-err="ocasiao"]').classList.remove('on'); }
     if (e.target.name === 'recebimento') {
       const ent = e.target.value === 'Entrega';
       endereco.hidden = !ent;
@@ -272,6 +294,7 @@
     const errs = {
       nome: f.nome.value.trim().length < 3,
       telefone: f.telefone.value.replace(/\D/g, '').length < 10,
+      ocasiao: !f.ocasiao.value,
     };
     let first = null;
     for (const [k, bad] of Object.entries(errs)) {
@@ -301,8 +324,9 @@
       });
       lines.push('');
     });
+    const oc = ocasiaoSel();
     const d = new Date();
-    const code = `BD-${String(d.getDate()).padStart(2, '0')}${String(d.getMonth() + 1).padStart(2, '0')}-${String(Date.now()).slice(-4)}`;
+    const code = `BD-${String(d.getDate()).padStart(2, '0')}${String(d.getMonth() + 1).padStart(2, '0')}-${String(Date.now()).slice(-4)} – ${oc.nome}`;
     const entrega = f.recebimento.value === 'Entrega';
     const v = (n) => (f[n] && f[n].value ? f[n].value.trim() : '');
     // mesma ordem da comanda de papel: cliente, telefone, recebimento, data, horário, endereço, pedido
@@ -310,7 +334,8 @@
       `*Cliente:* ${v('nome')}`,
       `*Telefone:* ${v('telefone')}`,
       `*Recebimento:* ${entrega ? 'Entrega' : 'Retirada'}`,
-      `*Data:* ${v('data')}`,
+      `*Ocasião:* ${oc.nome}`,
+      `*Data:* ${oc.dia} (${oc.semana})`,
     ];
     if (!entrega) {
       cliente.push(`*Horário:* ${v('horario') || 'a combinar (entre 10h e 15h)'}`);
@@ -325,7 +350,7 @@
       cliente.push('_Por favor, confirmem se entregam neste endereço e o valor da taxa._');
     }
     const msg = [
-      `Olá, Barra Deck! Segue meu *pré-pedido da Ceia de Natal 2026* (nº ${code}).`,
+      `Olá, Barra Deck! Segue meu *pré-pedido de ${oc.nome} 2026* (nº ${code}).`,
       '',
       ...cliente,
       '',

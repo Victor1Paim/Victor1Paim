@@ -416,3 +416,11 @@ body, .band, .footer, .closing, .faq, .steps__list li, .delivery__card, .drawer,
 .closing__in { z-index: 1; }
 /* campos e itens que precisam de fundo liso para leitura continuam sem textura */
 .field input, .field textarea, .seg span, .faq__item, .fixed-date, .lembrete, .notice { background-image: none; }
+
+/* ---------- escolha da ocasião (Natal / Réveillon) ---------- */
+.seg--ocasiao span { flex-direction: column; gap: 2px; min-height: 64px; line-height: 1.1; display: flex; align-items: center; justify-content: center; }
+.seg--ocasiao span b { font: 700 20px/1 var(--serif); }
+.seg label.is-off span { opacity: .45; text-decoration: line-through; cursor: not-allowed; }
+.aviso-data { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 6px; padding-left: 10px; border-left: 2px solid rgba(192, 101, 47, .45); }
+.ocasiao-ok { margin-top: 8px; font-size: 14px; color: var(--ink); background: #FFF6EE; border: 1px solid rgba(192, 101, 47, .35); border-radius: 10px; padding: 9px 12px; }
+.ocasiao-ok strong { color: var(--copper-deep); }
