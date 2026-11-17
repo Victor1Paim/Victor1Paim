@@ -1,0 +1,24 @@
+{
+ "fundo": "img/capa_fundo.png",
+ "selo": "5 rodadas",
+ "titulo": "Grande ou\n*pequeno?* 📦",
+ "sub": "O tamanho certo <b>em inglês</b>",
+ "figuras": [
+  {
+   "img": "img/elefante.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/formiga.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/girafa.png",
+   "txt": "A ou B?"
+  },
+  {
+   "img": "img/baleia.png",
+   "txt": "A ou B?"
+  }
+ ]
+}

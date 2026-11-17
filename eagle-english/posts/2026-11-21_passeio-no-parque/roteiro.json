@@ -1,0 +1,132 @@
+{
+ "fundo": "img/sol.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 1.2,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/sol.png",
+  "selo": "Missão: piquenique 🧺",
+  "titulo": "Um passeio no\n*parque* 🌳",
+  "sub": "<b>5 frases</b> · em inglês",
+  "desafio": "Será que dá certo? 👀",
+  "figuras": [
+   {
+    "img": "img/piquenique.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/chuva.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/arvore.png",
+    "txt": "?"
+   },
+   {
+    "img": "img/arcoiris.png",
+    "txt": "?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "frase",
+   "en": "What a beautiful day!",
+   "pron": "/UÓT a BIÚ-ti-ful DÊI/",
+   "pt": "Que dia lindo!",
+   "audio_en": "f1_en",
+   "audio_pt": "f1_pt",
+   "fundo": "img/sol.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Let's have a picnic!",
+   "pron": "/LÉTS HÉV a PÍK-nik/",
+   "pt": "Vamos fazer um piquenique!",
+   "audio_en": "f2_en",
+   "audio_pt": "f2_pt",
+   "fundo": "img/piquenique.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Mas aí… começou\na chover! 🌧️",
+   "audio": [
+    "virada"
+   ],
+   "fundo": "img/chuva.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "It's starting to rain!",
+   "pron": "/its STÁR-tin tu RÊIN/",
+   "pt": "Está começando a chover!",
+   "audio_en": "f3_en",
+   "audio_pt": "f3_pt",
+   "fundo": "img/chuva.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Let's go under the tree!",
+   "pron": "/LÉTS GÔU ÂN-der the TRÍI/",
+   "pt": "Vamos pra debaixo da árvore!",
+   "audio_en": "f4_en",
+   "audio_pt": "f4_pt",
+   "fundo": "img/arvore.png"
+  },
+  {
+   "tipo": "frase",
+   "en": "Look, a rainbow!",
+   "pron": "/LÚK, a RÊIN-bôu/",
+   "pt": "Olha, um arco-íris!",
+   "audio_en": "f5_en",
+   "audio_pt": "f5_pt",
+   "fundo": "img/arcoiris.png"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "Terminou com\narco-íris! 🌈\nManda pro seu amigo 📲",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/arcoiris.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/sol.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

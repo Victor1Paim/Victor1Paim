@@ -1,0 +1,114 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Grande ou pequeno? Cinco cenas. Escolhe antes de mim!"
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Um elefante! Como ele é?"
+  },
+  {
+   "id": "r1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's big!"
+  },
+  {
+   "id": "r1_pt",
+   "lingua": "pt",
+   "texto": "É grande!",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "E a formiga?"
+  },
+  {
+   "id": "r2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's so small!"
+  },
+  {
+   "id": "r2_pt",
+   "lingua": "pt",
+   "texto": "É tão pequena!",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Olha a girafa!"
+  },
+  {
+   "id": "r3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's tall!"
+  },
+  {
+   "id": "r3_pt",
+   "lingua": "pt",
+   "texto": "É alta!",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Agora a que confunde: um lápis comprido!"
+  },
+  {
+   "id": "r4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's long."
+  },
+  {
+   "id": "r4_pt",
+   "lingua": "pt",
+   "texto": "É comprido.",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "A última: a baleia!"
+  },
+  {
+   "id": "r5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's huge!"
+  },
+  {
+   "id": "r5_pt",
+   "lingua": "pt",
+   "texto": "É enorme!",
+   "recorte": true
+  },
+  {
+   "id": "traducoes_pt",
+   "lingua": "pt",
+   "texto": "É grande!...\n\nÉ tão pequena!...\n\nÉ alta!...\n\nÉ comprido....\n\nÉ enorme!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Grande, pequeno, alto, comprido e enorme! Quantas você acertou? Comenta!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "fundo": "img/capa_fundo.png",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 20,
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.4,
+ "segundos_contagem": 0.45,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/capa_fundo.png",
+  "selo": "Desafio · 5 rodadas",
+  "titulo": "Grande ou\n*pequeno?* 📦",
+  "sub": "<b>big</b> ou <b>small</b>... ou outra?",
+  "desafio": "Escolhe antes de mim! ⏱️",
+  "figuras": [
+   {
+    "img": "img/elefante.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/formiga.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/girafa.png",
+    "txt": "A ou B?"
+   },
+   {
+    "img": "img/baleia.png",
+    "txt": "A ou B?"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "tipo": "escolha",
+   "img": "img/elefante.png",
+   "a": "big",
+   "b": "small",
+   "certa": "a",
+   "audio_q": "q1",
+   "en": "It's big!",
+   "pron": "/its BÍG/",
+   "pt": "É grande!",
+   "audio_en": "r1_en",
+   "audio_pt": "r1_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/formiga.png",
+   "a": "big",
+   "b": "small",
+   "certa": "b",
+   "audio_q": "q2",
+   "en": "It's so small!",
+   "pron": "/its SÔU SMÓL/",
+   "pt": "É tão pequena!",
+   "audio_en": "r2_en",
+   "audio_pt": "r2_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/girafa.png",
+   "a": "tall",
+   "b": "short",
+   "certa": "a",
+   "audio_q": "q3",
+   "en": "It's tall!",
+   "pron": "/its TÓL/",
+   "pt": "É alta!",
+   "audio_en": "r3_en",
+   "audio_pt": "r3_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/lapis.png",
+   "a": "tall",
+   "b": "long",
+   "certa": "b",
+   "audio_q": "q4",
+   "en": "It's long.",
+   "pron": "/its LÓNG/",
+   "pt": "É comprido.",
+   "audio_en": "r4_en",
+   "audio_pt": "r4_pt"
+  },
+  {
+   "tipo": "escolha",
+   "img": "img/baleia.png",
+   "a": "small",
+   "b": "huge",
+   "certa": "b",
+   "audio_q": "q5",
+   "en": "It's huge!",
+   "pron": "/its RIÚDJ/",
+   "pt": "É enorme!",
+   "audio_en": "r5_en",
+   "audio_pt": "r5_pt"
+  },
+  {
+   "tipo": "abertura",
+   "texto": "big · small · tall\nlong · huge\nQuantas você acertou? 👇",
+   "audio": [
+    "fecho"
+   ]
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "fundo": "img/arcoiris.png",
+ "selo": "5 frases",
+ "titulo": "Piquenique\nem *inglês* 🧺",
+ "sub": "Do sol ao <b>arco-íris</b>",
+ "balao": {
+  "en": "Look, a rainbow!",
+  "pron": "/LÚK, a RÊIN-bôu/",
+  "lado": "dir"
+ }
+}
