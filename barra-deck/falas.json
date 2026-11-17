@@ -1,0 +1,54 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "s1",
+   "lingua": "pt",
+   "texto": "Ceia de Natal do Barra Déqui."
+  },
+  {
+   "id": "s2",
+   "lingua": "pt",
+   "texto": "O fogão é nosso. A noite é sua."
+  },
+  {
+   "id": "s3",
+   "lingua": "pt",
+   "texto": "Tem entradas..."
+  },
+  {
+   "id": "s4",
+   "lingua": "pt",
+   "texto": "quiches..."
+  },
+  {
+   "id": "s5",
+   "lingua": "pt",
+   "texto": "chester, tender e bacalhau..."
+  },
+  {
+   "id": "s6",
+   "lingua": "pt",
+   "texto": "os acompanhamentos..."
+  },
+  {
+   "id": "s7",
+   "lingua": "pt",
+   "texto": "e as sobremesas. Tudo feito pela nossa cozinha."
+  },
+  {
+   "id": "s8",
+   "lingua": "pt",
+   "texto": "Encomendas até dez de dezembro. Retirada no dia vinte e quatro, das dez às quinze horas."
+  },
+  {
+   "id": "s9",
+   "lingua": "pt",
+   "texto": "Monte sua ceia pelo link que tá na bio, ou aponte a câmera pro QR code."
+  }
+ ]
+}
