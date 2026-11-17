@@ -3,10 +3,10 @@ import json, sys, base64, urllib.request, time, subprocess, re, unicodedata
 sys.path.insert(0,'/home/user/Victor1Paim/eagle-english/scripts')
 from vozes import chave, pedir, tirar_estalo, _gravar, registrar, limpar_estalo_wav
 D='/home/user/Victor1Paim/barra-deck'; voz=sys.argv[1]; g=sys.argv[2]
-SEG=["Ceia de Natal do Barra Déqui!","O fogão é nosso. A noite é sua!","Tem entradas…","quiches…",
+SEG=["Ceia de Natal do Barra Déqui!","O fogão é nosso. A noite é sua!","Pra abrir a noite, entradinhas…","quiches…",
      "pratos principais que deixam sua mesa completa…","acompanhamentos…","e sobremesas… e muitas outras opções!",
      "Encomendas até dez de dezembro. Retirada dia vinte e quatro, das dez às quinze horas.","Monte sua ceia pelo QR code ou pelo link que tá na bio!"]
-ANC=[("ceia",0),(("fogao","foga","nosso"),None),("tem",0),("quiches",0),("pratos",0),("acompanhamentos",0),("sobremesas",1),("encomendas",0),("monte",0)]
+ANC=[("ceia",0),(("fogao","foga","nosso"),None),("abrir",1),("quiches",0),("pratos",0),("acompanhamentos",0),("sobremesas",1),("encomendas",0),("monte",0)]
 CENA=[0,3.37,7.57,9.73,12.13,14.53,16.93,19.57,24.57,30.0]
 EST=("Leia em português do Brasil, com sotaque carioca natural, como "+("um locutor" if g=="m" else "uma locutora")+
  " de comercial de Natal para Reels: MUITO dinâmico e empolgado, ritmo rápido e cheio de energia, sorriso na voz, entonação variada, "
