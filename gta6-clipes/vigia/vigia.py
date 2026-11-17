@@ -31,7 +31,7 @@ GUARDAR_MIN = 25             # minutos de gravação mantidos
 ANTES, DEPOIS = 100, 35      # janela em volta do pico (s)
 ESPERA_CAPTURA = DEPOIS + 15 # espera após o pico antes de cortar
 RECARGA = 120 if TESTE else 180   # intervalo mínimo entre momentos (s)
-AQUECIMENTO = 60 if TESTE else 150
+AQUECIMENTO = 180 if TESTE else 300
 MULT, MIN_ABS = (1.8, 3) if TESTE else (2.6, 10)
 NOTA_MIN = 5 if TESTE else 7
 REACOES = re.compile(r'(k{4,}|kek|lul|omegalul|pog|wtf|caralho|mds|meu deus|clipa|clip|socorro|kkkk|😂|🤣|😱|💀|omg|monka)', re.I)
@@ -154,10 +154,20 @@ def processar(pico):
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', janela, '-vn', '-ac', '1', '-ar', '16000', '-b:a', '64k', audio], check=True)
     tr = openai('audio/transcriptions', arquivos=[('file', '@' + audio), ('model', 'whisper-1'), ('language', 'pt'),
                 ('response_format', 'verbose_json'), ('timestamp_granularities[]', 'word'), ('timestamp_granularities[]', 'segment'),
-                ('prompt', f'Live de {CANAL} na Twitch. GTA 6, Vice City, Leonida, Lucia, Jason.')])
+                ('prompt', f'Live do streamer {CANAL} na Twitch, em português do Brasil.')])
     if 'error' in tr:
         log('transcrição falhou', tr['error']); return
-    falas = '\n'.join(f"[{s['start']:.1f}-{s['end']:.1f}] {s['text'].strip()}" for s in tr['segments'])
+    # filtro de fala: descarta trechos sem fala/alucinados (Whisper inventa frases repetidas em som ambiente)
+    bons, anterior = [], None
+    for sg in tr['segments']:
+        txt = sg['text'].strip()
+        if sg.get('no_speech_prob', 0) > 0.6 or sg.get('avg_logprob', 0) < -1.0 or sg.get('compression_ratio', 0) > 2.4 or txt == anterior:
+            anterior = txt; continue
+        anterior = txt; bons.append(sg)
+    tr['words'] = [w for w in tr.get('words', []) if any(sg['start'] - 0.2 <= w['start'] <= sg['end'] + 0.2 for sg in bons)]
+    n_palavras = len(tr['words'])
+    falas = '\n'.join(f"[{sg['start']:.1f}-{sg['end']:.1f}] {sg['text'].strip()}" for sg in bons) or '(SEM FALA CLARA NESTE TRECHO)'
+    log(f'fala útil: {n_palavras} palavras em {len(bons)}/{len(tr["segments"])} trechos')
     msgs = [(t - t0, a, x) for t, a, x in list(chat) if t0 <= t < t0 + ANTES + DEPOIS]
     por10 = collections.Counter(int(t // 10) * 10 for t, _, _ in msgs)
     resumo_chat = ' '.join(f'{k}s:{v}' for k, v in sorted(por10.items()))
@@ -174,6 +184,8 @@ CHAT POR 10s: {resumo_chat}
 AMOSTRA DO CHAT:
 {amostra}
 
+Regras: NÃO invente contexto que não está na transcrição ou no chat. Se não houver fala clara, só aprove se o chat
+mostrar claramente uma reação forte a algo visual, e diga isso no motivo. Na dúvida, reprove (vale=false).
 Decida se vale um corte. Um bom corte tem gancho nos primeiros 3s, se entende sozinho e termina numa reação/fecho.
 Escolha início e fim (entre 45 e 90 segundos, dentro da janela) começando um pouco antes do que gerou a reação.
 Responda SOMENTE JSON:
@@ -189,9 +201,13 @@ Responda SOMENTE JSON:
     log(f"decisão: vale={dec.get('vale')} nota={dec.get('nota')} · {dec.get('titulo')} · {dec.get('motivo', '')[:80]}")
     if not dec.get('vale') or dec.get('nota', 0) < NOTA_MIN:
         return
-    ini, fim = float(dec['inicio']), float(dec['fim'])
-    if fim - ini < 30:
-        fim = min(ini + 60, ANTES + DEPOIS)
+    total = ANTES + DEPOIS
+    ini, fim = max(0.0, float(dec['inicio'])), min(total, float(dec['fim']))
+    if fim - ini < 45:                       # garante 45 s, crescendo para trás (onde está o contexto)
+        falta = 45 - (fim - ini)
+        ini = max(0.0, ini - falta); fim = min(total, max(fim, ini + 45))
+    if fim - ini > 90:
+        ini = fim - 90
     montar(pasta, janela, tr, dec, ini, fim)
 
 
