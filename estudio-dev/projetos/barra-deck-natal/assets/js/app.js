@@ -8,7 +8,7 @@
 
   const MENU = [
     {
-      id: 'entradas', title: 'Entradas', img: 'entradas.webp', alt: 'Bolinhos de bacalhau com limão',
+      id: 'entradas', title: 'Entradas', img: 'categorias/entradas.webp', alt: 'Entradas de Natal: bolinhos de bacalhau, coxinhas, kibes e camarão empanado',
       items: [
         ['bolinho-bacalhau', 'Bolinho de bacalhau', '50 unid.', 150],
         ['empanado-camarao', 'Empanado de camarão', '50 unid.', 150],
@@ -18,7 +18,7 @@
       ],
     },
     {
-      id: 'quiches', title: 'Quiches', note: 'Aro 24', img: 'quiches.webp', alt: 'Quiche de alho-poró fatiada',
+      id: 'quiches', title: 'Quiches', note: 'Aro 24', img: 'categorias/quiches.webp', alt: 'Quiches douradas, uma fatiada',
       items: [
         ['quiche-alho-poro', 'Quiche de alho-poró', '', 130],
         ['quiche-minas-tomate', 'Quiche de queijo minas com tomate seco', '', 130],
@@ -30,7 +30,7 @@
       ],
     },
     {
-      id: 'principais', title: 'Principais', note: 'Sem acompanhamento', img: 'principais.webp', alt: 'Chester assado com farofa e laranjas',
+      id: 'principais', title: 'Principais', note: 'Sem acompanhamento', img: 'categorias/principais.webp', alt: 'Mesa de Natal com chester, tender, lombo e bacalhau',
       items: [
         ['lombo', 'Lombo suíno', '1 kg', 125],
         ['maminha', 'Maminha recheada', '1 kg', 150],
@@ -47,7 +47,7 @@
       ],
     },
     {
-      id: 'acompanhamentos', title: 'Acompanhamentos', img: 'acompanhamentos.webp', alt: 'Arroz natalino e farofa',
+      id: 'acompanhamentos', title: 'Acompanhamentos', img: 'categorias/acompanhamentos.webp', alt: 'Arroz natalino, farofa, cuscuz e salpicão',
       items: [
         ['arroz-branco', 'Arroz branco', '1 kg', 50],
         ['arroz-natalino', 'Arroz natalino', '1,3 kg · passas, lascas de castanha, nozes, milho, bacon, azeitonas, ovos e presunto', 150],
@@ -63,7 +63,7 @@
       ],
     },
     {
-      id: 'sobremesas-menu', title: 'Sobremesas', img: 'sobremesas-pdf.webp', alt: 'Pudim e rabanadas com canela',
+      id: 'sobremesas-menu', title: 'Sobremesas', img: 'categorias/sobremesas.webp', alt: 'Sobremesas de Natal: rabanadas, torta de limão, pavê e cheesecake',
       items: [
         ['rabanada', 'Rabanada tradicional', 'unidade', 8],
         ['rabanada-panetone', 'Rabanada de panetone', 'unidade', 8],
@@ -125,7 +125,7 @@
         <ul class="items">
           ${c.items.map(([id, name, detail, price, photo]) => `
             <li class="item" data-item="${id}">
-              ${photo ? `<img class="item__ph" src="/assets/img/${photo}-640.webp" alt="" loading="lazy" decoding="async">` : ''}
+              <img class="item__ph" src="/assets/img/${photo ? `${photo}-240` : `pratos/mini/${id}`}.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
               <div class="item__txt">
                 <p class="item__name">${esc(name)}</p>
                 ${detail ? `<p class="item__detail">${esc(detail)}</p>` : ''}

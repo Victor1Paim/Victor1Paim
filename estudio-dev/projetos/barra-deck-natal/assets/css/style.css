@@ -197,7 +197,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   align-items: center; column-gap: 14px; row-gap: 8px; padding: 18px 4px; border-bottom: 1px solid var(--line);
   transition: background-color .3s var(--ease);
 }
-.item__ph { grid-area: ph; width: 56px; height: 56px; border-radius: 12px; object-fit: cover; }
+.item__ph { grid-area: ph; width: 88px; height: 88px; border-radius: 16px; object-fit: cover; box-shadow: 0 8px 18px -10px rgba(42, 20, 9, .45); background: var(--sand); }
+@media (max-width: 560px) { .item__ph { width: 76px; height: 76px; border-radius: 14px; } }
 .item__txt { grid-area: txt; min-width: 0; }
 .item__name { font: 600 22px/1.15 var(--serif); color: var(--brown); }
 .item__detail { font-size: 14px; color: var(--muted); margin-top: 3px; }

@@ -1,5 +1,6 @@
 # Aprendizados
 
+- Fotos de pratos com IA: `impressos/gerar_fotos.py` (estilo único no prompt, 6 em paralelo, retry). Miniaturas 240px em `pratos/mini/`; originais 640px fora do deploy (`.vercelignore`). ~US$ 0,07 por imagem 1024² medium.
 - Modo escuro forçado (Chrome/Samsung no Android) inverte cores de sites claros. Sites com identidade clara: `<meta name="color-scheme" content="only light">` + `color-scheme: only light` em `:root`/`html` + fundo explícito no `html`. Teste: Chromium com `--blink-settings=forceDarkModeEnabled=true`.
 - Cache: nunca cache longo em JS/CSS sem versão. Barra Deck usa `?v=<hash>` no index.html + `max-age=0, must-revalidate` para css/js (vercel.json). Ao editar CSS/JS, atualizar o `?v=` (hash md5 de 8 caracteres).
 - Quando o usuário manda um cardápio antigo, confirmar antes se é para misturar com o atual. A fonte da verdade do Barra Deck é o PDF 2026.

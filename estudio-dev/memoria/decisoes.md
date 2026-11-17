@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-17 | Barra Deck: fotos realistas geradas por IA (OpenAI gpt-image-2) para os 41 pratos sem foto real + 5 capas de categoria; fotos reais mantidas (pudim, cheesecake frutas vermelhas, pavê Oreo). Custo ≈ US$ 3,19 | Pedido do usuário; site já avisa "fotos meramente ilustrativas" |
 | 2026-11-16 | Barra Deck: formulário espelha a comanda de papel (cliente, telefone, recebimento, data, horário, endereço em campos, ponto de referência); só nome e telefone obrigatórios; botão de envio verde WhatsApp #1A9E57 | Pedido do usuário (foto da comanda) |
 | 2026-11-16 | Barra Deck: **seguir exatamente o PDF 2026** (`Ceia_de_Natal_2026_Barra_Deck.pdf`); principais SEM acompanhamento. Revertido o acréscimo do cardápio antigo | Usuário pediu explicitamente |
 | 2026-11-16 | Barra Deck: nova copy ("O fogão é nosso. A noite é sua.", CTA "Montar minha ceia", fechamento "Sabor de casa, capricho de restaurante") + seção Dúvidas | Pesquisa de copy do usuário; só fatos confirmados (sem chefs, kits por pessoa, aquecimento) |
