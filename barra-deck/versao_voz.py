@@ -14,7 +14,13 @@ EST=("Leia em português do Brasil, com sotaque carioca natural, como "+("um loc
 bruto=f'{D}/voz_{voz}.wav'
 import whisper
 m=whisper.load_model("turbo")
+import os
+REUSAR='--reusar' in sys.argv and os.path.exists(bruto)
 for tent in range(5):
+    if REUSAR:
+        r=m.transcribe(bruto,language='pt',word_timestamps=True)
+        W=[(w['start'],w['end'],w['word']) for s in r['segments'] for w in s['words']]
+        print('reaproveitando:',r['text'].strip(),flush=True); break
     body={"contents":[{"parts":[{"text":EST+" ".join(SEG)}]}],"generationConfig":{"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voz}}}}}
     req=urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-preview-tts:generateContent",data=json.dumps(body).encode(),headers={"x-goog-api-key":chave(),"Content-Type":"application/json"})
     for k in range(4):
@@ -29,6 +35,14 @@ for tent in range(5):
     ok=('qr' in txt) and ('15' in txt or 'quinze' in txt) and '13' not in txt and 'treze' not in txt and ('10 de dezembro' in txt or 'dez de dezembro' in txt) and ('24' in txt or 'vinte e quatro' in txt) and not any(x in txt for x in ('dinâmico','ritmo','entonação','reticências','bill')) and txt.strip().startswith('ceia')
     print('tentativa',tent+1,'conteúdo ok' if ok else 'ERRO de conteúdo',flush=True)
     if ok: break
+import numpy as np, wave as _wave
+with _wave.open(bruto) as _w:
+    _sr=_w.getframerate(); _x=np.frombuffer(_w.readframes(_w.getnframes()),np.int16).astype(float)
+def silencio(a,b):
+    """ponto de menor energia (janelas de 10 ms) entre a e b: corta no silêncio de verdade, nunca no fim da palavra"""
+    k=_sr//100; i0=max(0,int(a*_sr)); i1=max(i0+k,int(b*_sr)); seg=_x[i0:i1]
+    n=max(1,len(seg)//k); e=[np.sqrt((seg[q*k:(q+1)*k]**2).mean()) for q in range(n)]
+    return (i0+int(np.argmin(e))*k+k//2)/_sr
 norm=lambda s: unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode().strip(' .,!?…')
 cortes=[];j=0
 for a,back in ANC:
@@ -37,7 +51,7 @@ for a,back in ANC:
     if j>=len(W): sys.exit(f'âncora não achada: {a}')
     if back is None: back=0 if norm(W[j][2]).startswith('o') and len(norm(W[j][2]))<3 else (2 if 'nosso' in norm(W[j][2]) else 1)
     i=j-back; ini=W[i][0]; fimprev=W[i-1][1] if i>0 else 0.0
-    cortes.append(max(0.0,(fimprev+ini)/2) if i>0 else 0.0); j+=1
+    cortes.append(silencio(fimprev-0.03,ini+0.02) if i>0 else 0.0); j+=1
 dur=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',bruto],capture_output=True,text=True).stdout)
 cortes.append(dur)
 def sh(*a): subprocess.run(['ffmpeg','-nostdin','-loglevel','error','-y',*a],check=True)
@@ -45,7 +59,7 @@ CENA_ORIG=[(0,3.37),(3.37,7.57),(7.57,9.73),(9.73,12.13),(12.13,14.53),(14.53,16
 SRC=f'{D}/video-com-texto.mp4'; partes=[]; ent=[];fil=[];rel=[]; t=0.0
 for k in range(9):
     a,b=cortes[k],cortes[k+1]; p=f'{D}/_p{k}.wav'
-    sh('-i',bruto,'-af',f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,areverse,afade=t=in:d=0.04,areverse','-ar','48000','-ac','1',p)
+    sh('-i',bruto,'-af',f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,areverse,afade=t=in:d=0.08,areverse','-ar','48000','-ac','1',p)
     L=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',p],capture_output=True,text=True).stdout)
     so,eo=CENA_ORIG[k]; Lo=eo-so
     N=max(L+0.25+(0.12 if k==0 else 0.05), 1.4 if k not in (0,8) else 2.5)
@@ -53,7 +67,11 @@ for k in range(9):
     c=f'{D}/_c{k}.mp4'
     if N<=Lo: sh('-ss',f'{so:.3f}','-t',f'{N:.3f}','-i',SRC,'-an','-vf','fps=30','-c:v','libx264','-crf','17',c); f=1.0
     else:
-        f=N/Lo; sh('-ss',f'{so:.3f}','-t',f'{Lo:.3f}','-i',SRC,'-an','-vf',f'setpts={f:.4f}*PTS,fps=30','-c:v','libx264','-crf','17',c)
+        A=min(1.3,Lo-0.3); fb=(N-A)/(Lo-A); f=round(fb,2)
+        sh('-ss',f'{so:.3f}','-t',f'{Lo:.3f}','-i',SRC,'-an','-filter_complex',
+           f"[0:v]fps=30,split[x][y];[x]trim=0:{A:.3f},setpts=PTS-STARTPTS[a];"
+           f"[y]trim={A:.3f}:{Lo:.3f},setpts=PTS-STARTPTS,setpts={fb:.4f}*PTS,framerate=fps=30:interp_start=0:interp_end=255:scene=100[b];[a][b]concat=n=2:v=1:a=0[v]",
+           '-map','[v]','-c:v','libx264','-crf','17',c)
     partes.append(c); st=t+(0.12 if k==0 else 0.05); ent+=['-i',p]; ms=int(st*1000); fil.append(f'[{k}:a]adelay={ms}|{ms}[a{k}]')
     rel.append((k,round(t,2),round(N,2),round(f,2))); t+=N
 print('cenas (n, início, duração, câmera lenta):',rel,'total',round(t,2),flush=True)
