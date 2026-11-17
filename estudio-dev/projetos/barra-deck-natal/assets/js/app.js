@@ -326,7 +326,9 @@
     });
     const oc = ocasiaoSel();
     const d = new Date();
-    const code = `BD-${String(d.getDate()).padStart(2, '0')}${String(d.getMonth() + 1).padStart(2, '0')}-${String(Date.now()).slice(-4)} – ${oc.nome}`;
+    // BD-DDMM-HHMM-XX: dia/mês e hora do envio + 2 dígitos aleatórios
+    const p2 = (n) => String(n).padStart(2, '0');
+    const code = `BD-${p2(d.getDate())}${p2(d.getMonth() + 1)}-${p2(d.getHours())}${p2(d.getMinutes())}-${p2(Math.floor(Math.random() * 100))} – ${oc.nome}`;
     const entrega = f.recebimento.value === 'Entrega';
     const v = (n) => (f[n] && f[n].value ? f[n].value.trim() : '');
     // mesma ordem da comanda de papel: cliente, telefone, recebimento, data, horário, endereço, pedido

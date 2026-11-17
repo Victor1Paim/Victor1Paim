@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-17 | Barra Deck: nº do pedido `BD-DDMM-HHMM-XX – Ocasião` (dia/mês e hora do envio + 2 dígitos aleatórios). Sem numeração sequencial (site sem banco de dados) | Pedido do usuário (opção 1) |
 | 2026-11-17 | Barra Deck: pedidos de Natal (retirada 24/12, prazo 10/12) e Réveillon (retirada 31/12, prazo 20/12); mesmo cardápio e horário 10h–15h. Ocasião obrigatória no pedido; nº do pedido leva "– Natal"/"– Réveillon"; data some do pedido após o prazo | Pedido do usuário |
 | 2026-11-17 | Barra Deck: fotos realistas geradas por IA (OpenAI gpt-image-2) para os 41 pratos sem foto real + 5 capas de categoria; fotos reais mantidas (pudim, cheesecake frutas vermelhas, pavê Oreo). Custo ≈ US$ 3,19 | Pedido do usuário; site já avisa "fotos meramente ilustrativas" |
 | 2026-11-16 | Barra Deck: formulário espelha a comanda de papel (cliente, telefone, recebimento, data, horário, endereço em campos, ponto de referência); só nome e telefone obrigatórios; botão de envio verde WhatsApp #1A9E57 | Pedido do usuário (foto da comanda) |
