@@ -193,7 +193,7 @@
     if (isClosed()) { el.textContent = 'Encomendas encerradas'; document.body.classList.add('is-closed'); return; }
     const prox = OCASIOES.find(aberta);
     const days = Math.ceil((prox.prazo - Date.now()) / 86400000);
-    el.textContent = days <= 1 ? `Último dia · ${prox.nome}` : `Faltam ${days} dias · ${prox.nome}`;
+    el.innerHTML = `<span class="fl">${days <= 1 ? 'Último dia' : `Faltam ${days} dias`}</span><span class="fl fl--sub">para o ${prox.nome}</span>`;
     // ocasião com prazo vencido fica indisponível no pedido
     OCASIOES.forEach((o) => {
       const inp = $(`input[name="ocasiao"][value="${o.id}"]`);
