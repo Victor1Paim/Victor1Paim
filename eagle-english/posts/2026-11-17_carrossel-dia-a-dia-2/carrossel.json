@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do dia a dia"
+ },
+ "frases": [
+  {
+   "pt": "Que bom te ver!",
+   "en": "Good to see you!",
+   "pron": "GUD tu SÍI iú!"
+  },
+  {
+   "pt": "Como foi seu dia?",
+   "en": "How was your day?",
+   "pron": "HÁU uóz iór DÊI?"
+  },
+  {
+   "pt": "Tô exausto.",
+   "en": "I'm exhausted.",
+   "pron": "áim ig-ZÓS-tid"
+  },
+  {
+   "pt": "Sem pressa.",
+   "en": "Take your time.",
+   "pron": "TÊIK iór TÁIM"
+  },
+  {
+   "pt": "Boa sorte!",
+   "en": "Good luck!",
+   "pron": "gud LÂK!"
+  },
+  {
+   "pt": "Tô brincando!",
+   "en": "Just kidding!",
+   "pron": "DJÂST KÍ-din!"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}
