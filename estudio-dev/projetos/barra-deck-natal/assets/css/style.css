@@ -403,3 +403,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .endereco .sub { display: grid; gap: 4px; }
 .endereco .sub > span { font-size: 13px; font-weight: 600; color: var(--muted); }
 .endereco__linha { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; }
+
+/* ---------- textura de feltro (assets/img/feltro.webp, gerada por impressos/gerar_feltro.py) ---------- */
+:root { --feltro: url("/assets/img/feltro.webp?v=3e27f6b0"); }
+body, .band, .footer, .closing, .faq, .steps__list li, .delivery__card, .drawer, .promo {
+  background-image: var(--feltro); background-size: 360px 360px;
+}
+.hero::before { background-image: var(--feltro); background-size: 360px 360px; opacity: 1; mix-blend-mode: normal; }
+.menu { background: var(--feltro) 0 0 / 360px 360px, linear-gradient(var(--cream), var(--paper) 180px); }
+.closing::before { z-index: 0; }
+.closing__in { z-index: 1; }
+/* campos e itens que precisam de fundo liso para leitura continuam sem textura */
+.field input, .field textarea, .seg span, .faq__item, .fixed-date, .lembrete, .notice { background-image: none; }

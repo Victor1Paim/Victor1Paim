@@ -23,6 +23,7 @@
 - Design **premium**, com as cores tiradas da logo do cliente.
 - Vídeos: motion graphics dinâmico, **sem fotos de produto**; fundos gerados por IA na paleta; voz masculina estilo apresentador (TTS feminina "coral" soou robótica).
 - Usar fotos reais do cliente sempre que houver.
+- Barra Deck: fundo com **textura de feltro** sutil (`assets/img/feltro.webp`, gerada por `impressos/gerar_feltro.py`).
 
 ## Formato de site de pedidos (padrão aprovado)
 - Carrinho no site **sem pagamento**; o pedido sai organizado para o **WhatsApp** do cliente.
