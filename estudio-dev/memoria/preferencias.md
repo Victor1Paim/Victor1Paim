@@ -21,7 +21,7 @@
 
 ## Gosto visual
 - Design **premium**, com as cores tiradas da logo do cliente.
-- Vídeos: motion graphics dinâmico, **sem fotos de produto**; fundos gerados por IA na paleta; voz masculina estilo apresentador (TTS feminina "coral" soou robótica).
+- Vídeos: motion graphics dinâmico, **sem fotos de produto**; fundos gerados por IA na paleta; voz masculina estilo apresentador (TTS feminina "coral" soou robótica). **Voz preferida: Fenrir (Gemini TTS)** — script `barra-deck-reel/scripts/voz_gemini.py`.
 - Usar fotos reais do cliente sempre que houver.
 - Barra Deck: fundo com **textura de feltro** sutil (`assets/img/feltro.webp`, gerada por `impressos/gerar_feltro.py`).
 

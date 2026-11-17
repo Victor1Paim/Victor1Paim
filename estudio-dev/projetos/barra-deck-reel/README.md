@@ -37,3 +37,11 @@ Cenas: logo → "O fogão é nosso. A noite é sua." → cardápio (5 categorias
 ```bash
 npx remotion render Divulgacao out/divulgacao.mp4 --codec h264 --crf 18
 ```
+
+## Voz Fenrir (Gemini TTS)
+`scripts/voz_gemini.py` gera narração com a voz **Fenrir** (padrão) do Gemini.
+Chave: cadastrar no ambiente (Network secrets → host `generativelanguage.googleapis.com`, cabeçalho
+`x-goog-api-key`, sem prefixo) ou variável `GEMINI_API_KEY`. Nunca colar a chave no chat nem no git.
+```bash
+python3 scripts/voz_gemini.py "Ceia de Natal Barra Deck. O fogão é nosso. A noite é sua." public/audio/teste-fenrir.mp3
+```
