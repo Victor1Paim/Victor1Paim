@@ -28,7 +28,7 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | qui 19/11 | 12h | Na praia 🏖️ | Repita | Jornada | "Vamos à praia? Leve estas frases com você." | enviar | ✅ |
 | qui 19/11 | 19h | Objetos de casa 🏠 | Flashcard | Escolha | "Olha este objeto. Como ele se chama em inglês?" | placar | ✅ |
 | sex 20/11 | 12h | Despedidas 👋 | Repita | Contradição | "Vai sair? Repete estas despedidas comigo." | salvar | 🎬 |
-| sex 20/11 | 19h | Hora do lanche 🥪 | Lista com emoji | Problema | "Quer um lanche? Treine como pedir em inglês." | comentar palavra | 🧩 |
+| sex 20/11 | 19h | Hora do lanche 🥪 | Lista com emoji | Problema | "Quer um lanche? Treine como pedir em inglês." | comentar palavra | ✅ |
 | sáb 21/11 | 12h | Passeio no parque 🌳 | Repita | Jornada | "Um passeio no parque, uma frase por vez." | enviar | 🎬 |
 | sáb 21/11 | 19h | Grande ou pequeno? 📦 | Qual você usa? | Escolha | "Grande ou pequeno? Escolha a palavra para esta imagem." | comentar A/B | 🧩 |
 | dom 22/11 | 12h | Tomando sorvete 🍦 | Repita | Jornada | "Você sabe pedir sorvete em inglês?" | salvar | 🎬 |
