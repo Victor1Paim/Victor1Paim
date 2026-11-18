@@ -10,6 +10,7 @@ remove insultos) e escreve gancho + legendas das redes → base 9:16 com reflexo
 import json, os, subprocess, sys, urllib.request
 
 url, ini_h, fim_h, nome, contexto, canal = sys.argv[1:7]
+LONGA = sys.argv[7] if len(sys.argv) > 7 else None   # transcrição longa do VOD (json com t, f, x em segundos do VOD)
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 MODELO = os.path.join(RAIZ, 'modelo')
 PASTA = os.path.join(RAIZ, 'pacote-postagens', 'gringos', nome)
@@ -51,6 +52,12 @@ for s in tr['segments']:
         ant = x; continue
     ant = x
     frases.append({'i': round(s['start'], 2), 'f': round(min(s['end'], dur_fala), 2), 'en': x})
+# o Whisper às vezes pula 30-60 s com música alta: usa a transcrição longa do VOD e completa os buracos com a do recorte
+if LONGA:
+    longa = [{'i': round(x['t'] - ini, 2), 'f': round(min(x['f'], fim) - ini, 2), 'en': x['x']} for x in json.load(open(LONGA)) if ini - 1 <= x['t'] < fim]
+    cobre = lambda t: any(l['i'] - 1 <= t <= l['f'] + 1 for l in longa)
+    frases = sorted(longa + [f for f in frases if not cobre((f['i'] + f['f']) / 2)], key=lambda f: f['i'])
+    frases = [f for f in frases if f['f'] > max(f['i'], 0)]
 log(len(frases), 'frases')
 
 # 3) tradução + gancho + legendas
