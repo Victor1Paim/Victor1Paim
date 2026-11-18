@@ -33,6 +33,9 @@ def openai_json(prompt, modelo='gpt-5.4'):
 
 # 1) trecho do VOD (com 3 s de margem para a tela final)
 bruto = os.path.join(PASTA, 'bruto.mp4')
+if not os.path.exists(bruto) and os.path.exists(url):   # gravação local (streamlink): recorta direto
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(ini), '-t', str(fim - ini + 3), '-i', url, '-c:v', 'libx264', '-preset', 'veryfast',
+                    '-crf', '18', '-c:a', 'aac', '-b:a', '192k', bruto], check=True)
 if not os.path.exists(bruto):
     subprocess.run(['yt-dlp', '-q', '--no-warnings', '-f', '720p60/720p/best[height<=720]', '--download-sections',
                     f'*{ini}-{fim + 3}', '--force-keyframes-at-cuts', '-o', bruto, url], check=True)
@@ -43,7 +46,7 @@ audio = os.path.join(PASTA, 'audio.mp3')
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-vn', '-ac', '1', '-ar', '16000', '-b:a', '64k', audio], check=True)
 r = subprocess.run(['curl', '-s', '-m', '300', 'https://api.openai.com/v1/audio/transcriptions', '-H', 'Authorization: Bearer sk-proxy',
                     '-F', f'file=@{audio}', '-F', 'model=whisper-1', '-F', 'language=en', '-F', 'response_format=verbose_json',
-                    '-F', 'prompt=Kai Cenat streaming GTA 6: Lucia, Jason, Vice City, Leonida.'], capture_output=True, text=True)
+                    '-F', f'prompt={canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.'], capture_output=True, text=True)
 tr = json.loads(r.stdout)
 frases, ant = [], None
 for s in tr['segments']:
@@ -81,9 +84,9 @@ Também escreva:
 - "gancho": 2 linhas em MAIÚSCULAS de até 16 letras cada, chamativas, sem copiar a fala (ex.: ["GTA 6 TEM", "BEBÊ?!"]);
 - "destaque": UMA palavra do gancho para ir em amarelo;
 - "destaques": 4 a 6 palavras-chave das traduções;
-- "tiktok": legenda TikTok/Reels em pt com 1-2 emojis, pergunta para comentar, e hashtags #gta6 #kaicenat #gta6brasil #cortes;
+- "tiktok": legenda TikTok/Reels em pt com 1-2 emojis, pergunta para comentar, e hashtags #gta6 #{canal.lower()} #gta6brasil #cortes;
 - "shorts_titulo": até 60 caracteres com #gta6 #shorts;
-- "instagram": 2-3 linhas em pt + hashtags (#gta6 #kaicenat #gta6brasil #cortes).
+- "instagram": 2-3 linhas em pt + hashtags (#gta6 #{canal.lower()} #gta6brasil #cortes).
 Responda SOMENTE JSON: {{"traducoes":[{{"n":0,"pt":"..."}}], "gancho":[...], "destaque":"...", "destaques":[...], "tiktok":"...", "shorts_titulo":"...", "instagram":"..."}}
 
 FRASES: {json.dumps(pedido['frases'], ensure_ascii=False)}""")
