@@ -126,13 +126,20 @@ tmp = os.path.join(PASTA, 'render.mp4')
 subprocess.run(['npx', 'remotion', 'render', 'src/index.ts', 'Corte', tmp, f'--props={arq}', '--concurrency=4', '--log=error'], cwd=MODELO, check=True)
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', tmp, '-c:v', 'libx264', '-crf', '19', '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k',
                 '-movflags', '+faststart', os.path.join(PASTA, 'video.mp4')], check=True)
-os.remove(tmp); os.remove(base)
+os.remove(tmp)
+if FAIXA:   # capa no mesmo estilo: quadro do próprio vídeo, manchete maior
+    props['dados']['capa'] = True
+    json.dump(props, open(arq, 'w'), ensure_ascii=False)
+    subprocess.run(['npx', 'remotion', 'still', 'src/index.ts', 'Corte', os.path.join(PASTA, 'capa.jpg'), f'--props={arq}',
+                    f'--frame={int(dur_fala * 0.4 * 30)}', '--jpeg-quality=92', '--log=error'], cwd=MODELO, check=True)
+os.remove(base)
 
 # 6) capa + legendas das redes
 quadro = os.path.join(PASTA, 'quadro.jpg')
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', f'{dur_fala * 0.5:.2f}', '-i', bruto, '-frames:v', '1',
                 '-vf', 'crop=ih*9/16:ih,scale=1080:1920:flags=lanczos', quadro], check=True)
-subprocess.run(['node', os.path.join(RAIZ, 'vigia', 'capa.js'), quadro, json.dumps(dec['gancho']), dec.get('destaque', ''),
+if not FAIXA:
+  subprocess.run(['node', os.path.join(RAIZ, 'vigia', 'capa.js'), quadro, json.dumps(dec['gancho']), dec.get('destaque', ''),
                 f'🎮 {canal.upper()} · GTA 6', os.path.join(PASTA, 'capa.jpg')], check=True)
 credito = f'📺 Créditos: {canal} (Twitch) — https://www.twitch.tv/{canal.lower()}'
 open(os.path.join(PASTA, 'legendas.txt'), 'w').write(

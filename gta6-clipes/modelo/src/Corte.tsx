@@ -26,6 +26,7 @@ export type Dados = {
   layout?: {topo: number; altura: number};
   estilo?: 'faixa';          // faixa vermelha no meio (câmera em cima, gameplay embaixo)
   faixa?: {topo: number; titulo: string};
+  capa?: boolean;            // quadro de capa: manchete maior, sem legenda/crédito/tela final
 };
 const layoutDe = (d: Dados) => d.layout ?? {topo: VIDEO_TOPO, altura: VIDEO_ALTURA};
 type Cartao = {inicio: number; fim: number; grande: string; pequeno: string};
@@ -226,24 +227,25 @@ const Faixa: React.FC<{dados: Dados}> = ({dados}) => {
   const {fps} = useVideoConfig();
   const t = frame / fps;
   const f = dados.faixa!;
-  const altura = 330;
+  const capa = !!dados.capa;
+  const altura = capa ? 420 : 330;
   const topo = bordaRasgada(16, 12, 40, 1);
   const baixo = bordaRasgada(altura - 16, 12, 40, 7).reverse();
   const entra = spring({frame, fps, config: {damping: 14}});
   const grupos = dados.palavras?.length ? agrupar(dados.palavras) : dados.legendas.flatMap(quebrar);
   const g = grupos.find((gr, i) => t >= gr[0].inicio && t < Math.min(gr[gr.length - 1].fim + 0.25, grupos[i + 1]?.[0].inicio ?? Infinity));
-  const tam = f.titulo.length > 46 ? 70 : f.titulo.length > 32 ? 80 : 92;
+  const tam = (f.titulo.length > 46 ? 70 : f.titulo.length > 32 ? 80 : 92) * (capa ? 1.28 : 1);
   return (
-    <div style={{position: 'absolute', top: f.topo, left: 0, width: 1080, height: altura, transform: `scaleY(${entra})`}}>
+    <div style={{position: 'absolute', top: capa ? f.topo - 45 : f.topo, left: 0, width: 1080, height: altura, transform: `scaleY(${capa ? 1 : entra})`}}>
       <svg width={1080} height={altura} style={{position: 'absolute', inset: 0, filter: 'drop-shadow(0 10px 0 rgba(0,0,0,.45))'}}>
         <polygon points={[...topo, ...baixo].join(' ')} fill="#d61f26" />
       </svg>
       <div style={{position: 'absolute', top: 18, left: 30, right: 30, height: 70, textAlign: 'center', fontFamily: inter, fontWeight: 800,
         fontSize: 58, lineHeight: '70px', color: AMARELO, WebkitTextStroke: '9px #000', paintOrder: 'stroke fill', textTransform: 'uppercase',
         whiteSpace: 'nowrap', overflow: 'hidden'}}>
-        {g ? g.map((w) => w.texto).join(' ') : ''}
+        {g && !capa ? g.map((w) => w.texto).join(' ') : ''}
       </div>
-      <div style={{position: 'absolute', top: 92, left: 30, right: 30, bottom: 26, display: 'flex', alignItems: 'center', justifyContent: 'center',
+      <div style={{position: 'absolute', top: capa ? 30 : 92, left: 30, right: 30, bottom: 26, display: 'flex', alignItems: 'center', justifyContent: 'center',
         textAlign: 'center', fontFamily: inter, fontWeight: 800, fontSize: tam, lineHeight: 1.04, color: '#fff', WebkitTextStroke: '12px #000',
         paintOrder: 'stroke fill', textTransform: 'uppercase', textWrap: 'balance'} as React.CSSProperties}>
         {f.titulo}
@@ -256,9 +258,9 @@ export const Corte: React.FC<{dados: Dados}> = ({dados}) => dados.estilo === 'fa
   <AbsoluteFill style={{backgroundColor: '#000'}}>
     <OffthreadVideo src={staticFile(dados.video)} />
     <Faixa dados={dados} />
-    <div style={{position: 'absolute', top: dados.faixa!.topo - 74, left: 30}}><Marca tamanho={52} /></div>
-    <Credito texto={dados.credito} canal={dados.canal} />
-    <Final dados={dados} />
+    <div style={{position: 'absolute', top: dados.faixa!.topo - (dados.capa ? 119 : 74), left: 30}}><Marca tamanho={52} /></div>
+    {!dados.capa && <Credito texto={dados.credito} canal={dados.canal} />}
+    {!dados.capa && <Final dados={dados} />}
   </AbsoluteFill>
 ) : (
   <AbsoluteFill style={{backgroundColor: '#000'}}>
