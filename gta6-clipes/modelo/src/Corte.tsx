@@ -59,18 +59,7 @@ const quebrar = (l: Legenda): Palavra[][] => {
     t += d;
     return w;
   });
-  const grupos: Palavra[][] = [];
-  let atual: Palavra[] = [];
-  palavras.forEach((w) => {
-    atual.push(w);
-    const fimDeFrase = /[.?!,]$/.test(w.texto);
-    if (atual.length >= 4 || (fimDeFrase && atual.length >= 2)) {
-      grupos.push(atual);
-      atual = [];
-    }
-  });
-  if (atual.length) grupos.push(atual);
-  return grupos;
+  return agrupar(palavras);
 };
 
 const Legendas: React.FC<{dados: Dados}> = ({dados}) => {
