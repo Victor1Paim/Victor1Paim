@@ -106,7 +106,7 @@ reflexo = ('split=3[c][a][b];[a]vflip,scale=270:-2,boxblur=8:2,scale=1080:656,eq
 if FAIXA:
     cx, cy, cw, ch, gx, gy, gw, gh = FAIXA.split(',')
     filtro = (f'[0:v]split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:660,setsar=1[cam];[b]crop={gw}:{gh}:{gx}:{gy},scale=1080:972,setsar=1[jogo];'
-              'color=black:s=1080x288:d=1[preto];[cam][preto][jogo]vstack=3:shortest=1,format=yuv420p[v]')
+              'color=black:s=1080x288:r=60[preto];[cam][preto][jogo]vstack=3:shortest=1,format=yuv420p[v]')
 else:
     filtro = '[0:v]scale=1080:608,setsar=1,' + reflexo
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-t', f'{dur:.2f}', '-filter_complex', filtro,
