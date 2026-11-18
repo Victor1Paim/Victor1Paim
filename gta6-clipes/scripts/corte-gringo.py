@@ -83,6 +83,8 @@ falas do jogo (personagens) também são traduzidas. Não junte nem omita frases
 Também escreva:
 - "gancho": 2 linhas em MAIÚSCULAS de até 16 letras cada, chamativas, sem copiar a fala (ex.: ["GTA 6 TEM", "BEBÊ?!"]);
 - "destaque": UMA palavra do gancho para ir em amarelo;
+- "etiqueta": manchete CURTA em MAIÚSCULAS de até 26 caracteres para a etiqueta branca (ex.: "SPEED QUEIMOU TUDO NO GTA 6");
+- "destaque_etiqueta": 1 ou 2 palavras da etiqueta para ir em rosa (ex.: "GTA 6");
 - "titulo_faixa": UMA frase em MAIÚSCULAS de 25 a 45 caracteres que conta o que acontece, estilo manchete de corte (ex.: "SPEED VIU O BEBÊ E ENTROU EM PÂNICO");
 - "destaques": 4 a 6 palavras-chave das traduções;
 - "tiktok": legenda TikTok/Reels em pt com 1-2 emojis, pergunta para comentar, e hashtags #gta6 #{canal.lower()} #gta6brasil #cortes;
@@ -98,12 +100,40 @@ log('traduzido; gancho:', dec['gancho'])
 
 # 4) base 9:16: estilo "faixa" (FAIXA=camx,camy,camw,camh,gx,gy,gw,gh na resolução da fonte) ou reflexo
 FAIXA = os.environ.get('FAIXA')
+ZOOM = os.environ.get('ZOOM')   # mesmo formato de FAIXA: estilo com linha branca + zoom no rosto nos picos de voz
 dur = dur_fala + 2.6
 base_nome = f'gringo-{nome}.mp4'
 base = os.path.join(MODELO, 'public', base_nome)
 reflexo = ('split=3[c][a][b];[a]vflip,scale=270:-2,boxblur=8:2,scale=1080:656,eq=brightness=-0.28:saturation=1.1[t];'
            '[b]vflip,scale=270:-2,boxblur=8:2,scale=1080:656,eq=brightness=-0.28:saturation=1.1[bo];[t][c][bo]vstack=3,format=yuv420p[v]')
-if FAIXA:
+if ZOOM:
+    cx, cy, cw, ch, gx, gy, gw, gh = [int(v) for v in ZOOM.split(',')]
+    gw2 = round(gh * 1080 / 1260)                       # gameplay ocupa 1080x1260 embaixo
+    gx2 = gx + max(0, (gw - gw2) // 2)
+    filtro = (f'[0:v]split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:660:flags=lanczos,setsar=1[cam];'
+              f'[b]crop={gw2}:{gh}:{gx2}:{gy},scale=1080:1260,setsar=1[jogo];[cam][jogo]vstack=2,format=yuv420p[v]')
+    lado = min(cw, ch)
+    zoom_nome = f'gringo-{nome}-zoom.mp4'
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-t', f'{dur:.2f}', '-filter_complex',
+        f'[0:v]crop={cw}:{ch}:{cx}:{cy},split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:3,eq=brightness=-0.25[bg];'
+        f'[b]crop={lado}:{lado}:{(cw - lado) // 2}:0,scale=1080:1080:flags=lanczos,unsharp=5:5:0.8[fg];[bg][fg]overlay=0:420,format=yuv420p[v]',
+        '-map', '[v]', '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', os.path.join(MODELO, 'public', zoom_nome)], check=True)
+    # picos de voz (RMS a cada 0,1 s) = momentos de reação para o zoom
+    import numpy as np
+    pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', bruto, '-t', f'{dur_fala:.2f}', '-f', 's16le', '-ac', '1', '-ar', '8000', '-'], capture_output=True).stdout
+    a = np.frombuffer(pcm, np.int16).astype(float)
+    rms = np.array([np.sqrt(np.mean(a[i:i + 800] ** 2)) for i in range(0, len(a) - 800, 800)])
+    momentos = []
+    for k in np.argsort(rms)[::-1]:
+        tk = k / 10
+        if tk < 3 or tk > dur_fala - 3 or any(abs(tk - m) < 10 for m in momentos):
+            continue
+        momentos.append(tk)
+        if len(momentos) == 3:
+            break
+    zooms = [{'inicio': round(m - 0.4, 2), 'fim': round(m + 1.8, 2)} for m in sorted(momentos)]
+    log('zooms em', [z['inicio'] for z in zooms])
+elif FAIXA:
     cx, cy, cw, ch, gx, gy, gw, gh = FAIXA.split(',')
     filtro = (f'[0:v]split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:660,setsar=1[cam];[b]crop={gw}:{gh}:{gx}:{gy},scale=1080:972,setsar=1[jogo];'
               'color=black:s=1080x288:r=60[preto];[cam][preto][jogo]vstack=3:shortest=1,format=yuv420p[v]')
@@ -118,6 +148,9 @@ props = {'dados': {'video': base_nome, 'duracao': round(dur - 0.05, 2), 'gancho'
                    'cabecalho': f'GTA 6 · {canal}', 'selo': 'DIA 1', 'credito': f'{canal} (Twitch) · tradução Modo Replay', 'canal': 'Modo Replay',
                    'chamadaFinal': 'Segue pra ver o GTA 6 legendado', 'inicioFinal': round(dur_fala + 0.2, 2), 'legendas': legendas,
                    'destaques': dec.get('destaques', []), 'layout': {'topo': 656, 'altura': 608}}}
+if ZOOM:
+    props['dados'].update({'estilo': 'zoom', 'zoom': {'video': zoom_nome, 'linha': 660, 'etiqueta': dec.get('etiqueta') or ' '.join(dec['gancho']),
+                           'destaqueEtiqueta': dec.get('destaque_etiqueta', 'GTA 6'), 'momentos': zooms}})
 if FAIXA:
     props['dados'].update({'estilo': 'faixa', 'faixa': {'topo': 610, 'titulo': dec.get('titulo_faixa') or ' '.join(dec['gancho'])}})
 arq = os.path.join(PASTA, 'props.json')
@@ -127,18 +160,20 @@ subprocess.run(['npx', 'remotion', 'render', 'src/index.ts', 'Corte', tmp, f'--p
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', tmp, '-c:v', 'libx264', '-crf', '19', '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k',
                 '-movflags', '+faststart', os.path.join(PASTA, 'video.mp4')], check=True)
 os.remove(tmp)
-if FAIXA:   # capa no mesmo estilo: quadro do próprio vídeo, manchete maior
+if FAIXA or ZOOM:   # capa no mesmo estilo: quadro do próprio vídeo, manchete maior
     props['dados']['capa'] = True
     json.dump(props, open(arq, 'w'), ensure_ascii=False)
     subprocess.run(['npx', 'remotion', 'still', 'src/index.ts', 'Corte', os.path.join(PASTA, 'capa.jpg'), f'--props={arq}',
                     f'--frame={int(dur_fala * 0.4 * 30)}', '--jpeg-quality=92', '--log=error'], cwd=MODELO, check=True)
 os.remove(base)
+if ZOOM:
+    os.remove(os.path.join(MODELO, 'public', zoom_nome))
 
 # 6) capa + legendas das redes
 quadro = os.path.join(PASTA, 'quadro.jpg')
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', f'{dur_fala * 0.5:.2f}', '-i', bruto, '-frames:v', '1',
                 '-vf', 'crop=ih*9/16:ih,scale=1080:1920:flags=lanczos', quadro], check=True)
-if not FAIXA:
+if not (FAIXA or ZOOM):
   subprocess.run(['node', os.path.join(RAIZ, 'vigia', 'capa.js'), quadro, json.dumps(dec['gancho']), dec.get('destaque', ''),
                 f'🎮 {canal.upper()} · GTA 6', os.path.join(PASTA, 'capa.jpg')], check=True)
 credito = f'📺 Créditos: {canal} (Twitch) — https://www.twitch.tv/{canal.lower()}'

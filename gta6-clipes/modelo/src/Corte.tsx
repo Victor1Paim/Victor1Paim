@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing,
+  AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing,
 } from 'remotion';
 import {loadFont} from '@remotion/fonts';
 
@@ -24,7 +24,8 @@ export type Dados = {
   palavras?: PalavraFonte[];
   cartoes?: Cartao[];
   layout?: {topo: number; altura: number};
-  estilo?: 'faixa';          // faixa vermelha no meio (câmera em cima, gameplay embaixo)
+  estilo?: 'faixa' | 'zoom';
+  zoom?: {video: string; linha: number; etiqueta: string; destaqueEtiqueta?: string; momentos: {inicio: number; fim: number}[]};          // faixa vermelha no meio (câmera em cima, gameplay embaixo)
   faixa?: {topo: number; titulo: string};
   capa?: boolean;            // quadro de capa: manchete maior, sem legenda/crédito/tela final
 };
@@ -254,7 +255,66 @@ const Faixa: React.FC<{dados: Dados}> = ({dados}) => {
   );
 };
 
-export const Corte: React.FC<{dados: Dados}> = ({dados}) => dados.estilo === 'faixa' ? (
+// Estilo "zoom": câmera em cima, gameplay embaixo, linha branca com etiqueta; nos picos de reação, o rosto ocupa a tela.
+const Etiqueta: React.FC<{texto: string; destaque?: string; grande?: boolean}> = ({texto, destaque, grande}) => {
+  const partes = destaque && texto.includes(destaque) ? texto.split(destaque) : [texto];
+  return (
+    <div style={{display: 'inline-block', background: '#fff', borderRadius: 14, padding: grande ? '14px 34px' : '10px 26px',
+      fontFamily: inter, fontWeight: 800, fontSize: grande ? 64 : 46, color: '#000', textTransform: 'uppercase', whiteSpace: 'nowrap',
+      boxShadow: '0 6px 0 rgba(0,0,0,.35)'}}>
+      {partes.map((p, i) => (
+        <React.Fragment key={i}>{p}{i < partes.length - 1 && <span style={{color: '#e021c8'}}>{destaque}</span>}</React.Fragment>
+      ))}
+    </div>
+  );
+};
+
+const LegendaZoom: React.FC<{dados: Dados; topo: number}> = ({dados, topo}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const t = frame / fps;
+  const grupos = dados.palavras?.length ? agrupar(dados.palavras) : dados.legendas.flatMap(quebrar);
+  const g = grupos.find((gr, i) => t >= gr[0].inicio && t < Math.min(gr[gr.length - 1].fim + 0.25, grupos[i + 1]?.[0].inicio ?? Infinity));
+  if (!g) return null;
+  const s = spring({frame: frame - Math.round(g[0].inicio * fps), fps, config: {damping: 14, mass: 0.6}});
+  return (
+    <div style={{position: 'absolute', top: topo, left: 50, right: 50, textAlign: 'center', fontFamily: inter, fontWeight: 800, fontSize: 76,
+      lineHeight: 1.1, color: AMARELO, WebkitTextStroke: '11px #000', paintOrder: 'stroke fill', textTransform: 'uppercase',
+      transform: `scale(${interpolate(s, [0, 1], [0.8, 1])})`, opacity: s}}>
+      {g.map((w) => w.texto).join(' ')}
+    </div>
+  );
+};
+
+const CorteZoom: React.FC<{dados: Dados}> = ({dados}) => {
+  const {fps} = useVideoConfig();
+  const frame = useCurrentFrame();
+  const t = frame / fps;
+  const z = dados.zoom!;
+  const emZoom = !dados.capa && z.momentos.some((m) => t >= m.inicio && t < m.fim);
+  return (
+    <AbsoluteFill style={{backgroundColor: '#000'}}>
+      <OffthreadVideo src={staticFile(dados.video)} />
+      {!dados.capa && z.momentos.map((m, i) => (
+        <Sequence key={i} from={Math.round(m.inicio * fps)} durationInFrames={Math.max(1, Math.round((m.fim - m.inicio) * fps))}>
+          <OffthreadVideo src={staticFile(z.video)} startFrom={Math.round(m.inicio * fps)} muted />
+        </Sequence>
+      ))}
+      {!emZoom && <div style={{position: 'absolute', top: z.linha - 3, left: 0, width: 1080, height: 6, background: '#fff'}} />}
+      {!emZoom && (
+        <div style={{position: 'absolute', top: z.linha - (dados.capa ? 52 : 38), left: 0, right: 0, textAlign: 'center'}}>
+          <Etiqueta texto={z.etiqueta} destaque={z.destaqueEtiqueta} grande={dados.capa} />
+        </div>
+      )}
+      {!emZoom && <div style={{position: 'absolute', top: z.linha - 110, left: 30}}><Marca tamanho={48} /></div>}
+      {!dados.capa && <LegendaZoom dados={dados} topo={emZoom ? 1560 : z.linha + 560} />}
+      {!dados.capa && <Credito texto={dados.credito} canal={dados.canal} />}
+      {!dados.capa && <Final dados={dados} />}
+    </AbsoluteFill>
+  );
+};
+
+export const Corte: React.FC<{dados: Dados}> = ({dados}) => dados.estilo === 'zoom' ? <CorteZoom dados={dados} /> : dados.estilo === 'faixa' ? (
   <AbsoluteFill style={{backgroundColor: '#000'}}>
     <OffthreadVideo src={staticFile(dados.video)} />
     <Faixa dados={dados} />
