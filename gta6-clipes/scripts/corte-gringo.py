@@ -58,6 +58,13 @@ if LONGA:
     cobre = lambda t: any(l['i'] - 1 <= t <= l['f'] + 1 for l in longa)
     frases = sorted(longa + [f for f in frases if not cobre((f['i'] + f['f']) / 2)], key=lambda f: f['i'])
     frases = [f for f in frases if f['f'] > max(f['i'], 0)]
+    norm = lambda x: ''.join(c for c in x.lower() if c.isalnum())
+    unicas = []
+    for f in frases:   # a mesma fala nas duas transcrições, com horário um pouco diferente
+        if any(abs(u['i'] - f['i']) < 8 and (norm(u['en']) in norm(f['en']) or norm(f['en']) in norm(u['en'])) for u in unicas):
+            continue
+        unicas.append(f)
+    frases = unicas
 log(len(frases), 'frases')
 
 # 3) tradução + gancho + legendas
