@@ -83,6 +83,7 @@ falas do jogo (personagens) também são traduzidas. Não junte nem omita frases
 Também escreva:
 - "gancho": 2 linhas em MAIÚSCULAS de até 16 letras cada, chamativas, sem copiar a fala (ex.: ["GTA 6 TEM", "BEBÊ?!"]);
 - "destaque": UMA palavra do gancho para ir em amarelo;
+- "titulo_faixa": UMA frase em MAIÚSCULAS de 25 a 45 caracteres que conta o que acontece, estilo manchete de corte (ex.: "SPEED VIU O BEBÊ E ENTROU EM PÂNICO");
 - "destaques": 4 a 6 palavras-chave das traduções;
 - "tiktok": legenda TikTok/Reels em pt com 1-2 emojis, pergunta para comentar, e hashtags #gta6 #{canal.lower()} #gta6brasil #cortes;
 - "shorts_titulo": até 60 caracteres com #gta6 #shorts;
@@ -95,13 +96,20 @@ legendas = [{'inicio': f['i'], 'fim': f['f'], 'texto': pt.get(k, '').strip()} fo
 json.dump({'frases': frases, **dec}, open(os.path.join(PASTA, 'decisao.json'), 'w'), ensure_ascii=False, indent=1)
 log('traduzido; gancho:', dec['gancho'])
 
-# 4) base 9:16 com reflexo
+# 4) base 9:16: estilo "faixa" (FAIXA=camx,camy,camw,camh,gx,gy,gw,gh na resolução da fonte) ou reflexo
+FAIXA = os.environ.get('FAIXA')
 dur = dur_fala + 2.6
 base_nome = f'gringo-{nome}.mp4'
 base = os.path.join(MODELO, 'public', base_nome)
 reflexo = ('split=3[c][a][b];[a]vflip,scale=270:-2,boxblur=8:2,scale=1080:656,eq=brightness=-0.28:saturation=1.1[t];'
            '[b]vflip,scale=270:-2,boxblur=8:2,scale=1080:656,eq=brightness=-0.28:saturation=1.1[bo];[t][c][bo]vstack=3,format=yuv420p[v]')
-subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-t', f'{dur:.2f}', '-filter_complex', '[0:v]scale=1080:608,setsar=1,' + reflexo,
+if FAIXA:
+    cx, cy, cw, ch, gx, gy, gw, gh = FAIXA.split(',')
+    filtro = (f'[0:v]split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:660,setsar=1[cam];[b]crop={gw}:{gh}:{gx}:{gy},scale=1080:972,setsar=1[jogo];'
+              'color=black:s=1080x288:d=1[preto];[cam][preto][jogo]vstack=3:shortest=1,format=yuv420p[v]')
+else:
+    filtro = '[0:v]scale=1080:608,setsar=1,' + reflexo
+subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-t', f'{dur:.2f}', '-filter_complex', filtro,
                 '-map', '[v]', '-map', '0:a', '-af', 'apad', '-t', f'{dur:.2f}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18',
                 '-c:a', 'aac', '-b:a', '192k', base], check=True)
 
@@ -110,6 +118,8 @@ props = {'dados': {'video': base_nome, 'duracao': round(dur - 0.05, 2), 'gancho'
                    'cabecalho': f'GTA 6 · {canal}', 'selo': 'DIA 1', 'credito': f'{canal} (Twitch) · tradução Modo Replay', 'canal': 'Modo Replay',
                    'chamadaFinal': 'Segue pra ver o GTA 6 legendado', 'inicioFinal': round(dur_fala + 0.2, 2), 'legendas': legendas,
                    'destaques': dec.get('destaques', []), 'layout': {'topo': 656, 'altura': 608}}}
+if FAIXA:
+    props['dados'].update({'estilo': 'faixa', 'faixa': {'topo': 610, 'titulo': dec.get('titulo_faixa') or ' '.join(dec['gancho'])}})
 arq = os.path.join(PASTA, 'props.json')
 json.dump(props, open(arq, 'w'), ensure_ascii=False)
 tmp = os.path.join(PASTA, 'render.mp4')
