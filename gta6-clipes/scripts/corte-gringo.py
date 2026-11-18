@@ -124,7 +124,7 @@ arq = os.path.join(PASTA, 'props.json')
 json.dump(props, open(arq, 'w'), ensure_ascii=False)
 tmp = os.path.join(PASTA, 'render.mp4')
 subprocess.run(['npx', 'remotion', 'render', 'src/index.ts', 'Corte', tmp, f'--props={arq}', '--concurrency=4', '--log=error'], cwd=MODELO, check=True)
-subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', tmp, '-c:v', 'libx264', '-crf', '26', '-preset', 'medium', '-c:a', 'aac', '-b:a', '128k',
+subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', tmp, '-c:v', 'libx264', '-crf', '19', '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k',
                 '-movflags', '+faststart', os.path.join(PASTA, 'video.mp4')], check=True)
 os.remove(tmp); os.remove(base)
 
