@@ -1,0 +1,11 @@
+{
+ "fundo": "img/mesa.png",
+ "selo": "Prova de inglês",
+ "titulo": "Comidas em\n*inglês* 🍽️",
+ "sub": "<b>8 comidas</b> · quantas você acerta?",
+ "balao": {
+  "en": "Rice and beans!",
+  "pron": "/RÁIS end BÍINZ/",
+  "lado": "dir"
+ }
+}

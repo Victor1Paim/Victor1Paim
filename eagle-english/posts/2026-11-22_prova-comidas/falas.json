@@ -1,0 +1,131 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "Prova de inglês! Oito comidas do seu prato. Quantas você acerta?"
+  },
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Como se diz pão em inglês?...\n\nE arroz?...\n\nFeijão?...\n\nE ovo?...\n\nFrango?...\n\nAgora a que pega: mandioca!...\n\nQueijo?...\n\nE a última: batata frita!"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Bread...\n\nRice...\n\nBeans...\n\nEgg...\n\nChicken...\n\nCassava...\n\nCheese...\n\nFrench fries."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Como se diz pão em inglês?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Bread",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "E arroz?",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "Rice",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Feijão?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Beans",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "E ovo?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "Egg",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Frango?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Chicken",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Agora a que pega: mandioca!",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "Cassava",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Queijo?",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "Cheese",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "E a última: batata frita!",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "French fries",
+   "recorte": true
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Oito comidas do seu prato! Quantas você acertou? Comenta sua nota!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

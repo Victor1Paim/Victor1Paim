@@ -1,0 +1,143 @@
+{
+ "fundo": "img/cozinha.png",
+ "velocidade_pt": 1.0,
+ "pausa_repetir": 0.3,
+ "segundos_contagem": 0.5,
+ "abertura": {
+  "audio": "intro",
+  "fundo": "img/cozinha.png",
+  "selo": "Prova de inglês 📝",
+  "titulo": "Comidas do\nseu *prato* 🍽️",
+  "sub": "<b>8 comidas</b> · quantas você acerta?",
+  "desafio": "Fala antes da resposta! ⏱️",
+  "figuras": []
+ },
+ "beats": [
+  {
+   "tipo": "prova",
+   "emoji": "🍞",
+   "en": "Bread",
+   "pron": "/BRÉD/",
+   "pt": "pão",
+   "audio_q": "q1",
+   "audio_r": "r1",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🍚",
+   "en": "Rice",
+   "pron": "/RÁIS/",
+   "pt": "arroz",
+   "audio_q": "q2",
+   "audio_r": "r2",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🫘",
+   "en": "Beans",
+   "pron": "/BÍINZ/",
+   "pt": "feijão",
+   "audio_q": "q3",
+   "audio_r": "r3",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🥚",
+   "en": "Egg",
+   "pron": "/ÉG/",
+   "pt": "ovo",
+   "audio_q": "q4",
+   "audio_r": "r4",
+   "fundo": "img/cozinha.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🍗",
+   "en": "Chicken",
+   "pron": "/TCHÍ-ken/",
+   "pt": "frango",
+   "audio_q": "q5",
+   "audio_r": "r5",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🍠",
+   "en": "Cassava",
+   "pron": "/kâ-SÁ-va/",
+   "pt": "mandioca",
+   "audio_q": "q6",
+   "audio_r": "r6",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🧀",
+   "en": "Cheese",
+   "pron": "/TCHÍIZ/",
+   "pt": "queijo",
+   "audio_q": "q7",
+   "audio_r": "r7",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "prova",
+   "emoji": "🍟",
+   "en": "French fries",
+   "pron": "/FRÉNTCH FRÁIZ/",
+   "pt": "batata frita",
+   "audio_q": "q8",
+   "audio_r": "r8",
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "lista_fim",
+   "texto": "Prato completo! ✅\nQuantas você acertou? 👇",
+   "audio": [
+    "fecho"
+   ],
+   "fundo": "img/mesa.png"
+  },
+  {
+   "tipo": "produto",
+   "audio": [
+    "cta"
+   ],
+   "fundo": "img/mesa.png",
+   "telas": [
+    {
+     "tipo": "kit",
+     "tag": "Ebook + *4 bônus*",
+     "capas": [
+      "capa-guia",
+      "capa-cards",
+      "capa-ebook",
+      "capa-500",
+      "capa-verbos"
+     ],
+     "itens": [
+      "*350 mapas* · 2.100 frases",
+      "Guia de 21 Dias · *15 min/dia*",
+      "20 Cards de Gramática",
+      "500 Frases · 100 Verbos"
+     ]
+    },
+    {
+     "tipo": "preco",
+     "tag": "Pagamento *único*",
+     "de": "R$ 123,70",
+     "por": "R$ 19,90",
+     "chips": [
+      "PDF no seu e-mail",
+      "Garantia de 7 dias",
+      "Celular, tablet ou impresso"
+     ],
+     "prazo": "Oferta até 25/12"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "intro",
+   "lingua": "pt",
+   "texto": "A águia quer um sorvete… mas a sorveteria é toda em inglês. Será que ela consegue?"
+  },
+  {
+   "id": "f1_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Hi! Can I have an ice cream?"
+  },
+  {
+   "id": "f1_pt",
+   "lingua": "pt",
+   "texto": "Oi! Pode me ver um sorvete?"
+  },
+  {
+   "id": "f2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Can I try this one?"
+  },
+  {
+   "id": "f2_pt",
+   "lingua": "pt",
+   "texto": "Posso provar esse?"
+  },
+  {
+   "id": "f3_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Chocolate, please!"
+  },
+  {
+   "id": "f3_pt",
+   "lingua": "pt",
+   "texto": "Chocolate, por favor!"
+  },
+  {
+   "id": "virada",
+   "lingua": "pt",
+   "texto": "Mas aí o atendente pergunta: copinho ou casquinha?"
+  },
+  {
+   "id": "f4_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "A cone, please!"
+  },
+  {
+   "id": "f4_pt",
+   "lingua": "pt",
+   "texto": "Na casquinha, por favor!"
+  },
+  {
+   "id": "f5_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's delicious!"
+  },
+  {
+   "id": "f5_pt",
+   "lingua": "pt",
+   "texto": "Está delicioso!"
+  },
+  {
+   "id": "fecho",
+   "lingua": "pt",
+   "texto": "Ela queria um sorvete… e conseguiu, em inglês! Salva pra usar no seu."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

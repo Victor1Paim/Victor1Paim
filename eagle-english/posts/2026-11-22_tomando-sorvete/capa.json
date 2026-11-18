@@ -1,0 +1,11 @@
+{
+ "fundo": "img/vitrine.png",
+ "selo": "5 frases",
+ "titulo": "Pedir sorvete\nem *inglês* 🍦",
+ "sub": "Cup or cone? <b>Você sabe?</b>",
+ "balao": {
+  "en": "A cone, please!",
+  "pron": "/a KÔUN, PLÍIZ/",
+  "lado": "dir"
+ }
+}
