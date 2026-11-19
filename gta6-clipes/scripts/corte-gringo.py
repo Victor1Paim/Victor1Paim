@@ -91,7 +91,7 @@ Também escreva:
 - "destaque_etiqueta": 1 ou 2 palavras da etiqueta para ir em rosa (ex.: "GTA 6");
 - "titulo_faixa": UMA frase em MAIÚSCULAS de 25 a 45 caracteres que conta o que acontece, estilo manchete de corte (ex.: "SPEED VIU O BEBÊ E ENTROU EM PÂNICO");
 - "destaques": 4 a 6 palavras-chave das traduções;
-- "tiktok": legenda TikTok/Reels em pt com 1-2 emojis, pergunta para comentar, e hashtags #gta6 #{canal.lower()} #gta6brasil #cortes;
+- "tiktok": legenda simples em pt, UMA frase curta (até 60 caracteres) com 1 emoji, sem pergunta, sem hashtags e sem citar plataforma (Twitch, YouTube etc.);
 - "shorts_titulo": até 60 caracteres com #gta6 #shorts;
 - "instagram": 2-3 linhas em pt + hashtags (#gta6 #{canal.lower()} #gta6brasil #cortes).
 Responda SOMENTE JSON: {{"traducoes":[{{"n":0,"pt":"..."}}], "gancho":[...], "destaque":"...", "destaques":[...], "tiktok":"...", "shorts_titulo":"...", "instagram":"..."}}
@@ -180,10 +180,7 @@ subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', f'{dur_fala * 0.5:.2f}', '
 if not (FAIXA or ZOOM):
   subprocess.run(['node', os.path.join(RAIZ, 'vigia', 'capa.js'), quadro, json.dumps(dec['gancho']), dec.get('destaque', ''),
                 f'🎮 {canal.upper()} · GTA 6', os.path.join(PASTA, 'capa.jpg')], check=True)
-credito = f'📺 Créditos: {canal} (Twitch) — https://www.twitch.tv/{canal.lower()}'
-open(os.path.join(PASTA, 'legendas.txt'), 'w').write(
-    f"=== TIKTOK / REELS ===\n{dec['tiktok']}\n{credito}\n\n=== SHORTS ===\nTítulo: {dec['shorts_titulo']}\nDescrição: {contexto}\n{credito}\n\n"
-    f"=== INSTAGRAM ===\n{dec['instagram']}\n{credito}\n")
+open(os.path.join(PASTA, 'legendas.txt'), 'w').write(f"{dec['tiktok'].strip()}\n#gta6 #gta6brasil #cortes\n")
 for f in (audio, quadro):
     os.remove(f)
 log('PRONTO', PASTA)
