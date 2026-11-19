@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+<!-- CARROSSEL "CADERNO" (realismo): foto da folha pautada + texto manuscrito em SVG, girado no ângulo das pautas,
+     com a linha de base em cima da pauta. Tinta: multiply + leve irregularidade (feTurbulence). -->
+<style>
+  * { margin:0; padding:0; }
+  html, body { width:1080px; height:1440px; overflow:hidden; background:#fff; }
+  #f { position:absolute; inset:0; background-size:cover; }
+  svg { position:absolute; inset:0; mix-blend-mode:multiply; }
+  text { font-family:"Patrick Hand", cursive; }
+</style></head>
+<body>
+<div id="f"></div>
+<svg id="s" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <filter id="tinta" x="-5%" y="-20%" width="110%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="r"/>
+      <feDisplacementMap in="SourceGraphic" in2="r" scale="1.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="0.35"/>
+    </filter>
+  </defs>
+  <g id="g" filter="url(#tinta)" opacity="0.93"></g>
+</svg>
+<script>
+const d = window.DADOS;
+document.getElementById("f").style.backgroundImage = `url('${d.fundo}')`;
+const NS = "http://www.w3.org/2000/svg", g = document.getElementById("g");
+const esc = s => String(s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+document.fonts.load('80px "Patrick Hand"').then(() => {
+  let fs = Math.round(d.esp * 0.98);                 // tamanho da letra ~ altura da pauta (como na referência)
+  const maxW = 1080 - d.x0 - 70;
+  const mk = (l, f) => {
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("x", d.x0); t.setAttribute("y", l.y - d.esp * 0.12);
+    t.setAttribute("font-size", f);
+    t.setAttribute("transform", `rotate(${-d.ang} ${d.x0} ${l.y})`);
+    t.innerHTML = `<tspan fill="${l.cor_rot || "#1E3AA8"}">${esc(l.rot)}</tspan><tspan dx="${f * 0.3}" fill="${l.cor}">${esc(l.txt)}</tspan>`;
+    return t;
+  };
+  // cada linha no maior tamanho que couber (máx. = altura da pauta), como letra de mão de verdade
+  const cs = Math.cos(d.ang * Math.PI / 180);
+  for (const l of d.linhas) {
+    let f = fs, t;
+    for (;;) { if (t) t.remove(); t = mk(l, f); g.appendChild(t);
+      if (t.getComputedTextLength() * cs <= maxW || f < 40) break; f -= 2; }
+  }
+  // marca d'água pequena no vão embaixo da pronúncia, no meio (sem encostar no texto)
+  const yl = d.linhas[2].y + d.esp * 0.55, xm = 540;
+  const m = document.createElementNS(NS, "text");
+  const ym = yl - (xm - d.x0) * Math.tan(d.ang * Math.PI / 180) + 4;
+  m.setAttribute("x", xm); m.setAttribute("y", ym); m.setAttribute("text-anchor", "middle");
+  m.setAttribute("transform", `rotate(${-d.ang} ${xm} ${ym})`);
+  m.setAttribute("style", "font-family:Poppins,Arial,sans-serif;font-size:26px;fill:#8a8a8a;opacity:.75");
+  m.textContent = d.marca;
+  document.getElementById("s").appendChild(m);
+  document.body.dataset.pronto = "1";
+});
+</script>
+</body></html>

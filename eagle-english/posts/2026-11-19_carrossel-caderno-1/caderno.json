@@ -1,0 +1,41 @@
+{
+ "pagina": "img/pagina.png",
+ "zoom": 1.6,
+ "marca": "@eagle.english.br",
+ "frases": [
+  {
+   "pt": "Tô morrendo de fome!",
+   "en": "I'm starving!",
+   "pron": "áim STÁR-vin!"
+  },
+  {
+   "pt": "Tanto faz.",
+   "en": "Whatever.",
+   "pron": "uó-TÉ-ver"
+  },
+  {
+   "pt": "Tô dentro!",
+   "en": "I'm in!",
+   "pron": "áim ÍN!"
+  },
+  {
+   "pt": "Mal posso esperar!",
+   "en": "I can't wait!",
+   "pron": "ái KÉNT UÊIT!"
+  },
+  {
+   "pt": "Que vergonha!",
+   "en": "How embarrassing!",
+   "pron": "ráu im-BÉ-râ-sin!"
+  },
+  {
+   "pt": "Fica pra próxima.",
+   "en": "Maybe next time.",
+   "pron": "MÊI-bi NÉKST TÁIM"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}

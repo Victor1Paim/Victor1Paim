@@ -203,3 +203,9 @@ margem e encurta pausa interna > 0,35 s). Uso: `python3 scripts/recortar_whisper
 Exemplo: `posts/2026-11-20_lista12-comandos/`.
 **Regra do usuário (19/11): VÍDEOS sem mascote e sem CTA de oferta (ele vai trocar a oferta depois). CTA e mascote ficam SÓ nos
 CARROSSÉIS** (`scripts/carrossel_tt.py`, slide final de CTA continua como está). Legenda dos vídeos: sem bloco de CTA do Eagle 350.
+
+## CARROSSEL "CADERNO" (realismo, 19/11/2026)
+Ref. do usuário (perfil que bateu 10,9 mil curtidas): folha de caderno pautada, "Português: / Inglês: / Pronúncia:" escritos à mão.
+`posts/<post>/caderno.json` → `python3 scripts/carrossel_caderno.py posts/<post>` (template `templates/caderno.html`). A folha é UMA foto
+realista sem texto (gpt-image-2; o Gemini recusou) reaproveitável; o texto é nosso (fonte manuscrita), girado no ângulo das pautas
+detectado na foto, cada linha no maior tamanho que cabe. Último slide = CTA do perfil (carrossel_tt). Exemplo: `posts/2026-11-19_carrossel-caderno-1/`.
