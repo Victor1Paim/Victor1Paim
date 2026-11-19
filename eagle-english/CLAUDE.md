@@ -198,3 +198,5 @@ Whisper), lista 1)…12) que se completa (resposta nova em amarelo), cronômetro
 Sequência: "Como se diz X?" → cronômetro 2,5 s com tique → resposta em inglês falada uma vez; re-ganchos depois dos itens 3 (curtir),
 6 (seguir) e 11 (comentar com emoji). **Sem mascote e SEM CTA do Eagle 350 / de produto** (o vídeo termina na última resposta).
 Perguntas e respostas: UMA fala cada, cortadas com `cortar_respostas`. Exemplo: `posts/2026-11-20_lista12-comandos/`.
+**Regra do usuário (19/11): VÍDEOS sem mascote e sem CTA de oferta (ele vai trocar a oferta depois). CTA e mascote ficam SÓ nos
+CARROSSÉIS** (`scripts/carrossel_tt.py`, slide final de CTA continua como está). Legenda dos vídeos: sem bloco de CTA do Eagle 350.
