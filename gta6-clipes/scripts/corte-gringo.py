@@ -10,6 +10,7 @@ remove insultos) e escreve gancho + legendas das redes → base 9:16 com reflexo
 import json, os, subprocess, sys, urllib.request
 
 url, ini_h, fim_h, nome, contexto, canal = sys.argv[1:7]
+IDIOMA = os.environ.get('IDIOMA', 'en')   # 'pt' para streamer brasileiro (sem tradução, só revisão)
 LONGA = sys.argv[7] if len(sys.argv) > 7 else None   # transcrição longa do VOD (json com t, f, x em segundos do VOD)
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 MODELO = os.path.join(RAIZ, 'modelo')
@@ -45,7 +46,7 @@ log('trecho baixado')
 audio = os.path.join(PASTA, 'audio.mp3')
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-vn', '-ac', '1', '-ar', '16000', '-b:a', '64k', audio], check=True)
 r = subprocess.run(['curl', '-s', '-m', '300', 'https://api.openai.com/v1/audio/transcriptions', '-H', 'Authorization: Bearer sk-proxy',
-                    '-F', f'file=@{audio}', '-F', 'model=whisper-1', '-F', 'language=en', '-F', 'response_format=verbose_json',
+                    '-F', f'file=@{audio}', '-F', 'model=whisper-1', '-F', f'language={IDIOMA}', '-F', 'response_format=verbose_json',
                     '-F', f'prompt={canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.'], capture_output=True, text=True)
 tr = json.loads(r.stdout)
 frases, ant = [], None
@@ -80,7 +81,7 @@ pedido = {
 }
 dec = openai_json(f"""Você legenda cortes do streamer {canal} jogando GTA 6 para o canal brasileiro "Modo Replay".
 Contexto do corte: {contexto}
-Traduza CADA frase para português do Brasil falado, curta e natural (gírias ok). Regras: palavrões viram versão censurada
+{'As frases JÁ ESTÃO em português (streamer brasileiro): NÃO traduza; só corrija erros de transcrição, deixe curto e natural, e aplique as regras abaixo.' if IDIOMA == 'pt' else 'Traduza CADA frase para português do Brasil falado, curta e natural (gírias ok).'} Regras: palavrões viram versão censurada
 com asterisco (ex.: "p*rra", "c*ralho", "f*da"); insultos raciais/homofóbicos são REMOVIDOS ou trocados por "mano"/"cara";
 falas do jogo (personagens) também são traduzidas. Não junte nem omita frases: uma tradução por "n".
 Também escreva:
