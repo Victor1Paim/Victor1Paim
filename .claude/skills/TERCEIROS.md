@@ -13,6 +13,8 @@ atualizar: clonar de novo e copiar a pasta da skill por cima.
 | cathrynlavery/diagram-design | f6db0de | diagram-design |
 | obra/superpowers | 22f0b46 | brainstorming, writing-plans, executing-plans, test-driven-development, systematic-debugging, verification-before-completion, requesting/receiving-code-review, subagent-driven-development, dispatching-parallel-agents, using-git-worktrees, finishing-a-development-branch, writing-skills, using-superpowers, diagnosing-superpowers |
 | JuliusBrussee/caveman | b4ee71d | caveman e família (atualizadas), lean-build, surgical-patch, safe-refactor, migration, investigate-first, verify-and-stop |
+| greensock/gsap-skills | aed9cfd | gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-utils, gsap-react, gsap-frameworks, gsap-performance |
+| darkroomengineering/lenis | bd89165 | lenis (escrita por nós a partir do README oficial; o repositório não traz skill) |
 
 Não instalado: **thedotmack/claude-mem** (substituído pela memória em `estudio-dev/memoria/`, skill `memoria`) — é um plugin com serviço em segundo
 plano e hooks, e grava a memória num banco local que se perde quando o

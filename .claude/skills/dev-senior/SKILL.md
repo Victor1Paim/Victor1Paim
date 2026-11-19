@@ -39,6 +39,7 @@ pela metade.
 ## Régua de qualidade
 
 - Mobile first. Nada de scroll horizontal; toque ≥ 44px; fonte ≥ 16px.
+- Animação: GSAP (skills `gsap-*`; scroll → `gsap-scrolltrigger`) e scroll suave com Lenis (skill `lenis`, um só loop no `gsap.ticker`). Sempre com `prefers-reduced-motion` e só onde ajudar a vender.
 - Performance: imagens em WebP/AVIF com `width/height`, lazy-load, fontes com
   `display=swap`, meta Lighthouse ≥ 90.
 - Acessibilidade: contraste AA, `alt`, labels, foco visível, HTML semântico.
