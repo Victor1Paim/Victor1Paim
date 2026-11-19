@@ -3,7 +3,7 @@
  "fundo_video": "maldivas",
  "fundo_inicio": 25,
  "contagem": 2.5,
- "capa": "Como se diz…\nem inglês? 🤔",
+ "capa": "Como se diz\nem inglês? 🤔",
  "itens": [
   {
    "en": "Sit down",
@@ -82,5 +82,6 @@
   "3": "rg1",
   "6": "rg2",
   "11": "rg3"
- }
+ },
+ "capa_sub": "12 comandos do dia a dia"
 }

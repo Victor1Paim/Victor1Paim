@@ -17,6 +17,9 @@
          white-space:nowrap; filter:drop-shadow(0 6px 0 rgba(0,0,0,.35)); }
   .tit { position:absolute; left:50px; right:50px; top:400px; text-align:center; color:#FDDF33; font-weight:900; font-size:96px;
          line-height:1.02; paint-order:stroke fill; -webkit-text-stroke:20px #000; letter-spacing:-0.03em; }
+  .tit ~ ol { top:780px; } .tit ~ ol li { font-size:54px; line-height:64px; height:64px; }
+  .sub { position:absolute; left:50%; transform:translateX(-50%); top:650px; background:#0B1F4B; color:#fff; font-weight:800;
+         font-size:46px; padding:8px 34px 12px; border-radius:50px; border:5px solid #fff; white-space:nowrap; }
   ol { position:absolute; left:110px; top:560px; list-style:none; }
   li { color:#fff; font-weight:800; font-size:62px; line-height:80px; height:80px; white-space:nowrap; letter-spacing:-0.02em;
        paint-order:stroke fill; -webkit-text-stroke:12px #000; filter:drop-shadow(0 4px 3px rgba(0,0,0,.45)); }
@@ -35,6 +38,7 @@ let h = d.fundo ? `<div id="veu"></div>` : "";
 h += `<div class="selo">${esc(d.selo)}</div>`;
 if (d.titulo) h += `<div class="tit">${esc(d.titulo).replace(/\n/g, "<br>")}</div>`;
 else if (d.palavra) h += `<div class="pal" id="pal">${esc(d.palavra)}</div>`;
+if (d.sub) h += `<div class="sub">${esc(d.sub)}</div>`;
 h += "<ol>" + d.itens.map((x, i) => `<li class="${i === d.novo ? "novo" : ""}">${i + 1}) ${esc(x)}</li>`).join("") + "</ol>";
 if (d.timer != null) {
   const f = Math.max(0, Math.min(1, d.timer));           // 0 = vazio, 1 = cheio (tempo esgotado)

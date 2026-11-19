@@ -127,7 +127,7 @@ def main(pasta):
         cap = v / "_capa_fundo.jpg"
         sh("-ss", "3", "-i", str(clipes_fundo(cfg)[0]), "-frames:v", "1", "-vf", "scale=1080:1920", str(cap))
         dc = {"selo": cfg.get("selo", "@eagle.english.br"), "titulo": cfg.get("capa", "Como se diz…\nem inglês?"),
-              "itens": [""] * n, "novo": -1, "timer": None, "fundo": cap.as_uri()}
+              "itens": [""] * n, "novo": -1, "timer": None, "fundo": cap.as_uri(), "sub": cfg.get("capa_sub", "")}
         pg2 = nav.new_page(viewport={"width": 1080, "height": 1920})
         pg2.add_init_script(f"window.DADOS = {json.dumps(dc, ensure_ascii=False)};")
         pg2.goto((PROJ / "templates" / "lista12.html").as_uri()); pg2.wait_for_selector("body[data-pronto='1']")
