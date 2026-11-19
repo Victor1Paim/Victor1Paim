@@ -197,6 +197,9 @@ engajamento sobe. `posts/<post>/lista.json` + `falas.json` → `python3 scripts/
 Whisper), lista 1)…12) que se completa (resposta nova em amarelo), cronômetro vertical na contagem, fundo Maldivas (uma cena por item).
 Sequência: "Como se diz X?" → cronômetro 2,5 s com tique → resposta em inglês falada uma vez; re-ganchos depois dos itens 3 (curtir),
 6 (seguir) e 11 (comentar com emoji). **Sem mascote e SEM CTA do Eagle 350 / de produto** (o vídeo termina na última resposta).
-Perguntas e respostas: UMA fala cada, cortadas com `cortar_respostas`. Exemplo: `posts/2026-11-20_lista12-comandos/`.
+Perguntas e respostas: UMA fala cada, cortadas com **`scripts/recortar_whisper.py`** (19/11: o `cortar_respostas` deixava pedaço da
+frase vizinha e pausas longas no meio = "travadas"; o novo corta no vale de energia entre as palavras do Whisper, apara a -50 dB com
+margem e encurta pausa interna > 0,35 s). Uso: `python3 scripts/recortar_whisper.py audio/perguntas_pt.wav pt audio/q "frase 1" …`.
+Exemplo: `posts/2026-11-20_lista12-comandos/`.
 **Regra do usuário (19/11): VÍDEOS sem mascote e sem CTA de oferta (ele vai trocar a oferta depois). CTA e mascote ficam SÓ nos
 CARROSSÉIS** (`scripts/carrossel_tt.py`, slide final de CTA continua como está). Legenda dos vídeos: sem bloco de CTA do Eagle 350.
