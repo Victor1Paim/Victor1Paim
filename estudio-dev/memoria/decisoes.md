@@ -2,6 +2,7 @@
 
 | Data | Decisão | Motivo |
 |---|---|---|
+| 2026-11-19 | Barra Deck: GSAP 3.15 (local em assets/vendor, sem CDN) para 1) item voando ao carrinho 2) total animado 3) abertura do topo 5) cascata do cardápio. Lenis descartado (pouco ganho no celular, conflito com âncoras/gaveta) | Pedido do usuário |
 | 2026-11-17 | Barra Deck: nº do pedido `BD-DDMM-HHMM-XX – Ocasião` (dia/mês e hora do envio + 2 dígitos aleatórios). Sem numeração sequencial (site sem banco de dados) | Pedido do usuário (opção 1) |
 | 2026-11-17 | Barra Deck: pedidos de Natal (retirada 24/12, prazo 10/12) e Réveillon (retirada 31/12, prazo 20/12); mesmo cardápio e horário 10h–15h. Ocasião obrigatória no pedido; nº do pedido leva "– Natal"/"– Réveillon"; data some do pedido após o prazo | Pedido do usuário |
 | 2026-11-17 | Barra Deck: fotos realistas geradas por IA (OpenAI gpt-image-2) para os 41 pratos sem foto real + 5 capas de categoria; fotos reais mantidas (pudim, cheesecake frutas vermelhas, pavê Oreo). Custo ≈ US$ 3,19 | Pedido do usuário; site já avisa "fotos meramente ilustrativas" |

@@ -433,3 +433,6 @@ body, .band, .footer, .closing, .faq, .steps__list li, .delivery__card, .drawer,
 .hero__facts > div { min-width: 0; }
 @media (max-width: 420px) { .hero__facts dd { font-size: 18px; } .hero__facts .fl b { margin-right: 2px; } }
 @media (min-width: 960px) { .hero__facts { max-width: 510px; } .hero__facts > div + div { padding-left: 16px; margin-left: 16px; } }
+
+/* GSAP: esconde o topo só até a animação começar (motion.js remove a classe) */
+.gsap-pending .hero__text > *, .gsap-pending .hero__art > * { visibility: hidden; }

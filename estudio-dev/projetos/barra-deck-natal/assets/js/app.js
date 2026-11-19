@@ -165,7 +165,7 @@
     });
 
     $$('[data-cart-count]').forEach((el) => { el.textContent = n; el.hidden = !n; });
-    $$('[data-cart-total]').forEach((el) => { el.textContent = money(t); });
+    if (window.BDMotion) window.BDMotion.total(t, money); else $$('[data-cart-total]').forEach((el) => { el.textContent = money(t); });
     $$('[data-cart-items]').forEach((el) => { el.textContent = `${n} ${n === 1 ? 'item' : 'itens'}`; });
     $('[data-cartbar]').hidden = !n;
     document.body.classList.toggle('has-cart', !!n);
@@ -250,7 +250,7 @@
     if (b.matches('[data-open-cart]')) return openCart();
     if (b.matches('[data-close-cart]')) return closeCart();
     const { add, inc, dec } = b.dataset;
-    if (add) { setQty(add, 1); toast(`${ITEMS.get(add).name} adicionado`); focusCtl(add, '[data-inc]'); }
+    if (add) { setQty(add, 1); if (window.BDMotion) window.BDMotion.fly(add); toast(`${ITEMS.get(add).name} adicionado`); focusCtl(add, '[data-inc]'); }
     if (inc) setQty(inc, (cart[inc] || 0) + 1);
     if (dec) { setQty(dec, (cart[dec] || 0) - 1); if (!cart[dec]) focusCtl(dec, '[data-add]'); }
   });
