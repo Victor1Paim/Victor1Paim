@@ -1,0 +1,184 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Como se diz sente-se em inglês?...\n\nComo se diz levante-se?...\n\nComo se diz venha aqui?...\n\nComo se diz espere?...\n\nComo se diz pare?...\n\nComo se diz cuidado?...\n\nComo se diz se apresse?...\n\nComo se diz se acalme?...\n\nComo se diz não se preocupe?...\n\nComo se diz fique aqui?...\n\nComo se diz vai embora?...\n\nComo se diz deixa pra lá?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Sit down...\n\nStand up...\n\nCome here...\n\nWait...\n\nStop...\n\nWatch out...\n\nHurry up...\n\nCalm down...\n\nDon't worry...\n\nStay here...\n\nGo away...\n\nNever mind."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Como se diz sente-se em inglês?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Sit down",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz levante-se?",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "Stand up",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz venha aqui?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Come here",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Como se diz espere?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "Wait",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Como se diz pare?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Stop",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Como se diz cuidado?",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "Watch out",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Como se diz se apresse?",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "Hurry up",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "Como se diz se acalme?",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "Calm down",
+   "recorte": true
+  },
+  {
+   "id": "q9",
+   "lingua": "pt",
+   "texto": "Como se diz não se preocupe?",
+   "recorte": true
+  },
+  {
+   "id": "r9",
+   "lingua": "en",
+   "texto": "Don't worry",
+   "recorte": true
+  },
+  {
+   "id": "q10",
+   "lingua": "pt",
+   "texto": "Como se diz fique aqui?",
+   "recorte": true
+  },
+  {
+   "id": "r10",
+   "lingua": "en",
+   "texto": "Stay here",
+   "recorte": true
+  },
+  {
+   "id": "q11",
+   "lingua": "pt",
+   "texto": "Como se diz vai embora?",
+   "recorte": true
+  },
+  {
+   "id": "r11",
+   "lingua": "en",
+   "texto": "Go away",
+   "recorte": true
+  },
+  {
+   "id": "q12",
+   "lingua": "pt",
+   "texto": "Como se diz deixa pra lá?",
+   "recorte": true
+  },
+  {
+   "id": "r12",
+   "lingua": "en",
+   "texto": "Never mind",
+   "recorte": true
+  },
+  {
+   "id": "rg1",
+   "lingua": "pt",
+   "texto": "Curte o vídeo se as três primeiras foram fáceis. Vamos continuar!"
+  },
+  {
+   "id": "rg2",
+   "lingua": "pt",
+   "texto": "O inglês não é difícil. Você só ainda não segue esta página."
+  },
+  {
+   "id": "rg3",
+   "lingua": "pt",
+   "texto": "Se não quiser comentar, segura o botão de comentário e escolhe um emoji."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "E pra achar a frase certa em inglês em cada situação: Ígol trezentos e cinquenta. Duas mil e cem frases, por dezenove e noventa. O link tá na bio!"
+  }
+ ]
+}

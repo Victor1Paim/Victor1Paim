@@ -1,0 +1,87 @@
+{
+ "selo": "@eagle.english.br",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 25,
+ "contagem": 2.5,
+ "capa": "Como se diz…\nem inglês? 🤔",
+ "itens": [
+  {
+   "en": "Sit down",
+   "pt": "sente-se",
+   "q": "q1",
+   "r": "r1"
+  },
+  {
+   "en": "Stand up",
+   "pt": "levante-se",
+   "q": "q2",
+   "r": "r2"
+  },
+  {
+   "en": "Come here",
+   "pt": "venha aqui",
+   "q": "q3",
+   "r": "r3"
+  },
+  {
+   "en": "Wait",
+   "pt": "espere",
+   "q": "q4",
+   "r": "r4"
+  },
+  {
+   "en": "Stop",
+   "pt": "pare",
+   "q": "q5",
+   "r": "r5"
+  },
+  {
+   "en": "Watch out",
+   "pt": "cuidado",
+   "q": "q6",
+   "r": "r6"
+  },
+  {
+   "en": "Hurry up",
+   "pt": "se apresse",
+   "q": "q7",
+   "r": "r7"
+  },
+  {
+   "en": "Calm down",
+   "pt": "se acalme",
+   "q": "q8",
+   "r": "r8"
+  },
+  {
+   "en": "Don't worry",
+   "pt": "não se preocupe",
+   "q": "q9",
+   "r": "r9"
+  },
+  {
+   "en": "Stay here",
+   "pt": "fique aqui",
+   "q": "q10",
+   "r": "r10"
+  },
+  {
+   "en": "Go away",
+   "pt": "vai embora",
+   "q": "q11",
+   "r": "r11"
+  },
+  {
+   "en": "Never mind",
+   "pt": "deixa pra lá",
+   "q": "q12",
+   "r": "r12"
+  }
+ ],
+ "reganchos": {
+  "3": "rg1",
+  "6": "rg2",
+  "11": "rg3"
+ },
+ "cta": "cta"
+}
