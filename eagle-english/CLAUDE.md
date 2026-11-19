@@ -188,3 +188,13 @@ Falas sem áudio viram silêncio estimado (prévia). Mascote reutilizável em `a
   copiar para `eagle-english/instagram/` o que valer guardar.
 - Processo: `brainstorming`, `writing-plans`, `systematic-debugging`, `verification-before-completion`.
 - Não usar Higgsfield.
+
+## PADRÃO NOVO (19/11/2026): "LISTA 12", SEM MASCOTE E SEM CTA DE PRODUTO
+
+Pedido do usuário: copiar o estilo da referência do Drive (lista "Como se diz…?" de 12 itens com fundo de mar) para ver se o
+engajamento sobe. `posts/<post>/lista.json` + `falas.json` → `python3 scripts/montar_lista12.py posts/<post>` (template
+`templates/lista12.html`): selo do perfil vermelho no topo, palavra falada da vez em verde gigante (legenda palavra por palavra pelo
+Whisper), lista 1)…12) que se completa (resposta nova em amarelo), cronômetro vertical na contagem, fundo Maldivas (uma cena por item).
+Sequência: "Como se diz X?" → cronômetro 2,5 s com tique → resposta em inglês falada uma vez; re-ganchos depois dos itens 3 (curtir),
+6 (seguir) e 11 (comentar com emoji). **Sem mascote e SEM CTA do Eagle 350 / de produto** (o vídeo termina na última resposta).
+Perguntas e respostas: UMA fala cada, cortadas com `cortar_respostas`. Exemplo: `posts/2026-11-20_lista12-comandos/`.
