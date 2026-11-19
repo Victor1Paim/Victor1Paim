@@ -68,6 +68,9 @@ if LONGA:
             continue
         unicas.append(f)
     frases = unicas
+# o Whisper às vezes estica o fim de falas curtas (ex.: "Oh my god" por 17 s): limita ao tempo de fala real
+for f in frases:
+    f['f'] = round(min(f['f'], f['i'] + max(1.4, 0.38 * len(f['en'].split()) + 0.8)), 2)
 log(len(frases), 'frases')
 
 # 3) tradução + gancho + legendas
