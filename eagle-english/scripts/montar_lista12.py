@@ -27,7 +27,12 @@ PROJ = Path(__file__).resolve().parents[1]
 def palavras(modelo, arq, texto, lingua):
     """Tempo de cada palavra (Whisper); se a contagem bater com o texto do roteiro, usa a grafia do roteiro."""
     r = modelo.transcribe(str(arq), language=lingua, word_timestamps=True)
-    ws = [w for s in r["segments"] for w in s.get("words", [])]
+    ws = []
+    for w in (w for s in r["segments"] for w in s.get("words", [])):
+        if ws and w["word"].strip().startswith("-"):      # "sente" + "-se" → uma palavra só
+            ws[-1] = {**ws[-1], "end": w["end"]}
+        else:
+            ws.append(dict(w))
     tx = [w for w in re.findall(r"[\wÀ-ÿ'’-]+", texto) if w.strip("-")]
     if len(ws) == len(tx):
         return [(t, w["start"], w["end"]) for t, w in zip(tx, ws)]
@@ -156,13 +161,20 @@ def main(pasta):
        "alimiter=limit=0.84:level=false", "-ar", "48000", "-ac", "2", str(audio))
 
     final = v / "final.mp4"
-    sh("-i", str(bg), "-i", str(ov), "-i", str(audio), "-filter_complex", "[0:v][1:v]overlay=0:0:shortest=1,format=yuv420p[v]",
+    sh("-i", str(bg), "-i", str(ov), "-i", str(audio), "-filter_complex", "[0:v]eq=brightness=-0.07:saturation=1.08[b];[b][1:v]overlay=0:0:shortest=1,format=yuv420p[v]",
        "-map", "[v]", "-map", "2:a", "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-c:a", "aac", "-b:a", "192k",
        "-t", f"{total:.3f}", "-movflags", "+faststart", str(final))
     for x in (bruto, audio, ov, bg, lista):
         x.unlink(missing_ok=True)
     sh("-i", str(final), "-vf", f"fps=1/{max(1, total / 24):.3f},scale=270:480,tile=6x4", "-frames:v", "1", str(v / "contato.jpg"))
     r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    lufs = float(r[r.rindex("I:"):].split()[1])
+    if abs(lufs + 14) > 0.5:   # o limitador puxa a fala curta para baixo: corrige o ganho e limita de novo
+        tmp = final.with_name("_ganho.mp4")
+        sh("-i", str(final), "-c:v", "copy", "-af", f"volume={-14 - lufs:.2f}dB,alimiter=limit=0.89:level=false",
+           "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(tmp))
+        tmp.replace(final)
+        r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
     print(f"ok -> {final.relative_to(PROJ)}  ({total:.1f} s, {r[r.rindex('I:'):].split()[1]} LUFS)")
 
 
