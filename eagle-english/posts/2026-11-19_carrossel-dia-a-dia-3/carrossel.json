@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do dia a dia"
+ },
+ "frases": [
+  {
+   "pt": "Espera um segundo.",
+   "en": "Hold on a second.",
+   "pron": "HÔULD ón a SÉ-kând"
+  },
+  {
+   "pt": "Tô a caminho!",
+   "en": "I'm on my way!",
+   "pron": "áim ón mái UÊI!"
+  },
+  {
+   "pt": "Fechado! / Combinado!",
+   "en": "Sounds good!",
+   "pron": "SÁUNDZ GUD!"
+  },
+  {
+   "pt": "Deixa eu pensar.",
+   "en": "Let me think.",
+   "pron": "LÉT mi THÍNK"
+  },
+  {
+   "pt": "Foi mal!",
+   "en": "My bad!",
+   "pron": "MÁI BÉD!"
+  },
+  {
+   "pt": "Eu também!",
+   "en": "Same here!",
+   "pron": "SÊIM RÍER!"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}
