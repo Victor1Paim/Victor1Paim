@@ -308,8 +308,7 @@ const CorteZoom: React.FC<{dados: Dados}> = ({dados}) => {
       )}
       {!emZoom && <div style={{position: 'absolute', top: z.linha - 110, left: 30}}><Marca tamanho={48} /></div>}
       {!dados.capa && <LegendaZoom dados={dados} topo={emZoom ? 1560 : z.linha + 560} />}
-      {!dados.capa && <Credito texto={dados.credito} canal={dados.canal} />}
-      {!dados.capa && <Final dados={dados} />}
+        {!dados.capa && <Final dados={dados} />}
     </AbsoluteFill>
   );
 };
@@ -319,7 +318,6 @@ export const Corte: React.FC<{dados: Dados}> = ({dados}) => dados.estilo === 'zo
     <OffthreadVideo src={staticFile(dados.video)} />
     <Faixa dados={dados} />
     <div style={{position: 'absolute', top: dados.faixa!.topo - (dados.capa ? 119 : 74), left: 30}}><Marca tamanho={52} /></div>
-    {!dados.capa && <Credito texto={dados.credito} canal={dados.canal} />}
     {!dados.capa && <Final dados={dados} />}
   </AbsoluteFill>
 ) : (
@@ -329,7 +327,6 @@ export const Corte: React.FC<{dados: Dados}> = ({dados}) => dados.estilo === 'zo
     <Selo texto={dados.selo} topo={layoutDe(dados).topo} />
     {dados.cartoes && <Cartoes cartoes={dados.cartoes} topo={dados.layout ? layoutDe(dados).topo + layoutDe(dados).altura / 2 - 150 : 640} />}
     <Legendas dados={dados} />
-    <Credito texto={dados.credito} canal={dados.canal} />
     <Final dados={dados} />
   </AbsoluteFill>
 );

@@ -23,3 +23,14 @@ Remotion, 1080×1920, 30 fps. O conteúdo de cada corte fica em `modelo/src/cort
 ```bash
 cd gta6-clipes/modelo && npm install && npm run render
 ```
+
+## Padrão visual dos cortes (decidido em 19/11)
+
+- **Estilo padrão: `zoom`** — câmera do streamer em cima, gameplay embaixo, linha branca com etiqueta curta no meio,
+  zoom no rosto nos picos de voz, legenda amarela em português. Alternativa: `faixa` (faixa vermelha rasgada).
+- **Sem linha de crédito no vídeo** (ela cobria a legenda do jogo). O crédito ao criador fica só na legenda do post.
+- Capa no mesmo estilo do vídeo, com a manchete/etiqueta maior.
+- Gravar lives em **1080p60** (a câmera do streamer é pequena; em 720p o zoom fica suave).
+
+Uso: `ZOOM="camx,camy,camw,camh,gx,gy,gw,gh" scripts/corte-gringo.py <vod|arquivo> <ini> <fim> <nome> "<contexto>" <canal> [transcrição-longa.json]`
+(coordenadas na resolução da fonte; Speed em 720p: `10,310,246,150,300,9,780,702`).
