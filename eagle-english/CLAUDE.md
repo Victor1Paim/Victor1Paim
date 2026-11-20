@@ -243,3 +243,6 @@ O VÍDEO continua sem CTA de produto; a chamada do produto fica só na legenda.
 Todo vídeo entre **30 s e 1 min 20 s CONTANDO O CTA**. Se o tema não couber, dividir em Parte 1, Parte 2… (cada parte com gancho e CTA
 próprios). Lista 12 cabe com `"contagem": 2.0, "respiro": 0.4`; se passar, virar Lista 8/10 ou 2 partes. Banco de temas:
 `docs/BANCO_DE_CONTEUDO.md` (só o "1 verbo por dia" é fixo; o resto alterna pelo banco).
+
+**Lista 12 = SEMPRE SEM PERSONAGEM (20/11, decisão do usuário: o 1º Lista 12 sem personagem rendeu muitas visualizações).** Só fundo
+de mar, selo, palavra falada em verde, lista e cronômetro — não adicionar o personagem nesse formato.

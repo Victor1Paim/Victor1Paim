@@ -11,7 +11,7 @@ o Eagle 350 só na legenda.
 |---|---|---|---|
 | **Quiz "O que é isso?"** (figura → contagem → nome em inglês + pronúncia) | `montar_flash.py` (Flashcard) | ~6 s | 8 itens + abertura + CTA ≈ 60–70 s |
 | **ABC** (como se diz…? A/B/C, personagem) | `montar_abc.py` | ~8 s por rodada | 3–5 rodadas (3 ≈ 32 s · 5 ≈ 50 s) |
-| **Lista 12** (lista 1…12 que se completa) | `montar_lista12.py` | ~6 s (contagem 2,0 s) | 12 itens + 3 re-ganchos + CTA ≈ 78–80 s (limite!) · temas maiores → Lista 8/10 |
+| **Lista 12** (lista 1…12 que se completa, **SEM personagem** — é o que mais rendeu) | `montar_lista12.py` | ~6 s (contagem 2,0 s) | 12 itens + 3 re-ganchos + CTA ≈ 78–80 s (limite!) · temas maiores → Lista 8/10 |
 | **Prova de inglês** (lista com emoji + contagem) | `montar_padrao.py` beat "prova" | ~6 s | 8 itens ≈ 55–65 s |
 | **Qual você usa? (A×B)** | `montar_padrao.py` beat "escolha" | ~9 s | 5 rodadas ≈ 55–65 s |
 | **Jornada / Repita** (situação com frases) | `montar_padrao.py` | ~9 s por frase | 5–6 frases ≈ 60–75 s |
