@@ -46,6 +46,37 @@ const ROUPAS = {
       <path d="M200 318 V556" stroke="${T}" stroke-width="4"/>${[360, 410, 460, 510].map(y => `<circle cx="200" cy="${y}" r="6" fill="#fff" stroke="${T}" stroke-width="3"/>`).join("")}
       <path d="M150 380 h28 v34 h-28 z" fill="none" stroke="${T}" stroke-width="4"/><path d="M158 372 v26" stroke="#E3262E" stroke-width="5"/>`,
     rosto: () => `<circle cx="163" cy="150" r="30" fill="none" stroke="${T}" stroke-width="7"/><circle cx="237" cy="150" r="30" fill="none" stroke="${T}" stroke-width="7"/><path d="M193 148 h14" stroke="${T}" stroke-width="7"/>` },
+  jeans: { cor:"#4F79B5", manga:"longa", calca:"#2A2F3A",
+    enfeite: () => `<path d="M176 280 L176 562 L224 562 L224 280 Z" fill="#fff" stroke="${T}" stroke-width="6"/>
+      <path d="M128 282 L176 300 L176 562 L118 560 Z M272 282 L224 300 L224 562 L282 560 Z" fill="#4F79B5" stroke="${T}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M140 350 h30 v26 h-30 z M230 350 h30 v26 h-30 z" fill="none" stroke="#2C4D80" stroke-width="5"/>
+      <path d="M176 300 L160 286 M224 300 L240 286" stroke="${T}" stroke-width="5"/>` },
+  natal: { cor:"#B8232A", manga:"longa", calca:"#3B5B92",
+    enfeite: () => { let f = `<path d="M124 400 H280 M122 450 H280" stroke="#fff" stroke-width="10"/>`;
+      for (let x = 132; x < 276; x += 24) f += `<path d="M${x} 425 l12 -14 12 14" fill="none" stroke="#2E8B3C" stroke-width="6"/>`;
+      for (const [x, y] of [[160, 330], [240, 330], [200, 510], [150, 515], [250, 510]]) f += `<path d="M${x} ${y - 10} v20 M${x - 10} ${y} h20 M${x - 7} ${y - 7} l14 14 M${x + 7} ${y - 7} l-14 14" stroke="#fff" stroke-width="4"/>`;
+      return f; },
+    cabeca: () => `<path d="M94 100 Q100 10 200 6 Q290 8 306 56 L330 18 Q312 84 310 100 Z" fill="#B8232A" stroke="${T}" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="86" y="80" width="228" height="30" rx="15" fill="#fff" stroke="${T}" stroke-width="6"/><circle cx="332" cy="16" r="18" fill="#fff" stroke="${T}" stroke-width="6"/>` },
+  verao: { cor:"#F2F2F2", bermuda:"#E8574B", tenis:"#F4C7A1",
+    enfeite: () => `<path d="M128 282 Q150 330 170 282 M272 282 Q250 330 230 282" fill="#F4C7A1" stroke="${T}" stroke-width="6"/>
+      ${[330, 380, 430, 480, 530].map(y => `<path d="M122 ${y} H280" stroke="#2F7BFF" stroke-width="10" opacity=".85"/>`).join("")}`,
+    cabeca: () => `<ellipse cx="200" cy="92" rx="170" ry="30" fill="#E6C36A" stroke="${T}" stroke-width="7"/>
+      <path d="M110 92 Q114 10 200 8 Q286 10 290 92 Z" fill="#E6C36A" stroke="${T}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M112 76 Q200 92 288 76" stroke="#E8574B" stroke-width="14" fill="none"/>` },
+  viajante: { cor:"#6E7D3A", manga:"curta", calca:"#C9A66B", tenis:"#5A3A22",
+    enfeite: () => `<path d="M150 284 L140 560 M250 284 L262 560" stroke="#3B2A1A" stroke-width="16" stroke-linecap="round"/>
+      <path d="M150 284 L140 560 M250 284 L262 560" stroke="#8A5A2B" stroke-width="10" stroke-linecap="round"/>
+      <path d="M176 284 Q200 380 224 284" fill="none" stroke="${T}" stroke-width="4"/>
+      <rect x="168" y="372" width="64" height="46" rx="8" fill="#222" stroke="${T}" stroke-width="5"/><circle cx="200" cy="395" r="15" fill="#5B8FD6" stroke="#fff" stroke-width="4"/>`,
+    cabeca: () => `<path d="M92 112 Q100 30 200 32 Q300 30 308 112 Z" fill="#C9A66B" stroke="${T}" stroke-width="7" stroke-linejoin="round"/><path d="M92 108 q-40 -4 -56 14 q30 10 64 4 z" fill="#C9A66B" stroke="${T}" stroke-width="6" stroke-linejoin="round"/>` },
+  chef: { cor:"#FFFFFF", manga:"longa", calca:"#2A2F3A",
+    enfeite: () => `<path d="M150 330 H250 L262 560 H138 Z" fill="#E9EEF3" stroke="${T}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M150 330 L132 290 M250 330 L268 290" stroke="${T}" stroke-width="5"/>
+      ${[300, 340].map(y => `<circle cx="178" cy="${y}" r="5" fill="${T}"/><circle cx="222" cy="${y}" r="5" fill="${T}"/>`).join("")}
+      <path d="M170 280 L200 300 L230 280" fill="#E8574B" stroke="${T}" stroke-width="5" stroke-linejoin="round"/>`,
+    cabeca: () => `<rect x="120" y="70" width="160" height="40" fill="#fff" stroke="${T}" stroke-width="7"/>
+      <path d="M120 74 Q90 20 140 6 Q170 -24 200 0 Q234 -24 262 6 Q312 20 280 74 Z" fill="#fff" stroke="${T}" stroke-width="7" stroke-linejoin="round"/>` },
 };
 function mistura(a, b, k) { return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k]; }
 function personagem(st) {
