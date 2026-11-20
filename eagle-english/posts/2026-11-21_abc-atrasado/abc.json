@@ -1,0 +1,47 @@
+{
+ "fundo_video": "maldivas",
+ "fundo_inicio": 30,
+ "repetir": 2,
+ "contagem": 2.5,
+ "rodadas": [
+  {
+   "titulo": "Estou atrasado",
+   "opcoes": [
+    "A) I'm delayed",
+    "B) I'm late",
+    "C) I'm later"
+   ],
+   "certa": 1,
+   "pron": "áim LÊIT",
+   "q": "q1",
+   "r": "r1",
+   "en": "I'm late."
+  },
+  {
+   "titulo": "Tô com saudade de você",
+   "opcoes": [
+    "A) I miss you",
+    "B) I lack you",
+    "C) I need you"
+   ],
+   "certa": 0,
+   "pron": "ái MÍS iú",
+   "q": "q2",
+   "r": "r2",
+   "en": "I miss you."
+  },
+  {
+   "titulo": "Fica à vontade",
+   "opcoes": [
+    "A) Stay at will",
+    "B) Be comfortable you",
+    "C) Make yourself at home"
+   ],
+   "certa": 2,
+   "pron": "MÊIK iór-SÉLF ét RÔUM",
+   "q": "q3",
+   "r": "r3",
+   "en": "Make yourself at home."
+  }
+ ]
+}
