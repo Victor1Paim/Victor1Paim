@@ -31,14 +31,37 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 | sex 20/11 | 19h | Hora do lanche 🥪 | Lista com emoji | Problema | "Quer um lanche? Treine como pedir em inglês." | comentar palavra | ✅ |
 | sáb 21/11 | 12h | Passeio no parque 🌳 | Repita | Jornada | "Um passeio no parque, uma frase por vez." | enviar | ✅ |
 | sáb 21/11 | 19h | Grande ou pequeno? 📦 | Qual você usa? | Escolha | "Grande ou pequeno? Escolha a palavra para esta imagem." | comentar A/B | ✅ |
-| dom 22/11 | 12h | Tomando sorvete 🍦 | Repita | Jornada | "Você sabe pedir sorvete em inglês?" | salvar | 🎬 |
-| dom 22/11 | 19h | Prova de inglês: comidas 🍽️ | Prova | Escolha | "Quais destas comidas você conhece em inglês?" | placar | 🧩 |
-| seg 23/11 | 12h | Bateu o cansaço 😴 | Repita | Contradição | "Bateu o cansaço? Vamos dizer isso em inglês." | salvar | 🎬 |
-| seg 23/11 | 19h | Na cozinha 🍳 | Flashcard | Escolha | "Como se chama este objeto da cozinha em inglês?" | placar | 🎬 |
+| ~~dom 22/11~~ | — | Tomando sorvete 🍦 (formato antigo, com mascote — RESERVA, substituído pelo padrão novo) | Repita | Jornada | — | — | ⏸️ |
+| ~~dom 22/11~~ | — | Prova de inglês: comidas 🍽️ (formato antigo — RESERVA) | Prova | Escolha | — | — | ⏸️ |
 
-Remanejados pelo teste de Natal: **ter 24/11 12h** Prova de inglês: cores 🎨 (🧩) · **ter 24/11 19h** Pedir ajuda 🙋 (🎬).
 
-Depois: sazonais **Thanksgiving (~25/11)** e **Black Friday (~26/11)** como Repita avulsos; continuar a rotação.
+## PADRÃO NOVO a partir de dom 22/11 (decisão do usuário 19–20/11)
+Vídeos SEM mascote e SEM CTA de produto; personagem próprio em SVG (`templates/personagem.js`) nos formatos ABC e Verbo do dia.
+**12h = "1 verbo por dia" (Aula N, `docs/SERIE_VERBO_DO_DIA.md`, `scripts/montar_verbo.py`) todos os dias.**
+**19h = rodízio ABC (`scripts/montar_abc.py`) ↔ Lista 12 (`scripts/montar_lista12.py`).**
+**Carrossel em dias alternados: Caderno (`scripts/carrossel_caderno.py`, automático) ↔ Repita até aprender (slides 02–08 + prompt
+da capa só com o cenário; o usuário gera a capa).** Carrosséis mantêm mascote/CTA do perfil.
+Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.) ficam de RESERVA.
+
+| Dia | 12h — Verbo do dia | 19h — rodízio | Carrossel | Status |
+|---|---|---|---|---|
+| dom 22/11 | Aula 1 · GET | ABC #1 (atrasado / saudade / à vontade) | Repita #3 (lavanda) | ✅ ✅ ✅ |
+| seg 23/11 | Aula 2 · MAKE | Lista 12: comandos do dia a dia | — | 🎬 ✅ |
+| ter 24/11 | Aula 3 · TAKE | ABC #2 (sentimentos) | Caderno #1 | 🎬 🎬 ✅ |
+| qua 25/11 | Aula 4 · GO | Lista 12: no restaurante | — | 🎬 🎬 |
+| qui 26/11 | Aula 5 · HAVE | ABC #3 (Thanksgiving: grato, delicioso, cheio) | Repita #4 | 🎬 🎬 🎬 |
+| sex 27/11 | Aula 6 · DO | Lista 12: Black Friday / compras | — | 🎬 🎬 |
+| sáb 28/11 | Aula 7 · SAY | ABC #4 (na rua: com licença, desculpa, onde fica) | Caderno #2 | 🎬 🎬 🎬 |
+| dom 29/11 | Aula 8 · SEE | Lista 12: perguntas do dia a dia | — | 🎬 🎬 |
+| seg 30/11 | Aula 9 · KNOW | ABC #5 (no trabalho) | Repita #5 | 🎬 🎬 🎬 |
+| ter 01/12 | Aula 10 · THINK | Lista 12: rotina da manhã | — | 🎬 🎬 |
+| qua 02/12 | Aula 11 · COME | ABC #6 (no telefone) | Caderno #3 | 🎬 🎬 🎬 |
+| qui 03/12 | Aula 12 · WANT | Lista 12: emoções | — | 🎬 🎬 |
+| sex 04/12 | Aula 13 · GIVE | ABC #7 (gírias leves: tô dentro, tanto faz) | Repita #6 | 🎬 🎬 🎬 |
+| sáb 05/12 | Aula 14 · TELL | Lista 12: na viagem | — | 🎬 🎬 |
+| dom 06/12 | Aula 15 · FEEL | ABC #8 (Natal chegando) | Caderno #4 | 🎬 🎬 🎬 |
+Regras do conteúdo: frases A1 verdadeiras e naturais; no ABC as erradas são traduções literais plausíveis (I'm delayed, I lack you);
+cada Lista 12 com tema único; nunca repetir frase de um post anterior; capas sem revelar respostas.
 
 ## Estruturas de retenção (docs/RETENCAO.md) — uma por vídeo, declarada no roteiro.md
 Pautas que mudam com a estrutura: "Jeitos de agradecer" (Contradição: "Thank you não é o único jeito"),
