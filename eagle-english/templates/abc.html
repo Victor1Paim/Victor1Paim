@@ -23,7 +23,7 @@
 <body>
 <div class="ui" id="ui"></div>
 <svg id="cont" viewBox="0 0 120 120"></svg>
-<svg id="p" width="560" height="1150" viewBox="0 0 400 820">
+<svg id="p" width="480" height="985" viewBox="0 0 400 820">
   <defs>
     <filter id="mao" x="-10%" y="-10%" width="120%" height="120%">
       <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
@@ -42,14 +42,14 @@ const POSES = {
   fala2:    { L:[-36, 226], R:[128, 70] },
   fala3:    { L:[-150, 120], R:[150, 120] },
   fala4:    { L:[-110, 150], R:[60, 200] },
-  pensando: { L:[100, 160], R:[-52, -34], olhar:[6, -8] },
-  feliz:    { L:[-36, 226], R:[112, -64], joinha:true, sorriso:true },
+  pensando: { L:[100, 170], R:[-62, -26], olhar:[6, -8] },
+  feliz:    { L:[-36, 226], R:[118, -50], joinha:true, sorriso:true, dobraR:1 },
 };
 const SH = { L:[125, 292], R:[275, 292] }, A = 118, B = 112;
-function ik(s, t, lado) {               // braço de 2 segmentos (ombro→cotovelo→mão), cotovelo para fora/baixo
+function ik(s, t, lado, dobra) {               // braço de 2 segmentos (ombro→cotovelo→mão), cotovelo para fora/baixo
   const dx = t[0], dy = t[1]; let d = Math.hypot(dx, dy); d = Math.min(d, A + B - 1);
   const base = Math.atan2(dy, dx), cos = (A * A + d * d - B * B) / (2 * A * d), al = Math.acos(Math.max(-1, Math.min(1, cos)));
-  const sg = lado === "L" ? 1 : -1, ang = base + sg * al;
+  const sg = dobra ?? (lado === "L" ? 1 : -1), ang = base + sg * al;
   const e = [s[0] + A * Math.cos(ang), s[1] + A * Math.sin(ang)];
   const h = [s[0] + dx * d / Math.hypot(dx, dy || 1e-6), s[1] + dy * d / Math.hypot(dx, dy || 1e-6)];
   return [e, h];
@@ -65,13 +65,6 @@ function personagem(st) {
   // camiseta (tronco) com estrela
   g += `<path d="M128 282 Q200 262 272 282 L282 560 Q200 574 118 560 Z" fill="${C.camisa}" stroke="${C.traco}" stroke-width="8" stroke-linejoin="round"/>`;
   g += `<path d="M200 352 l9 20 22 2 -17 14 6 22 -20 -12 -20 12 6 -22 -17 -14 22 -2 z" fill="${C.estrela}" stroke="${C.traco}" stroke-width="4" stroke-linejoin="round"/>`;
-  // braços
-  for (const l of ["L", "R"]) {
-    const s = SH[l], [e, h] = ik(s, alvo(l), l);
-    g += `<path d="M${s[0]} ${s[1]} L${e[0]} ${e[1]} L${h[0]} ${h[1]}" stroke="${C.traco}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
-    g += `<circle cx="${h[0]}" cy="${h[1]}" r="19" fill="${C.pele}" stroke="${C.traco}" stroke-width="6"/>`;
-    if (P.joinha && l === "R" && k > 0.6) g += `<path d="M${h[0]} ${h[1] - 14} l0 -24" stroke="${C.traco}" stroke-width="9" stroke-linecap="round"/>`;
-  }
   // cabeça
   g += `<circle cx="96" cy="160" r="20" fill="${C.pele}" stroke="${C.traco}" stroke-width="7"/><circle cx="304" cy="160" r="20" fill="${C.pele}" stroke="${C.traco}" stroke-width="7"/>`;
   g += `<circle cx="200" cy="155" r="112" fill="${C.pele}" stroke="${C.traco}" stroke-width="8"/>`;
@@ -88,6 +81,13 @@ function personagem(st) {
                  : `<path d="M172 207 q28 16 56 0" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`);
   else if (b === 1) g += `<path d="M172 200 q28 34 56 0 q-28 6 -56 0 z" fill="#6B1F24" stroke="${C.traco}" stroke-width="6" stroke-linejoin="round"/>`;
   else g += `<ellipse cx="200" cy="212" rx="20" ry="24" fill="#6B1F24" stroke="${C.traco}" stroke-width="6"/><ellipse cx="200" cy="224" rx="11" ry="7" fill="#E46A6A"/>`;
+  // braços
+  for (const l of ["L", "R"]) {
+    const s = SH[l], [e, h] = ik(s, alvo(l), l, l === "R" && k > 0.5 ? P.dobraR : undefined);
+    g += `<path d="M${s[0]} ${s[1]} L${e[0]} ${e[1]} L${h[0]} ${h[1]}" stroke="${C.traco}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
+    g += `<circle cx="${h[0]}" cy="${h[1]}" r="19" fill="${C.pele}" stroke="${C.traco}" stroke-width="6"/>`;
+    if (P.joinha && l === "R" && k > 0.6) g += `<path d="M${h[0]} ${h[1] - 14} l0 -24" stroke="${C.traco}" stroke-width="9" stroke-linecap="round"/>`;
+  }
   return g;
 }
 window.render = (st) => {
@@ -113,8 +113,8 @@ window.render = (st) => {
       <text x="60" y="78" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="54" fill="#fff">${st.num}</text>`;
   } else c.style.display = "none";
   // personagem: pés fixos na linha 1735; balança de leve (pivô nos pés)
-  const p = document.getElementById("p"), esc_ = 560 / 400;
-  p.style.top = (1735 - 790 * esc_) + "px";
+  const p = document.getElementById("p"), esc_ = 480 / 400;
+  p.style.top = (1775 - 790 * esc_) + "px";
   document.getElementById("corpo").setAttribute("transform", `rotate(${(st.balanco || 0).toFixed(2)} 200 790)`);
   document.getElementById("corpo").innerHTML = personagem(st);
   document.body.dataset.pronto = "1";
