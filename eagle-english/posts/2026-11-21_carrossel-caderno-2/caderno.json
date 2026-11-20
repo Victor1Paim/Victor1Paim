@@ -1,0 +1,41 @@
+{
+ "pagina": "img/pagina.png",
+ "zoom": 1.6,
+ "marca": "@eagle.english.br",
+ "frases": [
+  {
+   "pt": "Tô com pressa.",
+   "en": "I'm in a hurry.",
+   "pron": "áim in a râri"
+  },
+  {
+   "pt": "Boa ideia!",
+   "en": "Good idea!",
+   "pron": "gud aidía!"
+  },
+  {
+   "pt": "Sério?",
+   "en": "Really?",
+   "pron": "ríli?"
+  },
+  {
+   "pt": "Que pena!",
+   "en": "That's too bad!",
+   "pron": "déts tu béd!"
+  },
+  {
+   "pt": "Não acredito!",
+   "en": "I can't believe it!",
+   "pron": "ái ként bilív it!"
+  },
+  {
+   "pt": "Até amanhã!",
+   "en": "See you tomorrow!",
+   "pron": "si iú tumórou!"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: que horas são?...\n\nComo se diz: onde você mora?...\n\nComo se diz: você está com fome?...\n\nComo se diz: quanto custa?...\n\nComo se diz: posso entrar?...\n\nComo se diz: você pode me ajudar?...\n\nComo se diz: o que aconteceu?...\n\nComo se diz: você tem certeza?...\n\nComo se diz: cadê meu celular?...\n\nComo se diz: o que você acha?...\n\nComo se diz: quer ir comigo?...\n\nComo se diz: tá falando sério?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "What time is it?...\n\nWhere do you live?...\n\nAre you hungry?...\n\nHow much is it?...\n\nCan I come in?...\n\nCan you help me?...\n\nWhat happened?...\n\nAre you sure?...\n\nWhere's my phone?...\n\nWhat do you think?...\n\nDo you want to come?...\n\nAre you serious?"
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: que horas são?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "What time is it?",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: onde você mora?",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "Where do you live?",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: você está com fome?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Are you hungry?",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Como se diz: quanto custa?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "How much is it?",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Como se diz: posso entrar?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Can I come in?",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Como se diz: você pode me ajudar?",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "Can you help me?",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Como se diz: o que aconteceu?",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "What happened?",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "Como se diz: você tem certeza?",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "Are you sure?",
+   "recorte": true
+  },
+  {
+   "id": "q9",
+   "lingua": "pt",
+   "texto": "Como se diz: cadê meu celular?",
+   "recorte": true
+  },
+  {
+   "id": "r9",
+   "lingua": "en",
+   "texto": "Where's my phone?",
+   "recorte": true
+  },
+  {
+   "id": "q10",
+   "lingua": "pt",
+   "texto": "Como se diz: o que você acha?",
+   "recorte": true
+  },
+  {
+   "id": "r10",
+   "lingua": "en",
+   "texto": "What do you think?",
+   "recorte": true
+  },
+  {
+   "id": "q11",
+   "lingua": "pt",
+   "texto": "Como se diz: quer ir comigo?",
+   "recorte": true
+  },
+  {
+   "id": "r11",
+   "lingua": "en",
+   "texto": "Do you want to come?",
+   "recorte": true
+  },
+  {
+   "id": "q12",
+   "lingua": "pt",
+   "texto": "Como se diz: tá falando sério?",
+   "recorte": true
+  },
+  {
+   "id": "r12",
+   "lingua": "en",
+   "texto": "Are you serious?",
+   "recorte": true
+  },
+  {
+   "id": "rg1",
+   "lingua": "pt",
+   "texto": "Curte o vídeo se as três primeiras foram fáceis. Vamos continuar!"
+  },
+  {
+   "id": "rg2",
+   "lingua": "pt",
+   "texto": "O inglês não é difícil. Você só ainda não segue esta página."
+  },
+  {
+   "id": "rg3",
+   "lingua": "pt",
+   "texto": "Se não quiser comentar, segura o botão de comentário e escolhe um emoji."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas das doze você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+  }
+ ]
+}

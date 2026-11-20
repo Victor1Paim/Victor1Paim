@@ -1,0 +1,89 @@
+{
+ "selo": "@eagle.english.br",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 33,
+ "contagem": 2.0,
+ "capa": "Como se diz\nem inglês? 🤔",
+ "itens": [
+  {
+   "en": "What time is it?",
+   "pt": "que horas são",
+   "q": "q1",
+   "r": "r1"
+  },
+  {
+   "en": "Where do you live?",
+   "pt": "onde você mora",
+   "q": "q2",
+   "r": "r2"
+  },
+  {
+   "en": "Are you hungry?",
+   "pt": "você está com fome",
+   "q": "q3",
+   "r": "r3"
+  },
+  {
+   "en": "How much is it?",
+   "pt": "quanto custa",
+   "q": "q4",
+   "r": "r4"
+  },
+  {
+   "en": "Can I come in?",
+   "pt": "posso entrar",
+   "q": "q5",
+   "r": "r5"
+  },
+  {
+   "en": "Can you help me?",
+   "pt": "você pode me ajudar",
+   "q": "q6",
+   "r": "r6"
+  },
+  {
+   "en": "What happened?",
+   "pt": "o que aconteceu",
+   "q": "q7",
+   "r": "r7"
+  },
+  {
+   "en": "Are you sure?",
+   "pt": "você tem certeza",
+   "q": "q8",
+   "r": "r8"
+  },
+  {
+   "en": "Where's my phone?",
+   "pt": "cadê meu celular",
+   "q": "q9",
+   "r": "r9"
+  },
+  {
+   "en": "What do you think?",
+   "pt": "o que você acha",
+   "q": "q10",
+   "r": "r10"
+  },
+  {
+   "en": "Do you want to come?",
+   "pt": "quer ir comigo",
+   "q": "q11",
+   "r": "r11"
+  },
+  {
+   "en": "Are you serious?",
+   "pt": "tá falando sério",
+   "q": "q12",
+   "r": "r12"
+  }
+ ],
+ "reganchos": {
+  "3": "rg1",
+  "6": "rg2",
+  "11": "rg3"
+ },
+ "capa_sub": "12 perguntas do dia a dia",
+ "cta": "cta",
+ "respiro": 0.4
+}

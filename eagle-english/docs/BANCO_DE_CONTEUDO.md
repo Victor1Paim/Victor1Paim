@@ -38,7 +38,7 @@ Carrosséis (sem limite de tempo): **Caderno** ↔ **Repita até aprender**, em 
 sentimentos · gratidão e comida · Thanksgiving (26/11) · na rua · no trabalho · no telefone · gírias leves · no restaurante ·
 no mercado · no médico · no aeroporto · elogios · desculpas · convites · Natal e Ano Novo
 ### Lista 12 (1 tema por vídeo)
-comandos ✅ · no restaurante · perguntas do dia a dia · Black Friday/compras (27/11) · rotina da manhã · emoções · na viagem ·
+comandos ✅ (postado) · perguntas do dia a dia ✅ · no restaurante · respostas curtas · Black Friday/compras (27/11) · rotina da manhã · emoções · na viagem ·
 na academia · no salão/barbearia · respostas curtas ("Sure!", "No way!") · frases de mãe · Natal
 ### Prova de inglês / Qual você usa? (quando adaptados para o personagem)
 cores · números de 10 em 10 · dias da semana · meses · hot×cold, big×small, early×late, borrow×lend, say×tell, make×do
