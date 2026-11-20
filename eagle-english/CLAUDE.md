@@ -218,7 +218,8 @@ esporte, professor, natal, verao, viajante, chef — prévias em `assets/persona
 ## PRONÚNCIA ESCRITA (20/11/2026, escolha do usuário — manda sobre a convenção antiga da seção 6)
 Estilo SIMPLES da referência: tudo minúsculo, sem hífen e sem maiúsculas de tônica, acento só para guiar a leitura em português:
 "mêibi nékst táim", "ái guét áp ét séven", "ái gárit!", "áim lêit". Vale para vídeos (caixa verde do Verbo/ABC), Caderno e Repita.
-Gestos do personagem: suaves (ciclo de 0,9 s, transição de 0,4 s), sem braço esticado demais.
+Gestos do personagem: suaves (ciclo de 0,9 s, transição de 0,4 s). APONTAR para o texto só na 1ª fala do vídeo e na última fixação
+em inglês (pedido 20/11); no resto, gestos suaves. Destaque da palavra atual continua em todas as falas.
 
 ## CTA DE ENGAJAMENTO NOS VÍDEOS (20/11/2026, pedido do usuário)
 Todo vídeo termina com um CTA falado + texto grande pedindo para SEGUIR e COMENTAR algo do vídeo (sem produto):

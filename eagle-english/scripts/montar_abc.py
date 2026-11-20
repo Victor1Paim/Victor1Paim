@@ -86,13 +86,14 @@ def main(pasta):
         ev = next((e for e in eventos if e["ini"] <= x < e["fim"]), eventos[-1])
         i = int(x / (1 / FPS)); falando = env[max(0, i - 4):i + 4].max() > 0.02
         if ev.get("cta"):
-            return ("aponta" if falando else "feliz"), ev
-        if x >= ev["rev"]:
-            return ("aponta" if falando else "feliz"), ev
+            return ("fala3" if falando else "feliz"), ev
+        if x >= ev["rev"]:   # aponta só na última resposta (fixação) do vídeo
+            ultimo = ev is [e for e in eventos if not e.get("cta")][-1]
+            return (("aponta" if ultimo else "feliz") if falando else "feliz"), ev
         if ev["cont"][0] <= x < ev["cont"][1]:
             return "pensando", ev
-        if falando:
-            return "aponta", ev
+        if falando:   # aponta só na 1ª pergunta do vídeo
+            return ("aponta" if ev is eventos[0] else ["fala1", "fala3", "fala2", "fala4"][int(x / 0.9) % 4]), ev
         return "neutro", ev
     nq = int(total * FPS)
     poses = [pose_base(k / FPS) for k in range(nq)]

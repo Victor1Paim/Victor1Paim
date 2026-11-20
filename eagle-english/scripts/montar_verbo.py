@@ -69,12 +69,16 @@ def main(pasta):
             if a <= x < b:
                 return p
         return segs[-1][2]
+    # aponta para o texto só na PRIMEIRA fala do vídeo e na ÚLTIMA fixação em inglês (pedido do usuário 20/11); no resto, gestos suaves
+    ps_fala = [p for _, _, p in segs if "pt" in p or "en" in p]
+    ult_en = [p for p in ps_fala if "en" in p][-1:]
+    apontar = {id(p) for p in ps_fala[:1] + ult_en}
     poses, atual, ant, ini_k = [], None, "neutro", 0
     for k in range(nq):
         x = k / FPS; i = k
         falando = env[max(0, i - 4):i + 4].max() > 0.02
         p = passo_em(x)
-        pose = ("feliz" if p.get("fim") else "aponta") if falando else \
+        pose = ("feliz" if p.get("fim") else ("aponta" if id(p) in apontar else ["fala1", "fala3", "fala2", "fala4"][int(x / 0.9) % 4])) if falando else \
                ("fala3" if "en" in p and p.get("pausa", 0) >= 1 else "neutro")
         if pose != atual:
             ant, atual, ini_k = (atual or "neutro"), pose, k
