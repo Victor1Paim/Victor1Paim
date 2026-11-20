@@ -67,7 +67,7 @@ def main(pasta):
         x = k / FPS; i = k
         falando = env[max(0, i - 4):i + 4].max() > 0.02
         p = passo_em(x)
-        pose = ("feliz" if p.get("fim") else ["fala1", "fala3", "fala2", "fala4"][int(x / 0.5) % 4]) if falando else \
+        pose = ("feliz" if p.get("fim") else ["fala1", "fala3", "fala2", "fala4"][int(x / 0.9) % 4]) if falando else \
                ("fala3" if "en" in p and p.get("pausa", 0) >= 1 else "neutro")
         if pose != atual:
             ant, atual, ini_k = (atual or "neutro"), pose, k
@@ -85,7 +85,7 @@ def main(pasta):
         pg.goto((PROJ / "templates" / "verbo.html").as_uri()); pg.wait_for_function("window.fontesOk === true")
         def estado(k):
             x = k / FPS; p = passo_em(x); pose, ant, ik = poses[k]
-            kk = min(1.0, (k - ik) / (0.18 * FPS)); kk = kk * kk * (3 - 2 * kk)
+            kk = min(1.0, (k - ik) / (0.4 * FPS)); kk = kk * kk * (3 - 2 * kk)
             e = env[k] if k < len(env) else 0
             boca = 0 if e < 0.03 else (1 if (e > 0.09 and k % 4 < 2) else 2 if k % 4 < 3 else 1)
             st = {"aula": aula, "caixas": [{"t": c[0], "cor": c[1], "g": "g" in c[2:], "min": "min" in c[2:]} for c in p.get("caixas", [])],

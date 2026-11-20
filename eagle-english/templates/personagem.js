@@ -4,10 +4,10 @@ const C = { pele:"#F4C7A1", cabelo:"#3A2416", camisa:"#1F3F8F", tenis:"#ffffff",
 // mãos-alvo relativas ao ombro (x para fora = negativo na esquerda)
 const POSES = {
   neutro:   { L:[-38, 228], R:[38, 228] },
-  fala1:    { L:[-128, 70], R:[36, 226] },
-  fala2:    { L:[-36, 226], R:[128, 70] },
-  fala3:    { L:[-150, 120], R:[150, 120] },
-  fala4:    { L:[-110, 150], R:[60, 200] },
+  fala1:    { L:[-92, 128], R:[34, 224] },
+  fala2:    { L:[-34, 224], R:[92, 128] },
+  fala3:    { L:[-98, 150], R:[98, 150] },
+  fala4:    { L:[-70, 176], R:[56, 200] },
   pensando: { L:[100, 170], R:[-62, -26], olhar:[6, -8] },
   feliz:    { L:[-36, 226], R:[118, -50], joinha:true, sorriso:true, dobraR:1 },
 };

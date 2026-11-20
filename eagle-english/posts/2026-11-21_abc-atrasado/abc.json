@@ -12,7 +12,7 @@
     "C) I'm later"
    ],
    "certa": 1,
-   "pron": "áim LÊIT",
+   "pron": "áim lêit",
    "q": "q1",
    "r": "r1",
    "en": "I'm late."
@@ -25,7 +25,7 @@
     "C) I need you"
    ],
    "certa": 0,
-   "pron": "ái MÍS iú",
+   "pron": "ái mís iú",
    "q": "q2",
    "r": "r2",
    "en": "I miss you."
@@ -38,7 +38,7 @@
     "C) Make yourself at home"
    ],
    "certa": 2,
-   "pron": "MÊIK iór-SÉLF ét RÔUM",
+   "pron": "mêik iórsélf ét rôum",
    "q": "q3",
    "r": "r3",
    "en": "Make yourself at home."

@@ -214,3 +214,8 @@ detectado na foto, cada linha no maior tamanho que cabe. Último slide = CTA do 
 Personagem em SVG (`templates/personagem.js`), usado no ABC e no Verbo do dia. **Roupa padrão escolhida pelo usuário: opção 6,
 "jeans" (jaqueta jeans aberta + camiseta branca + calça escura).** Outras roupas prontas (`st.roupa`): estrela, moletom, praia, xadrez,
 esporte, professor, natal, verao, viajante, chef — prévias em `assets/personagem/`. Só trocar se o usuário pedir.
+
+## PRONÚNCIA ESCRITA (20/11/2026, escolha do usuário — manda sobre a convenção antiga da seção 6)
+Estilo SIMPLES da referência: tudo minúsculo, sem hífen e sem maiúsculas de tônica, acento só para guiar a leitura em português:
+"mêibi nékst táim", "ái guét áp ét séven", "ái gárit!", "áim lêit". Vale para vídeos (caixa verde do Verbo/ABC), Caderno e Repita.
+Gestos do personagem: suaves (ciclo de 0,9 s, transição de 0,4 s), sem braço esticado demais.

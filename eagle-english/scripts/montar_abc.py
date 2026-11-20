@@ -75,7 +75,7 @@ def main(pasta):
             return "pensando", ev
         i = int(x / (1 / FPS)); falando = env[max(0, i - 4):i + 4].max() > 0.02
         if falando:
-            return ["fala1", "fala3", "fala2", "fala4"][int((x - ev["ini"]) / 0.45) % 4], ev
+            return ["fala1", "fala3", "fala2", "fala4"][int((x - ev["ini"]) / 0.9) % 4], ev
         return "neutro", ev
     nq = int(total * FPS)
     poses = [pose_base(k / FPS) for k in range(nq)]
@@ -96,7 +96,7 @@ def main(pasta):
         pg.goto((PROJ / "templates" / "abc.html").as_uri()); pg.wait_for_function("window.fontesOk === true")
         def estado(k):
             x = k / FPS; p, ev = poses[k]; r = rods[ev["i"]]; ant, ini = ini_pose[k]
-            kk = min(1.0, (k - ini) / (0.18 * FPS)); kk = kk * kk * (3 - 2 * kk)
+            kk = min(1.0, (k - ini) / (0.4 * FPS)); kk = kk * kk * (3 - 2 * kk)
             e = env[k] if k < len(env) else 0
             boca = 0 if e < 0.03 else (1 if (e > 0.09 and k % 4 < 2) else 2 if k % 4 < 3 else 1)
             st = {"rodada": f"{ev['i'] + 1}/{n}", "titulo": r["titulo"], "opcoes": r["opcoes"], "certa": r["certa"],

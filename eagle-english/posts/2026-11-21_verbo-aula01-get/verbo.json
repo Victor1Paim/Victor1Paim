@@ -32,7 +32,7 @@
      "g"
     ],
     [
-     "GUÉT",
+     "guét",
      "pr"
     ]
    ],
@@ -47,7 +47,7 @@
      "g"
     ],
     [
-     "GUÉT",
+     "guét",
      "pr"
     ],
     [
@@ -65,7 +65,7 @@
      "g"
     ],
     [
-     "GUÉT",
+     "guét",
      "pr"
     ],
     [
@@ -97,7 +97,7 @@
      "am"
     ],
     [
-     "ái guét ÁP ét SÉ-vân",
+     "ái guét áp ét séven",
      "pr"
     ],
     [
@@ -129,7 +129,7 @@
      "am"
     ],
     [
-     "kén ái GUÉT a KÓ-fi?",
+     "kén ái guét a kófi?",
      "pr"
     ],
     [
@@ -152,7 +152,7 @@
      "g"
     ],
     [
-     "GÁT",
+     "gát",
      "pr"
     ]
    ],
@@ -167,7 +167,7 @@
      "g"
     ],
     [
-     "GÁT",
+     "gát",
      "pr"
     ],
     [
@@ -185,7 +185,7 @@
      "g"
     ],
     [
-     "GÁT",
+     "gát",
      "pr"
     ],
     [
@@ -208,7 +208,7 @@
      "am"
     ],
     [
-     "ái GÁ-rit!",
+     "ái gárit!",
      "pr"
     ],
     [
@@ -225,10 +225,10 @@
   }
  ],
  "pronuncias": {
-  "GET": "GUÉT",
-  "GOT": "GÁT",
-  "I get up at seven": "ái guét ÁP ét SÉ-vân",
-  "Can I get a coffee?": "kén ái GUÉT a KÓ-fi?",
-  "I got it!": "ái GÁ-rit!"
+  "GET": "guét",
+  "GOT": "gát",
+  "I get up at seven": "ái guét áp ét séven",
+  "Can I get a coffee?": "kén ái guét a kófi?",
+  "I got it!": "ái gárit!"
  }
 }
