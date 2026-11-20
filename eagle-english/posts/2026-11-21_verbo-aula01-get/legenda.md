@@ -5,11 +5,11 @@ passado (2x) → "Comenta APRENDER". `python3 scripts/montar_verbo.py posts/<pos
 
 ## Legenda (TikTok e Instagram — formato V3)
 ```
-Aula 1 de 100: o verbo GET 🇺🇸 Um verbo por dia, 100 dias seguidos!
+Aula 1 de 100: o verbo GET 🇺🇸
 
-Comenta "APRENDER" pra receber a próxima aula 👇
+Comenta "APRENDER" e segue pra não perder a próxima aula 👇
 
-🦅 Siga @eagle.english.br e evolua seu inglês todo dia!
+📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
 
 #inglesparabrasileiros #inglesdodiaadia #verbosemingles #aprenderingles #inglesfacil
 ```

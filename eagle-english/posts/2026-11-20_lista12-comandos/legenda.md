@@ -7,11 +7,11 @@ Pergunta aberta: "Quantas dessas 12 você sabe dizer em inglês?" · Ação: cur
 
 ## Legenda (Instagram e TikTok — formato V3, sem bloco de produto)
 ```
-🗣️ Como se diz em inglês? 12 comandos que você usa todo dia. Responde antes do tempo acabar!
+12 comandos em inglês que você usa todo dia 🗣️🇺🇸
 
-Comenta quantas você acertou 👇
+Comenta quantas das 12 você acertou 👇
 
-🦅 Siga @eagle.english.br e evolua seu inglês todo dia!
+📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
 
 #inglesparabrasileiros #inglesdodiaadia #frasesemingles #comosedizemingles #testedeingles
 ```

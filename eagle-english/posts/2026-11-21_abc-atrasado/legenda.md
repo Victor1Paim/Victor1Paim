@@ -5,11 +5,11 @@ resposta falada 2x. Fundo Maldivas (uma cena por rodada). `python3 scripts/monta
 
 ## Legenda (TikTok e Instagram — formato V3)
 ```
-Você acertaria as 3? 🤔🇺🇸 Responde antes do tempo acabar!
+Você acertaria as 3? 🤔🇺🇸
 
 Comenta quantas você acertou 👇
 
-🦅 Siga @eagle.english.br e evolua seu inglês todo dia!
+📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
 
 #inglesparabrasileiros #inglesdodiaadia #comosedizemingles #testedeingles #frasesemingles
 ```

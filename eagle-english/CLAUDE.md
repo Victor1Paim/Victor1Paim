@@ -232,3 +232,8 @@ O gerador de voz às vezes solta um estouro curto isolado no começo/fim da fala
 tira estouros ≤ 80 ms separados da fala por ≥ 120 ms de silêncio; roda sozinho no `vozes.py` (toda fala gerada) e no
 `recortar_whisper.py` (todo pedaço). Para arquivos antigos: `python3 scripts/recortar_whisper.py --limpar audio/*.wav`.
 Conferência do vídeo final: envelope de energia em janelas de 20 ms procurando um quadro isolado de som entre silêncios.
+
+## LEGENDA DOS VÍDEOS (20/11/2026, pedido do usuário — manda sobre "sem bloco do Eagle 350" acima)
+Simples: 1 linha do tema + 1 pedido de comentário/seguir + 1 linha do infoproduto na bio
+("📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!") + 5 hashtags.
+O VÍDEO continua sem CTA de produto; a chamada do produto fica só na legenda.
