@@ -130,7 +130,7 @@ def main(pasta):
         # capa: "AULA N" + verbo grande + "1 verbo por dia / 100 dias seguidos"
         cap = v / "_capa_fundo.jpg"
         sh("-ss", "3", "-i", str(clipes_fundo(cfg)[0]), "-frames:v", "1", "-vf", "scale=1080:1920", str(cap))
-        st = estado(int(0.5 * FPS)); st.update(fundo=cap.as_uri(), legenda=[], pose="fala3", pose_ant="fala3", boca=0,
+        st = estado(int(0.5 * FPS)); st.update(fundo=cap.as_uri(), legenda=[], pose="aponta", pose_ant="aponta", aponta=0.75, k=1, boca=0,
                                                caixas=[{"t": cfg["verbo"], "cor": "am", "g": True},
                                                        {"t": cfg["significado"], "cor": "br"},
                                                        {"t": "1 verbo por dia · 100 dias", "cor": "vm"}])
