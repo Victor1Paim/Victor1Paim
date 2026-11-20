@@ -79,14 +79,14 @@ def recortar(arq, lingua, frases, modelo=None):
         return (a + int(np.argmin(env[a:b + 1]))) * 0.01
     cortes = [0.0] + [vale(limites[m][1], limites[m + 1][0]) for m in range(len(limites) - 1)] + [len(x) / sr]
     pecas = []
-    lim = 10 ** (-50 / 20)
+    lim = 10 ** (-55 / 20)
     for m in range(len(frases)):
         a, b = int(cortes[m] * sr), int(cortes[m + 1] * sr)
         y = x[a:b].copy()
         e, kk = rms(y, sr)
         on = np.where(e > lim)[0]
         if len(on):
-            y = y[max(0, on[0] * kk - int(0.04 * sr)): min(len(y), (on[-1] + 1) * kk + int(0.09 * sr))]
+            y = y[max(0, on[0] * kk - int(0.04 * sr)): min(len(y), (on[-1] + 1) * kk + int(0.16 * sr))]
         # pausas internas longas → 0,22 s
         e, kk = rms(y, sr); quieto = e < 10 ** (-42 / 20)
         partes, ini, j = [], 0, 0
