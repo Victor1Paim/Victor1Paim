@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap">
+<!-- SÉRIE "1 VERBO POR DIA" (ref. do usuário 20/11): "AULA N" amarelo com contorno no topo, caixas (inglês AMARELA, português
+     BRANCA, destaque VERMELHO), legenda falada em blocos de 3 palavras (atual em amarelo), personagem próprio embaixo.
+     Camada transparente; window.render(estado) desenha um quadro. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; background:transparent; font-family:"Montserrat"; }
+  body.opaco { background:#2a6 center/cover; }
+  .marca { position:absolute; left:0; right:0; top:262px; text-align:center; color:#fff; font-weight:700; font-size:24px;
+           paint-order:stroke fill; -webkit-text-stroke:5px rgba(0,0,0,.6); }
+  .aula { position:absolute; left:0; right:0; top:292px; text-align:center; color:#FFD21F; font-weight:900; font-size:76px;
+          letter-spacing:.01em; paint-order:stroke fill; -webkit-text-stroke:14px #000; }
+  #cx { position:absolute; left:0; right:0; top:470px; display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .c { font-weight:800; font-size:64px; padding:6px 22px 10px; white-space:nowrap; line-height:1.1; text-transform:uppercase;
+       box-shadow:0 6px 16px rgba(0,0,0,.25); }
+  .c.am { background:#FFE21A; color:#111; }
+  .c.br { background:#fff; color:#111; font-size:56px; }
+  .c.vm { background:#D7141E; color:#fff; text-transform:none; }
+  .c.am.min { text-transform:none; }
+  .c.g { font-size:104px; padding:4px 30px 10px; }
+  #leg { position:absolute; left:40px; right:40px; top:600px; text-align:center; font-weight:900; font-size:66px; color:#fff;
+         text-transform:uppercase; paint-order:stroke fill; -webkit-text-stroke:13px #000; white-space:nowrap; }
+  #leg .at { color:#FFD21F; }
+  #fim { position:absolute; left:30px; right:30px; top:520px; text-align:center; font-weight:900; font-size:108px; line-height:1.08;
+         color:#fff; paint-order:stroke fill; -webkit-text-stroke:18px #000; }
+  svg#p { position:absolute; left:50%; transform:translateX(-50%); overflow:visible; }
+</style></head>
+<body>
+<div class="marca" id="marca">@eagle.english.br</div>
+<div class="aula" id="aula"></div>
+<div id="cx"></div>
+<div id="leg"></div>
+<div id="fim"></div>
+<svg id="p" width="480" height="985" viewBox="0 0 400 820">
+  <defs>
+    <filter id="mao" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g id="corpo" filter="url(#mao)"></g>
+</svg>
+<script src="personagem.js"></script>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+window.render = (st) => {
+  document.body.classList.toggle("opaco", !!st.fundo);
+  if (st.fundo) document.body.style.backgroundImage = `url('${st.fundo}')`;
+  document.getElementById("aula").textContent = st.aula || "";
+  const cx = document.getElementById("cx");
+  cx.innerHTML = (st.caixas || []).map(c => `<div class="c ${c.cor}${c.g ? " g" : ""}${c.min ? " min" : ""}">${esc(c.t)}</div>`).join("");
+  for (const el of cx.children) { let f = parseFloat(getComputedStyle(el).fontSize);
+    while (el.offsetWidth > 960 && f > 30) { f -= 2; el.style.fontSize = f + "px"; } }
+  const leg = document.getElementById("leg");
+  if (st.legenda && st.legenda.length && !(st.caixas || []).length && !st.fim) {
+    leg.innerHTML = st.legenda.map((w, i) => `<span class="${i === st.atual ? "at" : ""}">${esc(w)}</span>`).join(" ");
+    leg.style.fontSize = "66px"; let f = 66;
+    while (leg.scrollWidth > leg.clientWidth && f > 34) { f -= 2; leg.style.fontSize = f + "px"; }
+  } else leg.innerHTML = "";
+  document.getElementById("fim").innerHTML = st.fim ? esc(st.fim).replace(/\n/g, "<br>") : "";
+  const p = document.getElementById("p");
+  p.style.top = (1775 - 790 * 480 / 400) + "px";
+  document.getElementById("corpo").setAttribute("transform", `rotate(${(st.balanco || 0).toFixed(2)} 200 790)`);
+  document.getElementById("corpo").innerHTML = personagem(st);
+  document.body.dataset.pronto = "1";
+};
+document.fonts.load('900 66px "Montserrat"').then(() => { window.fontesOk = true; });
+</script>
+</body></html>

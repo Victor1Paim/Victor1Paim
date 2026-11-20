@@ -1,0 +1,116 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "falas_pt",
+   "lingua": "pt",
+   "texto": "Um verbo por dia, cem dias seguidos. Aula um....\n\nHoje, o verbo do dia é:...\n\nQue pode ser pegar, conseguir ou chegar. Repita comigo:...\n\nVou te dar dois exemplos. O primeiro:...\n\nEu levanto às sete....\n\nE o outro:...\n\nPode me ver um café?...\n\nAgora presta atenção: no passado, esse verbo vira:...\n\nRepita comigo:...\n\nPor exemplo: entendi!...\n\nComenta aprender pra receber a próxima aula!"
+  },
+  {
+   "id": "falas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Get....\n\nI get up at seven....\n\nCan I get a coffee?...\n\nGot....\n\nI got it!"
+  },
+  {
+   "id": "pt1",
+   "lingua": "pt",
+   "texto": "Um verbo por dia, cem dias seguidos. Aula um.",
+   "recorte": true
+  },
+  {
+   "id": "pt2",
+   "lingua": "pt",
+   "texto": "Hoje, o verbo do dia é:",
+   "recorte": true
+  },
+  {
+   "id": "pt3",
+   "lingua": "pt",
+   "texto": "Que pode ser pegar, conseguir ou chegar. Repita comigo:",
+   "recorte": true
+  },
+  {
+   "id": "pt4",
+   "lingua": "pt",
+   "texto": "Vou te dar dois exemplos. O primeiro:",
+   "recorte": true
+  },
+  {
+   "id": "pt5",
+   "lingua": "pt",
+   "texto": "Eu levanto às sete.",
+   "recorte": true
+  },
+  {
+   "id": "pt6",
+   "lingua": "pt",
+   "texto": "E o outro:",
+   "recorte": true
+  },
+  {
+   "id": "pt7",
+   "lingua": "pt",
+   "texto": "Pode me ver um café?",
+   "recorte": true
+  },
+  {
+   "id": "pt8",
+   "lingua": "pt",
+   "texto": "Agora presta atenção: no passado, esse verbo vira:",
+   "recorte": true
+  },
+  {
+   "id": "pt9",
+   "lingua": "pt",
+   "texto": "Repita comigo:",
+   "recorte": true
+  },
+  {
+   "id": "pt10",
+   "lingua": "pt",
+   "texto": "Por exemplo: entendi!",
+   "recorte": true
+  },
+  {
+   "id": "pt11",
+   "lingua": "pt",
+   "texto": "Comenta aprender pra receber a próxima aula!",
+   "recorte": true
+  },
+  {
+   "id": "en1",
+   "lingua": "en",
+   "texto": "Get.",
+   "recorte": true
+  },
+  {
+   "id": "en2",
+   "lingua": "en",
+   "texto": "I get up at seven.",
+   "recorte": true
+  },
+  {
+   "id": "en3",
+   "lingua": "en",
+   "texto": "Can I get a coffee?",
+   "recorte": true
+  },
+  {
+   "id": "en4",
+   "lingua": "en",
+   "texto": "Got.",
+   "recorte": true
+  },
+  {
+   "id": "en5",
+   "lingua": "en",
+   "texto": "I got it!",
+   "recorte": true
+  }
+ ]
+}
