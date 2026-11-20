@@ -69,7 +69,7 @@ def main(pasta):
             sons.append((fx["tique"], t + k * cont / round(cont), 0.45))
         t += cont
         revela.append(t)
-        t += falar(it["r"], t, it["en"]) + 0.55
+        t += falar(it["r"], t, it["en"]) + cfg.get("respiro", 0.55)
         trechos.append((t0, t))
         rg = cfg.get("reganchos", {}).get(str(i + 1))
         if rg:

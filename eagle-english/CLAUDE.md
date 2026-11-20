@@ -238,3 +238,8 @@ Conferência do vídeo final: envelope de energia em janelas de 20 ms procurando
 Simples: 1 linha do tema + 1 pedido de comentário/seguir + 1 linha do infoproduto na bio
 ("📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!") + 5 hashtags.
 O VÍDEO continua sem CTA de produto; a chamada do produto fica só na legenda.
+
+## DURAÇÃO (20/11/2026, regra do usuário — manda sobre "40 s a 1 min 10 s")
+Todo vídeo entre **30 s e 1 min 20 s CONTANDO O CTA**. Se o tema não couber, dividir em Parte 1, Parte 2… (cada parte com gancho e CTA
+próprios). Lista 12 cabe com `"contagem": 2.0, "respiro": 0.4`; se passar, virar Lista 8/10 ou 2 partes. Banco de temas:
+`docs/BANCO_DE_CONTEUDO.md` (só o "1 verbo por dia" é fixo; o resto alterna pelo banco).
