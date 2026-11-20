@@ -12,6 +12,7 @@ legenda falada em blocos de 3 palavras (palavra atual em amarelo), caixas: ingl�
 5. "Agora presta atenção: no passado, esse verbo vira:" → **Made.** → "Repita comigo:" → **Made.** + pausa
 6. "Por exemplo: fui eu quem fez isso." → **I made that.** 2x
 7. "Comenta APRENDER pra receber a próxima aula!" — texto grande "COMENTA 'APRENDER'"
+**Toda caixa amarela em inglês leva embaixo a PRONÚNCIA escrita aportuguesada numa caixa VERDE (convenção do V3, tônica em maiúscula: GUÉT · ái GÁ-rit!), depois a tradução na branca (pedido do usuário 20/11).**
 Personagem próprio (o do formato ABC), fundo Maldivas (cena nova por bloco), voz Achird (pt e en separados), sem CTA de produto.
 
 ## Os 30 primeiros verbos (frequência + uso no dia a dia; exemplos A1, verdadeiros e naturais)

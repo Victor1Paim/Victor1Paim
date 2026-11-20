@@ -30,6 +30,10 @@
      "GET",
      "am",
      "g"
+    ],
+    [
+     "GUÉT",
+     "pr"
     ]
    ],
    "pausa": 0.3
@@ -41,6 +45,10 @@
      "GET",
      "am",
      "g"
+    ],
+    [
+     "GUÉT",
+     "pr"
     ],
     [
      "PEGAR · CONSEGUIR · CHEGAR",
@@ -55,6 +63,10 @@
      "GET",
      "am",
      "g"
+    ],
+    [
+     "GUÉT",
+     "pr"
     ],
     [
      "PEGAR · CONSEGUIR · CHEGAR",
@@ -85,6 +97,10 @@
      "am"
     ],
     [
+     "ái guét ÁP ét SÉ-vân",
+     "pr"
+    ],
+    [
      "Eu levanto às sete",
      "br"
     ]
@@ -113,6 +129,10 @@
      "am"
     ],
     [
+     "kén ái GUÉT a KÓ-fi?",
+     "pr"
+    ],
+    [
      "Pode me ver um café?",
      "br"
     ]
@@ -130,6 +150,10 @@
      "GOT",
      "am",
      "g"
+    ],
+    [
+     "GÁT",
+     "pr"
     ]
    ],
    "pausa": 0.3
@@ -141,6 +165,10 @@
      "GOT",
      "am",
      "g"
+    ],
+    [
+     "GÁT",
+     "pr"
     ],
     [
      "PASSADO DE GET",
@@ -155,6 +183,10 @@
      "GOT",
      "am",
      "g"
+    ],
+    [
+     "GÁT",
+     "pr"
     ],
     [
      "PASSADO DE GET",
@@ -176,6 +208,10 @@
      "am"
     ],
     [
+     "ái GÁ-rit!",
+     "pr"
+    ],
+    [
      "Entendi!",
      "br"
     ]
@@ -187,5 +223,12 @@
    "fim": "COMENTA\n“APRENDER”",
    "bloco": 1
   }
- ]
+ ],
+ "pronuncias": {
+  "GET": "GUÉT",
+  "GOT": "GÁT",
+  "I get up at seven": "ái guét ÁP ét SÉ-vân",
+  "Can I get a coffee?": "kén ái GUÉT a KÓ-fi?",
+  "I got it!": "ái GÁ-rit!"
+ }
 }
