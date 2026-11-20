@@ -83,7 +83,7 @@ function personagem(st) {
   const P = POSES[st.pose] || POSES.neutro, Q = POSES[st.pose_ant] || P, k = st.k ?? 1;
   const alvo = l => mistura(Q[l], P[l], k);
   let g = "";
-  const R = ROUPAS[st.roupa || window.ROUPA || "estrela"] || ROUPAS.estrela;
+  const R = ROUPAS[st.roupa || window.ROUPA || "jeans"] || ROUPAS.estrela;
   // pernas (calça comprida, bermuda ou perna à mostra) e tênis
   g += `<path d="M170 560 L162 770 M230 560 L240 770" stroke="${C.traco}" stroke-width="10" stroke-linecap="round" fill="none"/>`;
   if (R.calca) g += `<path d="M170 556 L163 748 M230 556 L239 748" stroke="${C.traco}" stroke-width="46" stroke-linecap="round" fill="none"/>

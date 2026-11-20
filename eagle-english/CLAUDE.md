@@ -209,3 +209,8 @@ Ref. do usuário (perfil que bateu 10,9 mil curtidas): folha de caderno pautada,
 `posts/<post>/caderno.json` → `python3 scripts/carrossel_caderno.py posts/<post>` (template `templates/caderno.html`). A folha é UMA foto
 realista sem texto (gpt-image-2; o Gemini recusou) reaproveitável; o texto é nosso (fonte manuscrita), girado no ângulo das pautas
 detectado na foto, cada linha no maior tamanho que cabe. Último slide = CTA do perfil (carrossel_tt). Exemplo: `posts/2026-11-19_carrossel-caderno-1/`.
+
+## PERSONAGEM PRÓPRIO (20/11/2026)
+Personagem em SVG (`templates/personagem.js`), usado no ABC e no Verbo do dia. **Roupa padrão escolhida pelo usuário: opção 6,
+"jeans" (jaqueta jeans aberta + camiseta branca + calça escura).** Outras roupas prontas (`st.roupa`): estrela, moletom, praia, xadrez,
+esporte, professor, natal, verao, viajante, chef — prévias em `assets/personagem/`. Só trocar se o usuário pedir.
