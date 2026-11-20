@@ -29,7 +29,7 @@ def main(pasta):
     aud = lambda i: post / "audio" / f"{i}.wav"
     import whisper
     modelo = whisper.load_model("turbo")
-    sons, segs, legs, cortes = [], [], [], [0.0]
+    sons, segs, legs, cortes, falado = [], [], [], [0.0], []
     t = 0.15
     for p in cfg["passos"]:
         if p.get("bloco") and t > 0.2:
@@ -43,11 +43,18 @@ def main(pasta):
                 for j, (w, s, e) in enumerate(bloco):
                     fim = bloco[j + 1][1] if j + 1 < len(bloco) else (ws[k + 3][1] if k + 3 < len(ws) else e + 0.25)
                     legs.append((t + s, t + fim, [x[0] for x in bloco], j))
+            for j, (w, s, e) in enumerate(ws):
+                falado.append((t + s, (ws[j + 1][1] if j + 1 < len(ws) else e + 0.2) + t, "pt", j, len(ws)))
             t += d + p.get("depois", 0.25)
         else:
             a = aud(p["en"]); d = dur(a)
+            ten = next(c[0] for c in p.get("caixas", [["?"]]) if len(c) > 1 and c[1] == "am")
+            wen = palavras(modelo, a, ten, "en")
             for v in range(p.get("vezes", 1)):
-                sons.append((a, t, 1.0, True)); t += d + (0.55 if v + 1 < p.get("vezes", 1) else 0)
+                sons.append((a, t, 1.0, True))
+                for j, (w, s, e) in enumerate(wen):
+                    falado.append((t + s, (wen[j + 1][1] if j + 1 < len(wen) else e + 0.2) + t, "en", j, len(wen)))
+                t += d + (0.55 if v + 1 < p.get("vezes", 1) else 0)
             t += p.get("pausa", 0.35)
         segs.append((ini, t, p))
     total = t + 0.4
@@ -67,11 +74,20 @@ def main(pasta):
         x = k / FPS; i = k
         falando = env[max(0, i - 4):i + 4].max() > 0.02
         p = passo_em(x)
-        pose = ("feliz" if p.get("fim") else ["fala1", "fala3", "fala2", "fala4"][int(x / 0.9) % 4]) if falando else \
+        pose = ("feliz" if p.get("fim") else "aponta") if falando else \
                ("fala3" if "en" in p and p.get("pausa", 0) >= 1 else "neutro")
         if pose != atual:
             ant, atual, ini_k = (atual or "neutro"), pose, k
         poses.append((pose, ant, ini_k))
+
+    # mão acompanha a palavra: alvo = posição da palavra na linha (0…1), suavizado
+    def fala_em(x):
+        return next((f for f in falado if f[0] <= x < f[1]), None)
+    mira, f_s = [], 0.5
+    for k in range(nq):
+        f = fala_em(k / FPS)
+        alvo = (f[3] + 0.5) / f[4] if f else f_s
+        f_s += (alvo - f_s) * 0.22; mira.append(f_s)
 
     v = post / "video"; q = v / "quadros"; q.mkdir(parents=True, exist_ok=True)
     for x in q.glob("*.png"):
@@ -94,6 +110,17 @@ def main(pasta):
             lg = next((l for l in legs if l[0] <= x < l[1]), None)
             if lg:
                 st["legenda"], st["atual"] = lg[2], lg[3]
+            st["aponta"] = mira[k]
+            f = fala_em(x)
+            if f:   # destaque da palavra atual: en → caixa amarela + pronúncia (verde); pt → caixa branca
+                for c in st["caixas"]:
+                    n = len(c["t"].split(" "))
+                    if f[2] == "en" and c["cor"] == "am":
+                        c["hl"] = min(f[3], n - 1)
+                    elif f[2] == "en" and c["cor"] == "pr":
+                        c["hl"] = min(n - 1, round(f[3] * (n - 1) / max(1, f[4] - 1))) if n == f[4] else min(n - 1, int(f[3] * n / f[4]))
+                    elif f[2] == "pt" and c["cor"] == "br" and n == f[4]:
+                        c["hl"] = f[3]
             return st
         for k in range(nq):
             pg.evaluate("s => window.render(s)", estado(k))

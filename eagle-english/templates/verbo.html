@@ -19,6 +19,8 @@
   .c.br { background:#fff; color:#111; font-size:66px; }
   .c.vm { background:#D7141E; color:#fff; text-transform:none; }
   .c.am.min { text-transform:none; }
+  .c.am .hl, .c.br .hl { color:#D7141E; }
+  .c.pr .hl { color:#FFE21A; }
   .c.pr { background:#15962A; color:#fff; text-transform:none; font-size:62px; }
   .c.g { font-size:140px; padding:4px 30px 10px; }
   #leg { position:absolute; left:40px; right:40px; top:600px; text-align:center; font-weight:900; font-size:76px; color:#fff;
@@ -51,7 +53,8 @@ window.render = (st) => {
   if (st.fundo) document.body.style.backgroundImage = `url('${st.fundo}')`;
   document.getElementById("aula").textContent = st.aula || "";
   const cx = document.getElementById("cx");
-  cx.innerHTML = (st.caixas || []).map(c => `<div class="c ${c.cor}${c.g ? " g" : ""}${c.min ? " min" : ""}">${esc(c.t)}</div>`).join("");
+  const pal = c => (c.hl == null) ? esc(c.t) : String(c.t).split(" ").map((w, i) => i === c.hl ? `<span class="hl">${esc(w)}</span>` : esc(w)).join(" ");
+  cx.innerHTML = (st.caixas || []).map(c => `<div class="c ${c.cor}${c.g ? " g" : ""}${c.min ? " min" : ""}">${pal(c)}</div>`).join("");
   for (const el of cx.children) { let f = parseFloat(getComputedStyle(el).fontSize);
     while (el.offsetWidth > 960 && f > 30) { f -= 2; el.style.fontSize = f + "px"; } }
   const leg = document.getElementById("leg");

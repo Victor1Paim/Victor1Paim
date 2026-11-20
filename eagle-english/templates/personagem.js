@@ -79,8 +79,15 @@ const ROUPAS = {
       <path d="M120 74 Q90 20 140 6 Q170 -24 200 0 Q234 -24 262 6 Q312 20 280 74 Z" fill="#fff" stroke="${T}" stroke-width="7" stroke-linejoin="round"/>` },
 };
 function mistura(a, b, k) { return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k]; }
+// "aponta": braço direito levantado apontando para o texto em cima; st.aponta (0 = esquerda … 1 = direita) segue a palavra falada
+function poseDe(nome, st) {
+  if (nome === "aponta") { const f = Math.max(0, Math.min(1, st.aponta ?? 0.5));
+    if (f >= 0.45) return { L:[-30, 222], R:[55 + 70 * (f - 0.45) / 0.55, -196 + 20 * (f - 0.45)], dedo:"R", dobraR:1 };
+    return { L:[-55 - 70 * (0.45 - f) / 0.45, -196 + 20 * (0.45 - f)], R:[30, 222], dedo:"L", dobraL:-1 }; }
+  return POSES[nome] || POSES.neutro;
+}
 function personagem(st) {
-  const P = POSES[st.pose] || POSES.neutro, Q = POSES[st.pose_ant] || P, k = st.k ?? 1;
+  const P = poseDe(st.pose, st), Q = st.pose_ant ? poseDe(st.pose_ant, st) : P, k = st.k ?? 1;
   const alvo = l => mistura(Q[l], P[l], k);
   let g = "";
   const R = ROUPAS[st.roupa || window.ROUPA || "jeans"] || ROUPAS.estrela;
@@ -113,13 +120,17 @@ function personagem(st) {
   else g += `<ellipse cx="200" cy="212" rx="20" ry="24" fill="#6B1F24" stroke="${C.traco}" stroke-width="6"/><ellipse cx="200" cy="224" rx="11" ry="7" fill="#E46A6A"/>`;
   // braços
   for (const l of ["L", "R"]) {
-    const s = SH[l], [e, h] = ik(s, alvo(l), l, l === "R" && k > 0.5 ? P.dobraR : undefined);
+    const s = SH[l], [e, h] = ik(s, alvo(l), l, k > 0.5 ? (l === "R" ? P.dobraR : P.dobraL) : undefined);
     g += `<path d="M${s[0]} ${s[1]} L${e[0]} ${e[1]} L${h[0]} ${h[1]}" stroke="${C.traco}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
     if (R.manga) { const ponto = (a, b, f) => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
       const d = R.manga === "longa" ? `M${s[0]} ${s[1]} L${e[0]} ${e[1]} L${ponto(e, h, 0.78).join(" ")}` : `M${s[0]} ${s[1]} L${ponto(s, e, 0.5).join(" ")}`;
       g += `<path d="${d}" stroke="${C.traco}" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
             <path d="${d}" stroke="${R.cor_manga || R.cor}" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`; }
     g += `<circle cx="${h[0]}" cy="${h[1]}" r="19" fill="${C.pele}" stroke="${C.traco}" stroke-width="6"/>`;
+    if (P.dedo === l && k > 0.5) { const vx = h[0] - e[0], vy = h[1] - e[1], n = Math.hypot(vx, vy) || 1;
+      g += `<path d="M${h[0]} ${h[1]} l${(vx / n * 34).toFixed(1)} ${(vy / n * 34).toFixed(1)}" stroke="${C.traco}" stroke-width="10" stroke-linecap="round"/>
+            <circle cx="${h[0]}" cy="${h[1]}" r="19" fill="${C.pele}" stroke="${C.traco}" stroke-width="6"/>
+            <path d="M${h[0]} ${h[1]} l${(vx / n * 30).toFixed(1)} ${(vy / n * 30).toFixed(1)}" stroke="${C.pele}" stroke-width="5" stroke-linecap="round"/>`; }
     if (P.joinha && l === "R" && k > 0.6) g += `<path d="M${h[0]} ${h[1] - 14} l0 -24" stroke="${C.traco}" stroke-width="9" stroke-linecap="round"/>`;
   }
   return g;

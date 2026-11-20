@@ -60,22 +60,29 @@ def main(pasta):
         for _ in range(rep):
             d = dur(aud(r["r"])); sons.append((aud(r["r"]), t, 1.0, True)); falas_r.append((t, t + d)); t += d + 0.35
         t += 0.35
-        eventos.append({"i": i, "ini": t0, "q": (qa, qb), "cont": (cs, rv), "rev": rv, "fim": t})
+        eventos.append({"falas_r": falas_r, "i": i, "ini": t0, "q": (qa, qb), "cont": (cs, rv), "rev": rv, "fim": t})
         trechos.append((t0, t))
     total = t
     print(f"  duração: {total:.1f} s")
     env = envelope(sons, total)
+    # tempo de cada palavra da resposta (para destacar a palavra atual na resposta e na pronúncia)
+    import whisper
+    from montar_lista12 import palavras
+    modelo = whisper.load_model("turbo")
+    for ev in eventos:
+        r = rods[ev["i"]]; en = r.get("en") or r["opcoes"][r["certa"]].split(") ", 1)[-1]
+        ev["palavras"] = palavras(modelo, aud(r["r"]), en, "en")
 
     # POSES ao longo do tempo (com transição de 0,18 s)
     def pose_base(x):
         ev = next((e for e in eventos if e["ini"] <= x < e["fim"]), eventos[-1])
+        i = int(x / (1 / FPS)); falando = env[max(0, i - 4):i + 4].max() > 0.02
         if x >= ev["rev"]:
-            return "feliz", ev
+            return ("aponta" if falando else "feliz"), ev
         if ev["cont"][0] <= x < ev["cont"][1]:
             return "pensando", ev
-        i = int(x / (1 / FPS)); falando = env[max(0, i - 4):i + 4].max() > 0.02
         if falando:
-            return ["fala1", "fala3", "fala2", "fala4"][int((x - ev["ini"]) / 0.9) % 4], ev
+            return "aponta", ev
         return "neutro", ev
     nq = int(total * FPS)
     poses = [pose_base(k / FPS) for k in range(nq)]
@@ -101,9 +108,18 @@ def main(pasta):
             boca = 0 if e < 0.03 else (1 if (e > 0.09 and k % 4 < 2) else 2 if k % 4 < 3 else 1)
             st = {"rodada": f"{ev['i'] + 1}/{n}", "titulo": r["titulo"], "opcoes": r["opcoes"], "certa": r["certa"],
                   "pron": r["pron"], "pose": p, "pose_ant": ant, "k": kk, "boca": boca,
-                  "piscar": (x % 3.3) < 0.12 and p != "feliz", "balanco": 1.3 * math.sin(x * 1.7)}
+                  "piscar": (x % 3.3) < 0.12 and p != "feliz", "balanco": 1.3 * math.sin(x * 1.7),
+                  "aponta": 0.5 + 0.25 * math.sin(x * 2.2)}
             if x >= ev["rev"]:
                 st["fase"] = "revela"
+                for (a, b) in ev["falas_r"]:
+                    ws = ev["palavras"]
+                    for j, (w, s0, e0) in enumerate(ws):
+                        fim = ws[j + 1][1] if j + 1 < len(ws) else e0 + 0.2
+                        if a + s0 <= x < a + fim:
+                            n_pr = len(r["pron"].split(" "))
+                            st["hl"] = j; st["hl_pr"] = j if n_pr == len(ws) else min(n_pr - 1, int(j * n_pr / len(ws)))
+                            st["aponta"] = (j + 0.5) / len(ws)
             elif ev["cont"][0] <= x < ev["cont"][1]:
                 f = (x - ev["cont"][0]) / cont
                 st.update(fase="contagem", num=5 - min(4, int(f * 5)), anel=1 - (f * 5 % 1))

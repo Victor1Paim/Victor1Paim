@@ -16,6 +16,7 @@
   .op { margin-top:10px; background:rgba(8,14,40,.88); color:#fff; font-weight:800; font-size:50px; padding:5px 20px 8px;
         white-space:nowrap; border:3px solid rgba(255,255,255,.08); }
   .op.certa { background:#15962A; }
+  .op.certa .hl, .pron .hl { color:#FFE21A; }
   .pron { margin-top:12px; background:#15962A; color:#fff; font-weight:800; font-size:46px; padding:5px 20px 7px; white-space:nowrap; }
   #cont { position:absolute; z-index:5; left:50%; width:118px; height:118px; transform:translateX(-50%); }
   svg#p { position:absolute; left:50%; transform:translateX(-50%); overflow:visible; }
@@ -40,7 +41,8 @@ window.render = (st) => {
   if (st.fundo) document.body.style.backgroundImage = `url('${st.fundo}')`;
   let h = `<div class="selo">${esc(st.rodada)}</div>`;
   if (st.fase === "revela") {
-    h += `<div class="op certa">${esc(st.opcoes[st.certa])}</div><div class="pron">${esc(st.pron)}</div>`;
+    const pal = (t, hl, ini = 0) => String(t).split(" ").map((w, i) => (hl != null && i - ini === hl) ? `<span class="hl">${esc(w)}</span>` : esc(w)).join(" ");
+    h += `<div class="op certa">${pal(st.opcoes[st.certa], st.hl, 1)}</div><div class="pron">${pal(st.pron, st.hl_pr)}</div>`;
   } else {
     h += `<div class="tit">${esc(st.titulo)}</div>` + st.opcoes.map(o => `<div class="op">${esc(o)}</div>`).join("");
   }
