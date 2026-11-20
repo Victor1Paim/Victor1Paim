@@ -219,3 +219,10 @@ esporte, professor, natal, verao, viajante, chef — prévias em `assets/persona
 Estilo SIMPLES da referência: tudo minúsculo, sem hífen e sem maiúsculas de tônica, acento só para guiar a leitura em português:
 "mêibi nékst táim", "ái guét áp ét séven", "ái gárit!", "áim lêit". Vale para vídeos (caixa verde do Verbo/ABC), Caderno e Repita.
 Gestos do personagem: suaves (ciclo de 0,9 s, transição de 0,4 s), sem braço esticado demais.
+
+## CTA DE ENGAJAMENTO NOS VÍDEOS (20/11/2026, pedido do usuário)
+Todo vídeo termina com um CTA falado + texto grande pedindo para SEGUIR e COMENTAR algo do vídeo (sem produto):
+Verbo do dia → "Segue o perfil pra não perder a próxima aula, e comenta aprender!" (tela "SEGUE ✅ E COMENTA “APRENDER”");
+ABC → `"cta": {"fala": "cta", "texto": "Quantas você\nacertou? 👇\n*SEGUE* pra mais!"}` no abc.json ("Quantas você acertou? Comenta aí
+embaixo! E segue o perfil pra mais desafios como esse."); Lista 12 → `"cta": "cta"` no lista.json ("Quantas das doze você acertou?
+Comenta o número! E segue o perfil pra treinar todo dia."). Variar a pergunta do comentário conforme o tema.

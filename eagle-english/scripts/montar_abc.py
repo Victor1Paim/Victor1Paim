@@ -62,6 +62,12 @@ def main(pasta):
         t += 0.35
         eventos.append({"falas_r": falas_r, "i": i, "ini": t0, "q": (qa, qb), "cont": (cs, rv), "rev": rv, "fim": t})
         trechos.append((t0, t))
+    cta = cfg.get("cta")
+    if cta:   # CTA de engajamento (seguir + comentar), sem produto
+        d = dur(aud(cta["fala"])); sons.append((aud(cta["fala"]), t + 0.1, 1.0, True))
+        eventos.append({"falas_r": [], "palavras": [], "i": n - 1, "ini": t, "q": (t, t), "cont": (t, t), "rev": t + 99, "fim": t + d + 0.8,
+                        "cta": cta["texto"]})
+        trechos.append((t, t + d + 0.8)); t += d + 0.8
     total = t
     print(f"  duração: {total:.1f} s")
     env = envelope(sons, total)
@@ -70,6 +76,8 @@ def main(pasta):
     from montar_lista12 import palavras
     modelo = whisper.load_model("turbo")
     for ev in eventos:
+        if ev.get("cta"):
+            continue
         r = rods[ev["i"]]; en = r.get("en") or r["opcoes"][r["certa"]].split(") ", 1)[-1]
         ev["palavras"] = palavras(modelo, aud(r["r"]), en, "en")
 
@@ -77,6 +85,8 @@ def main(pasta):
     def pose_base(x):
         ev = next((e for e in eventos if e["ini"] <= x < e["fim"]), eventos[-1])
         i = int(x / (1 / FPS)); falando = env[max(0, i - 4):i + 4].max() > 0.02
+        if ev.get("cta"):
+            return ("aponta" if falando else "feliz"), ev
         if x >= ev["rev"]:
             return ("aponta" if falando else "feliz"), ev
         if ev["cont"][0] <= x < ev["cont"][1]:
@@ -110,7 +120,9 @@ def main(pasta):
                   "pron": r["pron"], "pose": p, "pose_ant": ant, "k": kk, "boca": boca,
                   "piscar": (x % 3.3) < 0.12 and p != "feliz", "balanco": 1.3 * math.sin(x * 1.7),
                   "aponta": 0.5 + 0.25 * math.sin(x * 2.2)}
-            if x >= ev["rev"]:
+            if ev.get("cta"):
+                st["fase"] = "cta"; st["cta"] = ev["cta"]; st["rodada"] = ""
+            elif x >= ev["rev"]:
                 st["fase"] = "revela"
                 for (a, b) in ev["falas_r"]:
                     ws = ev["palavras"]

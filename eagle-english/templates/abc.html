@@ -18,6 +18,9 @@
   .op.certa { background:#15962A; }
   .op.certa .hl, .pron .hl { color:#FFE21A; }
   .pron { margin-top:12px; background:#15962A; color:#fff; font-weight:800; font-size:46px; padding:5px 20px 7px; white-space:nowrap; }
+  .cta { margin-top:40px; text-align:center; color:#fff; font-weight:900; font-size:92px; line-height:1.08; padding:0 40px;
+         paint-order:stroke fill; -webkit-text-stroke:16px #000; }
+  .cta b { color:#FFD21F; }
   #cont { position:absolute; z-index:5; left:50%; width:118px; height:118px; transform:translateX(-50%); }
   svg#p { position:absolute; left:50%; transform:translateX(-50%); overflow:visible; }
 </style></head>
@@ -40,7 +43,9 @@ window.render = (st) => {
   document.body.classList.toggle("opaco", !!st.fundo);
   if (st.fundo) document.body.style.backgroundImage = `url('${st.fundo}')`;
   let h = `<div class="selo">${esc(st.rodada)}</div>`;
-  if (st.fase === "revela") {
+  if (st.fase === "cta") {
+    h = `<div class="cta">${esc(st.cta).replace(/\*(.+?)\*/g, "<b>$1</b>").replace(/\n/g, "<br>")}</div>`;
+  } else if (st.fase === "revela") {
     const pal = (t, hl, ini = 0) => String(t).split(" ").map((w, i) => (hl != null && i - ini === hl) ? `<span class="hl">${esc(w)}</span>` : esc(w)).join(" ");
     h += `<div class="op certa">${pal(st.opcoes[st.certa], st.hl, 1)}</div><div class="pron">${pal(st.pron, st.hl_pr)}</div>`;
   } else {

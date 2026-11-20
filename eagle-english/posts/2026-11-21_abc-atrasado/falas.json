@@ -51,6 +51,11 @@
    "lingua": "en",
    "texto": "Make yourself at home.",
    "recorte": true
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí embaixo! E segue o perfil pra mais desafios como esse."
   }
  ]
 }
