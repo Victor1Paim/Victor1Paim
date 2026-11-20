@@ -46,7 +46,7 @@ Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.)
 | Dia | 12h — Verbo do dia | 19h — rodízio | Carrossel | Status |
 |---|---|---|---|---|
 | sex 20/11 | Aula 1 · GET | ABC #1 (atrasado / saudade / à vontade) | Repita #3 (lavanda) | ✅ POSTADOS |
-| sáb 21/11 | Aula 2 · MAKE | Lista 12: comandos do dia a dia | Caderno #1 | 🎬 ✅ ✅ |
+| sáb 21/11 | Aula 2 · MAKE | Lista 12: comandos do dia a dia | Caderno #1 | ✅ ✅ ✅ |
 | dom 22/11 | Aula 3 · TAKE | ABC #2 (sentimentos) | — | 🎬 🎬 |
 | seg 23/11 | Aula 4 · GO | Lista 12: no restaurante | Repita #4 | 🎬 🎬 🎬 |
 | ter 24/11 | Aula 5 · HAVE | ABC #3 (gratidão e comida) | — | 🎬 🎬 |
