@@ -1,1 +1,2 @@
 {"quando": "2026-11-20T23:23:47", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 114, "saida_audio": 640}, "usd": 0.005817}
+{"quando": "2026-11-20T23:24:42", "etapa": "voz", "modelo": "gemini-3.8-flash-lite-tts", "tokens": {"entrada_texto": 68, "saida_audio": 505}, "usd": 0.004579}
