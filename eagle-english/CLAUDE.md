@@ -226,3 +226,9 @@ Verbo do dia → "Segue o perfil pra não perder a próxima aula, e comenta apre
 ABC → `"cta": {"fala": "cta", "texto": "Quantas você\nacertou? 👇\n*SEGUE* pra mais!"}` no abc.json ("Quantas você acertou? Comenta aí
 embaixo! E segue o perfil pra mais desafios como esse."); Lista 12 → `"cta": "cta"` no lista.json ("Quantas das doze você acertou?
 Comenta o número! E segue o perfil pra treinar todo dia."). Variar a pergunta do comentário conforme o tema.
+
+## CORTES/ESTALOS NO ÁUDIO (20/11/2026)
+O gerador de voz às vezes solta um estouro curto isolado no começo/fim da fala (soa como "corte"). `recortar_whisper.remover_blips`
+tira estouros ≤ 80 ms separados da fala por ≥ 120 ms de silêncio; roda sozinho no `vozes.py` (toda fala gerada) e no
+`recortar_whisper.py` (todo pedaço). Para arquivos antigos: `python3 scripts/recortar_whisper.py --limpar audio/*.wav`.
+Conferência do vídeo final: envelope de energia em janelas de 20 ms procurando um quadro isolado de som entre silêncios.

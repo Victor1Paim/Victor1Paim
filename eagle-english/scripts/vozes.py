@@ -246,6 +246,11 @@ def conferir(saida, texto, lingua):
     res = _WHISPER.transcribe(str(saida), language=lingua, fp16=False, word_timestamps=True)
     ouvido = res["text"].strip()
     aparar_com_whisper(saida, lingua, [(w["start"], w["end"]) for sg in res["segments"] for w in sg.get("words", [])])
+    try:   # tira estouro isolado (clique do gerador) no começo/fim da fala — 20/11
+        from recortar_whisper import limpar_arquivos
+        limpar_arquivos([str(saida)])
+    except Exception as e:
+        print("  aviso: limpeza de blips falhou:", e)
     # o TTS às vezes "escorrega" de idioma em fala curta (ex.: "Un sino" em espanhol): detecta a língua e reprova
     audio = whisper.pad_or_trim(whisper.load_audio(str(saida)))
     mel = whisper.log_mel_spectrogram(audio, n_mels=_WHISPER.dims.n_mels).to(_WHISPER.device)

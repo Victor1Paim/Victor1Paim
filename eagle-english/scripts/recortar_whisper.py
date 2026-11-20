@@ -108,11 +108,40 @@ def recortar(arq, lingua, frases, modelo=None):
                 rampa = np.linspace(0, 1, c)
                 z = np.concatenate([z[:-c], z[-c:] * (1 - rampa) + p[:c] * rampa, p[c:]])
             y = z
+        y, nb = remover_blips(y, sr)
+        if nb:
+            print(f"  (pedaço {m + 1}: {nb} blip(s) isolado(s) removido(s))")
         fi, fo = int(0.006 * sr), int(0.03 * sr)
         y[:fi] *= np.linspace(0, 1, fi); y[-fo:] *= np.linspace(1, 0, fo)
         y = np.concatenate([y, np.zeros(int(0.08 * sr), np.float32)])
         pecas.append(y)
     return pecas, sr, modelo
+
+
+def remover_blips(y, sr, max_blip=0.08, silencio=0.12):
+    """Tira "blips" isolados no começo/fim do pedaço: um estouro curto (≤ 80 ms) separado da fala por ≥ 120 ms de silêncio
+    (clique do gerador de voz que o corte acaba pegando). Devolve (y_limpo, quantos removidos)."""
+    k = int(sr * 0.01); n = len(y) // k
+    if n < 5:
+        return y, 0
+    e = np.sqrt((y[:n * k].reshape(n, k) ** 2).mean(1)); som = e > 10 ** (-40 / 20)
+    blocos, i = [], 0                       # trechos contíguos com som
+    while i < n:
+        if som[i]:
+            j = i
+            while j < n and som[j]:
+                j += 1
+            blocos.append([i, j]); i = j
+        else:
+            i += 1
+    tirados = 0
+    while len(blocos) > 1 and (blocos[0][1] - blocos[0][0]) * 0.01 <= max_blip and (blocos[1][0] - blocos[0][1]) * 0.01 >= silencio:
+        y[:blocos[0][1] * k] = 0; blocos.pop(0); tirados += 1
+    while len(blocos) > 1 and (blocos[-1][1] - blocos[-1][0]) * 0.01 <= max_blip and (blocos[-1][0] - blocos[-2][1]) * 0.01 >= silencio:
+        y[blocos[-1][0] * k:] = 0; blocos.pop(); tirados += 1
+    if tirados:   # reapara o silêncio que sobrou no começo (deixa 40 ms antes da fala)
+        a = max(0, blocos[0][0] * k - int(0.04 * sr)); y = y[a:]
+    return y, tirados
 
 
 def estalos(y, sr):
@@ -130,5 +159,16 @@ def main():
         print(f"{out.name} {len(y) / sr:.2f}s estalos={estalos(y, sr)} | {t}", flush=True)
 
 
+def limpar_arquivos(arqs):
+    """Aplica remover_blips em arquivos já cortados (uso: python3 scripts/recortar_whisper.py --limpar a.wav b.wav …)."""
+    for a in arqs:
+        y, sr = ler(a); y2, nb = remover_blips(y.copy(), sr)
+        if nb:
+            gravar(a, y2, sr); print(f"{a}: {nb} blip(s) removido(s)")
+
+
 if __name__ == "__main__":
-    main()
+    if sys.argv[1] == "--limpar":
+        limpar_arquivos(sys.argv[2:])
+    else:
+        main()
