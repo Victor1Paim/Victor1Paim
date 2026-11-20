@@ -13,14 +13,14 @@
   .aula { position:absolute; left:0; right:0; top:292px; text-align:center; color:#FFD21F; font-weight:900; font-size:76px;
           letter-spacing:.01em; paint-order:stroke fill; -webkit-text-stroke:14px #000; }
   #cx { position:absolute; left:0; right:0; top:470px; display:flex; flex-direction:column; align-items:center; gap:14px; }
-  .c { font-weight:800; font-size:64px; padding:6px 22px 10px; white-space:nowrap; line-height:1.1; text-transform:uppercase;
+  .c { font-weight:800; font-size:80px; padding:6px 22px 10px; white-space:nowrap; line-height:1.1; text-transform:uppercase;
        box-shadow:0 6px 16px rgba(0,0,0,.25); }
   .c.am { background:#FFE21A; color:#111; }
-  .c.br { background:#fff; color:#111; font-size:56px; }
+  .c.br { background:#fff; color:#111; font-size:66px; }
   .c.vm { background:#D7141E; color:#fff; text-transform:none; }
   .c.am.min { text-transform:none; }
-  .c.g { font-size:104px; padding:4px 30px 10px; }
-  #leg { position:absolute; left:40px; right:40px; top:600px; text-align:center; font-weight:900; font-size:66px; color:#fff;
+  .c.g { font-size:140px; padding:4px 30px 10px; }
+  #leg { position:absolute; left:40px; right:40px; top:600px; text-align:center; font-weight:900; font-size:76px; color:#fff;
          text-transform:uppercase; paint-order:stroke fill; -webkit-text-stroke:13px #000; white-space:nowrap; }
   #leg .at { color:#FFD21F; }
   #fim { position:absolute; left:30px; right:30px; top:520px; text-align:center; font-weight:900; font-size:108px; line-height:1.08;
@@ -56,7 +56,7 @@ window.render = (st) => {
   const leg = document.getElementById("leg");
   if (st.legenda && st.legenda.length && !(st.caixas || []).length && !st.fim) {
     leg.innerHTML = st.legenda.map((w, i) => `<span class="${i === st.atual ? "at" : ""}">${esc(w)}</span>`).join(" ");
-    leg.style.fontSize = "66px"; let f = 66;
+    leg.style.fontSize = "76px"; let f = 76;
     while (leg.scrollWidth > leg.clientWidth && f > 34) { f -= 2; leg.style.fontSize = f + "px"; }
   } else leg.innerHTML = "";
   document.getElementById("fim").innerHTML = st.fim ? esc(st.fim).replace(/\n/g, "<br>") : "";
