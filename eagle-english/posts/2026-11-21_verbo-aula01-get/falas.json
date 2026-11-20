@@ -6,11 +6,6 @@
  "modelo": "gemini-3.8-flash-tts",
  "falas": [
   {
-   "id": "falas_pt",
-   "lingua": "pt",
-   "texto": "Um verbo por dia, cem dias seguidos. Aula um....\n\nHoje, o verbo do dia é:...\n\nQue pode ser pegar, conseguir ou chegar. Repita comigo:...\n\nVou te dar dois exemplos. O primeiro:...\n\nEu levanto às sete....\n\nE o outro:...\n\nPode me ver um café?...\n\nAgora presta atenção: no passado, esse verbo vira:...\n\nRepita comigo:...\n\nPor exemplo: entendi!...\n\nComenta aprender pra receber a próxima aula!"
-  },
-  {
    "id": "falas_en",
    "lingua": "en",
    "modelo": "gemini-3.8-flash-lite-tts",
@@ -19,68 +14,57 @@
   {
    "id": "pt1",
    "lingua": "pt",
-   "texto": "Um verbo por dia, cem dias seguidos. Aula um.",
-   "recorte": true
+   "texto": "Um verbo por dia, cem dias seguidos. Aula um."
   },
   {
    "id": "pt2",
    "lingua": "pt",
-   "texto": "Hoje, o verbo do dia é:",
-   "recorte": true
+   "texto": "Hoje, o verbo do dia é:"
   },
   {
    "id": "pt3",
    "lingua": "pt",
-   "texto": "Que pode ser pegar, conseguir ou chegar. Repita comigo:",
-   "recorte": true
+   "texto": "Que pode ser pegar, conseguir ou chegar. Repita comigo:"
   },
   {
    "id": "pt4",
    "lingua": "pt",
-   "texto": "Vou te dar dois exemplos. O primeiro:",
-   "recorte": true
+   "texto": "Vou te dar dois exemplos. O primeiro:"
   },
   {
    "id": "pt5",
    "lingua": "pt",
-   "texto": "Eu levanto às sete.",
-   "recorte": true
+   "texto": "Eu levanto às sete."
   },
   {
    "id": "pt6",
    "lingua": "pt",
-   "texto": "E o outro:",
-   "recorte": true
+   "texto": "E o outro:"
   },
   {
    "id": "pt7",
    "lingua": "pt",
-   "texto": "Pode me ver um café?",
-   "recorte": true
+   "texto": "Pode me ver um café?"
   },
   {
    "id": "pt8",
    "lingua": "pt",
-   "texto": "Agora presta atenção: no passado, esse verbo vira:",
-   "recorte": true
+   "texto": "Agora presta atenção: no passado, esse verbo vira:"
   },
   {
    "id": "pt9",
    "lingua": "pt",
-   "texto": "Repita comigo:",
-   "recorte": true
+   "texto": "Repita comigo:"
   },
   {
    "id": "pt10",
    "lingua": "pt",
-   "texto": "Por exemplo: entendi!",
-   "recorte": true
+   "texto": "Por exemplo: entendi!"
   },
   {
    "id": "pt11",
    "lingua": "pt",
-   "texto": "Comenta aprender pra receber a próxima aula!",
-   "recorte": true
+   "texto": "Comenta aprender pra receber a próxima aula!"
   },
   {
    "id": "en1",
