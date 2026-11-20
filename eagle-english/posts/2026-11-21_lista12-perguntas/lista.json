@@ -2,7 +2,7 @@
  "selo": "@eagle.english.br",
  "fundo_video": "maldivas",
  "fundo_inicio": 33,
- "contagem": 2.0,
+ "contagem": 1.8,
  "capa": "Como se diz\nem inglês? 🤔",
  "itens": [
   {
@@ -85,5 +85,5 @@
  },
  "capa_sub": "12 perguntas do dia a dia",
  "cta": "cta",
- "respiro": 0.4
+ "respiro": 0.3
 }
