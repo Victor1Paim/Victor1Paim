@@ -142,3 +142,13 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 - [ ] Bloco "Quem criou" (história real) e e-mail de contato.
 - [ ] Checkout da Kiwify com os 2 produtos (Plano Simples e Método Eagle Avançado) e os links.
 - [ ] Autorização para montar o site no branch `estudio-ofertas`.
+
+---------------------------------------------------------------------------------------------------------------------------------
+## Ganchos de preço (ideia do usuário 21/11) — para o card do plano avançado, o CTA final e os stories
+- "Tudo isso por menos que um combo de lanche." (versão sem marca — recomendada na página)
+- "Menos que um combo no McDonald's — e esse dura a viagem inteira." (versão com marca: ok em post/story; na página e em anúncio pago, preferir sem marca)
+- "Um lanche acaba em 10 minutos. Saber o que dizer lá fora vai com você para todas as viagens."
+- "Menos de R$ 1,50 por dia durante os 21 dias de treino." (R$ 29,90 ÷ 21 = R$ 1,42 — refazer a conta se o preço mudar)
+- "O preço de um café no aeroporto lá fora — e você ainda sabe pedir ele em inglês."
+- "Paga uma vez, usa em todas as viagens." / "Acesso vitalício" → só se o acesso na Kiwify for mesmo sem prazo.
+Cuidado: sem "você vai ficar fluente"; o gancho é preço × valor duradouro, não promessa de resultado.
