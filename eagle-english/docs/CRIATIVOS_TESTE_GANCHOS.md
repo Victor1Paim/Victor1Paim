@@ -8,14 +8,14 @@ Formato: Reels/vídeo vertical 9:16, 20–30 s, nosso estilo (fundo Maldivas, Ac
 - 0–3 s (gancho): "Um lanche acaba em 10 minutos."
 - 3–8 s: "Saber o que dizer no aeroporto, no hotel e no restaurante vai com você em todas as viagens."
 - 8–20 s: tela do material por dentro (sumário → mapa → frase com pronúncia) + lista rápida dos 10 itens do Avançado.
-- 20–28 s: "Tudo isso por menos que um combo de lanche. Link na bio."
+- 20–28 s: "Tudo isso por menos que um combo de lanche. De 37 por 29,90 até o Natal. Link na bio."
 
 ## Criativo G4 — "Menos de R$ 1,50 por dia"
 - 0–3 s: "Menos de um real e cinquenta por dia pra parar de travar no inglês."
 - 3–10 s: "São 21 dias, 15 minutos por dia, antes da sua viagem."
 - 10–22 s: dia 1 → dia 7 → dia 21 (Guia de 21 Dias + aula + mapa mental na tela).
 - 22–28 s: "Paga uma vez, leva pra todas as viagens. Link na bio."
-- Conta: R$ 29,90 ÷ 21 = R$ 1,42. Se o preço mudar, refazer.
+- Conta: R$ 29,90 ÷ 21 = R$ 1,42 (promoção até o Natal). A partir de 26/12: R$ 37 ÷ 21 = R$ 1,76 → trocar a fala para "menos de R$ 1,80 por dia".
 
 ## Criativo G2 — "Menos que um combo"
 - 0–3 s: "Isso aqui custa menos que um combo no McDonald's."
@@ -31,6 +31,6 @@ Formato: Reels/vídeo vertical 9:16, 20–30 s, nosso estilo (fundo Maldivas, Ac
   (ou por clique no link, se ainda houver poucas vendas). Depois testar 2 variações do vencedor (outro gancho de abertura).
 
 ## Pendências
-- [ ] Preço final do Avançado (para o G4 e para o texto do G2/G3).
+- [x] Preço: Avançado R$ 37 cheio, R$ 29,90 até 25/12 (os 3 criativos citam "promoção até o Natal" no fim).
 - [ ] Página no ar com o link da Kiwify.
 - [ ] Gravação de tela do material por dentro (ou eu monto a partir das páginas dos PDFs).

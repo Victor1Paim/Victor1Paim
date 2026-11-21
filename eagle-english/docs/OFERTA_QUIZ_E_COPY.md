@@ -100,7 +100,8 @@ Botão: **[Quero viajar sem travar]** → âncora dos planos
 ✓ Áudio das frases principais · ✓ Cola de viagem (1 página por situação) · ✓ Checklist "antes de embarcar" (aprovar)
 ✓ **Mapas Mentais Eagle** (novo, a produzir): ~15 mapas de 1 página, estilo resumo de concurso — tempos verbais, to be, perguntas
   (what/where/how…), in/on/at, verbos irregulares mais usados, make × do, frases de viagem por situação, números/horas/dinheiro.
-De R$ [soma real dos avulsos] por **R$ [PREENCHER — sugestão 27,90]** · pagamento único · [Quero o Método Eagle Avançado]
+**De R$ 37 por R$ 29,90 — promoção de lançamento válida até o Natal (25/12, 23h59)** · pagamento único · [Quero o Método Eagle Avançado]
+(Depois de 25/12 o preço volta para R$ 37 na Kiwify e a página troca o texto — o prazo é real, então o contador pode ficar.)
 
 **EAGLE 350 · PLANO SIMPLES** (botão contorno)
 ✓ Eagle 350 Mapas Visuais (2.100 frases)
@@ -140,7 +141,8 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## Pendências para publicar
-- [ ] Preços dos 2 planos e preço avulso de cada material (para o "De R$…").
+- [x] Preços: Simples R$ 14,90 · Avançado R$ 37 (cheio) / R$ 29,90 até o Natal (25/12).
+- [ ] Lembrete: em 26/12 trocar o preço na Kiwify para R$ 37 e tirar o contador/selo da promoção.
 - [ ] As 10 aulas: produzir ou definir data de liberação.
 - [ ] Bloco "Quem criou" (história real) e e-mail de contato.
 - [ ] Checkout da Kiwify com os 2 produtos (Plano Simples e Método Eagle Avançado) e os links.
@@ -151,7 +153,7 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 - "Tudo isso por menos que um combo de lanche." (versão sem marca — recomendada na página)
 - "Menos que um combo no McDonald's — e esse dura a viagem inteira." (versão com marca: ok em post/story; na página e em anúncio pago, preferir sem marca)
 - "Um lanche acaba em 10 minutos. Saber o que dizer lá fora vai com você para todas as viagens."
-- "Menos de R$ 1,50 por dia durante os 21 dias de treino." (R$ 29,90 ÷ 21 = R$ 1,42 — refazer a conta se o preço mudar)
+- "Menos de R$ 1,50 por dia durante os 21 dias de treino." (até o Natal: R$ 29,90 ÷ 21 = R$ 1,42; depois: R$ 37 ÷ 21 = R$ 1,76 → "menos de R$ 1,80 por dia")
 - "O preço de um café no aeroporto lá fora — e você ainda sabe pedir ele em inglês."
 - "Paga uma vez, usa em todas as viagens." / "Acesso vitalício" → só se o acesso na Kiwify for mesmo sem prazo.
 Cuidado: sem "você vai ficar fluente"; o gancho é preço × valor duradouro, não promessa de resultado.
