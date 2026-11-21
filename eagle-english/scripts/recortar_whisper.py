@@ -84,7 +84,8 @@ def recortar(arq, lingua, frases, modelo=None):
         a, b = int(cortes[m] * sr), int(cortes[m + 1] * sr)
         y = x[a:b].copy()
         e, kk = rms(y, sr)
-        on = np.where(e > lim)[0]
+        lim_m = max(lim, e.max() * 10 ** (-38 / 20))   # relativo ao pico do pedaço: ruído de fundo não conta como fala
+        on = np.where(e > lim_m)[0]
         if len(on):
             y = y[max(0, on[0] * kk - int(0.04 * sr)): min(len(y), (on[-1] + 1) * kk + int(0.16 * sr))]
         # pausas internas longas → 0,22 s
