@@ -4,6 +4,20 @@ Site e páginas: desenvolver no branch **`estudio-ofertas`** (skill `criar-ofert
 briefing → pesquisa → oferta → copy → página → divulgação; modelos em `ofertas/modelos/`). Página atual: https://eagle-pagina.vercel.app/
 (o link da bio https://kiwify.app/KQ1i4Ps redireciona para ela; checkout na Kiwify).
 
+## Posicionamento (ideia do usuário, 21/11): DESEJO DE VIAJAR
+O Eagle 350 é o "suporte" de quem quer viajar para fora mas tem medo de travar: o desejo (a viagem) já existe — o produto tira o
+medo (o inglês na hora H). Encaixa perfeito: a Parte 1 do ebook é VIAGEM (aeroporto, hotel, restaurante) e as Partes 2–5 cobrem o
+que acontece lá fora (transporte, compras, saúde, dinheiro, cidade, emergências).
+- **Promessa (sem prometer fluência):** "Viaje com a frase certa no bolso — do check-in ao jantar, sem travar na hora."
+- **Cena de desejo para a página e os anúncios:** a pessoa no aeroporto/hotel/restaurante lá fora, abrindo o celular e falando a
+  frase certa. "Você não precisa ser fluente para viajar. Precisa saber o que dizer em cada situação."
+- **Dor que o produto resolve:** vergonha de travar, medo de não entender, depender do tradutor/guia, não pedir o que quer.
+- **Mecanismo:** situação → mapa → 6 frases prontas com pronúncia escrita, em 3 toques (sumário clicável), offline no celular.
+- **Upsell conversa com isso:** "Método Fluência Eagle" = treinar a FALA antes da viagem (pronúncia + shadowing + conversas
+  simuladas: "Se um gringo te disser…"). Downsell (gramática) = base para montar frases próprias.
+- **Conteúdo do perfil alimenta o desejo:** séries de viagem (aeroporto, hotel, restaurante, imigração), "Se um gringo te
+  disser…", ABC de situações de viagem, stories "minha viagem" — todos com a legenda apontando para o Eagle 350.
+
 ## Produtos que já existem (PDFs do usuário)
 | Produto | O que é | Tamanho |
 |---|---|---|
