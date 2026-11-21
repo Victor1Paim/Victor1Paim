@@ -1,0 +1,51 @@
+{
+ "fundo_video": "maldivas",
+ "fundo_inicio": 38,
+ "repetir": 2,
+ "contagem": 2.5,
+ "rodadas": [
+  {
+   "titulo": "Tô com vergonha",
+   "opcoes": [
+    "A) I'm embarrassed",
+    "B) I'm pregnant",
+    "C) I'm shamed"
+   ],
+   "certa": 0,
+   "pron": "áim imbérâst",
+   "q": "q1",
+   "r": "r1",
+   "en": "I'm embarrassed."
+  },
+  {
+   "titulo": "Tô com medo",
+   "opcoes": [
+    "A) I have fear",
+    "B) I'm with fear",
+    "C) I'm scared"
+   ],
+   "certa": 2,
+   "pron": "áim squérd",
+   "q": "q2",
+   "r": "r2",
+   "en": "I'm scared."
+  },
+  {
+   "titulo": "Tô de saco cheio",
+   "opcoes": [
+    "A) I'm full bag",
+    "B) I'm fed up",
+    "C) I'm bag full"
+   ],
+   "certa": 1,
+   "pron": "áim féd âp",
+   "q": "q3",
+   "r": "r3",
+   "en": "I'm fed up."
+  }
+ ],
+ "cta": {
+  "fala": "cta",
+  "texto": "Qual você\nmais sente? 👇\n*SEGUE* pra mais!"
+ }
+}

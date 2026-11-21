@@ -20,7 +20,7 @@ Personagem próprio (o do formato ABC), fundo Maldivas (cena nova por bloco), vo
 |---|---|---|---|---|---|---|
 | 1 | GET | conseguir / pegar / chegar | I get up at seven. (Eu levanto às sete.) | Can I get a coffee? (Pode me ver um café?) | GOT | I got it! (Entendi!) |
 | 2 | MAKE | fazer / preparar | I make breakfast. (Eu faço o café da manhã.) | Make a wish! (Faz um pedido!) | MADE | I made a mistake. (Eu cometi um erro.) |
-| 3 | TAKE | pegar / levar | Take your time. (Sem pressa.) | I take the bus. (Eu pego o ônibus.) | TOOK | It took two hours. (Levou duas horas.) |
+| 3 | TAKE | pegar / levar / tirar | I take the bus. (Eu pego o ônibus.) | Take a picture! (Tira uma foto!) | TOOK | It took two hours. (Levou duas horas.) |
 | 4 | GO | ir | I go to work. (Eu vou trabalhar.) | Let's go! (Vamos!) | WENT | We went home. (A gente foi pra casa.) |
 | 5 | HAVE | ter | I have a dog. (Eu tenho um cachorro.) | Have a nice day! (Tenha um bom dia!) | HAD | I had lunch. (Eu almocei.) |
 | 6 | DO | fazer | What do you do? (O que você faz?) | I do my homework. (Eu faço a lição.) | DID | I did it! (Eu consegui!) |
