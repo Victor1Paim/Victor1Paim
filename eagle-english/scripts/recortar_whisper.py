@@ -86,10 +86,12 @@ def recortar(arq, lingua, frases, modelo=None):
         a = max(a, int((limites[m][0] - 0.12) * sr)); b = min(b, int((limites[m][1] + 0.35) * sr))
         y = x[a:b].copy()
         e, kk = rms(y, sr)
-        lim_m = max(lim, e.max() * 10 ** (-38 / 20))   # relativo ao pico do pedaço: ruído de fundo não conta como fala
-        on = np.where(e > lim_m)[0]
+        lim_m = max(lim, e.max() * 10 ** (-38 / 20))   # fim: limiar suave (não come consoante final)
+        lim_i = max(lim, e.max() * 10 ** (-20 / 20))   # começo: 20 dB abaixo do pico — respiração/chiado antes da fala fica de fora
+        on = np.where(e > lim_m)[0]; on_i = np.where(e > lim_i)[0]
         if len(on):
-            y = y[max(0, on[0] * kk - int(0.04 * sr)): min(len(y), (on[-1] + 1) * kk + int(0.16 * sr))]
+            ini = on_i[0] if len(on_i) else on[0]
+            y = y[max(0, ini * kk - int(0.06 * sr)): min(len(y), (on[-1] + 1) * kk + int(0.16 * sr))]
         # pausas internas longas → 0,22 s
         e, kk = rms(y, sr); quieto = e < 10 ** (-42 / 20)
         partes, ini, j = [], 0, 0
