@@ -246,3 +246,9 @@ próprios). Lista 12 cabe com `"contagem": 2.0, "respiro": 0.4`; se passar, vira
 
 **Lista 12 = SEMPRE SEM PERSONAGEM (20/11, decisão do usuário: o 1º Lista 12 sem personagem rendeu muitas visualizações).** Só fundo
 de mar, selo, palavra falada em verde, lista e cronômetro — não adicionar o personagem nesse formato.
+
+## CADERNO FALADO (vídeo, 21/11/2026 — ref. do usuário "Inglês para iniciantes")
+`posts/<post>/caderno_video.json` → `python3 scripts/montar_caderno_video.py posts/<post>` (template `templates/caderno_video.html`):
+folha pautada realista (mesma do Caderno), título vermelho, 14 linhas "pt – en (pronúncia)" (preto/azul/vermelho), a voz lê pt → en,
+marca-texto amarelo varre a linha lida, ✓ verde nas lidas, CTA de salvar/comentar/seguir. Sem personagem. ~40 s.
+Falas: pt todas numa fala, en todas numa fala, cortadas com recortar_whisper.py. Exemplo: `posts/2026-11-24_caderno-falado-1/`.
