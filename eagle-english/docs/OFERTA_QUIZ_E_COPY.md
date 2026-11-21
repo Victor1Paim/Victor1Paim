@@ -1,7 +1,7 @@
 # Quiz de entrada + copy da página — Eagle English BR (rascunho para aprovação, 21/11/2026)
 
 Ângulo: **viajar para fora sem travar no inglês.** Sem prometer fluência. Prova social só real (sem depoimentos por enquanto).
-Estrutura aprovada: link da bio → quiz → resultado → página com 2 planos (Completo em destaque × Básico).
+Estrutura aprovada: link da bio → quiz → resultado → página com 2 planos (Método Eagle Avançado em destaque × Eagle 350 Plano Simples).
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## 1. QUIZ "Você está pronto pra se virar em inglês na sua próxima viagem?" (6 perguntas, ~1 min)
@@ -89,14 +89,24 @@ Botão: **[Quero viajar sem travar]** → âncora dos planos
 - **"Veja um mapa completo grátis"** → abre o mapa "No aeroporto" inteiro.
 - Números: **35 situações · 350 mapas · 2.100 frases**.
 
-### Bloco 4 — Os dois planos (modelo aprovado)
-**COMPLETO** (destaque, selo "MAIS ESCOLHIDO" só depois que for verdade — até lá: "RECOMENDADO")
-✓ Eagle 350 Mapas Visuais · ✓ 500 Frases (versão de bolso) · ✓ Guia de 21 Dias (15 min/dia) · ✓ 100 Combinações de Verbos ·
-✓ Cards de Gramática · ✓ **10 aulas gravadas** (pronúncia e fala, com exercícios)
-De R$ [soma real dos avulsos] por **R$ [PREENCHER — sugestão 27,90]** · pagamento único · [Quero o plano completo]
-**BÁSICO**
-✓ Eagle 350 Mapas Visuais · ✗ (os outros 5 riscados)
-**R$ [PREENCHER — sugestão 12,90–14,90]** · pagamento único · [Quero só o básico]
+### Bloco 4 — Os dois planos (definido 21/11)
+**MÉTODO EAGLE AVANÇADO** (destaque, botão verde, selo "RECOMENDADO")
+✓ Eagle 350 Mapas Visuais (2.100 frases)
+✓ 500 Frases para o Dia a Dia (versão de bolso)
+✓ Guia de 21 Dias (15 min/dia)
+✓ 100 Combinações de Verbos
+✓ Cards de Gramática
+✓ **10 aulas gravadas** (pronúncia e fala, com exercícios)
+De R$ [soma real dos avulsos] por **R$ [PREENCHER — sugestão 27,90]** · pagamento único · [Quero o Método Eagle Avançado]
+
+**EAGLE 350 · PLANO SIMPLES** (botão contorno)
+✓ Eagle 350 Mapas Visuais (2.100 frases)
+✓ 500 Frases para o Dia a Dia (bônus)
+✗ Guia de 21 Dias · ✗ 100 Combinações de Verbos · ✗ Cards de Gramática · ✗ 10 aulas gravadas
+**R$ [PREENCHER — sugestão 14,90]** · pagamento único · [Quero o plano simples]
+
+Por que essa divisão: o Simples resolve a viagem (consultar a frase na hora); o Avançado é para quem quer **treinar a fala antes de ir**
+(aulas + rotina de 21 dias + base de verbos e gramática). As 500 Frases ficam nos dois porque já eram o bônus do Eagle 350.
 Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 **Pendente antes de publicar:** as 10 aulas precisam existir (ou estar com data de liberação clara: "aulas liberadas a partir de dd/mm").
 
@@ -115,20 +125,20 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 ### Bloco 9 — FAQ
 - Preciso saber inglês? Não. As frases vêm com tradução e pronúncia escrita.
 - Funciona offline / no celular? Sim, é PDF: celular, tablet, computador ou impresso.
-- Tem áudio? O ebook não; as **10 aulas** do plano Completo são em vídeo, com áudio.
+- Tem áudio? O ebook não; as **10 aulas** do Método Eagle Avançado são em vídeo, com áudio.
 - Vou ficar fluente? Não prometemos fluência. Prometemos frases prontas e treino para você se virar nas situações do dia a dia e da viagem.
 - Como recebo? Por e-mail, logo após a confirmação do pagamento (Kiwify).
-- Qual a diferença entre os planos? O Básico é só o ebook. O Completo tem tudo + as aulas.
+- Qual a diferença entre os planos? O Plano Simples tem o Eagle 350 + as 500 Frases. O Método Eagle Avançado tem todos os materiais + as 10 aulas.
 - E se não gostar? 7 dias de garantia.
 - Contato: [PREENCHER e-mail]
 
 ### Bloco 10 — CTA final
-> **Sua próxima viagem pode ser em inglês — sem travar.**  [Quero o plano completo]  ·  [Prefiro só o básico]
+> **Sua próxima viagem pode ser em inglês — sem travar.**  [Quero o Método Eagle Avançado]  ·  [Prefiro o plano simples]
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## Pendências para publicar
 - [ ] Preços dos 2 planos e preço avulso de cada material (para o "De R$…").
 - [ ] As 10 aulas: produzir ou definir data de liberação.
 - [ ] Bloco "Quem criou" (história real) e e-mail de contato.
-- [ ] Checkout da Kiwify com os 2 produtos (Básico e Completo) e os links.
+- [ ] Checkout da Kiwify com os 2 produtos (Plano Simples e Método Eagle Avançado) e os links.
 - [ ] Autorização para montar o site no branch `estudio-ofertas`.

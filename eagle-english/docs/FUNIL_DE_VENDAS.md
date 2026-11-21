@@ -27,6 +27,8 @@ que acontece lá fora (transporte, compras, saúde, dinheiro, cidade, emergênci
 | **100 Combinações de Verbos** | 60 combinações (make/do/take/have/get…) + 40 phrasal verbs, 40 exercícios + gabarito | 62 págs |
 | **Cards de Gramática** | 20 cards, 120 frases, do to be ao present perfect | 24 págs |
 
+> **Atualização 21/11:** nomes e conteúdo dos planos definidos em `OFERTA_QUIZ_E_COPY.md` (Bloco 4): **Método Eagle Avançado** (tudo + 10 aulas) × **Eagle 350 · Plano Simples** (Eagle 350 + 500 Frases).
+
 ## ESTRUTURA APROVADA (21/11) — quiz → página com 2 planos (substitui o upsell/downsell abaixo)
 1. **Link da bio → QUIZ curto** (5–6 perguntas que despertam o desejo de viajar e diminuem o medo do inglês) → resultado
    ("perfil viajante inseguro: você não precisa de fluência, precisa da frase certa na hora certa") → página de vendas.
