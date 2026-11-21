@@ -15,7 +15,19 @@ dur = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 
 
 os.makedirs('partes', exist_ok=True)
 PARTE = 300
+def _pcm(arq):   # decodifica com ffmpeg (o av do faster-whisper não abre arquivos nesta versão)
+    import numpy as np
+    return np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', arq, '-f', 's16le', '-ac', '1', '-ar', '16000', '-'], capture_output=True, check=True).stdout, np.int16).astype(np.float32) / 32768
+LOCAL = os.environ.get('LOCAL')   # LOCAL=1: faster-whisper aqui mesmo e sem gpt (só roteiro.txt)
+_fw = None
 def whisper(mp3):
+    global _fw
+    if LOCAL:
+        from faster_whisper import WhisperModel
+        _fw = _fw or WhisperModel(os.environ.get('FW_MODELO', 'small'), device='cpu', compute_type='int8', cpu_threads=4)
+        ss, _ = _fw.transcribe(_pcm(mp3), language=idioma, vad_filter=True, beam_size=1)
+        return {'segments': [{'start': x.start, 'end': x.end, 'text': x.text, 'no_speech_prob': x.no_speech_prob,
+                              'avg_logprob': x.avg_logprob, 'compression_ratio': x.compression_ratio} for x in ss]}
     bound = 'xBoundx'
     corpo = b''
     for k, v in [('model', 'whisper-1'), ('response_format', 'verbose_json'), ('language', idioma), ('timestamp_granularities[]', 'segment')]:
@@ -105,6 +117,9 @@ for i, x in enumerate(blocos):
 linhas = [f"[{x['tempo']}] sinais={x['sinais']} chat={x['chat']} emotes={x['emotes']} vol={x['volume']} ppm={x['palavras_min']} tags={','.join(x['gatilhos']) or '-'} | {x['fala']} " + (f"|| chat: {' / '.join(x['amostra_chat'])}" if x['amostra_chat'] else '')
           for x in blocos if x['fala'] or x['chat'] > 5]
 open('roteiro.txt', 'w').write('\n'.join(linhas))
+
+if LOCAL:
+    print(open('roteiro.txt').read()[:0] + 'roteiro pronto (LOCAL)'); sys.exit(0)
 
 def gpt(prompt):
     r = urllib.request.Request('https://api.openai.com/v1/chat/completions', json.dumps({'model': 'gpt-5.4', 'response_format': {'type': 'json_object'}, 'messages': [{'role': 'user', 'content': prompt}]}).encode(), {'Content-Type': 'application/json', 'Authorization': 'Bearer sk-proxy'})

@@ -45,10 +45,20 @@ log('trecho baixado')
 # 2) transcrição (frases com tempo)
 audio = os.path.join(PASTA, 'audio.mp3')
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', bruto, '-vn', '-ac', '1', '-ar', '16000', '-b:a', '64k', audio], check=True)
-r = subprocess.run(['curl', '-s', '-m', '300', 'https://api.openai.com/v1/audio/transcriptions', '-H', 'Authorization: Bearer sk-proxy',
-                    '-F', f'file=@{audio}', '-F', 'model=whisper-1', '-F', f'language={IDIOMA}', '-F', 'response_format=verbose_json',
-                    '-F', f'prompt={canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.'], capture_output=True, text=True)
-tr = json.loads(r.stdout)
+def _pcm(arq):   # decodifica com ffmpeg (o av do faster-whisper não abre arquivos nesta versão)
+    import numpy as np
+    return np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', arq, '-f', 's16le', '-ac', '1', '-ar', '16000', '-'], capture_output=True, check=True).stdout, np.int16).astype(np.float32) / 32768
+LOCAL = os.environ.get('LOCAL')   # LOCAL=1: faster-whisper aqui; a tradução vem de DECISAO (json escrito à mão)
+if LOCAL:
+    from faster_whisper import WhisperModel
+    ss, _ = WhisperModel(os.environ.get('FW_MODELO', 'small'), device='cpu', compute_type='int8', cpu_threads=4).transcribe(
+        audio, language=IDIOMA, vad_filter=True, beam_size=1, initial_prompt=f'{canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.')
+    tr = {'segments': [{'start': x.start, 'end': x.end, 'text': x.text, 'no_speech_prob': x.no_speech_prob, 'compression_ratio': x.compression_ratio} for x in ss]}
+else:
+    r = subprocess.run(['curl', '-s', '-m', '300', 'https://api.openai.com/v1/audio/transcriptions', '-H', 'Authorization: Bearer sk-proxy',
+                        '-F', f'file=@{audio}', '-F', 'model=whisper-1', '-F', f'language={IDIOMA}', '-F', 'response_format=verbose_json',
+                        '-F', f'prompt={canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.'], capture_output=True, text=True)
+    tr = json.loads(r.stdout)
 frases, ant = [], None
 for s in tr['segments']:
     x = s['text'].strip()
@@ -79,7 +89,11 @@ pedido = {
     'contexto': contexto, 'canal': canal,
     'frases': [{'n': k, 'en': f['en']} for k, f in enumerate(frases)],
 }
-dec = openai_json(f"""Você legenda cortes do streamer {canal} jogando GTA 6 para o canal brasileiro "Modo Replay".
+DECISAO = os.environ.get('DECISAO')
+if LOCAL and not (DECISAO and os.path.exists(DECISAO)):
+    json.dump(pedido['frases'], open(os.path.join(PASTA, 'frases.json'), 'w'), ensure_ascii=False, indent=0)
+    log('frases.json gravado; escreva a DECISAO e rode de novo'); sys.exit(0)
+dec = json.load(open(DECISAO)) if DECISAO else openai_json(f"""Você legenda cortes do streamer {canal} jogando GTA 6 para o canal brasileiro "Modo Replay".
 Contexto do corte: {contexto}
 {'As frases JÁ ESTÃO em português (streamer brasileiro): NÃO traduza; só corrija erros de transcrição, deixe curto e natural, e aplique as regras abaixo.' if IDIOMA == 'pt' else 'Traduza CADA frase para português do Brasil falado, curta e natural (gírias ok).'} Regras: palavrões viram versão censurada
 com asterisco (ex.: "p*rra", "c*ralho", "f*da"); insultos raciais/homofóbicos são REMOVIDOS ou trocados por "mano"/"cara";
