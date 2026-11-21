@@ -1,0 +1,107 @@
+{
+ "pagina": "img/pagina.png",
+ "titulo": "Inglês do dia a dia",
+ "fala_titulo": "titulo",
+ "cta": "cta",
+ "respiro": 0.3,
+ "itens": [
+  {
+   "pt": "Com certeza",
+   "en": "For sure",
+   "pron": "fór xúr",
+   "a_pt": "p1",
+   "a_en": "e1"
+  },
+  {
+   "pt": "Tô cansado",
+   "en": "I'm tired",
+   "pron": "áim táierd",
+   "a_pt": "p2",
+   "a_en": "e2"
+  },
+  {
+   "pt": "Que legal!",
+   "en": "That's cool!",
+   "pron": "déts kúl!",
+   "a_pt": "p3",
+   "a_en": "e3"
+  },
+  {
+   "pt": "Fala sério!",
+   "en": "Come on!",
+   "pron": "kâm ón!",
+   "a_pt": "p4",
+   "a_en": "e4"
+  },
+  {
+   "pt": "Deixa comigo",
+   "en": "I got this",
+   "pron": "ái gát dis",
+   "a_pt": "p5",
+   "a_en": "e5"
+  },
+  {
+   "pt": "Pode crer",
+   "en": "You bet",
+   "pron": "iú bét",
+   "a_pt": "p6",
+   "a_en": "e6"
+  },
+  {
+   "pt": "Que nojo!",
+   "en": "Gross!",
+   "pron": "grôus!",
+   "a_pt": "p7",
+   "a_en": "e7"
+  },
+  {
+   "pt": "Que engraçado!",
+   "en": "That's funny!",
+   "pron": "déts fâni!",
+   "a_pt": "p8",
+   "a_en": "e8"
+  },
+  {
+   "pt": "Me dá um segundo",
+   "en": "Give me a sec",
+   "pron": "guív mi a sék",
+   "a_pt": "p9",
+   "a_en": "e9"
+  },
+  {
+   "pt": "Não faz mal",
+   "en": "No big deal",
+   "pron": "nôu big díl",
+   "a_pt": "p10",
+   "a_en": "e10"
+  },
+  {
+   "pt": "Tô com sono",
+   "en": "I'm sleepy",
+   "pron": "áim slípi",
+   "a_pt": "p11",
+   "a_en": "e11"
+  },
+  {
+   "pt": "Sem dúvida",
+   "en": "No doubt",
+   "pron": "nôu dáut",
+   "a_pt": "p12",
+   "a_en": "e12"
+  },
+  {
+   "pt": "Mandou bem!",
+   "en": "Nice one!",
+   "pron": "náis uân!",
+   "a_pt": "p13",
+   "a_en": "e13"
+  },
+  {
+   "pt": "Espera um pouco",
+   "en": "Hang on",
+   "pron": "rêng ón",
+   "a_pt": "p14",
+   "a_en": "e14"
+  }
+ ]
+}

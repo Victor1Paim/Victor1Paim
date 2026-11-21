@@ -141,6 +141,8 @@ def main(pasta):
         f.write(f"file '{q / (unicos[segs[-1][0]] + '.png')}'\n")
     ov = v / "_camada.mov"
     sh("-f", "concat", "-safe", "0", "-i", str(lista), "-vf", f"fps={FPS},format=argb", "-c:v", "qtrle", str(ov))
+    for _x in q.glob("*.png"):   # libera disco: os quadros já viraram a camada .mov
+        _x.unlink()
     bg = trilha_fundo(post, cfg, trechos, total)
 
     # ÁUDIO: falas + tiques, loudness -14 LUFS em duas passadas

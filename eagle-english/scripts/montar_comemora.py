@@ -47,6 +47,8 @@ def main(pasta):
         nav.close()
     ov = v / "_camada.mov"
     sh("-framerate", str(FPS), "-i", str(q / "%05d.png"), "-c:v", "qtrle", "-pix_fmt", "argb", str(ov))
+    for _x in q.glob("*.png"):   # libera disco: os quadros já viraram a camada .mov
+        _x.unlink()
     bg = trilha_fundo(post, {"fundo_video": "maldivas", "fundo_inicio": 14}, [(0, total / 2), (total / 2, total)], total)
     ent, fil = [], []
     for k, (arq, ini, vol, _) in enumerate(sons):

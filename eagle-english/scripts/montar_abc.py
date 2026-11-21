@@ -153,6 +153,8 @@ def main(pasta):
 
     ov = v / "_camada.mov"
     sh("-framerate", str(FPS), "-i", str(q / "%05d.png"), "-c:v", "qtrle", "-pix_fmt", "argb", str(ov))
+    for _x in q.glob("*.png"):   # libera disco: os quadros já viraram a camada .mov
+        _x.unlink()
     bg = trilha_fundo(post, cfg, trechos, total)
     ent, fil = [], []
     for k, (arq, ini, vol, _) in enumerate(sons):

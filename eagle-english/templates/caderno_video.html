@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+<!-- "CADERNO FALADO" (ref. do usuário 21/11): folha pautada realista com a lista "pt – en (pronúncia)" escrita à mão, uma frase por
+     pauta; o marca-texto amarelo varre a linha que está sendo lida. window.render(st): st.atual (linha), st.varre (0…1). -->
+<style>
+  * { margin:0; padding:0; }
+  html, body { width:1080px; height:1920px; overflow:hidden; background:#fff; }
+  #f { position:absolute; inset:0; background-size:cover; }
+  svg { position:absolute; inset:0; }
+  text { font-family:"Patrick Hand", cursive; }
+</style></head>
+<body>
+<div id="f"></div>
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs><filter id="tinta" x="-5%" y="-20%" width="110%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="r"/>
+    <feDisplacementMap in="SourceGraphic" in2="r" scale="1.4" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+  <g id="marca"></g>
+  <g id="g" filter="url(#tinta)" opacity="0.93" style="mix-blend-mode:multiply"></g>
+</svg>
+<script>
+const NS = "http://www.w3.org/2000/svg";
+const esc = s => String(s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+let D = null, LARG = [];
+function montar(d) {
+  D = d; document.getElementById("f").style.backgroundImage = `url('${d.fundo}')`;
+  const g = document.getElementById("g"); g.innerHTML = ""; LARG = [];
+  const tg = Math.tan(d.ang * Math.PI / 180), x0 = d.x0;
+  const tit = document.createElementNS(NS, "text");
+  tit.setAttribute("x", 540); tit.setAttribute("y", d.titulo_y - (540 - x0) * tg); tit.setAttribute("text-anchor", "middle");
+  tit.setAttribute("font-size", d.esp * 0.95); tit.setAttribute("fill", "#C8143C");
+  tit.setAttribute("transform", `rotate(${-d.ang} 540 ${d.titulo_y - (540 - x0) * tg})`); tit.textContent = d.titulo; g.appendChild(tit);
+  d.linhas.forEach((l, i) => {
+    const y = l.y, t = document.createElementNS(NS, "text"); let f = d.esp * 0.74;
+    t.setAttribute("x", x0); t.setAttribute("y", y - d.esp * 0.12); t.setAttribute("transform", `rotate(${-d.ang} ${x0} ${y})`);
+    const pinta = fs => { t.setAttribute("font-size", fs);
+      t.innerHTML = `<tspan fill="#151515">${esc(l.pt)}</tspan><tspan fill="#151515"> – </tspan><tspan fill="#1E3AA8">${esc(l.en)}</tspan>` +
+                    `<tspan fill="#C8143C" font-size="${fs * 0.78}"> (${esc(l.pron)})</tspan>`; };
+    pinta(f); g.appendChild(t);
+    while (t.getComputedTextLength() * Math.cos(d.ang * Math.PI / 180) > 1080 - x0 - 50 && f > 24) { f -= 2; pinta(f); }
+    LARG.push(t.getComputedTextLength());
+  });
+}
+window.render = st => {
+  if (!D) montar(window.DADOS);
+  const m = document.getElementById("marca"); m.innerHTML = "";
+  if (st.atual != null && st.atual >= 0) {
+    const l = D.linhas[st.atual], w = (LARG[st.atual] + 24) * Math.min(1, st.varre ?? 1);
+    m.innerHTML = `<rect x="${D.x0 - 12}" y="${l.y - D.esp * 0.78}" width="${w}" height="${D.esp * 0.72}" rx="10" fill="#FFE600" opacity="0.55"
+                     transform="rotate(${-D.ang} ${D.x0} ${l.y})"/>`;
+  }
+  for (let i = 0; i < D.linhas.length; i++)   // linhas já lidas ficam com um "check" verde na margem
+    if (st.feitas != null && i < st.feitas) m.innerHTML += `<text x="${D.x0 - 46}" y="${D.linhas[i].y - D.esp * 0.14 - (D.x0 - 46 - D.x0) * Math.tan(D.ang * Math.PI / 180)}"
+      font-family="Patrick Hand" font-size="${D.esp * 0.7}" fill="#15962A" transform="rotate(${-D.ang} ${D.x0 - 46} ${D.linhas[i].y})">✓</text>`;
+  document.body.dataset.pronto = "1";
+};
+document.fonts.load('60px "Patrick Hand"').then(() => { window.fontesOk = true; });
+</script>
+</body></html>

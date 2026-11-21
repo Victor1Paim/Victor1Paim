@@ -1,0 +1,198 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "titulo",
+   "lingua": "pt",
+   "texto": "Inglês do dia a dia. Repete comigo!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Salva pra treinar depois, comenta qual você mais usa, e segue o perfil!"
+  },
+  {
+   "id": "pts",
+   "lingua": "pt",
+   "texto": "Com certeza....\n\nTô cansado....\n\nQue legal....\n\nFala sério....\n\nDeixa comigo....\n\nPode crer....\n\nQue nojo....\n\nQue engraçado....\n\nMe dá um segundo....\n\nNão faz mal....\n\nTô com sono....\n\nSem dúvida....\n\nMandou bem....\n\nEspera um pouco."
+  },
+  {
+   "id": "ens",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "For sure....\n\nI'm tired....\n\nThat's cool!...\n\nCome on!...\n\nI got this....\n\nYou bet....\n\nGross!...\n\nThat's funny!...\n\nGive me a sec....\n\nNo big deal....\n\nI'm sleepy....\n\nNo doubt....\n\nNice one!...\n\nHang on."
+  },
+  {
+   "id": "p1",
+   "lingua": "pt",
+   "texto": "Com certeza",
+   "recorte": true
+  },
+  {
+   "id": "p2",
+   "lingua": "pt",
+   "texto": "Tô cansado",
+   "recorte": true
+  },
+  {
+   "id": "p3",
+   "lingua": "pt",
+   "texto": "Que legal!",
+   "recorte": true
+  },
+  {
+   "id": "p4",
+   "lingua": "pt",
+   "texto": "Fala sério!",
+   "recorte": true
+  },
+  {
+   "id": "p5",
+   "lingua": "pt",
+   "texto": "Deixa comigo",
+   "recorte": true
+  },
+  {
+   "id": "p6",
+   "lingua": "pt",
+   "texto": "Pode crer",
+   "recorte": true
+  },
+  {
+   "id": "p7",
+   "lingua": "pt",
+   "texto": "Que nojo!",
+   "recorte": true
+  },
+  {
+   "id": "p8",
+   "lingua": "pt",
+   "texto": "Que engraçado!",
+   "recorte": true
+  },
+  {
+   "id": "p9",
+   "lingua": "pt",
+   "texto": "Me dá um segundo",
+   "recorte": true
+  },
+  {
+   "id": "p10",
+   "lingua": "pt",
+   "texto": "Não faz mal",
+   "recorte": true
+  },
+  {
+   "id": "p11",
+   "lingua": "pt",
+   "texto": "Tô com sono",
+   "recorte": true
+  },
+  {
+   "id": "p12",
+   "lingua": "pt",
+   "texto": "Sem dúvida",
+   "recorte": true
+  },
+  {
+   "id": "p13",
+   "lingua": "pt",
+   "texto": "Mandou bem!",
+   "recorte": true
+  },
+  {
+   "id": "p14",
+   "lingua": "pt",
+   "texto": "Espera um pouco",
+   "recorte": true
+  },
+  {
+   "id": "e1",
+   "lingua": "en",
+   "texto": "For sure",
+   "recorte": true
+  },
+  {
+   "id": "e2",
+   "lingua": "en",
+   "texto": "I'm tired",
+   "recorte": true
+  },
+  {
+   "id": "e3",
+   "lingua": "en",
+   "texto": "That's cool!",
+   "recorte": true
+  },
+  {
+   "id": "e4",
+   "lingua": "en",
+   "texto": "Come on!",
+   "recorte": true
+  },
+  {
+   "id": "e5",
+   "lingua": "en",
+   "texto": "I got this",
+   "recorte": true
+  },
+  {
+   "id": "e6",
+   "lingua": "en",
+   "texto": "You bet",
+   "recorte": true
+  },
+  {
+   "id": "e7",
+   "lingua": "en",
+   "texto": "Gross!",
+   "recorte": true
+  },
+  {
+   "id": "e8",
+   "lingua": "en",
+   "texto": "That's funny!",
+   "recorte": true
+  },
+  {
+   "id": "e9",
+   "lingua": "en",
+   "texto": "Give me a sec",
+   "recorte": true
+  },
+  {
+   "id": "e10",
+   "lingua": "en",
+   "texto": "No big deal",
+   "recorte": true
+  },
+  {
+   "id": "e11",
+   "lingua": "en",
+   "texto": "I'm sleepy",
+   "recorte": true
+  },
+  {
+   "id": "e12",
+   "lingua": "en",
+   "texto": "No doubt",
+   "recorte": true
+  },
+  {
+   "id": "e13",
+   "lingua": "en",
+   "texto": "Nice one!",
+   "recorte": true
+  },
+  {
+   "id": "e14",
+   "lingua": "en",
+   "texto": "Hang on",
+   "recorte": true
+  }
+ ]
+}
