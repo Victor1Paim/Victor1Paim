@@ -97,13 +97,16 @@ Botão: **[Quero viajar sem travar]** → âncora dos planos
 ✓ 100 Combinações de Verbos
 ✓ Cards de Gramática
 ✓ **10 aulas gravadas** (pronúncia e fala, com exercícios)
+✓ Áudio das frases principais · ✓ Cola de viagem (1 página por situação) · ✓ Checklist "antes de embarcar" (aprovar)
+✓ **Mapas Mentais Eagle** (novo, a produzir): ~15 mapas de 1 página, estilo resumo de concurso — tempos verbais, to be, perguntas
+  (what/where/how…), in/on/at, verbos irregulares mais usados, make × do, frases de viagem por situação, números/horas/dinheiro.
 De R$ [soma real dos avulsos] por **R$ [PREENCHER — sugestão 27,90]** · pagamento único · [Quero o Método Eagle Avançado]
 
 **EAGLE 350 · PLANO SIMPLES** (botão contorno)
 ✓ Eagle 350 Mapas Visuais (2.100 frases)
 ✓ 500 Frases para o Dia a Dia (bônus)
-✗ Guia de 21 Dias · ✗ 100 Combinações de Verbos · ✗ Cards de Gramática · ✗ 10 aulas gravadas
-**R$ [PREENCHER — sugestão 14,90]** · pagamento único · [Quero o plano simples]
+✗ Guia de 21 Dias · ✗ 100 Combinações de Verbos · ✗ Cards de Gramática · ✗ 10 aulas gravadas · ✗ Mapas Mentais · ✗ áudio/cola/checklist
+**R$ 14,90 (ou 15,90)** · pagamento único · [Quero o plano simples]
 
 Por que essa divisão: o Simples resolve a viagem (consultar a frase na hora); o Avançado é para quem quer **treinar a fala antes de ir**
 (aulas + rotina de 21 dias + base de verbos e gramática). As 500 Frases ficam nos dois porque já eram o bônus do Eagle 350.
