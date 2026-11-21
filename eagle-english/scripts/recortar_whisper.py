@@ -82,6 +82,8 @@ def recortar(arq, lingua, frases, modelo=None):
     lim = 10 ** (-55 / 20)
     for m in range(len(frases)):
         a, b = int(cortes[m] * sr), int(cortes[m + 1] * sr)
+        # o Whisper sabe onde a 1ª palavra começa e a última termina: respiração/ruído antes/depois fica de fora
+        a = max(a, int((limites[m][0] - 0.12) * sr)); b = min(b, int((limites[m][1] + 0.35) * sr))
         y = x[a:b].copy()
         e, kk = rms(y, sr)
         lim_m = max(lim, e.max() * 10 ** (-38 / 20))   # relativo ao pico do pedaço: ruído de fundo não conta como fala

@@ -122,6 +122,13 @@ def main(pasta):
        f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,alimiter=limit=0.84:level=false", "-ar", "48000", "-ac", "2", str(audio))
     final = v / "final.mp4"
     sh("-i", str(mudo), "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(final))
+    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    lufs = float(r[r.rindex("I:"):].split()[1])
+    if abs(lufs + 14) > 0.5:   # o AAC/limitador deixa abaixo da meta: corrige o ganho
+        tmp = final.with_name("_ganho.mp4")
+        sh("-i", str(final), "-c:v", "copy", "-af", f"volume={-14 - lufs:.2f}dB,alimiter=limit=0.89:level=false",
+           "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(tmp))
+        tmp.replace(final)
     sh("-i", str(final), "-vf", "fps=1/2,scale=270:480,tile=6x4", "-frames:v", "1", str(v / "contato.jpg"))
     for x in (bruto, audio, mudo, lista, pag):
         x.unlink(missing_ok=True)
