@@ -52,7 +52,7 @@ LOCAL = os.environ.get('LOCAL')   # LOCAL=1: faster-whisper aqui; a tradução v
 if LOCAL:
     from faster_whisper import WhisperModel
     ss, _ = WhisperModel(os.environ.get('FW_MODELO', 'small'), device='cpu', compute_type='int8', cpu_threads=4).transcribe(
-        audio, language=IDIOMA, vad_filter=True, beam_size=1, initial_prompt=f'{canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.')
+        _pcm(audio), language=IDIOMA, vad_filter=True, beam_size=1, initial_prompt=f'{canal} streaming GTA 6: Lucia, Jason, Vice City, Leonida.')
     tr = {'segments': [{'start': x.start, 'end': x.end, 'text': x.text, 'no_speech_prob': x.no_speech_prob, 'compression_ratio': x.compression_ratio} for x in ss]}
 else:
     r = subprocess.run(['curl', '-s', '-m', '300', 'https://api.openai.com/v1/audio/transcriptions', '-H', 'Authorization: Bearer sk-proxy',
@@ -79,6 +79,8 @@ if LONGA:
             continue
         unicas.append(f)
     frases = unicas
+if os.environ.get('FRASES'):   # frases revisadas à mão (ex.: transcrição com modelo maior)
+    frases = json.load(open(os.environ['FRASES']))
 # o Whisper às vezes estica o fim de falas curtas (ex.: "Oh my god" por 17 s): limita ao tempo de fala real
 for f in frases:
     f['f'] = round(min(f['f'], f['i'] + max(1.4, 0.38 * len(f['en'].split()) + 0.8)), 2)
