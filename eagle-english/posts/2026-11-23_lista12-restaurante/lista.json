@@ -2,7 +2,7 @@
  "selo": "@eagle.english.br",
  "fundo_video": "maldivas",
  "fundo_inicio": 38,
- "contagem": 1.8,
+ "contagem": 1.5,
  "capa": "Como se diz\nno restaurante? 🍽️",
  "itens": [
   {
@@ -85,5 +85,5 @@
  },
  "capa_sub": "12 frases pro restaurante",
  "cta": "cta",
- "respiro": 0.3
+ "respiro": 0.2
 }
