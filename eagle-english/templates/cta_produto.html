@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat:wght@800;900&display=swap">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Kalam", cursive; }
+#parede { position: absolute; inset: 0; background: linear-gradient(180deg, #efe4cd 0%, #e6d8bc 74%, #d9c8a8 74.2%); }
+#rodape { position: absolute; left: 0; right: 0; top: 1420px; height: 20px; background: #b98c5a; border-top: 4px solid #8e6438; }
+#chao { position: absolute; left: 0; right: 0; top: 1440px; bottom: 0; background: repeating-linear-gradient(90deg, #a8794a 0 158px, #9b6e41 158px 162px, #b3834f 162px 320px, #9b6e41 320px 324px); }
+#lousa { position: absolute; left: 60px; top: 270px; width: 960px; height: 760px; border-radius: 12px; background: #8a5a2e; box-shadow: 0 16px 34px rgba(0,0,0,.25), inset 0 0 0 4px #6e4520; padding: 22px; }
+#quadro { position: relative; width: 100%; height: 100%; border-radius: 4px; overflow: hidden; background: radial-gradient(ellipse at 40% 35%, #3a5a47 0%, #2c4838 60%, #233c2e 100%); box-shadow: inset 0 0 40px rgba(0,0,0,.45); }
+#quadro::before { content: ""; position: absolute; inset: 0; opacity: .16; background: repeating-linear-gradient(115deg, rgba(255,255,255,.25) 0 2px, transparent 2px 60px); }
+#bandeja { position: absolute; left: 40px; top: 1026px; width: 1000px; height: 22px; background: #7a4c22; border-radius: 4px; }
+.giz { color: #f4f1e6; text-shadow: 0 0 1px rgba(255,255,255,.6), 0 0 6px rgba(255,255,255,.12); }
+#corpo { position: absolute; inset: 40px 50px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.t1 { font-size: 92px; font-weight: 700; line-height: 1.05; color: #fff; }
+.t1 em { color: #ffe27a; font-style: normal; }
+.nome { font-family: Montserrat; font-weight: 900; font-size: 50px; color: #233c2e; background: #ffd76a; padding: 8px 22px; border-radius: 14px; margin-bottom: 26px; }
+.lst div { font-size: 64px; line-height: 1.45; text-align: left; opacity: .25; }
+.lst div.on { opacity: 1; }
+.lst div b { color: #ffe27a; }
+.bio { font-family: Montserrat; font-weight: 900; font-size: 96px; color: #fff; background: #E63946; padding: 14px 40px; border-radius: 24px; box-shadow: 0 10px 0 #b02a36; }
+.seta { font-size: 120px; line-height: 1; margin-bottom: 10px; color: #ffe27a; }
+.sub { font-size: 50px; color: #cfe6d3; margin-top: 30px; }
+#selo { position: absolute; left: 0; right: 0; top: 160px; text-align: center; }
+#selo span { display: inline-flex; align-items: center; gap: 14px; background: #0B1F4B; color: #fff; font-family: Montserrat; font-weight: 800; font-size: 30px; padding: 10px 26px 10px 10px; border-radius: 99px; }
+#selo img { width: 56px; height: 56px; border-radius: 50%; }
+#p { position: absolute; left: 290px; top: 1000px; width: 500px; height: 988px; }
+#sombra { position: absolute; left: 340px; top: 1922px; width: 400px; height: 40px; border-radius: 50%; background: rgba(0,0,0,.22); filter: blur(6px); }
+</style></head>
+<body>
+<div id="parede"></div><div id="rodape"></div><div id="chao"></div>
+<div id="selo"><span><img id="logo" alt="">@eagle.english.br</span></div>
+<div id="lousa"><div id="quadro"><div id="corpo" class="giz"></div></div></div>
+<div id="bandeja"></div>
+<svg id="p" viewBox="0 0 400 790"><g id="pc"></g></svg>
+<script src="personagem.js"></script>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+window.render = st => {
+  document.getElementById("logo").src = st.logo || "";
+  const c = document.getElementById("corpo"); let h = "";
+  if (st.fase === 1) h = `<div class="t1">Quer viajar pra fora <em>sem travar</em> no inglês?</div>`;
+  else if (st.fase === 2) h = `<div class="nome">Eagle Primeira Classe</div><div class="lst">${["<b>10 aulas</b> como esta", "<b>2.100 frases</b> prontas", "<b>áudios</b> pra treinar"].map((x, i) => `<div class="${i < st.itens ? "on" : ""}">✓ ${x}</div>`).join("")}</div>`;
+  else if (st.fase === 3) h = `<div class="seta">↑</div><div class="bio">LINK NA BIO</div><div class="sub">Eagle Primeira Classe</div>`;
+  c.innerHTML = h;
+  document.getElementById("pc").innerHTML = personagem(st);
+};
+document.fonts.load('700 60px "Kalam"').then(() => document.fonts.load('900 30px "Montserrat"')).then(() => { window.fontesOk = true; });
+</script>
+</body></html>

@@ -1,0 +1,9 @@
+{
+ "vozes": {"pt": "Achird", "en": "Achird"},
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {"id": "c1", "lingua": "pt", "texto": "Quer viajar pra fora sem travar no inglês?"},
+  {"id": "c2", "lingua": "pt", "texto": "No Ígol Primeira Classe você tem dez aulas como esta, duas mil e cem frases prontas e áudios pra treinar."},
+  {"id": "c3", "lingua": "pt", "texto": "O link tá na bio!"}
+ ]
+}

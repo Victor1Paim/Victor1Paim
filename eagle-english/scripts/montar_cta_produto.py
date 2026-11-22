@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""CTA do produto (pedido 22/11): clipe vertical de ~14 s no estilo das aulas (sala, lousa, personagem, voz Achird)
+para colar no FIM dos vídeos diários. Falas em assets/cta_produto/falas.json (gerar com vozes.py).
+
+  python3 scripts/montar_cta_produto.py            -> assets/cta_produto/cta_produto.mp4
+  python3 scripts/montar_cta_produto.py anexar posts/<post>   -> acrescenta o clipe ao final.mp4 do post (guarda final_sem_cta.mp4)
+"""
+import json, math, os, shutil, subprocess, sys, wave
+from pathlib import Path
+
+import numpy as np
+
+PROJ = Path(__file__).resolve().parents[1]
+BASE = PROJ / "assets" / "cta_produto"
+FPS = 15
+
+
+def sh(*a):
+    subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", *a], check=True)
+
+
+def dur(a):
+    with wave.open(str(a)) as w:
+        return w.getnframes() / w.getframerate()
+
+
+def lufs(arq):
+    r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(arq), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    return float(r[r.rindex("I:"):].split()[1])
+
+
+def montar():
+    aud = lambda k: BASE / "audio" / f"{k}.wav"
+    t = 0.3; sons, fases = [], []
+    for k, fase in (("c1", 1), ("c2", 2), ("c3", 3)):
+        d = dur(aud(k)); sons.append((aud(k), t)); fases.append((t, t + d, fase)); t += d + (0.3 if k != "c3" else 1.1)
+    total = t
+    # envelope da voz (boca)
+    env = np.zeros(int(total * FPS) + 2)
+    for arq, ini in sons:
+        with wave.open(str(arq)) as w:
+            x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(float) / 32768; sr = w.getframerate()
+        k = int(sr / FPS)
+        for j in range(len(x) // k):
+            i = int(round(ini * FPS)) + j
+            if i < len(env):
+                env[i] = max(env[i], math.sqrt((x[j * k:(j + 1) * k] ** 2).mean()))
+    a2, b2 = fases[1][0], fases[1][1]
+    sts = []
+    for k in range(int(total * FPS)):
+        x = k / FPS
+        fase = next((f for a, b, f in fases if a - 0.3 <= x < b + 0.3), 3 if x > fases[2][0] else 1)
+        e = env[k]; falando = e > 0.02
+        st = {"fase": fase, "itens": 0 if x < a2 + (b2 - a2) * 0.30 else 1 if x < a2 + (b2 - a2) * 0.58 else 2 if x < a2 + (b2 - a2) * 0.82 else 3,
+              "boca": 0 if e < 0.03 else (1 if (e > 0.09 and k % 4 < 2) else 2 if k % 4 < 3 else 1), "piscar": (x % 3.7) < 0.14,
+              "logo": (PROJ / "assets/marca/logo_eagle.png").as_uri(), "aponta": 0.15}
+        if fase == 3:
+            st["pose"] = "aponta" if falando else "feliz"
+        elif falando:
+            st["pose"] = ["fala1", "fala3", "fala2", "fala4"][int(x / 0.9) % 4]
+        else:
+            st["pose"] = "neutro"
+        sts.append(st)
+    ant, atual, ini = "neutro", None, 0
+    for k, st in enumerate(sts):
+        if st["pose"] != atual:
+            ant = atual or "neutro"; atual = st["pose"]; ini = k
+        kk = min(1.0, (k - ini) / (0.4 * FPS)); st["pose_ant"] = ant; st["k"] = round(kk * kk * (3 - 2 * kk), 2)
+    tmp = BASE / "_tmp"; tmp.mkdir(exist_ok=True)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        cam = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
+        nav = pw.chromium.launch(executable_path=cam) if os.path.isfile(cam) else pw.chromium.launch()
+        pg = nav.new_page(viewport={"width": 1080, "height": 1920})
+        pg.goto((PROJ / "templates" / "cta_produto.html").as_uri()); pg.wait_for_function("window.fontesOk === true")
+        cache, lista = {}, []
+        for st in sts:
+            key = json.dumps(st, sort_keys=True)
+            if key not in cache:
+                cache[key] = tmp / f"{len(cache):05d}.jpg"
+                pg.evaluate("s => window.render(s)", st); pg.wait_for_timeout(15); pg.screenshot(path=str(cache[key]), type="jpeg", quality=90)
+            lista.append(cache[key])
+        nav.close()
+    with open(tmp / "lista.txt", "w") as f:
+        for q in lista:
+            f.write(f"file '{q}'\nduration {1 / FPS:.5f}\n")
+        f.write(f"file '{lista[-1]}'\n")
+    ent, fil = [], []
+    for k, (arq, ini) in enumerate(sons):
+        ent += ["-i", str(arq)]; ms = int(ini * 1000)
+        fil.append(f"[{k + 1}:a]aresample=48000,aformat=channel_layouts=mono,adelay={ms}|{ms}[s{k}]")
+    fil.append("".join(f"[s{k}]" for k in range(len(sons))) + f"amix=inputs={len(sons)}:normalize=0,apad=whole_dur={total:.3f},atrim=0:{total:.3f},loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+    saida = BASE / "cta_produto.mp4"
+    sh("-f", "concat", "-safe", "0", "-i", str(tmp / "lista.txt"), *ent, "-filter_complex", ";".join(fil),
+       "-map", "0:v", "-map", "[a]", "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
+       "-ar", "48000", "-ac", "2", "-t", f"{total:.3f}", "-movflags", "+faststart", str(saida))
+    l = lufs(saida)
+    if abs(l + 14) > 0.5:
+        g = saida.with_name("_g.mp4")
+        sh("-i", str(saida), "-c:v", "copy", "-af", f"volume={-14 - l:.2f}dB,alimiter=limit=0.89:level=false", "-c:a", "aac", "-b:a", "192k", str(g)); g.replace(saida)
+    sh("-i", str(saida), "-vf", f"fps=1/{total / 8:.3f},scale=270:480,tile=4x2", "-frames:v", "1", str(BASE / "contato.jpg"))
+    shutil.rmtree(tmp)
+    print(f"ok -> {saida.relative_to(PROJ)} ({total:.1f} s, {lufs(saida):.1f} LUFS)")
+
+
+def anexar(post):
+    v = (PROJ / post).resolve() / "video"; final = v / "final.mp4"; orig = v / "final_sem_cta.mp4"
+    if not orig.exists():
+        shutil.copy(final, orig)
+    cta = BASE / "cta_produto.mp4"
+    sh("-i", str(orig), "-i", str(cta), "-filter_complex",
+       "[0:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v0];[1:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v1];"
+       "[0:a]aresample=48000,aformat=channel_layouts=stereo[a0];[1:a]aresample=48000,aformat=channel_layouts=stereo[a1];"
+       "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
+       "-movflags", "+faststart", str(final))
+    d = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(final)], capture_output=True, text=True).stdout)
+    print(f"ok -> {final.relative_to(PROJ)} com CTA do produto ({d:.1f} s)")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 2 and sys.argv[1] == "anexar":
+        anexar(sys.argv[2])
+    else:
+        montar()
