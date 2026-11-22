@@ -108,3 +108,11 @@ Hoje nenhum produto sobra para bump sem canibalizar o upsell/downsell. Opções:
 3. Ajustar a página atual (preço, provas, bônus) e criar as páginas de upsell/downsell (1 clique na Kiwify).
 4. Produzir a aula 1 do upsell como amostra (vídeo + exercício) para validar o formato.
 5. Divulgação: CTA do produto só na legenda dos vídeos (regra atual) + stories com o link + carrosséis com CTA do perfil.
+
+## Decisões 22/11
+- **Site novo** no branch `estudio-ofertas` (`ofertas/projetos/eagle-english/pagina/`): visual inspirado na página atual (creme #F7F3EA,
+  marinho #0B1F4B, vermelho #E63946, amarelo de apoio; listras e estrelas da bandeira americana). NÃO usar o estilo dos vídeos (Maldivas).
+- **Fluxo de links:** bio → quiz (`/`) → resultado → `/oferta#planos`. Link direto da página de vendas (`/oferta`) para stories, anúncios e
+  quem já conhece. O quiz também tem "Prefiro ver os planos direto".
+- **10 aulas do plano avançado:** personagem próprio dando aula numa SALA DE AULA (quadro-negro/lousa ao fundo, ambiente escolar),
+  escrevendo/apontando para o quadro — não usar os fundos de paisagem dos vídeos do feed.
