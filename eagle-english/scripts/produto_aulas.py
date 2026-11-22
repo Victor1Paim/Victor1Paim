@@ -59,6 +59,16 @@ def roteiro(base, n):
     return A, pt, frases, ex, en
 
 
+_MOD = {}
+
+
+def modelos():
+    if not _MOD:
+        import whisper
+        _MOD["t"] = whisper.load_model("small"); _MOD["c"] = whisper.load_model("base.en")
+    return _MOD["t"], _MOD["c"]
+
+
 def gerar_vozes(base, n):
     A, pt, frases, ex, en = roteiro(base, n)
     d = base / "_tmp" / f"aula{n:02d}" / "audio"; d.mkdir(parents=True, exist_ok=True)
@@ -77,8 +87,7 @@ def gerar_vozes(base, n):
         from recortar_whisper import recortar, gravar
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         from produto_audio import nota
-        import whisper
-        mw = whisper.load_model("turbo"); cw = whisper.load_model("base.en")
+        mw, cw = modelos()
         for t in range(3):
             bruto = d / "_en_bruto.wav"
             vozes.tts("\n\n".join(en), "Achird", "gemini-3.8-flash-lite-tts", bruto, base, "en")
@@ -91,6 +100,7 @@ def gerar_vozes(base, n):
             if min(notas) >= 0.7:
                 break
         bruto.unlink(missing_ok=True)
+    (d.parent / "vozes_ok").touch()
     print(f"ok vozes aula {n}")
 
 
