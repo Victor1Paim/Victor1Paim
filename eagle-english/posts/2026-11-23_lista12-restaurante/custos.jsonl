@@ -4,3 +4,4 @@
 {"quando": "2026-11-22T12:03:13", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 17, "saida_audio": 122}, "usd": 0.001107}
 {"quando": "2026-11-22T12:03:37", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 17, "saida_audio": 116}, "usd": 0.001053}
 {"quando": "2026-11-22T12:03:59", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 24, "saida_audio": 137}, "usd": 0.001245}
+{"quando": "2026-11-22T12:37:58", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 13, "saida_audio": 86}, "usd": 0.00078}
