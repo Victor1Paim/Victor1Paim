@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat:wght@700;800;900&display=swap">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #e8dcc4; font-family: "Kalam", cursive; }
+/* sala */
+#parede { position: absolute; inset: 0; background: linear-gradient(180deg, #efe4cd 0%, #e6d8bc 78%, #d9c8a8 78.2%); }
+#rodape { position: absolute; left: 0; right: 0; top: 842px; height: 18px; background: #b98c5a; border-top: 4px solid #8e6438; }
+#chao { position: absolute; left: 0; right: 0; top: 860px; bottom: 0; background: repeating-linear-gradient(90deg, #a8794a 0 158px, #9b6e41 158px 162px, #b3834f 162px 320px, #9b6e41 320px 324px); }
+#chao::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,0) 60%); }
+/* lousa */
+#lousa { position: absolute; left: 70px; top: 56px; width: 1300px; height: 740px; border-radius: 10px; background: #8a5a2e;
+  box-shadow: 0 14px 30px rgba(0,0,0,.25), inset 0 0 0 4px #6e4520; padding: 22px; }
+#quadro { position: relative; width: 100%; height: 100%; border-radius: 4px; overflow: hidden;
+  background: radial-gradient(ellipse at 40% 35%, #3a5a47 0%, #2c4838 60%, #233c2e 100%); box-shadow: inset 0 0 40px rgba(0,0,0,.45); }
+#quadro::before { content: ""; position: absolute; inset: 0; opacity: .16;
+  background: repeating-linear-gradient(115deg, rgba(255,255,255,.25) 0 2px, transparent 2px 60px), repeating-linear-gradient(20deg, rgba(255,255,255,.18) 0 1px, transparent 1px 90px); }
+#bandeja { position: absolute; left: 50px; top: 790px; width: 1340px; height: 22px; background: #7a4c22; border-radius: 4px; box-shadow: 0 6px 10px rgba(0,0,0,.2); }
+#bandeja i { position: absolute; top: -9px; height: 11px; border-radius: 3px; }
+/* decoração */
+#relogio { position: absolute; left: 1440px; top: 40px; width: 130px; height: 130px; border-radius: 50%; background: #fff; border: 10px solid #23324f; box-shadow: 0 6px 12px rgba(0,0,0,.2); }
+#relogio::before, #relogio::after { content: ""; position: absolute; left: 50%; top: 50%; background: #222; transform-origin: 50% 100%; border-radius: 3px; }
+#relogio::before { width: 6px; height: 38px; margin: -38px 0 0 -3px; transform: rotate(-60deg); }
+#relogio::after { width: 4px; height: 50px; margin: -50px 0 0 -2px; transform: rotate(40deg); }
+#flamula { position: absolute; left: 1770px; top: 0; width: 120px; height: 160px; }
+#estante { position: absolute; left: 1470px; top: 300px; width: 400px; height: 20px; background: #8e6438; border-radius: 3px; box-shadow: 0 6px 8px rgba(0,0,0,.18); }
+.livro { position: absolute; bottom: 20px; border-radius: 3px 3px 0 0; }
+#globo { position: absolute; left: 1790px; top: 218px; }
+/* conteúdo da lousa */
+.giz { color: #f4f1e6; text-shadow: 0 0 1px rgba(255,255,255,.6), 0 0 6px rgba(255,255,255,.12); }
+#topo { position: absolute; left: 44px; top: 26px; right: 44px; display: flex; justify-content: space-between; align-items: baseline; font-size: 34px; font-weight: 700; color: #ffd76a; }
+#topo span:last-child { color: #cfe6d3; font-weight: 400; }
+#linha { position: absolute; left: 44px; right: 44px; top: 86px; height: 3px; background: rgba(244,241,230,.55); border-radius: 2px; }
+#corpo { position: absolute; left: 60px; right: 60px; top: 110px; bottom: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.t1 { font-size: 96px; font-weight: 700; line-height: 1.05; color: #fff; }
+.t2 { font-size: 46px; color: #cfe6d3; margin-top: 18px; }
+.lst { text-align: left; margin-top: 10px; }
+.lst div { font-size: 50px; line-height: 1.5; }
+.lst div::before { content: "→ "; color: #ffd76a; }
+.lst.num div::before { content: ""; }
+.en { font-size: 84px; font-weight: 700; color: #ffe27a; line-height: 1.12; }
+.en .w { position: relative; display: inline-block; padding: 0 4px; border-radius: 8px; transition: none; }
+.en .w.on { background: rgba(255,226,122,.18); }
+.en .w.on::after { content: ""; position: absolute; left: 4px; right: 4px; bottom: -2px; height: 6px; border-radius: 3px; background: #ff8f8f; }
+.pr { font-size: 52px; color: #9fe3b0; margin-top: 18px; }
+.pr .w.on { color: #fff; text-decoration: underline; text-decoration-color: #ff8f8f; text-underline-offset: 8px; }
+.pt { font-size: 44px; color: #f4f1e6; margin-top: 14px; opacity: .92; }
+.cue { font-size: 40px; color: #cfe6d3; margin-bottom: 26px; }
+#selo { position: absolute; right: 40px; bottom: 30px; font-family: Montserrat; font-weight: 900; font-size: 30px; color: #233c2e; background: #ffd76a; padding: 10px 22px; border-radius: 99px; display: none; }
+#barra { position: absolute; left: 44px; right: 44px; bottom: 22px; height: 12px; border-radius: 6px; background: rgba(255,255,255,.15); display: none; overflow: hidden; }
+#barra i { display: block; height: 100%; background: #ffd76a; border-radius: 6px; }
+.q { font-size: 110px; color: #ff8f8f; font-weight: 700; line-height: 1; }
+#marca { position: absolute; left: 70px; bottom: 34px; font-family: Montserrat; font-weight: 800; font-size: 26px; color: rgba(255,255,255,.85); text-shadow: 0 2px 4px rgba(0,0,0,.4); }
+/* personagem */
+#p { position: absolute; left: 1430px; top: 160px; width: 440px; height: 869px; }
+#sombra { position: absolute; left: 1470px; top: 1004px; width: 360px; height: 40px; border-radius: 50%; background: rgba(0,0,0,.22); filter: blur(6px); }
+</style></head>
+<body>
+<div id="parede"></div><div id="rodape"></div><div id="chao"></div>
+<div id="relogio"></div>
+<svg id="flamula" viewBox="0 0 150 200"><path d="M10 6 H140 V150 L75 196 L10 150 Z" fill="#0B1F4B" stroke="#081634" stroke-width="4"/>
+  <path d="M10 6 H140 V34 H10 Z" fill="#E63946"/><text x="75" y="88" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="30" fill="#fff">EAGLE</text>
+  <text x="75" y="120" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="20" fill="#FFC93C">ENGLISH</text></svg>
+
+<div id="lousa"><div id="quadro">
+  <div id="topo" class="giz"><span id="aula"></span><span id="tema"></span></div><div id="linha"></div>
+  <div id="corpo" class="giz"></div>
+  <div id="selo"></div><div id="barra"><i></i></div>
+</div></div>
+<div id="bandeja"><i style="left:120px;width:70px;background:#fff"></i><i style="left:210px;width:54px;background:#ffd76a"></i><i style="left:1080px;width:110px;height:20px;top:-18px;background:#555;border-radius:6px"></i></div>
+<div id="sombra"></div>
+<svg id="p" viewBox="0 0 400 790"><g id="pc"></g></svg>
+<script src="personagem.js"></script>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const palavras = (s, hl, cls) => esc(s).split(" ").map((w, i) => `<span class="w${i === hl ? " on" : ""}">${w}</span>`).join(" ");
+function ajusta(el, max) { let f = parseFloat(getComputedStyle(el).fontSize); while (el.scrollWidth > max && f > 30) { f -= 2; el.style.fontSize = f + "px"; } }
+window.render = st => {
+  document.getElementById("aula").textContent = st.aula || "";
+  document.getElementById("tema").textContent = st.tema || "";
+  const c = document.getElementById("corpo"); let h = "";
+  if (st.fase === "titulo") h = `<div class="t1">${esc(st.titulo)}</div><div class="t2">${esc(st.sub)}</div>`;
+  else if (st.fase === "lista") h = `<div class="t2" style="color:#ffd76a;font-size:54px;font-weight:700;margin:0 0 16px">${esc(st.titulo)}</div><div class="lst">${(st.linhas || []).slice(0, st.ate ?? 99).map(l => `<div>${esc(l)}</div>`).join("")}</div>`;
+  else if (st.fase === "frase") h = `${st.cue ? `<div class="cue">${esc(st.cue)}</div>` : ""}<div class="en">${palavras(st.en, st.hl)}</div><div class="pr">${palavras(st.pron, st.hl_pr)}</div><div class="pt">${esc(st.pt)}</div>`;
+  else if (st.fase === "pergunta") h = `<div class="cue">Como você diz:</div><div class="t1" style="font-size:76px">${esc(st.pt)}</div>${st.revela ? `<div class="en" style="margin-top:30px">${palavras(st.en, st.hl)}</div><div class="pr">${palavras(st.pron, st.hl_pr)}</div>` : `<div class="q" style="margin-top:30px">?</div>`}`;
+  c.innerHTML = h;
+  c.querySelectorAll(".en, .t1, .pr, .lst div").forEach(e => ajusta(e, 1120));
+  const selo = document.getElementById("selo"); selo.style.display = st.selo ? "block" : "none"; selo.textContent = st.selo || "";
+  const b = document.getElementById("barra"); b.style.display = st.barra != null ? "block" : "none";
+  if (st.barra != null) b.firstElementChild.style.width = (st.barra * 100).toFixed(1) + "%";
+  document.getElementById("pc").innerHTML = personagem(st);
+};
+document.fonts.load('700 60px "Kalam"').then(() => document.fonts.load('900 30px "Montserrat"')).then(() => { window.fontesOk = true; });
+</script>
+</body></html>

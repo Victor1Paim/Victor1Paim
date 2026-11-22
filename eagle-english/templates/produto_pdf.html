@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@page { size: 1080px 1440px; margin: 0; }
+:root { --navy:#0B1F4B; --red:#E63946; --yellow:#FFC93C; --ink:#0A0A0A; --muted:#566174; --green:#0e9f5c; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #fff; }
+body { font-family: "DejaVu Sans Condensed", "DejaVu Sans", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.pg { width: 1080px; height: 1440px; position: relative; overflow: hidden; page-break-after: always; padding: 90px 80px 0; }
+.pg:last-child { page-break-after: auto; }
+h1 { font-weight: 800; font-size: 82px; line-height: 1.02; text-align: center; margin: 0; letter-spacing: -1px; }
+h1 .r, h2 .r { color: var(--red); }
+h2 { font-weight: 800; font-size: 64px; text-align: center; margin: 0 0 14px; letter-spacing: -.5px; line-height: 1.05; }
+.pill { display: inline-block; background: var(--red); color: #fff; font-weight: 700; font-size: 30px; padding: 10px 40px; border-radius: 99px; letter-spacing: 1px; }
+.sub { text-align: center; font-size: 30px; color: var(--muted); margin: 6px 0 30px; }
+.rodape { position: absolute; left: 80px; right: 80px; bottom: 34px; border-top: 2px solid #e5e8ef; padding-top: 18px; display: flex; justify-content: space-between; align-items: center; font-size: 20px; color: var(--muted); }
+.rodape a { background: var(--navy); color: #fff; text-decoration: none; padding: 7px 22px; border-radius: 99px; font-weight: 700; font-size: 19px; }
+.rodape b { color: var(--navy); font-size: 24px; }
+.marca { position: absolute; left: 0; right: 0; bottom: 104px; text-align: center; color: #8a93a5; font-size: 22px; }
+/* capa */
+.capa { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 0; }
+.capa h1 { font-size: 118px; margin: 40px 0 34px; }
+.capa .linha { width: 200px; height: 5px; background: var(--navy); margin: 70px auto 50px; }
+.capa .desc { font-size: 40px; color: var(--navy); max-width: 820px; line-height: 1.35; }
+.capa .forte { font-size: 36px; font-weight: 700; max-width: 820px; line-height: 1.35; }
+.faixa { position: absolute; left: 0; right: 0; height: 26px; background: repeating-linear-gradient(90deg, var(--red) 0 60px, #fff 60px 120px); }
+/* caixas */
+.box { border: 4px solid var(--navy); border-radius: 22px; padding: 18px 28px; margin-bottom: 16px; min-height: 110px; }
+.box.r { border-color: var(--red); } .box.y { border-color: var(--yellow); } .box.k { border-color: #000; }
+.box h3 { margin: 0 0 6px; font-size: 34px; }
+.box p { margin: 0; font-size: 27px; color: #222; line-height: 1.35; }
+.num { float: left; width: 66px; height: 66px; border-radius: 50%; background: var(--red); color: #fff; font-weight: 800; font-size: 36px; display: grid; place-items: center; margin: 4px 24px 0 0; }
+.box.y .num { background: var(--yellow); color: #000; } .box .num.n { background: var(--navy); } .box .num.k { background: #000; }
+/* frases */
+.frase { display: flex; gap: 22px; align-items: flex-start; border: 3px solid var(--navy); border-radius: 18px; padding: 14px 22px; margin-bottom: 12px; }
+.frase .ck { flex: 0 0 34px; height: 34px; border: 3px solid var(--navy); border-radius: 6px; margin-top: 6px; }
+.frase .n { flex: 0 0 auto; color: var(--red); font-weight: 800; font-size: 26px; margin-top: 4px; min-width: 40px; }
+.frase .en { font-weight: 800; font-size: 30px; line-height: 1.2; }
+.frase .pt { font-size: 23px; color: #333; margin-top: 2px; }
+.frase .pr { font-size: 22px; color: var(--red); font-weight: 700; margin-top: 2px; }
+.grupo { color: var(--red); font-weight: 800; font-size: 28px; margin: 18px 0 10px; letter-spacing: .5px; }
+.cola .frase { padding: 7px 18px; margin-bottom: 8px; border-width: 3px; }
+.cola h2 { font-size: 58px; margin-bottom: 4px; } .cola .sub { margin-bottom: 18px; }
+.cola .frase .en { font-size: 26px; } .cola .frase .pt { font-size: 20px; margin-top: 0; } .cola .frase .pr { font-size: 19px; margin-top: 0; }
+/* sumário */
+.sum > a { display: flex; justify-content: space-between; text-decoration: none; color: var(--ink); font-size: 27px; padding: 11px 24px; border: 3px solid var(--navy); border-radius: 16px; margin-bottom: 10px; }
+.sum > a b { color: var(--red); margin-right: 18px; }
+.aula .frase { padding: 6px 18px; margin-bottom: 7px; } .aula .frase .en { font-size: 25px; } .aula .frase .pt { font-size: 19px; margin: 0; } .aula .frase .pr { font-size: 19px; margin: 0; }
+.esc { border: 3px solid var(--red); border-radius: 16px; padding: 10px 20px 12px; margin-bottom: 9px; }
+.esc .pt { font-size: 24px; font-weight: 700; } .esc .ln { border-bottom: 2px dashed #9aa3b3; height: 30px; }
+.aula .marca { display: none; }
+.gab div { font-size: 23px; padding: 5px 0; border-bottom: 1px solid #e5e8ef; } .gab b { color: var(--red); }
+/* mapa mental */
+.mm { position: absolute; left: 0; right: 0; top: 270px; height: 1020px; }
+.mm svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mm .centro { position: absolute; width: 250px; height: 250px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; text-align: center; font-weight: 800; font-size: 34px; line-height: 1.12; white-space: pre-line; border: 10px solid var(--red); box-shadow: 0 0 0 8px #fff, 0 0 0 12px var(--navy); }
+.mm .ramo { position: absolute; width: 360px; border: 4px solid; border-radius: 20px; background: #fff; padding: 12px 16px 14px; }
+.mm .ramo .t { display: inline-block; color: #fff; font-weight: 800; font-size: 21px; padding: 5px 14px; border-radius: 99px; margin: -30px 0 8px; letter-spacing: .4px; }
+.mm .ramo .it { font-size: 23px; line-height: 1.25; padding: 4px 0; border-bottom: 1px dashed #d5d9e2; }
+.mm .ramo .it:last-child { border-bottom: 0; }
+.mm .ramo .it small { display: block; font-size: 19px; color: #555; }
+.mm .ramo .it em { display: block; font-style: normal; font-size: 18px; color: var(--red); font-weight: 700; }
+.dica { position: absolute; left: 80px; right: 80px; bottom: 120px; text-align: center; font-size: 22px; color: var(--muted); }
+</style></head>
+<body><div id="doc"></div>
+<script>
+const C = ["#E63946", "#0B1F4B", "#d99a00", "#0e9f5c", "#7b3fb0", "#e0670b", "#0b7f9a", "#b0306a"];
+const esc = s => String(s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function titulo(t, d) { if (!d || !t.includes(d)) return esc(t); const i = t.lastIndexOf(d); return esc(t.slice(0, i)) + '<span class="r">' + esc(d) + '</span>' + esc(t.slice(i + d.length)); }
+function rodape(nome, n) { return `<div class="marca">@eagle.english.br</div><div class="rodape"><a href="#sumario">◀ SUMÁRIO</a><span>${esc(nome)}</span><b>pág. ${n}</b></div>`; }
+function frase(f, k, ck) { return `<div class="frase">${ck ? '<div class="ck"></div>' : `<div class="n">${k}</div>`}<div><div class="en">${esc(f.en)}</div><div class="pt">${esc(f.pt)}</div><div class="pr">/${esc(f.pron)}/</div></div></div>`; }
+
+function render(D) {
+  const out = []; let n = 0;
+  for (const p of D.paginas) {
+    n++;
+    const id = p.id ? ` id="${p.id}"` : "";
+    if (p.tipo === "capa") out.push(`<section class="pg capa"${id}><div class="faixa" style="top:0"></div><span class="pill">${esc(p.pill)}</span><h1>${titulo(p.titulo, p.destaque)}</h1><div class="desc">${esc(p.desc)}</div><div class="linha"></div><div class="forte">${esc(p.forte)}</div><div class="marca" style="bottom:90px">@eagle.english.br &nbsp;|&nbsp; Seu inglês decolando</div><div class="faixa" style="bottom:0"></div></section>`);
+    else if (p.tipo === "texto") out.push(`<section class="pg"${id}><h2>${titulo(p.titulo, p.destaque)}</h2>${p.intro ? `<p class="sub" style="text-align:left;color:#222">${esc(p.intro)}</p>` : ""}${p.caixas.map((c, k) => `<div class="box ${["r","y","","k"][k % 4]}"><div class="num ${["","","n","k"][k % 4]}">${c.n || k + 1}</div><h3>${esc(c.t)}</h3><p>${esc(c.p)}</p></div>`).join("")}${rodape(p.rodape, n)}</section>`);
+    else if (p.tipo === "sumario") out.push(`<section class="pg sum" id="sumario"><h2>SUMÁ<span class="r">RIO</span></h2><p class="sub">Toque no item para ir direto à página.</p>${p.itens.map(i => `<a href="#${i.id}"><span><b>${esc(i.n)}</b>${esc(i.t)}</span><span>pág. ${i.pag}</span></a>`).join("")}${rodape("Sumário", n)}</section>`);
+    else if (p.tipo === "frases") out.push(`<section class="pg ${p.classe || ""}"${id}><h2>${titulo(p.titulo, p.destaque)}</h2><p class="sub">${esc(p.sub)}</p>${p.grupos.map(g => (g.t ? `<div class="grupo">${esc(g.t)}</div>` : "") + g.f.map((f, k) => frase(f, (g.k0 || 1) + k, p.ck)).join("")).join("")}${rodape(p.rodape, n)}</section>`);
+    else if (p.tipo === "aula") out.push(`<section class="pg aula"${id}><h2 style="font-size:54px">${titulo(p.titulo, p.destaque)}</h2><p class="sub" style="margin-bottom:14px">${esc(p.sub)}</p><div class="grupo" style="margin-top:0">FRASES DA AULA · marque quando disser sem olhar</div>${p.frases.map(f => frase(f, 0, true)).join("")}<div class="grupo">ESCREVA EM INGLÊS</div>${p.ex.map((e, k) => `<div class="esc"><div class="pt">${k + 1}. ${esc(e.pt)}</div><div class="ln"></div></div>`).join("")}${rodape(p.rodape, n)}</section>`);
+    else if (p.tipo === "gabarito") out.push(`<section class="pg gab"${id}><h2>GABA<span class="r">RITO</span></h2><p class="sub">Confira suas respostas</p>${p.itens.map(g => `<div><b>${esc(g.t)}</b> ${g.r.map((r, k) => `${k + 1}. ${esc(r)}`).join(" · ")}</div>`).join("")}${rodape("Gabarito", n)}</section>`);
+    else if (p.tipo === "mapa") out.push(`<section class="pg"${id}><h2>${titulo(p.titulo, p.destaque)}</h2><p class="sub">${esc(p.sub)}</p><div class="mm" data-k="${n}"><svg></svg><div class="centro">${esc(p.centro)}</div>${p.ramos.map((r, k) => `<div class="ramo" style="border-color:${C[k % 8]}"><span class="t" style="background:${C[k % 8]}">${esc(r.t)}</span>${r.i.map(x => `<div class="it">${x}</div>`).join("")}</div>`).join("")}</div>${rodape(p.rodape, n)}</section>`);
+  }
+  document.getElementById("doc").innerHTML = out.join("");
+  // posiciona os mapas mentais: centro no meio, ramos alternando esquerda/direita, linhas curvas
+  document.querySelectorAll(".mm").forEach(mm => {
+    const W = 1080, H = mm.clientHeight, cx = W / 2, cy = H / 2;
+    const ce = mm.querySelector(".centro"); ce.style.left = (cx - 125) + "px"; ce.style.top = (cy - 125) + "px";
+    const rs = [...mm.querySelectorAll(".ramo")];
+    const lados = [[], []]; rs.forEach((r, k) => lados[k % 2].push(r));
+    let svg = "";
+    lados.forEach((lst, lado) => {
+      const hs = lst.map(r => r.offsetHeight + 34), tot = hs.reduce((a, b) => a + b, 0);
+      const gap = Math.max(0, (H - tot) / (lst.length + 1));
+      let y = gap;
+      lst.forEach((r, k) => {
+        const x = lado === 0 ? 40 : W - 40 - 360;
+        r.style.left = x + "px"; r.style.top = (y + 20) + "px";
+        const ry = y + 20 + r.offsetHeight / 2, rx = lado === 0 ? x + 360 : x;
+        const sx = cx + (lado === 0 ? -120 : 120), c = r.style.borderColor;
+        svg += `<path d="M${sx},${cy} C${(sx + rx) / 2},${cy} ${(sx + rx) / 2},${ry} ${rx},${ry}" stroke="${c}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
+        y += hs[k] + gap;
+      });
+    });
+    mm.querySelector("svg").innerHTML = svg;
+  });
+}
+render(window.DOC);
+window.pronto = true;
+</script></body></html>
