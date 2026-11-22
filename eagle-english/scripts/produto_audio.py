@@ -41,7 +41,7 @@ def num(n):
 def nota(a, b):
     """semelhança 0–1 entre o texto e o que o Whisper ouviu, com números por extenso (12 → twelve)."""
     def f(t):
-        t = t.lower().replace("’", "'").replace(",", "").replace("%", " percent").replace("-", "").replace("911", "nine one one")
+        t = t.lower().replace("’", "'").replace(",", "").replace("%", " percent").replace("-", "").replace("911", "nine one one").replace("catchup", "ketchup").replace("catch up", "ketchup")
         for a, b in [("n't", " not"), ("'m", " am"), ("'re", " are"), ("'ll", " will"), ("'ve", " have"), ("'d", " would"),
                      ("'s", " is"), ("can not", "cannot"), ("check in", "check-in")]:
             t = t.replace(a, b)
