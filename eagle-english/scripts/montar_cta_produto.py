@@ -31,9 +31,9 @@ def lufs(arq):
 
 def montar():
     aud = lambda k: BASE / "audio" / f"{k}.wav"
-    t = 0.3; sons, fases = [], []
+    t = 0.2; sons, fases = [], []
     for k, fase in (("c1", 1), ("c2", 2), ("c3", 3)):
-        d = dur(aud(k)); sons.append((aud(k), t)); fases.append((t, t + d, fase)); t += d + (0.3 if k != "c3" else 1.1)
+        d = dur(aud(k)); sons.append((aud(k), t)); fases.append((t, t + d, fase)); t += d + (0.2 if k != "c3" else 0.6)
     total = t
     # envelope da voz (boca)
     env = np.zeros(int(total * FPS) + 2)

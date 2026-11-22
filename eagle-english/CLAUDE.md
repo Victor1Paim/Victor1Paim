@@ -258,9 +258,10 @@ Sempre a MESMA voz em tudo (vídeos, aulas, áudios do produto): **Achird** — 
 Trocar de chave do Gemini NÃO muda a voz; nunca trocar de voz/modelo para fugir de limite (se travar, esperar ou usar outra chave).
 
 ## CTA DO PRODUTO EM VÍDEO (22/11/2026, pedido do usuário — manda sobre "vídeos sem CTA de produto")
-A partir dos posts de seg 23/11, TODO vídeo diário termina com o clipe `assets/cta_produto/cta_produto.mp4` (16 s, sala de aula +
-lousa + personagem + voz Achird). Copy vende a SOLUÇÃO, não o produto (pedido 22/11): "Imagina desembarcar lá fora e saber exatamente
-o que dizer? No aeroporto, no hotel, no restaurante. Sem travar e sem depender do tradutor. Eu te mostro o caminho. O link tá na bio!", colado DEPOIS do CTA de engajamento:
+A partir dos posts de seg 23/11, TODO vídeo diário termina com o clipe `assets/cta_produto/cta_produto.mp4` (20 s, sala de aula +
+lousa + personagem + voz Achird). Copy vende a SOLUÇÃO (pesquisa Grok 22/11, `docs/PROMPT_GROK_CTA.md`: imigração = maior medo):
+"Imagina desembarcar, o fiscal perguntar o motivo da viagem, e você responder na hora, sem travar? Dá pra chegar lá, mesmo sendo
+iniciante. Imigração, hotel, restaurante: eu te mostro o que dizer. Faz o teste de um minuto e descobre o que falta pra você. O link tá na bio!", colado DEPOIS do CTA de engajamento:
 `python3 scripts/montar_cta_produto.py anexar posts/<post>` (guarda o original em video/final_sem_cta.mp4).
 Refazer o clipe: editar `assets/cta_produto/falas.json` → `vozes.py gerar assets/cta_produto` → `python3 scripts/montar_cta_produto.py`.
 Duração: o limite de 1 min 20 s agora conta SEM esse clipe? → decisão pendente do usuário (Lista 12 de 23/11 ficou com 94 s).
