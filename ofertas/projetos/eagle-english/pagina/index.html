@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="Você travaria no inglês na sua próxima viagem?"><meta property="og:description" content="Teste de 1 minuto: descubra o que falta pra você se virar lá fora."><meta property="og:image" content="https://eagle-viagem.vercel.app/og.jpg">
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body class="quiz-body">
 <header class="wrap marca" style="color:#fff"><img class="logo-img" src="img/logo.png" alt="" width="40" height="40"><span style="color:#fff">EAGLE <b>ENGLISH</b></span></header>
@@ -89,7 +89,7 @@ function resultado() {
       <li>Treine <b>${min} por dia</b> com frases prontas, em voz alta.</li>
       <li>Leve as frases no celular, com tradução e pronúncia escrita do jeito que se fala.</li>
     </ul>
-    <a class="btn btn-green btn-block" href="oferta.html?${q}#planos">Ver o plano pra minha viagem</a>
+    <a class="btn btn-green btn-block" href="oferta.html?${q}">Ver o plano pra minha viagem</a>
     <button class="voltar" id="refazer">Refazer o teste</button>`;
   document.getElementById("refazer").onclick = () => { for (const k in r) delete r[k]; i = 0; pergunta(); };
   try { localStorage.setItem("eagle_quiz", JSON.stringify({ ...r, perfil: perfil() })); } catch (e) {}

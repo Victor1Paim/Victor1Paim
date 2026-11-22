@@ -38,8 +38,8 @@
   // personaliza pelo quiz
   const q = new URLSearchParams(location.search);
   const D = { eua: "🗽 Pra sua viagem aos Estados Unidos", europa: "🇪🇺 Pra sua viagem à Europa", paraiso: "🏝️ Pra sua viagem dos sonhos", trabalho: "💼 Pra sua viagem a trabalho" };
-  const DT = { eua: "Pra sua viagem aos Estados Unidos.", europa: "Pra sua viagem à Europa.", paraiso: "Pra sua viagem dos sonhos.", trabalho: "Pra sua viagem a trabalho." };
-  const dt = document.getElementById("destino-txt"); if (dt && DT[q.get("destino")]) dt.textContent = DT[q.get("destino")];
+  // frase geral (pedido 22/11): vale pra qualquer destino fora do Brasil
+  const dt = document.getElementById("destino-txt"); if (dt) dt.textContent = "Pra sua próxima viagem pra fora do Brasil.";
 
   // trecho real da aula: toca só quando aparece na tela e sem "reduzir movimento"
   const vid = document.getElementById("previa");
@@ -61,9 +61,9 @@
   document.getElementById("barra-nome").textContent = C.nomeAvancado || "";
   document.getElementById("barra-preco").textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
   const barra = document.getElementById("barra"), planos = document.getElementById("planos");
-  const io = new IntersectionObserver(([e]) => barra.classList.toggle("on", !e.isIntersecting && scrollY > 500));
-  io.observe(planos);
-  addEventListener("scroll", () => { if (scrollY < 500) barra.classList.remove("on"); }, { passive: true });
+  // botão flutuante desde o início (quem já quer comprar vai direto); some enquanto os planos estão na tela
+  barra.classList.add("on");
+  new IntersectionObserver(([e]) => barra.classList.toggle("on", !e.isIntersecting), { threshold: .15 }).observe(planos);
 
   // painel de pendências
   if (q.has("dev") || /localhost|127\.0\.0\.1/.test(location.hostname)) {
