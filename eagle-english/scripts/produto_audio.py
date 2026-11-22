@@ -16,7 +16,7 @@ import vozes  # noqa: E402
 from recortar_whisper import recortar, gravar, norm  # noqa: E402
 
 VIAGEM = ["Aeroporto", "Hotel", "Restaurante", "Transporte", "Compras", "Saúde", "Banco e dinheiro",
-          "Cidade e passeios", "Emergências e problemas"]
+          "Cidade e passeios", "Emergências e problemas", "Entender e ser entendido"]
 SR = 48000
 
 

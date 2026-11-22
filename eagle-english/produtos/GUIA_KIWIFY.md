@@ -42,7 +42,7 @@ Texto da aula "Eagle 350": *Abra o PDF no celular e use o sumário clicável: to
 | 3. Materiais | Mapas Mentais Eagle | `06_Mapas_Mentais_Eagle.pdf` |
 | **4. Pra viagem** | Cola de viagem (salve no celular) | `07_Cola_de_Viagem.pdf` |
 | 4. Pra viagem | Checklist antes de embarcar | `08_Checklist_Antes_de_Embarcar.pdf` |
-| 4. Pra viagem | Áudio das frases de viagem | os 9 ZIPs `Audio_01-aeroporto.zip` … `Audio_09-emergencias-e-problemas.zip` (um anexo por situação) |
+| 4. Pra viagem | Áudio das frases de viagem | os 10 ZIPs `Audio_01-aeroporto.zip` … `Audio_10-entender-e-ser-entendido.zip` (um anexo por situação) |
 
 Texto da aula "Como usar o seu material":
 > 1. Assista a uma aula por dia (cerca de 3 minutos) e faça a página dela no Caderno de Exercícios.
