@@ -6,16 +6,16 @@
  "capa": "Como se diz\nno restaurante? 🍽️",
  "itens": [
   {
-   "en": "Is this table free?",
-   "pt": "essa mesa está livre",
-   "q": "q1",
-   "r": "r1"
+   "en": "No ice, please.",
+   "pt": "sem gelo, por favor",
+   "q": "qn1",
+   "r": "rn1"
   },
   {
-   "en": "What do you recommend?",
-   "pt": "o que você recomenda",
-   "q": "q2",
-   "r": "r2"
+   "en": "Just water.",
+   "pt": "só água",
+   "q": "qn2",
+   "r": "rn2"
   },
   {
    "en": "No onions, please.",
@@ -36,16 +36,16 @@
    "r": "r7"
   },
   {
-   "en": "Where's the restroom?",
-   "pt": "onde fica o banheiro",
-   "q": "q9",
-   "r": "r9"
+   "en": "More bread, please.",
+   "pt": "mais pão, por favor",
+   "q": "qn3",
+   "r": "rn3"
   },
   {
-   "en": "Can we split the bill?",
-   "pt": "a gente pode dividir a conta",
-   "q": "q11",
-   "r": "r11"
+   "en": "No sugar, please.",
+   "pt": "sem açúcar, por favor",
+   "q": "qn4",
+   "r": "rn4"
   },
   {
    "en": "Can I pay by card?",

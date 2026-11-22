@@ -267,3 +267,8 @@ Anexar: `python3 scripts/montar_cta_produto.py anexar posts/<post> [variante]` (
 em video/final_sem_cta.mp4). Nova variante: criar a pasta → `vozes.py gerar <pasta>` → `python3 scripts/montar_cta_produto.py <nome>`.
 Usar variantes DIFERENTES nos 2 vídeos do mesmo dia.
 **Duração (decisão 22/11):** o vídeo inteiro COM o CTA tem que caber em 1 min 20 s → Lista = 8 itens (reganchos depois do 3 e do 6).
+
+## NÍVEL DO INGLÊS NOS POSTS (22/11/2026, pedido do usuário — regra fixa)
+Manter o inglês BÁSICO (A1), onde está o engajamento: frases de 1 a 4 palavras, vocabulário do dia a dia, estruturas que se
+repetem ("No ice, please." / "Just water." / "More bread, please."). Nada de frases longas ou elaboradas nos vídeos e carrosséis
+("What do you recommend?", "Can we split the bill?" = avançado demais para o feed). Frases mais longas ficam para as aulas do produto.

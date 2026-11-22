@@ -179,6 +179,17 @@
    "id": "cta",
    "lingua": "pt",
    "texto": "Quantas das oito você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+  },
+  {
+   "id": "perguntas2_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: sem gelo, por favor?...\n\nComo se diz: só água?...\n\nComo se diz: mais pão, por favor?...\n\nComo se diz: sem açúcar, por favor?..."
+  },
+  {
+   "id": "respostas2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "No ice, please....\n\nJust water....\n\nMore bread, please....\n\nNo sugar, please."
   }
  ]
 }

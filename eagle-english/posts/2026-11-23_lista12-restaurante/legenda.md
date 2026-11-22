@@ -13,5 +13,5 @@ Comenta quantas das 8 você acertou 👇
 
 ## Comentário fixado
 ```
-"A gente pode dividir a conta?" é "Can we split the bill?" 🧾 Quantas você acertou?
+"Sem gelo, por favor" é "No ice, please." 🧊 Quantas das 8 você acertou?
 ```
