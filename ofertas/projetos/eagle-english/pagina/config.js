@@ -8,8 +8,8 @@ window.EAGLE = {
   nomeAvancado: "Eagle Primeira Classe",
 
   // Checkouts da Kiwify (2 produtos separados)
-  checkoutSimples: "",   // [PREENCHER] ex.: "https://pay.kiwify.com.br/XXXX"
-  checkoutAvancado: "",  // [PREENCHER]
+  checkoutSimples: "https://pay.kiwify.com.br/xuQpEa5",
+  checkoutAvancado: "https://pay.kiwify.com.br/4nzOEDz",
 
   // Preços
   precoSimples: "14,90",
@@ -22,6 +22,9 @@ window.EAGLE = {
 
   // Aulas gravadas do plano avançado: "" = já disponíveis; ou a data de liberação, ex.: "15/12"
   aulasLiberadasEm: "", // [PREENCHER se ainda não estiverem prontas]
+
+  // Pixel da Meta (só o número do ID, ex.: "1234567890"). Vazio = sem pixel.
+  pixelMeta: "",
 
   garantiaDias: 7,
   email: "eagleenglish.suporte12@gmail.com",

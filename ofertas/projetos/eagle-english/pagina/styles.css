@@ -37,10 +37,10 @@ a { color: inherit; }
   font: 700 17px/1 Inter, sans-serif; text-decoration: none; transition: transform .15s, background .15s, box-shadow .15s;
 }
 .btn:active { transform: scale(.98); }
-.btn-green { background: var(--red); color: #fff; box-shadow: 0 5px 0 var(--red-d), 0 12px 26px rgba(230,57,70,.3); }
+.btn-green { background: #D42E3B; color: #fff; box-shadow: 0 5px 0 var(--red-d), 0 12px 26px rgba(230,57,70,.3); }
 .btn-green:hover { background: var(--red-d); }
 .btn-green:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--red-d); }
-.btn-yellow { background: var(--red); color: #fff; box-shadow: 0 5px 0 var(--red-d), 0 12px 26px rgba(230,57,70,.3); }
+.btn-yellow { background: #D42E3B; color: #fff; box-shadow: 0 5px 0 var(--red-d), 0 12px 26px rgba(230,57,70,.3); }
 .btn-ghost { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
 .btn-block { width: 100%; }
 .btn[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
@@ -237,3 +237,37 @@ footer { padding: 26px 0 90px; text-align: center; color: var(--muted); font-siz
 .btn { display: inline-block; text-align: center; line-height: 1.25; padding: 16px 26px; }
 .btn-block { display: block; }
 .passo img { max-height: 240px; width: auto; margin: 0 auto; }
+
+/* ===== polimento (22/11, skills pagina-de-vendas + impeccable) ===== */
+::selection { background: var(--yellow); color: var(--navy); }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 6px; }
+html { accent-color: var(--red); scrollbar-color: var(--navy) var(--bg); }
+a { text-underline-offset: 3px; }
+.ic { width: 1.15em; height: 1.15em; flex: none; display: inline-block; vertical-align: -0.2em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.topo .ic { color: var(--yellow); margin-right: 6px; }
+.marca .logo { width: 34px; height: 34px; color: var(--navy); }
+.seguro .ic { width: 14px; height: 14px; margin-right: 5px; vertical-align: -2px; }
+.plano li .i .ic { width: 14px; height: 14px; stroke-width: 3; }
+.dor .dor-ic { width: 30px; height: 30px; color: var(--red); }
+.item .ico .ic { width: 38px; height: 38px; color: #fff; }
+.g-tit .ic { width: 24px; height: 24px; margin-right: 6px; vertical-align: -4px; }
+.box h3 { display: flex; align-items: center; gap: 8px; }
+.box .ok-ic { color: var(--green); stroke-width: 3; } .box .no-ic { color: var(--red); stroke-width: 3; }
+.dor-sol { border: 2px solid var(--red) !important; border-left-width: 2px !important; }
+#destino-txt:not(:empty) { display: block; font-weight: 800; color: var(--red); margin-bottom: 6px; }
+
+/* vídeo real da aula no topo: entra uma vez, de baixo pra cima, com o recorte abrindo */
+.tela video { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #2c4838; }
+.tela .rot { left: 10px; top: auto; bottom: 10px; }
+@keyframes abrir { from { clip-path: inset(48% 8% 48% 8% round 16px); filter: blur(6px); } to { clip-path: inset(0 0 0 0 round 16px); filter: blur(0); } }
+.bundle .tela { animation: abrir .8s cubic-bezier(.16,1,.3,1) .15s both; }
+
+/* planos como cartão de embarque */
+.bilhete { display: flex; justify-content: space-between; gap: 8px; font: 800 13px/1 "Barlow Condensed", sans-serif; letter-spacing: .6px; color: var(--muted); text-transform: uppercase; padding: 4px 0 10px; border-bottom: 2px dashed var(--line); margin-bottom: 8px; }
+.plano.top .bilhete { color: var(--red); margin-top: 8px; }
+.picote { position: relative; height: 0; border-top: 2px dashed #cfd5e2; margin: 18px -22px 18px; }
+.picote::before, .picote::after { content: ""; position: absolute; top: -13px; width: 24px; height: 24px; border-radius: 50%; background: var(--navy); }
+.picote::before { left: -12px; } .picote::after { right: -12px; }
+.btn-green:focus-visible, .btn-yellow:focus-visible { outline-color: var(--navy); }
+
+@media (prefers-reduced-motion: reduce) { .bundle .tela { animation: none; } }

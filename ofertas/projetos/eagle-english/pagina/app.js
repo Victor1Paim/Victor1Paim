@@ -38,7 +38,24 @@
   // personaliza pelo quiz
   const q = new URLSearchParams(location.search);
   const D = { eua: "🗽 Pra sua viagem aos Estados Unidos", europa: "🇪🇺 Pra sua viagem à Europa", paraiso: "🏝️ Pra sua viagem dos sonhos", trabalho: "💼 Pra sua viagem a trabalho" };
-  if (D[q.get("destino")]) document.getElementById("selo-destino").textContent = D[q.get("destino")];
+  const DT = { eua: "Pra sua viagem aos Estados Unidos.", europa: "Pra sua viagem à Europa.", paraiso: "Pra sua viagem dos sonhos.", trabalho: "Pra sua viagem a trabalho." };
+  const dt = document.getElementById("destino-txt"); if (dt && DT[q.get("destino")]) dt.textContent = DT[q.get("destino")];
+
+  // trecho real da aula: toca só quando aparece na tela e sem "reduzir movimento"
+  const vid = document.getElementById("previa");
+  if (vid && !matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) vid.play().catch(() => {}); else vid.pause(); }, { threshold: .4 }).observe(vid);
+  }
+
+  // Pixel da Meta (preencha pixelMeta no config.js): ViewContent na página, InitiateCheckout no clique do checkout
+  if (C.pixelMeta) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", C.pixelMeta); fbq("track", "PageView"); fbq("track", "ViewContent");
+  }
+  document.querySelectorAll("[data-checkout]").forEach(a => a.addEventListener("click", () => {
+    const av = a.dataset.checkout === "checkoutAvancado";
+    if (window.fbq) fbq("track", "InitiateCheckout", { value: parseFloat((av ? (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio) : C.precoSimples).replace(",", ".")), currency: "BRL", content_name: av ? C.nomeAvancado : C.nomeSimples });
+  }));
 
   // barra fixa no celular
   document.getElementById("barra-nome").textContent = C.nomeAvancado || "";
