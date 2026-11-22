@@ -14,4 +14,4 @@
 - Nomes dos planos (provisórios: Eagle Bagagem de Mão × Eagle Primeira Classe).
 - Links de checkout, e-mail, bloco "Quem criou".
 - Produzir antes de vender o Avançado: 10 aulas (ou `aulasLiberadasEm`), Mapas Mentais, áudio, cola de viagem, checklist.
-- Deploy na Vercel (`vercel link --project eagle-viagem` → `vercel deploy --prod`).
+- NO AR (22/11): https://eagle-viagem.vercel.app (quiz, link da bio) · https://eagle-viagem.vercel.app/oferta (vendas). Redeploy: `vercel deploy --prod --yes` dentro de pagina/ (config.privado.js precisa existir localmente).
