@@ -1,10 +1,10 @@
 # Guia de cadastro na Kiwify — 2 produtos
 
-Crie **2 produtos separados**, os dois como **Área de membros** (Kiwify Members). Os nomes ainda são provisórios: troque pelos que você escolher.
+Crie **2 produtos separados**, os dois como **Área de membros** (Kiwify Members). Nomes aprovados em 22/11: **Eagle Bagagem de Mão** (simples) e **Eagle Primeira Classe** (avançado). Suporte: eagleenglish.suporte12@gmail.com.
 Os arquivos estão nas pastas `produtos/simples/` e `produtos/avancado/`. Áudios e aulas foram enviados em ZIP e MP4.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-## PRODUTO 1 · Plano Simples — "Eagle Bagagem de Mão" (provisório)
+## PRODUTO 1 · Plano Simples — "Eagle Bagagem de Mão"
 - **Preço:** R$ 14,90 · pagamento único · PIX e cartão
 - **Garantia:** 7 dias
 - **Descrição curta (checkout):** Eagle 350 Mapas Visuais: 2.100 frases prontas em 35 situações, com tradução e pronúncia escrita. Bônus: 500 Frases para o Dia a Dia.
@@ -17,7 +17,7 @@ Os arquivos estão nas pastas `produtos/simples/` e `produtos/avancado/`. Áudio
 Texto da aula "Eagle 350": *Abra o PDF no celular e use o sumário clicável: toque na situação e vá direto ao mapa. Cada mapa tem 6 frases com tradução e pronúncia escrita.*
 
 ---------------------------------------------------------------------------------------------------------------------------------
-## PRODUTO 2 · Plano Avançado — "Eagle Primeira Classe" (provisório)
+## PRODUTO 2 · Plano Avançado — "Eagle Primeira Classe"
 - **Preço:** R$ 29,90 nas 100 primeiras vendas → depois R$ 37 · pagamento único · PIX e cartão
 - **Garantia:** 7 dias
 - **Descrição curta (checkout):** Tudo do Eagle 350 + 10 aulas gravadas, mapas mentais, áudio das frases de viagem, cola de viagem, checklist antes de embarcar, Guia de 21 Dias, 100 Combinações de Verbos e Cards de Gramática.
@@ -54,7 +54,5 @@ Texto da aula "Como usar o seu material":
 ## Depois de cadastrar, me mande
 - [ ] Link do checkout do Produto 1 (Simples)
 - [ ] Link do checkout do Produto 2 (Avançado)
-- [ ] E-mail de contato
-- [ ] Nomes finais dos planos
 
 Ao bater 100 vendas do Avançado: mude o preço para R$ 37 na Kiwify e me avise (troco `lancamento: false` no site).
