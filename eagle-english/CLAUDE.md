@@ -252,3 +252,7 @@ de mar, selo, palavra falada em verde, lista e cronômetro — não adicionar o 
 folha pautada realista (mesma do Caderno), título vermelho, 14 linhas "pt – en (pronúncia)" (preto/azul/vermelho), a voz lê pt → en,
 marca-texto amarelo varre a linha lida, ✓ verde nas lidas, CTA de salvar/comentar/seguir. Sem personagem. ~40 s.
 Falas: pt todas numa fala, en todas numa fala, cortadas com recortar_whisper.py. Exemplo: `posts/2026-11-24_caderno-falado-1/`.
+
+## VOZ ÚNICA DO PERSONAGEM (22/11 — regra fixa)
+Sempre a MESMA voz em tudo (vídeos, aulas, áudios do produto): **Achird** — pt no `gemini-3.8-flash-tts`, en no `gemini-3.8-flash-lite-tts`.
+Trocar de chave do Gemini NÃO muda a voz; nunca trocar de voz/modelo para fugir de limite (se travar, esperar ou usar outra chave).
