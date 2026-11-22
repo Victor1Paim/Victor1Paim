@@ -107,7 +107,10 @@ def pedir(req, tentativas=8):
                 raise
             msg = e.read().decode(errors="ignore")
             if "per day" in msg or "PerDay" in msg:
-                sys.exit("Limite DIÁRIO do Gemini gratuito atingido: tente amanhã ou ative o faturamento no AI Studio.")
+                if i >= 3:   # 22/11: às vezes o 429 "por dia" passa em 1 minuto; só desiste depois de 4 tentativas
+                    sys.exit("Limite DIÁRIO do Gemini gratuito atingido: tente amanhã ou ative o faturamento no AI Studio.")
+                print("  Gemini recusou (limite diário?); esperando 65 s e tentando de novo...", flush=True)
+                time.sleep(65); continue
             m = re.search(r"retry in ([0-9.]+)s", msg)
             espera = max(float(m.group(1)) if m else 20.0, 5.0) + 1
             print(f"  limite por minuto do Gemini; esperando {espera:.0f} s...", flush=True)
