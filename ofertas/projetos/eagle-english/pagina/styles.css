@@ -271,3 +271,4 @@ a { text-underline-offset: 3px; }
 .btn-green:focus-visible, .btn-yellow:focus-visible { outline-color: var(--navy); }
 
 @media (prefers-reduced-motion: reduce) { .bundle .tela { animation: none; } }
+.logo-img { width: 40px; height: 40px; border-radius: 50%; display: inline-block; flex: none; box-shadow: 0 2px 6px rgba(11,31,75,.25); }
