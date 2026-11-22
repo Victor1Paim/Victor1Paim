@@ -1,0 +1,89 @@
+{
+ "selo": "@eagle.english.br",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 38,
+ "contagem": 1.8,
+ "capa": "Como se diz\nno restaurante? 🍽️",
+ "itens": [
+  {
+   "en": "Is this table free?",
+   "pt": "essa mesa está livre",
+   "q": "q1",
+   "r": "r1"
+  },
+  {
+   "en": "What do you recommend?",
+   "pt": "o que você recomenda",
+   "q": "q2",
+   "r": "r2"
+  },
+  {
+   "en": "I'll have this one.",
+   "pt": "eu vou querer esse",
+   "q": "q3",
+   "r": "r3"
+  },
+  {
+   "en": "No onions, please.",
+   "pt": "sem cebola, por favor",
+   "q": "q4",
+   "r": "r4"
+  },
+  {
+   "en": "This is delicious!",
+   "pt": "isso está delicioso",
+   "q": "q5",
+   "r": "r5"
+  },
+  {
+   "en": "One more, please.",
+   "pt": "mais um, por favor",
+   "q": "q6",
+   "r": "r6"
+  },
+  {
+   "en": "It's too spicy.",
+   "pt": "está muito apimentado",
+   "q": "q7",
+   "r": "r7"
+  },
+  {
+   "en": "I'm vegetarian.",
+   "pt": "eu sou vegetariano",
+   "q": "q8",
+   "r": "r8"
+  },
+  {
+   "en": "Where's the restroom?",
+   "pt": "onde fica o banheiro",
+   "q": "q9",
+   "r": "r9"
+  },
+  {
+   "en": "Can I get a box?",
+   "pt": "pode embalar pra levar",
+   "q": "q10",
+   "r": "r10"
+  },
+  {
+   "en": "Can we split the bill?",
+   "pt": "a gente pode dividir a conta",
+   "q": "q11",
+   "r": "r11"
+  },
+  {
+   "en": "Can I pay by card?",
+   "pt": "posso pagar no cartão",
+   "q": "q12",
+   "r": "r12"
+  }
+ ],
+ "reganchos": {
+  "3": "rg1",
+  "6": "rg2",
+  "11": "rg3"
+ },
+ "capa_sub": "12 frases pro restaurante",
+ "cta": "cta",
+ "respiro": 0.3
+}

@@ -1,0 +1,234 @@
+{
+ "aula": 4,
+ "verbo": "GO",
+ "significado": "IR",
+ "fundo_inicio": 24,
+ "pronuncias": {
+  "GO": "gôu",
+  "WENT": "uént",
+  "I go to work": "ái gôu dâ bâs",
+  "Let's go!": "gôu a píktcher!",
+  "We went home": "it uént tu áuers"
+ },
+ "passos": [
+  {
+   "pt": "pt1",
+   "caixas": [
+    [
+     "1 verbo por dia",
+     "am",
+     "min"
+    ],
+    [
+     "100 dias seguidos",
+     "vm"
+    ]
+   ],
+   "bloco": 1
+  },
+  {
+   "pt": "pt2",
+   "bloco": 1
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "GO",
+     "am",
+     "g"
+    ],
+    [
+     "gôu",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt3",
+   "caixas": [
+    [
+     "GO",
+     "am",
+     "g"
+    ],
+    [
+     "gôu",
+     "pr"
+    ],
+    [
+     "IR",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "GO",
+     "am",
+     "g"
+    ],
+    [
+     "gôu",
+     "pr"
+    ],
+    [
+     "IR",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt4",
+   "bloco": 1
+  },
+  {
+   "pt": "pt5",
+   "caixas": [
+    [
+     "Eu vou trabalhar",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en2",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I go to work",
+     "am"
+    ],
+    [
+     "ái gôu dâ bâs",
+     "pr"
+    ],
+    [
+     "Eu vou trabalhar",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt6",
+   "bloco": 1
+  },
+  {
+   "pt": "pt7",
+   "caixas": [
+    [
+     "Vamos!",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en3",
+   "vezes": 2,
+   "caixas": [
+    [
+     "Let's go!",
+     "am"
+    ],
+    [
+     "gôu a píktcher!",
+     "pr"
+    ],
+    [
+     "Vamos!",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt8",
+   "bloco": 1
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "WENT",
+     "am",
+     "g"
+    ],
+    [
+     "uént",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt9",
+   "caixas": [
+    [
+     "WENT",
+     "am",
+     "g"
+    ],
+    [
+     "uént",
+     "pr"
+    ],
+    [
+     "PASSADO DE GO",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "WENT",
+     "am",
+     "g"
+    ],
+    [
+     "uént",
+     "pr"
+    ],
+    [
+     "PASSADO DE GO",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt10",
+   "bloco": 1
+  },
+  {
+   "en": "en5",
+   "vezes": 2,
+   "caixas": [
+    [
+     "We went home",
+     "am"
+    ],
+    [
+     "it uént tu áuers",
+     "pr"
+    ],
+    [
+     "A gente foi pra casa",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt11",
+   "fim": "SEGUE ✅\nE COMENTA\n“APRENDER”",
+   "bloco": 1
+  }
+ ]
+}

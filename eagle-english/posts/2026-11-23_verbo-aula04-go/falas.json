@@ -1,0 +1,100 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "falas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Go....\n\nI go to work....\n\nLet's go!...\n\nWent....\n\nWe went home."
+  },
+  {
+   "id": "pt1",
+   "lingua": "pt",
+   "texto": "Um verbo por dia, cem dias seguidos. Aula quatro."
+  },
+  {
+   "id": "pt2",
+   "lingua": "pt",
+   "texto": "Hoje, o verbo do dia é:"
+  },
+  {
+   "id": "pt3",
+   "lingua": "pt",
+   "texto": "Que quer dizer ir. Repita comigo:"
+  },
+  {
+   "id": "pt4",
+   "lingua": "pt",
+   "texto": "Vou te dar dois exemplos. O primeiro:"
+  },
+  {
+   "id": "pt5",
+   "lingua": "pt",
+   "texto": "Eu vou trabalhar."
+  },
+  {
+   "id": "pt6",
+   "lingua": "pt",
+   "texto": "E o outro:"
+  },
+  {
+   "id": "pt7",
+   "lingua": "pt",
+   "texto": "Vamos!"
+  },
+  {
+   "id": "pt8",
+   "lingua": "pt",
+   "texto": "Agora presta atenção: no passado, esse verbo muda tudo e vira:"
+  },
+  {
+   "id": "pt9",
+   "lingua": "pt",
+   "texto": "Repita comigo:"
+  },
+  {
+   "id": "pt10",
+   "lingua": "pt",
+   "texto": "Por exemplo: a gente foi pra casa."
+  },
+  {
+   "id": "pt11",
+   "lingua": "pt",
+   "texto": "Segue o perfil pra não perder a próxima aula, e comenta aprender!"
+  },
+  {
+   "id": "en1",
+   "lingua": "en",
+   "texto": "Go.",
+   "recorte": true
+  },
+  {
+   "id": "en2",
+   "lingua": "en",
+   "texto": "I go to work.",
+   "recorte": true
+  },
+  {
+   "id": "en3",
+   "lingua": "en",
+   "texto": "Let's go!",
+   "recorte": true
+  },
+  {
+   "id": "en4",
+   "lingua": "en",
+   "texto": "Went.",
+   "recorte": true
+  },
+  {
+   "id": "en5",
+   "lingua": "en",
+   "texto": "We went home.",
+   "recorte": true
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "capa": {
+  "foto": "img/capa.png",
+  "texto": "Repita até aprender\no inglês do dia a dia"
+ },
+ "frases": [
+  {
+   "pt": "Que pena!",
+   "en": "What a shame!",
+   "pron": "uât a xêim!"
+  },
+  {
+   "pt": "Calma! / Vai com calma!",
+   "en": "Take it easy!",
+   "pron": "têik it ízi!"
+  },
+  {
+   "pt": "Tô morrendo de sono.",
+   "en": "I'm so sleepy.",
+   "pron": "áim sôu slípi"
+  },
+  {
+   "pt": "Você que sabe.",
+   "en": "It's up to you.",
+   "pron": "its âp tu iú"
+  },
+  {
+   "pt": "Não acredito! / De jeito nenhum!",
+   "en": "No way!",
+   "pron": "nôu uêi!"
+  },
+  {
+   "pt": "Nem eu.",
+   "en": "Me neither.",
+   "pron": "mi náider"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}

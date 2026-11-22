@@ -1,0 +1,184 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: essa mesa está livre?...\n\nComo se diz: o que você recomenda?...\n\nComo se diz: eu vou querer esse?...\n\nComo se diz: sem cebola, por favor?...\n\nComo se diz: isso está delicioso?...\n\nComo se diz: mais um, por favor?...\n\nComo se diz: está muito apimentado?...\n\nComo se diz: eu sou vegetariano?...\n\nComo se diz: onde fica o banheiro?...\n\nComo se diz: pode embalar pra levar?...\n\nComo se diz: a gente pode dividir a conta?...\n\nComo se diz: posso pagar no cartão?..."
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Is this table free?...\n\nWhat do you recommend?...\n\nI'll have this one....\n\nNo onions, please....\n\nThis is delicious!...\n\nOne more, please....\n\nIt's too spicy....\n\nI'm vegetarian....\n\nWhere's the restroom?...\n\nCan I get a box?...\n\nCan we split the bill?...\n\nCan I pay by card?..."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: essa mesa está livre?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Is this table free?",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: o que você recomenda?",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "What do you recommend?",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: eu vou querer esse?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "I'll have this one.",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Como se diz: sem cebola, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "No onions, please.",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Como se diz: isso está delicioso?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "This is delicious!",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Como se diz: mais um, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "One more, please.",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Como se diz: está muito apimentado?",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "It's too spicy.",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "Como se diz: eu sou vegetariano?",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "I'm vegetarian.",
+   "recorte": true
+  },
+  {
+   "id": "q9",
+   "lingua": "pt",
+   "texto": "Como se diz: onde fica o banheiro?",
+   "recorte": true
+  },
+  {
+   "id": "r9",
+   "lingua": "en",
+   "texto": "Where's the restroom?",
+   "recorte": true
+  },
+  {
+   "id": "q10",
+   "lingua": "pt",
+   "texto": "Como se diz: pode embalar pra levar?",
+   "recorte": true
+  },
+  {
+   "id": "r10",
+   "lingua": "en",
+   "texto": "Can I get a box?",
+   "recorte": true
+  },
+  {
+   "id": "q11",
+   "lingua": "pt",
+   "texto": "Como se diz: a gente pode dividir a conta?",
+   "recorte": true
+  },
+  {
+   "id": "r11",
+   "lingua": "en",
+   "texto": "Can we split the bill?",
+   "recorte": true
+  },
+  {
+   "id": "q12",
+   "lingua": "pt",
+   "texto": "Como se diz: posso pagar no cartão?",
+   "recorte": true
+  },
+  {
+   "id": "r12",
+   "lingua": "en",
+   "texto": "Can I pay by card?",
+   "recorte": true
+  },
+  {
+   "id": "rg1",
+   "lingua": "pt",
+   "texto": "Curte o vídeo se você já sabia as três primeiras. Bora pra próxima!"
+  },
+  {
+   "id": "rg2",
+   "lingua": "pt",
+   "texto": "Pedir comida em inglês não é difícil. Você só ainda não segue esta página."
+  },
+  {
+   "id": "rg3",
+   "lingua": "pt",
+   "texto": "Se não quiser comentar, segura o botão de comentário e manda um emoji de comida."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas das doze você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+  }
+ ]
+}
