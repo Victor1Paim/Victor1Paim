@@ -277,3 +277,9 @@ a { text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .bundle .tela { animation: none; } }
 .logo-img { width: 40px; height: 40px; border-radius: 50%; display: inline-block; flex: none; box-shadow: 0 2px 6px rgba(11,31,75,.25); }
 .barra .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; min-height: 48px; white-space: nowrap; }
+
+.primeira { padding-top: 0; }
+.marca-escura { color: #fff; padding: 18px 0 8px; }
+.marca-escura b { color: var(--yellow); }
+.primeira .titulo { margin-top: 18px; }
+.hero .h-hero { font-size: clamp(40px, 8vw, 64px); margin: 18px 0 14px; color: var(--ink); }

@@ -62,7 +62,6 @@
   document.getElementById("barra-preco").textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
   const barra = document.getElementById("barra"), planos = document.getElementById("planos");
   // botão flutuante desde o início (quem já quer comprar vai direto); some enquanto os planos estão na tela
-  barra.classList.add("on");
   new IntersectionObserver(([e]) => barra.classList.toggle("on", !e.isIntersecting), { threshold: .15 }).observe(planos);
 
   // painel de pendências
