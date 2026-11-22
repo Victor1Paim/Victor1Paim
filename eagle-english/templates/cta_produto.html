@@ -40,9 +40,9 @@ const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;"
 window.render = st => {
   document.getElementById("logo").src = st.logo || "";
   const c = document.getElementById("corpo"); let h = "";
-  if (st.fase === 1) h = `<div class="t1">Quer viajar pra fora <em>sem travar</em> no inglês?</div>`;
-  else if (st.fase === 2) h = `<div class="nome">Eagle Primeira Classe</div><div class="lst">${["<b>10 aulas</b> como esta", "<b>2.100 frases</b> prontas", "<b>áudios</b> pra treinar"].map((x, i) => `<div class="${i < st.itens ? "on" : ""}">✓ ${x}</div>`).join("")}</div>`;
-  else if (st.fase === 3) h = `<div class="seta">↑</div><div class="bio">LINK NA BIO</div><div class="sub">Eagle Primeira Classe</div>`;
+  if (st.fase === 1) h = `<div class="t1">Imagina chegar lá fora e saber <em>exatamente</em> o que dizer?</div>`;
+  else if (st.fase === 2) h = `<div class="nome">Sem travar no inglês</div><div class="lst">${["no <b>aeroporto</b>", "no <b>hotel</b>", "no <b>restaurante</b>"].map((x, i) => `<div class="${i < st.itens ? "on" : ""}">✓ ${x}</div>`).join("")}</div>`;
+  else if (st.fase === 3) h = `<div class="seta">↑</div><div class="bio">LINK NA BIO</div><div class="sub">Começa por aqui</div>`;
   c.innerHTML = h;
   document.getElementById("pc").innerHTML = personagem(st);
 };

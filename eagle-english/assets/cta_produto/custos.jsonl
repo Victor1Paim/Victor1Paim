@@ -3,3 +3,9 @@
 {"quando": "2026-11-22T14:48:11", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 27, "saida_audio": 156}, "usd": 0.001418}
 {"quando": "2026-11-22T14:48:39", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 27, "saida_audio": 170}, "usd": 0.001543}
 {"quando": "2026-11-22T14:49:08", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 6, "saida_audio": 40}, "usd": 0.000363}
+{"quando": "2026-11-22T14:54:22", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 14, "saida_audio": 112}, "usd": 0.001015}
+{"quando": "2026-11-22T14:55:07", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 20, "saida_audio": 163}, "usd": 0.001477}
+{"quando": "2026-11-22T14:55:34", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 14, "saida_audio": 78}, "usd": 0.000709}
+{"quando": "2026-11-22T14:56:09", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 13, "saida_audio": 77}, "usd": 0.0007}
+{"quando": "2026-11-22T14:56:57", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 13, "saida_audio": 71}, "usd": 0.000646}
+{"quando": "2026-11-22T14:57:25", "etapa": "voz", "modelo": "gemini-3.8-flash-tts", "tokens": {"entrada_texto": 13, "saida_audio": 69}, "usd": 0.000628}
