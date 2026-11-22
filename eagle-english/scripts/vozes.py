@@ -43,7 +43,14 @@ def carregar_env():
                     os.environ.setdefault(k.strip(), v.strip())
 
 
+_CHAVE_I = 0
+
+
 def chave():
+    # GEMINI_KEY_FILES=a.key:b.key — várias chaves; quando uma bate o limite diário, passa para a próxima (22/11)
+    if os.environ.get("GEMINI_KEY_FILES"):
+        arqs = os.environ["GEMINI_KEY_FILES"].split(":")
+        return Path(arqs[_CHAVE_I % len(arqs)]).read_text().strip()
     if os.environ.get("GEMINI_KEY_FILE"):
         return Path(os.environ["GEMINI_KEY_FILE"]).read_text().strip()
     if os.environ.get("GEMINI_API_KEY"):
@@ -107,6 +114,11 @@ def pedir(req, tentativas=8):
                 raise
             msg = e.read().decode(errors="ignore")
             if "per day" in msg or "PerDay" in msg:
+                global _CHAVE_I
+                n = len(os.environ.get("GEMINI_KEY_FILES", "").split(":")) if os.environ.get("GEMINI_KEY_FILES") else 1
+                if n > 1 and _CHAVE_I < 2 * n:
+                    _CHAVE_I += 1; print(f"  limite diário nesta chave; trocando para a chave {_CHAVE_I % n + 1}/{n}", flush=True)
+                    req.headers["X-goog-api-key"] = chave(); continue
                 if i >= 3:   # 22/11: às vezes o 429 "por dia" passa em 1 minuto; só desiste depois de 4 tentativas
                     sys.exit("Limite DIÁRIO do Gemini gratuito atingido: tente amanhã ou ative o faturamento no AI Studio.")
                 print("  Gemini recusou (limite diário?); esperando 65 s e tentando de novo...", flush=True)
