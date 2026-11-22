@@ -8,8 +8,8 @@ window.EAGLE = {
   nomeAvancado: "Eagle Primeira Classe",
 
   // Checkouts da Kiwify (2 produtos separados)
-  checkoutSimples: "https://kiwify.app/67mo7Gg",
-  checkoutAvancado: "https://kiwify.app/hBG3XSO",
+  checkoutSimples: "https://pay.kiwify.com.br/xuQpEa5",
+  checkoutAvancado: "https://pay.kiwify.com.br/4nzOEDz",
 
   // Preços
   precoSimples: "14,90",
