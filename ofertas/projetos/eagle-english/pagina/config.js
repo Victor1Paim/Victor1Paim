@@ -3,7 +3,7 @@
    Campos "" aparecem como pendentes (abra com ?dev=1 para ver a lista).
    ============================================================ */
 window.EAGLE = {
-  // Nomes dos planos (provisórios — trocar quando o usuário escolher)
+  // Nomes dos planos (aprovados pelo usuário em 22/11)
   nomeSimples: "Eagle Bagagem de Mão",
   nomeAvancado: "Eagle Primeira Classe",
 
@@ -24,6 +24,7 @@ window.EAGLE = {
   aulasLiberadasEm: "", // [PREENCHER se ainda não estiverem prontas]
 
   garantiaDias: 7,
-  email: "",            // [PREENCHER] e-mail de contato
+  email: "eagleenglish.suporte12@gmail.com",
   instagram: "https://www.instagram.com/eagle.english.br/",
+  // CPF/CNPJ do vendedor: fica em config.privado.js (fora do git — o repositório é público). Ver config.privado.exemplo.js.
 };

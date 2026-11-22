@@ -1,0 +1,3 @@
+config.privado.js
+.env*
+.vercel

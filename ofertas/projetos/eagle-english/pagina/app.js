@@ -33,6 +33,8 @@
   // comparação com o combo Big Mac no iFood (R$ 46,90): vale com R$ 29,90 e com R$ 37
   const gp = document.getElementById("g-preco");
   if (gp) gp.textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
+  const vend = document.getElementById("vendedor");
+  if (vend) { const d = (window.EAGLE_PRIV || {}).documento; vend.textContent = d ? "Eagle English BR · " + d : ""; if (!d) pend.push("documento (config.privado.js)"); }
   // personaliza pelo quiz
   const q = new URLSearchParams(location.search);
   const D = { eua: "🗽 Pra sua viagem aos Estados Unidos", europa: "🇪🇺 Pra sua viagem à Europa", paraiso: "🏝️ Pra sua viagem dos sonhos", trabalho: "💼 Pra sua viagem a trabalho" };
