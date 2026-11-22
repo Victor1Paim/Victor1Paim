@@ -6,9 +6,9 @@
  "pronuncias": {
   "GO": "gôu",
   "WENT": "uént",
-  "I go to work": "ái gôu dâ bâs",
-  "Let's go!": "gôu a píktcher!",
-  "We went home": "it uént tu áuers"
+  "I go to work": "ái gôu tu uârk",
+  "Let's go!": "léts gôu!",
+  "We went home": "uí uént hôum"
  },
  "passos": [
   {
@@ -104,7 +104,7 @@
      "am"
     ],
     [
-     "ái gôu dâ bâs",
+     "ái gôu tu uârk",
      "pr"
     ],
     [
@@ -136,7 +136,7 @@
      "am"
     ],
     [
-     "gôu a píktcher!",
+     "léts gôu!",
      "pr"
     ],
     [
@@ -215,7 +215,7 @@
      "am"
     ],
     [
-     "it uént tu áuers",
+     "uí uént hôum",
      "pr"
     ],
     [
