@@ -2,7 +2,7 @@
 
 Ângulo: **viajar para fora sem travar no inglês.** Sem prometer fluência. Prova social só real (sem depoimentos por enquanto).
 **Decisão 22/11:** SITE NOVO do zero (baseado no atual eagle-pagina.vercel.app, que fica como referência) + o usuário remodela a Kiwify com
-**2 infoprodutos separados**: (1) Plano Simples — Eagle 350 + 500 Frases, R$ 14,90; (2) Plano Avançado — 10 itens, R$ 37 / R$ 29,90 até o Natal.
+**2 infoprodutos separados**: (1) Plano Simples — Eagle 350 + 500 Frases, R$ 14,90; (2) Plano Avançado — 10 itens, R$ 37 / R$ 29,90 nas 100 primeiras vendas.
 Cada botão da página leva ao checkout do seu produto. Sem lembrete de 26/12 (o usuário cuida da Kiwify).
 Estrutura aprovada: link da bio → quiz → resultado → página com 2 planos (Método Eagle Avançado em destaque × Eagle 350 Plano Simples).
 
@@ -103,8 +103,9 @@ Botão: **[Quero viajar sem travar]** → âncora dos planos
 ✓ Áudio das frases principais · ✓ Cola de viagem (1 página por situação) · ✓ Checklist "antes de embarcar" (aprovar)
 ✓ **Mapas Mentais Eagle** (novo, a produzir): ~15 mapas de 1 página, estilo resumo de concurso — tempos verbais, to be, perguntas
   (what/where/how…), in/on/at, verbos irregulares mais usados, make × do, frases de viagem por situação, números/horas/dinheiro.
-**De R$ 37 por R$ 29,90 — promoção de lançamento válida até o Natal (25/12, 23h59)** · pagamento único · [Quero o Método Eagle Avançado]
-(Depois de 25/12 o preço volta para R$ 37 na Kiwify e a página troca o texto — o prazo é real, então o contador pode ficar.)
+**De R$ 37 por R$ 29,90 — preço de lançamento para as 100 primeiras vendas** · pagamento único · [Quero o Método Eagle Avançado]
+(Decisão 22/11: troca o prazo do Natal pelas 100 primeiras vendas; o usuário muda para R$ 37 na Kiwify ao bater 100. AVISO PARA O SITE:
+sem contador de tempo; "restam X vagas" só se o número vier da contagem real de vendas — senão, só o texto "100 primeiras vendas".)
 
 **EAGLE 350 · PLANO SIMPLES** (botão contorno)
 ✓ Eagle 350 Mapas Visuais (2.100 frases)
@@ -144,7 +145,7 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## Pendências para publicar
-- [x] Preços: Simples R$ 14,90 · Avançado R$ 37 (cheio) / R$ 29,90 até o Natal (25/12).
+- [x] Preços: Simples R$ 14,90 · Avançado R$ 37 (cheio) / R$ 29,90 nas 100 primeiras vendas.
 - [ ] As 10 aulas: produzir ou definir data de liberação.
 - [ ] Bloco "Quem criou" (história real) e e-mail de contato.
 - [ ] Checkout da Kiwify com os 2 produtos (Plano Simples e Método Eagle Avançado) e os links.
@@ -155,7 +156,7 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 - "Tudo isso por menos que um combo de lanche." (versão sem marca — recomendada na página)
 - "Menos que um combo no McDonald's — e esse dura a viagem inteira." (versão com marca: ok em post/story; na página e em anúncio pago, preferir sem marca)
 - "Um lanche acaba em 10 minutos. Saber o que dizer lá fora vai com você para todas as viagens."
-- "Menos de R$ 1,50 por dia durante os 21 dias de treino." (até o Natal: R$ 29,90 ÷ 21 = R$ 1,42; depois: R$ 37 ÷ 21 = R$ 1,76 → "menos de R$ 1,80 por dia")
+- "Menos de R$ 1,50 por dia durante os 21 dias de treino." (lançamento: R$ 29,90 ÷ 21 = R$ 1,42; depois das 100 vendas: R$ 37 ÷ 21 = R$ 1,76 → "menos de R$ 1,80 por dia")
 - "O preço de um café no aeroporto lá fora — e você ainda sabe pedir ele em inglês."
 - "Paga uma vez, usa em todas as viagens." / "Acesso vitalício" → só se o acesso na Kiwify for mesmo sem prazo.
 Cuidado: sem "você vai ficar fluente"; o gancho é preço × valor duradouro, não promessa de resultado.
