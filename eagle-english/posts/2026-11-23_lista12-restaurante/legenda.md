@@ -1,10 +1,10 @@
-# Lista 12 — "No restaurante" (sem personagem) · seg 23/11 às 19h
+# Lista 8 — "No restaurante" (sem personagem) · seg 23/11 às 19h
 
 ## Legenda
 ```
-12 frases em inglês pra usar no restaurante 🍽️🇺🇸
+8 frases em inglês pra usar no restaurante 🍽️🇺🇸
 
-Comenta quantas das 12 você acertou 👇
+Comenta quantas das 8 você acertou 👇
 
 📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
 

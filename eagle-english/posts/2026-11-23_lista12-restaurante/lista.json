@@ -18,12 +18,6 @@
    "r": "r2"
   },
   {
-   "en": "I'll have this one.",
-   "pt": "eu vou querer esse",
-   "q": "q3",
-   "r": "r3"
-  },
-  {
    "en": "No onions, please.",
    "pt": "sem cebola, por favor",
    "q": "q4",
@@ -36,34 +30,16 @@
    "r": "r5"
   },
   {
-   "en": "One more, please.",
-   "pt": "mais um, por favor",
-   "q": "q6",
-   "r": "r6"
-  },
-  {
    "en": "It's too spicy.",
    "pt": "está muito apimentado",
    "q": "q7",
    "r": "r7"
   },
   {
-   "en": "I'm vegetarian.",
-   "pt": "eu sou vegetariano",
-   "q": "q8",
-   "r": "r8"
-  },
-  {
    "en": "Where's the restroom?",
    "pt": "onde fica o banheiro",
    "q": "q9",
    "r": "r9"
-  },
-  {
-   "en": "Can I get a box?",
-   "pt": "pode embalar pra levar",
-   "q": "q10",
-   "r": "r10"
   },
   {
    "en": "Can we split the bill?",
@@ -80,10 +56,9 @@
  ],
  "reganchos": {
   "3": "rg1",
-  "6": "rg2",
-  "11": "rg3"
+  "6": "rg2"
  },
- "capa_sub": "12 frases pro restaurante",
+ "capa_sub": "8 frases pro restaurante",
  "cta": "cta",
  "respiro": 0.2
 }

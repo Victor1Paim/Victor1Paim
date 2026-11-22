@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Inglês não precisa ser difícil."
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "Sem gramática chata e sem decoreba: só as frases que você vai usar de verdade, com a pronúncia escrita e aula curtinha."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Dá pra aprender no seu ritmo. Começa pelo teste de um minuto: o link tá na bio!"
+  }
+ ]
+}

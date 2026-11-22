@@ -40,9 +40,10 @@ const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;"
 window.render = st => {
   document.getElementById("logo").src = st.logo || "";
   const c = document.getElementById("corpo"); let h = "";
-  if (st.fase === 1) h = `<div class="t1">O fiscal pergunta…<br>e você responde <em>sem travar</em>?</div>`;
-  else if (st.fase === 2) h = `<div class="nome">Mesmo sendo iniciante</div><div class="lst">${["<b>imigração</b>", "<b>hotel</b>", "<b>restaurante</b>"].map((x, i) => `<div class="${i < st.itens ? "on" : ""}">✓ ${x}</div>`).join("")}</div>`;
-  else if (st.fase === 3) h = `<div class="seta">↑</div><div class="bio">LINK NA BIO</div><div class="sub">Teste de 1 minuto: você travaria?</div>`;
+  const T = st.textos || {};
+  if (st.fase === 1) h = `<div class="t1">${T.t1 || ""}</div>`;
+  else if (st.fase === 2) h = `<div class="nome">${esc(T.nome || "")}</div><div class="lst">${(T.itens || []).map((x, i) => `<div class="${i < st.itens ? "on" : ""}">✓ ${x}</div>`).join("")}</div>`;
+  else if (st.fase === 3) h = `<div class="seta">↑</div><div class="bio">LINK NA BIO</div><div class="sub">${esc(T.sub || "")}</div>`;
   c.innerHTML = h;
   document.getElementById("pc").innerHTML = personagem(st);
 };

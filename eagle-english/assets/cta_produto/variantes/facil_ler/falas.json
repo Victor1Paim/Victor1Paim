@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Sabia que dá pra aprender inglês lendo do jeito que se fala?"
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "Você vê a frase, lê a pronúncia escrita em português e repete comigo. Uma frase por vez, sem decoreba."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Faz o teste de um minuto e começa hoje. O link tá na bio!"
+  }
+ ]
+}

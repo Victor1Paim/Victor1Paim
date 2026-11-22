@@ -2,8 +2,10 @@
 """CTA do produto (pedido 22/11): clipe vertical de ~14 s no estilo das aulas (sala, lousa, personagem, voz Achird)
 para colar no FIM dos vídeos diários. Falas em assets/cta_produto/falas.json (gerar com vozes.py).
 
-  python3 scripts/montar_cta_produto.py            -> assets/cta_produto/cta_produto.mp4
-  python3 scripts/montar_cta_produto.py anexar posts/<post>   -> acrescenta o clipe ao final.mp4 do post (guarda final_sem_cta.mp4)
+  python3 scripts/montar_cta_produto.py <variante>                 -> assets/cta_produto/cta_<variante>.mp4
+  python3 scripts/montar_cta_produto.py anexar posts/<post> [variante]
+      -> acrescenta o clipe ao final.mp4 (guarda final_sem_cta.mp4). Sem variante: roda entre as variantes ROTACAO pela data do post.
+Variantes em assets/cta_produto/variantes/<nome>/ (falas.json + lousa.json; áudio com vozes.py gerar <pasta>).
 """
 import json, math, os, shutil, subprocess, sys, wave
 from pathlib import Path
@@ -12,6 +14,7 @@ import numpy as np
 
 PROJ = Path(__file__).resolve().parents[1]
 BASE = PROJ / "assets" / "cta_produto"
+ROTACAO = ["facil_ler", "facil_sem_gramatica", "facil_dez_minutos", "imigracao"]
 FPS = 15
 
 
@@ -29,8 +32,10 @@ def lufs(arq):
     return float(r[r.rindex("I:"):].split()[1])
 
 
-def montar():
-    aud = lambda k: BASE / "audio" / f"{k}.wav"
+def montar(nome):
+    V = BASE / "variantes" / nome
+    textos = json.load(open(V / "lousa.json"))
+    aud = lambda k: V / "audio" / f"{k}.wav"
     t = 0.2; sons, fases = [], []
     for k, fase in (("c1", 1), ("c2", 2), ("c3", 3)):
         d = dur(aud(k)); sons.append((aud(k), t)); fases.append((t, t + d, fase)); t += d + (0.2 if k != "c3" else 0.6)
@@ -53,7 +58,7 @@ def montar():
         e = env[k]; falando = e > 0.02
         st = {"fase": fase, "itens": 0 if x < a2 + (b2 - a2) * 0.30 else 1 if x < a2 + (b2 - a2) * 0.58 else 2 if x < a2 + (b2 - a2) * 0.82 else 3,
               "boca": 0 if e < 0.03 else (1 if (e > 0.09 and k % 4 < 2) else 2 if k % 4 < 3 else 1), "piscar": (x % 3.7) < 0.14,
-              "logo": (PROJ / "assets/marca/logo_eagle.png").as_uri(), "aponta": 0.15}
+              "logo": (PROJ / "assets/marca/logo_eagle.png").as_uri(), "aponta": 0.15, "textos": textos}
         if fase == 3:
             st["pose"] = "aponta" if falando else "feliz"
         elif falando:
@@ -66,7 +71,7 @@ def montar():
         if st["pose"] != atual:
             ant = atual or "neutro"; atual = st["pose"]; ini = k
         kk = min(1.0, (k - ini) / (0.4 * FPS)); st["pose_ant"] = ant; st["k"] = round(kk * kk * (3 - 2 * kk), 2)
-    tmp = BASE / "_tmp"; tmp.mkdir(exist_ok=True)
+    tmp = BASE / f"_tmp_{nome}"; tmp.mkdir(exist_ok=True)
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         cam = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
@@ -90,7 +95,7 @@ def montar():
         ent += ["-i", str(arq)]; ms = int(ini * 1000)
         fil.append(f"[{k + 1}:a]aresample=48000,aformat=channel_layouts=mono,adelay={ms}|{ms}[s{k}]")
     fil.append("".join(f"[s{k}]" for k in range(len(sons))) + f"amix=inputs={len(sons)}:normalize=0,apad=whole_dur={total:.3f},atrim=0:{total:.3f},loudnorm=I=-14:TP=-1.5:LRA=11[a]")
-    saida = BASE / "cta_produto.mp4"
+    saida = BASE / f"cta_{nome}.mp4"
     sh("-f", "concat", "-safe", "0", "-i", str(tmp / "lista.txt"), *ent, "-filter_complex", ";".join(fil),
        "-map", "0:v", "-map", "[a]", "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
        "-ar", "48000", "-ac", "2", "-t", f"{total:.3f}", "-movflags", "+faststart", str(saida))
@@ -98,27 +103,31 @@ def montar():
     if abs(l + 14) > 0.5:
         g = saida.with_name("_g.mp4")
         sh("-i", str(saida), "-c:v", "copy", "-af", f"volume={-14 - l:.2f}dB,alimiter=limit=0.89:level=false", "-c:a", "aac", "-b:a", "192k", str(g)); g.replace(saida)
-    sh("-i", str(saida), "-vf", f"fps=1/{total / 8:.3f},scale=270:480,tile=4x2", "-frames:v", "1", str(BASE / "contato.jpg"))
+    sh("-i", str(saida), "-vf", f"fps=1/{total / 8:.3f},scale=270:480,tile=4x2", "-frames:v", "1", str(BASE / f"contato_{nome}.jpg"))
     shutil.rmtree(tmp)
     print(f"ok -> {saida.relative_to(PROJ)} ({total:.1f} s, {lufs(saida):.1f} LUFS)")
 
 
-def anexar(post):
+def anexar(post, nome=None):
+    if not nome:
+        import hashlib
+        nome = ROTACAO[int(hashlib.md5(Path(post).name.encode()).hexdigest(), 16) % len(ROTACAO)]
     v = (PROJ / post).resolve() / "video"; final = v / "final.mp4"; orig = v / "final_sem_cta.mp4"
     if not orig.exists():
         shutil.copy(final, orig)
-    cta = BASE / "cta_produto.mp4"
+    cta = BASE / f"cta_{nome}.mp4"
     sh("-i", str(orig), "-i", str(cta), "-filter_complex",
        "[0:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v0];[1:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v1];"
        "[0:a]aresample=48000,aformat=channel_layouts=stereo[a0];[1:a]aresample=48000,aformat=channel_layouts=stereo[a1];"
        "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
        "-movflags", "+faststart", str(final))
     d = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(final)], capture_output=True, text=True).stdout)
-    print(f"ok -> {final.relative_to(PROJ)} com CTA do produto ({d:.1f} s)")
+    print(f"ok -> {final.relative_to(PROJ)} com CTA '{nome}' ({d:.1f} s)")
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "anexar":
-        anexar(sys.argv[2])
+        anexar(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
     else:
-        montar()
+        for n in (sys.argv[1:] or ROTACAO):
+            montar(n)
