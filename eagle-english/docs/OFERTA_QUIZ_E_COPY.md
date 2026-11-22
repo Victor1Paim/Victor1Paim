@@ -1,6 +1,9 @@
 # Quiz de entrada + copy da página — Eagle English BR (rascunho para aprovação, 21/11/2026)
 
 Ângulo: **viajar para fora sem travar no inglês.** Sem prometer fluência. Prova social só real (sem depoimentos por enquanto).
+**Decisão 22/11:** SITE NOVO do zero (baseado no atual eagle-pagina.vercel.app, que fica como referência) + o usuário remodela a Kiwify com
+**2 infoprodutos separados**: (1) Plano Simples — Eagle 350 + 500 Frases, R$ 14,90; (2) Plano Avançado — 10 itens, R$ 37 / R$ 29,90 até o Natal.
+Cada botão da página leva ao checkout do seu produto. Sem lembrete de 26/12 (o usuário cuida da Kiwify).
 Estrutura aprovada: link da bio → quiz → resultado → página com 2 planos (Método Eagle Avançado em destaque × Eagle 350 Plano Simples).
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -142,7 +145,6 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 ---------------------------------------------------------------------------------------------------------------------------------
 ## Pendências para publicar
 - [x] Preços: Simples R$ 14,90 · Avançado R$ 37 (cheio) / R$ 29,90 até o Natal (25/12).
-- [ ] Lembrete: em 26/12 trocar o preço na Kiwify para R$ 37 e tirar o contador/selo da promoção.
 - [ ] As 10 aulas: produzir ou definir data de liberação.
 - [ ] Bloco "Quem criou" (história real) e e-mail de contato.
 - [ ] Checkout da Kiwify com os 2 produtos (Plano Simples e Método Eagle Avançado) e os links.
