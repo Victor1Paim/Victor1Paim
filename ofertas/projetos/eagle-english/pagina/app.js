@@ -30,9 +30,9 @@
     : `<div class="por"><small>R$</small> ${C.precoAvancadoCheio}</div><div class="unico">pagamento único</div>`;
   if (C.aulasLiberadasEm) document.getElementById("aulas-nota").textContent = "pronúncia e fala, com exercícios · liberadas a partir de " + C.aulasLiberadasEm;
 
-  // comparação com o lanche: só vale enquanto o preço for R$ 29,90 (com R$ 37 o lanche fica mais barato → esconde)
+  // comparação com o combo Big Mac no iFood (R$ 46,90): vale com R$ 29,90 e com R$ 37
   const gp = document.getElementById("g-preco");
-  if (gp) { if (C.lancamento) gp.textContent = "R$ " + C.precoAvancado; else document.querySelector(".gancho").hidden = true; }
+  if (gp) gp.textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
   // personaliza pelo quiz
   const q = new URLSearchParams(location.search);
   const D = { eua: "🗽 Pra sua viagem aos Estados Unidos", europa: "🇪🇺 Pra sua viagem à Europa", paraiso: "🏝️ Pra sua viagem dos sonhos", trabalho: "💼 Pra sua viagem a trabalho" };
