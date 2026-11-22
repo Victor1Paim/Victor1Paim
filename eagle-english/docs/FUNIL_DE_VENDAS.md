@@ -44,7 +44,7 @@ que acontece lá fora (transporte, compras, saúde, dinheiro, cidade, emergênci
 | Preço sugerido | R$ 27,90–37 | R$ 12,90–14,90 |
 "Compra 100% segura · PIX ou cartão" sob cada botão; selo "7 dias de garantia · risco zero" abaixo.
 3. **Ancoragem honesta:** preço avulso real de cada material (ex.: 19,90 + 9,90 + 9,90 + 14,90 + 9,90 + 47 = R$ 112,50) → "De R$ 112,50".
-4. **Prova social SÓ REAL (decisão 21/11 — sem depoimento ou número de alunos inventado):** "+1.000 seguidores no Instagram"
+4. **Prova social SÓ REAL (decisão 21/11 — sem depoimento ou número de alunos inventado):** "+3.000 seguidores no Instagram"
    (e TikTok se real), prints de comentários reais do Instagram/TikTok (o usuário tem), turma beta (15–20 seguidores recebem o
    Completo grátis em troca de feedback honesto), contador real de alunos da Kiwify quando houver vendas, vídeo do material por dentro.
 
