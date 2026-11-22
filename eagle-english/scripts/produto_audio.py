@@ -41,7 +41,7 @@ def num(n):
 def nota(a, b):
     """semelhança 0–1 entre o texto e o que o Whisper ouviu, com números por extenso (12 → twelve)."""
     def f(t):
-        t = t.lower().replace("’", "'").replace(",", "")
+        t = t.lower().replace("’", "'").replace(",", "").replace("%", " percent").replace("-", "").replace("911", "nine one one")
         for a, b in [("n't", " not"), ("'m", " am"), ("'re", " are"), ("'ll", " will"), ("'ve", " have"), ("'d", " would"),
                      ("'s", " is"), ("can not", "cannot"), ("check in", "check-in")]:
             t = t.replace(a, b)
@@ -98,6 +98,22 @@ def main():
                 if min(notas) >= 0.7:
                     ok = True; break
                 print(f"  mapa {m['mapa']}: tentativa {tent + 1} reprovada {[round(n, 2) for n in notas]}")
+            if not ok:   # plano B: uma frase por pedido (números/siglas atrapalham o corte do lote)
+                pecas = []
+                for k, f in enumerate(frases):
+                    for tent in range(3):
+                        pw = tmp / f"p{k}.wav"
+                        vozes.tts(f, "Achird", "gemini-3.8-flash-lite-tts", pw, base, "en")
+                        ouvido = conf_w.transcribe(str(pw), language="en", fp16=False)["text"]
+                        if nota(f, ouvido) >= 0.7:
+                            break
+                        print(f"  mapa {m['mapa']} frase {k + 1}: {round(nota(f, ouvido), 2)} '{ouvido.strip()}'", flush=True)
+                    else:
+                        break
+                    from recortar_whisper import ler
+                    y, sr = ler(pw); pecas.append(y)
+                else:
+                    ok = True
             if not ok:
                 falhas.append(m["mapa"]); continue
             partes = [silencio(0.4)]
