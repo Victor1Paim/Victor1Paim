@@ -1,0 +1,234 @@
+{
+ "aula": 5,
+ "verbo": "HAVE",
+ "significado": "TER",
+ "fundo_inicio": 29,
+ "pronuncias": {
+  "HAVE": "rév",
+  "HAD": "réd",
+  "I have a dog": "ái rév a dóg",
+  "I have a question": "ái rév a kuéstchon",
+  "I had lunch": "ái réd lânch"
+ },
+ "passos": [
+  {
+   "pt": "pt1",
+   "caixas": [
+    [
+     "1 verbo por dia",
+     "am",
+     "min"
+    ],
+    [
+     "100 dias seguidos",
+     "vm"
+    ]
+   ],
+   "bloco": 1
+  },
+  {
+   "pt": "pt2",
+   "bloco": 1
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "HAVE",
+     "am",
+     "g"
+    ],
+    [
+     "rév",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt3",
+   "caixas": [
+    [
+     "HAVE",
+     "am",
+     "g"
+    ],
+    [
+     "rév",
+     "pr"
+    ],
+    [
+     "TER",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "HAVE",
+     "am",
+     "g"
+    ],
+    [
+     "rév",
+     "pr"
+    ],
+    [
+     "TER",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt4",
+   "bloco": 1
+  },
+  {
+   "pt": "pt5",
+   "caixas": [
+    [
+     "Eu tenho um cachorro",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en2",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I have a dog",
+     "am"
+    ],
+    [
+     "ái rév a dóg",
+     "pr"
+    ],
+    [
+     "Eu tenho um cachorro",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt6",
+   "bloco": 1
+  },
+  {
+   "pt": "pt7",
+   "caixas": [
+    [
+     "Eu tenho uma pergunta",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en3",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I have a question",
+     "am"
+    ],
+    [
+     "ái rév a kuéstchon",
+     "pr"
+    ],
+    [
+     "Eu tenho uma pergunta",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt8",
+   "bloco": 1
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "HAD",
+     "am",
+     "g"
+    ],
+    [
+     "réd",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt9",
+   "caixas": [
+    [
+     "HAD",
+     "am",
+     "g"
+    ],
+    [
+     "réd",
+     "pr"
+    ],
+    [
+     "PASSADO DE HAVE",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "HAD",
+     "am",
+     "g"
+    ],
+    [
+     "réd",
+     "pr"
+    ],
+    [
+     "PASSADO DE HAVE",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt10",
+   "bloco": 1
+  },
+  {
+   "en": "en5",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I had lunch",
+     "am"
+    ],
+    [
+     "ái réd lânch",
+     "pr"
+    ],
+    [
+     "Eu almocei",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt11",
+   "fim": "SEGUE ✅\nE COMENTA\n“APRENDER”",
+   "bloco": 1
+  }
+ ]
+}

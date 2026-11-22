@@ -1,0 +1,55 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: tá uma delícia?...\n\nComo se diz: muito bom?...\n\nComo se diz: quero mais?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "It's yummy!...\n\nSo good!...\n\nI want more!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E segue o perfil pra mais desafios como esse."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: tá uma delícia?"
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "It's yummy!"
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: muito bom?"
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "So good!"
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: quero mais?"
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "I want more!"
+  }
+ ]
+}

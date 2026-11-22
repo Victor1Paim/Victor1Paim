@@ -1,0 +1,51 @@
+{
+ "fundo_video": "maldivas",
+ "fundo_inicio": 3,
+ "repetir": 2,
+ "contagem": 2.5,
+ "rodadas": [
+  {
+   "titulo": "Tá uma delícia!",
+   "opcoes": [
+    "A) It's a delight!",
+    "B) It's yummy!",
+    "C) It's delicy!"
+   ],
+   "certa": 1,
+   "pron": "its iâmi!",
+   "q": "q1",
+   "r": "r1",
+   "en": "It's yummy!"
+  },
+  {
+   "titulo": "Muito bom!",
+   "opcoes": [
+    "A) So good!",
+    "B) Much good!",
+    "C) Very well!"
+   ],
+   "certa": 0,
+   "pron": "sôu gud!",
+   "q": "q2",
+   "r": "r2",
+   "en": "So good!"
+  },
+  {
+   "titulo": "Quero mais!",
+   "opcoes": [
+    "A) I want plus!",
+    "B) I love more!",
+    "C) I want more!"
+   ],
+   "certa": 2,
+   "pron": "ái uânt mór!",
+   "q": "q3",
+   "r": "r3",
+   "en": "I want more!"
+  }
+ ],
+ "cta": {
+  "fala": "cta",
+  "texto": "Quantas você\nacertou? 👇\n*SEGUE* pra mais!"
+ }
+}
