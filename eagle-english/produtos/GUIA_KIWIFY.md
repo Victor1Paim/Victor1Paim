@@ -56,3 +56,35 @@ Texto da aula "Como usar o seu material":
 - [ ] Link do checkout do Produto 2 (Avançado)
 
 Ao bater 100 vendas do Avançado: mude o preço para R$ 37 na Kiwify e me avise (troco `lancamento: false` no site).
+
+---------------------------------------------------------------------------------------------------------------------------------
+## Descrições completas (para a página do produto na Kiwify)
+
+### Eagle Bagagem de Mão
+Viaje com a frase certa no bolso. O Eagle 350 Mapas Visuais reúne 2.100 frases prontas em inglês, organizadas em 35 situações do dia a dia e da viagem: aeroporto, imigração, hotel, restaurante, transporte, compras, saúde, dinheiro, emergências e muito mais.
+
+Cada mapa traz 6 frases com tradução e pronúncia escrita do jeito que se lê em português. É só abrir o sumário clicável, tocar na situação e falar.
+
+O que você recebe:
+• Eagle 350 Mapas Visuais (PDF, 389 páginas, 2.100 frases)
+• Bônus: 500 Frases para o Dia a Dia (versão de bolso para consulta rápida)
+
+Funciona no celular, tablet ou computador, também sem internet. Acesso enviado ao seu e-mail logo após a confirmação do pagamento. 7 dias de garantia.
+
+### Eagle Primeira Classe
+Para quem quer treinar a fala antes de viajar, e não só consultar na hora. Além das 2.100 frases do Eagle 350, você recebe 10 aulas gravadas com um professor numa sala de aula: ele explica, você repete em voz alta e responde nos exercícios. Uma situação da viagem por aula, do aeroporto ao jantar.
+
+O que você recebe:
+• 10 aulas gravadas (primeiros passos, aeroporto, imigração, hotel, restaurante, transporte, compras, saúde e emergência, quando você não entende e uma simulação da viagem)
+• Caderno de Exercícios das aulas, com gabarito
+• Eagle 350 Mapas Visuais (2.100 frases com tradução e pronúncia escrita)
+• Áudio das frases de viagem: 100 faixas para ouvir, repetir na pausa e conferir
+• Mapas Mentais Eagle: 15 resumos de 1 página (gramática que trava e situações de viagem)
+• Cola de Viagem: 1 página por situação para salvar no celular
+• Checklist Antes de Embarcar: as 30 frases para treinar nos 7 dias antes da viagem
+• Guia de 21 Dias: rotina de 15 minutos por dia
+• 500 Frases para o Dia a Dia
+• 100 Combinações de Verbos (com exercícios e gabarito)
+• Cards de Gramática (do to be ao present perfect)
+
+Pagamento único. Acesso enviado ao seu e-mail logo após a confirmação do pagamento. Estude no celular, tablet ou computador. 7 dias de garantia: se não gostar, devolvemos 100% do valor.
