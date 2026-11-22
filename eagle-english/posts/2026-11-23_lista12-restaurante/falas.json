@@ -190,6 +190,54 @@
    "lingua": "en",
    "modelo": "gemini-3.8-flash-lite-tts",
    "texto": "No ice, please....\n\nJust water....\n\nMore bread, please....\n\nNo sugar, please."
+  },
+  {
+   "id": "qn1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: sem gelo, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "qn2",
+   "lingua": "pt",
+   "texto": "Como se diz: só água?",
+   "recorte": true
+  },
+  {
+   "id": "qn3",
+   "lingua": "pt",
+   "texto": "Como se diz: mais pão, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "qn4",
+   "lingua": "pt",
+   "texto": "Como se diz: sem açúcar, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "rn1",
+   "lingua": "en",
+   "texto": "No ice, please.",
+   "recorte": true
+  },
+  {
+   "id": "rn2",
+   "lingua": "en",
+   "texto": "Just water.",
+   "recorte": true
+  },
+  {
+   "id": "rn3",
+   "lingua": "en",
+   "texto": "More bread, please.",
+   "recorte": true
+  },
+  {
+   "id": "rn4",
+   "lingua": "en",
+   "texto": "No sugar, please.",
+   "recorte": true
   }
  ]
 }
