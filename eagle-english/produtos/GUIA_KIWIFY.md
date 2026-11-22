@@ -45,7 +45,7 @@ Texto da aula "Eagle 350": *Abra o PDF no celular e use o sumário clicável: to
 | 4. Pra viagem | Áudio das frases de viagem | os 9 ZIPs `Audio_01_aeroporto.zip` … `Audio_09_emergencias.zip` (um anexo por situação) |
 
 Texto da aula "Como usar o seu material":
-> 1. Assista a uma aula por dia (5 a 7 minutos) e faça a página dela no Caderno de Exercícios.
+> 1. Assista a uma aula por dia (cerca de 3 minutos) e faça a página dela no Caderno de Exercícios.
 > 2. Siga o Guia de 21 Dias: 15 minutos por dia com os mapas do Eagle 350.
 > 3. Na semana da viagem, use o Checklist Antes de Embarcar e salve a Cola de Viagem no celular.
 > 4. Ouça os áudios da situação que mais te preocupa: repita na pausa, em voz alta.
