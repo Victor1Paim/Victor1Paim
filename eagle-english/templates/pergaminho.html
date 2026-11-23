@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1440px;overflow:hidden}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center}
+#txt{position:absolute;left:170px;right:170px;top:230px;bottom:250px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#3a2412;font-family:Kalam}
+.tit{font-family:Caveat;font-weight:700;font-size:118px;line-height:1;color:#3a2412}
+.tit em{color:#9b1c1c;font-style:normal}
+.sub{font-size:46px;margin-top:26px;color:#5a3a1e}
+.sep{width:220px;height:3px;background:#7a5230;opacity:.5;margin:34px auto;border-radius:2px}
+.item{margin:18px 0}
+.pt{font-size:40px;color:#5a3a1e}
+.en{font-family:Caveat;font-weight:700;font-size:92px;line-height:1.02;color:#2a180b}
+.pr{font-size:44px;color:#9b1c1c;font-weight:700}
+.num{font-family:Caveat;font-weight:700;font-size:44px;color:#9b1c1c}
+.marca{position:absolute;left:0;right:0;bottom:205px;text-align:center;font-family:Kalam;font-size:30px;color:#6b4526;opacity:.85}
+.perfil{width:620px;border-radius:18px;box-shadow:0 8px 20px rgba(60,30,10,.35);margin:24px 0}
+</style></head><body><div id="bg"></div><div id="txt"></div><div class="marca">@eagle.english.br</div>
+<script>
+window.render=d=>{document.getElementById('bg').style.backgroundImage=`url(${d.fundo})`;const t=document.getElementById('txt');
+ if(d.tipo==='capa') t.innerHTML=`<div class="tit">${d.titulo}</div><div class="sep"></div><div class="sub">${d.sub}</div>`;
+ else if(d.tipo==='frases') t.innerHTML=d.frases.map((f,i)=>`${i?'<div class="sep"></div>':''}<div class="item"><div class="num">${f.n}</div><div class="pt">${f.pt}</div><div class="en">${f.en}</div><div class="pr">${f.pron}</div></div>`).join('');
+ else t.innerHTML=`<div class="tit" style="font-size:96px">${d.titulo}</div><img class="perfil" src="${d.perfil}"><div class="sub">${d.sub}</div>`;
+ document.fonts.ready.then(()=>{window.pronto=true});};
+</script></body></html>

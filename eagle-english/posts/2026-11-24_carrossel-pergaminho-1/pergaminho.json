@@ -1,0 +1,17 @@
+{
+ "fundo": "img/pergaminho.png",
+ "titulo": "Inglês <em>básico</em><br>pra viagem",
+ "sub": "8 frases que salvam<br>qualquer brasileiro lá fora ✈️",
+ "por_slide": 2,
+ "frases": [
+  {"pt": "Com licença.", "en": "Excuse me.", "pron": "ikskiúz mi"},
+  {"pt": "Quanto custa?", "en": "How much?", "pron": "ráu mâtch?"},
+  {"pt": "Eu não entendi.", "en": "I don't understand.", "pron": "ái dôunt ândersténd"},
+  {"pt": "Mais uma vez, por favor.", "en": "One more time, please.", "pron": "uân mór táim, plíz"},
+  {"pt": "Sim, por favor.", "en": "Yes, please.", "pron": "iés, plíz"},
+  {"pt": "Não, obrigado.", "en": "No, thanks.", "pron": "nôu, thénks"},
+  {"pt": "Sou brasileiro.", "en": "I'm Brazilian.", "pron": "áim brazílian"},
+  {"pt": "Só um momento.", "en": "Just a moment.", "pron": "djâst a môument"}
+ ],
+ "cta": {"perfil": "img/perfil.png", "titulo": "Salva e segue<br>pra mais 📌", "sub": "Uma frase nova todo dia"}
+}
