@@ -1,0 +1,234 @@
+{
+ "aula": 6,
+ "verbo": "DO",
+ "significado": "FAZER",
+ "fundo_inicio": 12,
+ "pronuncias": {
+  "DO": "du",
+  "DID": "did",
+  "What do you do?": "uât du iú du?",
+  "I do my homework": "ái du mái rôumuârk",
+  "I did it!": "ái did it!"
+ },
+ "passos": [
+  {
+   "pt": "pt1",
+   "caixas": [
+    [
+     "1 verbo por dia",
+     "am",
+     "min"
+    ],
+    [
+     "100 dias seguidos",
+     "vm"
+    ]
+   ],
+   "bloco": 1
+  },
+  {
+   "pt": "pt2",
+   "bloco": 1
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "DO",
+     "am",
+     "g"
+    ],
+    [
+     "du",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt3",
+   "caixas": [
+    [
+     "DO",
+     "am",
+     "g"
+    ],
+    [
+     "du",
+     "pr"
+    ],
+    [
+     "FAZER",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "DO",
+     "am",
+     "g"
+    ],
+    [
+     "du",
+     "pr"
+    ],
+    [
+     "FAZER",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt4",
+   "bloco": 1
+  },
+  {
+   "pt": "pt5",
+   "caixas": [
+    [
+     "O que você faz?",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en2",
+   "vezes": 2,
+   "caixas": [
+    [
+     "What do you do?",
+     "am"
+    ],
+    [
+     "uât du iú du?",
+     "pr"
+    ],
+    [
+     "O que você faz?",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt6",
+   "bloco": 1
+  },
+  {
+   "pt": "pt7",
+   "caixas": [
+    [
+     "Eu faço a lição",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en3",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I do my homework",
+     "am"
+    ],
+    [
+     "ái du mái rôumuârk",
+     "pr"
+    ],
+    [
+     "Eu faço a lição",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt8",
+   "bloco": 1
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "DID",
+     "am",
+     "g"
+    ],
+    [
+     "did",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt9",
+   "caixas": [
+    [
+     "DID",
+     "am",
+     "g"
+    ],
+    [
+     "did",
+     "pr"
+    ],
+    [
+     "PASSADO DE DO",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "DID",
+     "am",
+     "g"
+    ],
+    [
+     "did",
+     "pr"
+    ],
+    [
+     "PASSADO DE DO",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt10",
+   "bloco": 1
+  },
+  {
+   "en": "en5",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I did it!",
+     "am"
+    ],
+    [
+     "ái did it!",
+     "pr"
+    ],
+    [
+     "Eu consegui!",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt11",
+   "fim": "SEGUE ✅\nE COMENTA\n“APRENDER”",
+   "bloco": 1
+  }
+ ]
+}

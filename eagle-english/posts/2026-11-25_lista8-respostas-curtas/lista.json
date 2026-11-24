@@ -1,0 +1,64 @@
+{
+ "selo": "@eagle.english.br",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 20,
+ "contagem": 1.5,
+ "capa": "Como se diz\nem inglês? 🤔",
+ "itens": [
+  {
+   "en": "Sure!",
+   "pt": "claro",
+   "q": "q1",
+   "r": "r1"
+  },
+  {
+   "en": "Of course!",
+   "pt": "com certeza",
+   "q": "q2",
+   "r": "r2"
+  },
+  {
+   "en": "Me too!",
+   "pt": "eu também",
+   "q": "q3",
+   "r": "r3"
+  },
+  {
+   "en": "Not yet.",
+   "pt": "ainda não",
+   "q": "q4",
+   "r": "r4"
+  },
+  {
+   "en": "Why not?",
+   "pt": "por que não",
+   "q": "q5",
+   "r": "r5"
+  },
+  {
+   "en": "Okay!",
+   "pt": "tá bom",
+   "q": "q6",
+   "r": "r6"
+  },
+  {
+   "en": "Exactly!",
+   "pt": "exatamente",
+   "q": "q7",
+   "r": "r7"
+  },
+  {
+   "en": "You're welcome!",
+   "pt": "de nada",
+   "q": "q8",
+   "r": "r8"
+  }
+ ],
+ "reganchos": {
+  "3": "rg1",
+  "6": "rg2"
+ },
+ "capa_sub": "8 respostas curtas",
+ "cta": "cta",
+ "respiro": 0.2
+}

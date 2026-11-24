@@ -1,0 +1,131 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: claro?...\n\nComo se diz: com certeza?...\n\nComo se diz: eu também?...\n\nComo se diz: ainda não?...\n\nComo se diz: por que não?...\n\nComo se diz: tá bom?...\n\nComo se diz: exatamente?...\n\nComo se diz: de nada?..."
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Sure!...\n\nOf course!...\n\nMe too!...\n\nNot yet....\n\nWhy not?...\n\nOkay!...\n\nExactly!...\n\nYou're welcome!..."
+  },
+  {
+   "id": "rg1",
+   "lingua": "pt",
+   "texto": "Curte o vídeo se você já sabia as três primeiras. Bora pra próxima!"
+  },
+  {
+   "id": "rg2",
+   "lingua": "pt",
+   "texto": "Respostas curtas resolvem muita conversa. Segue a página!"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas das oito você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: claro?",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: com certeza?",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: eu também?",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Como se diz: ainda não?",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Como se diz: por que não?",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Como se diz: tá bom?",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Como se diz: exatamente?",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "Como se diz: de nada?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Sure!",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "Of course!",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Me too!",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "Not yet.",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Why not?",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "Okay!",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "Exactly!",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "You're welcome!",
+   "recorte": true
+  }
+ ]
+}

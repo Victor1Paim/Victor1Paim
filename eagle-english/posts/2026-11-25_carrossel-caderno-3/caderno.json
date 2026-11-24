@@ -1,0 +1,41 @@
+{
+ "pagina": "img/pagina.png",
+ "zoom": 1.6,
+ "marca": "@eagle.english.br",
+ "frases": [
+  {
+   "pt": "Cheguei em casa!",
+   "en": "I'm home!",
+   "pron": "áim rôum!"
+  },
+  {
+   "pt": "O jantar tá pronto.",
+   "en": "Dinner is ready.",
+   "pron": "díner iz rédi"
+  },
+  {
+   "pt": "Desculpa.",
+   "en": "I'm sorry.",
+   "pron": "áim sóri"
+  },
+  {
+   "pt": "Me espera!",
+   "en": "Wait for me!",
+   "pron": "uêit for mi!"
+  },
+  {
+   "pt": "Se cuida!",
+   "en": "Take care!",
+   "pron": "têik kér!"
+  },
+  {
+   "pt": "Dorme bem!",
+   "en": "Sleep well!",
+   "pron": "slíp uél!"
+  }
+ ],
+ "cta": {
+  "perfil": "img/perfil.png",
+  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+ }
+}
