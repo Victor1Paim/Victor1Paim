@@ -291,3 +291,7 @@ Exemplo: `posts/2026-11-27_carrossel-repita-5/`. Vídeos: Lista sempre com 12 it
 A Lista tem SEMPRE 12 itens (nunca 8/10 nem "Parte 1/2" por causa de tempo). O tamanho do vídeo NÃO é mais critério: use
 "contagem": 2.0 e "respiro": 0.4 (padrão) e re-ganchos depois dos itens 3, 6 e 11, mesmo que passe de 1 min 20 s. O CTA do produto
 continua como tempo extra no fim. Nos outros formatos, a duração é só uma referência, não um limite rígido.
+
+## STORIES DIÁRIOS (24/11/2026, pedido do usuário) — `docs/ROTINA_STORIES.md`
+5 stories por dia (abertura · frase do dia · quiz · CTA · resposta), adesivo de pedido no story 4, rodízio CTA do quiz (seg/qua/sex)
+x CTA do produto por público (ter mãe, qui já tentou, sáb viagem, dom caixinha + não só prova). `scripts/montar_stories.py`.
