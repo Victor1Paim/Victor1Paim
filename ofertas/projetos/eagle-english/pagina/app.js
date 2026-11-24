@@ -26,8 +26,8 @@
   // preço do avançado (lançamento só enquanto lancamento: true)
   const pa = document.getElementById("preco-avancado");
   pa.innerHTML = C.lancamento
-    ? `<div class="de">De R$ ${C.precoAvancadoCheio}</div><div class="por"><small>R$</small> ${C.precoAvancado}</div><div class="unico">pagamento único</div><span class="promo">🔥 ${C.textoLancamento}</span>`
-    : `<div class="por"><small>R$</small> ${C.precoAvancadoCheio}</div><div class="unico">pagamento único</div>`;
+    ? `<div class="de">De R$ ${C.precoAvancadoCheio}</div><div class="por"><small>R$</small> ${C.precoAvancado}</div><div class="unico">pagamento único ou <b>em até 3x no cartão</b></div><span class="promo">🔥 ${C.textoLancamento}</span>`
+    : `<div class="por"><small>R$</small> ${C.precoAvancadoCheio}</div><div class="unico">pagamento único ou <b>em até 3x no cartão</b></div>`;
   if (C.aulasLiberadasEm) document.getElementById("aulas-nota").textContent = "pronúncia e fala, com exercícios · liberadas a partir de " + C.aulasLiberadasEm;
 
   // comparação com o combo Big Mac no iFood (R$ 46,90): vale com R$ 29,90 e com R$ 37
@@ -62,7 +62,7 @@
 
   // barra fixa no celular
   document.getElementById("barra-nome").textContent = C.nomeAvancado || "";
-  document.getElementById("barra-preco").textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
+  document.getElementById("barra-preco").textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio) + " ou até 3x";
   const barra = document.getElementById("barra"), planos = document.getElementById("planos");
   // botão flutuante desde o início (quem já quer comprar vai direto); some enquanto os planos estão na tela
   new IntersectionObserver(([e]) => barra.classList.toggle("on", !e.isIntersecting), { threshold: .15 }).observe(planos);
