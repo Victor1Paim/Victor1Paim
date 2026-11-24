@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#0B1F4B">
-<title>Você travaria no inglês na sua próxima viagem? · Eagle English</title>
-<meta name="description" content="Responda 6 perguntas rápidas e descubra o que falta pra você se virar em inglês lá fora, sem precisar ser fluente.">
+<title>Por que o inglês ainda não pegou? · Eagle English</title>
+<meta name="description" content="Teste de 1 minuto: descubra o jeito mais fácil de aprender inglês, pra você ou pro seu filho, sem decoreba.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:title" content="Você travaria no inglês na sua próxima viagem?"><meta property="og:description" content="Teste de 1 minuto: descubra o que falta pra você se virar lá fora."><meta property="og:image" content="https://eagle-viagem.vercel.app/og.jpg">
-<link rel="stylesheet" href="styles.css?v=13">
+<meta property="og:title" content="Por que o inglês ainda não pegou?"><meta property="og:description" content="Teste de 1 minuto: descubra o jeito mais fácil de aprender, sem decoreba."><meta property="og:image" content="https://eagle-viagem.vercel.app/og.jpg">
+<link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body class="quiz-body">
 <header class="wrap marca" style="color:#fff"><img class="logo-img" src="img/logo.png" alt="" width="40" height="40"><span style="color:#fff">EAGLE <b>ENGLISH</b></span></header>
@@ -20,43 +20,42 @@
 <script src="config.js?v=4"></script>
 <script>
 const PERGUNTAS = [
-  { k: "destino", t: "Qual viagem você tem vontade de fazer?", o: [
-    ["eua", "🗽 Estados Unidos (Nova York, Orlando, Miami…)"], ["europa", "🇪🇺 Europa"],
-    ["paraiso", "🏝️ Um lugar paradisíaco (Maldivas, Caribe…)"], ["trabalho", "💼 Viagem a trabalho ou intercâmbio"] ] },
-  { k: "nivel", t: "Como está seu inglês hoje?", o: [
-    ["zero", "Sei quase nada"], ["palavras", "Entendo algumas palavras, mas não consigo falar"],
-    ["trava", "Leio bem, mas travo na hora de falar"], ["viro", "Me viro, mas quero mais segurança"] ] },
-  { k: "medo", t: "Qual dessas situações te dá mais frio na barriga?", o: [
-    ["aeroporto", "Imigração e aeroporto"], ["restaurante", "Pedir comida no restaurante"],
-    ["emergencia", "Pedir ajuda se algo der errado (mala perdida, farmácia…)"], ["conversa", "Conversar com alguém e não entender a resposta"] ] },
-  { k: "bloqueio", t: "O que mais te trava na hora de falar?", o: [
-    ["frase", "Não sei qual frase usar"], ["vergonha", "Tenho vergonha da minha pronúncia"],
-    ["esqueco", "Esqueço tudo na hora"], ["traduzo", "Penso em português e não consigo traduzir rápido"] ] },
-  { k: "tempo", t: "Quanto tempo por dia você teria pra treinar?", o: [
+  { k: "obj", t: "Pra que você quer o inglês?", o: [
+    ["viagem", "✈️ Viajar sem travar lá fora"], ["filho", "👦 Pro meu filho (férias, escola, futuro)"],
+    ["curso", "😓 Já fiz curso e não aprendi de verdade"], ["carreira", "📚 Concurso, prova ou trabalho"], ["vida", "🗣️ Conversar e entender no dia a dia"] ] },
+  { k: "hist", t: "Como foi sua experiência com inglês até hoje?", o: [
+    ["nunca", "Nunca estudei de verdade"], ["escola", "Só o da escola: decorei pra prova e esqueci"],
+    ["caro", "Paguei curso caro e aprendi pouco"], ["app", "Usei aplicativo, mas larguei"] ] },
+  { k: "nivel", t: "Como está o inglês hoje?", o: [
+    ["zero", "Quase nada"], ["palavras", "Entende algumas palavras, mas não fala"],
+    ["trava", "Lê bem, mas trava na hora de falar"], ["viro", "Se vira, mas quer mais segurança"] ] },
+  { k: "trava", t: "O que mais atrapalhou até agora?", o: [
+    ["decoreba", "Muita gramática e decoreba"], ["vergonha", "Vergonha da pronúncia"],
+    ["tempo", "Falta de tempo e constância"], ["frase", "Não saber o que dizer na hora"] ] },
+  { k: "tempo", t: "Quanto tempo por dia dá pra treinar?", o: [
     ["5", "5 minutos"], ["15", "15 minutos"], ["30", "30 minutos ou mais"] ] },
-  { k: "celular", t: "Se você tivesse a frase certa no celular, pronta pra cada situação, viajaria mais tranquilo?", o: [
-    ["sim", "Com certeza"], ["acho", "Acho que sim"], ["talvez", "Talvez"] ] },
+  { k: "precisa", t: "O que faria a diferença pra finalmente aprender?", o: [
+    ["simples", "Uma frase por vez, sem complicação"], ["aulas", "Aulas curtinhas com alguém explicando"],
+    ["pronuncia", "Saber pronunciar sem vergonha"], ["bolso", "Algo que caiba no bolso, sem mensalidade"] ] },
 ];
-const DESTINO = { eua: "nos Estados Unidos", europa: "na Europa", paraiso: "no paraíso", trabalho: "na sua viagem a trabalho" };
-const MEDO = { aeroporto: "a imigração e o aeroporto", restaurante: "o restaurante", emergencia: "uma emergência", conversa: "uma conversa de verdade" };
 const PERFIS = {
-  A: { nome: "Viajante Inseguro", txt: "Você não precisa ser fluente pra viajar. Precisa saber o que dizer em cada situação e ter isso à mão quando o frio na barriga bater." },
-  B: { nome: "Travado na Hora H", txt: "Você já sabe mais do que imagina. O que falta é frase pronta e treino de fala: parar de traduzir na cabeça e ter a resposta na ponta da língua." },
-  C: { nome: "Quase Lá", txt: "Você já se vira. Agora é ganhar segurança: revisar as situações que mais assustam e ter tudo organizado num lugar só." },
+  viagem:   { nome: "Viajante", tit: "Dá pra viajar sem travar no inglês.", txt: "Você não precisa ser fluente pra viajar. Precisa saber o que dizer em cada situação, do aeroporto ao jantar, e treinar a fala antes de ir." },
+  filho:    { nome: "Pai/mãe que quer o melhor", tit: "Inglês de verdade pro seu filho, sem mensalidade cara.", txt: "As férias são o momento perfeito: aulas curtinhas, frases do dia a dia e pronúncia escrita do jeito que se lê. Ele aprende pra usar, não pra decorar e esquecer depois da prova." },
+  curso:    { nome: "Cansado da decoreba", tit: "O problema não foi você. Foi o método.", txt: "Decorar pra prova faz a gente esquecer logo depois. Aqui é diferente: uma frase de verdade por vez, falada em voz alta, com a pronúncia escrita e aula curtinha." },
+  carreira: { nome: "Construindo a base", tit: "Base sólida, um pouco por dia.", txt: "Pra prova, concurso ou trabalho você precisa de base: vocabulário do dia a dia, os verbos que mais aparecem e a gramática em cards simples. Sem decoreba, no seu ritmo." },
+  vida:     { nome: "Quero conversar", tit: "Dá pra entender e falar no dia a dia.", txt: "Comece pelas frases que você realmente usa, treine a pronúncia em voz alta e vá juntando: em pouco tempo as respostas saem mais fácil." },
 };
+const DICA = { decoreba: "Troque a decoreba por frases prontas: uma por vez, em voz alta.", vergonha: "Leia a pronúncia escrita do jeito que se fala em português: a vergonha some quando você sabe como sai.",
+  tempo: "Faça pouco, mas todo dia: a constância vale mais que horas no fim de semana.", frase: "Tenha as frases de cada situação organizadas, pra achar em segundos." };
 const r = {}; let i = -1;
 const card = document.getElementById("card");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-function perfil() {
-  if (r.nivel === "viro") return "C";
-  if (r.nivel === "trava" || r.bloqueio === "traduzo") return "B";
-  return "A";
-}
+function perfil() { return PERFIS[r.obj] ? r.obj : "vida"; }
 function abertura() {
   card.innerHTML = `<span class="selo">Teste rápido · 1 minuto</span>
-    <h1 class="disp" style="margin-top:14px">Você travaria no inglês na sua próxima viagem? ✈️</h1>
-    <p>Responda 6 perguntas rápidas e descubra o que falta pra você se virar lá fora, sem precisar ser fluente.</p>
+    <h1 class="disp" style="margin-top:14px">Por que o inglês ainda não "pegou"? 🤔</h1>
+    <p>Responda 6 perguntas rápidas e descubra o jeito mais fácil de aprender, pra você ou pro seu filho, sem decoreba e sem mensalidade.</p>
     <button class="btn btn-green btn-block" id="go">Começar o teste</button>
     <p class="mini"><a href="oferta.html${location.search}">Prefiro ver os planos direto →</a></p>`;
   document.getElementById("go").onclick = () => { i = 0; pergunta(); };
@@ -78,18 +77,18 @@ function pergunta() {
 function resultado() {
   const p = PERFIS[perfil()];
   const min = r.tempo === "5" ? "5 minutos" : r.tempo === "30" ? "30 minutos" : "15 minutos";
-  const q = new URLSearchParams({ perfil: perfil(), destino: r.destino || "", medo: r.medo || "" });
+  const q = new URLSearchParams({ obj: perfil() });
   new URLSearchParams(location.search).forEach((v, k) => { if (k.startsWith("utm_")) q.set(k, v); });
   card.innerHTML = `<div class="prog"><i style="width:100%"></i></div>
     <span class="res-perfil">Seu perfil: ${p.nome}</span>
-    <h2 class="disp">Dá pra viajar ${DESTINO[r.destino] || "lá fora"} sem travar.</h2>
+    <h2 class="disp">${p.tit}</h2>
     <p>${p.txt}</p>
     <ul class="res-lista">
-      <li>Comece por <b>${MEDO[r.medo] || "as situações da viagem"}</b>: é o que mais te preocupa.</li>
-      <li>Treine <b>${min} por dia</b> com frases prontas, em voz alta.</li>
-      <li>Leve as frases no celular, com tradução e pronúncia escrita do jeito que se fala.</li>
+      <li>${DICA[r.trava] || DICA.frase}</li>
+      <li>Treine <b>${min} por dia</b>, em voz alta.</li>
+      <li>Use material com tradução e <b>pronúncia escrita</b> do jeito que se lê em português.</li>
     </ul>
-    <a class="btn btn-green btn-block" href="oferta.html?${q}">Ver o plano pra minha viagem</a>
+    <a class="btn btn-green btn-block" href="oferta.html?${q}">Ver o plano ideal pra mim</a>
     <button class="voltar" id="refazer">Refazer o teste</button>`;
   document.getElementById("refazer").onclick = () => { for (const k in r) delete r[k]; i = 0; pergunta(); };
   try { localStorage.setItem("eagle_quiz", JSON.stringify({ ...r, perfil: perfil() })); } catch (e) {}

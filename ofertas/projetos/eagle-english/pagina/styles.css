@@ -283,3 +283,12 @@ a { text-underline-offset: 3px; }
 .marca-escura b { color: var(--yellow); }
 .primeira .titulo { margin-top: 18px; }
 .hero .h-hero { font-size: clamp(40px, 8vw, 64px); margin: 18px 0 14px; color: var(--ink); }
+
+/* públicos (24/11) */
+.publicos .titulo em { color: var(--red); font-style: normal; }
+.pub-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); max-width: 980px; margin: 0 auto; }
+.pub { background: #fff; border: 2px solid var(--navy); border-radius: 16px; padding: 18px; box-shadow: 4px 4px 0 var(--navy); }
+.pub h3 { margin: 0 0 6px; color: var(--navy); font-size: 18px; }
+.pub p { margin: 0; color: var(--muted); font-size: 15px; }
+.pub.foco { border-color: var(--red); box-shadow: 4px 4px 0 var(--red); }
+.pub.foco h3 { color: var(--red); }

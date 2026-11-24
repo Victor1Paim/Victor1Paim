@@ -37,9 +37,12 @@
   if (vend) { const d = (window.EAGLE_PRIV || {}).documento; vend.textContent = d ? "Eagle English BR · " + d : ""; if (!d) pend.push("documento (config.privado.js)"); }
   // personaliza pelo quiz
   const q = new URLSearchParams(location.search);
-  const D = { eua: "🗽 Pra sua viagem aos Estados Unidos", europa: "🇪🇺 Pra sua viagem à Europa", paraiso: "🏝️ Pra sua viagem dos sonhos", trabalho: "💼 Pra sua viagem a trabalho" };
-  // frase geral (pedido 22/11): vale pra qualquer destino fora do Brasil
-  const dt = document.getElementById("destino-txt"); if (dt) dt.textContent = "Pra sua próxima viagem pra fora do Brasil.";
+  // frase do topo e card em destaque conforme a resposta do quiz (?obj=)
+  const OBJ = { viagem: "Pra sua próxima viagem pra fora do Brasil.", filho: "Pro seu filho aprender de verdade nas férias.",
+    curso: "Pra quem já fez curso e não aprendeu.", carreira: "Pra criar base pra prova, concurso e trabalho.", vida: "Pra entender e falar no dia a dia." };
+  const ob = q.get("obj"); const dt = document.getElementById("destino-txt");
+  if (dt) dt.textContent = OBJ[ob] || "";
+  const pc = document.getElementById("pub-" + ob); if (pc) { pc.classList.add("foco"); pc.parentNode.prepend(pc); }
 
   // trecho real da aula: toca só quando aparece na tela e sem "reduzir movimento"
   const vid = document.getElementById("previa");
