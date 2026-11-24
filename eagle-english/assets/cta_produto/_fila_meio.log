@@ -1,0 +1,29 @@
+    whisper: Tá curtindo a aula?
+c1: tentativa 1, 100.0%
+    whisper: No Eagle Primeira Classe tem muito mais.
+c2: tentativa 1, 85.7%
+    whisper: Link na bio. Bora continuar.
+c3: tentativa 1, 100.0%
+ok -> assets/cta_produto/variantes/pc_meio/audio/
+    whisper: Sem mensalidade, é pagamento único. E dá pra parcelar em até 3 vezes. O link tá na bio.
+c3: tentativa 1, 94.4%
+ok -> assets/cta_produto/variantes/pc_mae/audio/
+    whisper: Aprende uma vez e leva para a vida Em até 3 vezes no cartão O link está na bio
+c3: tentativa 1, 81.1%
+    whisper: Aprende uma vez e leva para a vida, em até três vezes no cartão. O link está na bio.
+c3: tentativa 2, 86.5%
+ok -> assets/cta_produto/variantes/pc_nao_so_prova/audio/
+    whisper: Dá uma chance para o jeito fácil, em até três vezes no cartão. O link está na bio.
+c3: tentativa 1, 85.7%
+ok -> assets/cta_produto/variantes/pc_ja_tentou/audio/
+    whisper: Pagamento único ou em até três vezes no cartão. O link tá na bio?
+c3: tentativa 1, 100.0%
+ok -> assets/cta_produto/variantes/pc_viagem/audio/
+ok -> assets/cta_produto/cta_pc_meio.mp4 (9.2 s, -14.0 LUFS)
+ok -> assets/cta_produto/cta_pc_mae.mp4 (19.1 s, -14.0 LUFS)
+ok -> assets/cta_produto/cta_pc_nao_so_prova.mp4 (18.6 s, -14.1 LUFS)
+ok -> assets/cta_produto/cta_pc_ja_tentou.mp4 (18.0 s, -14.1 LUFS)
+ok -> assets/cta_produto/cta_pc_viagem.mp4 (16.9 s, -14.1 LUFS)
+ok -> posts/2026-11-25_verbo-aula06-do/video/final.mp4 com chamada do meio em 29.8 s + CTA 'pc_mae' (77.8 s)
+ok -> posts/2026-11-25_lista12-respostas-curtas/video/final.mp4 com chamada do meio em 49.7 s + CTA 'pc_ja_tentou' (109.9 s)
+FIMMEIO

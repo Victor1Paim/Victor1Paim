@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Tá curtindo a aula?"
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "No Ígol Primeira Classe tem muito mais."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Link na bio. Bora continuar!"
+  }
+ ]
+}

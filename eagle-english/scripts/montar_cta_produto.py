@@ -108,7 +108,19 @@ def montar(nome):
     print(f"ok -> {saida.relative_to(PROJ)} ({total:.1f} s, {lufs(saida):.1f} LUFS)")
 
 
-def anexar(post, nome=None):
+def ponto_meio(arq, ini=0.60, fim=0.70):
+    """Ponto mais silencioso (média de 300 ms) entre 60% e 70% do vídeo: onde a chamada curta entra sem cortar fala."""
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", str(arq), "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
+                         capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, np.int16).astype(float) / 32768; sr = 8000; j = sr // 20            # janelas de 50 ms
+    e = np.sqrt(np.convolve((x[:len(x) // j * j].reshape(-1, j) ** 2).mean(1), np.ones(6) / 6, mode="same"))
+    a, b = int(len(e) * ini), int(len(e) * fim)
+    return (a + int(np.argmin(e[a:b]))) * 0.05
+
+
+def anexar(post, nome=None, meio="pc_meio"):
+    """final.mp4 = [vídeo até ~65%] + chamada curta (pc_meio, ~6 s) + [resto do vídeo] + CTA final da variante.
+    24/11: pedido do usuário (chamada leve no meio + CTA no fim). meio=None desliga a chamada do meio."""
     if not nome:
         import hashlib
         nome = ROTACAO[int(hashlib.md5(Path(post).name.encode()).hexdigest(), 16) % len(ROTACAO)]
@@ -116,18 +128,27 @@ def anexar(post, nome=None):
     if not orig.exists():
         shutil.copy(final, orig)
     cta = BASE / f"cta_{nome}.mp4"
-    sh("-i", str(orig), "-i", str(cta), "-filter_complex",
-       "[0:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v0];[1:v]fps=30,scale=1080:1920,setsar=1,format=yuv420p[v1];"
-       "[0:a]aresample=48000,aformat=channel_layouts=stereo[a0];[1:a]aresample=48000,aformat=channel_layouts=stereo[a1];"
-       "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
+    norm_v = "fps=30,scale=1080:1920,setsar=1,format=yuv420p"; norm_a = "aresample=48000,aformat=channel_layouts=stereo"
+    if meio:
+        t = ponto_meio(orig)
+        ent = ["-i", str(orig), "-i", str(BASE / f"cta_{meio}.mp4"), "-i", str(cta)]
+        fc = (f"[0:v]{norm_v},split[va][vb];[0:a]{norm_a},asplit[aa][ab];"
+              f"[va]trim=0:{t:.3f},setpts=PTS-STARTPTS[v0];[aa]atrim=0:{t:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(t - 0.08, 0):.3f}:d=0.08[a0];"
+              f"[vb]trim=start={t:.3f},setpts=PTS-STARTPTS[v2];[ab]atrim=start={t:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.08[a2];"
+              f"[1:v]{norm_v}[v1];[1:a]{norm_a}[a1];[2:v]{norm_v}[v3];[2:a]{norm_a}[a3];"
+              "[v0][a0][v1][a1][v2][a2][v3][a3]concat=n=4:v=1:a=1[v][a]")
+    else:
+        ent = ["-i", str(orig), "-i", str(cta)]
+        fc = f"[0:v]{norm_v}[v0];[1:v]{norm_v}[v1];[0:a]{norm_a}[a0];[1:a]{norm_a}[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]"
+    sh(*ent, "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-c:a", "aac", "-b:a", "192k",
        "-movflags", "+faststart", str(final))
     d = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(final)], capture_output=True, text=True).stdout)
-    print(f"ok -> {final.relative_to(PROJ)} com CTA '{nome}' ({d:.1f} s)")
+    print(f"ok -> {final.relative_to(PROJ)} com chamada do meio{f' em {t:.1f} s' if meio else ' (sem)'} + CTA '{nome}' ({d:.1f} s)")
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "anexar":
-        anexar(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+        anexar(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, None if "--sem-meio" in sys.argv else "pc_meio")
     else:
         for n in (sys.argv[1:] or ROTACAO):
             montar(n)

@@ -295,3 +295,11 @@ continua como tempo extra no fim. Nos outros formatos, a duração é só uma re
 ## STORIES DIÁRIOS (24/11/2026, pedido do usuário) — `docs/ROTINA_STORIES.md`
 5 stories por dia (abertura · frase do dia · quiz · CTA · resposta), adesivo de pedido no story 4, rodízio CTA do quiz (seg/qua/sex)
 x CTA do produto por público (ter mãe, qui já tentou, sáb viagem, dom caixinha + não só prova). `scripts/montar_stories.py`.
+
+## CHAMADA LEVE NO MEIO + "ATÉ 3X" (24/11/2026, pedido do usuário — manda sobre "CTA DO PRODUTO EM VÍDEO")
+Todo vídeo diário leva DUAS chamadas do Eagle Primeira Classe: (1) chamada curta (~6 s, `assets/cta_produto/cta_pc_meio.mp4`:
+"Tá curtindo a aula? No Eagle Primeira Classe tem muito mais. Link na bio. Bora continuar!") colada no ponto mais silencioso entre
+60% e 70% do vídeo; (2) o CTA completo da variante pc_* no fim. Um só comando faz as duas:
+`python3 scripts/montar_cta_produto.py anexar posts/<post> <variante>` (`--sem-meio` desliga a do meio).
+Parcelamento: o Eagle Primeira Classe sai "em até 3x no cartão" (falado no fim dos 4 CTAs e escrito na lousa). NÃO dizer se tem
+ou não juros. O Bagagem de Mão NÃO parcela: nunca falar de 3x para ele.

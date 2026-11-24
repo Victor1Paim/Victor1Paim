@@ -35,7 +35,8 @@
   }
  ],
  "cta": {
-  "perfil": "img/perfil.png",
-  "texto": "Frases prontas em inglês pra cada situação, com tradução e pronúncia 🇺🇸"
+  "perfil": "img/perfil.jpg",
+  "fundo": "#0c0f14",
+  "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"
  }
 }
