@@ -2,7 +2,7 @@
  "selo": "@eagle.english.br",
  "fundo_video": "maldivas",
  "fundo_inicio": 20,
- "contagem": 1.5,
+ "contagem": 2.0,
  "capa": "Como se diz\nem inglês? 🤔",
  "itens": [
   {
@@ -52,13 +52,38 @@
    "pt": "de nada",
    "q": "q8",
    "r": "r8"
+  },
+  {
+   "en": "I think so.",
+   "pt": "acho que sim",
+   "q": "q9",
+   "r": "r9"
+  },
+  {
+   "en": "Not really.",
+   "pt": "nem tanto",
+   "q": "q10",
+   "r": "r10"
+  },
+  {
+   "en": "Never!",
+   "pt": "nunca",
+   "q": "q11",
+   "r": "r11"
+  },
+  {
+   "en": "Great!",
+   "pt": "que ótimo",
+   "q": "q12",
+   "r": "r12"
   }
  ],
  "reganchos": {
   "3": "rg1",
-  "6": "rg2"
+  "6": "rg2",
+  "11": "rg3"
  },
- "capa_sub": "8 respostas curtas",
+ "capa_sub": "12 respostas curtas",
  "cta": "cta",
- "respiro": 0.2
+ "respiro": 0.4
 }

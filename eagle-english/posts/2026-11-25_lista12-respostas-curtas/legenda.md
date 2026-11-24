@@ -1,10 +1,10 @@
-# Lista 8 — "Respostas curtas" · qua 25/11 (19h) · CTA: pc_ja_tentou
+# Lista 12 — "Respostas curtas" · qua 25/11 (19h) · CTA: pc_ja_tentou
 
 ## Legenda
 ```
-8 respostas curtas em inglês que resolvem qualquer conversa 💬🇺🇸
+12 respostas curtas em inglês que resolvem qualquer conversa 💬🇺🇸
 
-Comenta quantas das 8 você acertou 👇
+Comenta quantas das 12 você acertou 👇
 
 💡 Já fez cursinho e não aprendeu? Conheça o Eagle Primeira Classe, o jeito fácil. Link na bio!
 

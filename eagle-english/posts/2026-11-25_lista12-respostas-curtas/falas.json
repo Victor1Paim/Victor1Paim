@@ -17,6 +17,17 @@
    "texto": "Sure!...\n\nOf course!...\n\nMe too!...\n\nNot yet....\n\nWhy not?...\n\nOkay!...\n\nExactly!...\n\nYou're welcome!..."
   },
   {
+   "id": "perguntas2_pt",
+   "lingua": "pt",
+   "texto": "Como se diz: acho que sim?...\n\nComo se diz: nem tanto?...\n\nComo se diz: nunca?...\n\nComo se diz: que ótimo?..."
+  },
+  {
+   "id": "respostas2_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "I think so....\n\nNot really....\n\nNever!...\n\nGreat!..."
+  },
+  {
    "id": "rg1",
    "lingua": "pt",
    "texto": "Curte o vídeo se você já sabia as três primeiras. Bora pra próxima!"
@@ -27,9 +38,14 @@
    "texto": "Respostas curtas resolvem muita conversa. Segue a página!"
   },
   {
+   "id": "rg3",
+   "lingua": "pt",
+   "texto": "Tá acertando tudo? Comenta um emoji de águia! Falta só uma."
+  },
+  {
    "id": "cta",
    "lingua": "pt",
-   "texto": "Quantas das oito você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+   "texto": "Quantas das doze você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
   },
   {
    "id": "q1",
@@ -125,6 +141,54 @@
    "id": "r8",
    "lingua": "en",
    "texto": "You're welcome!",
+   "recorte": true
+  },
+  {
+   "id": "q9",
+   "lingua": "pt",
+   "texto": "Como se diz: acho que sim?",
+   "recorte": true
+  },
+  {
+   "id": "q10",
+   "lingua": "pt",
+   "texto": "Como se diz: nem tanto?",
+   "recorte": true
+  },
+  {
+   "id": "q11",
+   "lingua": "pt",
+   "texto": "Como se diz: nunca?",
+   "recorte": true
+  },
+  {
+   "id": "q12",
+   "lingua": "pt",
+   "texto": "Como se diz: que ótimo?",
+   "recorte": true
+  },
+  {
+   "id": "r9",
+   "lingua": "en",
+   "texto": "I think so.",
+   "recorte": true
+  },
+  {
+   "id": "r10",
+   "lingua": "en",
+   "texto": "Not really.",
+   "recorte": true
+  },
+  {
+   "id": "r11",
+   "lingua": "en",
+   "texto": "Never!",
+   "recorte": true
+  },
+  {
+   "id": "r12",
+   "lingua": "en",
+   "texto": "Great!",
    "recorte": true
   }
  ]

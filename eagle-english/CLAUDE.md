@@ -286,3 +286,8 @@ Repita até aprender = capa (cenário do usuário) + **12 frases A1** (slides 02
 ("Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"). Quando o usuário mandar print
 novo do perfil, trocar o arquivo em assets/marca/. Legenda do carrossel = uma das linhas do Eagle Primeira Classe (seção CTA).
 Exemplo: `posts/2026-11-27_carrossel-repita-5/`. Vídeos: Lista sempre com 12 itens, e o CTA do produto é tempo EXTRA.
+
+## LISTA "COMO SE DIZ" = SEMPRE 12 ITENS, SEM SE PRENDER AO TEMPO (24/11/2026, pedido do usuário — manda sobre as regras de DURAÇÃO)
+A Lista tem SEMPRE 12 itens (nunca 8/10 nem "Parte 1/2" por causa de tempo). O tamanho do vídeo NÃO é mais critério: use
+"contagem": 2.0 e "respiro": 0.4 (padrão) e re-ganchos depois dos itens 3, 6 e 11, mesmo que passe de 1 min 20 s. O CTA do produto
+continua como tempo extra no fim. Nos outros formatos, a duração é só uma referência, não um limite rígido.
