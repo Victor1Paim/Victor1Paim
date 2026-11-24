@@ -121,7 +121,7 @@ Sob os botões: 🔒 Compra 100% segura · PIX ou cartão (Kiwify)
 ### Bloco 5 — Para quem é / não é (já existe na página atual, manter)
 
 ### Bloco 6 — Prova social real
-- **"+7.200 pessoas aprendendo inglês com a gente no Instagram"** (+ TikTok se real) com print do perfil.
+- **"+7.000 pessoas aprendendo inglês com a gente no Instagram"** (+ TikTok se real) com print do perfil.
 - Seção de depoimentos **só quando houver comentários/DMs reais de compradores**.
 
 ### Bloco 7 — Quem criou (história real do usuário — [PREENCHER])
