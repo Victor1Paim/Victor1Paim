@@ -35,3 +35,7 @@ Texto do adesivo de link: "Fazer o teste 👇" (quiz) / "Ver o Eagle Primeira Cl
 - Sem preço, sem número inventado, sem marca de concorrente. "Pagamento único / sem mensalidade" pode.
 - Respostas da caixinha e da enquete viram pauta (ganchos de vídeo e frases do Repita); quem responde no direct recebe resposta.
 - Datas especiais mandam no story 1 (Thanksgiving, Black Friday, Natal, férias escolares → público mãe/pai).
+
+## Horários e avisos (24/11)
+9h: stories 1–3 (+ carrossel do dia) · 12h: vídeo da aula + story 4 · 18h: story 5 · 19h: vídeo da noite.
+Avisos automáticos 10 min antes (8h50, 11h50, 17h50, 18h50) nesta sessão; a produção diária roda às 5h17.
