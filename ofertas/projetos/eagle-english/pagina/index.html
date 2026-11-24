@@ -21,11 +21,11 @@
 <script>
 const PERGUNTAS = [
   { k: "obj", t: "Pra que você quer o inglês?", o: [
-    ["viagem", "✈️ Viajar sem travar lá fora"], ["filho", "👦 Pro meu filho (férias, escola, futuro)"],
-    ["curso", "😓 Já fiz curso e não aprendi de verdade"], ["carreira", "📚 Concurso, prova ou trabalho"], ["vida", "🗣️ Conversar e entender no dia a dia"] ] },
+    ["filho", "👩‍👦 Pro meu filho estudar, sem pagar cursinho caro"], ["curso", "😓 Já fiz curso (ou a escola) e não aprendi"],
+    ["viagem", "✈️ Vou viajar e não quero travar"], ["carreira", "📚 Concurso, prova ou trabalho"], ["vida", "🗣️ Entender e conversar no dia a dia"] ] },
   { k: "hist", t: "Como foi sua experiência com inglês até hoje?", o: [
     ["nunca", "Nunca estudei de verdade"], ["escola", "Só o da escola: decorei pra prova e esqueci"],
-    ["caro", "Paguei curso caro e aprendi pouco"], ["app", "Usei aplicativo, mas larguei"] ] },
+    ["caro", "Paguei cursinho caro e aprendi pouco"], ["app", "Usei aplicativo, mas larguei"] ] },
   { k: "nivel", t: "Como está o inglês hoje?", o: [
     ["zero", "Quase nada"], ["palavras", "Entende algumas palavras, mas não fala"],
     ["trava", "Lê bem, mas trava na hora de falar"], ["viro", "Se vira, mas quer mais segurança"] ] },
@@ -36,11 +36,11 @@ const PERGUNTAS = [
     ["5", "5 minutos"], ["15", "15 minutos"], ["30", "30 minutos ou mais"] ] },
   { k: "precisa", t: "O que faria a diferença pra finalmente aprender?", o: [
     ["simples", "Uma frase por vez, sem complicação"], ["aulas", "Aulas curtinhas com alguém explicando"],
-    ["pronuncia", "Saber pronunciar sem vergonha"], ["bolso", "Algo que caiba no bolso, sem mensalidade"] ] },
+    ["pronuncia", "Saber pronunciar sem vergonha"], ["bolso", "Algo que caiba no bolso, sem mensalidade (dá pra parcelar)"] ] },
 ];
 const PERFIS = {
   viagem:   { nome: "Viajante", tit: "Dá pra viajar sem travar no inglês.", txt: "Você não precisa ser fluente pra viajar. Precisa saber o que dizer em cada situação, do aeroporto ao jantar, e treinar a fala antes de ir." },
-  filho:    { nome: "Pai/mãe que quer o melhor", tit: "Inglês de verdade pro seu filho, sem mensalidade cara.", txt: "As férias são o momento perfeito: aulas curtinhas, frases do dia a dia e pronúncia escrita do jeito que se lê. Ele aprende pra usar, não pra decorar e esquecer depois da prova." },
+  filho:    { nome: "Mãe/pai que quer o melhor", tit: "Inglês de verdade pro seu filho, sem pagar cursinho caro.", txt: "As férias são o momento perfeito: aulas curtinhas, frases do dia a dia e pronúncia escrita do jeito que se lê. Ele aprende pra usar, não pra decorar e esquecer depois da prova." },
   curso:    { nome: "Cansado da decoreba", tit: "O problema não foi você. Foi o método.", txt: "Decorar pra prova faz a gente esquecer logo depois. Aqui é diferente: uma frase de verdade por vez, falada em voz alta, com a pronúncia escrita e aula curtinha." },
   carreira: { nome: "Construindo a base", tit: "Base sólida, um pouco por dia.", txt: "Pra prova, concurso ou trabalho você precisa de base: vocabulário do dia a dia, os verbos que mais aparecem e a gramática em cards simples. Sem decoreba, no seu ritmo." },
   vida:     { nome: "Quero conversar", tit: "Dá pra entender e falar no dia a dia.", txt: "Comece pelas frases que você realmente usa, treine a pronúncia em voz alta e vá juntando: em pouco tempo as respostas saem mais fácil." },
