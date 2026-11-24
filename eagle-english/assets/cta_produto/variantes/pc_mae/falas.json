@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Quer que seu filho aprenda inglês de verdade, sem pagar uma mensalidade cara?"
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "No Ígol Primeira Classe tem aulas curtinhas, frases do dia a dia e a pronúncia escrita do jeito que se lê."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Pagamento único, sem mensalidade. O link tá na bio!"
+  }
+ ]
+}

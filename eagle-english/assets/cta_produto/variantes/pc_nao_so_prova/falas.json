@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Inglês não é só pra tirar nota e esquecer depois da prova."
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "No Ígol Primeira Classe você aprende as frases que usa de verdade, com aula, áudio e pronúncia escrita."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Aprende uma vez e leva pra vida. O link tá na bio!"
+  }
+ ]
+}

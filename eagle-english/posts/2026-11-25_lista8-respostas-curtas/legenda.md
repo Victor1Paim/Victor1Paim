@@ -1,4 +1,4 @@
-# Lista 8 — "Respostas curtas" · qua 25/11 (19h) · CTA: 10 minutos por dia
+# Lista 8 — "Respostas curtas" · qua 25/11 (19h) · CTA: pc_ja_tentou
 
 ## Legenda
 ```
@@ -6,7 +6,7 @@
 
 Comenta quantas das 8 você acertou 👇
 
-📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
+💡 Já fez cursinho e não aprendeu? Conheça o Eagle Primeira Classe, o jeito fácil. Link na bio!
 
 #inglesparabrasileiros #inglesdodiaadia #frasesemingles #comosedizemingles #testedeingles
 ```

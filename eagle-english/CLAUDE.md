@@ -257,16 +257,22 @@ Falas: pt todas numa fala, en todas numa fala, cortadas com recortar_whisper.py.
 Sempre a MESMA voz em tudo (vídeos, aulas, áudios do produto): **Achird** — pt no `gemini-3.8-flash-tts`, en no `gemini-3.8-flash-lite-tts`.
 Trocar de chave do Gemini NÃO muda a voz; nunca trocar de voz/modelo para fugir de limite (se travar, esperar ou usar outra chave).
 
-## CTA DO PRODUTO EM VÍDEO (22/11/2026, pedido do usuário — manda sobre "vídeos sem CTA de produto")
-A partir dos posts de seg 23/11, TODO vídeo diário termina com um clipe de CTA (até 20 s, sala de aula + lousa + personagem + voz
-Achird), colado DEPOIS do CTA de engajamento. O CTA VARIA entre os vídeos e vende a SOLUÇÃO / a FACILIDADE de aprender (pedido 22/11),
-não o produto: variantes em `assets/cta_produto/variantes/<nome>/` (falas.json + lousa.json) → clipes `assets/cta_produto/cta_<nome>.mp4`:
-`facil_ler` (inglês do jeito que se fala: vê, lê a pronúncia, repete), `facil_sem_gramatica` (sem gramática chata/decoreba),
-`facil_dez_minutos` (10 min por dia, um passo de cada vez), `imigracao` (pesquisa Grok, `docs/PROMPT_GROK_CTA.md`).
-Anexar: `python3 scripts/montar_cta_produto.py anexar posts/<post> [variante]` (sem variante = rodízio pela data; guarda o original
-em video/final_sem_cta.mp4). Nova variante: criar a pasta → `vozes.py gerar <pasta>` → `python3 scripts/montar_cta_produto.py <nome>`.
-Usar variantes DIFERENTES nos 2 vídeos do mesmo dia.
-**Duração (decisão 22/11):** o vídeo inteiro COM o CTA tem que caber em 1 min 20 s → Lista = 8 itens (reganchos depois do 3 e do 6).
+## CTA DO PRODUTO EM VÍDEO (22/11; REFEITO 24/11 pelo usuário — manda sobre "vídeos sem CTA de produto")
+Todo vídeo diário termina com um clipe de CTA (sala de aula + lousa + personagem + voz Achird), colado DEPOIS do CTA de engajamento.
+**Produto do CTA = EAGLE PRIMEIRA CLASSE (produto principal).** O CTA varia por PÚBLICO (não só quem vai viajar):
+`pc_mae` (mãe que quer curso fácil pro filho, sem mensalidade cara), `pc_nao_so_prova` (aprender de verdade, não só pra nota e esquecer),
+`pc_ja_tentou` (já fez cursinho e não aprendeu: o problema é o método), `pc_viagem` (vai viajar e tem medo de travar).
+Pastas em `assets/cta_produto/variantes/<nome>/` → clipes `assets/cta_produto/cta_<nome>.mp4`. Nunca citar marca de concorrente
+(nada de "Wizard" etc.: dizer "mensalidade cara", "cursinho"). Sem preço no vídeo ("pagamento único", "sem mensalidade" pode).
+Anexar: `python3 scripts/montar_cta_produto.py anexar posts/<post> [variante]` (sem variante = rodízio entre as 4 `pc_*`; guarda
+video/final_sem_cta.mp4). Variantes DIFERENTES nos 2 vídeos do dia. (As antigas facil_*/imigracao ficam fora do rodízio.)
+**DURAÇÃO (24/11, manda sobre a regra de 22/11):** o limite de 30 s–1 min 20 s vale para o vídeo SEM o CTA do produto; o CTA é tempo
+EXTRA. Lista volta a ter 12 itens (reganchos 3, 6, 11).
+**LEGENDA (24/11):** a linha do produto passa a ser do Eagle Primeira Classe, combinando com o CTA do vídeo:
+- pc_mae: "👩‍👦 Inglês de verdade pro seu filho, sem mensalidade cara: conheça o Eagle Primeira Classe, link na bio!"
+- pc_nao_so_prova: "📘 Inglês pra usar na vida, não só pra prova: conheça o Eagle Primeira Classe, link na bio!"
+- pc_ja_tentou: "💡 Já fez cursinho e não aprendeu? Conheça o Eagle Primeira Classe, o jeito fácil. Link na bio!"
+- pc_viagem: "✈️ Vai viajar? Eagle Primeira Classe: 10 aulas + 2.100 frases com pronúncia. Link na bio!"
 
 ## NÍVEL DO INGLÊS NOS POSTS (22/11/2026, pedido do usuário — regra fixa)
 Manter o inglês BÁSICO (A1), onde está o engajamento: frases de 1 a 4 palavras, vocabulário do dia a dia, estruturas que se

@@ -14,7 +14,7 @@ import numpy as np
 
 PROJ = Path(__file__).resolve().parents[1]
 BASE = PROJ / "assets" / "cta_produto"
-ROTACAO = ["facil_ler", "facil_sem_gramatica", "facil_dez_minutos", "imigracao"]
+ROTACAO = ["pc_mae", "pc_nao_so_prova", "pc_ja_tentou", "pc_viagem"]   # 24/11: CTA vende o Eagle Primeira Classe
 FPS = 15
 
 

@@ -1,0 +1,24 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "c1",
+   "lingua": "pt",
+   "texto": "Vai viajar pra fora e tem medo de travar no inglês?"
+  },
+  {
+   "id": "c2",
+   "lingua": "pt",
+   "texto": "O Ígol Primeira Classe tem dez aulas curtas, duas mil e cem frases prontas com pronúncia escrita e áudios pra treinar."
+  },
+  {
+   "id": "c3",
+   "lingua": "pt",
+   "texto": "Pagamento único. O link tá na bio!"
+  }
+ ]
+}

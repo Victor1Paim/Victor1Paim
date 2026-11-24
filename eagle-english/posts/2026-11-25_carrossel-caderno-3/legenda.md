@@ -6,7 +6,7 @@ Frases em inglês pra usar em casa 🏠🇺🇸
 
 Salva e repete uma por dia 📌 Qual você mais fala?
 
-📘 Quer 2.100 frases prontas com tradução e pronúncia? Conheça o Eagle 350, link na bio!
+📘 Inglês pra usar na vida, não só pra prova: conheça o Eagle Primeira Classe, link na bio!
 
 #inglesparabrasileiros #inglesdodiaadia #frasesemingles #aprenderingles #inglesfacil
 ```
