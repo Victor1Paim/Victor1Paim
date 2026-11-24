@@ -303,3 +303,13 @@ Todo vídeo diário leva DUAS chamadas do Eagle Primeira Classe: (1) chamada cur
 `python3 scripts/montar_cta_produto.py anexar posts/<post> <variante>` (`--sem-meio` desliga a do meio).
 Parcelamento: o Eagle Primeira Classe sai "em até 3x no cartão" (falado no fim dos 4 CTAs e escrito na lousa). NÃO dizer se tem
 ou não juros. O Bagagem de Mão NÃO parcela: nunca falar de 3x para ele.
+
+## ENTREGA ORGANIZADA POR DIA (24/11/2026, pedido do usuário — manda sobre a forma de entregar)
+Depois de produzir o dia: `python3 scripts/entrega_dia.py <AAAA-MM-DD>` → `entregas/<data>/` com os arquivos numerados NA ORDEM DE
+POSTAR e com o horário no nome (01_09h_story1.png … 11_12h_reels_aula.mp4 + _CAPA.png … 14_19h_reels_noite.mp4) e o roteiro
+`entregas/<data>.md` (horário, onde, arquivo, adesivo, música, capa, legenda e comentário fixado em blocos de código).
+Envio: uma mensagem por dia, com os arquivos de `entregas/<data>/` em ordem e o roteiro (resumido) no texto.
+Horários: 09h stories 1–3 + carrossel · 12h aula + story 4 · 18h story 5 · 19h vídeo da noite.
+**Capa do Repita: gerar EU MESMO** (não pedir ao usuário): prompt do cenário no legenda.md →
+`GEMINI_KEY_FILE=<scratchpad>/gemini_paga.key python3 scripts/imagem_gemini.py "<prompt>" posts/<post>/img/capa.png --post posts/<post> --proporcao 3:4 --modelo gemini-2.5-flash-image`
+e rodar o carrossel_tt de novo (o slide 01 sai com o texto da capa).
