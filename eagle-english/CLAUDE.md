@@ -278,3 +278,11 @@ EXTRA. Lista volta a ter 12 itens (reganchos 3, 6, 11).
 Manter o inglês BÁSICO (A1), onde está o engajamento: frases de 1 a 4 palavras, vocabulário do dia a dia, estruturas que se
 repetem ("No ice, please." / "Just water." / "More bread, please."). Nada de frases longas ou elaboradas nos vídeos e carrosséis
 ("What do you recommend?", "Can we split the bill?" = avançado demais para o feed). Frases mais longas ficam para as aulas do produto.
+
+## CARROSSEL REPITA: 12 FRASES + PRINT NOVO DO PERFIL (24/11/2026, pedido do usuário)
+Repita até aprender = capa (cenário do usuário) + **12 frases A1** (slides 02–13) + slide 14 com o **print do perfil**
+`assets/marca/perfil_instagram.jpg` (modo escuro): `"cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "..."}`
+(copiar o print para img/perfil.jpg do post). Texto do slide final vende a SOLUÇÃO, não só viagem
+("Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"). Quando o usuário mandar print
+novo do perfil, trocar o arquivo em assets/marca/. Legenda do carrossel = uma das linhas do Eagle Primeira Classe (seção CTA).
+Exemplo: `posts/2026-11-27_carrossel-repita-5/`. Vídeos: Lista sempre com 12 itens, e o CTA do produto é tempo EXTRA.

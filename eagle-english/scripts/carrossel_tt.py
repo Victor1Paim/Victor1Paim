@@ -21,7 +21,7 @@ def main(pasta):
     inicio = 1 if foto.exists() else 2
     slides += [{"tipo": "frase", **f} for f in c["frases"]]
     k = c["cta"]
-    slides.append({"tipo": "perfil", "src": (post / k["perfil"]).as_uri(), "texto": k.get("texto", "")} if k.get("perfil") else
+    slides.append({"tipo": "perfil", "src": (post / k["perfil"]).as_uri(), "texto": k.get("texto", ""), "fundo": k.get("fundo", "")} if k.get("perfil") else
                   {"tipo": "imagem", "src": (post / k["imagem"]).as_uri()} if k.get("imagem") else
                   {"tipo": "cta", **k, "mascote": (PROJ / "assets/mascote/oficial/boca_fechada.png").as_uri()})
     out = post / "slides"; out.mkdir(exist_ok=True)

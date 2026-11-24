@@ -11,7 +11,7 @@ cena desejável ligada ao tema, terço de baixo calmo para o texto branco. Repet
 
 Produção: `posts/<data>_carrossel-<tema>/carrossel.json` → `python3 scripts/carrossel_tt.py posts/<post>` (8 slides 1080x1440).
 Capa: `python3 scripts/imagem_gemini.py "<PROMPT>" posts/<post>/img/capa.png --post posts/<post> --proporcao 3:4 --modelo gemini-2.5-flash-image`
-(~R$ 0,21). CTA: `{"perfil": "img/perfil.png", "texto": "..."}` (copiar o perfil.png do carrossel do restaurante).
+(~R$ 0,21). CTA: `{"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "..."}` (copiar assets/marca/perfil_instagram.jpg; 24/11: 12 frases no Repita).
 
 **Regra do usuário (12/11): VARIAR SEMPRE o cenário da capa** — nunca repetir o tipo de lugar/luz/enquadramento do carrossel
 anterior (ex.: restaurante ao pôr do sol → bangalô nas Maldivas → janela de avião ao amanhecer → café em NY no outono…).

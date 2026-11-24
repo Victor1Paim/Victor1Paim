@@ -50,9 +50,9 @@ else if (d.tipo === "frase") h = `<div class="lista">
   <div class="lin pr"><div class="e">🗣️</div><div style="text-wrap:balance">${nb(d.pron)}</div></div></div>`;
 else if (d.tipo === "cta") h = `<div class="cta">${d.mascote ? `<img src="${d.mascote}">` : ""}<h1>${red(d.titulo)}</h1><p>${red(d.texto)}</p>
   <div class="botao">${esc(d.botao || "Link na bio 👆")}</div></div>`;
-else if (d.tipo === "perfil") h = `<div class="perfil"><img src="${d.src}"></div>
-  <svg class="seta" viewBox="0 0 1080 1440"><path d="M640 930 C 690 820, 660 760, 560 712" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/>
-  <path d="M552 708 L 608 690 M552 708 L 590 752" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/></svg>
+else if (d.tipo === "perfil") h = `<div class="perfil"${d.fundo ? ` style="background:${d.fundo}"` : ""}><img src="${d.src}"></div>
+  <svg class="seta" viewBox="0 0 1080 1440"><path d="M610 940 C 660 830, 630 770, 525 722" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/>
+  <path d="M517 718 L 573 700 M517 718 L 555 762" fill="none" stroke="#E63946" stroke-width="12" stroke-linecap="round"/></svg>
   <div class="legperfil">${esc(d.texto)}</div>`;
 else if (d.tipo === "imagem") h = `<div id="foto" style="background-image:url('${d.src}');background-size:contain;background-repeat:no-repeat"></div>`;
 document.getElementById("c").innerHTML = h;

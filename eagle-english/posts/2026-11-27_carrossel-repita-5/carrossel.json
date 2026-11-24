@@ -1,0 +1,19 @@
+{
+ "capa": {"foto": "img/capa.png", "texto": "Repita até aprender\no inglês do dia a dia"},
+ "frases": [
+  {"pt": "Tudo certo!", "en": "All good!", "pron": "ól gud!"},
+  {"pt": "Tô com fome.", "en": "I'm hungry.", "pron": "áim hângri"},
+  {"pt": "Você tá bem?", "en": "Are you okay?", "pron": "ár iú oukêi?"},
+  {"pt": "Não sei.", "en": "I don't know.", "pron": "ái dônt nôu"},
+  {"pt": "Entendi!", "en": "I got it!", "pron": "ái gárit!"},
+  {"pt": "De novo, por favor.", "en": "Again, please.", "pron": "aguén, plíz"},
+  {"pt": "Mais devagar, por favor.", "en": "Slower, please.", "pron": "slôuer, plíz"},
+  {"pt": "Bom trabalho!", "en": "Good job!", "pron": "gud djób!"},
+  {"pt": "Que legal!", "en": "How cool!", "pron": "ráu kúl!"},
+  {"pt": "Eu também!", "en": "Me too!", "pron": "mi tú!"},
+  {"pt": "De nada.", "en": "You're welcome.", "pron": "iór uélcam"},
+  {"pt": "Até amanhã!", "en": "See you tomorrow!", "pron": "si iú tumórou!"}
+ ],
+ "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14",
+         "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}
+}
