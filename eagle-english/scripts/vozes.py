@@ -167,7 +167,8 @@ def tts(texto, voz, modelo, saida, post, lingua="pt", instrucoes=None):
         texto = ("Say in Brazilian Portuguese: " if lingua == "pt" else "Say in American English: ") + texto
     body = {"contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
-                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}
+                                 "speechConfig": {"languageCode": "pt-BR" if lingua == "pt" else "en-US",   # 25/11: sem isso, às vezes saía sotaque de Portugal
+                                                  "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=json.dumps(body).encode(), headers={"x-goog-api-key": chave(), "Content-Type": "application/json"})

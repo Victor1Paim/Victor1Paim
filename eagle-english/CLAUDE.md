@@ -352,3 +352,8 @@ usuário (Drive): se faltar, pedir com antecedência (2 dias antes). CENA DE FIL
 "pronuncia" (6 palavras com ✗ como o brasileiro fala / ✓ como é; ex. posts/2026-12-03_carrossel-pronuncia-1), "igual" (5 pares de
 homófonos + som comum; ex. posts/2026-12-04_carrossel-igual-1), "vocab" (tema com 12 itens emoji/palavra/tradução/pronúncia, 6 por
 slide). Um emoji por quadro (dois emojis estouram a coluna). Todos terminam com o print do perfil. Sem custo de API.
+
+## SOTAQUE: SEMPRE PORTUGUÊS DO BRASIL (25/11/2026, reclamação do usuário)
+Algumas falas saíam com sotaque de Portugal. `vozes.py` agora manda `speechConfig.languageCode` = "pt-BR" (pt) / "en-US" (en) em
+toda geração do Gemini. Não remover. Se o usuário apontar sotaque de Portugal num vídeo, regerar as falas pt daquele post.
+Regeradas em pt-BR em 25/11: as 5 chamadas do produto (pc_meio + 4 pc_*), Aula 7 e ABC Thanksgiving (26/11).
