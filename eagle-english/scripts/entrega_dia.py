@@ -32,7 +32,8 @@ def main(data):
     st = next((p for p in posts if p.name.endswith("_stories")), None)
     aula = next((p for p in posts if "_verbo-" in p.name), None)
     carr = next((p for p in posts if "_carrossel-" in p.name), None)
-    noite = next((p for p in posts if p not in (st, aula, carr) and (p / "legenda.md").exists()), None)
+    meme = next((p for p in posts if "_meme-" in p.name), None)
+    noite = next((p for p in posts if p not in (st, aula, carr, meme) and (p / "legenda.md").exists()), None)
     pasta = PROJ / "entregas" / data
     if pasta.exists():
         shutil.rmtree(pasta)
@@ -91,6 +92,8 @@ def main(data):
         md.append(f"Legenda:\n```\n{b.get('Legenda', 'PENDENTE')}\n```\nComentário fixado:\n```\n{b.get('Comentário fixado', 'PENDENTE')}\n```\n")
 
     reels(aula, "12h", "aula")
+    if meme:
+        reels(meme, "15h", "meme")
     md.append("## 12h · Story do pedido\n"); story(4, "12h", "Adesivo LINK no espaço vazio, com o texto personalizado (veja abaixo). Música baixa ou nenhuma.")
     md.append("## 18h · Story da resposta\n"); story(5, "18h", "Música opcional. Depois veja quem respondeu o quiz e responda no direct quem errou.")
     reels(noite, "19h", "noite")

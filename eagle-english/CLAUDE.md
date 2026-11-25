@@ -326,3 +326,13 @@ Depois da produção e do push (a mídia precisa estar no GitHub), agendar com `
 **Onde a chamada do meio NÃO pode cair (25/11):** entre uma pergunta e a resposta, ou depois de "esse verbo vira:". Sempre conferir no
 Whisper e, se cair errado, refazer com `--meio-em=SEGUNDOS` (o script acha o silêncio a até 0,6 s): Verbo → antes de "Agora presta
 atenção" (pt8); ABC → depois da resposta da rodada 2; Lista → depois da resposta do item 8.
+
+## POST "MEME" (25/11/2026, pedido do usuário — ref. de perfil de inglês viral) — `scripts/montar_meme.py` + `templates/meme.html`
+Fundo preto, cabeçalho do perfil (logo + Eagle English BR + @, SEM selo de verificado), gancho em cima, trecho viral curto no meio
+(16:9 em 1080 de largura; 4:3 em 960), legenda original mantida, faixa do Eagle Primeira Classe entrando aos 45% (texto por público).
+`posts/<data>_meme-NN-<tema>/meme.json` (clipe, ini, fim, gancho com *negrito*, faixa, crop "w:h:x:y" se o vídeo veio editado por
+outra página) → video/final.mp4 + capa. Legenda com CRÉDITO ao autor original + linha do Primeira Classe + #memesdeingles.
+Fluxo: usuário baixa com yt-dlp (`C:\Users\victo\Videos\Aulas Eagle`) e sobe na pasta do Drive 1bDdwI7LxWN0vpy09SYi7ZbdvAW43dMlL;
+eu acho pelo conector do Google Drive e baixo com curl em `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`.
+Brutos fora do git. **Dias: 15h nos dias SEM carrossel** (calendário). Nunca reaproveitar o texto/cabeçalho de outra página (recortar só
+a cena). Quando o estoque de memes prontos acabar, pedir 2 a 4 links novos ao usuário com os comandos do yt-dlp prontos.
