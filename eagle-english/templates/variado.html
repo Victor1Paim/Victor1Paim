@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Carrosséis variados (25/11, refs do usuário): "A pronúncia é igual!", "Não confunda!" (falsos cognatos),
+     "Pronúncia certa ✗/✓" e "Vocabulário com emoji". Fundo claro, 1080x1440. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Anton&display=swap">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1440px; overflow:hidden; font-family:"Poppins"; background:#FBF6EC; color:#0B1F4B; }
+  .titulo { position:absolute; top:70px; left:60px; right:60px; text-align:center; font-family:"Anton"; font-size:96px; line-height:1.05; letter-spacing:.01em; }
+  .titulo .r { color:#E63946; }
+  .contador { position:absolute; right:50px; top:30px; background:#0B1F4B; color:#fff; border-radius:30px; padding:4px 20px; font-size:28px; font-weight:600; }
+  .arroba { position:absolute; left:60px; bottom:42px; font-size:30px; font-weight:700; color:#0B1F4B; opacity:.75; }
+  /* par: duas colunas */
+  .par { position:absolute; top:260px; left:50px; right:50px; display:flex; gap:40px; }
+  .col { flex:1 1 0; min-width:0; background:#fff; border-radius:40px; padding:40px 20px 36px; text-align:center; box-shadow:0 10px 0 rgba(11,31,75,.12); }
+  .emoji { font-size:200px; white-space:nowrap; line-height:1.1; }
+  .w { font-size:88px; font-weight:900; margin-top:10px; line-height:1; }
+  .tr { font-size:42px; font-weight:600; color:#4A5875; margin-top:12px; }
+  .pr { font-size:40px; font-weight:800; color:#1FA855; margin-top:10px; }
+  .som { position:absolute; left:0; right:0; top:1010px; text-align:center; }
+  .som span { display:inline-block; background:#E63946; color:#fff; font-size:96px; font-weight:900; border-radius:30px; padding:6px 50px 14px; }
+  .som small { display:block; font-size:34px; font-weight:700; color:#4A5875; margin-bottom:14px; }
+  .nota { position:absolute; left:60px; right:60px; top:1040px; text-align:center; font-size:54px; font-weight:800; color:#E63946; text-wrap:balance; }
+  /* pronúncia ✗/✓ */
+  .pron { position:absolute; top:250px; left:60px; right:60px; text-align:center; }
+  .pron .emoji { font-size:230px; }
+  .pron .w { font-size:150px; }
+  .linhaX, .linhaV { margin:30px auto 0; width:820px; border-radius:30px; padding:20px 30px; font-size:76px; font-weight:900; display:flex; align-items:center; gap:30px; justify-content:center; }
+  .linhaX { background:#FDE3E5; color:#C42A37; } .linhaX b { text-decoration:line-through; text-decoration-thickness:6px; }
+  .linhaV { background:#DDF6E5; color:#15803D; }
+  /* vocab */
+  .grade { position:absolute; top:250px; left:50px; right:50px; display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .item { background:#fff; border-radius:34px; padding:22px 20px; display:flex; align-items:center; gap:22px; box-shadow:0 8px 0 rgba(11,31,75,.1); height:300px; }
+  .item .e { font-size:130px; line-height:1; }
+  .item .w { font-size:54px; margin:0; } .item .tr { font-size:34px; margin-top:6px; } .item .pr { font-size:32px; margin-top:4px; }
+  /* capa */
+  .capa { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 70px 80px; }
+  .capa h1 { font-family:"Anton"; font-size:150px; line-height:1.02; }
+  .capa h1 .r { color:#E63946; }
+  .capa p { font-size:50px; font-weight:700; margin-top:30px; color:#4A5875; text-wrap:balance; }
+  .capa .emojis { font-size:190px; margin-top:50px; letter-spacing:20px; }
+  .arrasta { position:absolute; bottom:50px; right:60px; font-size:40px; font-weight:800; background:#E63946; color:#fff; padding:10px 28px; border-radius:40px; }
+</style></head><body><div id="c"></div>
+<script>
+const d = window.DADOS;
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const red = s => esc(s).replace(/\*(.+?)\*/g, '<span class="r">$1</span>').replace(/\n/g, "<br>");
+let h = "";
+if (d.tipo === "capa") {
+  h = `<div class="capa"><h1>${red(d.titulo)}</h1><p>${esc(d.sub || "")}</p><div class="emojis">${d.emojis || ""}</div></div><div class="arrasta">Arrasta 👉</div>`;
+} else if (d.tipo === "par") {
+  const col = x => `<div class="col"><div class="emoji">${x.emoji}</div><div class="w">${esc(x.en)}</div><div class="tr">${esc(x.pt)}</div>${x.pron ? `<div class="pr">🗣️ ${esc(x.pron)}</div>` : ""}</div>`;
+  h = `<div class="titulo">${red(d.titulo)}</div><div class="par">${col(d.a)}${col(d.b)}</div>`;
+  if (d.som) h += `<div class="som"><small>as duas soam igual:</small><span>/${esc(d.som)}/</span></div>`;
+  if (d.nota) h += `<div class="nota">${red(d.nota)}</div>`;
+} else if (d.tipo === "pron") {
+  h = `<div class="titulo" style="font-size:80px">${red(d.titulo)}</div><div class="pron"><div class="emoji">${d.emoji}</div><div class="w">${esc(d.en)}</div>
+       <div class="tr">${esc(d.pt)}</div><div class="linhaX">✗ <b>${esc(d.errado)}</b></div><div class="linhaV">✓ ${esc(d.certo)}</div></div>`;
+} else if (d.tipo === "vocab") {
+  h = `<div class="titulo" style="font-size:84px">${red(d.titulo)}</div><div class="grade">${d.itens.map(x => `<div class="item"><div class="e">${x.emoji}</div>
+       <div><div class="w">${esc(x.en)}</div><div class="tr">${esc(x.pt)}</div><div class="pr">${esc(x.pron)}</div></div></div>`).join("")}</div>`;
+}
+if (d.n) h += `<div class="contador">${d.n}</div>`;
+h += `<div class="arroba">@eagle.english.br</div>`;
+document.getElementById("c").innerHTML = h;
+document.fonts.ready.then(() => document.body.dataset.pronto = "1");
+</script></body></html>

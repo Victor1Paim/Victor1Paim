@@ -338,7 +338,7 @@ Brutos fora do git. **Dias: 15h nos dias SEM carrossel** (calendário). Nunca re
 a cena). Quando o estoque de memes prontos acabar, pedir 2 a 4 links novos ao usuário com os comandos do yt-dlp prontos.
 
 ## GRADE NOVA A PARTIR DE 28/11/2026 (3 posts/dia, pedido do usuário) — manda sobre horários anteriores
-09h carrossel: seg/sex **Caderno** · ter/qui/sáb **INICIANTE × NATIVO** · qua/dom **Repita** · 12h **Aula do verbo** (fixo) ·
+09h carrossel (rotação de 25/11): seg **Caderno** ↔ **Vocabulário com emoji** (semana sim, semana não) · ter/sáb **INICIANTE × NATIVO** · qua **NÃO CONFUNDA** · qui **PRONÚNCIA ✗/✓** · sex **A PRONÚNCIA É IGUAL** · dom **Repita** · 12h **Aula do verbo** (fixo) ·
 19h rodízio: seg/sex **Lista 12** · qua/dom **ABC** · ter/sáb **MEME** · qui **CENA DE FILME**. Stories continuam (5/dia).
 **Iniciante × Nativo** (ref. "A1 × C1"): `posts/<data>_carrossel-nativo-N/nativo.json` → `python3 scripts/carrossel_nativo.py posts/<post>`
 (template `templates/nativo.html`): capa + 5 pares (frase de iniciante × jeito natural, ATÉ 5 palavras, com pronúncia escrita e
@@ -346,3 +346,9 @@ tradução; personagem próprio com poses neutro/pensando/feliz/triste/confiante
 Exemplo: `posts/2026-11-28_carrossel-nativo-1/`. Frases nunca repetidas (grep nos JSON). Meme e cena de filme dependem de vídeo do
 usuário (Drive): se faltar, pedir com antecedência (2 dias antes). CENA DE FILME: formato ainda a montar quando chegar o 1º vídeo
 (tela dividida: cena em cima com a fala em inglês, personagem/lousa embaixo repetindo com pronúncia escrita e tradução, voz Achird).
+
+**Carrosséis variados (25/11):** `posts/<data>_carrossel-<tipo>-N/variado.json` → `python3 scripts/carrossel_variado.py posts/<post>` (template
+`templates/variado.html`, fundo claro): "confunda" (5 pares de falsos cognatos + nota "*X* não é Y!"; ex. posts/2026-12-02_carrossel-confunda-1),
+"pronuncia" (6 palavras com ✗ como o brasileiro fala / ✓ como é; ex. posts/2026-12-03_carrossel-pronuncia-1), "igual" (5 pares de
+homófonos + som comum; ex. posts/2026-12-04_carrossel-igual-1), "vocab" (tema com 12 itens emoji/palavra/tradução/pronúncia, 6 por
+slide). Um emoji por quadro (dois emojis estouram a coluna). Todos terminam com o print do perfil. Sem custo de API.

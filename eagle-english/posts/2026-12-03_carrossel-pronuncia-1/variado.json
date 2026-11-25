@@ -1,0 +1,9 @@
+{"tipo": "pronuncia", "capa": {"titulo": "PARE DE FALAR\n*ERRADO!*", "sub": "6 palavras que quase todo brasileiro pronuncia errado", "emojis": "🚶🏝️"},
+ "palavras": [
+  {"emoji": "🚶", "en": "Walk", "pt": "Caminhar", "errado": "uál-ki", "certo": "uók"},
+  {"emoji": "🧠", "en": "Know", "pt": "Saber", "errado": "kinôu", "certo": "nôu"},
+  {"emoji": "🏝️", "en": "Island", "pt": "Ilha", "errado": "íslând", "certo": "áilând"},
+  {"emoji": "🥦", "en": "Vegetable", "pt": "Legume / verdura", "errado": "vejetéibol", "certo": "védjtabol"},
+  {"emoji": "📅", "en": "Wednesday", "pt": "Quarta-feira", "errado": "uédnesdei", "certo": "uénzdei"},
+  {"emoji": "🛋️", "en": "Comfortable", "pt": "Confortável", "errado": "comfortéibol", "certo": "câmftabol"}
+ ], "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}}

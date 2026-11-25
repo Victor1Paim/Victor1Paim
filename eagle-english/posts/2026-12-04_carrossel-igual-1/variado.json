@@ -1,0 +1,8 @@
+{"tipo": "igual", "capa": {"titulo": "A PRONÚNCIA\n*É IGUAL!*", "sub": "Escrevem diferente, falam igualzinho", "emojis": "8️⃣🍽️"},
+ "pares": [
+  {"a": {"emoji": "8️⃣", "en": "Eight", "pt": "Oito"}, "b": {"emoji": "🍽️", "en": "Ate", "pt": "Comeu / comi"}, "som": "êit"},
+  {"a": {"emoji": "2️⃣", "en": "Two", "pt": "Dois"}, "b": {"emoji": "➕", "en": "Too", "pt": "Também"}, "som": "tchú"},
+  {"a": {"emoji": "👀", "en": "See", "pt": "Ver"}, "b": {"emoji": "🌊", "en": "Sea", "pt": "Mar"}, "som": "sí"},
+  {"a": {"emoji": "🛒", "en": "Buy", "pt": "Comprar"}, "b": {"emoji": "👋", "en": "Bye", "pt": "Tchau"}, "som": "bái"},
+  {"a": {"emoji": "👦", "en": "Son", "pt": "Filho"}, "b": {"emoji": "☀️", "en": "Sun", "pt": "Sol"}, "som": "sân"}
+ ], "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}}

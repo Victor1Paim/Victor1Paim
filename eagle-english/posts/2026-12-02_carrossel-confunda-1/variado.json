@@ -1,0 +1,8 @@
+{"tipo": "confunda", "capa": {"titulo": "NÃO\n*CONFUNDA!*", "sub": "5 palavras que enganam todo brasileiro", "emojis": "🚪📚"},
+ "pares": [
+  {"a": {"emoji": "🛒", "en": "Push", "pt": "Empurre", "pron": "púch"}, "b": {"emoji": "🪢", "en": "Pull", "pt": "Puxe", "pron": "púl"}, "nota": "*Push* não é puxar!"},
+  {"a": {"emoji": "📚", "en": "Library", "pt": "Biblioteca", "pron": "láibrêri"}, "b": {"emoji": "🏪", "en": "Bookstore", "pt": "Livraria", "pron": "búkstór"}, "nota": "*Library* não é livraria!"},
+  {"a": {"emoji": "👨‍👩‍👧", "en": "Parents", "pt": "Pais (pai e mãe)", "pron": "pérents"}, "b": {"emoji": "👪", "en": "Relatives", "pt": "Parentes", "pron": "rélativs"}, "nota": "*Parents* não são parentes!"},
+  {"a": {"emoji": "🎭", "en": "Pretend", "pt": "Fingir", "pron": "pritênd"}, "b": {"emoji": "🎯", "en": "Intend", "pt": "Pretender", "pron": "inténd"}, "nota": "*Pretend* não é pretender!"},
+  {"a": {"emoji": "🎓", "en": "College", "pt": "Faculdade", "pron": "cólidj"}, "b": {"emoji": "🏫", "en": "High school", "pt": "Colégio (ensino médio)", "pron": "rái skúl"}, "nota": "*College* não é colégio!"}
+ ], "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}}
