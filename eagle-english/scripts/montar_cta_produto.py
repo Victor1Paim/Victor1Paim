@@ -118,7 +118,7 @@ def ponto_meio(arq, ini=0.60, fim=0.70):
     return (a + int(np.argmin(e[a:b]))) * 0.05
 
 
-def anexar(post, nome=None, meio="pc_meio"):
+def anexar(post, nome=None, meio="pc_meio", meio_em=None):
     """final.mp4 = [vídeo até ~65%] + chamada curta (pc_meio, ~6 s) + [resto do vídeo] + CTA final da variante.
     24/11: pedido do usuário (chamada leve no meio + CTA no fim). meio=None desliga a chamada do meio."""
     if not nome:
@@ -130,7 +130,12 @@ def anexar(post, nome=None, meio="pc_meio"):
     cta = BASE / f"cta_{nome}.mp4"
     norm_v = "fps=30,scale=1080:1920,setsar=1,format=yuv420p"; norm_a = "aresample=48000,aformat=channel_layouts=stereo"
     if meio:
-        t = ponto_meio(orig)
+        if meio_em is not None:   # ponto escolhido à mão: o trecho mais silencioso a até 0,6 s dele
+            dur_o = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(orig)],
+                                         capture_output=True, text=True).stdout)
+            t = ponto_meio(orig, max(0, (meio_em - 0.6) / dur_o), min(1, (meio_em + 0.6) / dur_o))
+        else:
+            t = ponto_meio(orig)
         ent = ["-i", str(orig), "-i", str(BASE / f"cta_{meio}.mp4"), "-i", str(cta)]
         fc = (f"[0:v]{norm_v},split[va][vb];[0:a]{norm_a},asplit[aa][ab];"
               f"[va]trim=0:{t:.3f},setpts=PTS-STARTPTS[v0];[aa]atrim=0:{t:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(t - 0.08, 0):.3f}:d=0.08[a0];"
@@ -148,7 +153,9 @@ def anexar(post, nome=None, meio="pc_meio"):
 
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "anexar":
-        anexar(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, None if "--sem-meio" in sys.argv else "pc_meio")
+        args = [a for a in sys.argv[3:] if not a.startswith("--")]
+        em = next((float(a.split("=")[1]) for a in sys.argv if a.startswith("--meio-em=")), None)
+        anexar(sys.argv[2], args[0] if args else None, None if "--sem-meio" in sys.argv else "pc_meio", em)
     else:
         for n in (sys.argv[1:] or ROTACAO):
             montar(n)

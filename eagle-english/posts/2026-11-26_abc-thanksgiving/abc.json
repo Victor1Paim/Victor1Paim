@@ -1,0 +1,51 @@
+{
+ "fundo_video": "maldivas",
+ "fundo_inicio": 9,
+ "repetir": 2,
+ "contagem": 2.5,
+ "rodadas": [
+  {
+   "titulo": "Feliz Dia de Ação de Graças!",
+   "opcoes": [
+    "A) Happy Thanksgiving!",
+    "B) Happy Thanks Day!",
+    "C) Good Thanksgiving!"
+   ],
+   "certa": 0,
+   "pron": "rép thênksguivin!",
+   "q": "q1",
+   "r": "r1",
+   "en": "Happy Thanksgiving!"
+  },
+  {
+   "titulo": "Eu sou grato.",
+   "opcoes": [
+    "A) I'm thanks.",
+    "B) I'm thankful.",
+    "C) I'm gratitude."
+   ],
+   "certa": 1,
+   "pron": "áim thênkful",
+   "q": "q2",
+   "r": "r2",
+   "en": "I'm thankful."
+  },
+  {
+   "titulo": "Peru (a comida)",
+   "opcoes": [
+    "A) Peru",
+    "B) Chicken",
+    "C) Turkey"
+   ],
+   "certa": 2,
+   "pron": "târki",
+   "q": "q3",
+   "r": "r3",
+   "en": "Turkey"
+  }
+ ],
+ "cta": {
+  "fala": "cta",
+  "texto": "Quantas você\nacertou? 👇\n*SEGUE* pra mais!"
+ }
+}

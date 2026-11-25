@@ -1,0 +1,55 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Hoje é Thanksgiving nos Estados Unidos! Em inglês, como se diz: feliz Dia de Ação de Graças?...\n\nComo se diz: eu sou grato?...\n\nComo se diz: peru, a comida?"
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Happy Thanksgiving!...\n\nI'm thankful....\n\nTurkey."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E segue o perfil pra mais desafios como esse."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Hoje é Thanksgiving nos Estados Unidos! Em inglês, como se diz: feliz Dia de Ação de Graças?"
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Happy Thanksgiving!"
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: eu sou grato?"
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "I'm thankful."
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: peru, a comida?"
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Turkey!"
+  }
+ ]
+}

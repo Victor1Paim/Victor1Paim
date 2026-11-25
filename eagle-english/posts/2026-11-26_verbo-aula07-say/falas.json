@@ -1,0 +1,100 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "falas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Say....\n\nSay it again....\n\nWhat did you say?...\n\nSaid....\n\nShe said yes."
+  },
+  {
+   "id": "pt1",
+   "lingua": "pt",
+   "texto": "Um verbo por dia, cem dias seguidos. Aula sete."
+  },
+  {
+   "id": "pt2",
+   "lingua": "pt",
+   "texto": "Hoje, o verbo do dia é:"
+  },
+  {
+   "id": "pt3",
+   "lingua": "pt",
+   "texto": "Que quer dizer dizer. Repita comigo:"
+  },
+  {
+   "id": "pt4",
+   "lingua": "pt",
+   "texto": "Vou te dar dois exemplos. O primeiro:"
+  },
+  {
+   "id": "pt5",
+   "lingua": "pt",
+   "texto": "Fala de novo."
+  },
+  {
+   "id": "pt6",
+   "lingua": "pt",
+   "texto": "E o outro:"
+  },
+  {
+   "id": "pt7",
+   "lingua": "pt",
+   "texto": "O que você disse?"
+  },
+  {
+   "id": "pt8",
+   "lingua": "pt",
+   "texto": "Agora presta atenção: no passado, esse verbo vira:"
+  },
+  {
+   "id": "pt9",
+   "lingua": "pt",
+   "texto": "Repita comigo:"
+  },
+  {
+   "id": "pt10",
+   "lingua": "pt",
+   "texto": "Por exemplo: ela disse sim."
+  },
+  {
+   "id": "pt11",
+   "lingua": "pt",
+   "texto": "Segue o perfil pra não perder a próxima aula, e comenta aprender!"
+  },
+  {
+   "id": "en1",
+   "lingua": "en",
+   "texto": "Say.",
+   "recorte": true
+  },
+  {
+   "id": "en2",
+   "lingua": "en",
+   "texto": "Say it again.",
+   "recorte": true
+  },
+  {
+   "id": "en3",
+   "lingua": "en",
+   "texto": "What did you say?",
+   "recorte": true
+  },
+  {
+   "id": "en4",
+   "lingua": "en",
+   "texto": "Said.",
+   "recorte": true
+  },
+  {
+   "id": "en5",
+   "lingua": "en",
+   "texto": "She said yes.",
+   "recorte": true
+  }
+ ]
+}

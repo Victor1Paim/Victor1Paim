@@ -323,3 +323,6 @@ Depois da produção e do push (a mídia precisa estar no GitHub), agendar com `
 - Mídia: `https://raw.githubusercontent.com/Victor1Paim/Victor1Paim/claude/charming-cerf-y3w346/eagle-english/posts/<post>/...`
   (conferir com curl -I = 200 antes). Depois, `getScheduledPosts` para confirmar e não duplicar (não agendar o que já está lá).
 - **STORIES NUNCA são agendados**: ficam com o usuário (avisos 8h50, 11h50, 17h50).
+**Onde a chamada do meio NÃO pode cair (25/11):** entre uma pergunta e a resposta, ou depois de "esse verbo vira:". Sempre conferir no
+Whisper e, se cair errado, refazer com `--meio-em=SEGUNDOS` (o script acha o silêncio a até 0,6 s): Verbo → antes de "Agora presta
+atenção" (pt8); ABC → depois da resposta da rodada 2; Lista → depois da resposta do item 8.

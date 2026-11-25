@@ -51,7 +51,7 @@ Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.)
 | seg 23/11 | Aula 4 · GO | Lista 12: no restaurante | Repita #4 | ✅ ✅ ✅ |
 | ter 24/11 | Aula 5 · HAVE | ABC #3 (comida) | — | ✅ ✅ |
 | qua 25/11 | Aula 6 · DO | Lista 12: respostas curtas | Caderno #3 | ✅ ✅ ✅ |
-| qui 26/11 | Aula 7 · SAY | ABC #4 (Thanksgiving) | — | 🎬 🎬 |
+| qui 26/11 | Aula 7 · SAY | ABC #4 (Thanksgiving) | — | ✅ ✅ |
 | sex 27/11 | Aula 8 · SEE | Lista 12: Black Friday / compras | Repita #5 (12 frases, pronto 24/11) | 🎬 🎬 ✅ |
 | sáb 28/11 | Aula 9 · KNOW | ABC #5 (na rua: com licença, desculpa, onde fica) | — | 🎬 🎬 |
 | dom 29/11 | Aula 10 · THINK | Lista 12: rotina da manhã | Caderno #4 | 🎬 🎬 🎬 |
