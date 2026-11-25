@@ -313,3 +313,13 @@ Horários: 09h stories 1–3 + carrossel · 12h aula + story 4 · 18h story 5 ·
 **Capa do Repita: gerar EU MESMO** (não pedir ao usuário): prompt do cenário no legenda.md →
 `GEMINI_KEY_FILE=<scratchpad>/gemini_paga.key python3 scripts/imagem_gemini.py "<prompt>" posts/<post>/img/capa.png --post posts/<post> --proporcao 3:4 --modelo gemini-2.5-flash-image`
 e rodar o carrossel_tt de novo (o slide 01 sai com o texto da capa).
+
+## AGENDAMENTO NO METRICOOL (25/11/2026, pedido do usuário — "agende tudo, só os stories ficam comigo")
+Conector Metricool ligado: marca blogId **8348919** (@eagle.english.br, fuso America/Sao_Paulo; só Instagram por enquanto).
+Depois da produção e do push (a mídia precisa estar no GitHub), agendar com `createScheduledPost`:
+- 09h carrossel (instagramData.type "POST", media = URLs dos slides na ordem) · 12h Reels da aula · 19h Reels da noite
+  (type "REEL", showReelOnFeed true, videoThumbnailUrl = capa.png).
+- text = legenda do legenda.md; firstCommentText = comentário fixado (o usuário só fixa o comentário).
+- Mídia: `https://raw.githubusercontent.com/Victor1Paim/Victor1Paim/claude/charming-cerf-y3w346/eagle-english/posts/<post>/...`
+  (conferir com curl -I = 200 antes). Depois, `getScheduledPosts` para confirmar e não duplicar (não agendar o que já está lá).
+- **STORIES NUNCA são agendados**: ficam com o usuário (avisos 8h50, 11h50, 17h50).
