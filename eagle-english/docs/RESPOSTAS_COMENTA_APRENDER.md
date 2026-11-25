@@ -1,4 +1,5 @@
 # Resposta ao comentário "APRENDER" + mensagem na DM (22/11/2026)
+> **Atualizado em 25/11: textos novos e passo a passo do ManyChat em `docs/AUTOMACAO_INSTAGRAM.md` (manda sobre este).**
 
 Fluxo: a pessoa comenta "APRENDER" → você responde em público (gancho) → manda a DM com o link do teste.
 Link da DM: https://eagle-viagem.vercel.app?utm_content=dm  (o quiz; mostra os planos no fim)
