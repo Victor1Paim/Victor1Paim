@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- POST "MEME" (ref. do usuário 25/11): fundo preto, cabeçalho do perfil, frase de gancho, vídeo 16:9 no meio (buraco transparente),
+     legenda opcional por cima do vídeo e faixa do produto que entra no meio do vídeo. 1080x1920.
+     modo "base" = fundo + cabeçalho + gancho (com o buraco do vídeo); modo "faixa" = só a faixa do produto (fundo transparente). -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; font-family:"Inter", sans-serif; background:transparent; }
+  .base { position:absolute; inset:0; background:#000; }
+  .buraco { position:absolute; left:0; width:1080px; background:transparent; box-shadow:0 0 0 2000px #000; }
+  .cab { position:absolute; left:48px; top:300px; display:flex; align-items:center; gap:22px; }
+  .cab img { width:96px; height:96px; border-radius:50%; border:3px solid #fff; background:#0B1F4B; object-fit:cover; }
+  .nome { color:#fff; font-weight:800; font-size:40px; line-height:1.1; }
+  .user { color:#8b8f98; font-weight:500; font-size:30px; margin-top:4px; }
+  .gancho { position:absolute; left:48px; right:48px; color:#fff; font-weight:600; font-size:46px; line-height:1.28; }
+  .gancho b { font-weight:800; }
+  .faixa { position:absolute; left:40px; right:40px; display:flex; align-items:center; gap:26px; }
+  .faixa .txt { flex:1; color:#FFD21F; font-weight:700; font-size:37px; line-height:1.3; text-align:center; text-shadow:0 2px 8px rgba(0,0,0,.6); }
+  .faixa .txt span { display:block; color:#fff; font-weight:800; margin-top:10px; font-size:38px; }
+  .faixa img { width:300px; border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.5); }
+</style></head><body><div id="c"></div>
+<script>
+const d = window.DADOS || {modo:"base", gancho:"POV: você tentando entender a lógica do inglês:", y:560, h:608, logo:"", produto:""};
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+let h = "";
+if (d.modo === "base") {
+  h = `<div class="buraco" style="top:${d.y}px;height:${d.h}px"></div>
+  <div class="cab"><img src="${d.logo}"><div><div class="nome">Eagle English BR 🇺🇸🦅</div><div class="user">@eagle.english.br</div></div></div>
+  <div class="gancho" style="top:430px">${esc(d.gancho).replace(/\*(.+?)\*/g, "<b>$1</b>")}</div>`;
+} else {
+  h = `<div class="faixa" style="top:${d.y_faixa}px"><div class="txt">${esc(d.texto)}<span>(LINK NA BIO)</span></div><img src="${d.produto}"></div>`;
+}
+document.getElementById("c").innerHTML = h;
+document.fonts.ready.then(() => {
+  // gancho de 2 linhas ou mais: empurra para não encostar no vídeo
+  const g = document.querySelector(".gancho"); if (g && g.offsetTop + g.offsetHeight > d.y - 30) g.style.top = (d.y - 30 - g.offsetHeight) + "px";
+  document.body.dataset.pronto = "1";
+});
+</script></body></html>
