@@ -62,13 +62,14 @@ def main(pasta):
         ass = tmp / "leg.ass"
         linhas = ["[Script Info]", "PlayResX: 1080", "PlayResY: 1920", "", "[V4+ Styles]",
                   "Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, BorderStyle, Outline, Shadow, Alignment, MarginV",
-                  "Style: en,Inter,82,&H0000D2FF,&H00000000,&H64000000,1,1,6,0,2,0", "Style: pt,Inter,58,&H00FFFFFF,&H00000000,&H64000000,1,1,5,0,2,0",
+                  "Style: en,Inter,72,&H0000D2FF,&H00000000,&H64000000,1,1,6,0,2,0", "Style: pt,Inter,52,&H00FFFFFF,&H00000000,&H64000000,1,1,5,0,2,0",
                   "", "[Events]", "Format: Layer, Start, End, Style, Text"]
         t = lambda s: f"{int(s // 3600)}:{int(s % 3600 // 60):02d}:{s % 60:05.2f}"
         for a, b, en, pt in c["legendas"]:
-            linhas.append(f"Dialogue: 0,{t(a)},{t(b)},en,{{\\pos(540,{Y + H - 70})}}{en}")
+            # inglês em cima (se quebrar linha, cresce para cima) e tradução embaixo, sem encavalar
+            linhas.append(f"Dialogue: 0,{t(a)},{t(b)},en,{{\\pos(540,{Y + H - (95 if pt else 40)})}}{en}")
             if pt:
-                linhas.append(f"Dialogue: 0,{t(a)},{t(b)},pt,{{\\pos(540,{Y + H - 165})}}{pt}")
+                linhas.append(f"Dialogue: 0,{t(a)},{t(b)},pt,{{\\pos(540,{Y + H - 30})}}{pt}")
         ass.write_text("\n".join(linhas))
         filtros.append(f"[c]ass={ass}[d]"); ultimo = "d"
     sh("-ss", f"{ini:.2f}", "-t", f"{dur:.2f}", "-i", str(post / c["clipe"]), "-loop", "1", "-i", str(tmp / "base.png"),

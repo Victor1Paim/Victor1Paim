@@ -1,3 +1,58 @@
-{"clipe": "brutos/meme01.mp4", "ini": 0, "fim": 20.1,
+{
+ "clipe": "brutos/meme01.mp4",
+ "ini": 0,
+ "fim": 20.1,
  "gancho": "Eu e minha amiga depois de pagar *cursinho caro* de inglês:",
- "faixa": "Já fez cursinho e não aprendeu? Aprenda do jeito fácil: aula curtinha + pronúncia escrita", "faixa_em": 0.45}
+ "faixa": "Já fez cursinho e não aprendeu? Aprenda do jeito fácil: aula curtinha + pronúncia escrita",
+ "faixa_em": 0.45,
+ "legendas": [
+  [
+   0.9,
+   3.9,
+   "Hi Lorena! Hi, how are you?",
+   "Oi, Lorena! Oi, tudo bem?"
+  ],
+  [
+   4.3,
+   6.1,
+   "Okay, how was the week?",
+   "Tudo, como foi a semana?"
+  ],
+  [
+   6.2,
+   9.9,
+   "It was good. I spent some time at home in Sunday.",
+   "Foi boa. Fiquei em casa no domingo."
+  ],
+  [
+   10.0,
+   12.4,
+   "And my friend...",
+   "E minha amiga..."
+  ],
+  [
+   12.8,
+   14.9,
+   "How nice. What did you do there?",
+   "Que legal. O que vocês fizeram lá?"
+  ],
+  [
+   15.0,
+   17.1,
+   "I watched a movie with her.",
+   "Eu vi um filme com ela."
+  ],
+  [
+   17.2,
+   19.1,
+   "Okay, thank you. Bye!",
+   "Tá bom, obrigada. Tchau!"
+  ],
+  [
+   19.15,
+   20.1,
+   "Bye!",
+   "Tchau!"
+  ]
+ ]
+}
