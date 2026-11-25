@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('gsap-pending')}catch(e){}</script>
-  <link rel="stylesheet" href="/assets/css/style.css?v=3a5650cf">
+  <link rel="stylesheet" href="/assets/css/style.css?v=0bc78609">
   <link rel="preload" as="image" href="/assets/img/cheesecake-1200.webp" imagesrcset="/assets/img/cheesecake-640.webp 640w, /assets/img/cheesecake-1200.webp 1200w" imagesizes="(min-width: 960px) 40vw, 80vw">
 </head>
 <body>
@@ -278,13 +278,16 @@
     </button>
     <img class="promo__logo" src="/assets/img/logo.webp" alt="" width="738" height="612">
     <p class="promo__eyebrow">Natal e Réveillon 2026</p>
-    <h2 id="promo-title">Leve o cardápio com você</h2>
-    <p class="promo__text">Baixe o cardápio completo em PDF para ver com calma ou mandar para a família no WhatsApp.</p>
-    <a class="btn btn--primary btn--block" href="/cardapio-ceia-natal-2026-barra-deck.pdf" download data-promo-dl>
-      <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Baixar cardápio em PDF
+    <h2 id="promo-title" tabindex="-1" autofocus>Monte sua ceia aqui pelo site</h2>
+    <p class="promo__text">Escolha os pratos, veja o total na hora e envie o pedido pelo WhatsApp. Sem pagar nada online.</p>
+    <a class="btn btn--primary btn--block" href="#cardapio" data-promo-go>
+      Montar minha ceia
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h13m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <button class="btn btn--link promo__skip" type="button" data-promo-close>Montar minha ceia pelo site</button>
+    <a class="promo__pdf" href="/cardapio-ceia-natal-2026-barra-deck.pdf" download data-promo-dl>
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Prefere ver em PDF? Baixar cardápio
+    </a>
   </dialog>
 
   <div class="toast" role="status" aria-live="polite" data-toast></div>
@@ -296,6 +299,6 @@
   </script>
   <script src="/assets/vendor/gsap-3.15.1.min.js" defer></script>
   <script src="/assets/js/motion.js?v=7c87ed56" defer></script>
-  <script src="/assets/js/app.js?v=2ee93803" defer></script>
+  <script src="/assets/js/app.js?v=b31b66a7" defer></script>
 </body>
 </html>

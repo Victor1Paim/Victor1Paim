@@ -216,7 +216,7 @@
   /* ---------- pop-up do cardápio em PDF ---------- */
   function promo() {
     const dlg = $('[data-promo]');
-    const KEY = 'barradeck-promo-pdf';
+    const KEY = 'barradeck-promo-v2';
     if (!dlg || typeof dlg.showModal !== 'function') return;
     try { if (localStorage.getItem(KEY)) return; } catch (_) { /* sem storage: mostra mesmo assim */ }
     const fechar = () => {
@@ -226,6 +226,12 @@
     dlg.addEventListener('click', (e) => {
       if (e.target === dlg || e.target.closest('[data-promo-close]')) fechar();
       if (e.target.closest('[data-promo-dl]')) setTimeout(fechar, 300);
+      if (e.target.closest('[data-promo-go]')) {
+        e.preventDefault();
+        fechar();
+        const alvo = document.getElementById('cardapio');
+        if (alvo) alvo.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      }
     });
     dlg.addEventListener('cancel', () => { try { localStorage.setItem(KEY, '1'); } catch (_) {} });
     setTimeout(() => {

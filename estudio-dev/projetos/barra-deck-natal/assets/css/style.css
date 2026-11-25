@@ -436,3 +436,9 @@ body, .band, .footer, .closing, .faq, .steps__list li, .delivery__card, .drawer,
 
 /* GSAP: esconde o topo só até a animação começar (motion.js remove a classe) */
 .gsap-pending .hero__text > *, .gsap-pending .hero__art > * { visibility: hidden; }
+
+/* pop-up: pedido pelo site em destaque, PDF secundário */
+.promo .btn--primary { gap: 10px; }
+.promo__pdf { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; min-height: 44px; padding: 0 8px; font-size: 14px; font-weight: 500; color: var(--muted); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line-strong); }
+.promo__pdf:hover { color: var(--brown); }
+.promo h2:focus { outline: none; }
