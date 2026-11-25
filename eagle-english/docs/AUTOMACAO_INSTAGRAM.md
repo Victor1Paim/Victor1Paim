@@ -57,3 +57,12 @@ Fiz um teste de 1 minuto que mostra o melhor caminho pra você (pra você, pro s
   alta, com a pronúncia escrita. Faz o teste que ele te mostra por onde começar: (link do teste)
 - **"Depois eu vejo"** → Tranquilo! O link fica aqui salvo pra quando quiser 😉
 Regras: sem promessa de fluência, sem "vagas acabando" inventado, preço só se perguntarem, 1 DM por comentário, nunca DM em massa.
+
+## Resposta rápida para quem comenta "APRENDER" (manual, mandando pra bio) — 25/11
+1. Boa! 🔥 O link tá na bio: faz o teste de 1 minuto e vê o jeito mais fácil pra você 🦅
+2. Aí sim! 🇺🇸 Corre no link da bio que tem o próximo passo 👆
+3. Anotado ✅ Toca no link da bio, o teste é rapidinho e já te mostra por onde começar
+4. Bora! 💪 Tá tudo no link da bio: aula curtinha e pronúncia escrita, sem decoreba
+5. Isso! 👏 Dá uma olhada no link da bio, vai te ajudar muito 😉
+6. Que bom! 🙌 O link tá no perfil: começa pelo teste de 1 minuto
+Atalho no Instagram: Configurações → Ferramentas para criadores/empresas → Respostas salvas → atalho "apr".
