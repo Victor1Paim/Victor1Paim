@@ -1,0 +1,14 @@
+{"capa": {"sub": "Mesma ideia, jeito de nativo 🇺🇸", "prop": "🇺🇸"},
+ "pares": [
+  {"ini": {"en": "It's very easy.", "pron": "its véri ízi", "pt": "É muito fácil.", "pose": "neutro", "prop": "📚"},
+   "nat": {"en": "It's a piece of cake!", "pron": "its a pís óv kêik!", "pt": "É moleza!", "pose": "feliz", "prop": "🍰"}},
+  {"ini": {"en": "I don't understand.", "pron": "ái dônt ândersténd", "pt": "Eu não entendo.", "pose": "triste", "prop": "❓"},
+   "nat": {"en": "I'm lost.", "pron": "áim lóst", "pt": "Tô perdido.", "pose": "pensando", "prop": "🗺️"}},
+  {"ini": {"en": "Very good!", "pron": "véri gud!", "pt": "Muito bom!", "pose": "neutro", "prop": "👍"},
+   "nat": {"en": "Nailed it!", "pron": "nêild it!", "pt": "Mandou bem! / Arrasou!", "pose": "feliz", "prop": "🎯"}},
+  {"ini": {"en": "I'm very tired.", "pron": "áim véri táierd", "pt": "Tô muito cansado.", "pose": "triste", "prop": "😩"},
+   "nat": {"en": "I'm wiped out.", "pron": "áim uáipt áut", "pt": "Tô acabado!", "pose": "triste", "prop": "🛌"}},
+  {"ini": {"en": "I'm very happy.", "pron": "áim véri répi", "pt": "Tô muito feliz.", "pose": "neutro", "prop": "🙂"},
+   "nat": {"en": "I'm on cloud nine!", "pron": "áim ón cláud náin!", "pt": "Tô nas nuvens!", "pose": "feliz", "prop": "☁️"}}
+ ],
+ "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14", "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}}

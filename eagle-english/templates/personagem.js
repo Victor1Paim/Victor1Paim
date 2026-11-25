@@ -10,6 +10,8 @@ const POSES = {
   fala4:    { L:[-70, 176], R:[56, 200] },
   pensando: { L:[100, 170], R:[-62, -26], olhar:[6, -8] },
   feliz:    { L:[-36, 226], R:[118, -50], joinha:true, sorriso:true, dobraR:1 },
+  triste:   { L:[-30, 230], R:[30, 230], triste:true },          // 25/11: carrossel Iniciante × Nativo
+  confiante:{ L:[60, 150], R:[-60, 150], sorriso:true },          // braços cruzados na frente, sorriso de lado
 };
 const SH = { L:[125, 292], R:[275, 292] }, A = 118, B = 112;
 function ik(s, t, lado, dobra) {               // braço de 2 segmentos (ombro→cotovelo→mão), cotovelo para fora/baixo
@@ -111,9 +113,11 @@ function personagem(st) {
   else g += `<ellipse cx="${163 + ol[0]}" cy="${150 + ol[1]}" rx="11" ry="16" fill="${C.traco}"/><ellipse cx="${237 + ol[0]}" cy="${150 + ol[1]}" rx="11" ry="16" fill="${C.traco}"/>`;
   g += R.rosto ? R.rosto() : "";
   const sob = st.pose === "pensando" ? -10 : (P.sorriso ? -6 : 0);
-  g += `<path d="M146 ${118 + sob} q17 -9 32 -2 M222 ${116} q17 -7 32 2" stroke="${C.traco}" stroke-width="6" stroke-linecap="round" fill="none"/>`;
+  if (P.triste) g += `<path d="M146 122 q17 -2 32 -12 M222 110 q17 10 32 12" stroke="${C.traco}" stroke-width="6" stroke-linecap="round" fill="none"/>`;
+  else g += `<path d="M146 ${118 + sob} q17 -9 32 -2 M222 ${116} q17 -7 32 2" stroke="${C.traco}" stroke-width="6" stroke-linecap="round" fill="none"/>`;
   const b = st.boca || 0;
-  if (b === 0) g += P.sorriso ? `<path d="M166 205 q34 30 68 0" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`
+  if (b === 0 && P.triste) g += `<path d="M170 222 q30 -22 60 0" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`;
+  else if (b === 0) g += P.sorriso ? `<path d="M166 205 q34 30 68 0" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`
                  : (st.pose === "pensando" ? `<path d="M182 212 q18 -6 34 4" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`
                  : `<path d="M172 207 q28 16 56 0" stroke="${C.traco}" stroke-width="7" stroke-linecap="round" fill="none"/>`);
   else if (b === 1) g += `<path d="M172 200 q28 34 56 0 q-28 6 -56 0 z" fill="#6B1F24" stroke="${C.traco}" stroke-width="6" stroke-linejoin="round"/>`;

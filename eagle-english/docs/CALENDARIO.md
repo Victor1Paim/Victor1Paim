@@ -39,7 +39,9 @@ Legenda no formato V3. Status: ✅ pronto · 🎬 a produzir · 🧩 formato nov
 Vídeos SEM mascote e SEM CTA de produto; personagem próprio em SVG (`templates/personagem.js`) nos formatos ABC e Verbo do dia.
 **12h = "1 verbo por dia" (Aula N, `docs/SERIE_VERBO_DO_DIA.md`, `scripts/montar_verbo.py`) todos os dias.**
 **19h = rodízio ABC (`scripts/montar_abc.py`) ↔ Lista 12 (`scripts/montar_lista12.py`).**
-**Carrossel em dias alternados: Caderno (`scripts/carrossel_caderno.py`, automático) ↔ Repita até aprender (slides 02–08 + prompt
+**GRADE NOVA A PARTIR DE 28/11 (3 posts/dia):** 09h carrossel (seg Caderno · ter/qui/sáb Iniciante × Nativo · qua/dom Repita · sex Caderno) ·
+12h Aula do verbo · 19h rodízio (seg/sex Lista 12 · ter/sáb MEME · qua/dom ABC · qui CENA DE FILME).
+**Carrossel em dias alternados (até 27/11): Caderno (`scripts/carrossel_caderno.py`, automático) ↔ Repita até aprender (slides 02–08 + prompt
 da capa só com o cenário; o usuário gera a capa).** Carrosséis mantêm mascote/CTA do perfil.
 Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.) ficam de RESERVA.
 
@@ -53,13 +55,15 @@ Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.)
 | qua 25/11 | Aula 6 · DO | Lista 12: respostas curtas | Caderno #3 + 15h Meme 02 (Tatá, postado pelo usuário) | ✅ ✅ ✅ |
 | qui 26/11 | Aula 7 · SAY | ABC #4 (Thanksgiving) | — | ✅ ✅ |
 | sex 27/11 | Aula 8 · SEE | Lista 12: Black Friday / compras | Repita #5 (12 frases, pronto 24/11) | 🎬 🎬 ✅ |
-| sáb 28/11 | Aula 9 · KNOW | ABC #5 (na rua: com licença, desculpa, onde fica) | 15h Meme 03 (Joel, pronto) | 🎬 🎬 |
-| dom 29/11 | Aula 10 · THINK | Lista 12: rotina da manhã | Caderno #4 | 🎬 🎬 🎬 |
-| seg 30/11 | Aula 11 · COME | ABC #6 (no trabalho) | 15h Meme 01 (cursinho, pronto) | 🎬 🎬 |
-| ter 01/12 | Aula 12 · WANT | Lista 12: emoções | Repita #6 | 🎬 🎬 🎬 |
-| qua 02/12 | Aula 13 · GIVE | ABC #7 (no telefone) | 15h Meme (pedir vídeo ao usuário) | 🎬 🎬 |
-| qui 03/12 | Aula 14 · TELL | Lista 12: na viagem | Caderno #5 | 🎬 🎬 🎬 |
-| sex 04/12 | Aula 15 · FEEL | ABC #8 (gírias leves) | 15h Meme (pedir vídeo ao usuário) | 🎬 🎬 |
+| sáb 28/11 | Aula 9 · KNOW | 19h MEME 03 (Joel, pronto) | 09h INICIANTE × NATIVO #1 (pronto) | 🎬 ✅ ✅ |
+| dom 29/11 | Aula 10 · THINK | ABC #5 (na rua: com licença, desculpa, onde fica) | Repita #6 | 🎬 🎬 🎬 |
+| seg 30/11 | Aula 11 · COME | Lista 12: rotina da manhã | Caderno #4 | 🎬 🎬 🎬 |
+| ter 01/12 | Aula 12 · WANT | 19h MEME 01 (cursinho, pronto) | INICIANTE × NATIVO #2 | 🎬 ✅ 🎬 |
+| qua 02/12 | Aula 13 · GIVE | ABC #6 (no trabalho) | Repita #7 | 🎬 🎬 🎬 |
+| qui 03/12 | Aula 14 · TELL | 19h CENA DE FILME #1 (aguarda vídeo do usuário) | INICIANTE × NATIVO #3 | 🎬 ⏳ 🎬 |
+| sex 04/12 | Aula 15 · FEEL | Lista 12: emoções | Caderno #5 | 🎬 🎬 🎬 |
+| sáb 05/12 | Aula 16 · LOOK | 19h MEME (aguarda vídeo do usuário) | INICIANTE × NATIVO #4 | 🎬 ⏳ 🎬 |
+| dom 06/12 | Aula 17 · NEED | ABC #7 (no telefone) | Repita #8 | 🎬 🎬 🎬 |
 (O usuário postou Aula 1 + ABC #1 + Repita #3 + Lista 12 comandos + Caderno #1 até sex 20/11; a série segue 1 aula por dia. Thanksgiving = qui 26/11, Black Friday = sex 27/11.)
 Regras do conteúdo: frases A1 verdadeiras e naturais; no ABC as erradas são traduções literais plausíveis (I'm delayed, I lack you);
 cada Lista 12 com tema único; nunca repetir frase de um post anterior; capas sem revelar respostas.

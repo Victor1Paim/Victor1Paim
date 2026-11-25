@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Carrossel "INICIANTE × NATIVO" (ref. do usuário 25/11, estilo "A1 × C1"): dois quadros com o personagem próprio,
+     frase de iniciante em cima e o jeito de nativo embaixo, com pronúncia escrita e tradução. 1080x1440. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Anton&display=swap">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1440px; overflow:hidden; font-family:"Poppins"; background:#0B1F4B; color:#fff; }
+  .contador { position:absolute; right:56px; top:46px; background:rgba(255,255,255,.14); border-radius:30px; padding:6px 22px; font-size:30px; font-weight:600; }
+  .arroba { position:absolute; left:60px; bottom:44px; font-size:30px; font-weight:600; opacity:.85; }
+  .linha { position:absolute; left:60px; right:56px; height:600px; display:flex; gap:44px; align-items:center; }
+  .card { width:440px; height:560px; border-radius:40px; background:linear-gradient(160deg,#F6E9D6,#E3CDAE); position:relative; overflow:hidden;
+          box-shadow:0 14px 0 rgba(0,0,0,.25); flex:none; }
+  .card svg { position:absolute; left:0; top:0; width:440px; height:560px; }
+  .card .mesa { position:absolute; left:0; right:0; bottom:0; height:70px; background:#8A5A35; }
+  .prop { position:absolute; right:22px; top:18px; font-size:92px; line-height:1; }
+  .txt { flex:1; }
+  .nivel { font-family:"Anton"; font-size:118px; line-height:1; letter-spacing:.01em; }
+  .ini .nivel { color:#FFD21F; } .nat .nivel { color:#3BE36A; }
+  .traco { width:110px; height:10px; border-radius:6px; background:#fff; margin:18px 0 22px; }
+  .en { font-size:56px; font-weight:800; line-height:1.12; text-wrap:balance; }
+  .pr { font-size:38px; font-weight:700; color:#3BE36A; margin-top:14px; }
+  .pt { font-size:34px; font-weight:500; color:#C9D3E6; margin-top:8px; }
+  .capa { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; padding-top:170px; text-align:center; }
+  .capa h1 { font-family:"Anton"; font-size:150px; line-height:1; letter-spacing:.01em; }
+  .capa h1 .y { color:#FFD21F; } .capa h1 .g { color:#3BE36A; }
+  .capa p { font-size:50px; font-weight:700; margin-top:26px; }
+  .capa .card { margin-top:60px; width:520px; height:600px; }
+  .capa .card svg { width:520px; height:600px; }
+  .arrasta { position:absolute; bottom:60px; right:60px; font-size:40px; font-weight:800; background:#E63946; padding:10px 28px; border-radius:40px; }
+</style></head><body><div id="c"></div>
+<script src="personagem.js"></script>
+<script>
+const d = window.DADOS;
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const boneco = (pose, w, h) => `<svg viewBox="20 22 360 ${Math.round(360 * h / w)}" preserveAspectRatio="xMidYMin slice">${personagem({pose, roupa:"jeans", boca:0, k:1})}</svg>`;
+let h = "";
+if (d.tipo === "capa") {
+  h = `<div class="capa"><h1><span class="y">INICIANTE</span><br>×<br><span class="g">NATIVO</span></h1><p>${esc(d.sub || "Mesma ideia, jeito de nativo 🇺🇸")}</p>
+       <div class="card">${boneco("feliz", 520, 600)}<div class="mesa"></div><div class="prop">${d.prop || "🇺🇸"}</div></div></div>
+       <div class="arrasta">Arrasta 👉</div>`;
+} else {
+  const lado = (x, cls, rot, top) => `<div class="linha ${cls}" style="top:${top}px"><div class="card">${boneco(x.pose, 440, 560)}<div class="mesa"></div>
+      <div class="prop">${x.prop || ""}</div></div><div class="txt"><div class="nivel">${rot}</div><div class="traco"></div>
+      <div class="en">${esc(x.en)}</div><div class="pr">🗣️ ${esc(x.pron)}</div><div class="pt">${esc(x.pt)}</div></div></div>`;
+  h = lado(d.ini, "ini", "INICIANTE", 110) + lado(d.nat, "nat", "NATIVO", 730) + `<div class="contador">${d.n}</div>`;
+}
+h += `<div class="arroba">@eagle.english.br</div>`;
+document.getElementById("c").innerHTML = h;
+document.fonts.ready.then(() => document.body.dataset.pronto = "1");
+</script></body></html>

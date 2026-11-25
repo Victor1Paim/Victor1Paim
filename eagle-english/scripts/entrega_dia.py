@@ -34,6 +34,8 @@ def main(data):
     carr = next((p for p in posts if "_carrossel-" in p.name), None)
     meme = next((p for p in posts if "_meme-" in p.name), None)
     noite = next((p for p in posts if p not in (st, aula, carr, meme) and (p / "legenda.md").exists()), None)
+    if meme and not noite:          # grade de 28/11: o meme é o vídeo das 19h
+        noite, meme = meme, None
     pasta = PROJ / "entregas" / data
     if pasta.exists():
         shutil.rmtree(pasta)

@@ -336,3 +336,13 @@ Fluxo: usuário baixa com yt-dlp (`C:\Users\victo\Videos\Aulas Eagle`) e sobe na
 eu acho pelo conector do Google Drive e baixo com curl em `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`.
 Brutos fora do git. **Dias: 15h nos dias SEM carrossel** (calendário). Nunca reaproveitar o texto/cabeçalho de outra página (recortar só
 a cena). Quando o estoque de memes prontos acabar, pedir 2 a 4 links novos ao usuário com os comandos do yt-dlp prontos.
+
+## GRADE NOVA A PARTIR DE 28/11/2026 (3 posts/dia, pedido do usuário) — manda sobre horários anteriores
+09h carrossel: seg/sex **Caderno** · ter/qui/sáb **INICIANTE × NATIVO** · qua/dom **Repita** · 12h **Aula do verbo** (fixo) ·
+19h rodízio: seg/sex **Lista 12** · qua/dom **ABC** · ter/sáb **MEME** · qui **CENA DE FILME**. Stories continuam (5/dia).
+**Iniciante × Nativo** (ref. "A1 × C1"): `posts/<data>_carrossel-nativo-N/nativo.json` → `python3 scripts/carrossel_nativo.py posts/<post>`
+(template `templates/nativo.html`): capa + 5 pares (frase de iniciante × jeito natural, ATÉ 5 palavras, com pronúncia escrita e
+tradução; personagem próprio com poses neutro/pensando/feliz/triste/confiante + emoji de apoio no quadro) + print do perfil.
+Exemplo: `posts/2026-11-28_carrossel-nativo-1/`. Frases nunca repetidas (grep nos JSON). Meme e cena de filme dependem de vídeo do
+usuário (Drive): se faltar, pedir com antecedência (2 dias antes). CENA DE FILME: formato ainda a montar quando chegar o 1º vídeo
+(tela dividida: cena em cima com a fala em inglês, personagem/lousa embaixo repetindo com pronúncia escrita e tradução, voz Achird).
