@@ -92,9 +92,9 @@ def main(data):
         md.append(f"Legenda:\n```\n{b.get('Legenda', 'PENDENTE')}\n```\nComentário fixado:\n```\n{b.get('Comentário fixado', 'PENDENTE')}\n```\n")
 
     reels(aula, "12h", "aula")
+    md.append("## 12h · Story do pedido\n"); story(4, "12h", "Adesivo LINK no espaço vazio, com o texto personalizado (veja abaixo). Música baixa ou nenhuma.")
     if meme:
         reels(meme, "15h", "meme")
-    md.append("## 12h · Story do pedido\n"); story(4, "12h", "Adesivo LINK no espaço vazio, com o texto personalizado (veja abaixo). Música baixa ou nenhuma.")
     md.append("## 18h · Story da resposta\n"); story(5, "18h", "Música opcional. Depois veja quem respondeu o quiz e responda no direct quem errou.")
     reels(noite, "19h", "noite")
     (PROJ / "entregas" / f"{data}.md").write_text("\n".join(md))
