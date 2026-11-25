@@ -8,7 +8,7 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; font-family:"Inter", sans-serif; background:transparent; }
   .base { position:absolute; inset:0; background:#000; }
-  .buraco { position:absolute; left:0; width:1080px; background:transparent; box-shadow:0 0 0 2000px #000; }
+  .buraco { position:absolute; background:transparent; box-shadow:0 0 0 2000px #000; }
   .cab { position:absolute; left:48px; top:300px; display:flex; align-items:center; gap:22px; }
   .cab img { width:96px; height:96px; border-radius:50%; border:3px solid #fff; background:#0B1F4B; object-fit:cover; }
   .nome { color:#fff; font-weight:800; font-size:40px; line-height:1.1; }
@@ -25,7 +25,7 @@ const d = window.DADOS || {modo:"base", gancho:"POV: você tentando entender a l
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 let h = "";
 if (d.modo === "base") {
-  h = `<div class="buraco" style="top:${d.y}px;height:${d.h}px"></div>
+  h = `<div class="buraco" style="top:${d.y}px;height:${d.h}px;left:${d.x || 0}px;width:${d.w || 1080}px"></div>
   <div class="cab"><img src="${d.logo}"><div><div class="nome">Eagle English BR 🇺🇸🦅</div><div class="user">@eagle.english.br</div></div></div>
   <div class="gancho" style="top:430px">${esc(d.gancho).replace(/\*(.+?)\*/g, "<b>$1</b>")}</div>`;
 } else {

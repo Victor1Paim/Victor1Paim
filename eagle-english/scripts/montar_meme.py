@@ -13,8 +13,20 @@ import json, os, subprocess, sys
 from pathlib import Path
 
 PROJ = Path(__file__).resolve().parents[1]
-Y, H = 640, 608          # posição e altura do vídeo (1080x608 = 16:9)
-Y_FAIXA = Y + H + 50
+
+def medidas(post, c):
+    """Recorte (w,h,x,y) do clipe e o tamanho/posição dele na tela: 16:9 ocupa 1080 de largura; 4:3 ou mais alto, 960."""
+    if c.get("crop"):
+        cw, ch, cx, cy = [int(v) for v in c["crop"].split(":")]
+    else:
+        out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0",
+                              str(post / c["clipe"])], capture_output=True, text=True).stdout.strip().split(",")
+        cw, ch, cx, cy = int(out[0]), int(out[1]), 0, 0
+    r = cw / ch
+    W = 1080 if r >= 1.5 else 960
+    H = int(round(W / r / 2) * 2)
+    Y = 640 if H <= 700 else 600
+    return (cw, ch, cx, cy), W, H, Y
 
 
 def sh(*a):
@@ -35,14 +47,14 @@ def png(dados, saida):
 def main(pasta):
     post = Path(pasta).resolve(); c = json.loads((post / "meme.json").read_text()); v = post / "video"; v.mkdir(exist_ok=True)
     tmp = post / "_tmp"; tmp.mkdir(exist_ok=True)
-    png({"modo": "base", "gancho": c["gancho"], "y": Y, "h": H, "logo": (PROJ / "assets/marca/logo_eagle.png").as_uri()}, tmp / "base.png")
+    (cw, ch, cx, cy), W, H, Y = medidas(post, c); Y_FAIXA = Y + H + 40; X = (1080 - W) // 2
+    png({"modo": "base", "gancho": c["gancho"], "y": Y, "h": H, "x": X, "w": W, "logo": (PROJ / "assets/marca/logo_eagle.png").as_uri()}, tmp / "base.png")
     png({"modo": "faixa", "texto": c.get("faixa", "Inglês do jeito fácil: 10 aulas + 2.100 frases com pronúncia escrita"),
          "y_faixa": Y_FAIXA, "produto": (PROJ / "assets/meme/produto.png").as_uri()}, tmp / "faixa.png")
     ini, fim = float(c["ini"]), float(c["fim"]); dur = fim - ini; tf = dur * float(c.get("faixa_em", 0.45))
-    crop = c.get("crop", "'min(iw,ih*16/9)':'min(ih,iw*9/16)'")
     # legendas (opcional) como drawtext não: renderiza cada uma em PNG pelo mesmo template seria pesado; usamos ASS simples
-    filtros = [f"[0:v]crop={crop},scale=1080:{H},setsar=1,fps=30[clip]",
-               "color=black:s=1080x1920:r=30[bg]", f"[bg][clip]overlay=0:{Y}:shortest=1[a]",
+    filtros = [f"[0:v]crop={cw}:{ch}:{cx}:{cy},scale={W}:{H},setsar=1,fps=30[clip]",
+               "color=black:s=1080x1920:r=30[bg]", f"[bg][clip]overlay={X}:{Y}:shortest=1[a]",
                "[a][1:v]overlay=0:0[b]",
                f"[2:v]format=rgba,fade=t=in:st={tf:.2f}:d=0.35:alpha=1[fx]", f"[b][fx]overlay=0:0:enable='gte(t,{tf:.2f})'[c]"]
     ultimo = "c"

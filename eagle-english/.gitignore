@@ -17,3 +17,5 @@ posts/*/video/cenas.txt
 
 # pacotes de postagem (hardlinks dos posts; o roteiro entregas/<data>.md vai pro git)
 entregas/*/
+posts/*/brutos/
+posts/_brutos_meme/
