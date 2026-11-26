@@ -358,7 +358,8 @@ Algumas falas saíam com sotaque de Portugal. `vozes.py` agora manda `speechConf
 toda geração do Gemini. Não remover. Se o usuário apontar sotaque de Portugal num vídeo, regerar as falas pt daquele post.
 Regeradas em pt-BR em 25/11: as 5 chamadas do produto (pc_meio + 4 pc_*), Aula 7 e ABC Thanksgiving (26/11).
 
-## VOZ NOVA: ELEVENLABS NAS PRÓXIMAS PRODUÇÕES (26/11/2026, pedido do usuário — manda sobre "VOZ ÚNICA" quando ativa)
+## ELEVENLABS: TESTADO E DESCARTADO (26/11/2026) — o usuário decidiu MANTER a voz atual (Gemini Achird, pt-BR). Não usar ElevenLabs.
+(Histórico abaixo; a chave foi apagada e não existe assets/vozes_elevenlabs/voz.json, então o vozes.py segue no Gemini.)
 O usuário passou uma chave do ElevenLabs (fica SÓ em `<scratchpad>/elevenlabs.key`, nunca no git). NÃO regerar o que já está pronto.
 `vozes.py` usa o ElevenLabs (mesma voz brasileira nas duas línguas, `eleven_multilingual_v2`, PCM 24 kHz) quando existir
 `assets/vozes_elevenlabs/voz.json` ({"voice_id": ..., "nome": ...}) e `ELEVENLABS_KEY_FILE=<scratchpad>/elevenlabs.key`; sem isso, Gemini Achird.
