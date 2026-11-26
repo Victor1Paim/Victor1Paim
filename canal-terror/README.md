@@ -1,4 +1,4 @@
-# Canal de terror faceless (inglês)
+# The Quiet Hours (@thequiethours.0) — canal de terror faceless (inglês)
 
 Coletâneas de histórias de terror narradas em inglês para o YouTube, no formato do Mr. Nightmare.
 

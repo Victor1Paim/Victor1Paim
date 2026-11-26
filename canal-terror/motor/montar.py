@@ -281,7 +281,12 @@ grade = ("eq=saturation=0.72:contrast=0.94:brightness=-0.035:gamma=0.97,colorbal
          f"vignette=angle=PI/4.5,noise=alls={4 if a.rascunho else 5}:allf=t")
 if not a.sem_legenda and leg:
     grade += f",subtitles={ass}:fontsdir=/usr/share/fonts/opentype/inter"
-fc.append(f"{prev}{grade},format=yuv420p[v]")
+MARCA = os.path.join(RAIZ, 'marca/marca-dagua.png')
+if os.path.exists(MARCA):                    # marca d'água do canal: canto superior direito (embaixo fica a legenda), 35%, depois da vinheta
+    fc.append(f"movie={MARCA},format=rgba,scale=-1:{int(46*s)},colorchannelmixer=aa=0.35[wm]")
+    fc.append(f"{prev}{grade}[g];[g][wm]overlay=W-w-{int(48*s)}:{int(40*s)}:enable='gte(t,{T_VIN + T_CART})',format=yuv420p[v]")
+else:
+    fc.append(f"{prev}{grade},format=yuv420p[v]")
 saida = os.path.join(fin, 'video-rascunho.mp4' if a.rascunho else 'video.mp4')
 cmd = ['ffmpeg', '-v', 'error', '-stats', '-y']
 for e in entradas: cmd += ['-i', e]

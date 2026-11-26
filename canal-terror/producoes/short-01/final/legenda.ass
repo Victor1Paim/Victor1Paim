@@ -125,4 +125,4 @@ Dialogue: 0,0:01:29.88,0:01:30.23,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fs
 Dialogue: 0,0:01:30.18,0:01:30.84,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BACK AT THE
 Dialogue: 0,0:01:30.84,0:01:31.19,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WINDOW
 Dialogue: 0,0:01:31.30,0:01:31.86,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T THERE
-Dialogue: 1,0:01:32.75,0:01:39.99,Cta,,0,0,0,,{\fad(250,0)}FULL STORY\N{\c&H1C1CD6&}ON OUR CHANNEL
+Dialogue: 1,0:01:32.75,0:01:39.99,Cta,,0,0,0,,{\fad(250,0)}FULL STORY ON\N{\c&H1C1CD6&}@THEQUIETHOURS.0

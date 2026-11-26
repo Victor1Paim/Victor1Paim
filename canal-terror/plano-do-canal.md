@@ -1,6 +1,6 @@
 # Canal de terror faceless (inglês) — plano inicial
 
-Status: 26/11/2026 — piloto produzido (`producoes/piloto/`). Formatos em [`formatos.md`](formatos.md), passo a passo em [`motor/README.md`](motor/README.md). Nome do canal ainda não definido. Pasta provisória: `canal-terror/`.
+Status: 26/11/2026 — piloto produzido (`producoes/piloto/`). Formatos em [`formatos.md`](formatos.md), passo a passo em [`motor/README.md`](motor/README.md). Nome do canal: **The Quiet Hours** · @thequiethours.0 (YouTube e TikTok), definido em 26/11/2026. Pasta provisória: `canal-terror/`.
 
 ## Ideia
 
@@ -39,7 +39,7 @@ road trip, home alone, college, camping, Halloween, motel, night shift…). Refe
    - (c) **Domínio público** (Poe, Lovecraft, M. R. James, contos antigos): livre, mas outro clima (clássico, não "true story").
    - (d) **Histórias próprias**, escritas por nós no estilo "true story", inspiradas em padrões (não copiadas). Sem risco de direitos; precisa de cuidado para soar humano.
    - Provável combinação: (d) + (c) no início, (b) com permissão, (a) quando o canal crescer.
-2. **Nome, identidade e miniatura** do canal.
+2. ~~Nome~~ — decidido: The Quiet Hours (@thequiethours.0). Identidade em `marca/`.
 3. ~~Voz~~ — decidido: Gemini Enceladus.
 4. **Visual**: só Gemini com movimento, ou Gemini + vídeo de banco gratuito.
 5. **Onde guardar as referências baixadas**: o usuário pediu a pasta do OneDrive (link em `README.md`).

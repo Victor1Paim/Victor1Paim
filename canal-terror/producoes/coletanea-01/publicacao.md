@@ -25,7 +25,7 @@ Turn the lights down and listen.
 13:03 Story 3 – The Receipt
 
 🎧 Best with headphones.
-🔔 New scary stories every week.
+🔔 New scary stories every week on The Quiet Hours — subscribe: @thequiethours.0
 
 #scarystories #horrorstories #roadtrip #creepy #horror
 ```

@@ -11,4 +11,4 @@ Canal de séries em capítulos (@halftone.tv1). Série atual: **Ano Zero · T1 A
 - Antes de entregar um episódio: `cd halftone && npm run checar -- series/ano-zero/t1/epNN/ep.json`.
 - Segundo canal: **Desvendando Ideias** (@desvendandoideias.ofc) — curiosidades/ciência/mistérios, curtos e longos. Pasta `desvendando-ideias/` — leia `desvendando-ideias/plano-do-canal.md`. Independente do Halftone.
 - Idioma de trabalho com o usuário: português do Brasil.
-- Terceiro canal: **terror faceless em inglês** (YouTube, coletâneas de histórias no formato Mr. Nightmare). Pasta `canal-terror/` — leia `canal-terror/plano-do-canal.md`. Referências baixadas vão para a pasta do OneDrive do usuário (link em `canal-terror/README.md`).
+- Terceiro canal: **The Quiet Hours** (@thequiethours.0) — terror faceless em inglês (YouTube, coletâneas de histórias no formato Mr. Nightmare). Pasta `canal-terror/` — leia `canal-terror/plano-do-canal.md`. Referências baixadas vão para a pasta do OneDrive do usuário (link em `canal-terror/README.md`).
