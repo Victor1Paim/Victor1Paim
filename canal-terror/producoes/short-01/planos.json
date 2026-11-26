@@ -1,0 +1,45 @@
+{
+ "estilo": "Cinematic still photograph, vertical 9:16 composition, 35mm film, night, muted desaturated colors, low contrast, cold tones, subtle film grain, realistic, American Southwest desert, no readable text, no logos, no watermark.",
+ "planos": [
+  {
+   "id": "v1",
+   "p": 0,
+   "prompt": "A small compact car stopped alone on the shoulder of an empty desert highway at night, hazard lights glowing orange, the road vanishing into darkness, huge starry sky above."
+  },
+  {
+   "id": "v2",
+   "p": 1,
+   "prompt": "A car's rearview mirror at night, close up, reflecting far behind the car the vague thin figure of a person standing at the edge of red taillight glow, unsettling."
+  },
+  {
+   "id": "v3",
+   "p": 2,
+   "prompt": "A thin older woman with long gray hair and a hiking backpack, no coat, standing very still on the gravel shoulder of a desert highway at night, lit only by red taillight glow, face in shadow."
+  },
+  {
+   "id": "v4",
+   "p": 3,
+   "prompt": "Close up of a thin older hand gripping and pulling the rear door handle of a car at night, red light, tense."
+  },
+  {
+   "id": "v5",
+   "p": 4,
+   "prompt": "From inside the dark back seat of a car: a gray-haired figure bending down outside to peer through the rear side window, face obscured by reflections, the back seat empty."
+  },
+  {
+   "id": "v6",
+   "p": 5,
+   "prompt": "Through a car's passenger window at night: a thin older woman with long gray hair leaning close to the glass, face half lit red, a calm unsettling smile, one knuckle against the glass."
+  },
+  {
+   "id": "v7",
+   "p": 6,
+   "prompt": "An empty car passenger window at night, nothing outside but black desert and stars, no one there."
+  },
+  {
+   "id": "v8",
+   "p": 7,
+   "prompt": "A tow truck with amber lights on a dark desert highway seen from far away, tiny under an enormous starry sky."
+  }
+ ]
+}
