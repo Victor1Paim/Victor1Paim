@@ -13,6 +13,14 @@ BIB = os.path.join(RAIZ, 'sfx')
 SR = 48000
 # Reforço global (o usuário não ouviu os efeitos na 1ª versão, 26/11): somado ao "db" de cada item.
 REFORCO_EFEITOS, REFORCO_AMBIENTES = 8.0, 6.0
+# Regra (usuário, 26/11): efeito nunca mais alto que a voz. Com fala junto, o efeito fica no máximo TETO_SOBRE_VOZ dB abaixo dela.
+TETO_SOBRE_VOZ = -3.0
+
+
+def nivel_efeito(local_voz, db, voz_media):
+    if local_voz > -60:
+        return min(local_voz + db + REFORCO_EFEITOS, local_voz + TETO_SOBRE_VOZ)
+    return voz_media + db + REFORCO_EFEITOS
 _cat = None
 
 
@@ -106,6 +114,5 @@ def aplicar_historia(trilha, pasta, T0, tempos, voz_db, avisos):
         t_abs = T0 + t + ef.get('desloc', 0.0)
         # nível pela voz NAQUELE momento (pico de 400 ms entre −0,5 s e +1,5 s), não pela média: assim o efeito aparece
         local = momentaneo(trilha[max(0, int((t_abs - 0.5) * SR)):int((t_abs + 1.5) * SR)])
-        ref = local if local > -60 else voz_db
-        colocar(trilha, carregar(ef['id']), t_abs, ref + ef.get('db', -10) + REFORCO_EFEITOS); n += 1
+        colocar(trilha, carregar(ef['id']), t_abs, nivel_efeito(local, ef.get('db', -10), voz_db)); n += 1
     return n

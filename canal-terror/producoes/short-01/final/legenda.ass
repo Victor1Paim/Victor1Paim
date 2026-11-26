@@ -13,116 +13,116 @@ Style: Cta,Inter Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,10
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 1,0:00:00.00,0:00:03.20,Gancho,,0,0,0,,{\fad(0,250)}SHE TRIED TO OPEN\N{\c&H1C1CD6&}MY BACK DOOR
-Dialogue: 0,0:00:00.25,0:00:00.81,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I RAN OUT
-Dialogue: 0,0:00:00.81,0:00:01.51,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF GAS ON
-Dialogue: 0,0:00:01.51,0:00:02.51,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AN EMPTY HIGHWAY
-Dialogue: 0,0:00:02.51,0:00:03.17,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE NEVADA
-Dialogue: 0,0:00:03.17,0:00:03.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DESERT
-Dialogue: 0,0:00:04.43,0:00:04.91,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN I LOOKED
-Dialogue: 0,0:00:04.91,0:00:05.65,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN MY REARVIEW
-Dialogue: 0,0:00:05.65,0:00:06.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MIRROR
-Dialogue: 0,0:00:06.81,0:00:07.79,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THERE WAS A
-Dialogue: 0,0:00:07.79,0:00:08.49,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WOMAN STANDING BEHIND
-Dialogue: 0,0:00:08.49,0:00:09.03,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MY CAR
-Dialogue: 0,0:00:09.77,0:00:10.77,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T ON
-Dialogue: 0,0:00:10.77,0:00:11.15,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE ROAD
-Dialogue: 0,0:00:11.69,0:00:12.05,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS ON
-Dialogue: 0,0:00:12.05,0:00:12.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE SHOULDER
-Dialogue: 0,0:00:12.95,0:00:14.13,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAYBE TEN FEET
-Dialogue: 0,0:00:14.13,0:00:14.55,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BACK
-Dialogue: 0,0:00:14.83,0:00:15.29,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT THE EDGE
-Dialogue: 0,0:00:15.29,0:00:15.79,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF THE RED
-Dialogue: 0,0:00:15.79,0:00:16.59,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GLOW FROM MY
-Dialogue: 0,0:00:16.59,0:00:16.94,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TAILLIGHTS
-Dialogue: 0,0:00:17.83,0:00:18.59,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS OLDER
-Dialogue: 0,0:00:18.93,0:00:20.09,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAYBE SIXTIES
-Dialogue: 0,0:00:20.77,0:00:21.12,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THIN
-Dialogue: 0,0:00:21.33,0:00:22.07,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WITH LONG GRAY
-Dialogue: 0,0:00:22.07,0:00:22.97,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HAIR AND A
-Dialogue: 0,0:00:22.97,0:00:23.43,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HIKING BACKPACK
-Dialogue: 0,0:00:23.93,0:00:24.89,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T WEARING
-Dialogue: 0,0:00:24.89,0:00:25.79,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A COAT AND
-Dialogue: 0,0:00:25.79,0:00:26.37,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS COLD
-Dialogue: 0,0:00:26.37,0:00:26.83,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ENOUGH THAT I
-Dialogue: 0,0:00:26.83,0:00:27.29,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HAD THE HEAT
-Dialogue: 0,0:00:27.29,0:00:27.85,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ON UNTIL THE
-Dialogue: 0,0:00:27.85,0:00:28.59,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BATTERY SCARED ME
-Dialogue: 0,0:00:29.37,0:00:30.15,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HADN'T SEEN
-Dialogue: 0,0:00:30.15,0:00:30.83,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ANY HEADLIGHTS
-Dialogue: 0,0:00:31.03,0:00:31.93,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HADN'T HEARD
-Dialogue: 0,0:00:31.93,0:00:33.01,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FOOTSTEPS ON THE
-Dialogue: 0,0:00:33.01,0:00:33.36,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GRAVEL
-Dialogue: 0,0:00:33.63,0:00:34.75,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS JUST
-Dialogue: 0,0:00:34.75,0:00:35.10,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THERE
-Dialogue: 0,0:00:35.39,0:00:36.47,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I DIDN'T MOVE
-Dialogue: 0,0:00:37.19,0:00:37.75,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I WATCHED HER
-Dialogue: 0,0:00:37.75,0:00:38.15,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE MIRROR
-Dialogue: 0,0:00:39.03,0:00:39.81,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WALKED UP
-Dialogue: 0,0:00:39.81,0:00:40.45,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ALONG THE PASSENGER
-Dialogue: 0,0:00:40.45,0:00:41.31,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SIDE OF THE
-Dialogue: 0,0:00:41.31,0:00:41.66,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR
-Dialogue: 0,0:00:41.57,0:00:41.92,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SLOWLY
-Dialogue: 0,0:00:42.45,0:00:43.07,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND STOPPED AT
-Dialogue: 0,0:00:43.07,0:00:43.55,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE BACK DOOR
-Dialogue: 0,0:00:44.31,0:00:45.25,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN SHE REACHED
-Dialogue: 0,0:00:45.25,0:00:46.71,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OUT AND PULLED
-Dialogue: 0,0:00:46.71,0:00:47.15,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE HANDLE
-Dialogue: 0,0:00:47.59,0:00:48.73,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS LOCKED
-Dialogue: 0,0:00:49.19,0:00:49.83,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE PULLED IT
-Dialogue: 0,0:00:49.83,0:00:50.25,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AGAIN
-Dialogue: 0,0:00:50.55,0:00:50.90,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HARDER
-Dialogue: 0,0:00:50.77,0:00:51.51,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND THE WHOLE
-Dialogue: 0,0:00:51.51,0:00:52.39,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR ROCKED A
-Dialogue: 0,0:00:52.39,0:00:52.74,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LITTLE
-Dialogue: 0,0:00:52.69,0:00:53.63,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN SHE BENT
-Dialogue: 0,0:00:53.63,0:00:54.31,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DOWN AND LOOKED
-Dialogue: 0,0:00:54.31,0:00:54.97,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THROUGH THE BACK
-Dialogue: 0,0:00:54.97,0:00:55.32,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WINDOW
-Dialogue: 0,0:00:55.63,0:00:56.47,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T LOOKING
-Dialogue: 0,0:00:56.47,0:00:57.33,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT ME SHE
-Dialogue: 0,0:00:57.33,0:00:57.77,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WAS LOOKING AT
-Dialogue: 0,0:00:57.77,0:00:58.43,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE BACK SEAT
-Dialogue: 0,0:00:58.45,0:00:59.61,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LIKE SHE EXPECTED
-Dialogue: 0,0:00:59.61,0:01:00.19,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SOMEONE TO BE
-Dialogue: 0,0:01:00.19,0:01:00.69,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SITTING THERE
-Dialogue: 0,0:01:01.55,0:01:02.17,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HIT THE
-Dialogue: 0,0:01:02.17,0:01:02.52,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HORN
-Dialogue: 0,0:01:02.91,0:01:03.35,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I DON'T KNOW
-Dialogue: 0,0:01:03.35,0:01:03.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WHY
-Dialogue: 0,0:01:03.89,0:01:04.47,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS THE
-Dialogue: 0,0:01:04.47,0:01:05.05,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ONLY THING I
-Dialogue: 0,0:01:05.05,0:01:05.75,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}COULD THINK OF
-Dialogue: 0,0:01:06.69,0:01:07.19,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MANNY STOOD UP
-Dialogue: 0,0:01:07.19,0:01:07.65,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN FRONT OF
-Dialogue: 0,0:01:07.65,0:01:08.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE CAR
-Dialogue: 0,0:01:08.51,0:01:09.59,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE WOMAN STRAIGHTENED
-Dialogue: 0,0:01:09.59,0:01:10.29,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UP AND WALKED
-Dialogue: 0,0:01:10.29,0:01:10.91,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TO MY WINDOW
-Dialogue: 0,0:01:11.15,0:01:11.95,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE PASSENGER SIDE
-Dialogue: 0,0:01:12.01,0:01:13.01,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND KNOCKED ON
-Dialogue: 0,0:01:13.01,0:01:13.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE GLASS WITH
-Dialogue: 0,0:01:13.53,0:01:15.07,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ONE KNUCKLE VERY
-Dialogue: 0,0:01:15.07,0:01:15.42,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}POLITELY
-Dialogue: 0,0:01:16.29,0:01:17.27,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE LEANED DOWN
-Dialogue: 0,0:01:17.27,0:01:18.43,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND SAID MY
-Dialogue: 0,0:01:18.43,0:01:19.01,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR'S JUST UP
-Dialogue: 0,0:01:19.01,0:01:19.36,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE ROAD
-Dialogue: 0,0:01:19.61,0:01:20.21,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I'VE GOT A
-Dialogue: 0,0:01:20.21,0:01:20.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FLAT
-Dialogue: 0,0:01:20.47,0:01:21.03,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I JUST NEED
-Dialogue: 0,0:01:21.03,0:01:21.45,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A RIDE TO
-Dialogue: 0,0:01:21.45,0:01:21.93,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT
-Dialogue: 0,0:01:22.37,0:01:23.29,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MANNY WAS WALKING
-Dialogue: 0,0:01:23.29,0:01:23.81,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AROUND THE FRONT
-Dialogue: 0,0:01:23.81,0:01:24.29,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF MY CAR
-Dialogue: 0,0:01:24.29,0:01:24.95,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}NOW SAYING
-Dialogue: 0,0:01:25.15,0:01:26.21,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HEY HEY MA
-Dialogue: 0,0:01:26.21,0:01:26.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AM
-Dialogue: 0,0:01:27.01,0:01:27.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I LOOKED AT
-Dialogue: 0,0:01:27.53,0:01:28.11,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HIM FOR MAYBE
-Dialogue: 0,0:01:28.11,0:01:28.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A SECOND
-Dialogue: 0,0:01:29.13,0:01:29.48,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WHEN I LOOKED
-Dialogue: 0,0:01:29.43,0:01:30.09,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BACK AT THE
-Dialogue: 0,0:01:30.09,0:01:30.44,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WINDOW
-Dialogue: 0,0:01:30.55,0:01:31.11,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T THERE
-Dialogue: 1,0:01:32.00,0:01:39.24,Cta,,0,0,0,,{\fad(250,0)}FULL STORY\N{\c&H1C1CD6&}ON OUR CHANNEL
+Dialogue: 0,0:00:01.00,0:00:01.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I RAN OUT
+Dialogue: 0,0:00:01.56,0:00:02.26,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF GAS ON
+Dialogue: 0,0:00:02.26,0:00:03.26,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AN EMPTY HIGHWAY
+Dialogue: 0,0:00:03.26,0:00:03.92,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE NEVADA
+Dialogue: 0,0:00:03.92,0:00:04.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DESERT
+Dialogue: 0,0:00:05.18,0:00:05.66,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN I LOOKED
+Dialogue: 0,0:00:05.66,0:00:06.40,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN MY REARVIEW
+Dialogue: 0,0:00:06.40,0:00:06.75,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MIRROR
+Dialogue: 0,0:00:07.56,0:00:08.54,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THERE WAS A
+Dialogue: 0,0:00:08.54,0:00:09.24,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WOMAN STANDING BEHIND
+Dialogue: 0,0:00:09.24,0:00:09.78,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MY CAR
+Dialogue: 0,0:00:10.52,0:00:11.52,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T ON
+Dialogue: 0,0:00:11.52,0:00:11.90,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE ROAD
+Dialogue: 0,0:00:12.44,0:00:12.80,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS ON
+Dialogue: 0,0:00:12.80,0:00:13.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE SHOULDER
+Dialogue: 0,0:00:13.70,0:00:14.88,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAYBE TEN FEET
+Dialogue: 0,0:00:14.88,0:00:15.30,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BACK
+Dialogue: 0,0:00:15.58,0:00:16.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT THE EDGE
+Dialogue: 0,0:00:16.04,0:00:16.54,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF THE RED
+Dialogue: 0,0:00:16.54,0:00:17.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GLOW FROM MY
+Dialogue: 0,0:00:17.34,0:00:17.69,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TAILLIGHTS
+Dialogue: 0,0:00:18.58,0:00:19.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS OLDER
+Dialogue: 0,0:00:19.68,0:00:20.84,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAYBE SIXTIES
+Dialogue: 0,0:00:21.52,0:00:21.87,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THIN
+Dialogue: 0,0:00:22.08,0:00:22.82,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WITH LONG GRAY
+Dialogue: 0,0:00:22.82,0:00:23.72,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HAIR AND A
+Dialogue: 0,0:00:23.72,0:00:24.18,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HIKING BACKPACK
+Dialogue: 0,0:00:24.68,0:00:25.64,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T WEARING
+Dialogue: 0,0:00:25.64,0:00:26.54,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A COAT AND
+Dialogue: 0,0:00:26.54,0:00:27.12,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS COLD
+Dialogue: 0,0:00:27.12,0:00:27.58,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ENOUGH THAT I
+Dialogue: 0,0:00:27.58,0:00:28.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HAD THE HEAT
+Dialogue: 0,0:00:28.04,0:00:28.60,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ON UNTIL THE
+Dialogue: 0,0:00:28.60,0:00:29.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BATTERY SCARED ME
+Dialogue: 0,0:00:30.12,0:00:30.90,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HADN'T SEEN
+Dialogue: 0,0:00:30.90,0:00:31.58,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ANY HEADLIGHTS
+Dialogue: 0,0:00:31.78,0:00:32.68,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HADN'T HEARD
+Dialogue: 0,0:00:32.68,0:00:33.76,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FOOTSTEPS ON THE
+Dialogue: 0,0:00:33.76,0:00:34.11,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GRAVEL
+Dialogue: 0,0:00:34.38,0:00:35.50,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WAS JUST
+Dialogue: 0,0:00:35.50,0:00:35.85,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THERE
+Dialogue: 0,0:00:36.14,0:00:37.22,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I DIDN'T MOVE
+Dialogue: 0,0:00:37.94,0:00:38.50,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I WATCHED HER
+Dialogue: 0,0:00:38.50,0:00:38.90,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE MIRROR
+Dialogue: 0,0:00:39.78,0:00:40.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WALKED UP
+Dialogue: 0,0:00:40.56,0:00:41.20,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ALONG THE PASSENGER
+Dialogue: 0,0:00:41.20,0:00:42.06,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SIDE OF THE
+Dialogue: 0,0:00:42.06,0:00:42.41,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR
+Dialogue: 0,0:00:42.32,0:00:42.67,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SLOWLY
+Dialogue: 0,0:00:43.20,0:00:43.82,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND STOPPED AT
+Dialogue: 0,0:00:43.82,0:00:44.30,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE BACK DOOR
+Dialogue: 0,0:00:45.06,0:00:46.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN SHE REACHED
+Dialogue: 0,0:00:46.00,0:00:47.46,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OUT AND PULLED
+Dialogue: 0,0:00:47.46,0:00:47.90,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE HANDLE
+Dialogue: 0,0:00:48.34,0:00:49.48,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS LOCKED
+Dialogue: 0,0:00:49.94,0:00:50.58,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE PULLED IT
+Dialogue: 0,0:00:50.58,0:00:51.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AGAIN
+Dialogue: 0,0:00:51.30,0:00:51.65,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HARDER
+Dialogue: 0,0:00:51.52,0:00:52.26,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND THE WHOLE
+Dialogue: 0,0:00:52.26,0:00:53.14,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR ROCKED A
+Dialogue: 0,0:00:53.14,0:00:53.49,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LITTLE
+Dialogue: 0,0:00:53.44,0:00:54.38,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THEN SHE BENT
+Dialogue: 0,0:00:54.38,0:00:55.06,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DOWN AND LOOKED
+Dialogue: 0,0:00:55.06,0:00:55.72,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THROUGH THE BACK
+Dialogue: 0,0:00:55.72,0:00:56.07,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WINDOW
+Dialogue: 0,0:00:56.38,0:00:57.22,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T LOOKING
+Dialogue: 0,0:00:57.22,0:00:58.08,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT ME SHE
+Dialogue: 0,0:00:58.08,0:00:58.52,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WAS LOOKING AT
+Dialogue: 0,0:00:58.52,0:00:59.18,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE BACK SEAT
+Dialogue: 0,0:00:59.20,0:01:00.36,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LIKE SHE EXPECTED
+Dialogue: 0,0:01:00.36,0:01:00.94,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SOMEONE TO BE
+Dialogue: 0,0:01:00.94,0:01:01.44,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SITTING THERE
+Dialogue: 0,0:01:02.30,0:01:02.92,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I HIT THE
+Dialogue: 0,0:01:02.92,0:01:03.27,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HORN
+Dialogue: 0,0:01:03.66,0:01:04.10,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I DON'T KNOW
+Dialogue: 0,0:01:04.10,0:01:04.45,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WHY
+Dialogue: 0,0:01:04.64,0:01:05.22,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT WAS THE
+Dialogue: 0,0:01:05.22,0:01:05.80,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ONLY THING I
+Dialogue: 0,0:01:05.80,0:01:06.50,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}COULD THINK OF
+Dialogue: 0,0:01:07.44,0:01:07.94,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MANNY STOOD UP
+Dialogue: 0,0:01:07.94,0:01:08.40,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN FRONT OF
+Dialogue: 0,0:01:08.40,0:01:08.75,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE CAR
+Dialogue: 0,0:01:09.26,0:01:10.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE WOMAN STRAIGHTENED
+Dialogue: 0,0:01:10.34,0:01:11.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UP AND WALKED
+Dialogue: 0,0:01:11.04,0:01:11.66,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TO MY WINDOW
+Dialogue: 0,0:01:11.90,0:01:12.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE PASSENGER SIDE
+Dialogue: 0,0:01:12.76,0:01:13.76,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND KNOCKED ON
+Dialogue: 0,0:01:13.76,0:01:14.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE GLASS WITH
+Dialogue: 0,0:01:14.28,0:01:15.82,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ONE KNUCKLE VERY
+Dialogue: 0,0:01:15.82,0:01:16.17,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}POLITELY
+Dialogue: 0,0:01:17.04,0:01:18.02,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE LEANED DOWN
+Dialogue: 0,0:01:18.02,0:01:19.18,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND SAID MY
+Dialogue: 0,0:01:19.18,0:01:19.76,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CAR'S JUST UP
+Dialogue: 0,0:01:19.76,0:01:20.11,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE ROAD
+Dialogue: 0,0:01:20.36,0:01:20.96,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I'VE GOT A
+Dialogue: 0,0:01:20.96,0:01:21.31,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FLAT
+Dialogue: 0,0:01:21.22,0:01:21.78,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I JUST NEED
+Dialogue: 0,0:01:21.78,0:01:22.20,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A RIDE TO
+Dialogue: 0,0:01:22.20,0:01:22.68,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT
+Dialogue: 0,0:01:23.12,0:01:24.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MANNY WAS WALKING
+Dialogue: 0,0:01:24.04,0:01:24.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AROUND THE FRONT
+Dialogue: 0,0:01:24.56,0:01:25.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF MY CAR
+Dialogue: 0,0:01:25.04,0:01:25.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}NOW SAYING
+Dialogue: 0,0:01:25.90,0:01:26.96,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HEY HEY MA
+Dialogue: 0,0:01:26.96,0:01:27.31,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AM
+Dialogue: 0,0:01:27.76,0:01:28.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I LOOKED AT
+Dialogue: 0,0:01:28.28,0:01:28.86,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HIM FOR MAYBE
+Dialogue: 0,0:01:28.86,0:01:29.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A SECOND
+Dialogue: 0,0:01:29.88,0:01:30.23,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WHEN I LOOKED
+Dialogue: 0,0:01:30.18,0:01:30.84,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BACK AT THE
+Dialogue: 0,0:01:30.84,0:01:31.19,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WINDOW
+Dialogue: 0,0:01:31.30,0:01:31.86,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SHE WASN'T THERE
+Dialogue: 1,0:01:32.75,0:01:39.99,Cta,,0,0,0,,{\fad(250,0)}FULL STORY\N{\c&H1C1CD6&}ON OUR CHANNEL

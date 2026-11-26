@@ -48,7 +48,7 @@ for w in wavs:
     y = np.frombuffer(y, np.float32).astype(float)
     tempos.append((t, t + len(y) / SR)); voz += [y, np.zeros(int(PAUSA * SR))]; t += len(y) / SR + PAUSA
 voz = np.concatenate(voz)
-INI = 0.25                                         # quase sem respiro: o gancho é a primeira coisa
+INI = float(cfg.get('abertura_s', 1.0))            # abertura: só o título + impacto antes da voz (curta: Shorts perdem gente sem voz)
 total = INI + len(voz) / SR + 1.2
 sf.write(P('voz', 'voz.wav'), voz.astype(np.float32), SR)
 
@@ -137,6 +137,8 @@ import sfxmix                                    # trilha e efeitos da bibliotec
 tc = cfg.get('trilha', {'drone': 'drone-grave-1', 'sting': 'sting-1'})
 x = sfxmix.em_loop(sfxmix.carregar(tc['drone']), N); f = int(0.8 * SR); x[:f] *= np.linspace(0, 1, f)[:, None]
 sfxmix.colocar(mix, x, 0, voz_db + tc.get('drone_db', -10))
+if tc.get('abertura'):                           # impacto junto com o título, antes da voz
+    sfxmix.colocar(mix, sfxmix.carregar(tc['abertura']), 0.0, voz_db + tc.get('abertura_db', -4))
 if tc.get('sting'):                              # impacto quando o susto começa (início do 2º segmento)
     sfxmix.colocar(mix, sfxmix.carregar(tc['sting']), INI + tempos[1][0] - 1.2, voz_db + tc.get('sting_db', -4))
 sx = cfg.get('sfx', {}); avisos = []
@@ -151,7 +153,7 @@ for ef in sx.get('efeitos', []):
     if t is None: avisos.append(ef['frase']); continue
     t_abs = INI + t + ef.get('desloc', 0.0)                 # nível pela voz naquele momento (ver sfxmix.aplicar_historia)
     local = sfxmix.momentaneo(voz[max(0, int((t_abs - INI - 0.5) * SR)):int((t_abs - INI + 1.5) * SR)])
-    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), t_abs, (local if local > -60 else voz_db) + ef.get('db', -10) + sfxmix.REFORCO_EFEITOS)
+    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), t_abs, sfxmix.nivel_efeito(local, ef.get('db', -10), voz_db))
 if avisos: print('AVISO frases não achadas:', avisos)
 sf.write(os.path.join(fin, 'mix.wav'), mix.astype(np.float32), SR)
 audio = os.path.join(fin, 'audio.wav')

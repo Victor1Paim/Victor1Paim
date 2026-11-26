@@ -80,7 +80,9 @@
  "cta_tela": "FULL STORY|ON OUR CHANNEL",
  "trilha": {
   "drone": "drone-grave-1",
-  "sting": "sting-2",
+  "abertura": "sting-2",
+  "abertura_db": -4,
+  "sting": "sting-1",
   "drone_db": -10,
   "sting_db": -4
  },
@@ -100,11 +102,6 @@
    }
   ],
   "efeitos": [
-   {
-    "id": "motor-falhando",
-    "frase": "I ran out of gas",
-    "db": -7
-   },
    {
     "id": "macaneta-carro-travada",
     "frase": "pulled the handle",
@@ -133,5 +130,6 @@
     "db": -16
    }
   ]
- }
+ },
+ "abertura_s": 1.0
 }
