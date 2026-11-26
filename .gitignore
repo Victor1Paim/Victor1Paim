@@ -2,3 +2,5 @@
 # Canal de terror: vídeos e transcrições de terceiros
 canal-terror/referencias/videos/
 producoes/.cache-gemini/
+**/.cache-gemini/
+canal-terror/producoes/**/*.wav
