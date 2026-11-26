@@ -131,12 +131,26 @@ for n, (pl, ini, fim) in enumerate(segs):
 N = int((total + 0.5) * SR)
 mix = np.zeros((N, 2))
 v = np.repeat(voz[:, None], 2, 1); mix[int(INI * SR):int(INI * SR) + len(v)] += v
-tr = os.path.join(RAIZ, 'producoes/piloto/trilha')
-dr, _ = sf.read(os.path.join(tr, 'drone.wav')); dr = dr[int(60 * SR):int(60 * SR) + N]
 rms = lambda x: 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)
-mix[:len(dr)] += dr * 10 ** ((rms(voz[voz != 0]) - 6 - rms(dr)) / 20) * np.minimum(1, np.arange(len(dr))[:, None] / SR / 0.8)
-st, _ = sf.read(os.path.join(tr, 'sting.wav'))
-i = int((INI + tempos[1][0] - 1.55) * SR); mix[i:i + len(st)] += st[:N - i] * 10 ** (-6 / 20)
+voz_db = rms(voz[voz != 0])
+import sfxmix                                    # trilha e efeitos da biblioteca (ElevenLabs)
+tc = cfg.get('trilha', {'drone': 'drone-grave-1', 'sting': 'sting-1'})
+x = sfxmix.em_loop(sfxmix.carregar(tc['drone']), N); f = int(0.8 * SR); x[:f] *= np.linspace(0, 1, f)[:, None]
+sfxmix.colocar(mix, x, 0, voz_db + tc.get('drone_db', -10))
+if tc.get('sting'):                              # impacto quando o susto começa (início do 2º segmento)
+    sfxmix.colocar(mix, sfxmix.carregar(tc['sting']), INI + tempos[1][0] - 1.2, voz_db + tc.get('sting_db', -4))
+sx = cfg.get('sfx', {}); avisos = []
+for amb in sx.get('ambientes', []):              # de/ate = segmentos (inclusive)
+    a0 = 0.0 if amb['de'] == 0 else INI + tempos[amb['de']][0] - 0.4
+    a1 = total if amb['ate'] >= len(tempos) - 1 else INI + tempos[amb['ate'] + 1][0]
+    y = sfxmix.em_loop(sfxmix.carregar(amb['id']), int((a1 - a0) * SR)); f = min(int(SR), len(y) // 3)
+    y[:f] *= np.linspace(0, 1, f)[:, None]; y[-f:] *= np.linspace(1, 0, f)[:, None]
+    sfxmix.colocar(mix, y, a0, voz_db + amb.get('db', -22))
+for ef in sx.get('efeitos', []):
+    t = sfxmix.tempo_frase(palavras, ef['frase'], ef.get('n', 1), ef.get('fim', False))
+    if t is None: avisos.append(ef['frase']); continue
+    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), INI + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10))
+if avisos: print('AVISO frases não achadas:', avisos)
 sf.write(os.path.join(fin, 'mix.wav'), mix.astype(np.float32), SR)
 audio = os.path.join(fin, 'audio.wav')
 med = subprocess.run(['ffmpeg', '-v', 'info', '-i', os.path.join(fin, 'mix.wav'), '-af',

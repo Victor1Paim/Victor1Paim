@@ -37,11 +37,13 @@ if os.path.exists(P('coletanea.json')):
     hist = [dict(h, dir=P(h['pasta'])) for h in col['historias']]
     vinheta_img = P('imagens', col['vinheta']['id'] + '.png')
     titulo = col['titulo']
+    trilha_cfg = col.get('trilha')
 else:
     pl = jload(P('planos.json'))
     hist = [{'dir': a.pasta, 'cartela': pl.get('cartela', ['Story 1', ''])}]
     vinheta_img = P('imagens', pl['vinheta']['id'] + '.png')
     titulo = pl.get('titulo', '')
+    trilha_cfg = pl.get('trilha')
 for h in hist:
     h['planos'] = jload(os.path.join(h['dir'], 'planos.json'))['planos']
     h['tempos'] = jload(os.path.join(h['dir'], 'voz', 'tempos.json'))
@@ -171,19 +173,36 @@ def colocar(trilha, arq, t0, db=0.0):
 
 
 rms = lambda v: 20 * np.log10(np.sqrt(np.mean(v ** 2)) + 1e-9)
-tr = P('trilha')
-if not os.path.exists(os.path.join(tr, 'drone.wav')) or duracao(os.path.join(tr, 'drone.wav')) < total:
-    subprocess.run([sys.executable, '-I', os.path.join(RAIZ, 'motor/trilha.py'), tr, '--duracao', f'{total + 2:.0f}'], check=True)
-colocar(voz_fx, os.path.join(tr, 'vinheta.wav'), 0.0, -2)
 niveis = []
 for h in hist:
     colocar(voz_fx, os.path.join(h['dir'], 'voz', 'narracao.wav'), h['T0'])
     v, _ = sf.read(os.path.join(h['dir'], 'voz', 'narracao.wav')); niveis.append(rms(v[v != 0]))
-for b in blocos_video:
-    if b[0] == 'cartela':
-        colocar(voz_fx, os.path.join(tr, 'sting.wav'), b[1] - 1.4, -4)
-dr, _ = sf.read(os.path.join(tr, 'drone.wav'))
-colocar(drone, os.path.join(tr, 'drone.wav'), T_VIN - 0.5, float(np.mean(niveis)) - 7 - rms(dr))
+voz_db = float(np.mean(niveis))
+if trilha_cfg:                               # trilha da biblioteca (ElevenLabs): {"drone", "sting", "vinheta", "drone_db"}
+    import sfxmix
+    sfxmix.colocar(voz_fx, sfxmix.carregar(trilha_cfg['vinheta']), 0.0, voz_db + trilha_cfg.get('vinheta_db', -1))
+    st = sfxmix.carregar(trilha_cfg['sting'])
+    for b in blocos_video:
+        if b[0] == 'cartela':
+            sfxmix.colocar(voz_fx, st, b[1] - 1.2, voz_db + trilha_cfg.get('sting_db', -3))
+    x = sfxmix.em_loop(sfxmix.carregar(trilha_cfg['drone']), N - int((T_VIN - 0.5) * SR))
+    f = int(2.5 * SR); x[:f] *= np.linspace(0, 1, f)[:, None]
+    sfxmix.colocar(drone, x, T_VIN - 0.5, voz_db + trilha_cfg.get('drone_db', -11))
+    avisos = []
+    for h in hist:
+        q = sfxmix.aplicar_historia(voz_fx, h['dir'], h['T0'], h['tempos'], voz_db, avisos)
+        print(f"  efeitos de {os.path.basename(h['dir'].rstrip('/'))}: {q}")
+    for av in avisos: print('  AVISO', av)
+else:                                        # trilha sintetizada (antiga)
+    tr = P('trilha')
+    if not os.path.exists(os.path.join(tr, 'drone.wav')) or duracao(os.path.join(tr, 'drone.wav')) < total:
+        subprocess.run([sys.executable, '-I', os.path.join(RAIZ, 'motor/trilha.py'), tr, '--duracao', f'{total + 2:.0f}'], check=True)
+    colocar(voz_fx, os.path.join(tr, 'vinheta.wav'), 0.0, -2)
+    for b in blocos_video:
+        if b[0] == 'cartela':
+            colocar(voz_fx, os.path.join(tr, 'sting.wav'), b[1] - 1.4, -4)
+    dr, _ = sf.read(os.path.join(tr, 'drone.wav'))
+    colocar(drone, os.path.join(tr, 'drone.wav'), T_VIN - 0.5, voz_db - 7 - rms(dr))
 env = np.ones(N)
 for b in blocos_video[1:]:                   # o drone baixa nas trocas de história (como nas referências)
     if b[0] == 'cartela':

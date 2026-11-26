@@ -1,0 +1,596 @@
+{
+ "sobre": "Biblioteca de efeitos do canal de terror. Gerados no ElevenLabs Sound Effects (decisão: efeitos só do ElevenLabs). Conteúdo gerado em plano pago pode ser usado comercialmente para sempre; gerado no plano grátis, nunca.",
+ "efeitos": [
+  {
+   "id": "drone-grave-1",
+   "categoria": "trilha",
+   "prompt": "Dark ambient horror drone, deep low sustained bass tones, slowly evolving, ominous, no melody, no percussion",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "drone",
+    "fundo",
+    "grave"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "drone-grave-2",
+   "categoria": "trilha",
+   "prompt": "Low unsettling cinematic drone with a distant airy texture and subtle rumble, horror atmosphere, no melody, no percussion",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "drone",
+    "fundo"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "drone-tenso",
+   "categoria": "trilha",
+   "prompt": "Tense horror drone: faint high dissonant string harmonics over a deep bass rumble, creeping unease, no melody",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "drone",
+    "tensão"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "sting-1",
+   "categoria": "trilha",
+   "prompt": "Cinematic horror sting: a short reverse swell into a deep boom hit with a dark metallic tail",
+   "duracao": 5,
+   "loop": false,
+   "tags": [
+    "sting",
+    "virada"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "sting-2",
+   "categoria": "trilha",
+   "prompt": "Deep cinematic horror impact hit with a long low rumble tail",
+   "duracao": 5,
+   "loop": false,
+   "tags": [
+    "sting",
+    "impacto"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "vinheta-1",
+   "categoria": "trilha",
+   "prompt": "Dark horror intro: slow low riser swelling into a heavy deep boom with a long metallic reverb tail",
+   "duracao": 7,
+   "loop": false,
+   "tags": [
+    "vinheta",
+    "abertura",
+    "impacto"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "riser-1",
+   "categoria": "trilha",
+   "prompt": "Slow tense horror riser building from low rumble to high dissonant tension",
+   "duracao": 6,
+   "loop": false,
+   "tags": [
+    "riser",
+    "tensão"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "whoosh-grave",
+   "categoria": "trilha",
+   "prompt": "Low dark whoosh transition, soft",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "transição",
+    "whoosh"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "amb-deserto-noite",
+   "categoria": "ambiente",
+   "prompt": "Audible desert night wind blowing steadily across open land and dry brush, low whooshing gusts, lonely and cold, with faint crickets",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "deserto",
+    "noite",
+    "vento"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-estrada-noite",
+   "categoria": "ambiente",
+   "prompt": "Rural roadside at night ambience: crickets, faint wind, very distant car passing once",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "estrada",
+    "noite",
+    "campo"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-carro-parado-motor",
+   "categoria": "ambiente",
+   "prompt": "Inside a parked car with the engine idling, low steady hum, quiet night outside",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "carro",
+    "motor",
+    "interior"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-carro-rodando",
+   "categoria": "ambiente",
+   "prompt": "Inside a car driving on a highway at night, steady road noise and engine hum",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "carro",
+    "estrada",
+    "interior"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-diner-noite",
+   "categoria": "ambiente",
+   "prompt": "Quiet roadside diner at 2 a.m.: low refrigerator hum, faint kitchen clatter, coffee machine, almost empty",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "diner",
+    "restaurante",
+    "interior"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-chuva-janela",
+   "categoria": "ambiente",
+   "prompt": "Rain against a window from inside, steady and muffled",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "chuva",
+    "janela"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-fluorescente",
+   "categoria": "ambiente",
+   "prompt": "Fluorescent light buzz in an empty room with an occasional flicker click",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "luz",
+    "zumbido",
+    "interior"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-posto-noite",
+   "categoria": "ambiente",
+   "prompt": "Empty gas station at night: buzzing canopy lights, distant highway, crickets",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "posto",
+    "noite"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-truckstop",
+   "categoria": "ambiente",
+   "prompt": "Truck stop parking lot at night: distant idling diesel semi trucks, low rumble",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "caminhão",
+    "estacionamento",
+    "noite"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "amb-quarto-motel",
+   "categoria": "ambiente",
+   "prompt": "Cheap motel room at night: wall air conditioner humming, distant highway",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "motel",
+    "quarto"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "amb-floresta-noite",
+   "categoria": "ambiente",
+   "prompt": "Forest at night: crickets, light wind in the trees, a distant owl",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "floresta",
+    "noite"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "amb-casa-silencio",
+   "categoria": "ambiente",
+   "prompt": "Empty house at night room tone: very quiet, faint refrigerator hum, clock ticking",
+   "duracao": 30,
+   "loop": true,
+   "tags": [
+    "casa",
+    "silêncio"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "macaneta-carro-travada",
+   "categoria": "efeito",
+   "prompt": "Someone outside pulling the door handle of a locked car twice, plastic clunk and rattle, close",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "carro",
+    "porta",
+    "maçaneta"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "batida-vidro-carro",
+   "categoria": "efeito",
+   "prompt": "Two soft knuckle knocks on a car window glass from outside, close, quiet night",
+   "duracao": 1.5,
+   "loop": false,
+   "tags": [
+    "batida",
+    "vidro",
+    "janela",
+    "carro"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "batida-porta-madeira",
+   "categoria": "efeito",
+   "prompt": "Three slow knocks on a wooden door heard from inside",
+   "duracao": 2.5,
+   "loop": false,
+   "tags": [
+    "batida",
+    "porta"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "buzina-carro",
+   "categoria": "efeito",
+   "prompt": "Short car horn honk from inside a compact car",
+   "duracao": 1,
+   "loop": false,
+   "tags": [
+    "buzina",
+    "carro"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "porta-carro-fecha",
+   "categoria": "efeito",
+   "prompt": "Car door closing shut, solid thunk",
+   "duracao": 1.2,
+   "loop": false,
+   "tags": [
+    "carro",
+    "porta"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "trava-carro",
+   "categoria": "efeito",
+   "prompt": "Car door locks clicking shut from inside",
+   "duracao": 1,
+   "loop": false,
+   "tags": [
+    "carro",
+    "trava"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "motor-falhando",
+   "categoria": "efeito",
+   "prompt": "Small car engine sputtering and dying, then silence",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "carro",
+    "motor",
+    "pane"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "motor-ligando",
+   "categoria": "efeito",
+   "prompt": "Old car engine starting and settling into idle",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "carro",
+    "motor"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "passos-cascalho",
+   "categoria": "efeito",
+   "prompt": "Slow footsteps on a gravel roadside at night",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "passos",
+    "cascalho"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "passos-corredor",
+   "categoria": "efeito",
+   "prompt": "Footsteps walking down a linoleum hallway",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "passos",
+    "interior"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "sino-porta-loja",
+   "categoria": "efeito",
+   "prompt": "Small brass bell over a diner door jingling as the door opens",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "sino",
+    "porta",
+    "diner"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "xicara-mesa",
+   "categoria": "efeito",
+   "prompt": "Ceramic coffee mug set down on a formica table",
+   "duracao": 1,
+   "loop": false,
+   "tags": [
+    "xícara",
+    "mesa",
+    "diner"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "celular-vibrando",
+   "categoria": "efeito",
+   "prompt": "Phone vibrating on a hard surface in short bursts",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "celular",
+    "vibrar"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "celular-toque",
+   "categoria": "efeito",
+   "prompt": "Simple phone ringtone ringing in a quiet kitchen",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "celular",
+    "toque"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "chaves",
+   "categoria": "efeito",
+   "prompt": "Car keys jingling as they are pulled from a pocket",
+   "duracao": 1.5,
+   "loop": false,
+   "tags": [
+    "chaves"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "bomba-clique",
+   "categoria": "efeito",
+   "prompt": "Gas pump nozzle clicking off when the tank is full",
+   "duracao": 1,
+   "loop": false,
+   "tags": [
+    "posto",
+    "bomba"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "abastecendo",
+   "categoria": "efeito",
+   "prompt": "Fuel pumping into a car tank, nozzle hum",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "posto",
+    "bomba"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "corrente-guincho",
+   "categoria": "efeito",
+   "prompt": "Tow truck chain rattling and a hook clanking on metal",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "guincho",
+    "corrente"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "freio-ar-caminhao",
+   "categoria": "efeito",
+   "prompt": "Semi truck air brake hiss",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "caminhão",
+    "freio"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "buzina-caminhao-longe",
+   "categoria": "efeito",
+   "prompt": "Distant semi truck air horn at night",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "caminhão",
+    "buzina"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "respiracao-tensa",
+   "categoria": "efeito",
+   "prompt": "Nervous shaky breathing, close and quiet",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "respiração",
+    "medo"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "batimento",
+   "categoria": "efeito",
+   "prompt": "Slow heavy heartbeat, low and tense",
+   "duracao": 4,
+   "loop": false,
+   "tags": [
+    "coração",
+    "tensão"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "cachorro-longe",
+   "categoria": "efeito",
+   "prompt": "Distant dog barking at night with echo",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "cachorro",
+    "noite"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "pneu-cascalho",
+   "categoria": "efeito",
+   "prompt": "Car tires rolling slowly onto a gravel shoulder and stopping",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "carro",
+    "pneu",
+    "cascalho"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "impressora-recibo",
+   "categoria": "efeito",
+   "prompt": "Small receipt printer printing at a gas pump",
+   "duracao": 2,
+   "loop": false,
+   "tags": [
+    "recibo",
+    "impressora",
+    "posto"
+   ],
+   "prioridade": 1
+  },
+  {
+   "id": "interruptor",
+   "categoria": "efeito",
+   "prompt": "A plastic wall light switch flipped on, one sharp clear click, close mic",
+   "duracao": 1,
+   "loop": false,
+   "tags": [
+    "luz",
+    "clique"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "porta-rangendo",
+   "categoria": "efeito",
+   "prompt": "Old wooden door slowly creaking open",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "porta",
+    "rangido"
+   ],
+   "prioridade": 2
+  },
+  {
+   "id": "rajada-vento",
+   "categoria": "efeito",
+   "prompt": "Single gust of cold wind",
+   "duracao": 3,
+   "loop": false,
+   "tags": [
+    "vento"
+   ],
+   "prioridade": 2
+  }
+ ]
+}

@@ -27,5 +27,13 @@
     "By: Anonymous"
    ]
   }
- ]
+ ],
+ "trilha": {
+  "drone": "drone-grave-1",
+  "sting": "sting-1",
+  "vinheta": "vinheta-1",
+  "drone_db": -11,
+  "sting_db": -3,
+  "vinheta_db": -1
+ }
 }

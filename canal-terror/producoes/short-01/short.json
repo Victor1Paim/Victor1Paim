@@ -77,5 +77,61 @@
   }
  ],
  "gancho_tela": "SHE TRIED TO OPEN|MY BACK DOOR",
- "cta_tela": "FULL STORY|ON OUR CHANNEL"
+ "cta_tela": "FULL STORY|ON OUR CHANNEL",
+ "trilha": {
+  "drone": "drone-grave-1",
+  "sting": "sting-2",
+  "drone_db": -10,
+  "sting_db": -4
+ },
+ "sfx": {
+  "ambientes": [
+   {
+    "id": "amb-deserto-noite",
+    "de": 0,
+    "ate": 7,
+    "db": -20
+   },
+   {
+    "id": "amb-carro-parado-motor",
+    "de": 1,
+    "ate": 6,
+    "db": -30
+   }
+  ],
+  "efeitos": [
+   {
+    "id": "motor-falhando",
+    "frase": "I ran out of gas",
+    "db": -12
+   },
+   {
+    "id": "macaneta-carro-travada",
+    "frase": "pulled the handle",
+    "db": -5,
+    "fim": true
+   },
+   {
+    "id": "macaneta-carro-travada",
+    "frase": "She pulled it again, harder",
+    "db": -3
+   },
+   {
+    "id": "buzina-carro",
+    "frase": "I hit the horn",
+    "db": -9,
+    "fim": true
+   },
+   {
+    "id": "batida-vidro-carro",
+    "frase": "knocked on the glass",
+    "db": -5
+   },
+   {
+    "id": "passos-cascalho",
+    "frase": "Manny was walking around",
+    "db": -16
+   }
+  ]
+ }
 }

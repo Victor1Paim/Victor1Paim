@@ -1,0 +1,94 @@
+{
+ "ambientes": [
+  {
+   "id": "amb-carro-rodando",
+   "de": 0,
+   "ate": 5,
+   "db": -24
+  },
+  {
+   "id": "amb-truckstop",
+   "de": 6,
+   "ate": 9,
+   "db": -24
+  },
+  {
+   "id": "amb-fluorescente",
+   "de": 10,
+   "ate": 11,
+   "db": -28
+  },
+  {
+   "id": "amb-carro-rodando",
+   "de": 12,
+   "ate": 15,
+   "db": -24
+  },
+  {
+   "id": "amb-fluorescente",
+   "de": 16,
+   "ate": 16,
+   "db": -30
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 17,
+   "ate": 21,
+   "db": -30
+  }
+ ],
+ "efeitos": [
+  {
+   "id": "abastecendo",
+   "frase": "I stopped for gas outside of Salina",
+   "db": -16
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "so I did",
+   "db": -14
+  },
+  {
+   "id": "sino-porta-loja",
+   "frase": "ran into the store",
+   "db": -14,
+   "fim": true
+  },
+  {
+   "id": "freio-ar-caminhao",
+   "frase": "We pulled out together",
+   "db": -16
+  },
+  {
+   "id": "riser-1",
+   "frase": "the headlights came back",
+   "db": -18
+  },
+  {
+   "id": "buzina-caminhao-longe",
+   "frase": "swung his truck into the left lane",
+   "db": -16
+  },
+  {
+   "id": "buzina-caminhao-longe",
+   "frase": "flashed his lights twice",
+   "db": -18
+  },
+  {
+   "id": "celular-toque",
+   "frase": "Two days later",
+   "db": -12
+  },
+  {
+   "id": "impressora-recibo",
+   "frase": "It was printed one minute after my receipt",
+   "db": -14
+  },
+  {
+   "id": "sting-2",
+   "frase": "one minute after my receipt",
+   "db": -12,
+   "fim": true
+  }
+ ]
+}
