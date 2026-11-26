@@ -44,3 +44,5 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 - **Só ElevenLabs Sound Effects** (decisão do usuário, 26/11/2026). Nada de biblioteca livre, Freesound ou síntese para efeitos de cena.
 - Cada efeito é marcado numa palavra do texto e cai no tempo exato em que a voz a diz (tempo por palavra do Whisper).
 - Volume bem abaixo da voz; ambientes por cena ainda mais baixos. Efeitos aprovados vão para a biblioteca do canal (`sfx/`) e são reaproveitados.
+- **Efeito nunca mais alto que a voz:** com fala junto, no máximo 3 dB abaixo dela (`motor/sfxmix.py`, `TETO_SOBRE_VOZ`).
+- **Short:** abre com ~1 s só de título + impacto; a primeira frase não leva efeito por cima.
