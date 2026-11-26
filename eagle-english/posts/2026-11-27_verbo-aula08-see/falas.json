@@ -1,0 +1,100 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "falas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "See....\n\nI see....\n\nCan you see it?...\n\nSaw....\n\nI saw it!"
+  },
+  {
+   "id": "pt1",
+   "lingua": "pt",
+   "texto": "Um verbo por dia, cem dias seguidos. Aula oito."
+  },
+  {
+   "id": "pt2",
+   "lingua": "pt",
+   "texto": "Hoje, o verbo do dia é:"
+  },
+  {
+   "id": "pt3",
+   "lingua": "pt",
+   "texto": "Que quer dizer ver. Repita comigo:"
+  },
+  {
+   "id": "pt4",
+   "lingua": "pt",
+   "texto": "Vou te dar dois exemplos. O primeiro:"
+  },
+  {
+   "id": "pt5",
+   "lingua": "pt",
+   "texto": "Entendi."
+  },
+  {
+   "id": "pt6",
+   "lingua": "pt",
+   "texto": "E o outro:"
+  },
+  {
+   "id": "pt7",
+   "lingua": "pt",
+   "texto": "Você consegue ver?"
+  },
+  {
+   "id": "pt8",
+   "lingua": "pt",
+   "texto": "Agora presta atenção: no passado, esse verbo vira:"
+  },
+  {
+   "id": "pt9",
+   "lingua": "pt",
+   "texto": "Repita comigo:"
+  },
+  {
+   "id": "pt10",
+   "lingua": "pt",
+   "texto": "Por exemplo: eu vi!"
+  },
+  {
+   "id": "pt11",
+   "lingua": "pt",
+   "texto": "Segue o perfil pra não perder a próxima aula, e comenta aprender!"
+  },
+  {
+   "id": "en1",
+   "lingua": "en",
+   "texto": "See.",
+   "recorte": true
+  },
+  {
+   "id": "en2",
+   "lingua": "en",
+   "texto": "I see.",
+   "recorte": true
+  },
+  {
+   "id": "en3",
+   "lingua": "en",
+   "texto": "Can you see it?",
+   "recorte": true
+  },
+  {
+   "id": "en4",
+   "lingua": "en",
+   "texto": "Saw.",
+   "recorte": true
+  },
+  {
+   "id": "en5",
+   "lingua": "en",
+   "texto": "I saw it!",
+   "recorte": true
+  }
+ ]
+}

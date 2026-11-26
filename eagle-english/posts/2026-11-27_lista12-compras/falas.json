@@ -1,0 +1,184 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "perguntas_pt",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: só estou olhando?...\n\nComo se diz: qual é o preço?...\n\nComo se diz: posso experimentar?...\n\nComo se diz: tem desconto?...\n\nComo se diz: tá muito caro?...\n\nComo se diz: que barato?...\n\nComo se diz: vou levar?...\n\nComo se diz: dinheiro ou cartão?...\n\nComo se diz: uma sacola, por favor?...\n\nComo se diz: o recibo, por favor?...\n\nComo se diz: tem outro tamanho?...\n\nComo se diz: onde é o caixa?..."
+  },
+  {
+   "id": "respostas_en",
+   "lingua": "en",
+   "modelo": "gemini-3.8-flash-lite-tts",
+   "texto": "Just looking....\n\nWhat's the price?...\n\nCan I try it?...\n\nAny discount?...\n\nToo expensive!...\n\nSo cheap!...\n\nI'll take it....\n\nCash or card?...\n\nA bag, please....\n\nReceipt, please....\n\nAnother size?...\n\nWhere's the checkout?..."
+  },
+  {
+   "id": "rg1",
+   "lingua": "pt",
+   "texto": "Curte o vídeo se você já sabia as três primeiras. Bora pra próxima!"
+  },
+  {
+   "id": "rg2",
+   "lingua": "pt",
+   "texto": "Salva esse vídeo pra usar na Black Friday. Segue a página!"
+  },
+  {
+   "id": "rg3",
+   "lingua": "pt",
+   "texto": "Tá acertando tudo? Comenta um emoji de sacola! Falta só uma."
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas das doze você acertou? Comenta o número! E segue o perfil pra treinar todo dia."
+  },
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Em inglês, como se diz: só estou olhando?",
+   "recorte": true
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: qual é o preço?",
+   "recorte": true
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: posso experimentar?",
+   "recorte": true
+  },
+  {
+   "id": "q4",
+   "lingua": "pt",
+   "texto": "Como se diz: tem desconto?",
+   "recorte": true
+  },
+  {
+   "id": "q5",
+   "lingua": "pt",
+   "texto": "Como se diz: tá muito caro?",
+   "recorte": true
+  },
+  {
+   "id": "q6",
+   "lingua": "pt",
+   "texto": "Como se diz: que barato?",
+   "recorte": true
+  },
+  {
+   "id": "q7",
+   "lingua": "pt",
+   "texto": "Como se diz: vou levar?",
+   "recorte": true
+  },
+  {
+   "id": "q8",
+   "lingua": "pt",
+   "texto": "Como se diz: dinheiro ou cartão?",
+   "recorte": true
+  },
+  {
+   "id": "q9",
+   "lingua": "pt",
+   "texto": "Como se diz: uma sacola, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "q10",
+   "lingua": "pt",
+   "texto": "Como se diz: o recibo, por favor?",
+   "recorte": true
+  },
+  {
+   "id": "q11",
+   "lingua": "pt",
+   "texto": "Como se diz: tem outro tamanho?",
+   "recorte": true
+  },
+  {
+   "id": "q12",
+   "lingua": "pt",
+   "texto": "Como se diz: onde é o caixa?",
+   "recorte": true
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Just looking.",
+   "recorte": true
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "What's the price?",
+   "recorte": true
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Can I try it?",
+   "recorte": true
+  },
+  {
+   "id": "r4",
+   "lingua": "en",
+   "texto": "Any discount?",
+   "recorte": true
+  },
+  {
+   "id": "r5",
+   "lingua": "en",
+   "texto": "Too expensive!",
+   "recorte": true
+  },
+  {
+   "id": "r6",
+   "lingua": "en",
+   "texto": "So cheap!",
+   "recorte": true
+  },
+  {
+   "id": "r7",
+   "lingua": "en",
+   "texto": "I'll take it.",
+   "recorte": true
+  },
+  {
+   "id": "r8",
+   "lingua": "en",
+   "texto": "Cash, or card?",
+   "recorte": true
+  },
+  {
+   "id": "r9",
+   "lingua": "en",
+   "texto": "A bag, please.",
+   "recorte": true
+  },
+  {
+   "id": "r10",
+   "lingua": "en",
+   "texto": "Receipt, please.",
+   "recorte": true
+  },
+  {
+   "id": "r11",
+   "lingua": "en",
+   "texto": "Another size?",
+   "recorte": true
+  },
+  {
+   "id": "r12",
+   "lingua": "en",
+   "texto": "Where's the checkout?",
+   "recorte": true
+  }
+ ]
+}

@@ -54,7 +54,7 @@ Os antigos com mascote (sorvete, prova de comidas, passeio, grande/pequeno etc.)
 | ter 24/11 | Aula 5 · HAVE | ABC #3 (comida) | — | ✅ ✅ |
 | qua 25/11 | Aula 6 · DO | Lista 12: respostas curtas | Caderno #3 + 15h Meme 02 (Tatá, postado pelo usuário) | ✅ ✅ ✅ |
 | qui 26/11 | Aula 7 · SAY | ABC #4 (Thanksgiving) | — | ✅ ✅ |
-| sex 27/11 | Aula 8 · SEE | Lista 12: Black Friday / compras | Repita #5 (12 frases, pronto 24/11) | 🎬 🎬 ✅ |
+| sex 27/11 | Aula 8 · SEE | Lista 12: Black Friday / compras | Repita #5 (12 frases, pronto 24/11) | ✅ ✅ ✅ |
 | sáb 28/11 | Aula 9 · KNOW | 19h MEME 03 (Joel, pronto) | 09h INICIANTE × NATIVO #1 (pronto) | 🎬 ✅ ✅ |
 | dom 29/11 | Aula 10 · THINK | ABC #5 (na rua: com licença, desculpa, onde fica) | Repita #6 | 🎬 🎬 🎬 |
 | seg 30/11 | Aula 11 · COME | Lista 12: rotina da manhã | Caderno #4 | 🎬 🎬 🎬 |

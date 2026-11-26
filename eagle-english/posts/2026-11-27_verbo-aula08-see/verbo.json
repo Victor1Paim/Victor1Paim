@@ -1,0 +1,234 @@
+{
+ "aula": 8,
+ "verbo": "SEE",
+ "significado": "VER",
+ "fundo_inicio": 22,
+ "pronuncias": {
+  "SEE": "sí",
+  "SAW": "só",
+  "I see.": "ái sí",
+  "Can you see it?": "kén iú sí it?",
+  "I saw it!": "ái só it!"
+ },
+ "passos": [
+  {
+   "pt": "pt1",
+   "caixas": [
+    [
+     "1 verbo por dia",
+     "am",
+     "min"
+    ],
+    [
+     "100 dias seguidos",
+     "vm"
+    ]
+   ],
+   "bloco": 1
+  },
+  {
+   "pt": "pt2",
+   "bloco": 1
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "SEE",
+     "am",
+     "g"
+    ],
+    [
+     "sí",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt3",
+   "caixas": [
+    [
+     "SEE",
+     "am",
+     "g"
+    ],
+    [
+     "sí",
+     "pr"
+    ],
+    [
+     "VER",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "SEE",
+     "am",
+     "g"
+    ],
+    [
+     "sí",
+     "pr"
+    ],
+    [
+     "VER",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt4",
+   "bloco": 1
+  },
+  {
+   "pt": "pt5",
+   "caixas": [
+    [
+     "Entendi",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en2",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I see.",
+     "am"
+    ],
+    [
+     "ái sí",
+     "pr"
+    ],
+    [
+     "Entendi",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt6",
+   "bloco": 1
+  },
+  {
+   "pt": "pt7",
+   "caixas": [
+    [
+     "Você consegue ver?",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en3",
+   "vezes": 2,
+   "caixas": [
+    [
+     "Can you see it?",
+     "am"
+    ],
+    [
+     "kén iú sí it?",
+     "pr"
+    ],
+    [
+     "Você consegue ver?",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt8",
+   "bloco": 1
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "SAW",
+     "am",
+     "g"
+    ],
+    [
+     "só",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt9",
+   "caixas": [
+    [
+     "SAW",
+     "am",
+     "g"
+    ],
+    [
+     "só",
+     "pr"
+    ],
+    [
+     "PASSADO DE SEE",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "SAW",
+     "am",
+     "g"
+    ],
+    [
+     "só",
+     "pr"
+    ],
+    [
+     "PASSADO DE SEE",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt10",
+   "bloco": 1
+  },
+  {
+   "en": "en5",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I saw it!",
+     "am"
+    ],
+    [
+     "ái só it!",
+     "pr"
+    ],
+    [
+     "Eu vi!",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt11",
+   "fim": "SEGUE ✅\nE COMENTA\n“APRENDER”",
+   "bloco": 1
+  }
+ ]
+}

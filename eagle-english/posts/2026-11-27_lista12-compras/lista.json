@@ -1,0 +1,89 @@
+{
+ "selo": "@eagle.english.br",
+ "fundo_video": "maldivas",
+ "fundo_inicio": 32,
+ "contagem": 2.0,
+ "capa": "Como se diz\nem inglês? 🛍️",
+ "capa_sub": "12 frases pra Black Friday",
+ "reganchos": {
+  "3": "rg1",
+  "6": "rg2",
+  "11": "rg3"
+ },
+ "cta": "cta",
+ "respiro": 0.4,
+ "itens": [
+  {
+   "en": "Just looking.",
+   "pt": "só estou olhando",
+   "q": "q1",
+   "r": "r1"
+  },
+  {
+   "en": "What's the price?",
+   "pt": "qual é o preço",
+   "q": "q2",
+   "r": "r2"
+  },
+  {
+   "en": "Can I try it?",
+   "pt": "posso experimentar",
+   "q": "q3",
+   "r": "r3"
+  },
+  {
+   "en": "Any discount?",
+   "pt": "tem desconto",
+   "q": "q4",
+   "r": "r4"
+  },
+  {
+   "en": "Too expensive!",
+   "pt": "tá muito caro",
+   "q": "q5",
+   "r": "r5"
+  },
+  {
+   "en": "So cheap!",
+   "pt": "que barato",
+   "q": "q6",
+   "r": "r6"
+  },
+  {
+   "en": "I'll take it.",
+   "pt": "vou levar",
+   "q": "q7",
+   "r": "r7"
+  },
+  {
+   "en": "Cash or card?",
+   "pt": "dinheiro ou cartão",
+   "q": "q8",
+   "r": "r8"
+  },
+  {
+   "en": "A bag, please.",
+   "pt": "uma sacola, por favor",
+   "q": "q9",
+   "r": "r9"
+  },
+  {
+   "en": "Receipt, please.",
+   "pt": "o recibo, por favor",
+   "q": "q10",
+   "r": "r10"
+  },
+  {
+   "en": "Another size?",
+   "pt": "tem outro tamanho",
+   "q": "q11",
+   "r": "r11"
+  },
+  {
+   "en": "Where's the checkout?",
+   "pt": "onde é o caixa",
+   "q": "q12",
+   "r": "r12"
+  }
+ ]
+}
