@@ -21,12 +21,15 @@ P=producoes/NOME
    ```bash
    python3 -I motor/trilha.py $P/trilha --duracao SEGUNDOS_DO_VIDEO
    ```
-6. **Montagem** (rascunho 540p em ~3 min; final 1080p em ~10 min):
+6. **Legenda** de cada história (antes da montagem): `python3 -I motor/legendas.py $P --deslocar 0`
+   (numa coletânea, em cada subpasta `$P/s1`, `$P/s2`…). A montagem grava a legenda no vídeo e gera o .srt final.
+7. **Montagem** — história única (pasta com `planos.json`) ou coletânea (pasta com `coletanea.json` e subpastas s1, s2…;
+   a vinheta sai de `python3 -I motor/imagens.py $P`). Rascunho 540p primeiro; o final 1080p sai com as partes para envio:
    ```bash
    python3 -I motor/montar.py $P --rascunho
    python3 -I motor/montar.py $P
    ```
-7. **Legenda** (.srt, Whisper, US$ 0,006/min): `python3 -I motor/legendas.py $P`
+   Opções: `--sem-legenda`, `--partes-mb 180` (0 = não dividir), `--mbps 6`. No título, `|` quebra a linha.
 8. **Miniatura**: imagem base em qualidade *high* + `python3 -I motor/miniatura.py BASE.png $P/final/miniatura.jpg "LINHA 1" "LINHA 2" --destaque 2`
 
 ## Créditos

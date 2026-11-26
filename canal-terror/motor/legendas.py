@@ -53,6 +53,7 @@ def quebra(t):
     return t[:corte] + '\n' + t[corte + 1:]
 
 
+jsave(P('voz', 'blocos.json'), [{'inicio': round(i, 3), 'fim': round(e, 3), 'texto': t} for i, e, t in blocos])
 ts = lambda s: f'{int(s//3600):02d}:{int(s%3600//60):02d}:{int(s%60):02d},{int(round(s%1*1000))%1000:03d}'
 os.makedirs(P('final'), exist_ok=True)
 with open(P('final', 'legenda.srt'), 'w', encoding='utf-8') as f:

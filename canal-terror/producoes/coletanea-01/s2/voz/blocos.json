@@ -1,0 +1,737 @@
+[
+ {
+  "inicio": 0.0,
+  "fim": 2.32,
+  "texto": "I ran out of gas on a state highway in Nevada"
+ },
+ {
+  "inicio": 2.32,
+  "fim": 5.16,
+  "texto": "a little after 10 at night, about 40 miles"
+ },
+ {
+  "inicio": 5.16,
+  "fim": 5.96,
+  "texto": "from the nearest town."
+ },
+ {
+  "inicio": 6.64,
+  "fim": 7.6,
+  "texto": "That part was my fault."
+ },
+ {
+  "inicio": 7.88,
+  "fim": 10.76,
+  "texto": "I was 22, driving from Reno to see my sister in"
+ },
+ {
+  "inicio": 10.76,
+  "fim": 12.6,
+  "texto": "Arizona, and I'd skipped the last station"
+ },
+ {
+  "inicio": 12.6,
+  "fim": 15.82,
+  "texto": "because the prices were ridiculous and I was sure there'd be another one soon."
+ },
+ {
+  "inicio": 16.28,
+  "fim": 17.08,
+  "texto": "There wasn't."
+ },
+ {
+  "inicio": 17.7,
+  "fim": 21.2,
+  "texto": "The car started sputtering on a long straight stretch"
+ },
+ {
+  "inicio": 21.2,
+  "fim": 23.52,
+  "texto": "with nothing on either side but sagebrush"
+ },
+ {
+  "inicio": 23.52,
+  "fim": 24.34,
+  "texto": "and dark hills."
+ },
+ {
+  "inicio": 24.34,
+  "fim": 27.56,
+  "texto": "I coasted onto the shoulder and sat there with"
+ },
+ {
+  "inicio": 27.56,
+  "fim": 29.76,
+  "texto": "my hazards on, listening to the engine"
+ },
+ {
+  "inicio": 29.76,
+  "fim": 30.86,
+  "texto": "tick as it cooled."
+ },
+ {
+  "inicio": 31.48,
+  "fim": 33.16,
+  "texto": "I had one bar of signal."
+ },
+ {
+  "inicio": 33.8,
+  "fim": 36.2,
+  "texto": "I called roadside assistance, gave them the"
+ },
+ {
+  "inicio": 36.2,
+  "fim": 38.58,
+  "texto": "mile marker from my map app, and the woman"
+ },
+ {
+  "inicio": 38.58,
+  "fim": 41.34,
+  "texto": "on the phone told me a tow truck would be there in about 90 minutes."
+ },
+ {
+  "inicio": 42.36,
+  "fim": 43.54,
+  "texto": "She asked if I felt safe."
+ },
+ {
+  "inicio": 44.04,
+  "fim": 46.92,
+  "texto": "I said, yes, because what else are you supposed to say?"
+ },
+ {
+  "inicio": 47.66,
+  "fim": 50.64,
+  "texto": "The first thing I noticed was how quiet it was."
+ },
+ {
+  "inicio": 50.64,
+  "fim": 53.82,
+  "texto": "When the engine stopped ticking, there was nothing."
+ },
+ {
+  "inicio": 54.64,
+  "fim": 57.26,
+  "texto": "No wind, no insects, no traffic."
+ },
+ {
+  "inicio": 57.58,
+  "fim": 59.16,
+  "texto": "I could hear my own breathing."
+ },
+ {
+  "inicio": 60.22,
+  "fim": 62.02,
+  "texto": "Every few minutes, I'd turn the key just far"
+ },
+ {
+  "inicio": 62.02,
+  "fim": 63.54,
+  "texto": "enough to check the time on the dashboard,"
+ },
+ {
+  "inicio": 63.92,
+  "fim": 65.62,
+  "texto": "then turned it off again to save the battery."
+ },
+ {
+  "inicio": 65.98,
+  "fim": 70.92,
+  "texto": "I had half a bottle of water and a bag of sunflower seeds, and I remember rationing"
+ },
+ {
+  "inicio": 70.92,
+  "fim": 74.1,
+  "texto": "the water like I was in a survival movie, which is funny now."
+ },
+ {
+  "inicio": 75.02,
+  "fim": 78.12,
+  "texto": "About thirty minutes in, headlights came up behind me."
+ },
+ {
+  "inicio": 78.12,
+  "fim": 81.36,
+  "texto": "My stomach dropped, but then I saw the light bar on the roof."
+ },
+ {
+  "inicio": 81.64,
+  "fim": 82.86,
+  "texto": "It was a sheriff's deputy."
+ },
+ {
+  "inicio": 83.38,
+  "fim": 85.76,
+  "texto": "He pulled in behind me and walked up with a flashlight,"
+ },
+ {
+  "inicio": 85.84,
+  "fim": 88.08,
+  "texto": "an older guy with a gray mustache"
+ },
+ {
+  "inicio": 88.08,
+  "fim": 89.54,
+  "texto": "and a tired, friendly face."
+ },
+ {
+  "inicio": 90.16,
+  "fim": 91.1,
+  "texto": "I explained what happened."
+ },
+ {
+  "inicio": 91.82,
+  "fim": 93.34,
+  "texto": "He shook his head and laughed a little, not"
+ },
+ {
+  "inicio": 93.34,
+  "fim": 95.5,
+  "texto": "in a mean way, and said I wasn't the first"
+ },
+ {
+  "inicio": 95.64,
+  "fim": 96.8,
+  "texto": "and wouldn't be the last."
+ },
+ {
+  "inicio": 97.56,
+  "fim": 100.56,
+  "texto": "He went back to his car and came back with two bottles of water."
+ },
+ {
+  "inicio": 100.98,
+  "fim": 104.42,
+  "texto": "Then he leaned down to my window, and his voice changed a little."
+ },
+ {
+  "inicio": 104.42,
+  "fim": 108.2,
+  "texto": "He said, listen, keep your doors locked until the tow gets here."
+ },
+ {
+  "inicio": 108.62,
+  "fim": 110.78,
+  "texto": "If anybody walks up to the car, you don't roll"
+ },
+ {
+  "inicio": 110.78,
+  "fim": 113.1,
+  "texto": "the window down, you call 911, and you"
+ },
+ {
+  "inicio": 113.1,
+  "fim": 114.38,
+  "texto": "tell them Deputy Harlan is out here."
+ },
+ {
+  "inicio": 115.26,
+  "fim": 117.7,
+  "texto": "I asked him if something had happened out here."
+ },
+ {
+  "inicio": 118.44,
+  "fim": 120.86,
+  "texto": "He looked down the road for a second, then back at me."
+ },
+ {
+  "inicio": 121.4,
+  "fim": 124.5,
+  "texto": "He said, people walk this road at night sometimes."
+ },
+ {
+  "inicio": 125.14,
+  "fim": 126.34,
+  "texto": "I don't stop for them anymore."
+ },
+ {
+  "inicio": 127.18,
+  "fim": 130.7,
+  "texto": "Then he told me to have a good night, got back in his cruiser, and pulled away."
+ },
+ {
+  "inicio": 131.48,
+  "fim": 134.64,
+  "texto": "I watched his taillights for a long time until they"
+ },
+ {
+  "inicio": 134.64,
+  "fim": 137.26,
+  "texto": "turned into one red dot and then nothing."
+ },
+ {
+  "inicio": 138.42,
+  "fim": 140.94,
+  "texto": "After that, the quiet felt different."
+ },
+ {
+  "inicio": 141.86,
+  "fim": 144.06,
+  "texto": "I locked the doors and checked them twice."
+ },
+ {
+  "inicio": 144.54,
+  "fim": 147.54,
+  "texto": "I sat with my phone in my lap and kept looking in the side mirrors."
+ },
+ {
+  "inicio": 148.02,
+  "fim": 150.88,
+  "texto": "The road behind me was a straight black line under the stars."
+ },
+ {
+  "inicio": 151.1,
+  "fim": 155.12,
+  "texto": "I could see maybe a quarter mile back, and then it disappeared into the dark."
+ },
+ {
+  "inicio": 155.9,
+  "fim": 158.42,
+  "texto": "I told myself the deputy was just being careful,"
+ },
+ {
+  "inicio": 158.44,
+  "fim": 160.08,
+  "texto": "and he probably said that to everyone."
+ },
+ {
+  "inicio": 161.06,
+  "fim": 163.64,
+  "texto": "I tried playing a podcast, but I turned it off"
+ },
+ {
+  "inicio": 163.64,
+  "fim": 165.5,
+  "texto": "after a minute because I didn't like not"
+ },
+ {
+  "inicio": 165.5,
+  "fim": 166.3,
+  "texto": "being able to hear."
+ },
+ {
+  "inicio": 167.08,
+  "fim": 170.34,
+  "texto": "The tow truck showed up about an hour after the deputy left."
+ },
+ {
+  "inicio": 170.82,
+  "fim": 172.84,
+  "texto": "I almost cried when I saw the amber lights."
+ },
+ {
+  "inicio": 173.44,
+  "fim": 177.06,
+  "texto": "The driver backed up in front of my car, got out, and gave me a wave."
+ },
+ {
+  "inicio": 177.48,
+  "fim": 180.94,
+  "texto": "He was a big guy in a reflective vest, probably in his fifties."
+ },
+ {
+  "inicio": 181.3,
+  "fim": 182.14,
+  "texto": "His name was Manny."
+ },
+ {
+  "inicio": 183.08,
+  "fim": 184.94,
+  "texto": "He told me to stay in the car while he hooked it up."
+ },
+ {
+  "inicio": 184.94,
+  "fim": 186.04,
+  "texto": "It would only take a few minutes."
+ },
+ {
+  "inicio": 186.48,
+  "fim": 188.06,
+  "texto": "I nodded and stayed put."
+ },
+ {
+  "inicio": 188.68,
+  "fim": 191.36,
+  "texto": "I was watching him in my headlights, crouched"
+ },
+ {
+  "inicio": 191.36,
+  "fim": 193.54,
+  "texto": "down at the front of my car, working with"
+ },
+ {
+  "inicio": 193.54,
+  "fim": 194.34,
+  "texto": "the chains."
+ },
+ {
+  "inicio": 194.6,
+  "fim": 197.12,
+  "texto": "And then I looked in my rearview mirror."
+ },
+ {
+  "inicio": 198.14,
+  "fim": 200.6,
+  "texto": "There was a woman standing behind my car."
+ },
+ {
+  "inicio": 201.54,
+  "fim": 202.9,
+  "texto": "She wasn't on the road."
+ },
+ {
+  "inicio": 203.42,
+  "fim": 206.66,
+  "texto": "She was on the shoulder, maybe ten feet back, at"
+ },
+ {
+  "inicio": 206.66,
+  "fim": 208.66,
+  "texto": "the edge of the red glow from my taillights."
+ },
+ {
+  "inicio": 209.24,
+  "fim": 215.2,
+  "texto": "She was older, maybe sixties, thin, with long gray hair and a hiking backpack."
+ },
+ {
+  "inicio": 216.04,
+  "fim": 218.3,
+  "texto": "She wasn't wearing a coat, and it was cold enough"
+ },
+ {
+  "inicio": 218.3,
+  "fim": 219.86,
+  "texto": "that I had the heat on until the battery"
+ },
+ {
+  "inicio": 219.86,
+  "fim": 220.66,
+  "texto": "scared me."
+ },
+ {
+  "inicio": 221.08,
+  "fim": 222.58,
+  "texto": "I hadn't seen any headlights."
+ },
+ {
+  "inicio": 223.16,
+  "fim": 224.78,
+  "texto": "I hadn't heard footsteps on the gravel."
+ },
+ {
+  "inicio": 225.4,
+  "fim": 226.78,
+  "texto": "She was just there."
+ },
+ {
+  "inicio": 227.38,
+  "fim": 228.46,
+  "texto": "I didn't move."
+ },
+ {
+  "inicio": 228.86,
+  "fim": 230.14,
+  "texto": "I watched her in the mirror."
+ },
+ {
+  "inicio": 230.84,
+  "fim": 233.34,
+  "texto": "She walked up along the passenger side of the"
+ },
+ {
+  "inicio": 233.34,
+  "fim": 235.54,
+  "texto": "car, slowly, and stopped at the back door."
+ },
+ {
+  "inicio": 236.38,
+  "fim": 239.14,
+  "texto": "Then she reached out and pulled the handle."
+ },
+ {
+  "inicio": 240.34,
+  "fim": 241.14,
+  "texto": "It was locked."
+ },
+ {
+  "inicio": 241.6,
+  "fim": 244.62,
+  "texto": "She pulled it again, harder, and the whole car rocked a little."
+ },
+ {
+  "inicio": 245.14,
+  "fim": 247.32,
+  "texto": "Then she bent down and looked through the back window."
+ },
+ {
+  "inicio": 248.14,
+  "fim": 249.2,
+  "texto": "She wasn't looking at me."
+ },
+ {
+  "inicio": 249.44,
+  "fim": 252.84,
+  "texto": "She was looking at the back seat, like she expected someone to be sitting there."
+ },
+ {
+  "inicio": 253.66,
+  "fim": 254.66,
+  "texto": "I hit the horn."
+ },
+ {
+  "inicio": 255.36,
+  "fim": 256.16,
+  "texto": "I don't know why."
+ },
+ {
+  "inicio": 256.42,
+  "fim": 258.12,
+  "texto": "It was the only thing I could think of."
+ },
+ {
+  "inicio": 259.08,
+  "fim": 260.32,
+  "texto": "Manny stood up in front of the car."
+ },
+ {
+  "inicio": 260.84,
+  "fim": 263.34,
+  "texto": "The woman straightened up and walked to my window,"
+ },
+ {
+  "inicio": 263.66,
+  "fim": 265.46,
+  "texto": "the passenger side, and knocked on"
+ },
+ {
+  "inicio": 265.46,
+  "fim": 267.8,
+  "texto": "the glass with one knuckle, very politely."
+ },
+ {
+  "inicio": 268.98,
+  "fim": 270.54,
+  "texto": "She leaned down and said,"
+ },
+ {
+  "inicio": 270.78,
+  "fim": 271.8,
+  "texto": "My car's just up the road."
+ },
+ {
+  "inicio": 272.04,
+  "fim": 272.84,
+  "texto": "I've got a flat."
+ },
+ {
+  "inicio": 272.88,
+  "fim": 274.4,
+  "texto": "I just need a ride to it."
+ },
+ {
+  "inicio": 274.9,
+  "fim": 276.54,
+  "texto": "Her voice was normal."
+ },
+ {
+  "inicio": 277.2,
+  "fim": 278.64,
+  "texto": "That's what I keep coming back to."
+ },
+ {
+  "inicio": 279.04,
+  "fim": 284.0,
+  "texto": "It was a completely normal voice, a little hoarse, like somebody's grandmother."
+ },
+ {
+  "inicio": 284.92,
+  "fim": 285.8,
+  "texto": "I shook my head."
+ },
+ {
+  "inicio": 286.74,
+  "fim": 287.84,
+  "texto": "She smiled at me and said,"
+ },
+ {
+  "inicio": 288.28,
+  "fim": 292.36,
+  "texto": "It's right up there and pointed down the highway, in the direction I'd been driving."
+ },
+ {
+  "inicio": 293.96,
+  "fim": 296.14,
+  "texto": "Manny was walking around the front of my car now, saying,"
+ },
+ {
+  "inicio": 296.24,
+  "fim": 297.4,
+  "texto": "Hey, hey, ma'am."
+ },
+ {
+  "inicio": 297.96,
+  "fim": 299.74,
+  "texto": "I looked at him for maybe a second."
+ },
+ {
+  "inicio": 300.26,
+  "fim": 302.3,
+  "texto": "When I looked back at the window, she wasn't there."
+ },
+ {
+  "inicio": 303.24,
+  "fim": 305.12,
+  "texto": "I turned all the way around in my seat."
+ },
+ {
+  "inicio": 305.54,
+  "fim": 306.44,
+  "texto": "The shoulder was empty."
+ },
+ {
+  "inicio": 306.68,
+  "fim": 307.52,
+  "texto": "The road was empty."
+ },
+ {
+  "inicio": 308.38,
+  "fim": 310.42,
+  "texto": "Manny walked all the way around my car with his flashlight."
+ },
+ {
+  "inicio": 310.84,
+  "fim": 313.2,
+  "texto": "He walked back along the shoulder maybe fifty yards."
+ },
+ {
+  "inicio": 313.2,
+  "fim": 315.36,
+  "texto": "There was nothing out there."
+ },
+ {
+  "inicio": 315.96,
+  "fim": 317.0,
+  "texto": "No footprints that we could see."
+ },
+ {
+  "inicio": 317.46,
+  "fim": 318.26,
+  "texto": "No sound."
+ },
+ {
+  "inicio": 318.34,
+  "fim": 319.14,
+  "texto": "Nothing."
+ },
+ {
+  "inicio": 319.12,
+  "fim": 320.68,
+  "texto": "The desert was flat for miles."
+ },
+ {
+  "inicio": 321.04,
+  "fim": 322.74,
+  "texto": "There wasn't anywhere for a person to go."
+ },
+ {
+  "inicio": 323.74,
+  "fim": 326.1,
+  "texto": "He came back to my window and asked if I was okay."
+ },
+ {
+  "inicio": 326.62,
+  "fim": 330.48,
+  "texto": "I told him what she'd said, that her car was just up the road with a flat."
+ },
+ {
+  "inicio": 331.58,
+  "fim": 332.9,
+  "texto": "He didn't say anything for a second."
+ },
+ {
+  "inicio": 333.58,
+  "fim": 335.74,
+  "texto": "Then he asked me to ride up in the truck with him."
+ },
+ {
+  "inicio": 336.24,
+  "fim": 338.22,
+  "texto": "And he didn't really make it sound like a question."
+ },
+ {
+  "inicio": 339.12,
+  "fim": 341.9,
+  "texto": "We drove for about twenty minutes before either of us talked."
+ },
+ {
+  "inicio": 342.6,
+  "fim": 343.9,
+  "texto": "We passed the place where she'd pointed."
+ },
+ {
+  "inicio": 344.42,
+  "fim": 346.12,
+  "texto": "We passed the next five miles after that."
+ },
+ {
+  "inicio": 346.68,
+  "fim": 348.3,
+  "texto": "There was no car on the side of that road."
+ },
+ {
+  "inicio": 348.82,
+  "fim": 349.62,
+  "texto": "There was nothing."
+ },
+ {
+  "inicio": 350.52,
+  "fim": 351.56,
+  "texto": "Finally, Manny said,"
+ },
+ {
+  "inicio": 351.92,
+  "fim": 353.26,
+  "texto": "Did she tell you it was a flat?"
+ },
+ {
+  "inicio": 353.78,
+  "fim": 354.66,
+  "texto": "I said yes."
+ },
+ {
+  "inicio": 355.04,
+  "fim": 357.0,
+  "texto": "He nodded and kept his eyes on the road."
+ },
+ {
+  "inicio": 357.58,
+  "fim": 358.38,
+  "texto": "He said,"
+ },
+ {
+  "inicio": 358.16,
+  "fim": 360.32,
+  "texto": "You're the third one this year, she's told that to."
+ },
+ {
+  "inicio": 360.86,
+  "fim": 362.16,
+  "texto": "The other two opened the door."
+ },
+ {
+  "inicio": 363.02,
+  "fim": 364.28,
+  "texto": "I asked him what happened to them."
+ },
+ {
+  "inicio": 364.74,
+  "fim": 365.76,
+  "texto": "He didn't answer me."
+ },
+ {
+  "inicio": 365.76,
+  "fim": 367.12,
+  "texto": "He just turned the radio on."
+ }
+]

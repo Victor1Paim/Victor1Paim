@@ -1,0 +1,31 @@
+{
+ "titulo": "THREE DISTURBING|ROAD TRIP STORIES",
+ "estilo": "Cinematic still photograph, 35mm film, shot at night unless stated, muted desaturated colors, low contrast, cold tones, subtle film grain, shallow depth of field, realistic, no readable text, no logos, no watermark.",
+ "vinheta": {
+  "id": "v00",
+  "prompt": "A pair of car headlights alone on a long empty highway at night seen from far above and behind, black fields on both sides, thick darkness, minimal composition with large empty dark sky."
+ },
+ "historias": [
+  {
+   "pasta": "s1",
+   "cartela": [
+    "Story 1",
+    "By: Anonymous"
+   ]
+  },
+  {
+   "pasta": "s2",
+   "cartela": [
+    "Story 2",
+    "By: Anonymous"
+   ]
+  },
+  {
+   "pasta": "s3",
+   "cartela": [
+    "Story 3",
+    "By: Anonymous"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,405 @@
+{
+ "total": 1152.2,
+ "cortes_das_partes": [],
+ "historias": [
+  {
+   "cartela": "Story 1",
+   "narracao_comeca": 12.0,
+   "termina": 407.71
+  },
+  {
+   "cartela": "Story 2",
+   "narracao_comeca": 412.71,
+   "termina": 783.1
+  },
+  {
+   "cartela": "Story 3",
+   "narracao_comeca": 788.1,
+   "termina": 1132.2
+  }
+ ],
+ "blocos": [
+  {
+   "cartela": "Story 1",
+   "inicio": 7.0
+  },
+  {
+   "plano": "s01",
+   "inicio": 12.0,
+   "fim": 24.98
+  },
+  {
+   "plano": "s02",
+   "inicio": 24.98,
+   "fim": 37.95
+  },
+  {
+   "plano": "s03",
+   "inicio": 37.95,
+   "fim": 61.21
+  },
+  {
+   "plano": "s04",
+   "inicio": 61.21,
+   "fim": 73.51
+  },
+  {
+   "plano": "s05",
+   "inicio": 73.51,
+   "fim": 85.82
+  },
+  {
+   "plano": "s06",
+   "inicio": 85.82,
+   "fim": 104.57
+  },
+  {
+   "plano": "s07",
+   "inicio": 104.57,
+   "fim": 108.63
+  },
+  {
+   "plano": "s08",
+   "inicio": 108.63,
+   "fim": 131.98
+  },
+  {
+   "plano": "s09",
+   "inicio": 131.98,
+   "fim": 145.87
+  },
+  {
+   "plano": "s10",
+   "inicio": 145.87,
+   "fim": 159.76
+  },
+  {
+   "plano": "s11",
+   "inicio": 159.76,
+   "fim": 162.34
+  },
+  {
+   "plano": "s12",
+   "inicio": 162.34,
+   "fim": 177.3
+  },
+  {
+   "plano": "s13",
+   "inicio": 177.3,
+   "fim": 192.25
+  },
+  {
+   "plano": "s14",
+   "inicio": 192.25,
+   "fim": 210.79
+  },
+  {
+   "plano": "s15",
+   "inicio": 210.79,
+   "fim": 221.77
+  },
+  {
+   "plano": "s16",
+   "inicio": 221.77,
+   "fim": 232.75
+  },
+  {
+   "plano": "s17",
+   "inicio": 232.75,
+   "fim": 238.02
+  },
+  {
+   "plano": "s12b",
+   "inicio": 238.02,
+   "fim": 256.63
+  },
+  {
+   "plano": "s18",
+   "inicio": 256.63,
+   "fim": 269.74
+  },
+  {
+   "plano": "s19",
+   "inicio": 269.74,
+   "fim": 282.33
+  },
+  {
+   "plano": "s20",
+   "inicio": 282.33,
+   "fim": 295.63
+  },
+  {
+   "plano": "s21",
+   "inicio": 295.63,
+   "fim": 308.93
+  },
+  {
+   "plano": "s22",
+   "inicio": 308.93,
+   "fim": 320.24
+  },
+  {
+   "plano": "s23",
+   "inicio": 320.24,
+   "fim": 336.19
+  },
+  {
+   "plano": "s24",
+   "inicio": 336.19,
+   "fim": 352.15
+  },
+  {
+   "plano": "s25",
+   "inicio": 352.15,
+   "fim": 359.59
+  },
+  {
+   "plano": "s26",
+   "inicio": 359.59,
+   "fim": 373.16
+  },
+  {
+   "plano": "s27",
+   "inicio": 373.16,
+   "fim": 386.72
+  },
+  {
+   "plano": "s28",
+   "inicio": 386.72,
+   "fim": 393.2
+  },
+  {
+   "plano": "s29",
+   "inicio": 393.2,
+   "fim": 407.71
+  },
+  {
+   "cartela": "Story 2",
+   "inicio": 407.71
+  },
+  {
+   "plano": "a01",
+   "inicio": 412.71,
+   "fim": 430.79
+  },
+  {
+   "plano": "a02",
+   "inicio": 430.79,
+   "fim": 460.75
+  },
+  {
+   "plano": "a03",
+   "inicio": 460.75,
+   "fim": 474.27
+  },
+  {
+   "plano": "a04",
+   "inicio": 474.27,
+   "fim": 487.79
+  },
+  {
+   "plano": "a05",
+   "inicio": 487.79,
+   "fim": 510.6
+  },
+  {
+   "plano": "a06",
+   "inicio": 510.6,
+   "fim": 528.21
+  },
+  {
+   "plano": "a07",
+   "inicio": 528.21,
+   "fim": 554.77
+  },
+  {
+   "plano": "a08",
+   "inicio": 554.77,
+   "fim": 567.37
+  },
+  {
+   "plano": "a09",
+   "inicio": 567.37,
+   "fim": 579.97
+  },
+  {
+   "plano": "a10",
+   "inicio": 579.97,
+   "fim": 601.75
+  },
+  {
+   "plano": "a11",
+   "inicio": 601.75,
+   "fim": 611.05
+  },
+  {
+   "plano": "a12",
+   "inicio": 611.05,
+   "fim": 614.51
+  },
+  {
+   "plano": "a13",
+   "inicio": 614.51,
+   "fim": 640.5
+  },
+  {
+   "plano": "a14",
+   "inicio": 640.5,
+   "fim": 652.98
+  },
+  {
+   "plano": "a15",
+   "inicio": 652.98,
+   "fim": 666.67
+  },
+  {
+   "plano": "a16",
+   "inicio": 666.67,
+   "fim": 687.96
+  },
+  {
+   "plano": "a17",
+   "inicio": 687.96,
+   "fim": 706.42
+  },
+  {
+   "plano": "a18",
+   "inicio": 706.42,
+   "fim": 716.15
+  },
+  {
+   "plano": "a19",
+   "inicio": 716.15,
+   "fim": 736.48
+  },
+  {
+   "plano": "a20",
+   "inicio": 736.48,
+   "fim": 752.15
+  },
+  {
+   "plano": "a21",
+   "inicio": 752.15,
+   "fim": 763.18
+  },
+  {
+   "plano": "a22",
+   "inicio": 763.18,
+   "fim": 775.85
+  },
+  {
+   "plano": "a23",
+   "inicio": 775.85,
+   "fim": 783.1
+  },
+  {
+   "cartela": "Story 3",
+   "inicio": 783.1
+  },
+  {
+   "plano": "b01",
+   "inicio": 788.1,
+   "fim": 810.25
+  },
+  {
+   "plano": "b02",
+   "inicio": 810.25,
+   "fim": 823.9
+  },
+  {
+   "plano": "b03",
+   "inicio": 823.9,
+   "fim": 840.09
+  },
+  {
+   "plano": "b04",
+   "inicio": 840.09,
+   "fim": 863.51
+  },
+  {
+   "plano": "b05",
+   "inicio": 863.51,
+   "fim": 889.94
+  },
+  {
+   "plano": "b06",
+   "inicio": 889.94,
+   "fim": 911.36
+  },
+  {
+   "plano": "b07",
+   "inicio": 911.36,
+   "fim": 927.16
+  },
+  {
+   "plano": "b08",
+   "inicio": 927.16,
+   "fim": 944.61
+  },
+  {
+   "plano": "b09",
+   "inicio": 944.61,
+   "fim": 961.83
+  },
+  {
+   "plano": "b10",
+   "inicio": 961.83,
+   "fim": 983.73
+  },
+  {
+   "plano": "b11",
+   "inicio": 983.73,
+   "fim": 1006.77
+  },
+  {
+   "plano": "b12",
+   "inicio": 1006.77,
+   "fim": 1018.16
+  },
+  {
+   "plano": "b13",
+   "inicio": 1018.16,
+   "fim": 1022.83
+  },
+  {
+   "plano": "b14",
+   "inicio": 1022.83,
+   "fim": 1048.03
+  },
+  {
+   "plano": "b15",
+   "inicio": 1048.03,
+   "fim": 1069.89
+  },
+  {
+   "plano": "b16",
+   "inicio": 1069.89,
+   "fim": 1084.97
+  },
+  {
+   "plano": "b17",
+   "inicio": 1084.97,
+   "fim": 1088.62
+  },
+  {
+   "plano": "b18",
+   "inicio": 1088.62,
+   "fim": 1108.63
+  },
+  {
+   "plano": "b19",
+   "inicio": 1108.63,
+   "fim": 1118.21
+  },
+  {
+   "plano": "b20",
+   "inicio": 1118.21,
+   "fim": 1126.5
+  },
+  {
+   "plano": "b21",
+   "inicio": 1126.5,
+   "fim": 1132.2
+  }
+ ]
+}

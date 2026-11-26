@@ -1,0 +1,125 @@
+{
+ "titulo": "",
+ "cartela": [
+  "Story 2",
+  "By: Anonymous"
+ ],
+ "estilo": "Cinematic still photograph, 35mm film, shot at night unless stated, muted desaturated colors, low contrast, cold tones, subtle film grain, shallow depth of field, realistic, no readable text, no logos, no watermark. American Southwest desert.",
+ "planos": [
+  {
+   "id": "a01",
+   "p": 0,
+   "prompt": "A small compact car stopped on the gravel shoulder of an empty two-lane Nevada desert highway at night, hazard lights glowing orange, sagebrush and dark hills, a sky full of stars."
+  },
+  {
+   "id": "a02",
+   "p": 1,
+   "prompt": "Dashboard of a compact car at night, the fuel gauge needle resting below empty with the orange fuel warning light on, a phone in a hand beside it, darkness outside the windshield."
+  },
+  {
+   "id": "a03",
+   "p": 2,
+   "prompt": "View through a windshield of a perfectly straight empty desert highway at night under thousands of stars, no lights anywhere, total stillness."
+  },
+  {
+   "id": "a04",
+   "p": 2,
+   "prompt": "A half-empty plastic water bottle and a small bag of sunflower seeds on the passenger seat of a car at night, faint dashboard light."
+  },
+  {
+   "id": "a05",
+   "p": 3,
+   "prompt": "Seen in a car's side mirror at night: a sheriff's patrol car pulling onto the desert shoulder behind, roof light bar glowing, headlights, dust in the beams."
+  },
+  {
+   "id": "a06",
+   "p": 4,
+   "prompt": "At a car window at night, a sheriff's deputy's hand holding out two bottles of water, flashlight beam, his face hidden in shadow under the brim of his hat."
+  },
+  {
+   "id": "a07",
+   "p": 5,
+   "prompt": "Red taillights of a patrol car shrinking into the distance down a long straight desert highway at night, almost a single red dot, vast dark landscape."
+  },
+  {
+   "id": "a08",
+   "p": 7,
+   "prompt": "Car side mirror at night reflecting a straight black empty road behind the car under the stars, nothing on it."
+  },
+  {
+   "id": "a09",
+   "p": 7,
+   "prompt": "Close up inside a car at night: a finger pressing down the door lock, a phone glowing in a lap, tense, dim."
+  },
+  {
+   "id": "a10",
+   "p": 8,
+   "prompt": "A tow truck with flashing amber lights backing up in front of a stranded compact car on a desert highway shoulder at night, a big man in a reflective vest as a silhouette."
+  },
+  {
+   "id": "a11",
+   "p": 9,
+   "prompt": "View through a car windshield: a tow truck driver in a reflective vest crouched at the front bumper, lit by the car's headlights, working with chains, amber light."
+  },
+  {
+   "id": "a12",
+   "p": 10,
+   "prompt": "A car's rearview mirror at night showing, far behind the car, the vague thin figure of a person standing at the edge of the red taillight glow, unclear, unsettling."
+  },
+  {
+   "id": "a13",
+   "p": 11,
+   "prompt": "A thin older woman with long gray hair and a hiking backpack, no coat, standing very still on the gravel shoulder of a desert highway at night, lit only by red taillight glow, face in shadow, seen from a distance."
+  },
+  {
+   "id": "a14",
+   "p": 12,
+   "prompt": "Close up of a thin older hand gripping and pulling the rear door handle of a compact car at night, red light, the door locked."
+  },
+  {
+   "id": "a15",
+   "p": 13,
+   "prompt": "From inside the back seat of a car at night, looking toward the rear side window: a vague gray-haired figure bending down to peer in, face obscured by reflections and darkness, the back seat empty."
+  },
+  {
+   "id": "a16",
+   "p": 14,
+   "prompt": "A single knuckle knocking on a car's passenger window at night, long gray hair blurred outside the glass, the desert dark behind."
+  },
+  {
+   "id": "a17",
+   "p": 15,
+   "prompt": "Through a car's passenger window at night: a thin arm pointing down the dark empty highway, the person out of focus, endless darkness where she points."
+  },
+  {
+   "id": "a18",
+   "p": 16,
+   "prompt": "An empty car passenger window at night, nothing outside but black desert and stars, no one there."
+  },
+  {
+   "id": "a19",
+   "p": 17,
+   "prompt": "A tow truck driver with a flashlight walking along an empty highway shoulder at night, the beam reaching into flat empty desert, nobody anywhere."
+  },
+  {
+   "id": "a20",
+   "p": 18,
+   "prompt": "Inside a tow truck cab at night, dashboard glow, a big man's hands on the steering wheel, a young woman's knees in the passenger seat, the dark highway ahead."
+  },
+  {
+   "id": "a21",
+   "p": 19,
+   "prompt": "Headlights lighting an empty desert highway shoulder at night, no parked car anywhere, miles of nothing."
+  },
+  {
+   "id": "a22",
+   "p": 20,
+   "prompt": "A tow truck with amber lights driving down a dark desert highway seen from far away, tiny under an enormous starry sky."
+  },
+  {
+   "id": "a23",
+   "p": 21,
+   "prompt": "Full moon low over black desert hills at night, faint and cold, minimal."
+  }
+ ]
+}

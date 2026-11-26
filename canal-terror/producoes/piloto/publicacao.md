@@ -2,7 +2,7 @@
 
 ## Títulos (escolher 1)
 
-1. Don't Take The Detour | True Scary Road Trip Story
+1. Don't Take The Detour | Scary Road Trip Story
 2. The Couple Who Walked Into The Diner Twice | Scary Road Trip Story
 3. I Took A Detour At 2 AM. The Gas Station Wasn't There On The Way Back.
 

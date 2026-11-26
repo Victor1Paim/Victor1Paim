@@ -18,7 +18,7 @@ ap.add_argument('--tamanho', default='1536x1024'); ap.add_argument('--modelo', d
 ap.add_argument('--simular', action='store_true'); ap.add_argument('--so', default='')
 a = ap.parse_args()
 
-cfg = jload(os.path.join(a.pasta, 'planos.json'))
+cfg = jload(os.path.join(a.pasta, 'planos.json')) or dict(jload(os.path.join(a.pasta, 'coletanea.json')), planos=[])
 out = os.path.join(a.pasta, 'imagens'); os.makedirs(out, exist_ok=True)
 so = set(filter(None, a.so.split(',')))
 planos = ([cfg['vinheta']] if cfg.get('vinheta') else []) + cfg['planos']

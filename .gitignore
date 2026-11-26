@@ -8,3 +8,5 @@ canal-terror/producoes/**/final/clipes/
 canal-terror/producoes/**/final/*.mp4
 canal-terror/producoes/**/final/*.wav
 canal-terror/producoes/**/voz/*.mp3
+canal-terror/producoes/**/final/clipes*/
+canal-terror/producoes/**/final/render.log

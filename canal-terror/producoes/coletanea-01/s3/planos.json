@@ -1,0 +1,115 @@
+{
+ "titulo": "",
+ "cartela": [
+  "Story 3",
+  "By: Anonymous"
+ ],
+ "estilo": "Cinematic still photograph, 35mm film, shot at night unless stated, muted desaturated colors, low contrast, cold tones, subtle film grain, shallow depth of field, realistic, no readable text, no logos, no watermark. American Midwest.",
+ "planos": [
+  {
+   "id": "b01",
+   "p": 0,
+   "prompt": "A small packed car in an empty college parking lot before dawn, boxes visible in the back window, blue early light, Denver foothills faint in the distance."
+  },
+  {
+   "id": "b02",
+   "p": 1,
+   "prompt": "A gas station in Kansas at sunset, a hand holding a phone up taking a photo of the gas pump, warm orange sky, flat land."
+  },
+  {
+   "id": "b03",
+   "p": 1,
+   "prompt": "Interstate highway at dusk across flat Kansas wheat fields, a few semi trucks far away, the sky fading to dark blue."
+  },
+  {
+   "id": "b04",
+   "p": 3,
+   "prompt": "Car rearview mirror at night showing two round headlights far behind on an empty interstate, the left headlight a little dimmer than the right."
+  },
+  {
+   "id": "b05",
+   "p": 4,
+   "prompt": "Night interstate seen from behind a small car, a second pair of headlights following at the same distance and changing lanes with it, empty highway."
+  },
+  {
+   "id": "b06",
+   "p": 5,
+   "prompt": "Inside a car at night: a phone in a dashboard mount on a call, a young woman's hand gripping the steering wheel tightly, dark highway ahead, green road sign blurred."
+  },
+  {
+   "id": "b07",
+   "p": 6,
+   "prompt": "A huge truck stop at night along an interstate, rows of semi trucks parked in back, a convenience store under bright white canopy lights."
+  },
+  {
+   "id": "b08",
+   "p": 7,
+   "prompt": "A dark sedan parked at the far unlit end of a truck stop parking lot at night, headlights off, just a dark shape facing the camera."
+  },
+  {
+   "id": "b09",
+   "p": 9,
+   "prompt": "From a car parked right in front of a convenience store window at night, the cashier visible inside; in the side mirror a dark car far away at the end of the lot."
+  },
+  {
+   "id": "b10",
+   "p": 10,
+   "prompt": "Inside a truck stop convenience store at night, an older trucker with a white beard in a brown work jacket with reading glasses pushed up on his head standing at the coffee station, seen in profile, fluorescent light."
+  },
+  {
+   "id": "b11",
+   "p": 11,
+   "prompt": "Inside a semi truck cab at night, a CB radio handset hanging on the dashboard, warm cab light, highway lights outside."
+  },
+  {
+   "id": "b12",
+   "p": 12,
+   "prompt": "A small car pulling out of a truck stop onto the interstate at night with a big semi truck following right behind it, headlights and running lights."
+  },
+  {
+   "id": "b13",
+   "p": 13,
+   "prompt": "Car rearview mirror at night: headlights growing fast behind a semi truck, coming up quickly, motion blur."
+  },
+  {
+   "id": "b14",
+   "p": 14,
+   "prompt": "Night interstate: a semi truck in the left lane driving right beside a dark sedan, blocking it from passing, motion blur, headlights and red taillights."
+  },
+  {
+   "id": "b15",
+   "p": 15,
+   "prompt": "A small-town police station parking lot at night, a semi truck flashing its headlights as it pulls back onto the road, a small car parked by the door."
+  },
+  {
+   "id": "b16",
+   "p": 16,
+   "prompt": "Small-town police station lobby at night, a paper coffee cup on a plastic bench, fluorescent light, empty and quiet."
+  },
+  {
+   "id": "b17",
+   "p": 17,
+   "prompt": "A phone ringing on a kitchen table in soft morning daylight, unknown caller, a mug beside it, quiet home."
+  },
+  {
+   "id": "b18",
+   "p": 18,
+   "prompt": "A dark gray sedan abandoned at the far end of a truck stop parking lot in early morning fog, a police patrol car parked near it, gray dawn light."
+  },
+  {
+   "id": "b19",
+   "p": 19,
+   "prompt": "Two gas pumps side by side at a small Kansas gas station at dusk, both empty, numbered signs blurred, lonely."
+  },
+  {
+   "id": "b20",
+   "p": 20,
+   "prompt": "Close up of a crumpled gas station receipt lying on the passenger seat of a car, the printed text blurred and unreadable, dim light."
+  },
+  {
+   "id": "b21",
+   "p": 21,
+   "prompt": "Full moon partly behind clouds over flat Kansas farmland at night, faint and cold."
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{"id": "v00", "modelo": "gpt-image-2", "qualidade": "medium", "usage": {"input_tokens": 91, "input_tokens_details": {"image_tokens": 0, "text_tokens": 91}, "output_tokens": 1372, "output_tokens_details": {"image_tokens": 1372, "text_tokens": 0}, "total_tokens": 1463}, "usd": 0.0416}
+{"id": "miniatura", "qualidade": "high", "usage": {"input_tokens": 125, "input_tokens_details": {"image_tokens": 0, "text_tokens": 125}, "output_tokens": 5488, "output_tokens_details": {"image_tokens": 5488, "text_tokens": 0}, "total_tokens": 5613}, "usd": 0.1653}
