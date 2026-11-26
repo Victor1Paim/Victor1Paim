@@ -80,3 +80,31 @@ A partir de 2027 a voz soma uns US$ 0,10 (piloto) a US$ 0,40 (coletânea). O que
 | Análise das 3 referências (Whisper, 87 min) | uma vez | ≈ 0,52 |
 
 Ficou abaixo da estimativa (US$ 1,90): a história rendeu 30 imagens em vez das 28 + margem, e quase nada precisou ser refeito.
+
+## Gasto real — Coletânea 01 e Short 01 (26/11/2026)
+
+### Coletânea 01 "3 Disturbing Road Trip Stories" (19 min 12 s)
+
+| Onde | Detalhe | US$ |
+|---|---|---|
+| Voz — Gemini 3.8 Flash TTS | Story 1 (reaproveitada do piloto) 0,09 + Story 2 0,09 + Story 3 0,08 | 0,26 |
+| Imagens — OpenAI gpt-image-2 medium | Story 1: 30 (do piloto) 1,25 · Story 2: 23 = 0,96 · Story 3: 21 = 0,87 · vinheta 0,04 | 3,12 |
+| Miniatura — OpenAI gpt-image-2 high | 1 imagem | 0,17 |
+| Legenda — OpenAI Whisper | 18,4 min de narração (mais refações) | 0,15 |
+| Trilha, sting, cartelas, montagem | feitos aqui | 0 |
+| **Total da coletânea** | | **≈ US$ 3,70** |
+| Só o que foi novo (Story 1 já estava paga no piloto) | | ≈ US$ 2,25 |
+
+### Short 01 (1 min 39 s)
+
+| Onde | Detalhe | US$ |
+|---|---|---|
+| Voz nova (gancho + chamada) — Gemini | 2 trechos, ~12 s | 0,003 |
+| Narração do meio | reaproveitada da Story 2 | 0 |
+| Imagens verticais — OpenAI medium | 8 | 0,33 |
+| Legenda — Whisper | 3 passadas de 1,7 min | 0,03 |
+| Capa | feita aqui a partir de uma imagem do Short | 0 |
+| **Total do Short** | | **≈ US$ 0,37** |
+
+Obs.: as chaves do Gemini usadas parecem ser do nível gratuito (limite de 100 pedidos/dia por modelo). Se forem, a voz
+saiu de graça e os valores de voz acima são o que custaria no nível pago. Teste do ElevenLabs (1 efeito de 1,5 s): créditos mínimos.

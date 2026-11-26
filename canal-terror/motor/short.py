@@ -139,9 +139,14 @@ st, _ = sf.read(os.path.join(tr, 'sting.wav'))
 i = int((INI + tempos[1][0] - 1.55) * SR); mix[i:i + len(st)] += st[:N - i] * 10 ** (-6 / 20)
 sf.write(os.path.join(fin, 'mix.wav'), mix.astype(np.float32), SR)
 audio = os.path.join(fin, 'audio.wav')
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(fin, 'mix.wav'), '-af',
-                f'highpass=f=30,loudnorm=I=-14:TP=-1:LRA=9,afade=t=out:st={total-0.8:.2f}:d=0.8', '-ar', '48000',
-                '-t', f'{total:.3f}', audio], check=True)
+med = subprocess.run(['ffmpeg', '-v', 'info', '-i', os.path.join(fin, 'mix.wav'), '-af',
+                      'highpass=f=30,loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
+                     capture_output=True, text=True).stderr
+j = json.loads(med[med.rindex('{'):med.rindex('}') + 1])
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(fin, 'mix.wav'), '-af',      # 2 passadas, linear: sem "bombear"
+                f"highpass=f=30,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:"
+                f"measured_LRA={j['input_lra']}:measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true,"
+                f"afade=t=out:st={total-0.8:.2f}:d=0.8", '-ar', '48000', '-t', f'{total:.3f}', audio], check=True)
 os.remove(os.path.join(fin, 'mix.wav'))
 
 # ---------- vídeo ----------

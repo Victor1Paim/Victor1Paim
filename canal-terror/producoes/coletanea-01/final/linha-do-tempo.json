@@ -1,6 +1,11 @@
 {
  "total": 1152.2,
- "cortes_das_partes": [],
+ "cortes_das_partes": [
+  232.333,
+  460.333,
+  687.567,
+  926.767
+ ],
  "historias": [
   {
    "cartela": "Story 1",
