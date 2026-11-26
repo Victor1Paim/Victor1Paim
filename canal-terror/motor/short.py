@@ -145,20 +145,20 @@ for amb in sx.get('ambientes', []):              # de/ate = segmentos (inclusive
     a1 = total if amb['ate'] >= len(tempos) - 1 else INI + tempos[amb['ate'] + 1][0]
     y = sfxmix.em_loop(sfxmix.carregar(amb['id']), int((a1 - a0) * SR)); f = min(int(SR), len(y) // 3)
     y[:f] *= np.linspace(0, 1, f)[:, None]; y[-f:] *= np.linspace(1, 0, f)[:, None]
-    sfxmix.colocar(mix, y, a0, voz_db + amb.get('db', -22))
+    sfxmix.colocar(mix, y, a0, voz_db + amb.get('db', -22) + sfxmix.REFORCO_AMBIENTES)
 for ef in sx.get('efeitos', []):
     t = sfxmix.tempo_frase(palavras, ef['frase'], ef.get('n', 1), ef.get('fim', False))
     if t is None: avisos.append(ef['frase']); continue
-    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), INI + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10))
+    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), INI + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10) + sfxmix.REFORCO_EFEITOS)
 if avisos: print('AVISO frases não achadas:', avisos)
 sf.write(os.path.join(fin, 'mix.wav'), mix.astype(np.float32), SR)
 audio = os.path.join(fin, 'audio.wav')
 med = subprocess.run(['ffmpeg', '-v', 'info', '-i', os.path.join(fin, 'mix.wav'), '-af',
-                      'highpass=f=30,loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
+                      'highpass=f=30,alimiter=limit=0.5:attack=2:release=60:level=false,loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
                      capture_output=True, text=True).stderr
 j = json.loads(med[med.rindex('{'):med.rindex('}') + 1])
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(fin, 'mix.wav'), '-af',      # 2 passadas, linear: sem "bombear"
-                f"highpass=f=30,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:"
+                f"highpass=f=30,alimiter=limit=0.5:attack=2:release=60:level=false,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:"
                 f"measured_LRA={j['input_lra']}:measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true,"
                 f"afade=t=out:st={total-0.8:.2f}:d=0.8", '-ar', '48000', '-t', f'{total:.3f}', audio], check=True)
 os.remove(os.path.join(fin, 'mix.wav'))

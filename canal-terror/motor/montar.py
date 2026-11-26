@@ -213,12 +213,12 @@ env[i0:i1] *= np.linspace(1, 0.3, i1 - i0); env[i1:] *= 0.3
 mix = voz_fx + drone * env[:, None]
 sf.write(os.path.join(fin, 'mix-bruto.wav'), mix.astype(np.float32), SR)
 med = subprocess.run(['ffmpeg', '-v', 'info', '-i', os.path.join(fin, 'mix-bruto.wav'), '-af',
-                      f'highpass=f=28,loudnorm=I={a.lufs}:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
+                      f'highpass=f=28,alimiter=limit=0.5:attack=2:release=60:level=false,loudnorm=I={a.lufs}:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
                      capture_output=True, text=True).stderr
 j = json.loads(med[med.rindex('{'):med.rindex('}') + 1])
 audio = os.path.join(fin, 'audio.wav')
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(fin, 'mix-bruto.wav'), '-af',
-                f"highpass=f=28,loudnorm=I={a.lufs}:TP=-1.5:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:"
+                f"highpass=f=28,alimiter=limit=0.5:attack=2:release=60:level=false,loudnorm=I={a.lufs}:TP=-1.5:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:"
                 f"measured_LRA={j['input_lra']}:measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true,"
                 f"afade=t=out:st={total-3:.2f}:d=3", '-ar', '48000', '-t', f'{total:.3f}', audio], check=True)
 os.remove(os.path.join(fin, 'mix-bruto.wav'))

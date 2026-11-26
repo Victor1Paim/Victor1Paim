@@ -11,6 +11,8 @@ import numpy as np
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BIB = os.path.join(RAIZ, 'sfx')
 SR = 48000
+# Reforço global (o usuário não ouviu os efeitos na 1ª versão, 26/11): somado ao "db" de cada item.
+REFORCO_EFEITOS, REFORCO_AMBIENTES = 9.0, 6.0
 _cat = None
 
 
@@ -81,10 +83,10 @@ def aplicar_historia(trilha, pasta, T0, tempos, voz_db, avisos):
         fim = T0 + (tempos[amb['ate'] + 1]['inicio'] if amb['ate'] + 1 < len(tempos) else tempos[-1]['fim'] + 2.5)
         x = em_loop(carregar(amb['id']), int((fim - ini) * SR))
         f = min(int(1.5 * SR), len(x) // 3); x[:f] *= np.linspace(0, 1, f)[:, None]; x[-f:] *= np.linspace(1, 0, f)[:, None]
-        colocar(trilha, x, ini, voz_db + amb.get('db', -22)); n += 1
+        colocar(trilha, x, ini, voz_db + amb.get('db', -22) + REFORCO_AMBIENTES); n += 1
     for ef in cfg.get('efeitos', []):
         t = tempo_frase(pal, ef['frase'], ef.get('n', 1), ef.get('fim', False))
         if t is None:
             avisos.append(f"{os.path.basename(pasta)}: frase não achada para {ef['id']}: \"{ef['frase']}\""); continue
-        colocar(trilha, carregar(ef['id']), T0 + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10)); n += 1
+        colocar(trilha, carregar(ef['id']), T0 + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10) + REFORCO_EFEITOS); n += 1
     return n
