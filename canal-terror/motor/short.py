@@ -149,7 +149,9 @@ for amb in sx.get('ambientes', []):              # de/ate = segmentos (inclusive
 for ef in sx.get('efeitos', []):
     t = sfxmix.tempo_frase(palavras, ef['frase'], ef.get('n', 1), ef.get('fim', False))
     if t is None: avisos.append(ef['frase']); continue
-    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), INI + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10) + sfxmix.REFORCO_EFEITOS)
+    t_abs = INI + t + ef.get('desloc', 0.0)                 # nível pela voz naquele momento (ver sfxmix.aplicar_historia)
+    local = sfxmix.momentaneo(voz[max(0, int((t_abs - INI - 0.5) * SR)):int((t_abs - INI + 1.5) * SR)])
+    sfxmix.colocar(mix, sfxmix.carregar(ef['id']), t_abs, (local if local > -60 else voz_db) + ef.get('db', -10) + sfxmix.REFORCO_EFEITOS)
 if avisos: print('AVISO frases não achadas:', avisos)
 sf.write(os.path.join(fin, 'mix.wav'), mix.astype(np.float32), SR)
 audio = os.path.join(fin, 'audio.wav')

@@ -12,7 +12,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BIB = os.path.join(RAIZ, 'sfx')
 SR = 48000
 # Reforço global (o usuário não ouviu os efeitos na 1ª versão, 26/11): somado ao "db" de cada item.
-REFORCO_EFEITOS, REFORCO_AMBIENTES = 9.0, 6.0
+REFORCO_EFEITOS, REFORCO_AMBIENTES = 8.0, 6.0
 _cat = None
 
 
@@ -30,8 +30,13 @@ def carregar(id_):
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', arq, '-ac', '2', '-ar', str(SR), '-f', 'f32le', '-'],
                          capture_output=True, check=True).stdout
     x = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(float)
-    m = np.abs(x).mean(1); ativo = x[m > np.abs(x).max() * 0.05]
-    r = np.sqrt(np.mean(ativo ** 2)) if len(ativo) else 1e-9
+    # volume percebido: RMS da janela de 400 ms mais alta (como o "momentary loudness").
+    # (1ª versão usava o RMS do trecho > 5% do pico: nos sons curtos isso deixava o efeito 10–20 dB baixo demais.)
+    p2 = (x ** 2).mean(1); w = int(0.4 * SR)
+    if len(p2) <= w:
+        r = np.sqrt(p2.mean())
+    else:
+        c = np.concatenate([[0], np.cumsum(p2)]); r = np.sqrt(((c[w:] - c[:-w]) / w).max())
     return x / (r + 1e-12)
 
 
@@ -61,6 +66,16 @@ def tempo_frase(palavras, frase, n=1, fim=False):
     return palavras[i + len(alvo) - 1]['end'] if fim else palavras[i]['start']
 
 
+def momentaneo(x):
+    """Maior RMS em 400 ms (dBFS) de um trecho mono ou estéreo."""
+    p2 = (x ** 2).mean(1) if x.ndim == 2 else x ** 2
+    w = int(0.4 * SR)
+    if len(p2) == 0: return -120.0
+    if len(p2) <= w: return 10 * np.log10(p2.mean() + 1e-12)
+    c = np.concatenate([[0], np.cumsum(p2)])
+    return 10 * np.log10(((c[w:] - c[:-w]) / w).max() + 1e-12)
+
+
 def colocar(trilha, x, t0, db_abs):
     i = int(t0 * SR)
     if i >= len(trilha) or i + len(x) <= 0:
@@ -88,5 +103,9 @@ def aplicar_historia(trilha, pasta, T0, tempos, voz_db, avisos):
         t = tempo_frase(pal, ef['frase'], ef.get('n', 1), ef.get('fim', False))
         if t is None:
             avisos.append(f"{os.path.basename(pasta)}: frase não achada para {ef['id']}: \"{ef['frase']}\""); continue
-        colocar(trilha, carregar(ef['id']), T0 + t + ef.get('desloc', 0.0), voz_db + ef.get('db', -10) + REFORCO_EFEITOS); n += 1
+        t_abs = T0 + t + ef.get('desloc', 0.0)
+        # nível pela voz NAQUELE momento (pico de 400 ms entre −0,5 s e +1,5 s), não pela média: assim o efeito aparece
+        local = momentaneo(trilha[max(0, int((t_abs - 0.5) * SR)):int((t_abs + 1.5) * SR)])
+        ref = local if local > -60 else voz_db
+        colocar(trilha, carregar(ef['id']), t_abs, ref + ef.get('db', -10) + REFORCO_EFEITOS); n += 1
     return n

@@ -29,7 +29,7 @@
   {
    "id": "motor-falhando",
    "frase": "started sputtering",
-   "db": -10
+   "db": -5
   },
   {
    "id": "pneu-cascalho",
@@ -44,17 +44,17 @@
   {
    "id": "passos-cascalho",
    "frase": "walked up with a flashlight",
-   "db": -16
+   "db": -12
   },
   {
    "id": "passos-cascalho",
    "frase": "came back with two bottles of water",
-   "db": -18
+   "db": -12
   },
   {
    "id": "porta-carro-fecha",
    "frase": "got back in his cruiser",
-   "db": -16
+   "db": -1
   },
   {
    "id": "trava-carro",
@@ -85,7 +85,7 @@
   {
    "id": "buzina-carro",
    "frase": "I hit the horn",
-   "db": -10,
+   "db": -12,
    "fim": true
   },
   {
@@ -96,7 +96,7 @@
   {
    "id": "passos-cascalho",
    "frase": "Manny walked all the way around my car",
-   "db": -16
+   "db": -12
   }
  ]
 }

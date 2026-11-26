@@ -103,7 +103,7 @@
    {
     "id": "motor-falhando",
     "frase": "I ran out of gas",
-    "db": -12
+    "db": -7
    },
    {
     "id": "macaneta-carro-travada",

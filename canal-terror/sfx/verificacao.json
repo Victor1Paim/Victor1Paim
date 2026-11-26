@@ -1,0 +1,194 @@
+{
+ "porta-carro-fecha": {
+  "ouviu": "Car door closing with a thud.",
+  "pedido": "Car door slam: a heavy car door closing shut, metal and rubber thud, recorded outdoors"
+ },
+ "motor-falhando": {
+  "ouviu": "Rattling or shaking metal container or object.",
+  "pedido": "Old car engine running out of gas: the engine sputters, chugs and stalls, engine dies, no voices"
+ },
+ "celular-toque": {
+  "ouviu": "Old-fashioned telephone ringing loudly multiple times.",
+  "pedido": "Classic cell phone ringtone ringing loudly: a simple electronic ring tone repeating twice, clear, no music"
+ },
+ "drone-grave-1": {
+  "ouviu": "Low rumbling sound, like distant thunder.",
+  "pedido": "Dark ambient horror drone, deep low sustained bass tones, slowly evolving, ominous, no melody, no percussion"
+ },
+ "drone-grave-2": {
+  "ouviu": "Low-pitched foghorn or ship horn blast.",
+  "pedido": "Low unsettling cinematic drone with a distant airy texture and subtle rumble, horror atmosphere, no melody, no percussion"
+ },
+ "drone-tenso": {
+  "ouviu": "Heavy wind blowing and whistling through gaps.",
+  "pedido": "Tense horror drone: faint high dissonant string harmonics over a deep bass rumble, creeping unease, no melody"
+ },
+ "sting-1": {
+  "ouviu": "Whooshing sound, like something moving quickly.",
+  "pedido": "Cinematic horror sting: a short reverse swell into a deep boom hit with a dark metallic tail"
+ },
+ "sting-2": {
+  "ouviu": "Low-pitched hum or rumble, steady and deep.",
+  "pedido": "Deep cinematic horror impact hit with a long low rumble tail"
+ },
+ "vinheta-1": {
+  "ouviu": "Rising whoosh or wind tunnel swirling sound.",
+  "pedido": "Dark horror intro: slow low riser swelling into a heavy deep boom with a long metallic reverb tail"
+ },
+ "riser-1": {
+  "ouviu": "Rising whoosh or sci-fi teleportation sound effect.",
+  "pedido": "Slow tense horror riser building from low rumble to high dissonant tension"
+ },
+ "whoosh-grave": {
+  "ouviu": "Low-pitched thud or boom sound effect.",
+  "pedido": "Low dark whoosh transition, soft"
+ },
+ "amb-deserto-noite": {
+  "ouviu": "I currently don't have a sound to hear.",
+  "pedido": "Audible desert night wind blowing steadily across open land and dry brush, low whooshing gusts, lonely and cold, with faint crickets"
+ },
+ "amb-estrada-noite": {
+  "ouviu": "Gentle nighttime crickets chirping in the background.",
+  "pedido": "Quiet countryside at night beside an empty road: crickets chirping and soft wind, very peaceful, nothing else"
+ },
+ "amb-carro-parado-motor": {
+  "ouviu": "Low-pitched engine rumble or distant heavy machinery.",
+  "pedido": "Inside a parked car with the engine idling, low steady hum, quiet night outside"
+ },
+ "amb-carro-rodando": {
+  "ouviu": "Light wind blowing across an outdoor area.",
+  "pedido": "Inside a car driving on a highway at night, steady road noise and engine hum"
+ },
+ "amb-diner-noite": {
+  "ouviu": "Footsteps walking on a hard surface.",
+  "pedido": "Quiet roadside diner at 2 a.m.: low refrigerator hum, faint kitchen clatter, coffee machine, almost empty"
+ },
+ "amb-chuva-janela": {
+  "ouviu": "Rumbling engine sound, possibly a vehicle idling.",
+  "pedido": "Steady rain falling and pattering on a window glass at night, heard from inside a quiet room"
+ },
+ "amb-fluorescente": {
+  "ouviu": "Camera shutter clicking rapidly multiple times.",
+  "pedido": "Electrical hum and buzz of old fluorescent ceiling lights in an empty room, steady 60 hertz buzz with a faint flicker"
+ },
+ "amb-posto-noite": {
+  "ouviu": "Soft, ambient wind or distant airy sound.",
+  "pedido": "Empty gas station at night: buzzing canopy lights, distant highway, crickets"
+ },
+ "amb-truckstop": {
+  "ouviu": "Vehicle engine running with background road noise.",
+  "pedido": "Truck stop parking lot at night: distant idling diesel semi trucks, low rumble"
+ },
+ "amb-quarto-motel": {
+  "ouviu": "I currently cannot hear any sound.",
+  "pedido": "Cheap motel room at night: wall air conditioner humming, distant highway"
+ },
+ "amb-floresta-noite": {
+  "ouviu": "Gentle wind or breeze blowing through trees.",
+  "pedido": "Forest at night: crickets, light wind in the trees, a distant owl"
+ },
+ "amb-casa-silencio": {
+  "ouviu": "I currently don't have any audio to analyze. Please provide the sound.",
+  "pedido": "Empty house at night room tone: very quiet, faint refrigerator hum, clock ticking"
+ },
+ "macaneta-carro-travada": {
+  "ouviu": "Wooden blocks clacking together repeatedly.",
+  "pedido": "Someone outside pulling the door handle of a locked car twice, plastic clunk and rattle, close"
+ },
+ "batida-vidro-carro": {
+  "ouviu": "Knocking on a wooden door or surface.",
+  "pedido": "Two soft knuckle knocks on a car window glass from outside, close, quiet night"
+ },
+ "batida-porta-madeira": {
+  "ouviu": "Two wooden blocks tapping together repeatedly.",
+  "pedido": "Three slow knocks on a wooden door heard from inside"
+ },
+ "buzina-carro": {
+  "ouviu": "Car horn honking loudly and continuously.",
+  "pedido": "Short car horn honk from inside a compact car"
+ },
+ "trava-carro": {
+  "ouviu": "Lid or latch being snapped shut.",
+  "pedido": "Car door locks clicking shut from inside"
+ },
+ "motor-ligando": {
+  "ouviu": "Motorcycle engine revving and rumbling sound.",
+  "pedido": "Old car engine starting and settling into idle"
+ },
+ "passos-cascalho": {
+  "ouviu": "Crunching steps on snow or gravel path.",
+  "pedido": "Slow footsteps on a gravel roadside at night"
+ },
+ "passos-corredor": {
+  "ouviu": "Footsteps on a hard floor surface.",
+  "pedido": "Footsteps walking down a linoleum hallway"
+ },
+ "sino-porta-loja": {
+  "ouviu": "Bicycle bell ringing repeatedly and clearly.",
+  "pedido": "Small brass bell over a diner door jingling as the door opens"
+ },
+ "xicara-mesa": {
+  "ouviu": "Metal spoon stirring a ceramic cup.",
+  "pedido": "A ceramic coffee mug being set down on a table, single solid clink of ceramic on hard table"
+ },
+ "celular-vibrando": {
+  "ouviu": "Phone vibrating on a surface.",
+  "pedido": "Phone vibrating on a hard surface in short bursts"
+ },
+ "chaves": {
+  "ouviu": "Shaking a spray can or rattling beads.",
+  "pedido": "Car keys jingling as they are pulled from a pocket"
+ },
+ "bomba-clique": {
+  "ouviu": "Zip tie being fastened tightly.",
+  "pedido": "Gas pump nozzle clicking off when the tank is full"
+ },
+ "abastecendo": {
+  "ouviu": "I currently can't hear sounds. Let me know how else I can assist you.",
+  "pedido": "Gasoline pumping into a car's fuel tank at a gas station: steady liquid flow through the nozzle with a mechanical pump hum"
+ },
+ "corrente-guincho": {
+  "ouviu": "Coins dropping onto a hard surface.",
+  "pedido": "Tow truck chain rattling and a hook clanking on metal"
+ },
+ "freio-ar-caminhao": {
+  "ouviu": "Electric drill whirring and working sound effect.",
+  "pedido": "Big semi truck air brakes releasing: a loud pneumatic hiss of compressed air, diesel engine idling underneath"
+ },
+ "buzina-caminhao-longe": {
+  "ouviu": "Train horn blowing loudly and clearly.",
+  "pedido": "Distant semi truck air horn at night"
+ },
+ "respiracao-tensa": {
+  "ouviu": "Heavy breathing or panting sound.",
+  "pedido": "Nervous shaky breathing, close and quiet"
+ },
+ "batimento": {
+  "ouviu": "Heartbeat thumping sound, like heart monitor beeps.",
+  "pedido": "Slow heavy heartbeat, low and tense"
+ },
+ "cachorro-longe": {
+  "ouviu": "Two dogs barking and howling together.",
+  "pedido": "Distant dog barking at night with echo"
+ },
+ "pneu-cascalho": {
+  "ouviu": "Rolling wheels or cart moving on pavement.",
+  "pedido": "Car tires slowly rolling over loose gravel and coming to a stop, crunching stones under rubber tires"
+ },
+ "impressora-recibo": {
+  "ouviu": "Glass bottle being opened or resealed tightly.",
+  "pedido": "A small thermal receipt printer printing a paper receipt: quick electronic buzzing whir and paper feeding out"
+ },
+ "interruptor": {
+  "ouviu": "Camera shutter click sound.",
+  "pedido": "A plastic wall light switch flipped on, one sharp clear click, close mic"
+ },
+ "porta-rangendo": {
+  "ouviu": "Creaking door opening or closing sound effect.",
+  "pedido": "Old wooden door slowly creaking open"
+ },
+ "rajada-vento": {
+  "ouviu": "Windy whooshing sound, possibly gust of wind.",
+  "pedido": "Single gust of cold wind"
+ }
+}

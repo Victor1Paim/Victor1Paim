@@ -46,7 +46,7 @@
   {
    "id": "porta-carro-fecha",
    "frase": "so I did",
-   "db": -14
+   "db": -3
   },
   {
    "id": "sino-porta-loja",
@@ -62,7 +62,7 @@
   {
    "id": "riser-1",
    "frase": "the headlights came back",
-   "db": -18
+   "db": -8
   },
   {
    "id": "buzina-caminhao-longe",
@@ -77,7 +77,7 @@
   {
    "id": "celular-toque",
    "frase": "Two days later",
-   "db": -12
+   "db": -5
   },
   {
    "id": "impressora-recibo",
@@ -87,7 +87,7 @@
   {
    "id": "sting-2",
    "frase": "one minute after my receipt",
-   "db": -12,
+   "db": -16,
    "fim": true
   }
  ]

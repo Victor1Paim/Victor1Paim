@@ -115,7 +115,7 @@
   {
    "id": "amb-estrada-noite",
    "categoria": "ambiente",
-   "prompt": "Rural roadside at night ambience: crickets, faint wind, very distant car passing once",
+   "prompt": "Quiet countryside at night beside an empty road: crickets chirping and soft wind, very peaceful, nothing else",
    "duracao": 30,
    "loop": true,
    "tags": [
@@ -123,7 +123,10 @@
     "noite",
     "campo"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "cricket|insect|night|wind|countryside"
   },
   {
    "id": "amb-carro-parado-motor",
@@ -167,19 +170,22 @@
   {
    "id": "amb-chuva-janela",
    "categoria": "ambiente",
-   "prompt": "Rain against a window from inside, steady and muffled",
+   "prompt": "Steady rain falling and pattering on a window glass at night, heard from inside a quiet room",
    "duracao": 30,
    "loop": true,
    "tags": [
     "chuva",
     "janela"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "rain|water|drizzl|patter|shower"
   },
   {
    "id": "amb-fluorescente",
    "categoria": "ambiente",
-   "prompt": "Fluorescent light buzz in an empty room with an occasional flicker click",
+   "prompt": "Electrical hum and buzz of old fluorescent ceiling lights in an empty room, steady 60 hertz buzz with a faint flicker",
    "duracao": 30,
    "loop": true,
    "tags": [
@@ -187,7 +193,10 @@
     "zumbido",
     "interior"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "hum|buzz|electric|fluorescent|light"
   },
   {
    "id": "amb-posto-noite",
@@ -304,14 +313,16 @@
   {
    "id": "porta-carro-fecha",
    "categoria": "efeito",
-   "prompt": "Car door closing shut, solid thunk",
-   "duracao": 1.2,
+   "prompt": "Car door slam: a heavy car door closing shut, metal and rubber thud, recorded outdoors",
+   "duracao": 2,
    "loop": false,
    "tags": [
     "carro",
     "porta"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "influencia": 0.7,
+   "modelo": "eleven_text_to_sound_v3"
   },
   {
    "id": "trava-carro",
@@ -328,15 +339,17 @@
   {
    "id": "motor-falhando",
    "categoria": "efeito",
-   "prompt": "Small car engine sputtering and dying, then silence",
-   "duracao": 4,
+   "prompt": "Old car engine running out of gas: the engine sputters, chugs and stalls, engine dies, no voices",
+   "duracao": 5,
    "loop": false,
    "tags": [
     "carro",
     "motor",
     "pane"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "influencia": 0.7,
+   "modelo": "eleven_text_to_sound_v3"
   },
   {
    "id": "motor-ligando",
@@ -390,15 +403,18 @@
   {
    "id": "xicara-mesa",
    "categoria": "efeito",
-   "prompt": "Ceramic coffee mug set down on a formica table",
-   "duracao": 1,
+   "prompt": "A ceramic coffee mug being set down on a table, single solid clink of ceramic on hard table",
+   "duracao": 1.5,
    "loop": false,
    "tags": [
     "xícara",
     "mesa",
     "diner"
    ],
-   "prioridade": 2
+   "prioridade": 2,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "mug|cup|ceramic|clink|table"
   },
   {
    "id": "celular-vibrando",
@@ -415,14 +431,15 @@
   {
    "id": "celular-toque",
    "categoria": "efeito",
-   "prompt": "Simple phone ringtone ringing in a quiet kitchen",
+   "prompt": "Classic cell phone ringtone ringing loudly: a simple electronic ring tone repeating twice, clear, no music",
    "duracao": 3,
    "loop": false,
    "tags": [
     "celular",
     "toque"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "influencia": 0.85
   },
   {
    "id": "chaves",
@@ -450,14 +467,17 @@
   {
    "id": "abastecendo",
    "categoria": "efeito",
-   "prompt": "Fuel pumping into a car tank, nozzle hum",
-   "duracao": 4,
+   "prompt": "Gasoline pumping into a car's fuel tank at a gas station: steady liquid flow through the nozzle with a mechanical pump hum",
+   "duracao": 5,
    "loop": false,
    "tags": [
     "posto",
     "bomba"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "fuel|gas|pump|pour|liquid|fill"
   },
   {
    "id": "corrente-guincho",
@@ -474,14 +494,17 @@
   {
    "id": "freio-ar-caminhao",
    "categoria": "efeito",
-   "prompt": "Semi truck air brake hiss",
-   "duracao": 2,
+   "prompt": "Big semi truck air brakes releasing: a loud pneumatic hiss of compressed air, diesel engine idling underneath",
+   "duracao": 3,
    "loop": false,
    "tags": [
     "caminhão",
     "freio"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "air|brake|hiss|truck|pneumatic"
   },
   {
    "id": "buzina-caminhao-longe",
@@ -534,28 +557,34 @@
   {
    "id": "pneu-cascalho",
    "categoria": "efeito",
-   "prompt": "Car tires rolling slowly onto a gravel shoulder and stopping",
-   "duracao": 3,
+   "prompt": "Car tires slowly rolling over loose gravel and coming to a stop, crunching stones under rubber tires",
+   "duracao": 4,
    "loop": false,
    "tags": [
     "carro",
     "pneu",
     "cascalho"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "gravel|tire|crunch|car|stone"
   },
   {
    "id": "impressora-recibo",
    "categoria": "efeito",
-   "prompt": "Small receipt printer printing at a gas pump",
-   "duracao": 2,
+   "prompt": "A small thermal receipt printer printing a paper receipt: quick electronic buzzing whir and paper feeding out",
+   "duracao": 3,
    "loop": false,
    "tags": [
     "recibo",
     "impressora",
     "posto"
    ],
-   "prioridade": 1
+   "prioridade": 1,
+   "modelo": "eleven_text_to_sound_v3",
+   "influencia": 0.7,
+   "esperado": "print|receipt|whir|buzz|paper"
   },
   {
    "id": "interruptor",

@@ -87,12 +87,12 @@
   {
    "id": "porta-carro-fecha",
    "frase": "got back in my car and left",
-   "db": -12
+   "db": -1
   },
   {
    "id": "porta-carro-fecha",
    "frase": "because I needed coffee",
-   "db": -16
+   "db": -5
   },
   {
    "id": "sino-porta-loja",
@@ -107,7 +107,7 @@
   {
    "id": "passos-corredor",
    "frase": "I got up to use the restroom",
-   "db": -18
+   "db": -12
   },
   {
    "id": "sino-porta-loja",
@@ -134,12 +134,12 @@
   {
    "id": "riser-1",
    "frase": "The date on that clip",
-   "db": -16
+   "db": -8
   },
   {
    "id": "sting-2",
    "frase": "the one before I ever drove that road",
-   "db": -12,
+   "db": -14,
    "fim": true
   }
  ]
