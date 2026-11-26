@@ -40,6 +40,23 @@ O gasto real de cada vídeo sai do log da skill: `node .claude/skills/gemini-mid
 | Total mínimo (Lite) | ≈ US$ 1,40 | ≈ US$ 4,10 | ≈ US$ 0,10 |
 | Total máximo (Pro) | ≈ US$ 4,20 | ≈ US$ 13,60 | ≈ US$ 0,40 |
 
+## Imagens pela OpenAI (chave já conectada)
+
+Preço oficial do `gpt-image-2`: US$ 30 por 1 milhão de tokens de imagem gerada (developers.openai.com/api/docs/pricing).
+**Medido em 26/11:** 1 imagem 1536×1024, qualidade *medium* = 1.372 tokens = **US$ 0,042**. A mesma cena no Gemini Nano Banana 2
+(1376×768) deu 1.639 tokens de saída ≈ **US$ 0,07–0,10** (o log não separa imagem de "raciocínio").
+Comparação lado a lado: `producoes/piloto/teste-imagem/comparacao.jpg` (esquerda OpenAI, direita Gemini).
+
+| | Piloto (~28 imagens) | Coletânea (~95) | Short (~3) |
+|---|---|---|---|
+| gpt-image-2 *low* (≈ US$ 0,005/imagem, não testado) | 0,15 | 0,50 | 0,02 |
+| gpt-image-2 *medium* (US$ 0,042, medido) | 1,20 | 4,00 | 0,13 |
+| gpt-image-2 *high* (≈ US$ 0,165, não testado) | 4,60 | 15,70 | 0,50 |
+
+**Total com OpenAI medium nas imagens + voz Gemini + Whisper + 3 miniaturas em high:**
+**piloto ≈ US$ 1,90 · coletânea ≈ US$ 5,10 · short ≈ US$ 0,15.** É a opção mais barata com qualidade boa.
+O formato 1536×1024 é 3:2: corta-se para 16:9 e amplia-se para 1920×1080 localmente.
+
 A partir de 2027 a voz soma uns US$ 0,10 (piloto) a US$ 0,40 (coletânea). O que pesa no custo são as imagens.
 
 ## Como gastar menos
