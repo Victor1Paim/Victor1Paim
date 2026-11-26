@@ -65,3 +65,18 @@ A partir de 2027 a voz soma uns US$ 0,10 (piloto) a US$ 0,40 (coletânea). O que
 - Um banco de planos coringa reaproveitável, que cresce a cada vídeo.
 - Misturar com vídeo gratuito de banco (Pexels/Pixabay) nos planos de lugar comum (estrada, posto, céu).
 - Sempre rodar em simulação antes (o script mostra o tamanho e se já tem cache) e testar 1 imagem antes do lote.
+
+## Gasto real do piloto "The Detour" (26/11/2026)
+
+| Item | Quantidade | US$ |
+|---|---|---|
+| Voz Gemini 3.8 Flash TTS (Enceladus) | 22 parágrafos, 9.967 tokens de áudio, 6,6 min | 0,09 |
+| Imagens OpenAI gpt-image-2 medium | 30 (inclui 1 refeita) | 1,25 |
+| Miniatura OpenAI gpt-image-2 high | 1 | 0,17 |
+| Legenda Whisper | 6,6 min | 0,04 |
+| Trilha e efeitos | sintetizados aqui | 0 |
+| **Total do piloto** | | **≈ US$ 1,55** |
+| Testes antes do piloto (3 vozes, 2 imagens de comparação) | | ≈ 0,15 |
+| Análise das 3 referências (Whisper, 87 min) | uma vez | ≈ 0,52 |
+
+Ficou abaixo da estimativa (US$ 1,90): a história rendeu 30 imagens em vez das 28 + margem, e quase nada precisou ser refeito.

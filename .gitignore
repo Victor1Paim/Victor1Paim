@@ -4,3 +4,7 @@ canal-terror/referencias/videos/
 producoes/.cache-gemini/
 **/.cache-gemini/
 canal-terror/producoes/**/*.wav
+canal-terror/producoes/**/final/clipes/
+canal-terror/producoes/**/final/*.mp4
+canal-terror/producoes/**/final/*.wav
+canal-terror/producoes/**/voz/*.mp3

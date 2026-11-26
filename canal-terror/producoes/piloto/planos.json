@@ -1,0 +1,165 @@
+{
+ "titulo": "THE DETOUR",
+ "cartela": [
+  "Story 1",
+  "By: Anonymous"
+ ],
+ "estilo": "Cinematic still photograph, 35mm film, shot at night unless stated, muted desaturated colors, low contrast, cold tones, subtle film grain, shallow depth of field, realistic, American Midwest, no readable text, no logos, no watermark.",
+ "vinheta": {
+  "id": "v00",
+  "prompt": "A lonely gas station canopy glowing far away across black flat farmland in thick fog, a single two-lane road leading to it, almost all darkness, very minimal composition with large empty dark sky."
+ },
+ "planos": [
+  {
+   "id": "s01",
+   "p": 0,
+   "prompt": "View through a car windshield at night on a narrow two-lane rural road, only the headlights lighting the asphalt, an orange DETOUR arrow sign at the roadside, endless black fields."
+  },
+  {
+   "id": "s02",
+   "p": 0,
+   "prompt": "Distant gas station sign glowing over dark empty fields at 2 a.m., seen from a car on a two-lane road, faint mist."
+  },
+  {
+   "id": "s03",
+   "p": 1,
+   "prompt": "View from the back seat of an old small sedan driving at night, the back seat piled with cardboard boxes, clothes and a lamp, a crack running across the windshield, dim dashboard glow, only the driver's hand on the wheel visible, no passenger, dark empty road ahead."
+  },
+  {
+   "id": "s04",
+   "p": 2,
+   "arquivo": "teste-imagem/openai-gpt-image-2-medium.png"
+  },
+  {
+   "id": "s05",
+   "p": 2,
+   "prompt": "Close view through the window of an old dark green station wagon with wood panel sides at night, dome light on, an empty interior, a jacket on the passenger seat and a fast food paper bag on the dashboard, exhaust rising from the tailpipe in the cold."
+  },
+  {
+   "id": "s06",
+   "p": 3,
+   "prompt": "Gas pump nozzle in the fuel tank of a small sedan at night, the pump screen glowing blue, cold fluorescent canopy light, breath-like vapor in the air, an old station wagon blurred far in the background with its engine running."
+  },
+  {
+   "id": "s07",
+   "p": 4,
+   "prompt": "Rear view of a small sedan driving away from a tiny rural gas station at night, red taillights, the station getting smaller behind it in the dark."
+  },
+  {
+   "id": "s08",
+   "p": 5,
+   "prompt": "Old truck stop diner at night along a rural highway, two semi trucks parked behind it with their running lights on, a tall neon sign with some letters burned out, wet asphalt, empty parking lot."
+  },
+  {
+   "id": "s09",
+   "p": 6,
+   "prompt": "Inside an old American roadside diner at 2 a.m., warm yellow light, red vinyl booths, a long counter with stools, one trucker seen from behind looking at his phone, an old man asleep in a booth by the dark window, nearly empty."
+  },
+  {
+   "id": "s10",
+   "p": 6,
+   "prompt": "A slice of pie and a mug of black coffee on a worn formica diner table at night, a smartphone beside them showing a glowing map, warm light."
+  },
+  {
+   "id": "s11",
+   "p": 7,
+   "prompt": "Glass front door of an old diner at night seen from inside, a small brass bell above it, rain streaking down the glass, dark parking lot outside."
+  },
+  {
+   "id": "s12",
+   "p": 8,
+   "prompt": "A young couple seen from behind walking down the aisle of an old diner at night, the man in a gray hoodie, the woman in a thin denim jacket with her arms crossed, the shoulders of both jackets dark with rain, faces not visible, warm diner light."
+  },
+  {
+   "id": "s13",
+   "p": 8,
+   "prompt": "Two laminated menus and two glasses of water set on an empty diner booth table, vinyl seats, rain on the window beside it, night."
+  },
+  {
+   "id": "s14",
+   "p": 9,
+   "prompt": "Rain streaming down a diner window at night, blurred parking lot lights outside, reflections of the warm interior on the glass."
+  },
+  {
+   "id": "s15",
+   "p": 10,
+   "prompt": "Narrow back hallway of an old diner past the kitchen, one fluorescent tube flickering, a corkboard on the wall covered in business cards and a faded flyer, a restroom door at the end, empty."
+  },
+  {
+   "id": "s16",
+   "p": 10,
+   "prompt": "Small old diner restroom, a single sink and a mirror under harsh fluorescent light, water droplets on the sink, empty, nobody in the mirror."
+  },
+  {
+   "id": "s17",
+   "p": 11,
+   "prompt": "Extreme close up of a small brass bell above a diner door, moving as the door opens, motion blur, night."
+  },
+  {
+   "id": "s12b",
+   "p": 12,
+   "reusar": "s12"
+  },
+  {
+   "id": "s18",
+   "p": 13,
+   "prompt": "An empty diner booth wiped clean under fluorescent light, no glasses, no menus, nothing on the table, the vinyl seat perfectly smooth, the rest of the diner dim."
+  },
+  {
+   "id": "s19",
+   "p": 14,
+   "prompt": "A middle-aged diner waitress seen from behind carrying two menus and two glasses of water toward a booth, old pink uniform and apron, warm light, face not visible."
+  },
+  {
+   "id": "s20",
+   "p": 15,
+   "prompt": "Point of view from a diner booth: a half-empty mug of cold coffee and an empty pie plate in the foreground, a young couple blurred in a booth further down the aisle, night."
+  },
+  {
+   "id": "s21",
+   "p": 15,
+   "prompt": "From a distance in a dim diner, a young woman in a denim jacket sitting in a booth staring out the dark window at the parking lot, the man across from her rubbing his eyes, both out of focus, silhouettes."
+  },
+  {
+   "id": "s22",
+   "p": 16,
+   "prompt": "An old man asleep in a diner booth by a dark window, face turned away, a trucker blurred at the counter in the background, nobody looking up, stillness."
+  },
+  {
+   "id": "s23",
+   "p": 17,
+   "prompt": "A truck stop parking lot at night under orange sodium lights, the asphalt completely dry, no puddles at all, one small sedan parked alone near the entrance."
+  },
+  {
+   "id": "s24",
+   "p": 17,
+   "prompt": "Inside a parked car at dawn, gray light starting in the sky through the windshield, hands resting on the steering wheel, a diner glowing outside, tired stillness, no face visible."
+  },
+  {
+   "id": "s25",
+   "p": 18,
+   "prompt": "An empty patch of cracked concrete beside a two-lane road at dawn, weeds and flat farmland, no buildings at all, gray overcast sky, fog."
+  },
+  {
+   "id": "s26",
+   "p": 19,
+   "prompt": "A cheap dashcam mounted on the windshield of a car parked in a garage, its tiny screen glowing in the dark, close up."
+  },
+  {
+   "id": "s27",
+   "p": 19,
+   "prompt": "Grainy low resolution dashcam footage at night from inside a parked car: a truck stop parking lot under sodium lights and an old dark green station wagon with wood panel sides parked right in front, dome light on, exhaust rising, nobody inside, wide angle lens distortion, no text.",
+   "carimbo": "2019/10/14  02:15:41"
+  },
+  {
+   "id": "s28",
+   "p": 20,
+   "prompt": "Full moon partly behind thin clouds over a black empty sky, faint and cold, very dark, minimal."
+  },
+  {
+   "id": "s29",
+   "p": 21,
+   "prompt": "Highway exit at night with orange DETOUR signs pointing off the interstate, seen from a small town parking lot where a single car sits under a streetlight, misty."
+  }
+ ]
+}

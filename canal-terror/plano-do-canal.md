@@ -1,6 +1,6 @@
 # Canal de terror faceless (inglês) — plano inicial
 
-Status: rascunho de 26/11/2026. Nome do canal ainda não definido. Pasta provisória: `canal-terror/`.
+Status: 26/11/2026 — piloto produzido (`producoes/piloto/`). Formatos em [`formatos.md`](formatos.md), passo a passo em [`motor/README.md`](motor/README.md). Nome do canal ainda não definido. Pasta provisória: `canal-terror/`.
 
 ## Ideia
 
@@ -14,11 +14,11 @@ road trip, home alone, college, camping, Halloween, motel, night shift…). Refe
 | Etapa | Ferramenta | Situação nesta sessão |
 |---|---|---|
 | Roteiro (adaptar/escrever) | Claude + skill `humanizer` (tira cara de texto de IA) | ok |
-| Voz | OpenAI TTS (`gpt-4o-mini-tts`, com instruções de tom) | **ok**: a OpenAI está conectada pelo proxy |
-| Imagens | Gemini (skill `gemini-midia`, com simulação, cache e log de custo) | **falta `GEMINI_API_KEY`** no ambiente |
+| Voz | **Gemini TTS, voz Enceladus** (decidido 26/11) | ok |
+| Imagens | **OpenAI `gpt-image-2` medium** (decidido 26/11: mais barato e mais fotográfico que o Gemini no teste) | ok |
 | Transcrição e legendas | Whisper da OpenAI (API) ou Whisper local (skill `whisper-legendas`) | ok (API testada hoje) |
 | Trilha e efeitos | biblioteca livre (skill `media-use`) ou geração | a escolher |
-| Montagem | Remotion (já usado no Halftone) ou FFmpeg | ok |
+| Montagem | FFmpeg, pelo motor em `motor/` (tudo aqui, sem CapCut) | ok |
 | Publicação | YouTube (título, descrição com capítulos, miniatura, .srt) | a definir como subir |
 
 ## Formato de cada vídeo (a partir das referências)
@@ -39,7 +39,7 @@ road trip, home alone, college, camping, Halloween, motel, night shift…). Refe
    - (d) **Histórias próprias**, escritas por nós no estilo "true story", inspiradas em padrões (não copiadas). Sem risco de direitos; precisa de cuidado para soar humano.
    - Provável combinação: (d) + (c) no início, (b) com permissão, (a) quando o canal crescer.
 2. **Nome, identidade e miniatura** do canal.
-3. **Voz**: escolher entre as vozes da OpenAI com um teste de 1 parágrafo (proposta: 3 vozes × o mesmo trecho).
+3. ~~Voz~~ — decidido: Gemini Enceladus.
 4. **Visual**: só Gemini com movimento, ou Gemini + vídeo de banco gratuito.
 5. **Onde guardar as referências baixadas**: o usuário pediu a pasta do OneDrive (link em `README.md`).
 

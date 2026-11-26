@@ -1,0 +1,156 @@
+{
+ "T0_narracao": 12.0,
+ "total": 428.71,
+ "planos": [
+  {
+   "plano": "s01",
+   "inicio": 12.0,
+   "fim": 24.98
+  },
+  {
+   "plano": "s02",
+   "inicio": 24.98,
+   "fim": 37.95
+  },
+  {
+   "plano": "s03",
+   "inicio": 37.95,
+   "fim": 61.21
+  },
+  {
+   "plano": "s04",
+   "inicio": 61.21,
+   "fim": 73.51
+  },
+  {
+   "plano": "s05",
+   "inicio": 73.51,
+   "fim": 85.82
+  },
+  {
+   "plano": "s06",
+   "inicio": 85.82,
+   "fim": 104.57
+  },
+  {
+   "plano": "s07",
+   "inicio": 104.57,
+   "fim": 108.63
+  },
+  {
+   "plano": "s08",
+   "inicio": 108.63,
+   "fim": 131.98
+  },
+  {
+   "plano": "s09",
+   "inicio": 131.98,
+   "fim": 145.87
+  },
+  {
+   "plano": "s10",
+   "inicio": 145.87,
+   "fim": 159.76
+  },
+  {
+   "plano": "s11",
+   "inicio": 159.76,
+   "fim": 162.34
+  },
+  {
+   "plano": "s12",
+   "inicio": 162.34,
+   "fim": 177.3
+  },
+  {
+   "plano": "s13",
+   "inicio": 177.3,
+   "fim": 192.25
+  },
+  {
+   "plano": "s14",
+   "inicio": 192.25,
+   "fim": 210.79
+  },
+  {
+   "plano": "s15",
+   "inicio": 210.79,
+   "fim": 221.77
+  },
+  {
+   "plano": "s16",
+   "inicio": 221.77,
+   "fim": 232.75
+  },
+  {
+   "plano": "s17",
+   "inicio": 232.75,
+   "fim": 238.02
+  },
+  {
+   "plano": "s12b",
+   "inicio": 238.02,
+   "fim": 256.63
+  },
+  {
+   "plano": "s18",
+   "inicio": 256.63,
+   "fim": 269.74
+  },
+  {
+   "plano": "s19",
+   "inicio": 269.74,
+   "fim": 282.33
+  },
+  {
+   "plano": "s20",
+   "inicio": 282.33,
+   "fim": 295.63
+  },
+  {
+   "plano": "s21",
+   "inicio": 295.63,
+   "fim": 308.93
+  },
+  {
+   "plano": "s22",
+   "inicio": 308.93,
+   "fim": 320.24
+  },
+  {
+   "plano": "s23",
+   "inicio": 320.24,
+   "fim": 336.19
+  },
+  {
+   "plano": "s24",
+   "inicio": 336.19,
+   "fim": 352.15
+  },
+  {
+   "plano": "s25",
+   "inicio": 352.15,
+   "fim": 359.59
+  },
+  {
+   "plano": "s26",
+   "inicio": 359.59,
+   "fim": 373.16
+  },
+  {
+   "plano": "s27",
+   "inicio": 373.16,
+   "fim": 386.72
+  },
+  {
+   "plano": "s28",
+   "inicio": 386.72,
+   "fim": 393.2
+  },
+  {
+   "plano": "s29",
+   "inicio": 393.2,
+   "fim": 408.71
+  }
+ ]
+}
