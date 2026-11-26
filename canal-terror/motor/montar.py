@@ -164,7 +164,7 @@ fc.append(f"{prev}{grade}[v]")
 cmd = ['ffmpeg', '-v', 'error', '-stats', '-y']
 for e in entradas: cmd += ['-i', e]
 cmd += ['-i', audio, '-filter_complex', ';'.join(fc), '-map', '[v]', '-map', f'{len(entradas)}:a',
-        '-c:v', 'libx264', '-preset', 'medium' if not a.rascunho else 'veryfast', '-crf', '20', '-r', str(FPS),
+        '-c:v', 'libx264', '-preset', 'medium' if not a.rascunho else 'veryfast', '-crf', '21', '-maxrate', '10M', '-bufsize', '20M', '-r', str(FPS),
         '-c:a', 'aac', '-b:a', '192k', '-t', f'{total:.3f}', '-movflags', '+faststart',
         os.path.join(final_dir, 'video-rascunho.mp4' if a.rascunho else 'video.mp4')]
 r = subprocess.run(cmd, stderr=subprocess.PIPE, text=True)
