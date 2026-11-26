@@ -17,7 +17,8 @@ road trip, home alone, college, camping, Halloween, motel, night shift…). Refe
 | Voz | **Gemini TTS, voz Enceladus** (decidido 26/11) | ok |
 | Imagens | **OpenAI `gpt-image-2` medium** (decidido 26/11: mais barato e mais fotográfico que o Gemini no teste) | ok |
 | Transcrição e legendas | Whisper da OpenAI (API) ou Whisper local (skill `whisper-legendas`) | ok (API testada hoje) |
-| Trilha e efeitos | biblioteca livre (skill `media-use`) ou geração | a escolher |
+| Efeitos sonoros (maçaneta, batida no vidro, buzina, vento, chuva…) | **só ElevenLabs Sound Effects** (decidido 26/11; nada de biblioteca livre nem síntese para efeitos) | chave em `~/.config/canal-terror/elevenlabs.key` |
+| Trilha de fundo (drone) e sting | sintetizados no motor (`motor/trilha.py`) | ok |
 | Montagem | FFmpeg, pelo motor em `motor/` (tudo aqui, sem CapCut) | ok |
 | Publicação | YouTube (título, descrição com capítulos, miniatura, .srt) | a definir como subir |
 

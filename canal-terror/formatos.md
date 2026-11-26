@@ -38,3 +38,9 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 - `final/video.mp4` (1080p, teto de 6 Mbps) e `final/parteNN.mp4`: partes de até ~180 MB cortadas em pausas da narração,
   em quadro-chave exato. Juntar em ordem, uma colada na outra (fim de uma = começo da próxima), sem transição.
 - `entrega/miniatura.jpg`, `final/legenda.srt`, `publicacao.md` (títulos, descrição com capítulos, configurações).
+
+## Efeitos sonoros
+
+- **Só ElevenLabs Sound Effects** (decisão do usuário, 26/11/2026). Nada de biblioteca livre, Freesound ou síntese para efeitos de cena.
+- Cada efeito é marcado numa palavra do texto e cai no tempo exato em que a voz a diz (tempo por palavra do Whisper).
+- Volume bem abaixo da voz; ambientes por cena ainda mais baixos. Efeitos aprovados vão para a biblioteca do canal (`sfx/`) e são reaproveitados.
