@@ -157,7 +157,38 @@ def tts_openai(texto, voz, modelo, lingua, instrucoes, post):
     return pcm
 
 
+VOZ_11 = PROJ / "assets" / "vozes_elevenlabs" / "voz.json"   # 26/11: ElevenLabs nas próximas produções (pedido do usuário)
+
+
+def elevenlabs_ativo():
+    """Usa o ElevenLabs quando há voz escolhida (assets/vozes_elevenlabs/voz.json) e chave (ELEVENLABS_KEY_FILE ou
+    ELEVENLABS_API_KEY). Sem isso, segue o Gemini (Achird)."""
+    if os.environ.get("VOZ_MOTOR", "").lower() == "gemini" or not VOZ_11.exists():
+        return None
+    k = os.environ.get("ELEVENLABS_API_KEY")
+    if not k and os.environ.get("ELEVENLABS_KEY_FILE") and Path(os.environ["ELEVENLABS_KEY_FILE"]).exists():
+        k = Path(os.environ["ELEVENLABS_KEY_FILE"]).read_text().strip()
+    return (k, json.loads(VOZ_11.read_text())) if k else None
+
+
+def tts_elevenlabs(texto, lingua, saida, post, k, cfg):
+    """Mesma voz brasileira nas duas línguas (modelo multilíngue); PCM 24 kHz 16 bits = mesmo formato do Gemini."""
+    modelo = cfg.get("modelo", "eleven_multilingual_v2")
+    body = {"text": texto, "model_id": modelo, "language_code": "pt" if lingua == "pt" else "en",
+            "voice_settings": cfg.get("voice_settings", {"stability": 0.5, "similarity_boost": 0.8, "style": 0.2, "use_speaker_boost": True})}
+    req = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{cfg['voice_id']}?output_format=pcm_24000",
+        data=json.dumps(body).encode(), headers={"xi-api-key": k, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        pcm = r.read()
+    registrar(post, "elevenlabs-" + modelo, "voz", caracteres=len(texto))
+    return _gravar(tirar_estalo(pcm), saida)
+
+
 def tts(texto, voz, modelo, saida, post, lingua="pt", instrucoes=None):
+    el = elevenlabs_ativo()
+    if el:
+        return tts_elevenlabs(texto, lingua, saida, post, *el)
     if modelo.startswith("gpt-"):
         pcm = tirar_estalo(tts_openai(texto, voz, modelo, lingua, instrucoes, post))
         return _gravar(pcm, saida)

@@ -357,3 +357,11 @@ slide). Um emoji por quadro (dois emojis estouram a coluna). Todos terminam com 
 Algumas falas saíam com sotaque de Portugal. `vozes.py` agora manda `speechConfig.languageCode` = "pt-BR" (pt) / "en-US" (en) em
 toda geração do Gemini. Não remover. Se o usuário apontar sotaque de Portugal num vídeo, regerar as falas pt daquele post.
 Regeradas em pt-BR em 25/11: as 5 chamadas do produto (pc_meio + 4 pc_*), Aula 7 e ABC Thanksgiving (26/11).
+
+## VOZ NOVA: ELEVENLABS NAS PRÓXIMAS PRODUÇÕES (26/11/2026, pedido do usuário — manda sobre "VOZ ÚNICA" quando ativa)
+O usuário passou uma chave do ElevenLabs (fica SÓ em `<scratchpad>/elevenlabs.key`, nunca no git). NÃO regerar o que já está pronto.
+`vozes.py` usa o ElevenLabs (mesma voz brasileira nas duas línguas, `eleven_multilingual_v2`, PCM 24 kHz) quando existir
+`assets/vozes_elevenlabs/voz.json` ({"voice_id": ..., "nome": ...}) e `ELEVENLABS_KEY_FILE=<scratchpad>/elevenlabs.key`; sem isso, Gemini Achird.
+`VOZ_MOTOR=gemini` força o Gemini. Amostras das candidatas em `assets/vozes_elevenlabs/amostra_*.mp3` (Lucas 7lu3ze7orhWaNeSPowWx,
+Paulo Qrdut83w0Cr152Yb4Xn3, Davi Andrei 2CECaLAGTS5NRGxgbcxr, Beto xNGAXaCH8MaasNuo7Hr7). Custo estimado ~US$ 0,30/1.000 caracteres
+(bem mais caro que o Gemini). Os clipes de CTA (pc_*) continuam com a voz em que foram gerados até o usuário pedir para refazer.
