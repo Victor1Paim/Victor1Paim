@@ -27,6 +27,7 @@ ap.add_argument('pasta'); ap.add_argument('--rascunho', action='store_true')
 ap.add_argument('--sem-legenda', action='store_true'); ap.add_argument('--lufs', type=float, default=-20)
 ap.add_argument('--mbps', type=float, default=6.0, help='teto de bitrate do vídeo final')
 ap.add_argument('--partes-mb', type=float, default=180, help='tamanho máximo de cada parte (0 = não dividir)')
+ap.add_argument('--so-audio', action='store_true', help='refaz só o áudio e troca no video.mp4 existente (sem renderizar a imagem)')
 a = ap.parse_args()
 P = lambda *x: os.path.join(a.pasta, *x)
 
@@ -271,9 +272,15 @@ cmd += ['-i', audio, '-filter_complex', ';'.join(fc), '-map', '[v]', '-map', f'{
 if cortes:
     cmd += ['-force_key_frames', ','.join(f'{c:.3f}' for c in cortes)]
 cmd += ['-t', f'{total:.3f}', '-movflags', '+faststart', saida]
-r = subprocess.run(cmd, stderr=subprocess.PIPE, text=True)
-if r.returncode:
-    sys.exit('ffmpeg falhou:\n' + r.stderr[-1500:])
+if a.so_audio:
+    novo = saida + '.novo.mp4'
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', saida, '-i', audio, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
+                    '-c:a', 'aac', '-b:a', '192k', '-t', f'{total:.3f}', '-movflags', '+faststart', novo], check=True)
+    os.replace(novo, saida)
+else:
+    r = subprocess.run(cmd, stderr=subprocess.PIPE, text=True)
+    if r.returncode:
+        sys.exit('ffmpeg falhou:\n' + r.stderr[-1500:])
 if cortes:
     for f in os.listdir(fin):
         if f.startswith('parte') and f.endswith('.mp4'): os.remove(os.path.join(fin, f))

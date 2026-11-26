@@ -20,6 +20,8 @@ ap.add_argument('--velocidade', type=float, default=1.06, help='atempo (1.06 ≈
 ap.add_argument('--pausa', type=float, default=0.85, help='silêncio entre parágrafos, em s')
 ap.add_argument('--simular', action='store_true')
 a = ap.parse_args()
+# começo de cada trecho: 4 ms mudos + fade de 10 ms; fim: fade de 15 ms (sem estalo nas emendas)
+ANTI_ESTALO = 'afade=t=in:st=0.004:d=0.010,areverse,afade=t=in:d=0.015,areverse'
 
 pasta = os.path.join(a.pasta, 'voz'); os.makedirs(pasta, exist_ok=True)
 pars = ler_historia(a.historia)
@@ -48,7 +50,7 @@ def gerar(i_p):
         subprocess.run([sys.executable, '-I', os.path.join(RAIZ, 'ferramentas/limpar-fim-audio.py'), wav, wav + '.mp3'],
                        capture_output=True)
         # volta para wav 24 kHz já limpo
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.mp3', '-ar', '24000', '-ac', '1', wav], check=True)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.mp3', '-af', ANTI_ESTALO, '-ar', '24000', '-ac', '1', wav], check=True)
         os.remove(wav + '.mp3')
     print(f'  p{i:02d} ok')
     return wav

@@ -55,6 +55,11 @@ function log(entry) { mkdirSync(CACHE, { recursive: true }); appendFileSync(LOG,
 
 // PCM 16 bits mono (como o Gemini devolve) -> WAV
 export function pcmToWav(pcm, rate = 24000, channels = 1) {
+  // O Gemini às vezes já devolve um WAV completo: tirar o cabeçalho de dentro (senão vira um estalo de ~1 ms)
+  if (pcm.subarray(0, 4).toString() === 'RIFF') {
+    const i = pcm.indexOf('data', 12);
+    if (i > 0) pcm = pcm.subarray(i + 8);
+  }
   const h = Buffer.alloc(44);
   h.write('RIFF', 0); h.writeUInt32LE(36 + pcm.length, 4); h.write('WAVEfmt ', 8);
   h.writeUInt32LE(16, 16); h.writeUInt16LE(1, 20); h.writeUInt16LE(channels, 22);

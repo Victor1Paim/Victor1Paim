@@ -36,13 +36,14 @@ for i, sg in enumerate(cfg['segmentos']):
             if r.returncode == 0 and os.path.exists(wav): break
             parar_se_sem_credito('Gemini (voz)', r.stdout + r.stderr); esperar_se_limite(r.stdout + r.stderr, tent)
         subprocess.run([sys.executable, '-I', os.path.join(RAIZ, 'ferramentas/limpar-fim-audio.py'), wav, wav + '.mp3'], capture_output=True)
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.mp3', '-ar', '24000', '-ac', '1', wav], check=True); os.remove(wav + '.mp3')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.mp3', '-af', 'afade=t=in:st=0.004:d=0.010,areverse,afade=t=in:d=0.015,areverse',
+                        '-ar', '24000', '-ac', '1', wav], check=True); os.remove(wav + '.mp3')
     wavs.append(wav)
 PAUSA = 0.55
 voz, tempos, t = [], [], 0.0
 for w in wavs:
     x, sr = sf.read(w); x = x if x.ndim == 1 else x.mean(1)
-    y = subprocess.run(['ffmpeg', '-v', 'error', '-i', w, '-af', f'atempo={VEL}', '-ar', str(SR), '-ac', '1', '-f', 'f32le', '-'],
+    y = subprocess.run(['ffmpeg', '-v', 'error', '-i', w, '-af', f'atempo={VEL},afade=t=in:st=0.004:d=0.010,areverse,afade=t=in:d=0.015,areverse', '-ar', str(SR), '-ac', '1', '-f', 'f32le', '-'],
                        capture_output=True, check=True).stdout
     y = np.frombuffer(y, np.float32).astype(float)
     tempos.append((t, t + len(y) / SR)); voz += [y, np.zeros(int(PAUSA * SR))]; t += len(y) / SR + PAUSA
