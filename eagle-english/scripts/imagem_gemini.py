@@ -22,7 +22,8 @@ from custos import registrar  # noqa: E402
 from vozes import carregar_env, chave  # noqa: E402
 
 MODELO = "gpt-image-2"
-QUALIDADE = "medium"  # "high" pode passar do tempo do proxy (erro 502)
+import os as _os
+QUALIDADE = _os.environ.get("IMG_QUALIDADE", "medium")  # "high" pode passar do tempo do proxy (erro 502)
 TAMANHO = {"9:16": "1024x1536", "1:1": "1024x1024", "3:4": "1024x1536", "16:9": "1536x1024"}
 
 
