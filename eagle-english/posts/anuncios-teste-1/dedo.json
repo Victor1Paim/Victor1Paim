@@ -1,0 +1,43 @@
+{
+ "template": "anuncio.html",
+ "cenas": [
+  {
+   "img": "img/dd1.png",
+   "fala": "d1",
+   "texto": "Levanta um dedo ☝️\nse quer *inglês de verdade*",
+   "mov": "in"
+  },
+  {
+   "img": "img/mae3.png",
+   "fala": "d2",
+   "texto": "…seu filho aprendendo\n*sem mensalidade cara*",
+   "mov": "esq"
+  },
+  {
+   "img": "img/jt1.png",
+   "fala": "d3",
+   "texto": "…já fez curso\ne *não aprendeu*",
+   "mov": "out"
+  },
+  {
+   "img": "img/vg1.png",
+   "fala": "d4",
+   "texto": "…vai viajar e tem\nmedo de *travar*",
+   "mov": "dir"
+  },
+  {
+   "img": "img/tela.png",
+   "fala": "d5",
+   "texto": "*Aula curta* + frase pronta\n+ pronúncia escrita",
+   "mov": "in",
+   "ia": false
+  },
+  {
+   "img": "img/fim.png",
+   "fala": "d6",
+   "texto": "",
+   "mov": "in",
+   "ia": false
+  }
+ ]
+}

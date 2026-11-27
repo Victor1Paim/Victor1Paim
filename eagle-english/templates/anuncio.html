@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap">
+<!-- Camada transparente dos ANÚNCIOS do Eagle Primeira Classe (Meta Ads): texto grande da cena + aviso de IA (sem PUBLI: é marca própria). -->
+<style>
+  :root { --amarelo:#FDDF33; --vermelho:#E63946; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; background:transparent; overflow:hidden; font-family:"Poppins"; }
+  .txt { position:absolute; left:70px; right:150px; top:300px; color:#fff; font-weight:900; font-size:80px; line-height:1.06;
+         letter-spacing:-0.02em; paint-order:stroke fill; -webkit-text-stroke:16px #000; text-wrap:balance; text-align:center; }
+  .txt .am { color:var(--amarelo); }
+  .marca { position:absolute; left:0; right:0; top:236px; text-align:center; color:#fff; font-weight:800; font-size:30px;
+           paint-order:stroke fill; -webkit-text-stroke:6px rgba(0,0,0,.75); }
+  .ia { position:absolute; left:60px; top:1480px; color:#fff; font-weight:700; font-size:24px; opacity:.85;
+        paint-order:stroke fill; -webkit-text-stroke:5px rgba(0,0,0,.7); }
+</style></head><body><div id="c"></div>
+<script>
+const d = window.DADOS || {texto:"Vai viajar e tem medo\nde *travar*? ✈️"};
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const cor = s => esc(s).replace(/\*(.+?)\*/g, '<span class="am">$1</span>').replace(/\n/g, "<br>");
+document.getElementById("c").innerHTML = `<div class="marca">🦅 Eagle English BR</div>${d.texto ? `<div class="txt">${cor(d.texto)}</div>` : ""}
+  ${d.ia === false ? "" : `<div class="ia">Imagens geradas por IA</div>`}`;
+document.fonts.ready.then(() => document.body.dataset.pronto = "1");
+</script></body></html>

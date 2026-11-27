@@ -1,0 +1,43 @@
+{
+ "template": "anuncio.html",
+ "cenas": [
+  {
+   "img": "img/jt1.png",
+   "fala": "j1",
+   "texto": "Pagou cursinho…\ne na hora *travou*? 😶",
+   "mov": "in"
+  },
+  {
+   "img": "img/jt2.png",
+   "fala": "j2",
+   "texto": "Decorar regra\n*não* faz falar ❌",
+   "mov": "out"
+  },
+  {
+   "img": "img/jt3.png",
+   "fala": "j3",
+   "texto": "Frase pronta +\n*repetir em voz alta* 🔁",
+   "mov": "esq"
+  },
+  {
+   "img": "img/tela.png",
+   "fala": "j4",
+   "texto": "*2.100 frases* +\n*10 aulas* curtinhas",
+   "mov": "in",
+   "ia": false
+  },
+  {
+   "img": "img/jt5.png",
+   "fala": "j5",
+   "texto": "No seu tempo ⏱️\nÚnico ou *até 3x*",
+   "mov": "dir"
+  },
+  {
+   "img": "img/fim.png",
+   "fala": "j6",
+   "texto": "",
+   "mov": "in",
+   "ia": false
+  }
+ ]
+}

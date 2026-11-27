@@ -1,0 +1,43 @@
+{
+ "template": "anuncio.html",
+ "cenas": [
+  {
+   "img": "img/vg1.png",
+   "fala": "v1",
+   "texto": "Vai viajar e tem medo\nde *travar*? ✈️",
+   "mov": "in"
+  },
+  {
+   "img": "img/vg2.png",
+   "fala": "v2",
+   "texto": "Aeroporto, hotel,\nrestaurante: *as mesmas frases*",
+   "mov": "out"
+  },
+  {
+   "img": "img/vg3.png",
+   "fala": "v3",
+   "texto": "*Frases prontas*\ncom pronúncia escrita 🗣️",
+   "mov": "esq"
+  },
+  {
+   "img": "img/tela.png",
+   "fala": "v4",
+   "texto": "*2.100 frases* +\n*10 aulas* pra treinar",
+   "mov": "in",
+   "ia": false
+  },
+  {
+   "img": "img/vg5.png",
+   "fala": "v5",
+   "texto": "Pagamento único\nou *até 3x* 💳",
+   "mov": "dir"
+  },
+  {
+   "img": "img/fim.png",
+   "fala": "v6",
+   "texto": "",
+   "mov": "in",
+   "ia": false
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "m1",
+   "lingua": "pt",
+   "texto": "Seu filho faz cursinho de inglês há anos... e ainda trava na hora de falar?"
+  },
+  {
+   "id": "m2",
+   "lingua": "pt",
+   "texto": "O problema não é ele. É o método: muita regra e pouca frase de verdade."
+  },
+  {
+   "id": "m3",
+   "lingua": "pt",
+   "texto": "No Ígol Primeira Classe é uma frase por vez, com a pronúncia escrita do jeito que se fala."
+  },
+  {
+   "id": "m4",
+   "lingua": "pt",
+   "texto": "São dez aulas curtinhas e duas mil e cem frases do dia a dia, com áudio pra repetir."
+  },
+  {
+   "id": "m5",
+   "lingua": "pt",
+   "texto": "Sem mensalidade: pagamento único, ou em até três vezes no cartão."
+  },
+  {
+   "id": "m6",
+   "lingua": "pt",
+   "texto": "Toca em saiba mais e conhece o Ígol Primeira Classe."
+  },
+  {
+   "id": "j1",
+   "lingua": "pt",
+   "texto": "Você já pagou cursinho de inglês e, na hora de falar, travou?"
+  },
+  {
+   "id": "j2",
+   "lingua": "pt",
+   "texto": "Não foi falta de esforço. Decorar regra não faz ninguém falar."
+  },
+  {
+   "id": "j3",
+   "lingua": "pt",
+   "texto": "O jeito fácil é aprender a frase pronta, do dia a dia, e repetir em voz alta."
+  },
+  {
+   "id": "j4",
+   "lingua": "pt",
+   "texto": "No Ígol Primeira Classe são duas mil e cem frases com pronúncia escrita, e dez aulas curtinhas."
+  },
+  {
+   "id": "j5",
+   "lingua": "pt",
+   "texto": "Estuda no seu tempo. Pagamento único, ou até três vezes no cartão."
+  },
+  {
+   "id": "j6",
+   "lingua": "pt",
+   "texto": "Toca em saiba mais e vê como funciona."
+  },
+  {
+   "id": "v1",
+   "lingua": "pt",
+   "texto": "Vai viajar pra fora e tem medo de travar no inglês?"
+  },
+  {
+   "id": "v2",
+   "lingua": "pt",
+   "texto": "No aeroporto, no hotel, no restaurante... são sempre as mesmas frases."
+  },
+  {
+   "id": "v3",
+   "lingua": "pt",
+   "texto": "O Ígol Primeira Classe te dá essas frases prontas, com pronúncia escrita e áudio."
+  },
+  {
+   "id": "v4",
+   "lingua": "pt",
+   "texto": "São duas mil e cem frases e dez aulas curtas, pra treinar antes de ir."
+  },
+  {
+   "id": "v5",
+   "lingua": "pt",
+   "texto": "Pagamento único, ou até três vezes no cartão."
+  },
+  {
+   "id": "v6",
+   "lingua": "pt",
+   "texto": "Toca em saiba mais e embarca com mais confiança."
+  },
+  {
+   "id": "d1",
+   "lingua": "pt",
+   "texto": "Levanta um dedo se você quer falar inglês de verdade, sem decoreba."
+  },
+  {
+   "id": "d2",
+   "lingua": "pt",
+   "texto": "Se você quer seu filho aprendendo, sem pagar mensalidade cara."
+  },
+  {
+   "id": "d3",
+   "lingua": "pt",
+   "texto": "Se você já fez curso e não aprendeu."
+  },
+  {
+   "id": "d4",
+   "lingua": "pt",
+   "texto": "Ou se vai viajar e tem medo de travar."
+  },
+  {
+   "id": "d5",
+   "lingua": "pt",
+   "texto": "O Ígol Primeira Classe é pra você: aula curtinha, frase pronta e pronúncia escrita."
+  },
+  {
+   "id": "d6",
+   "lingua": "pt",
+   "texto": "Pagamento único, ou até três vezes. Toca em saiba mais."
+  }
+ ]
+}

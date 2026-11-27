@@ -16,16 +16,16 @@ PROJ = Path(__file__).resolve().parents[1]
 TRANS = ["slideleft", "smoothup", "slideright", "circleopen", "smoothleft"]
 
 
-def camadas(post, cenas):
+def camadas(post, cenas, template="ugc.html", pasta="ugc_camadas"):
     from playwright.sync_api import sync_playwright
-    out = post / "video" / "ugc_camadas"; out.mkdir(parents=True, exist_ok=True)
+    out = post / "video" / pasta; out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
         cam = os.environ.get("CHROMIUM_PATH")
         nav = pw.chromium.launch(executable_path=cam) if cam else pw.chromium.launch()
         for i, c in enumerate(cenas):
             pg = nav.new_page(viewport={"width": 1080, "height": 1920})
             pg.add_init_script(f"window.DADOS = {json.dumps(c, ensure_ascii=False)};")
-            pg.goto((PROJ / "templates" / "ugc.html").as_uri()); pg.wait_for_selector("body[data-pronto='1']")
+            pg.goto((PROJ / "templates" / template).as_uri()); pg.wait_for_selector("body[data-pronto='1']")
             pg.screenshot(path=str(out / f"c{i}.png"), omit_background=True); pg.close()
         nav.close()
     return out
@@ -35,7 +35,7 @@ def main(pasta, cfg="ugc.json"):
     post = Path(pasta).resolve()
     u = json.loads((post / cfg).read_text()); cenas = u["cenas"]
     vozes = preparar_vozes(post, u, 1.0)
-    cam = camadas(post, cenas)
+    cam = camadas(post, cenas, u.get("template", "ugc.html"), "camadas_" + cfg.replace(".json", ""))
     v = post / "video"; X = 0.2
     falas = [c["fala"] if isinstance(c["fala"], list) else [c["fala"]] for c in cenas]
     durs = [sum(vozes[f][1] - 0.2 for f in fs) + (X if i < len(cenas) - 1 else 0.4) for i, fs in enumerate(falas)]   # fala já tem ~0,25 s de respiro nas pontas
