@@ -81,3 +81,13 @@
 {"quando": "2026-11-27T17:48:33", "etapa": "voz", "modelo": "elevenlabs-eleven_multilingual_v2", "tokens": {"caracteres": 61}, "usd": 0.0183}
 {"quando": "2026-11-27T17:48:49", "etapa": "voz", "modelo": "elevenlabs-eleven_multilingual_v2", "tokens": {"caracteres": 28}, "usd": 0.0084}
 {"quando": "2026-11-27T19:25:32", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 107, "entrada_imagem": 0, "saida_imagem": 5488}, "usd": 0.165175}
+{"quando": "2026-11-27T19:26:53", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 100, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177428}
+{"quando": "2026-11-27T19:27:57", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 103, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177443}
+{"quando": "2026-11-27T19:29:11", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 94, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177398}
+{"quando": "2026-11-27T19:30:19", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 97, "entrada_imagem": 0, "saida_imagem": 5488}, "usd": 0.165125}
+{"quando": "2026-11-27T19:31:14", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 96, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177408}
+{"quando": "2026-11-27T19:32:17", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 93, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177393}
+{"quando": "2026-11-27T19:33:25", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 88, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177368}
+{"quando": "2026-11-27T19:34:36", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 96, "entrada_imagem": 0, "saida_imagem": 5488}, "usd": 0.16512}
+{"quando": "2026-11-27T19:35:45", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 89, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177373}
+{"quando": "2026-11-27T19:36:41", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 88, "entrada_imagem": 1536, "saida_imagem": 5488}, "usd": 0.177368}

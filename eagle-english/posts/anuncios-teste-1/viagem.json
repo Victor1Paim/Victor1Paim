@@ -27,10 +27,11 @@
    "ia": false
   },
   {
-   "img": "img/vg5.png",
+   "img": "img/vg3.png",
    "fala": "v5",
    "texto": "E fale com\n*confiança* lá fora 😄",
-   "mov": "dir"
+   "mov": "in",
+   "_obs": "trocar por vg5 (gpt) quando houver crédito na OpenAI"
   },
   {
    "img": "img/fim_quiz.png",
