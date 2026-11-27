@@ -1,129 +1,134 @@
 {
  "vozes": {
-  "pt": "Achird",
-  "en": "Achird"
+  "pt": "locutor ElevenLabs",
+  "en": "-"
  },
- "modelo": "gemini-3.8-flash-tts",
+ "modelo": "elevenlabs",
  "falas": [
   {
    "id": "m1",
    "lingua": "pt",
-   "texto": "Seu filho faz cursinho de inglês há anos... e ainda trava na hora de falar?"
+   "texto": "Sabe aquele presente que não quebra, não sai de moda, e fica com o seu filho pra vida toda?"
   },
   {
    "id": "m2",
    "lingua": "pt",
-   "texto": "O problema não é ele. É o método: muita regra e pouca frase de verdade."
+   "texto": "Inglês. Mas sem aquele cursinho caro, com mensalidade todo mês, que ele faz… e não aprende."
   },
   {
    "id": "m3",
    "lingua": "pt",
-   "texto": "No Ígol Primeira Classe é uma frase por vez, com a pronúncia escrita do jeito que se fala."
+   "texto": "Se o seu filho estuda e não sai do lugar, o problema não é ele. É o método."
   },
   {
    "id": "m4",
    "lingua": "pt",
-   "texto": "São dez aulas curtinhas e duas mil e cem frases do dia a dia, com áudio pra repetir."
+   "texto": "Com frase de verdade, aula curtinha e pronúncia escrita, ele aprende sem pressão, no ritmo dele."
   },
   {
    "id": "m5",
    "lingua": "pt",
-   "texto": "Sem mensalidade: pagamento único, ou em até três vezes no cartão."
+   "texto": "Faz o teste rápido, de um minuto, e descobre onde ele trava e o jeito mais fácil pra ele aprender."
   },
   {
    "id": "m6",
    "lingua": "pt",
-   "texto": "Toca em saiba mais e conhece o Ígol Primeira Classe."
+   "texto": "Toca no botão e faz o teste."
   },
   {
    "id": "j1",
    "lingua": "pt",
-   "texto": "Você já pagou cursinho de inglês e, na hora de falar, travou?"
+   "texto": "Sabe aquela sensação de ter pago cursinho, comprado apostila… e sentir que só jogou dinheiro fora?"
   },
   {
    "id": "j2",
    "lingua": "pt",
-   "texto": "Não foi falta de esforço. Decorar regra não faz ninguém falar."
+   "texto": "E aí vem aquele pensamento: eu não nasci pra aprender inglês."
   },
   {
    "id": "j3",
    "lingua": "pt",
-   "texto": "O jeito fácil é aprender a frase pronta, do dia a dia, e repetir em voz alta."
+   "texto": "Não é verdade. O problema nunca foi você, nem o inglês. Foi o método: decorar regra não faz ninguém falar."
   },
   {
    "id": "j4",
    "lingua": "pt",
-   "texto": "No Ígol Primeira Classe são duas mil e cem frases com pronúncia escrita, e dez aulas curtinhas."
+   "texto": "Faz o teste rápido, de um minuto, e descobre exatamente onde você trava."
   },
   {
    "id": "j5",
    "lingua": "pt",
-   "texto": "Estuda no seu tempo. Pagamento único, ou até três vezes no cartão."
+   "texto": "E qual é o jeito mais fácil pra você destravar, sem decoreba e sem mensalidade."
   },
   {
    "id": "j6",
    "lingua": "pt",
-   "texto": "Toca em saiba mais e vê como funciona."
+   "texto": "Toca no botão e faz o teste agora."
   },
   {
    "id": "v1",
    "lingua": "pt",
-   "texto": "Vai viajar pra fora e tem medo de travar no inglês?"
+   "texto": "Sabe aquele frio na barriga de pensar: e se eu travar no aeroporto?"
   },
   {
    "id": "v2",
    "lingua": "pt",
-   "texto": "No aeroporto, no hotel, no restaurante... são sempre as mesmas frases."
+   "texto": "Chegar no hotel, no restaurante, e ficar só apontando e sorrindo, com vergonha de falar."
   },
   {
    "id": "v3",
    "lingua": "pt",
-   "texto": "O Ígol Primeira Classe te dá essas frases prontas, com pronúncia escrita e áudio."
+   "texto": "Não precisa ser assim. Você não tem problema com inglês: só nunca treinou as frases certas, do jeito certo."
   },
   {
    "id": "v4",
    "lingua": "pt",
-   "texto": "São duas mil e cem frases e dez aulas curtas, pra treinar antes de ir."
+   "texto": "Faz o teste rápido, de um minuto, e descobre onde você trava antes de embarcar."
   },
   {
    "id": "v5",
    "lingua": "pt",
-   "texto": "Pagamento único, ou até três vezes no cartão."
+   "texto": "Pra chegar lá fora e falar com confiança."
   },
   {
    "id": "v6",
    "lingua": "pt",
-   "texto": "Toca em saiba mais e embarca com mais confiança."
+   "texto": "Toca no botão e faz o teste."
   },
   {
    "id": "d1",
    "lingua": "pt",
-   "texto": "Levanta um dedo se você quer falar inglês de verdade, sem decoreba."
+   "texto": "Levanta um dedo se você já sentiu que inglês não é pra você."
   },
   {
    "id": "d2",
    "lingua": "pt",
-   "texto": "Se você quer seu filho aprendendo, sem pagar mensalidade cara."
+   "texto": "Se já fez curso e sentiu que só gastou dinheiro…"
   },
   {
    "id": "d3",
    "lingua": "pt",
-   "texto": "Se você já fez curso e não aprendeu."
+   "texto": "se quer dar pro seu filho o inglês que você não teve, sem pagar cursinho caro…"
   },
   {
    "id": "d4",
    "lingua": "pt",
-   "texto": "Ou se vai viajar e tem medo de travar."
+   "texto": "ou se tem medo de travar na viagem."
   },
   {
    "id": "d5",
    "lingua": "pt",
-   "texto": "O Ígol Primeira Classe é pra você: aula curtinha, frase pronta e pronúncia escrita."
+   "texto": "Presta atenção: o problema nunca foi o inglês. Foi o método."
   },
   {
    "id": "d6",
    "lingua": "pt",
-   "texto": "Pagamento único, ou até três vezes. Toca em saiba mais."
+   "texto": "Faz o teste rápido, de um minuto, e descobre onde você trava."
+  },
+  {
+   "id": "d7",
+   "lingua": "pt",
+   "texto": "Toca no botão e faz o teste."
   }
  ]
 }

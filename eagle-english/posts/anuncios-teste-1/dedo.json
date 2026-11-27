@@ -4,37 +4,43 @@
   {
    "img": "img/dd1.png",
    "fala": "d1",
-   "texto": "Levanta um dedo ☝️\nse quer *inglês de verdade*",
+   "texto": "Levanta um dedo ☝️ se já\nsentiu que inglês *não é pra você*",
    "mov": "in"
   },
   {
-   "img": "img/mae3.png",
+   "img": "img/jt1.png",
    "fala": "d2",
-   "texto": "…seu filho aprendendo\n*sem mensalidade cara*",
+   "texto": "…já fez curso e sentiu\nque *só gastou dinheiro*",
    "mov": "esq"
   },
   {
-   "img": "img/jt1.png",
+   "img": "img/mae1.png",
    "fala": "d3",
-   "texto": "…já fez curso\ne *não aprendeu*",
+   "texto": "…quer dar pro seu filho o\ninglês que *você não teve*",
    "mov": "out"
   },
   {
    "img": "img/vg1.png",
    "fala": "d4",
-   "texto": "…vai viajar e tem\nmedo de *travar*",
+   "texto": "…ou tem medo de\n*travar na viagem*",
    "mov": "dir"
   },
   {
-   "img": "img/tela.png",
+   "img": "img/q3.png",
    "fala": "d5",
-   "texto": "*Aula curta* + frase pronta\n+ pronúncia escrita",
+   "texto": "O problema não é o inglês.\nÉ o *método*.",
+   "mov": "in"
+  },
+  {
+   "img": "img/quiz.png",
+   "fala": "d6",
+   "texto": "Teste rápido: descubra\n*onde você trava* ⏱️",
    "mov": "in",
    "ia": false
   },
   {
-   "img": "img/fim.png",
-   "fala": "d6",
+   "img": "img/fim_quiz.png",
+   "fala": "d7",
    "texto": "",
    "mov": "in",
    "ia": false

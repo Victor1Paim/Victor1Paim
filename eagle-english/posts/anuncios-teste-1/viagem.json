@@ -4,36 +4,36 @@
   {
    "img": "img/vg1.png",
    "fala": "v1",
-   "texto": "Vai viajar e tem medo\nde *travar*? ✈️",
+   "texto": "E se eu *travar*\nno aeroporto? 😰",
    "mov": "in"
   },
   {
    "img": "img/vg2.png",
    "fala": "v2",
-   "texto": "Aeroporto, hotel,\nrestaurante: *as mesmas frases*",
+   "texto": "Só apontando e sorrindo,\ncom *vergonha de falar*",
    "mov": "out"
   },
   {
    "img": "img/vg3.png",
    "fala": "v3",
-   "texto": "*Frases prontas*\ncom pronúncia escrita 🗣️",
+   "texto": "Não é você.\nFalta o *treino certo*",
    "mov": "esq"
   },
   {
-   "img": "img/tela.png",
+   "img": "img/quiz.png",
    "fala": "v4",
-   "texto": "*2.100 frases* +\n*10 aulas* pra treinar",
+   "texto": "Descubra onde você trava\n*antes de embarcar* ✈️",
    "mov": "in",
    "ia": false
   },
   {
    "img": "img/vg5.png",
    "fala": "v5",
-   "texto": "Pagamento único\nou *até 3x* 💳",
+   "texto": "E fale com\n*confiança* lá fora 😄",
    "mov": "dir"
   },
   {
-   "img": "img/fim.png",
+   "img": "img/fim_quiz.png",
    "fala": "v6",
    "texto": "",
    "mov": "in",

@@ -82,12 +82,20 @@ with sync_playwright() as pw:
         foto(quadro("<div class=bx style='top:900px'><h1>Por que o seu inglês<br>ainda <span class=am>não pegou</span>? 🤔</h1>"
                     "<p>Teste rápido: 6 perguntas, 1 minuto.</p><div class=bt style='margin-top:34px'>Fazer o teste 👇</div></div>",
                     P / "img/q1.png"), E / "quiz_estatico.png", 1080, 1350)
+    for nome, img, h1, p in (
+            ("sent_ja_tentou", "jt1.png", "Pagou cursinho e sentiu<br>que <span class=am>jogou dinheiro fora?</span> 💸",
+             "O problema não foi você. Foi o método."),
+            ("sent_presente", "mae3.png", "O presente que fica com<br>seu filho <span class=am>pra vida toda</span> 🎁",
+             "Inglês de verdade, sem cursinho caro.")):
+        foto(quadro(f"<div class=bx style='top:880px'><h1 style='font-size:68px'>{h1}</h1><p>{p}</p>"
+                    "<div class=bt style='margin-top:30px'>Fazer o teste de 1 minuto 👇</div></div>", P / "img" / img),
+             E / f"{nome}.png", 1080, 1350)
     foto(quadro("<div class=bx style='top:150px'><h1>Ainda com<br><span class=am>dúvida?</span></h1><div class='faq'>"
                 "<div>💳 <b>Dá pra parcelar?</b><br>Sim, em até 3x no cartão.</div>"
                 "<div>🔁 <b>Tem mensalidade?</b><br>Não. Pagamento único.</div>"
                 "<div>📩 <b>Como eu recebo?</b><br>No seu e-mail, logo após a compra.</div>"
                 "<div>🛡️ <b>E se eu não gostar?</b><br>7 dias de garantia.</div></div>"
-                "<div class=bt style='margin-top:44px'>Eagle Primeira Classe 👇</div></div>"), E / "remk_faq.png", 1080, 1350)
+                "<div class=bt style='margin-top:44px'>Fazer o teste rápido 👇</div></div>"), E / "remk_faq.png", 1080, 1350)
     pub = [("👩‍👦", "Pro seu filho", "aprender sem mensalidade cara"), ("😶", "Pra quem já fez curso", "e na hora de falar, travou"),
            ("✈️", "Pra quem vai viajar", "e tem medo de travar"), ("💼", "Pra prova e trabalho", "um pouco por dia, sem decoreba")]
     foto(quadro("<div class=bx style='top:130px'><h1>Pra quem é o<br><span class=am>Eagle Primeira Classe?</span></h1>"
@@ -102,6 +110,6 @@ with sync_playwright() as pw:
              E / f"remk_dentro_{i:02d}.png", 1080, 1350)
     foto(quadro("<div class=bx style='top:330px;text-align:center'><h1>Sem mensalidade.<br><span class=am>Pagamento único</span><br>"
                 "ou até 3x no cartão.</h1><p>Acesso no e-mail na hora · 7 dias de garantia</p>"
-                "<div class=bt style='margin-top:50px'>Toque em Saiba mais 👇</div></div>"), E / "remk_dentro_07.png", 1080, 1350)
+                "<div class=bt style='margin-top:50px'>Descubra onde você trava 👇</div></div>"), E / "remk_dentro_07.png", 1080, 1350)
     nav.close()
 print("ok")

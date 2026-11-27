@@ -1,71 +1,86 @@
-# Anúncios de teste #1 — Eagle Primeira Classe (Meta Ads, 27/11/2026)
+# Anúncios de teste #1 — vender o SENTIMENTO e levar pro QUIZ (Meta Ads, 27/11/2026)
 
-Campanha: **Vendas** · 1 conjunto (Brasil, público aberto/Advantage+, posicionamentos automáticos) · R$ 30–50/dia ·
-4 anúncios no MESMO conjunto (um por ângulo). Julgar com 3–4 dias / ~R$ 100 por anúncio (ver docs/META_ADS.md).
-Botão: **Saiba mais** · Marcar "conteúdo gerado por IA" se o Gerenciador pedir.
+**Direção do usuário (27/11):** vender o sentimento (presente pro filho sem cursinho caro · "paguei cursinho e só gastei dinheiro,
+acho que não consigo aprender" · medo de travar na viagem) → virada **"o problema não foi você, nem o inglês: foi o MÉTODO"** →
+CTA SEMPRE para o **quiz** ("faz o teste de 1 minuto e descobre onde você trava"). O quiz leva à oferta.
 
-Link de destino (trocar o utm_content em cada um):
+Destino de TODOS os anúncios (trocar só o utm_campaign/utm_content):
 ```
-https://eagle-viagem.vercel.app/oferta?utm_source=meta&utm_medium=ads&utm_campaign=vendas_teste1&utm_content=mae
+https://eagle-viagem.vercel.app/?utm_source=meta&utm_medium=ads&utm_campaign=<campanha>&utm_content=<criativo>
 ```
-(mae · jatentou · viagem · dedo)
+Botão: **Saiba mais** (ou "Começar" se aparecer). Marcar conteúdo de IA se o Gerenciador pedir.
+Otimização: no começo **Lead** (evento no fim do quiz, quando o Pixel estiver instalado) ou **Visualização da página de destino**;
+trocar para **Compra** quando passar de ~20 compras/semana (ver docs/META_ADS.md).
 
-## 1. video/mae.mp4 — público: mãe/pai
-Texto principal:
+## CAMPANHA 1 — "Sentimento" (vídeos narrados, voz de locutor ElevenLabs) · utm_campaign=sentimento · R$ 30–50/dia
+Mesmo conjunto, 4 anúncios (público aberto Brasil 18–55):
+
+**video/mae.mp4** (utm_content=mae) — presente pro filho
 ```
-Seu filho faz cursinho há anos e ainda trava pra falar inglês? 😩
+Sabe aquele presente que não quebra, não sai de moda e fica com o seu filho pra vida toda? 🎁
 
-O problema não é ele, é o método. No Eagle Primeira Classe é uma frase por vez, com a pronúncia escrita do jeito que se fala:
-✅ 10 aulas curtinhas
-✅ 2.100 frases do dia a dia com áudio
-✅ Sem mensalidade: pagamento único ou até 3x no cartão
+Inglês. Mas sem cursinho caro e mensalidade todo mês. Se ele estuda e não sai do lugar, o problema não é ele: é o método.
 
-Toque em Saiba mais 👇
+Faz o teste rápido de 1 minuto e descobre onde ele trava e o jeito mais fácil pra ele aprender 👇
 ```
-Título: `Inglês de verdade, sem mensalidade` · Descrição: `Pagamento único ou até 3x`
+Título: `Onde o seu filho trava no inglês?` · Descrição: `Teste rápido · 1 minuto`
 
-## 2. video/jatentou.mp4 — público: já fez curso e não aprendeu
-Texto principal:
+**video/jatentou.mp4** (utm_content=jatentou) — já pagou e não aprendeu
 ```
-Já pagou cursinho de inglês e, na hora de falar, travou? 😶
+Pagou cursinho, comprou apostila… e sentiu que só jogou dinheiro fora? 💸
 
-Não foi falta de esforço: decorar regra não faz ninguém falar. O jeito fácil é aprender a frase pronta e repetir em voz alta.
-✅ 2.100 frases com pronúncia escrita
-✅ 10 aulas curtinhas, no seu tempo
-✅ Pagamento único ou até 3x no cartão
+Se bateu aquele pensamento de "eu não nasci pra aprender inglês": o problema nunca foi você, nem o inglês. Foi o método.
 
-Toque em Saiba mais 👇
+Faz o teste de 1 minuto e descobre exatamente onde você trava 👇
 ```
-Título: `O jeito fácil de falar inglês` · Descrição: `Sem decoreba, sem mensalidade`
+Título: `O problema foi o método` · Descrição: `Descubra onde você trava`
 
-## 3. video/viagem.mp4 — público: vai viajar
-Texto principal:
+**video/viagem.mp4** (utm_content=viagem) — medo de travar
 ```
-Vai viajar e tem medo de travar no inglês? ✈️
+E se você travar no aeroporto? 😰
 
-Aeroporto, hotel, restaurante: são sempre as mesmas frases. No Eagle Primeira Classe você treina antes de ir:
-✅ 2.100 frases prontas com pronúncia escrita e áudio
-✅ 10 aulas curtas
-✅ Pagamento único ou até 3x no cartão
+Ficar só apontando e sorrindo, com vergonha de falar… não precisa ser assim. Você não tem problema com inglês: falta o treino certo.
 
-Toque em Saiba mais 👇
+Faz o teste de 1 minuto e descobre onde você trava antes de embarcar ✈️
 ```
-Título: `Treine o inglês antes de viajar` · Descrição: `2.100 frases + 10 aulas`
+Título: `Vai viajar? Descubra onde você trava` · Descrição: `Teste rápido · 1 minuto`
 
-## 4. video/dedo.mp4 — vários públicos ("Levanta um dedo se…")
-Texto principal:
+**video/dedo.mp4** (utm_content=dedo) — "levanta um dedo"
 ```
-☝️ Se você quer falar inglês de verdade, sem decoreba…
-…se quer seu filho aprendendo sem mensalidade cara,
-…se já fez curso e não aprendeu,
-…ou se vai viajar e tem medo de travar:
+☝️ Levanta um dedo se você já sentiu que inglês não é pra você.
+…se já fez curso e sentiu que só gastou dinheiro,
+…se quer dar pro seu filho o inglês que você não teve, sem cursinho caro,
+…ou se tem medo de travar na viagem.
 
-o Eagle Primeira Classe é pra você. Aula curtinha, frase pronta e pronúncia escrita. Pagamento único ou até 3x.
-
-Toque em Saiba mais 👇
+O problema nunca foi o inglês. Foi o método. Faz o teste de 1 minuto e descobre onde você trava 👇
 ```
-Título: `Inglês do jeito fácil` · Descrição: `Pagamento único ou até 3x`
+Título: `Inglês não é pra você? Será?` · Descrição: `Teste rápido · 1 minuto`
+
+## CAMPANHA 2 — "Quiz direto" (sem voz + imagens) · utm_campaign=quiz · R$ 20–30/dia
+- **video/quiz_mudo.mp4** (14 s, só texto; ativar "Música" no Gerenciador) · utm_content=quiz_video
+- **estaticos/quiz_estatico.png** "Por que o seu inglês ainda não pegou?" · utm_content=quiz_img
+- **estaticos/sent_ja_tentou.png** "Pagou cursinho e sentiu que jogou dinheiro fora?" · utm_content=img_jatentou
+- **estaticos/sent_presente.png** "O presente que fica com seu filho pra vida toda" · utm_content=img_presente
+Texto principal (todos):
+```
+Estudou inglês e ainda não pegou? O problema não foi você: foi o método.
+Faz o teste rápido (6 perguntas, 1 minuto) e descobre onde você trava e o jeito mais fácil de aprender, pra você ou pro seu filho 👇
+```
+Título: `Por que o seu inglês não pegou?` · Descrição: `Teste rápido · 1 minuto`
+
+## CAMPANHA 3 — Remarketing (entra em 1–2 semanas) · utm_campaign=remarketing · R$ 10–15/dia
+Público: interagiu com @eagle.english.br (30 dias) + visitou o site. Criativos:
+- **estaticos/remk_dentro_01…07.png** (carrossel "O que tem dentro") · utm_content=carrossel
+- **estaticos/remk_faq.png** ("Ainda com dúvida?") · utm_content=faq
+- **estaticos/remk_pra_quem.png** ("Pra quem é") · utm_content=pra_quem
+```
+Ainda pensando? Sem mensalidade: pagamento único ou até 3x no cartão, acesso no e-mail na hora e 7 dias de garantia.
+Faz o teste de 1 minuto e vê o jeito mais fácil pra você 👇
+```
+
+## CAMPANHA 4 — Impulsionar Reels orgânicos que forem bem (opcional, R$ 10–20/dia, 3–5 dias)
+Sem material novo: escolher no Instagram o Reels com mais salvamentos da semana e impulsionar (objetivo: visitas ao perfil).
 
 ## Regras usadas (para não reprovar)
-Sem promessa de fluência, sem "você é ruim/burro", sem marca de terceiros, sem depoimento, sem preço fixo (muda depois das 100 vendas),
-pessoas por IA com aviso "Imagens geradas por IA" no vídeo.
+Sem promessa de fluência, sem "você é burro/ruim", sem marca de terceiros (página /oferta já sem "Big Mac"), sem depoimento,
+sem preço fixo, pessoas por IA com aviso "Imagens geradas por IA".

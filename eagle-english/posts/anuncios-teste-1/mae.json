@@ -2,38 +2,38 @@
  "template": "anuncio.html",
  "cenas": [
   {
-   "img": "img/mae1.png",
+   "img": "img/mae3.png",
    "fala": "m1",
-   "texto": "Anos de cursinho…\ne ainda *trava*? 😩",
+   "texto": "Um presente que fica\n*pra vida toda* 🎁",
    "mov": "in"
   },
   {
-   "img": "img/mae2.png",
+   "img": "img/mae1.png",
    "fala": "m2",
-   "texto": "O problema é o *método*,\nnão ele",
+   "texto": "Sem cursinho caro e\n*mensalidade todo mês* 💸",
    "mov": "out"
   },
   {
-   "img": "img/mae3.png",
+   "img": "img/mae2.png",
    "fala": "m3",
-   "texto": "*Uma frase* por vez\ncom pronúncia escrita 🗣️",
+   "texto": "O problema não é ele.\nÉ o *método*.",
    "mov": "esq"
   },
   {
-   "img": "img/tela.png",
+   "img": "img/mae5.png",
    "fala": "m4",
-   "texto": "*10 aulas* + *2.100 frases*\ncom áudio 🎧",
+   "texto": "Aula curtinha,\n*frase de verdade* 🗣️",
+   "mov": "dir"
+  },
+  {
+   "img": "img/quiz.png",
+   "fala": "m5",
+   "texto": "Teste rápido: descubra\n*onde ele trava* ⏱️",
    "mov": "in",
    "ia": false
   },
   {
-   "img": "img/mae5.png",
-   "fala": "m5",
-   "texto": "Sem mensalidade 💳\nÚnico ou *até 3x*",
-   "mov": "dir"
-  },
-  {
-   "img": "img/fim.png",
+   "img": "img/fim_quiz.png",
    "fala": "m6",
    "texto": "",
    "mov": "in",

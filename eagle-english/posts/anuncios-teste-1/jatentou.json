@@ -4,36 +4,36 @@
   {
    "img": "img/jt1.png",
    "fala": "j1",
-   "texto": "Pagou cursinho…\ne na hora *travou*? 😶",
+   "texto": "Pagou cursinho… e sentiu\nque *jogou dinheiro fora*? 💸",
    "mov": "in"
   },
   {
    "img": "img/jt2.png",
    "fala": "j2",
-   "texto": "Decorar regra\n*não* faz falar ❌",
+   "texto": "\"Eu não nasci pra\n*aprender inglês*\" 😞",
    "mov": "out"
   },
   {
    "img": "img/jt3.png",
    "fala": "j3",
-   "texto": "Frase pronta +\n*repetir em voz alta* 🔁",
+   "texto": "O problema não foi você.\nFoi o *método*.",
    "mov": "esq"
   },
   {
-   "img": "img/tela.png",
+   "img": "img/quiz.png",
    "fala": "j4",
-   "texto": "*2.100 frases* +\n*10 aulas* curtinhas",
+   "texto": "Descubra *onde\nvocê trava* ⏱️",
    "mov": "in",
    "ia": false
   },
   {
    "img": "img/jt5.png",
    "fala": "j5",
-   "texto": "No seu tempo ⏱️\nÚnico ou *até 3x*",
+   "texto": "O jeito mais fácil\npra *destravar* 🔓",
    "mov": "dir"
   },
   {
-   "img": "img/fim.png",
+   "img": "img/fim_quiz.png",
    "fala": "j6",
    "texto": "",
    "mov": "in",
