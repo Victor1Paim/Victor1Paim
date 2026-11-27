@@ -59,7 +59,7 @@ r = subprocess.run(['curl', '-sS', 'https://api.openai.com/v1/audio/transcriptio
                     f"Authorization: Bearer {os.environ.get('OPENAI_API_KEY', 'sk-proxy')}", '-F', 'model=whisper-1',
                     '-F', f'file=@{mp3}', '-F', 'language=en', '-F', 'response_format=verbose_json',
                     '-F', 'timestamp_granularities[]=word'], capture_output=True, text=True)
-d = json.loads(r.stdout)
+d = json.loads(r.stdout.replace('\ufffd', '\u2019'))
 if 'error' in d: parar_se_sem_credito('OpenAI (Whisper)', json.dumps(d['error'])); sys.exit(d['error'])
 palavras = d['words']
 blocos, atual = [], []

@@ -1,0 +1,106 @@
+{
+ "segmentos": [
+  {
+   "texto": "My downstairs neighbor kept leaving notes, asking me to stop pacing at three in the morning. I live alone. So I set up a camera."
+  },
+  {
+   "wav": "../h03-the-note/voz/p16.wav"
+  },
+  {
+   "wav": "../h03-the-note/voz/p17.wav"
+  },
+  {
+   "wav": "../h03-the-note/voz/p18.wav"
+  },
+  {
+   "wav": "../h03-the-note/voz/p19.wav"
+  },
+  {
+   "texto": "What the police found inside that closet was even worse. The full story is on The Quiet Hours."
+  }
+ ],
+ "estilo": "Cinematic still photograph, vertical 9:16 composition, 35mm film, night, muted desaturated colors, low contrast, cold winter tones, subtle film grain, realistic, no readable text, no logos, no watermark.",
+ "planos": [
+  {
+   "id": "w1",
+   "seg": 0,
+   "p": 0,
+   "prompt": "A handwritten note in blue ink taped to a white apartment door in an old stairwell, handwriting blurred and unreadable, cold morning light."
+  },
+  {
+   "id": "w2",
+   "seg": 0,
+   "p": 0,
+   "prompt": "A small white Wi-Fi security camera on top of a bookshelf in a dark living room, its tiny light glowing."
+  },
+  {
+   "id": "w3",
+   "seg": 1,
+   "p": 1,
+   "prompt": "A phone lying on a blanket in the dark lighting up with a notification banner, text blurred and unreadable."
+  },
+  {
+   "id": "w4",
+   "seg": 2,
+   "p": 2,
+   "prompt": "Grainy black and white night vision security camera footage, vertical framing, high angle, wide angle lens distortion, low resolution, no text: a thin barefoot man in a gray hoodie standing still in the middle of a dark living room, hands folded in front of him."
+  },
+  {
+   "id": "w5",
+   "seg": 3,
+   "p": 3,
+   "prompt": "Grainy black and white night vision security camera footage, vertical framing, high angle, wide angle lens distortion, low resolution, no text: a thin barefoot man in a gray hoodie walking slowly toward a dark hallway, seen from behind."
+  },
+  {
+   "id": "w6",
+   "seg": 4,
+   "p": 4,
+   "prompt": "Grainy black and white night vision security camera footage, vertical framing, high angle, wide angle lens distortion, low resolution, no text: a thin man in a gray hoodie in a kitchen lit only by an open refrigerator, eating from a container with his fingers, then stepping into a narrow hallway closet."
+  },
+  {
+   "id": "w7",
+   "seg": 5,
+   "p": 5,
+   "prompt": "A narrow closed coat closet door at the end of a dark apartment hallway at night, a thin line of darkness under it, nothing else."
+  }
+ ],
+ "gancho_tela": "SOMEONE PACES MY|APARTMENT AT 3 A.M.",
+ "cta_tela": "FULL STORY ON|@THEQUIETHOURS.0",
+ "abertura_s": 1.0,
+ "trilha": {
+  "drone": "drone-grave-2",
+  "abertura": "sting-2",
+  "abertura_db": -4,
+  "sting": "",
+  "drone_db": -10
+ },
+ "sfx": {
+  "ambientes": [
+   {
+    "id": "amb-casa-silencio",
+    "de": 0,
+    "ate": 5,
+    "db": -22
+   }
+  ],
+  "efeitos": [
+   {
+    "id": "celular-vibrando",
+    "frase": "The notification woke me up",
+    "db": -6
+   },
+   {
+    "id": "sting-1",
+    "frase": "there was a man in my apartment",
+    "db": -4,
+    "fim": true
+   },
+   {
+    "id": "interruptor",
+    "frase": "pulled the door shut behind him",
+    "db": -8,
+    "fim": true
+   }
+  ]
+ }
+}

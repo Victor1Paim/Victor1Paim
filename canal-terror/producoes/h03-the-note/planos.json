@@ -1,0 +1,201 @@
+{
+ "titulo": "THE NOTE UNDER THE DOOR",
+ "cartela": [
+  "The Note Under the Door",
+  "By: Anonymous"
+ ],
+ "estilo": "Cinematic still photograph, 35mm film, muted desaturated colors, low contrast, cold winter tones, subtle film grain, shallow depth of field, realistic, Columbus Ohio in February, no readable text, no logos, no watermark.",
+ "vinheta": {
+  "id": "v00",
+  "prompt": "An old two-story duplex house at night in winter, one porch light on downstairs, the upstairs windows completely dark, snow on the roof, quiet empty street, minimal composition with large dark sky."
+ },
+ "trilha": {
+  "drone": "drone-grave-2",
+  "sting": "sting-1",
+  "vinheta": "vinheta-1",
+  "drone_db": -11,
+  "sting_db": -3,
+  "vinheta_db": -1
+ },
+ "planos": [
+  {
+   "id": "c01",
+   "p": 0,
+   "prompt": "A handwritten note in blue ink on the back of a grocery receipt taped to a white apartment door, soft morning light in an old stairwell, handwriting blurred and unreadable."
+  },
+  {
+   "id": "c02",
+   "p": 1,
+   "prompt": "An old two-story house in Columbus Ohio split into a duplex, at dusk in winter, the downstairs porch light on and a television glowing through the front window, patches of snow, upstairs windows dark."
+  },
+  {
+   "id": "c03",
+   "p": 2,
+   "prompt": "A young woman asleep in bed in a dark bedroom, seen from the doorway, face turned away into the pillow, deeply asleep, faint streetlight through the blinds."
+  },
+  {
+   "id": "c04",
+   "p": 3,
+   "prompt": "A long narrow hallway in an old upstairs apartment at night, hardwood floors, an old iron radiator, a bedroom door at the far end, dim and quiet."
+  },
+  {
+   "id": "c05",
+   "p": 3,
+   "prompt": "Inside a narrow empty coat closet in an old apartment, a square of painted plywood screwed to the back wall at floor level, lit by a flashlight beam."
+  },
+  {
+   "id": "c06",
+   "p": 4,
+   "prompt": "A kind retired woman in her seventies standing in her lit doorway at night wearing a cardigan, warm light behind her, cozy cluttered apartment, gentle expression."
+  },
+  {
+   "id": "c07",
+   "p": 5,
+   "prompt": "A cozy old living room at night lit by a television, an older woman in an armchair seen from behind, looking up at the ceiling."
+  },
+  {
+   "id": "c08",
+   "p": 6,
+   "prompt": "Close up of an old wall thermostat in a dim apartment hallway at night, its numbers glowing softly and unreadable."
+  },
+  {
+   "id": "c09",
+   "p": 6,
+   "prompt": "An open refrigerator at night in a small old kitchen, cold light spilling out, an empty plastic food container on the shelf, dark room."
+  },
+  {
+   "id": "c10",
+   "p": 7,
+   "prompt": "A smartphone lying on a small side table next to a couch in a dark living room at night, its screen dimly recording audio."
+  },
+  {
+   "id": "c11",
+   "p": 8,
+   "prompt": "Inside a parked car in a gray concrete hospital parking garage at midday, a woman's hands holding a phone showing an audio waveform, earbuds cable."
+  },
+  {
+   "id": "c12",
+   "p": 9,
+   "prompt": "Extreme close up of old hardwood floorboards in the dark, a bare foot pressing down slowly heel first, faint grey light, tension."
+  },
+  {
+   "id": "c13",
+   "p": 10,
+   "prompt": "A closed bedroom door seen from the dark hallway outside at night, a thin line of darkness under the door, old floorboard in the foreground, eerie stillness."
+  },
+  {
+   "id": "c14",
+   "p": 11,
+   "prompt": "A young woman sitting frozen in her car in a concrete parking garage, earbuds in, staring at the phone in her lap, face in shadow, cold fluorescent light."
+  },
+  {
+   "id": "c15",
+   "p": 12,
+   "prompt": "A narrow closed coat closet door in a dark apartment hallway at night, light from a streetlight across the floor, nothing else."
+  },
+  {
+   "id": "c16",
+   "p": 13,
+   "prompt": "A young woman sitting in her parked car at dusk with the engine off, holding her phone, staring ahead through the windshield, conflicted, face half in shadow."
+  },
+  {
+   "id": "c17",
+   "p": 14,
+   "prompt": "A small cheap white Wi-Fi security camera sitting on top of a wooden bookshelf in a living room, angled down toward the couch, evening light."
+  },
+  {
+   "id": "c18",
+   "p": 14,
+   "prompt": "A phone screen held in a hand showing a grainy grayscale night vision view of an empty living room with a couch and a hallway, dark room around."
+  },
+  {
+   "id": "c19",
+   "p": 15,
+   "prompt": "A young woman lying on a couch under a blanket in her sister's apartment at night, her phone glowing on her chest, eyes open, dark room."
+  },
+  {
+   "id": "c20",
+   "p": 16,
+   "prompt": "A phone lying on a blanket in the dark lighting up with a notification banner, the text blurred and unreadable, 3 a.m. stillness."
+  },
+  {
+   "id": "c21",
+   "p": 17,
+   "prompt": "Grainy black and white night vision security camera footage, high angle from the top of a bookshelf, wide angle lens distortion, low resolution, no text: a thin barefoot man in a gray hoodie standing in the middle of a dark living room with his hands folded in front of him, long hair pushed behind his ears, still.",
+   "carimbo": "LIVING ROOM  FEB 19  03:14:07"
+  },
+  {
+   "id": "c22",
+   "p": 18,
+   "prompt": "Grainy black and white night vision security camera footage, high angle from the top of a bookshelf, wide angle lens distortion, low resolution, no text: a thin barefoot man in a gray hoodie walking slowly from a couch toward a hallway in a dark living room, seen from behind.",
+   "carimbo": "LIVING ROOM  FEB 19  03:16:22"
+  },
+  {
+   "id": "c23",
+   "p": 19,
+   "prompt": "Grainy black and white night vision security camera footage, high angle from the top of a bookshelf, wide angle lens distortion, low resolution, no text: a thin man in a gray hoodie standing in a kitchen lit only by an open refrigerator, eating from a food container with his fingers.",
+   "carimbo": "LIVING ROOM  FEB 19  03:21:40"
+  },
+  {
+   "id": "c24",
+   "p": 19,
+   "prompt": "Grainy black and white night vision security camera footage, high angle from the top of a bookshelf, wide angle lens distortion, low resolution, no text: a man in a gray hoodie stepping into a narrow coat closet at the end of a dark hallway and pulling the door shut behind him.",
+   "carimbo": "LIVING ROOM  FEB 19  03:26:13"
+  },
+  {
+   "id": "c25",
+   "p": 20,
+   "prompt": "A young woman sitting up suddenly on a couch in a dark apartment, holding a phone to her ear, her silhouette tense, another woman waking up behind her."
+  },
+  {
+   "id": "c26",
+   "p": 21,
+   "prompt": "Two police officers with flashlights in a narrow old apartment hallway before dawn, one opening a coat closet door, cold blue light."
+  },
+  {
+   "id": "c27",
+   "p": 21,
+   "prompt": "A dark gap two feet high behind a removed plywood panel at the back of a closet, a flashlight beam shining into a narrow crawl space running between the floors of a house, dust."
+  },
+  {
+   "id": "c28",
+   "p": 22,
+   "prompt": "Inside a narrow crawl space between the floors of an old house lit by a flashlight: a camping pad and sleeping bag, granola bar wrappers, a neat stack of clean plastic food containers, a phone charger cable plugged into an outlet."
+  },
+  {
+   "id": "c29",
+   "p": 22,
+   "prompt": "A pried-loose metal vent cover hanging off the side of an old house in the snow at early morning, gray light, footprints faint in the snow below."
+  },
+  {
+   "id": "c30",
+   "p": 23,
+   "prompt": "An open spiral notebook on a flashlight-lit floor, pages filled with small, neat, tiny handwriting in lists and times, the text blurred and unreadable."
+  },
+  {
+   "id": "c31",
+   "p": 24,
+   "prompt": "A quiet street of old houses in Columbus Ohio on a gray winter morning, bare trees, an empty house with a faded for rent sign blurred, cold."
+  },
+  {
+   "id": "c32",
+   "p": 25,
+   "prompt": "Moving boxes stacked in the back of a small car outside an old duplex in winter, overcast morning, a woman's arm closing the trunk."
+  },
+  {
+   "id": "c33",
+   "p": 26,
+   "prompt": "A snowy residential street at night, a single distant figure in a gray hoodie standing far away under a streetlight, too far to see a face."
+  },
+  {
+   "id": "c34",
+   "p": 27,
+   "prompt": "A Christmas card standing open on a kitchen table in soft daylight, a mug beside it, handwriting blurred."
+  },
+  {
+   "id": "c35",
+   "p": 27,
+   "prompt": "An old duplex house at night in winter seen from the street, the downstairs porch light on, an upstairs window softly lit with a thin shadow of a person behind the curtain, mid-step."
+  }
+ ]
+}

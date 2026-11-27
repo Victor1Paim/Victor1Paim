@@ -1,0 +1,103 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Leg,Inter Black,86,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,0,0,1,6,3,2,90,90,640,1
+Style: Gancho,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,0,0,1,7,4,8,70,70,300,1
+Style: Cta,Inter Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,0,0,1,7,4,5,70,70,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:03.20,Gancho,,0,0,0,,{\fad(0,250)}SOMEONE PACES MY\N{\c&H1C1CD6&}APARTMENT AT 3 A.M.
+Dialogue: 0,0:00:01.00,0:00:02.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MY DOWNSTAIRS NEIGHBOR
+Dialogue: 0,0:00:02.00,0:00:03.12,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}KEPT LEAVING NOTES
+Dialogue: 0,0:00:03.58,0:00:04.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ASKING ME TO
+Dialogue: 0,0:00:04.00,0:00:04.76,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}STOP PACING AT
+Dialogue: 0,0:00:04.76,0:00:05.18,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THREE IN THE
+Dialogue: 0,0:00:05.18,0:00:05.53,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MORNING
+Dialogue: 0,0:00:06.04,0:00:06.94,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I LIVE ALONE
+Dialogue: 0,0:00:07.02,0:00:08.30,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SO I SET
+Dialogue: 0,0:00:08.30,0:00:08.80,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UP A CAMERA
+Dialogue: 0,0:00:09.44,0:00:10.32,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I MUST HAVE
+Dialogue: 0,0:00:10.32,0:00:11.14,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FALLEN ASLEEP AROUND
+Dialogue: 0,0:00:11.14,0:00:11.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ONE
+Dialogue: 0,0:00:12.02,0:00:12.74,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE NOTIFICATION
+Dialogue: 0,0:00:12.74,0:00:13.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WOKE ME UP
+Dialogue: 0,0:00:13.96,0:00:14.72,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MOTION DETECTED
+Dialogue: 0,0:00:15.00,0:00:15.40,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LIVING ROOM
+Dialogue: 0,0:00:15.74,0:00:16.46,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT 3 14
+Dialogue: 0,0:00:16.46,0:00:16.84,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}A M
+Dialogue: 0,0:00:17.46,0:00:18.54,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}I OPENED THE
+Dialogue: 0,0:00:18.54,0:00:19.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FEED AND THERE
+Dialogue: 0,0:00:19.28,0:00:20.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WAS A MAN
+Dialogue: 0,0:00:20.00,0:00:21.00,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN MY APARTMENT
+Dialogue: 0,0:00:21.88,0:00:22.68,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WAS STANDING
+Dialogue: 0,0:00:22.68,0:00:23.38,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE MIDDLE
+Dialogue: 0,0:00:23.38,0:00:24.04,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF MY LIVING
+Dialogue: 0,0:00:24.04,0:00:24.39,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ROOM
+Dialogue: 0,0:00:24.84,0:00:25.24,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BAREFOOT
+Dialogue: 0,0:00:25.76,0:00:26.42,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IN THE GRAY
+Dialogue: 0,0:00:26.42,0:00:27.14,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HOODIE I'D BEEN
+Dialogue: 0,0:00:27.14,0:00:28.02,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MISSING SINCE CHRISTMAS
+Dialogue: 0,0:00:28.02,0:00:29.64,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WAS THIN
+Dialogue: 0,0:00:30.44,0:00:30.82,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAYBE IN HIS
+Dialogue: 0,0:00:30.82,0:00:31.17,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FORTIES
+Dialogue: 0,0:00:31.80,0:00:32.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WITH HIS HAIR
+Dialogue: 0,0:00:32.28,0:00:32.94,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GROWN OUT AND
+Dialogue: 0,0:00:32.94,0:00:33.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PUSHED BEHIND HIS
+Dialogue: 0,0:00:33.70,0:00:34.05,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}EARS
+Dialogue: 0,0:00:34.58,0:00:35.16,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WASN'T SEARCHING
+Dialogue: 0,0:00:35.16,0:00:35.70,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FOR ANYTHING
+Dialogue: 0,0:00:36.16,0:00:36.84,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WASN'T STEALING
+Dialogue: 0,0:00:36.84,0:00:37.24,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ANYTHING
+Dialogue: 0,0:00:37.58,0:00:38.58,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WAS JUST
+Dialogue: 0,0:00:38.58,0:00:38.98,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WALKING
+Dialogue: 0,0:00:39.54,0:00:40.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}VERY SLOWLY
+Dialogue: 0,0:00:41.14,0:00:41.68,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FROM THE COUCH
+Dialogue: 0,0:00:41.68,0:00:42.30,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TO THE START
+Dialogue: 0,0:00:42.30,0:00:42.86,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF THE HALLWAY
+Dialogue: 0,0:00:42.86,0:00:43.86,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND BACK AGAIN
+Dialogue: 0,0:00:44.08,0:00:45.02,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WITH HIS HANDS
+Dialogue: 0,0:00:45.02,0:00:45.66,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FOLDED IN FRONT
+Dialogue: 0,0:00:45.66,0:00:46.12,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OF HIM
+Dialogue: 0,0:00:46.78,0:00:47.66,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}EXACTLY THE WAY
+Dialogue: 0,0:00:47.66,0:00:48.56,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}RUTH DESCRIBED IT
+Dialogue: 0,0:00:48.56,0:00:50.30,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LIKE SOMEONE THINKING
+Dialogue: 0,0:00:50.30,0:00:50.96,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ABOUT SOMETHING
+Dialogue: 0,0:00:51.48,0:00:52.52,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AT ONE POINT
+Dialogue: 0,0:00:52.52,0:00:53.36,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE STOPPED AT
+Dialogue: 0,0:00:53.36,0:00:54.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE KITCHEN DOORWAY
+Dialogue: 0,0:00:54.34,0:00:55.38,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND STOOD THERE
+Dialogue: 0,0:00:55.38,0:00:56.02,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WITH HIS HEAD
+Dialogue: 0,0:00:56.02,0:00:56.40,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TILTED
+Dialogue: 0,0:00:56.78,0:00:58.14,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LISTENING THEN HE
+Dialogue: 0,0:00:58.14,0:00:59.08,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WENT INTO THE
+Dialogue: 0,0:00:59.08,0:00:59.43,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}KITCHEN
+Dialogue: 0,0:00:59.92,0:01:00.58,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OPENED MY REFRIGERATOR
+Dialogue: 0,0:01:00.74,0:01:01.38,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND STOOD IN
+Dialogue: 0,0:01:01.38,0:01:01.92,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}THE LIGHT OF
+Dialogue: 0,0:01:01.92,0:01:02.27,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}IT
+Dialogue: 0,0:01:02.60,0:01:02.98,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}EATING SOMETHING
+Dialogue: 0,0:01:02.98,0:01:03.36,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OUT OF A
+Dialogue: 0,0:01:03.36,0:01:04.14,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CONTAINER WITH HIS
+Dialogue: 0,0:01:04.14,0:01:04.49,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FINGERS
+Dialogue: 0,0:01:05.10,0:01:06.12,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE PUT THE
+Dialogue: 0,0:01:06.12,0:01:06.50,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CONTAINER BACK
+Dialogue: 0,0:01:07.06,0:01:07.50,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HE WIPED HIS
+Dialogue: 0,0:01:07.50,0:01:08.06,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HAND ON THE
+Dialogue: 0,0:01:08.06,0:01:08.41,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HOODIE
+Dialogue: 0,0:01:08.28,0:01:09.54,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND THEN HE
+Dialogue: 0,0:01:09.54,0:01:10.22,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WALKED DOWN THE
+Dialogue: 0,0:01:10.22,0:01:10.57,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HALLWAY
+Dialogue: 0,0:01:10.80,0:01:11.28,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OPENED THE COAT
+Dialogue: 0,0:01:11.28,0:01:11.63,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CLOSET
+Dialogue: 0,0:01:12.22,0:01:12.72,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}STEPPED INSIDE
+Dialogue: 0,0:01:13.14,0:01:13.62,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AND PULLED THE
+Dialogue: 0,0:01:13.62,0:01:14.34,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DOOR SHUT BEHIND
+Dialogue: 0,0:01:14.34,0:01:14.69,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}HIM
+Dialogue: 0,0:01:15.24,0:01:16.06,Leg,,0,0,0,,{\fscx92\fscy92\t(0,90,\fscx100\fscy100)}WHAT THE POLICE
+Dialogue: 1,0:01:15.37,0:01:24.07,Cta,,0,0,0,,{\fad(250,0)}FULL STORY ON\N{\c&H1C1CD6&}@THEQUIETHOURS.0

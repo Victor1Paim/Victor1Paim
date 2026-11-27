@@ -1,0 +1,877 @@
+[
+ {
+  "inicio": 0.0,
+  "fim": 2.38,
+  "texto": "The first note was taped to my door on a Tuesday"
+ },
+ {
+  "inicio": 2.38,
+  "fim": 5.16,
+  "texto": "morning in February. It was written in blue"
+ },
+ {
+  "inicio": 5.16,
+  "fim": 9.84,
+  "texto": "ink on the back of a grocery receipt, in careful, slanted handwriting. It said,"
+ },
+ {
+  "inicio": 10.2,
+  "fim": 12.92,
+  "texto": "’Please stop pacing at three in the morning. I can"
+ },
+ {
+  "inicio": 12.92,
+  "fim": 16.98,
+  "texto": "hear every step. Thank you. Ruth downstairs.’"
+ },
+ {
+  "inicio": 17.2,
+  "fim": 19.84,
+  "texto": "I read it three times, standing in the hallway"
+ },
+ {
+  "inicio": 19.84,
+  "fim": 22.3,
+  "texto": "with my keys in my hand. I wasn’t annoyed."
+ },
+ {
+  "inicio": 22.44,
+  "fim": 25.46,
+  "texto": "I was embarrassed. I was twenty-seven. I had been"
+ },
+ {
+  "inicio": 25.46,
+  "fim": 26.82,
+  "texto": "living alone in that apartment for about"
+ },
+ {
+  "inicio": 27.1,
+  "fim": 29.96,
+  "texto": "four months, and I really liked Ruth. She was"
+ },
+ {
+  "inicio": 29.96,
+  "fim": 31.44,
+  "texto": "the older woman who lived in the downstairs"
+ },
+ {
+  "inicio": 31.44,
+  "fim": 33.84,
+  "texto": "unit of our duplex, a retired school teacher"
+ },
+ {
+  "inicio": 33.84,
+  "fim": 35.9,
+  "texto": "who always had her porch light on and her"
+ },
+ {
+  "inicio": 35.9,
+  "fim": 39.64,
+  "texto": "television a little too loud. The last thing I wanted was to be the noisy neighbor."
+ },
+ {
+  "inicio": 40.58,
+  "fim": 45.54,
+  "texto": "The problem was that I didn’t pace. Not at three in the morning, not at any time."
+ },
+ {
+  "inicio": 45.86,
+  "fim": 48.34,
+  "texto": "I worked early shifts, doing admin at a hospital,"
+ },
+ {
+  "inicio": 48.44,
+  "fim": 51.1,
+  "texto": "and I was usually asleep by ten. I sleep like"
+ },
+ {
+  "inicio": 51.1,
+  "fim": 53.58,
+  "texto": "a rock. My sister used to say you could move"
+ },
+ {
+  "inicio": 53.58,
+  "fim": 55.92,
+  "texto": "my bed across the room with me in it and I"
+ },
+ {
+  "inicio": 55.92,
+  "fim": 56.72,
+  "texto": "didn’t notice."
+ },
+ {
+  "inicio": 57.28,
+  "fim": 60.22,
+  "texto": "The apartment itself was the upstairs half of"
+ },
+ {
+  "inicio": 60.22,
+  "fim": 62.72,
+  "texto": "an old house in Columbus, Ohio. Hardwood"
+ },
+ {
+  "inicio": 62.74,
+  "fim": 65.4,
+  "texto": "floors, radiators that clanked every time the"
+ },
+ {
+  "inicio": 65.4,
+  "fim": 67.82,
+  "texto": "heat came on. One long hallway that ran"
+ },
+ {
+  "inicio": 67.78,
+  "fim": 70.56,
+  "texto": "from the living room past the bathroom to my bedroom at the back."
+ },
+ {
+  "inicio": 71.38,
+  "fim": 73.76,
+  "texto": "There was a narrow coat closet in that hallway"
+ },
+ {
+  "inicio": 73.76,
+  "fim": 76.3,
+  "texto": "that I never used. The landlord told me when"
+ },
+ {
+  "inicio": 76.3,
+  "fim": 78.9,
+  "texto": "I moved in that there was a plumbing access panel"
+ },
+ {
+  "inicio": 78.9,
+  "fim": 80.68,
+  "texto": "at the back of it, and that if anything"
+ },
+ {
+  "inicio": 80.68,
+  "fim": 82.46,
+  "texto": "ever leaked, that was where the shutoff was."
+ },
+ {
+  "inicio": 82.96,
+  "fim": 85.16,
+  "texto": "I’d opened the closet once, saw a painted"
+ },
+ {
+  "inicio": 85.16,
+  "fim": 87.98,
+  "texto": "square of plywood held in with screws, and closed it again."
+ },
+ {
+  "inicio": 88.8,
+  "fim": 93.44,
+  "texto": "That evening, I knocked on Ruth’s door to apologize anyway. She was sweet about it."
+ },
+ {
+  "inicio": 93.78,
+  "fim": 95.58,
+  "texto": "She said she hadn’t wanted to bother me, but"
+ },
+ {
+  "inicio": 95.58,
+  "fim": 97.36,
+  "texto": "it had been going on for a few weeks and"
+ },
+ {
+  "inicio": 97.36,
+  "fim": 100.24,
+  "texto": "she wasn’t sleeping well. I asked her what exactly"
+ },
+ {
+  "inicio": 100.24,
+  "fim": 102.04,
+  "texto": "she was hearing. She thought about"
+ },
+ {
+  "inicio": 102.04,
+  "fim": 107.88,
+  "texto": "it for a second and said, ’It’s slow. Back and forth. From your living room, down"
+ },
+ {
+  "inicio": 107.88,
+  "fim": 110.4,
+  "texto": "the hallway, and back again. Like someone thinking"
+ },
+ {
+  "inicio": 110.4,
+  "fim": 112.7,
+  "texto": "about something.’ She said it usually"
+ },
+ {
+  "inicio": 112.7,
+  "fim": 116.74,
+  "texto": "started a little after three and went on for twenty minutes or so. Then it stopped,"
+ },
+ {
+  "inicio": 117.04,
+  "fim": 121.56,
+  "texto": "and she heard a door close. I told her it couldn’t have been me. I told"
+ },
+ {
+  "inicio": 121.54,
+  "fim": 123.46,
+  "texto": "her about the early shifts and how heavy a sleeper"
+ },
+ {
+  "inicio": 123.46,
+  "fim": 126.4,
+  "texto": "I was. She gave me this kind, patient"
+ },
+ {
+  "inicio": 126.92,
+  "fim": 131.22,
+  "texto": "look, the way you’d look at a student who swore they’d done their homework, and said"
+ },
+ {
+  "inicio": 131.38,
+  "fim": 134.48,
+  "texto": "maybe I was sleepwalking. She said her late husband"
+ },
+ {
+  "inicio": 134.48,
+  "fim": 136.02,
+  "texto": "used to do it, and he never believed"
+ },
+ {
+  "inicio": 136.02,
+  "fim": 140.28,
+  "texto": "her either. I laughed it off, but it bothered me. When"
+ },
+ {
+  "inicio": 140.28,
+  "fim": 142.2,
+  "texto": "I got back upstairs, I noticed little things"
+ },
+ {
+  "inicio": 142.2,
+  "fim": 144.5,
+  "texto": "I’d been ignoring. The thermostat was set"
+ },
+ {
+  "inicio": 144.5,
+  "fim": 146.46,
+  "texto": "to sixty-eight, and I always kept it at sixty-five"
+ },
+ {
+  "inicio": 146.46,
+  "fim": 148.12,
+  "texto": "because the heat was expensive. There was"
+ },
+ {
+  "inicio": 149.04,
+  "fim": 152.44,
+  "texto": "a grey hoodie I’d been looking for since Christmas, and I’d assumed I left it at"
+ },
+ {
+  "inicio": 152.44,
+  "fim": 155.4,
+  "texto": "my sister’s. A container of leftover pasta I"
+ },
+ {
+  "inicio": 155.4,
+  "fim": 157.64,
+  "texto": "was sure I hadn’t finished was gone from"
+ },
+ {
+  "inicio": 157.64,
+  "fim": 160.18,
+  "texto": "the fridge. Every one of those things had an"
+ },
+ {
+  "inicio": 160.18,
+  "fim": 162.62,
+  "texto": "easy explanation, and every one of them,"
+ },
+ {
+  "inicio": 162.68,
+  "fim": 166.22,
+  "texto": "on its own, was nothing. I told myself I was being dramatic."
+ },
+ {
+  "inicio": 167.08,
+  "fim": 169.58,
+  "texto": "But I did something about the sleepwalking idea."
+ },
+ {
+  "inicio": 170.64,
+  "fim": 172.76,
+  "texto": "That night, before bed, I set my phone"
+ },
+ {
+  "inicio": 172.76,
+  "fim": 175.3,
+  "texto": "on the little table by the couch and started a"
+ },
+ {
+  "inicio": 175.3,
+  "fim": 177.56,
+  "texto": "voice recording, and I let it run all night."
+ },
+ {
+  "inicio": 178.54,
+  "fim": 180.92,
+  "texto": "In the morning, I almost didn’t listen to it."
+ },
+ {
+  "inicio": 181.44,
+  "fim": 183.28,
+  "texto": "Seven hours of a quiet apartment didn’t"
+ },
+ {
+  "inicio": 183.28,
+  "fim": 185.66,
+  "texto": "seem worth the time. But on my lunch break,"
+ },
+ {
+  "inicio": 185.78,
+  "fim": 187.96,
+  "texto": "I opened it and scrolled through the audio"
+ },
+ {
+  "inicio": 187.96,
+  "fim": 190.5,
+  "texto": "waveform, looking for anything that wasn’t a"
+ },
+ {
+  "inicio": 190.5,
+  "fim": 192.94,
+  "texto": "flat line. Most of it was just the hum of"
+ },
+ {
+  "inicio": 192.94,
+  "fim": 197.7,
+  "texto": "the refrigerator and the radiator ticking. Then, at three-eleven in the morning, the"
+ },
+ {
+  "inicio": 198.4,
+  "fim": 204.64,
+  "texto": "line started to move. I put my earbuds in and pressed play. At first,"
+ },
+ {
+  "inicio": 204.88,
+  "fim": 208.08,
+  "texto": "it was just a creak, the long, low creak an old"
+ },
+ {
+  "inicio": 208.08,
+  "fim": 209.82,
+  "texto": "floorboard makes when weight settles on"
+ },
+ {
+  "inicio": 209.82,
+  "fim": 214.02,
+  "texto": "it slowly. Then another one, a little closer. Then"
+ },
+ {
+  "inicio": 214.02,
+  "fim": 216.7,
+  "texto": "footsteps. Not the quick, careless steps"
+ },
+ {
+  "inicio": 216.7,
+  "fim": 219.06,
+  "texto": "of someone walking to the bathroom. Slow ones."
+ },
+ {
+  "inicio": 220.0,
+  "fim": 222.56,
+  "texto": "Heel, then toe, like someone trying very hard"
+ },
+ {
+  "inicio": 222.56,
+  "fim": 225.28,
+  "texto": "not to make noise. They crossed the living room"
+ },
+ {
+  "inicio": 225.28,
+  "fim": 227.78,
+  "texto": "right past my phone, went down the hallway,"
+ },
+ {
+  "inicio": 228.48,
+  "fim": 233.14,
+  "texto": "and stopped. I knew exactly where they stopped because"
+ },
+ {
+  "inicio": 233.14,
+  "fim": 238.3,
+  "texto": "there’s one board outside my bedroom door that pops when you step on it, and I heard"
+ },
+ {
+  "inicio": 238.3,
+  "fim": 241.34,
+  "texto": "it pop. Then nothing. For almost a full minute,"
+ },
+ {
+  "inicio": 241.34,
+  "fim": 243.3,
+  "texto": "there was no sound on the recording at all."
+ },
+ {
+  "inicio": 243.54,
+  "fim": 248.92,
+  "texto": "And then, very faintly, I heard breathing, slow"
+ },
+ {
+  "inicio": 248.92,
+  "fim": 252.0,
+  "texto": "and even, right outside my bedroom door,"
+ },
+ {
+  "inicio": 253.0,
+  "fim": 256.18,
+  "texto": "while I was asleep on the other side of it. I"
+ },
+ {
+  "inicio": 256.18,
+  "fim": 258.14,
+  "texto": "sat in my car in the hospital parking garage"
+ },
+ {
+  "inicio": 258.14,
+  "fim": 260.78,
+  "texto": "and listened to that minute four times. Then"
+ },
+ {
+  "inicio": 260.78,
+  "fim": 263.0,
+  "texto": "the steps went back up the hallway, slowly,"
+ },
+ {
+  "inicio": 263.36,
+  "fim": 265.8,
+  "texto": "and I heard a soft click, like a door being pulled"
+ },
+ {
+  "inicio": 265.8,
+  "fim": 268.92,
+  "texto": "shut. The only door in that hallway,"
+ },
+ {
+  "inicio": 268.92,
+  "fim": 271.52,
+  "texto": "besides mine and the bathroom, was the coat closet."
+ },
+ {
+  "inicio": 273.2,
+  "fim": 275.32,
+  "texto": "I called my sister, and she told me to call"
+ },
+ {
+  "inicio": 275.32,
+  "fim": 278.02,
+  "texto": "the police. I didn’t, and I know how that"
+ },
+ {
+  "inicio": 277.7,
+  "fim": 280.2,
+  "texto": "sounds. I kept thinking about how I would go."
+ },
+ {
+  "inicio": 280.2,
+  "fim": 282.52,
+  "texto": "A woman calls and says she heard footsteps"
+ },
+ {
+  "inicio": 283.04,
+  "fim": 285.58,
+  "texto": "on her own phone recording, in her own apartment,"
+ },
+ {
+  "inicio": 285.8,
+  "fim": 288.1,
+  "texto": "where she lives alone. They tell me I was"
+ },
+ {
+  "inicio": 288.18,
+  "fim": 291.18,
+  "texto": "sleepwalking, just like Ruth did. I wanted proof,"
+ },
+ {
+  "inicio": 291.56,
+  "fim": 293.42,
+  "texto": "something no one could explain away."
+ },
+ {
+  "inicio": 294.2,
+  "fim": 298.0,
+  "texto": "So after work, I drove to an electronics store and bought a cheap Wi-Fi camera,"
+ },
+ {
+  "inicio": 298.9,
+  "fim": 301.42,
+  "texto": "the kind people use to watch their dogs. I set it"
+ },
+ {
+  "inicio": 301.42,
+  "fim": 302.88,
+  "texto": "on top of the bookshelf in the living room,"
+ },
+ {
+  "inicio": 303.5,
+  "fim": 306.04,
+  "texto": "angled so I could see the couch, the kitchen doorway,"
+ },
+ {
+  "inicio": 306.14,
+  "fim": 308.38,
+  "texto": "and the start of the hallway. I tested"
+ },
+ {
+  "inicio": 308.38,
+  "fim": 311.48,
+  "texto": "it with my phone. The picture was grainy, but in"
+ },
+ {
+  "inicio": 311.48,
+  "fim": 313.22,
+  "texto": "night mode, you could see everything in shades"
+ },
+ {
+  "inicio": 313.22,
+  "fim": 316.34,
+  "texto": "of grey. Then I packed a bag and went to sleep"
+ },
+ {
+  "inicio": 316.34,
+  "fim": 318.92,
+  "texto": "at my sister’s place. I told myself it was an"
+ },
+ {
+  "inicio": 319.12,
+  "fim": 321.98,
+  "texto": "experiment. If the camera showed nothing, I’d go"
+ },
+ {
+  "inicio": 321.98,
+  "fim": 324.48,
+  "texto": "home, admit I was sleepwalking, and buy Ruth"
+ },
+ {
+  "inicio": 324.48,
+  "fim": 327.38,
+  "texto": "a fruit basket. My sister made up the couch for"
+ },
+ {
+  "inicio": 327.38,
+  "fim": 329.66,
+  "texto": "me, and I lay there with my phone on my chest,"
+ },
+ {
+  "inicio": 330.34,
+  "fim": 332.96,
+  "texto": "opening the app every half hour to look at my empty living room."
+ },
+ {
+  "inicio": 333.74,
+  "fim": 339.1,
+  "texto": "I must have fallen asleep around one. The notification woke me up. Motion detected,"
+ },
+ {
+  "inicio": 339.56,
+  "fim": 345.04,
+  "texto": "living room, at 3.14 a.m. I opened the feed, and there was a man in my apartment."
+ },
+ {
+  "inicio": 346.36,
+  "fim": 349.18,
+  "texto": "He was standing in the middle of my living room,"
+ },
+ {
+  "inicio": 349.76,
+  "fim": 352.18,
+  "texto": "barefoot, in the grey hoodie I’d been missing"
+ },
+ {
+  "inicio": 352.18,
+  "fim": 356.0,
+  "texto": "since Christmas. He was thin, maybe in his forties,"
+ },
+ {
+  "inicio": 356.44,
+  "fim": 358.42,
+  "texto": "with his hair grown out and pushed behind his"
+ },
+ {
+  "inicio": 358.18,
+  "fim": 361.18,
+  "texto": "ears. He wasn’t searching for anything. He wasn’t"
+ },
+ {
+  "inicio": 361.18,
+  "fim": 363.48,
+  "texto": "stealing anything. He was just walking,"
+ },
+ {
+  "inicio": 364.44,
+  "fim": 367.36,
+  "texto": "very slowly, from the couch to the start of"
+ },
+ {
+  "inicio": 367.36,
+  "fim": 369.92,
+  "texto": "the hallway and back again, with his hands"
+ },
+ {
+  "inicio": 369.92,
+  "fim": 373.1,
+  "texto": "folded in front of him, exactly the way Ruth described"
+ },
+ {
+  "inicio": 373.1,
+  "fim": 375.84,
+  "texto": "it, like someone thinking about something."
+ },
+ {
+  "inicio": 376.56,
+  "fim": 380.06,
+  "texto": "At one point, he stopped at the kitchen doorway and"
+ },
+ {
+  "inicio": 380.06,
+  "fim": 382.1,
+  "texto": "stood there with his head tilted, listening."
+ },
+ {
+  "inicio": 382.58,
+  "fim": 387.48,
+  "texto": "Then he went into the kitchen, opened my refrigerator, and stood in the light of it,"
+ },
+ {
+  "inicio": 387.5,
+  "fim": 391.64,
+  "texto": "eating something out of a container with his fingers. He put the container back,"
+ },
+ {
+  "inicio": 392.16,
+  "fim": 395.36,
+  "texto": "he wiped his hand on the hoodie, and then he walked down the hallway,"
+ },
+ {
+  "inicio": 395.36,
+  "fim": 399.46,
+  "texto": "opened the coat closet, stepped inside, and pulled the door shut behind him."
+ },
+ {
+  "inicio": 400.38,
+  "fim": 405.02,
+  "texto": "I woke my sister up, and this time I called 911. The"
+ },
+ {
+  "inicio": 405.02,
+  "fim": 407.08,
+  "texto": "officers who met me there an hour later were"
+ },
+ {
+  "inicio": 407.08,
+  "fim": 410.04,
+  "texto": "polite and, honestly, I think they expected to find"
+ },
+ {
+  "inicio": 410.04,
+  "fim": 412.98,
+  "texto": "nothing. They checked every room, every window,"
+ },
+ {
+  "inicio": 413.1,
+  "fim": 415.68,
+  "texto": "and under my bed. Then I pointed to the coat"
+ },
+ {
+  "inicio": 415.68,
+  "fim": 417.42,
+  "texto": "closet, and one of them opened it with his"
+ },
+ {
+  "inicio": 417.42,
+  "fim": 420.1,
+  "texto": "flashlight out. The square of plywood at the back"
+ },
+ {
+  "inicio": 420.1,
+  "fim": 422.82,
+  "texto": "was still there, but the screws were gone."
+ },
+ {
+  "inicio": 423.38,
+  "fim": 426.36,
+  "texto": "It was only leaning in place. When he pulled"
+ },
+ {
+  "inicio": 426.36,
+  "fim": 428.82,
+  "texto": "it away, there was a dark gap behind it,"
+ },
+ {
+  "inicio": 428.84,
+  "fim": 431.36,
+  "texto": "about two feet high, that ran between the floors of"
+ },
+ {
+  "inicio": 431.36,
+  "fim": 433.84,
+  "texto": "the house, above Ruth's ceiling, and under mine."
+ },
+ {
+  "inicio": 434.5,
+  "fim": 437.42,
+  "texto": "They didn't find him. There was a vent at the far"
+ },
+ {
+  "inicio": 437.42,
+  "fim": 439.26,
+  "texto": "end of that crawlspace that opened onto the"
+ },
+ {
+  "inicio": 439.26,
+  "fim": 441.86,
+  "texto": "side of the house, and its cover had been pried loose"
+ },
+ {
+  "inicio": 441.86,
+  "fim": 444.22,
+  "texto": "from the inside. But they found where he'd"
+ },
+ {
+  "inicio": 444.22,
+  "fim": 447.14,
+  "texto": "been living. A camping pad and a sleeping bag,"
+ },
+ {
+  "inicio": 447.98,
+  "fim": 450.24,
+  "texto": "granola bar wrappers, and a lot of my food"
+ },
+ {
+  "inicio": 450.24,
+  "fim": 453.82,
+  "texto": "containers, cleaned and stacked. A phone charger,"
+ },
+ {
+  "inicio": 454.42,
+  "fim": 456.3,
+  "texto": "plugged into an outlet that, it turned out, was"
+ },
+ {
+  "inicio": 456.3,
+  "fim": 459.58,
+  "texto": "on the back of my bedroom wall. And a spiral notebook."
+ },
+ {
+  "inicio": 460.68,
+  "fim": 462.22,
+  "texto": "One of the officers showed me a page"
+ },
+ {
+  "inicio": 462.22,
+  "fim": 465.2,
+  "texto": "of that notebook, and I wish he hadn't. It was my schedule,"
+ },
+ {
+  "inicio": 465.2,
+  "fim": 467.32,
+  "texto": "when I left for work, when I came home,"
+ },
+ {
+  "inicio": 468.0,
+  "fim": 470.3,
+  "texto": "which nights I did laundry, what time my bedroom"
+ },
+ {
+  "inicio": 470.3,
+  "fim": 472.82,
+  "texto": "light usually went off. On the last page,"
+ },
+ {
+  "inicio": 473.1,
+  "fim": 477.44,
+  "texto": "in very small, neat handwriting, it said, she sleeps very deeply."
+ },
+ {
+  "inicio": 478.3,
+  "fim": 480.82,
+  "texto": "The detective who called me the next week said they"
+ },
+ {
+  "inicio": 480.82,
+  "fim": 483.36,
+  "texto": "had a name, a man who'd been evicted from"
+ },
+ {
+  "inicio": 483.36,
+  "fim": 486.52,
+  "texto": "a house two streets over the summer before. They believed"
+ },
+ {
+  "inicio": 486.52,
+  "fim": 488.44,
+  "texto": "he'd been living in that crawlspace since"
+ },
+ {
+  "inicio": 488.58,
+  "fim": 491.94,
+  "texto": "before I signed my lease, longer than I had lived there."
+ },
+ {
+  "inicio": 492.9,
+  "fim": 495.08,
+  "texto": "I broke my lease and moved in with my sister"
+ },
+ {
+  "inicio": 495.06,
+  "fim": 497.92,
+  "texto": "for a while. Ruth cried when I told her what happened."
+ },
+ {
+  "inicio": 497.92,
+  "fim": 499.82,
+  "texto": "She kept saying she was sorry, that"
+ },
+ {
+  "inicio": 500.4,
+  "fim": 502.64,
+  "texto": "she should have known it wasn't me, that she should"
+ },
+ {
+  "inicio": 502.64,
+  "fim": 507.36,
+  "texto": "have said something sooner. I told her she was the"
+ },
+ {
+  "inicio": 507.36,
+  "fim": 513.88,
+  "texto": "They never found him. I checked the news sometimes for his name. Nothing. Ruth still"
+ },
+ {
+  "inicio": 513.88,
+  "fim": 516.5,
+  "texto": "sends me a card every Christmas. Last spring she"
+ },
+ {
+  "inicio": 516.5,
+  "fim": 518.5,
+  "texto": "called me, just to catch up. She told me"
+ },
+ {
+  "inicio": 518.5,
+  "fim": 520.76,
+  "texto": "the landlord had fixed up the apartment, and a new"
+ },
+ {
+  "inicio": 520.76,
+  "fim": 522.58,
+  "texto": "girl had moved in upstairs, a nursing student."
+ },
+ {
+  "inicio": 523.0,
+  "fim": 525.5,
+  "texto": "She said the girl was sweet and very quiet. She just"
+ },
+ {
+  "inicio": 525.5,
+  "fim": 526.8,
+  "texto": "wished she wouldn't pace so much at night."
+ }
+]

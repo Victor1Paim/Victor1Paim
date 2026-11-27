@@ -61,7 +61,7 @@ def em_loop(x, n, xf=0.4):
 
 
 def _norm(w):
-    return re.sub(r"[^a-z0-9']", '', w.lower())
+    return re.sub(r"[^a-z0-9]", '', w.lower())                 # sem apóstrofos: ' ’ e � contam igual
 
 
 def tempo_frase(palavras, frase, n=1, fim=False):

@@ -1,0 +1,128 @@
+{
+ "ambientes": [
+  {
+   "id": "amb-casa-silencio",
+   "de": 0,
+   "ate": 7,
+   "db": -24
+  },
+  {
+   "id": "amb-carro-parado-motor",
+   "de": 8,
+   "ate": 8,
+   "db": -32
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 9,
+   "ate": 10,
+   "db": -22
+  },
+  {
+   "id": "amb-fluorescente",
+   "de": 11,
+   "ate": 11,
+   "db": -28
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 12,
+   "ate": 13,
+   "db": -24
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 14,
+   "ate": 20,
+   "db": -24
+  },
+  {
+   "id": "amb-fluorescente",
+   "de": 21,
+   "ate": 23,
+   "db": -30
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 24,
+   "ate": 27,
+   "db": -26
+  }
+ ],
+ "efeitos": [
+  {
+   "id": "batida-porta-madeira",
+   "frase": "I knocked on Ruth's door",
+   "db": -8
+  },
+  {
+   "id": "porta-rangendo",
+   "frase": "I'd opened the closet once",
+   "db": -12
+  },
+  {
+   "id": "riser-1",
+   "frase": "the line started to move",
+   "db": -12
+  },
+  {
+   "id": "porta-rangendo",
+   "frase": "the long, low creak",
+   "db": -10
+  },
+  {
+   "id": "passos-corredor",
+   "frase": "Then footsteps",
+   "db": -6
+  },
+  {
+   "id": "respiracao-tensa",
+   "frase": "I heard breathing",
+   "db": -4
+  },
+  {
+   "id": "interruptor",
+   "frase": "like a door being pulled shut",
+   "db": -8
+  },
+  {
+   "id": "celular-vibrando",
+   "frase": "The notification woke me up",
+   "db": -6
+  },
+  {
+   "id": "sting-2",
+   "frase": "there was a man in my apartment",
+   "db": -6,
+   "fim": true
+  },
+  {
+   "id": "interruptor",
+   "frase": "pulled the door shut behind him",
+   "db": -8,
+   "fim": true
+  },
+  {
+   "id": "porta-rangendo",
+   "frase": "one of them opened it",
+   "db": -8
+  },
+  {
+   "id": "rajada-vento",
+   "frase": "pried loose from the inside",
+   "db": -10
+  },
+  {
+   "id": "sting-2",
+   "frase": "She sleeps very deeply",
+   "db": -8,
+   "fim": true
+  },
+  {
+   "id": "passos-corredor",
+   "frase": "pace so much at night",
+   "db": -14,
+   "fim": true
+  }
+ ]
+}

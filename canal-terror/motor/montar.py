@@ -91,8 +91,12 @@ MOVS = ['in', 'right', 'out', 'left']
 def render(job):
     nome, img, dur, mov, extra = job
     out = os.path.join(tmp, nome + '.mp4')
-    if os.path.exists(out) and abs(duracao(out) - dur) < 0.05:
-        return out
+    if os.path.exists(out):
+        try:
+            if abs(duracao(out) - dur) < 0.05:
+                return out
+        except subprocess.CalledProcessError:       # clipe pela metade (render interrompido): refaz
+            os.remove(out)
     n = int(round(dur * FPS)); Z = 0.07
     z = {'in': f'1+{Z}*on/{n}', 'out': f'1+{Z}-{Z}*on/{n}', 'left': f'1+{Z}', 'right': f'1+{Z}'}[mov]
     x = {'left': f'(iw-iw/zoom)*(1-on/{n})', 'right': f'(iw-iw/zoom)*on/{n}'}.get(mov, 'iw/2-iw/zoom/2')
