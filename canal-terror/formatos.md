@@ -49,8 +49,9 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 
 ## Próximos vídeos (decidido 27/11/2026)
 
-- Vídeo por história, com **~8 min** (história de **1.400–1.500 palavras**): curto o bastante e ainda ≥ 8 min para anúncios no meio.
+- Vídeo por história, com **~8 min** (história de **1.500–1.600 palavras**; a voz faz ~197 palavras/min com as pausas, + 35 s de vinheta, cartela e tela final): curto o bastante e ainda ≥ 8 min para anúncios no meio.
   Regra do usuário (27/11): 10 min é longo demais para história individual, porque depois elas viram coletânea. A The Note (h03, ~9:25) foi a última longa.
 - Coletânea a cada 2–3 semanas reaproveitando as histórias do mesmo tema (título e miniatura novos).
-- Em espera, prontos para renderizar: `producoes/h01-the-detour` e `producoes/h02-empty-tank` (histórias estendidas, voz, imagens,
-  efeitos, miniaturas e posts já feitos; falta só `python3 -I motor/montar.py producoes/<pasta>`).
+- Em espera: `historias/h01-the-detour.md` e `historias/h02-empty-tank.md` (revisão 2, 27/11: mais picos de tensão, ~1.500 palavras,
+  ~8:13). As pastas `producoes/h01-*` e `h02-*` têm voz e imagens da versão anterior: na produção, regenerar a voz dos parágrafos
+  que mudaram (voz.py já detecta), refazer os planos/efeitos pelo texto novo e reaproveitar as imagens que ainda servem.
