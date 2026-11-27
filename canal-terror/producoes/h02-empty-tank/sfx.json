@@ -1,0 +1,112 @@
+{
+ "ambientes": [
+  {
+   "id": "amb-carro-rodando",
+   "de": 0,
+   "ate": 0,
+   "db": -26
+  },
+  {
+   "id": "amb-deserto-noite",
+   "de": 1,
+   "ate": 23,
+   "db": -22
+  },
+  {
+   "id": "amb-carro-parado-motor",
+   "de": 11,
+   "ate": 23,
+   "db": -30
+  },
+  {
+   "id": "amb-carro-rodando",
+   "de": 24,
+   "ate": 27,
+   "db": -24
+  }
+ ],
+ "efeitos": [
+  {
+   "id": "motor-falhando",
+   "frase": "started sputtering",
+   "db": -5
+  },
+  {
+   "id": "pneu-cascalho",
+   "frase": "I coasted onto the shoulder",
+   "db": -12
+  },
+  {
+   "id": "pneu-cascalho",
+   "frase": "He pulled in behind me",
+   "db": -16
+  },
+  {
+   "id": "passos-cascalho",
+   "frase": "walked up with a flashlight",
+   "db": -12
+  },
+  {
+   "id": "passos-cascalho",
+   "frase": "came back with two bottles of water",
+   "db": -12
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "got back in his cruiser",
+   "db": -1
+  },
+  {
+   "id": "trava-carro",
+   "frase": "I locked the doors",
+   "db": -10
+  },
+  {
+   "id": "corrente-guincho",
+   "frase": "working with the chains",
+   "db": -14
+  },
+  {
+   "id": "sting-2",
+   "frase": "There was a woman standing behind my car",
+   "db": -14
+  },
+  {
+   "id": "macaneta-carro-travada",
+   "frase": "pulled the handle",
+   "db": -6,
+   "fim": true
+  },
+  {
+   "id": "macaneta-carro-travada",
+   "frase": "She pulled it again, harder",
+   "db": -4
+  },
+  {
+   "id": "buzina-carro",
+   "frase": "I hit the horn",
+   "db": -12,
+   "fim": true
+  },
+  {
+   "id": "batida-vidro-carro",
+   "frase": "knocked on the glass",
+   "db": -6
+  },
+  {
+   "id": "passos-cascalho",
+   "frase": "Manny walked all the way around my car",
+   "db": -12
+  },
+  {
+   "id": "celular-toque",
+   "frase": "I called my sister",
+   "db": -16
+  },
+  {
+   "id": "passos-cascalho",
+   "frase": "I heard gravel crunch",
+   "db": -8
+  }
+ ]
+}

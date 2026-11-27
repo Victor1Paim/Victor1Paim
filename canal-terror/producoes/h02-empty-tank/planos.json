@@ -1,0 +1,167 @@
+{
+ "titulo": "EMPTY TANK",
+ "cartela": [
+  "Empty Tank",
+  "By: Anonymous"
+ ],
+ "estilo": "Cinematic still photograph, 35mm film, shot at night unless stated, muted desaturated colors, low contrast, cold tones, subtle film grain, shallow depth of field, realistic, no readable text, no logos, no watermark. American Southwest desert.",
+ "vinheta": {
+  "id": "v00",
+  "de": "producoes/coletanea-01/imagens/v00.png"
+ },
+ "trilha": {
+  "drone": "drone-grave-1",
+  "sting": "sting-1",
+  "vinheta": "vinheta-1",
+  "drone_db": -11,
+  "sting_db": -3,
+  "vinheta_db": -1
+ },
+ "planos": [
+  {
+   "id": "a01",
+   "p": 0,
+   "de": "producoes/coletanea-01/s2/imagens/a01.png"
+  },
+  {
+   "id": "a02",
+   "p": 1,
+   "de": "producoes/coletanea-01/s2/imagens/a02.png"
+  },
+  {
+   "id": "a03",
+   "p": 2,
+   "de": "producoes/coletanea-01/s2/imagens/a03.png"
+  },
+  {
+   "id": "a04",
+   "p": 2,
+   "de": "producoes/coletanea-01/s2/imagens/a04.png"
+  },
+  {
+   "id": "m01",
+   "p": 3,
+   "prompt": "Far away in a pitch-black desert at night, a single small low light like a lantern near the ground, seen through a car windshield, vast darkness."
+  },
+  {
+   "id": "a05",
+   "p": 4,
+   "de": "producoes/coletanea-01/s2/imagens/a05.png"
+  },
+  {
+   "id": "a06",
+   "p": 5,
+   "de": "producoes/coletanea-01/s2/imagens/a06.png"
+  },
+  {
+   "id": "a07",
+   "p": 6,
+   "de": "producoes/coletanea-01/s2/imagens/a07.png"
+  },
+  {
+   "id": "m02",
+   "p": 7,
+   "prompt": "Inside a dark car at night, a phone screen glowing in a young woman's hand showing a call with weak signal, desert darkness outside the windows."
+  },
+  {
+   "id": "a08",
+   "p": 9,
+   "de": "producoes/coletanea-01/s2/imagens/a08.png"
+  },
+  {
+   "id": "a09",
+   "p": 9,
+   "de": "producoes/coletanea-01/s2/imagens/a09.png"
+  },
+  {
+   "id": "m03",
+   "p": 10,
+   "prompt": "Car side mirror at night showing only darkness and the faint edge of a gravel shoulder lit red by taillights, nothing there, tense."
+  },
+  {
+   "id": "a10",
+   "p": 11,
+   "de": "producoes/coletanea-01/s2/imagens/a10.png"
+  },
+  {
+   "id": "a11",
+   "p": 12,
+   "de": "producoes/coletanea-01/s2/imagens/a11.png"
+  },
+  {
+   "id": "a12",
+   "p": 13,
+   "de": "producoes/coletanea-01/s2/imagens/a12.png"
+  },
+  {
+   "id": "a13",
+   "p": 14,
+   "de": "producoes/coletanea-01/s2/imagens/a13.png"
+  },
+  {
+   "id": "m04",
+   "p": 15,
+   "prompt": "A thin older woman with long gray hair standing perfectly still on a desert road shoulder at night, hands at her sides, lit faintly red, face in shadow, clean clothes, eerie calm."
+  },
+  {
+   "id": "a14",
+   "p": 16,
+   "de": "producoes/coletanea-01/s2/imagens/a14.png"
+  },
+  {
+   "id": "a15",
+   "p": 17,
+   "de": "producoes/coletanea-01/s2/imagens/a15.png"
+  },
+  {
+   "id": "m05",
+   "p": 18,
+   "prompt": "The empty back seat of a small car at night seen from the front, a faint reflection of a gray-haired face in the rear side window glass."
+  },
+  {
+   "id": "a16",
+   "p": 19,
+   "de": "producoes/coletanea-01/s2/imagens/a16.png"
+  },
+  {
+   "id": "a17",
+   "p": 20,
+   "de": "producoes/coletanea-01/s2/imagens/a17.png"
+  },
+  {
+   "id": "a18",
+   "p": 21,
+   "de": "producoes/coletanea-01/s2/imagens/a18.png"
+  },
+  {
+   "id": "a19",
+   "p": 22,
+   "de": "producoes/coletanea-01/s2/imagens/a19.png"
+  },
+  {
+   "id": "m06",
+   "p": 23,
+   "prompt": "A tow truck driver's flashlight beam pointed at the gravel near his boots at night, a car's rear door handle in the foreground, red taillight glow."
+  },
+  {
+   "id": "a20",
+   "p": 24,
+   "de": "producoes/coletanea-01/s2/imagens/a20.png"
+  },
+  {
+   "id": "a21",
+   "p": 25,
+   "de": "producoes/coletanea-01/s2/imagens/a21.png"
+  },
+  {
+   "id": "a22",
+   "p": 26,
+   "de": "producoes/coletanea-01/s2/imagens/a22.png"
+  },
+  {
+   "id": "a23",
+   "p": 27,
+   "de": "producoes/coletanea-01/s2/imagens/a23.png"
+  }
+ ]
+}

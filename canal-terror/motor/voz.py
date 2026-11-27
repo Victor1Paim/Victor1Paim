@@ -31,9 +31,12 @@ print(f'{len(pars)} parágrafos, {sum(len(p.split()) for p in pars)} palavras')
 def gerar(i_p):
     i, p = i_p
     wav = os.path.join(pasta, f'p{i:02d}.wav')
-    if os.path.exists(wav):
+    txt = os.path.join(pasta, f'p{i:02d}.txt')
+    # reaproveita só se o áudio é DESTE texto (parágrafos inseridos mudam a numeração)
+    if os.path.exists(wav) and os.path.exists(txt) and open(txt).read() == p:
         return wav
-    txt = os.path.join(pasta, f'p{i:02d}.txt'); open(txt, 'w').write(p)
+    if os.path.exists(wav): os.remove(wav)
+    open(txt, 'w').write(p)
     cmd = ['node', GEMINI, 'tts', '--text-file', txt, '--out', wav, '--voice', a.voz, '--model', a.modelo]
     if not a.simular: cmd.append('--go')
     for tentativa in range(8):

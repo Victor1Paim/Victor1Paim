@@ -1,0 +1,156 @@
+{
+ "ambientes": [
+  {
+   "id": "amb-carro-rodando",
+   "de": 0,
+   "ate": 2,
+   "db": -24
+  },
+  {
+   "id": "amb-posto-noite",
+   "de": 3,
+   "ate": 7,
+   "db": -24
+  },
+  {
+   "id": "amb-carro-parado-motor",
+   "de": 3,
+   "ate": 5,
+   "db": -30
+  },
+  {
+   "id": "amb-truckstop",
+   "de": 8,
+   "ate": 8,
+   "db": -26
+  },
+  {
+   "id": "amb-diner-noite",
+   "de": 9,
+   "ate": 22,
+   "db": -22
+  },
+  {
+   "id": "amb-chuva-janela",
+   "de": 11,
+   "ate": 22,
+   "db": -30
+  },
+  {
+   "id": "amb-fluorescente",
+   "de": 14,
+   "ate": 14,
+   "db": -28
+  },
+  {
+   "id": "amb-truckstop",
+   "de": 23,
+   "ate": 23,
+   "db": -28
+  },
+  {
+   "id": "amb-carro-parado-motor",
+   "de": 23,
+   "ate": 23,
+   "db": -30
+  },
+  {
+   "id": "amb-carro-rodando",
+   "de": 24,
+   "ate": 24,
+   "db": -26
+  },
+  {
+   "id": "amb-casa-silencio",
+   "de": 25,
+   "ate": 26,
+   "db": -30
+  },
+  {
+   "id": "amb-carro-rodando",
+   "de": 27,
+   "ate": 27,
+   "db": -28
+  }
+ ],
+ "efeitos": [
+  {
+   "id": "abastecendo",
+   "frase": "I filled the tank",
+   "db": -14
+  },
+  {
+   "id": "bomba-clique",
+   "frase": "The pump clicked off",
+   "db": -10
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "got back in my car and left",
+   "db": -1
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "because I needed coffee",
+   "db": -5
+  },
+  {
+   "id": "sino-porta-loja",
+   "frase": "the couple came in",
+   "db": -14
+  },
+  {
+   "id": "xicara-mesa",
+   "frase": "I ate my pie",
+   "db": -14
+  },
+  {
+   "id": "passos-corredor",
+   "frase": "I got up to use the restroom",
+   "db": -12
+  },
+  {
+   "id": "sino-porta-loja",
+   "frase": "the bell over the front door rang",
+   "db": -8,
+   "fim": true
+  },
+  {
+   "id": "sino-porta-loja",
+   "frase": "walked out",
+   "db": -14,
+   "fim": true
+  },
+  {
+   "id": "trava-carro",
+   "frase": "locked the doors",
+   "db": -10
+  },
+  {
+   "id": "motor-ligando",
+   "frase": "sat with the engine running",
+   "db": -14
+  },
+  {
+   "id": "riser-1",
+   "frase": "The date on that clip",
+   "db": -8
+  },
+  {
+   "id": "sting-2",
+   "frase": "the one before I ever drove that road",
+   "db": -14,
+   "fim": true
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "I kept going straight",
+   "db": -20
+  },
+  {
+   "id": "xicara-mesa",
+   "frase": "refill my coffee",
+   "db": -12
+  }
+ ]
+}
