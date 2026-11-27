@@ -34,5 +34,14 @@
    "mov": "in",
    "ia": false
   }
- ]
+ ],
+ "sfx": {
+  "troca": "sfx/whoosh.mp3",
+  "fim": "sfx/ding.mp3",
+  "vol": 0.45
+ },
+ "musica": {
+  "arq": "sfx/musica.mp3",
+  "vol": 0.35
+ }
 }

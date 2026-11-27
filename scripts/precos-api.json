@@ -71,6 +71,14 @@
   "elevenlabs-eleven_multilingual_v2": {
    "caracteres": 300.0,
    "obs": "ESTIMATIVA: ~US$ 0,30 por 1.000 caracteres (excedente do plano Creator; o custo real depende do plano da conta). Preço por 1M de caracteres."
+  },
+  "elevenlabs-sound": {
+   "segundos": 9000.0,
+   "obs": "ESTIMATIVA: efeito sonoro ~US$ 0,009 por segundo gerado (créditos do plano). Preço por 1M de segundos."
+  },
+  "elevenlabs-music": {
+   "segundos": 13333.0,
+   "obs": "ESTIMATIVA: música ~US$ 0,80 por minuto gerado (créditos do plano). Preço por 1M de segundos."
   }
  },
  "gratis": [

@@ -78,6 +78,21 @@ def main(pasta, cfg="ugc.json"):
             fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={u.get('ambiente', 0.25)},afade=t=in:d=0.15,"
                        f"adelay={ms}|{ms}[s{k}]"); k += 1
         ini += durs[i] - X
+    # efeitos (ElevenLabs): "sfx": {"troca": "sfx/whoosh.mp3", "fim": "sfx/ding.mp3", "vol": 0.5}; "musica": {"arq": ..., "vol": 0.1}
+    starts = [0.0]
+    for dd in durs[:-1]:
+        starts.append(starts[-1] + dd - X)
+    fx = u.get("sfx", {})
+    marcas = [(fx["troca"], st - 0.25) for st in starts[1:]] if fx.get("troca") else []
+    if fx.get("fim"):
+        marcas.append((fx["fim"], starts[-1] + 0.1))
+    for arq, quando in marcas:
+        ms = int(round(max(0, quando) * 1000)); ent += ["-i", str(post / arq)]
+        fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={fx.get('vol', 0.5)},adelay={ms}|{ms}[s{k}]"); k += 1
+    if u.get("musica"):
+        mu = u["musica"]; ent += ["-stream_loop", "-1", "-i", str(post / mu["arq"])]
+        fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,atrim=0:{t:.3f},volume={mu.get('vol', 0.1)},"
+                   f"afade=t=in:d=0.4,afade=t=out:st={max(0, t - 1.2):.3f}:d=1.2[s{k}]"); k += 1
     if k == 0:   # vídeo mudo: trilha de silêncio (a música entra no Gerenciador de Anúncios)
         ent += ["-f", "lavfi", "-t", f"{t:.3f}", "-i", f"anullsrc=r={SR}:cl=mono"]
         fil.append(f"[{k}:a]anull[s{k}]"); k += 1
