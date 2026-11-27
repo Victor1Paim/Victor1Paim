@@ -80,3 +80,4 @@
 {"quando": "2026-11-27T17:48:18", "etapa": "voz", "modelo": "elevenlabs-eleven_multilingual_v2", "tokens": {"caracteres": 60}, "usd": 0.018}
 {"quando": "2026-11-27T17:48:33", "etapa": "voz", "modelo": "elevenlabs-eleven_multilingual_v2", "tokens": {"caracteres": 61}, "usd": 0.0183}
 {"quando": "2026-11-27T17:48:49", "etapa": "voz", "modelo": "elevenlabs-eleven_multilingual_v2", "tokens": {"caracteres": 28}, "usd": 0.0084}
+{"quando": "2026-11-27T19:25:32", "etapa": "imagem", "modelo": "gpt-image-2", "tokens": {"entrada_texto": 107, "entrada_imagem": 0, "saida_imagem": 5488}, "usd": 0.165175}
