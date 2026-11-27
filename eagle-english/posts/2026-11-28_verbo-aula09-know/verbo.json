@@ -1,0 +1,234 @@
+{
+ "aula": 9,
+ "verbo": "KNOW",
+ "significado": "SABER / CONHECER",
+ "fundo_inicio": 3,
+ "pronuncias": {
+  "KNOW": "nôu",
+  "KNEW": "niú",
+  "I know.": "ái nôu",
+  "Do you know her?": "du iú nôu rêr?",
+  "I knew it!": "ái niú it!"
+ },
+ "passos": [
+  {
+   "pt": "pt1",
+   "caixas": [
+    [
+     "1 verbo por dia",
+     "am",
+     "min"
+    ],
+    [
+     "100 dias seguidos",
+     "vm"
+    ]
+   ],
+   "bloco": 1
+  },
+  {
+   "pt": "pt2",
+   "bloco": 1
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "KNOW",
+     "am",
+     "g"
+    ],
+    [
+     "nôu",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt3",
+   "caixas": [
+    [
+     "KNOW",
+     "am",
+     "g"
+    ],
+    [
+     "nôu",
+     "pr"
+    ],
+    [
+     "SABER / CONHECER",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en1",
+   "caixas": [
+    [
+     "KNOW",
+     "am",
+     "g"
+    ],
+    [
+     "nôu",
+     "pr"
+    ],
+    [
+     "SABER / CONHECER",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt4",
+   "bloco": 1
+  },
+  {
+   "pt": "pt5",
+   "caixas": [
+    [
+     "Eu sei",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en2",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I know.",
+     "am"
+    ],
+    [
+     "ái nôu",
+     "pr"
+    ],
+    [
+     "Eu sei",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt6",
+   "bloco": 1
+  },
+  {
+   "pt": "pt7",
+   "caixas": [
+    [
+     "Você conhece ela?",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en3",
+   "vezes": 2,
+   "caixas": [
+    [
+     "Do you know her?",
+     "am"
+    ],
+    [
+     "du iú nôu rêr?",
+     "pr"
+    ],
+    [
+     "Você conhece ela?",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt8",
+   "bloco": 1
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "KNEW",
+     "am",
+     "g"
+    ],
+    [
+     "niú",
+     "pr"
+    ]
+   ],
+   "pausa": 0.3
+  },
+  {
+   "pt": "pt9",
+   "caixas": [
+    [
+     "KNEW",
+     "am",
+     "g"
+    ],
+    [
+     "niú",
+     "pr"
+    ],
+    [
+     "PASSADO DE KNOW",
+     "br"
+    ]
+   ]
+  },
+  {
+   "en": "en4",
+   "caixas": [
+    [
+     "KNEW",
+     "am",
+     "g"
+    ],
+    [
+     "niú",
+     "pr"
+    ],
+    [
+     "PASSADO DE KNOW",
+     "br"
+    ]
+   ],
+   "pausa": 1.3
+  },
+  {
+   "pt": "pt10",
+   "bloco": 1
+  },
+  {
+   "en": "en5",
+   "vezes": 2,
+   "caixas": [
+    [
+     "I knew it!",
+     "am"
+    ],
+    [
+     "ái niú it!",
+     "pr"
+    ],
+    [
+     "Eu sabia!",
+     "br"
+    ]
+   ],
+   "pausa": 0.5
+  },
+  {
+   "pt": "pt11",
+   "fim": "SEGUE ✅\nE COMENTA\n“APRENDER”",
+   "bloco": 1
+  }
+ ]
+}

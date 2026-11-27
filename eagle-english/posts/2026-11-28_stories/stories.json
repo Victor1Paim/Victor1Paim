@@ -1,0 +1,31 @@
+{
+ "dia": "sáb 28/11",
+ "tipo_cta": "produto (pc_viagem)",
+ "frases": [
+  {"pt": "Divirta-se!", "en": "Have fun!", "pron": "rév fân!"},
+  {"pt": "Bom fim de semana!", "en": "Have a nice weekend!", "pron": "rév a náis uíkend!"}
+ ],
+ "fundo_inicio": 20,
+ "frames": [
+  {
+   "html": "<div class='selo'>SABADOU 🎉</div><div class='t' style='top:420px;font-size:92px'>Sábado também<br>tem <span class='am'>inglês</span> 👇</div><div class='t' style='top:690px;font-size:50px'>1 minutinho e você<br>sai com <span class='vd'>2 frases novas</span></div>",
+   "personagem": {"pose": "feliz", "pes": 1880, "largura": 300}
+  },
+  {
+   "html": "<div class='selo'>FRASE DO DIA 📌</div><div class='t' style='top:470px;font-size:58px'>Pra quem vai sair hoje:</div><div class='caixa c-am' style='top:580px;font-size:96px'>Have fun!</div><div class='caixa c-pr' style='top:760px;font-size:64px'>rév fân!</div><div class='caixa c-br' style='top:900px;font-size:56px'>Divirta-se!</div><div class='t' style='top:1080px;font-size:48px'>Fala em voz alta 3x 🗣️</div>",
+   "personagem": {"pose": "fala2", "pes": 1880, "largura": 300}
+  },
+  {
+   "html": "<div class='selo'>QUIZ 🧠</div><div class='t' style='top:430px;font-size:78px'>Como se diz<br><span class='am'>\"bom fim de semana\"</span>?</div><div class='vazio' style='top:760px;height:420px;border:none;color:transparent'></div>"
+  },
+  {
+   "html": "<div class='t' style='top:330px;font-size:76px'>Vai <span class='am'>viajar</span> e tem<br>medo de travar?</div><div class='t' style='top:590px;font-size:54px'>Treine antes de ir,<br>no seu ritmo.</div><div class='caixa c-mr' style='top:800px;font-size:46px'>Eagle Primeira Classe ✈️</div><div class='t' style='top:920px;font-size:44px'>10 aulas + 2.100 frases<br>com pronúncia escrita · até 3x no cartão</div><div class='vazio' style='top:1090px;height:170px;border:none;color:transparent'></div>",
+   "personagem": {"pose": "fala1", "pes": 1880, "largura": 260}
+  },
+  {
+   "html": "<div class='selo'>RESPOSTA ✅</div><div class='caixa c-am' style='top:460px;font-size:80px'>Have a nice weekend!</div><div class='caixa c-pr' style='top:640px;font-size:60px'>rév a náis uíkend!</div><div class='t' style='top:820px;font-size:54px'>Pra se despedir de alguém<br>antes do fim de semana 👋</div><div class='caixa c-vm' style='top:1080px;font-size:50px'>19h · meme de inglês 😂</div>",
+   "personagem": {"pose": "feliz", "pes": 1880, "largura": 300}
+  }
+ ],
+ "adesivos": {"3": "QUIZ", "4": "LINK"}
+}
