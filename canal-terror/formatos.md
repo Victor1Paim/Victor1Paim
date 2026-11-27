@@ -49,7 +49,8 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 
 ## Próximos vídeos (decidido 27/11/2026)
 
-- Vídeo por história, com **9–11 min** (história de 1.800–2.000 palavras), para permitir anúncios no meio (≥ 8 min).
+- Vídeo por história, com **~8 min** (história de **1.400–1.500 palavras**): curto o bastante e ainda ≥ 8 min para anúncios no meio.
+  Regra do usuário (27/11): 10 min é longo demais para história individual, porque depois elas viram coletânea. A The Note (h03, ~9:25) foi a última longa.
 - Coletânea a cada 2–3 semanas reaproveitando as histórias do mesmo tema (título e miniatura novos).
 - Em espera, prontos para renderizar: `producoes/h01-the-detour` e `producoes/h02-empty-tank` (histórias estendidas, voz, imagens,
   efeitos, miniaturas e posts já feitos; falta só `python3 -I motor/montar.py producoes/<pasta>`).
