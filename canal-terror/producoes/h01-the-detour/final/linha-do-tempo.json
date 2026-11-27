@@ -1,0 +1,215 @@
+{
+ "total": 501.22,
+ "cortes_das_partes": [
+  167.8,
+  327.6
+ ],
+ "historias": [
+  {
+   "cartela": "The Detour",
+   "narracao_comeca": 12.0,
+   "termina": 481.22
+  }
+ ],
+ "blocos": [
+  {
+   "cartela": "The Detour",
+   "inicio": 7.0
+  },
+  {
+   "plano": "s01",
+   "inicio": 12.0,
+   "fim": 25.08
+  },
+  {
+   "plano": "s02",
+   "inicio": 25.08,
+   "fim": 38.16
+  },
+  {
+   "plano": "s03",
+   "inicio": 38.16,
+   "fim": 56.11
+  },
+  {
+   "plano": "n02",
+   "inicio": 56.11,
+   "fim": 68.09
+  },
+  {
+   "plano": "n08",
+   "inicio": 68.09,
+   "fim": 80.07
+  },
+  {
+   "plano": "s04",
+   "inicio": 80.07,
+   "fim": 90.83
+  },
+  {
+   "plano": "s05",
+   "inicio": 90.83,
+   "fim": 101.59
+  },
+  {
+   "plano": "n03",
+   "inicio": 101.59,
+   "fim": 112.36
+  },
+  {
+   "plano": "s06",
+   "inicio": 112.36,
+   "fim": 124.25
+  },
+  {
+   "plano": "n09",
+   "inicio": 124.25,
+   "fim": 136.14
+  },
+  {
+   "plano": "n04",
+   "inicio": 136.14,
+   "fim": 142.39
+  },
+  {
+   "plano": "n10",
+   "inicio": 142.39,
+   "fim": 148.64
+  },
+  {
+   "plano": "s08",
+   "inicio": 148.64,
+   "fim": 168.22
+  },
+  {
+   "plano": "s09",
+   "inicio": 168.22,
+   "fim": 186.21
+  },
+  {
+   "plano": "s11",
+   "inicio": 186.21,
+   "fim": 188.78
+  },
+  {
+   "plano": "s12",
+   "inicio": 188.78,
+   "fim": 203.73
+  },
+  {
+   "plano": "s13",
+   "inicio": 203.73,
+   "fim": 218.68
+  },
+  {
+   "plano": "s10",
+   "inicio": 218.68,
+   "fim": 232.71
+  },
+  {
+   "plano": "n05",
+   "inicio": 232.71,
+   "fim": 241.94
+  },
+  {
+   "plano": "s14",
+   "inicio": 241.94,
+   "fim": 251.17
+  },
+  {
+   "plano": "s15",
+   "inicio": 251.17,
+   "fim": 268.14
+  },
+  {
+   "plano": "s16",
+   "inicio": 268.14,
+   "fim": 285.1
+  },
+  {
+   "plano": "s17",
+   "inicio": 285.1,
+   "fim": 290.38
+  },
+  {
+   "plano": "s12b",
+   "inicio": 290.38,
+   "fim": 305.22
+  },
+  {
+   "plano": "s18",
+   "inicio": 305.22,
+   "fim": 316.72
+  },
+  {
+   "plano": "s19",
+   "inicio": 316.72,
+   "fim": 328.01
+  },
+  {
+   "plano": "n06",
+   "inicio": 328.01,
+   "fim": 348.23
+  },
+  {
+   "plano": "s21",
+   "inicio": 348.23,
+   "fim": 355.73
+  },
+  {
+   "plano": "s22",
+   "inicio": 355.73,
+   "fim": 363.24
+  },
+  {
+   "plano": "n07",
+   "inicio": 363.24,
+   "fim": 387.42
+  },
+  {
+   "plano": "s20",
+   "inicio": 387.42,
+   "fim": 396.56
+  },
+  {
+   "plano": "n11",
+   "inicio": 396.56,
+   "fim": 405.71
+  },
+  {
+   "plano": "s23",
+   "inicio": 405.71,
+   "fim": 415.91
+  },
+  {
+   "plano": "s24",
+   "inicio": 415.91,
+   "fim": 426.11
+  },
+  {
+   "plano": "s25",
+   "inicio": 426.11,
+   "fim": 433.93
+  },
+  {
+   "plano": "s26",
+   "inicio": 433.93,
+   "fim": 447.38
+  },
+  {
+   "plano": "s27",
+   "inicio": 447.38,
+   "fim": 460.83
+  },
+  {
+   "plano": "s28",
+   "inicio": 460.83,
+   "fim": 467.31
+  },
+  {
+   "plano": "s29",
+   "inicio": 467.31,
+   "fim": 481.22
+  }
+ ]
+}
