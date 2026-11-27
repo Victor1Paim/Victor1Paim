@@ -2,7 +2,7 @@ THE NOTE UNDER THE DOOR — YOUTUBE (vídeo de uma história)
 =========================================================
 
 ARQUIVOS
-- video-completo/parte01.mp4, parte02.mp4… → juntar em ordem, uma colada na outra, sem transição (~9:25).
+- video-completo/parte01.mp4, parte02.mp4… → juntar em ordem, uma colada na outra, sem transição (9:22).
   Já têm áudio, efeitos, legenda gravada e a marca The Quiet Hours.
 - miniatura.jpg → thumbnail · legenda-youtube.srt → "Legendas" (inglês)
 

@@ -1,0 +1,187 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: L,Inter Medium,44,&H00EDF0F2,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0.3,0,1,2.2,1.2,2,160,160,72,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:12.00,0:00:14.38,L,,0,0,0,,{\fad(120,120)}The first note was taped\Nto my door on a Tuesday
+Dialogue: 0,0:00:14.38,0:00:17.16,L,,0,0,0,,{\fad(120,120)}morning in February.\NIt was written in blue
+Dialogue: 0,0:00:17.16,0:00:21.84,L,,0,0,0,,{\fad(120,120)}ink on the back of a grocery receipt, in\Ncareful, slanted handwriting. It said,
+Dialogue: 0,0:00:22.20,0:00:24.92,L,,0,0,0,,{\fad(120,120)}’Please stop pacing at\Nthree in the morning. I can
+Dialogue: 0,0:00:24.92,0:00:28.98,L,,0,0,0,,{\fad(120,120)}hear every step. Thank\Nyou. Ruth downstairs.’
+Dialogue: 0,0:00:29.20,0:00:31.84,L,,0,0,0,,{\fad(120,120)}I read it three times,\Nstanding in the hallway
+Dialogue: 0,0:00:31.84,0:00:34.30,L,,0,0,0,,{\fad(120,120)}with my keys in my hand. I wasn’t annoyed.
+Dialogue: 0,0:00:34.44,0:00:37.46,L,,0,0,0,,{\fad(120,120)}I was embarrassed. I was\Ntwenty-seven. I had been
+Dialogue: 0,0:00:37.46,0:00:38.82,L,,0,0,0,,{\fad(120,120)}living alone in that apartment for about
+Dialogue: 0,0:00:39.10,0:00:41.96,L,,0,0,0,,{\fad(120,120)}four months, and I really\Nliked Ruth. She was
+Dialogue: 0,0:00:41.96,0:00:43.44,L,,0,0,0,,{\fad(120,120)}the older woman who\Nlived in the downstairs
+Dialogue: 0,0:00:43.44,0:00:45.84,L,,0,0,0,,{\fad(120,120)}unit of our duplex, a\Nretired school teacher
+Dialogue: 0,0:00:45.84,0:00:47.90,L,,0,0,0,,{\fad(120,120)}who always had her porch light on and her
+Dialogue: 0,0:00:47.90,0:00:51.64,L,,0,0,0,,{\fad(120,120)}television a little too loud. The last\Nthing I wanted was to be the noisy neighbor.
+Dialogue: 0,0:00:52.58,0:00:57.54,L,,0,0,0,,{\fad(120,120)}The problem was that I didn’t pace. Not\Nat three in the morning, not at any time.
+Dialogue: 0,0:00:57.86,0:01:00.34,L,,0,0,0,,{\fad(120,120)}I worked early shifts,\Ndoing admin at a hospital,
+Dialogue: 0,0:01:00.44,0:01:03.10,L,,0,0,0,,{\fad(120,120)}and I was usually asleep\Nby ten. I sleep like
+Dialogue: 0,0:01:03.10,0:01:05.58,L,,0,0,0,,{\fad(120,120)}a rock. My sister used\Nto say you could move
+Dialogue: 0,0:01:05.58,0:01:07.92,L,,0,0,0,,{\fad(120,120)}my bed across the room with me in it and I
+Dialogue: 0,0:01:07.92,0:01:08.72,L,,0,0,0,,{\fad(120,120)}didn’t notice.
+Dialogue: 0,0:01:09.28,0:01:12.22,L,,0,0,0,,{\fad(120,120)}The apartment itself\Nwas the upstairs half of
+Dialogue: 0,0:01:12.22,0:01:14.72,L,,0,0,0,,{\fad(120,120)}an old house in Columbus, Ohio. Hardwood
+Dialogue: 0,0:01:14.74,0:01:17.40,L,,0,0,0,,{\fad(120,120)}floors, radiators that\Nclanked every time the
+Dialogue: 0,0:01:17.40,0:01:19.82,L,,0,0,0,,{\fad(120,120)}heat came on. One long hallway that ran
+Dialogue: 0,0:01:19.78,0:01:22.56,L,,0,0,0,,{\fad(120,120)}from the living room past the\Nbathroom to my bedroom at the back.
+Dialogue: 0,0:01:23.38,0:01:25.76,L,,0,0,0,,{\fad(120,120)}There was a narrow coat\Ncloset in that hallway
+Dialogue: 0,0:01:25.76,0:01:28.30,L,,0,0,0,,{\fad(120,120)}that I never used. The\Nlandlord told me when
+Dialogue: 0,0:01:28.30,0:01:30.90,L,,0,0,0,,{\fad(120,120)}I moved in that there was\Na plumbing access panel
+Dialogue: 0,0:01:30.90,0:01:32.68,L,,0,0,0,,{\fad(120,120)}at the back of it, and that if anything
+Dialogue: 0,0:01:32.68,0:01:34.46,L,,0,0,0,,{\fad(120,120)}ever leaked, that was\Nwhere the shutoff was.
+Dialogue: 0,0:01:34.96,0:01:37.16,L,,0,0,0,,{\fad(120,120)}I’d opened the closet once, saw a painted
+Dialogue: 0,0:01:37.16,0:01:39.98,L,,0,0,0,,{\fad(120,120)}square of plywood held in with\Nscrews, and closed it again.
+Dialogue: 0,0:01:40.80,0:01:45.44,L,,0,0,0,,{\fad(120,120)}That evening, I knocked on Ruth’s door to\Napologize anyway. She was sweet about it.
+Dialogue: 0,0:01:45.78,0:01:47.58,L,,0,0,0,,{\fad(120,120)}She said she hadn’t\Nwanted to bother me, but
+Dialogue: 0,0:01:47.58,0:01:49.36,L,,0,0,0,,{\fad(120,120)}it had been going on for a few weeks and
+Dialogue: 0,0:01:49.36,0:01:52.24,L,,0,0,0,,{\fad(120,120)}she wasn’t sleeping well.\NI asked her what exactly
+Dialogue: 0,0:01:52.24,0:01:54.04,L,,0,0,0,,{\fad(120,120)}she was hearing. She thought about
+Dialogue: 0,0:01:54.04,0:01:59.88,L,,0,0,0,,{\fad(120,120)}it for a second and said, ’It’s slow. Back\Nand forth. From your living room, down
+Dialogue: 0,0:01:59.88,0:02:02.40,L,,0,0,0,,{\fad(120,120)}the hallway, and back again.\NLike someone thinking
+Dialogue: 0,0:02:02.40,0:02:04.70,L,,0,0,0,,{\fad(120,120)}about something.’ She said it usually
+Dialogue: 0,0:02:04.70,0:02:08.74,L,,0,0,0,,{\fad(120,120)}started a little after three and went on\Nfor twenty minutes or so. Then it stopped,
+Dialogue: 0,0:02:09.04,0:02:13.56,L,,0,0,0,,{\fad(120,120)}and she heard a door close. I told\Nher it couldn’t have been me. I told
+Dialogue: 0,0:02:13.54,0:02:15.46,L,,0,0,0,,{\fad(120,120)}her about the early shifts\Nand how heavy a sleeper
+Dialogue: 0,0:02:15.46,0:02:18.40,L,,0,0,0,,{\fad(120,120)}I was. She gave me this kind, patient
+Dialogue: 0,0:02:18.92,0:02:23.22,L,,0,0,0,,{\fad(120,120)}look, the way you’d look at a student who\Nswore they’d done their homework, and said
+Dialogue: 0,0:02:23.38,0:02:26.48,L,,0,0,0,,{\fad(120,120)}maybe I was sleepwalking.\NShe said her late husband
+Dialogue: 0,0:02:26.48,0:02:28.02,L,,0,0,0,,{\fad(120,120)}used to do it, and he never believed
+Dialogue: 0,0:02:28.02,0:02:32.28,L,,0,0,0,,{\fad(120,120)}her either. I laughed it off,\Nbut it bothered me. When
+Dialogue: 0,0:02:32.28,0:02:34.20,L,,0,0,0,,{\fad(120,120)}I got back upstairs, I\Nnoticed little things
+Dialogue: 0,0:02:34.20,0:02:36.50,L,,0,0,0,,{\fad(120,120)}I’d been ignoring. The thermostat was set
+Dialogue: 0,0:02:36.50,0:02:38.46,L,,0,0,0,,{\fad(120,120)}to sixty-eight, and I always\Nkept it at sixty-five
+Dialogue: 0,0:02:38.46,0:02:40.12,L,,0,0,0,,{\fad(120,120)}because the heat was expensive. There was
+Dialogue: 0,0:02:41.04,0:02:44.44,L,,0,0,0,,{\fad(120,120)}a grey hoodie I’d been looking for since\NChristmas, and I’d assumed I left it at
+Dialogue: 0,0:02:44.44,0:02:47.40,L,,0,0,0,,{\fad(120,120)}my sister’s. A container\Nof leftover pasta I
+Dialogue: 0,0:02:47.40,0:02:49.64,L,,0,0,0,,{\fad(120,120)}was sure I hadn’t finished was gone from
+Dialogue: 0,0:02:49.64,0:02:52.18,L,,0,0,0,,{\fad(120,120)}the fridge. Every one\Nof those things had an
+Dialogue: 0,0:02:52.18,0:02:54.62,L,,0,0,0,,{\fad(120,120)}easy explanation, and every one of them,
+Dialogue: 0,0:02:54.68,0:02:58.22,L,,0,0,0,,{\fad(120,120)}on its own, was nothing. I told\Nmyself I was being dramatic.
+Dialogue: 0,0:02:59.08,0:03:01.58,L,,0,0,0,,{\fad(120,120)}But I did something about\Nthe sleepwalking idea.
+Dialogue: 0,0:03:02.64,0:03:04.76,L,,0,0,0,,{\fad(120,120)}That night, before bed, I set my phone
+Dialogue: 0,0:03:04.76,0:03:07.30,L,,0,0,0,,{\fad(120,120)}on the little table by\Nthe couch and started a
+Dialogue: 0,0:03:07.30,0:03:09.56,L,,0,0,0,,{\fad(120,120)}voice recording, and I\Nlet it run all night.
+Dialogue: 0,0:03:10.54,0:03:12.92,L,,0,0,0,,{\fad(120,120)}In the morning, I almost\Ndidn’t listen to it.
+Dialogue: 0,0:03:13.44,0:03:15.28,L,,0,0,0,,{\fad(120,120)}Seven hours of a quiet apartment didn’t
+Dialogue: 0,0:03:15.28,0:03:17.66,L,,0,0,0,,{\fad(120,120)}seem worth the time.\NBut on my lunch break,
+Dialogue: 0,0:03:17.78,0:03:19.96,L,,0,0,0,,{\fad(120,120)}I opened it and scrolled through the audio
+Dialogue: 0,0:03:19.96,0:03:22.50,L,,0,0,0,,{\fad(120,120)}waveform, looking for\Nanything that wasn’t a
+Dialogue: 0,0:03:22.50,0:03:24.94,L,,0,0,0,,{\fad(120,120)}flat line. Most of it was just the hum of
+Dialogue: 0,0:03:24.94,0:03:29.70,L,,0,0,0,,{\fad(120,120)}the refrigerator and the radiator ticking.\NThen, at three-eleven in the morning, the
+Dialogue: 0,0:03:30.40,0:03:36.64,L,,0,0,0,,{\fad(120,120)}line started to move. I put my\Nearbuds in and pressed play. At first,
+Dialogue: 0,0:03:36.88,0:03:40.08,L,,0,0,0,,{\fad(120,120)}it was just a creak, the\Nlong, low creak an old
+Dialogue: 0,0:03:40.08,0:03:41.82,L,,0,0,0,,{\fad(120,120)}floorboard makes when weight settles on
+Dialogue: 0,0:03:41.82,0:03:46.02,L,,0,0,0,,{\fad(120,120)}it slowly. Then another\None, a little closer. Then
+Dialogue: 0,0:03:46.02,0:03:48.70,L,,0,0,0,,{\fad(120,120)}footsteps. Not the quick, careless steps
+Dialogue: 0,0:03:48.70,0:03:51.06,L,,0,0,0,,{\fad(120,120)}of someone walking to\Nthe bathroom. Slow ones.
+Dialogue: 0,0:03:52.00,0:03:54.56,L,,0,0,0,,{\fad(120,120)}Heel, then toe, like\Nsomeone trying very hard
+Dialogue: 0,0:03:54.56,0:03:57.28,L,,0,0,0,,{\fad(120,120)}not to make noise. They\Ncrossed the living room
+Dialogue: 0,0:03:57.28,0:03:59.78,L,,0,0,0,,{\fad(120,120)}right past my phone,\Nwent down the hallway,
+Dialogue: 0,0:04:00.48,0:04:05.14,L,,0,0,0,,{\fad(120,120)}and stopped. I knew exactly\Nwhere they stopped because
+Dialogue: 0,0:04:05.14,0:04:10.30,L,,0,0,0,,{\fad(120,120)}there’s one board outside my bedroom door\Nthat pops when you step on it, and I heard
+Dialogue: 0,0:04:10.30,0:04:13.34,L,,0,0,0,,{\fad(120,120)}it pop. Then nothing.\NFor almost a full minute,
+Dialogue: 0,0:04:13.34,0:04:15.30,L,,0,0,0,,{\fad(120,120)}there was no sound on\Nthe recording at all.
+Dialogue: 0,0:04:15.54,0:04:20.92,L,,0,0,0,,{\fad(120,120)}And then, very faintly,\NI heard breathing, slow
+Dialogue: 0,0:04:20.92,0:04:24.00,L,,0,0,0,,{\fad(120,120)}and even, right outside my bedroom door,
+Dialogue: 0,0:04:25.00,0:04:28.18,L,,0,0,0,,{\fad(120,120)}while I was asleep on\Nthe other side of it. I
+Dialogue: 0,0:04:28.18,0:04:30.14,L,,0,0,0,,{\fad(120,120)}sat in my car in the\Nhospital parking garage
+Dialogue: 0,0:04:30.14,0:04:32.78,L,,0,0,0,,{\fad(120,120)}and listened to that\Nminute four times. Then
+Dialogue: 0,0:04:32.78,0:04:35.00,L,,0,0,0,,{\fad(120,120)}the steps went back up\Nthe hallway, slowly,
+Dialogue: 0,0:04:35.36,0:04:37.80,L,,0,0,0,,{\fad(120,120)}and I heard a soft click,\Nlike a door being pulled
+Dialogue: 0,0:04:37.80,0:04:40.92,L,,0,0,0,,{\fad(120,120)}shut. The only door in that hallway,
+Dialogue: 0,0:04:40.92,0:04:43.52,L,,0,0,0,,{\fad(120,120)}besides mine and the\Nbathroom, was the coat closet.
+Dialogue: 0,0:04:45.20,0:04:47.32,L,,0,0,0,,{\fad(120,120)}I called my sister,\Nand she told me to call
+Dialogue: 0,0:04:47.32,0:04:50.02,L,,0,0,0,,{\fad(120,120)}the police. I didn’t, and I know how that
+Dialogue: 0,0:04:49.70,0:04:52.20,L,,0,0,0,,{\fad(120,120)}sounds. I kept thinking\Nabout how I would go.
+Dialogue: 0,0:04:52.20,0:04:54.52,L,,0,0,0,,{\fad(120,120)}A woman calls and says she heard footsteps
+Dialogue: 0,0:04:55.04,0:04:57.58,L,,0,0,0,,{\fad(120,120)}on her own phone recording,\Nin her own apartment,
+Dialogue: 0,0:04:57.80,0:05:00.10,L,,0,0,0,,{\fad(120,120)}where she lives alone. They tell me I was
+Dialogue: 0,0:05:00.18,0:05:03.18,L,,0,0,0,,{\fad(120,120)}sleepwalking, just like\NRuth did. I wanted proof,
+Dialogue: 0,0:05:03.56,0:05:05.42,L,,0,0,0,,{\fad(120,120)}something no one could explain away.
+Dialogue: 0,0:05:06.20,0:05:10.00,L,,0,0,0,,{\fad(120,120)}So after work, I drove to an electronics\Nstore and bought a cheap Wi-Fi camera,
+Dialogue: 0,0:05:10.90,0:05:13.42,L,,0,0,0,,{\fad(120,120)}the kind people use to\Nwatch their dogs. I set it
+Dialogue: 0,0:05:13.42,0:05:14.88,L,,0,0,0,,{\fad(120,120)}on top of the bookshelf\Nin the living room,
+Dialogue: 0,0:05:15.50,0:05:18.04,L,,0,0,0,,{\fad(120,120)}angled so I could see the\Ncouch, the kitchen doorway,
+Dialogue: 0,0:05:18.14,0:05:20.38,L,,0,0,0,,{\fad(120,120)}and the start of the hallway. I tested
+Dialogue: 0,0:05:20.38,0:05:23.48,L,,0,0,0,,{\fad(120,120)}it with my phone. The\Npicture was grainy, but in
+Dialogue: 0,0:05:23.48,0:05:25.22,L,,0,0,0,,{\fad(120,120)}night mode, you could\Nsee everything in shades
+Dialogue: 0,0:05:25.22,0:05:28.34,L,,0,0,0,,{\fad(120,120)}of grey. Then I packed\Na bag and went to sleep
+Dialogue: 0,0:05:28.34,0:05:30.92,L,,0,0,0,,{\fad(120,120)}at my sister’s place.\NI told myself it was an
+Dialogue: 0,0:05:31.12,0:05:33.98,L,,0,0,0,,{\fad(120,120)}experiment. If the camera\Nshowed nothing, I’d go
+Dialogue: 0,0:05:33.98,0:05:36.48,L,,0,0,0,,{\fad(120,120)}home, admit I was\Nsleepwalking, and buy Ruth
+Dialogue: 0,0:05:36.48,0:05:39.38,L,,0,0,0,,{\fad(120,120)}a fruit basket. My sister\Nmade up the couch for
+Dialogue: 0,0:05:39.38,0:05:41.66,L,,0,0,0,,{\fad(120,120)}me, and I lay there with\Nmy phone on my chest,
+Dialogue: 0,0:05:42.34,0:05:44.96,L,,0,0,0,,{\fad(120,120)}opening the app every half hour\Nto look at my empty living room.
+Dialogue: 0,0:05:45.74,0:05:51.10,L,,0,0,0,,{\fad(120,120)}I must have fallen asleep around one. The\Nnotification woke me up. Motion detected,
+Dialogue: 0,0:05:51.56,0:05:57.04,L,,0,0,0,,{\fad(120,120)}living room, at 3.14 a.m. I opened the\Nfeed, and there was a man in my apartment.
+Dialogue: 0,0:05:58.36,0:06:01.18,L,,0,0,0,,{\fad(120,120)}He was standing in the\Nmiddle of my living room,
+Dialogue: 0,0:06:01.76,0:06:04.18,L,,0,0,0,,{\fad(120,120)}barefoot, in the grey\Nhoodie I’d been missing
+Dialogue: 0,0:06:04.18,0:06:08.00,L,,0,0,0,,{\fad(120,120)}since Christmas. He was\Nthin, maybe in his forties,
+Dialogue: 0,0:06:08.44,0:06:10.42,L,,0,0,0,,{\fad(120,120)}with his hair grown out\Nand pushed behind his
+Dialogue: 0,0:06:10.18,0:06:13.18,L,,0,0,0,,{\fad(120,120)}ears. He wasn’t searching\Nfor anything. He wasn’t
+Dialogue: 0,0:06:13.18,0:06:15.48,L,,0,0,0,,{\fad(120,120)}stealing anything. He was just walking,
+Dialogue: 0,0:06:16.44,0:06:19.36,L,,0,0,0,,{\fad(120,120)}very slowly, from the\Ncouch to the start of
+Dialogue: 0,0:06:19.36,0:06:21.92,L,,0,0,0,,{\fad(120,120)}the hallway and back again, with his hands
+Dialogue: 0,0:06:21.92,0:06:25.10,L,,0,0,0,,{\fad(120,120)}folded in front of him,\Nexactly the way Ruth described
+Dialogue: 0,0:06:25.10,0:06:27.84,L,,0,0,0,,{\fad(120,120)}it, like someone thinking about something.
+Dialogue: 0,0:06:28.56,0:06:32.06,L,,0,0,0,,{\fad(120,120)}At one point, he stopped\Nat the kitchen doorway and
+Dialogue: 0,0:06:32.06,0:06:34.10,L,,0,0,0,,{\fad(120,120)}stood there with his\Nhead tilted, listening.
+Dialogue: 0,0:06:34.58,0:06:39.48,L,,0,0,0,,{\fad(120,120)}Then he went into the kitchen, opened my\Nrefrigerator, and stood in the light of it,
+Dialogue: 0,0:06:39.50,0:06:43.64,L,,0,0,0,,{\fad(120,120)}eating something out of a container with\Nhis fingers. He put the container back,
+Dialogue: 0,0:06:44.16,0:06:47.36,L,,0,0,0,,{\fad(120,120)}he wiped his hand on the hoodie,\Nand then he walked down the hallway,
+Dialogue: 0,0:06:47.36,0:06:51.46,L,,0,0,0,,{\fad(120,120)}opened the coat closet, stepped inside,\Nand pulled the door shut behind him.
+Dialogue: 0,0:06:52.38,0:06:57.02,L,,0,0,0,,{\fad(120,120)}I woke my sister up, and\Nthis time I called 911. The
+Dialogue: 0,0:06:57.02,0:06:59.08,L,,0,0,0,,{\fad(120,120)}officers who met me\Nthere an hour later were
+Dialogue: 0,0:06:59.08,0:07:02.04,L,,0,0,0,,{\fad(120,120)}polite and, honestly, I\Nthink they expected to find
+Dialogue: 0,0:07:02.04,0:07:04.98,L,,0,0,0,,{\fad(120,120)}nothing. They checked\Nevery room, every window,
+Dialogue: 0,0:07:05.10,0:07:07.68,L,,0,0,0,,{\fad(120,120)}and under my bed. Then\NI pointed to the coat
+Dialogue: 0,0:07:07.68,0:07:09.42,L,,0,0,0,,{\fad(120,120)}closet, and one of them opened it with his
+Dialogue: 0,0:07:09.42,0:07:12.10,L,,0,0,0,,{\fad(120,120)}flashlight out. The square\Nof plywood at the back
+Dialogue: 0,0:07:12.10,0:07:14.82,L,,0,0,0,,{\fad(120,120)}was still there, but the screws were gone.
+Dialogue: 0,0:07:15.38,0:07:18.36,L,,0,0,0,,{\fad(120,120)}It was only leaning in\Nplace. When he pulled
+Dialogue: 0,0:07:18.36,0:07:20.82,L,,0,0,0,,{\fad(120,120)}it away, there was a dark gap behind it,
+Dialogue: 0,0:07:20.84,0:07:23.36,L,,0,0,0,,{\fad(120,120)}about two feet high, that\Nran between the floors of
+Dialogue: 0,0:07:23.36,0:07:25.84,L,,0,0,0,,{\fad(120,120)}the house, above Ruth's\Nceiling, and under mine.
+Dialogue: 0,0:07:26.50,0:07:29.42,L,,0,0,0,,{\fad(120,120)}They didn't find him.\NThere was a vent at the far
+Dialogue: 0,0:07:29.42,0:07:31.26,L,,0,0,0,,{\fad(120,120)}end of that crawlspace\Nthat opened onto the
+Dialogue: 0,0:07:31.26,0:07:33.86,L,,0,0,0,,{\fad(120,120)}side of the house, and its\Ncover had been pried loose
+Dialogue: 0,0:07:33.86,0:07:36.22,L,,0,0,0,,{\fad(120,120)}from the inside. But they found where he'd
+Dialogue: 0,0:07:36.22,0:07:39.14,L,,0,0,0,,{\fad(120,120)}been living. A camping\Npad and a sleeping bag,
+Dialogue: 0,0:07:39.98,0:07:42.24,L,,0,0,0,,{\fad(120,120)}granola bar wrappers, and a lot of my food
+Dialogue: 0,0:07:42.24,0:07:45.82,L,,0,0,0,,{\fad(120,120)}containers, cleaned and\Nstacked. A phone charger,
+Dialogue: 0,0:07:46.42,0:07:48.30,L,,0,0,0,,{\fad(120,120)}plugged into an outlet\Nthat, it turned out, was
+Dialogue: 0,0:07:48.30,0:07:51.58,L,,0,0,0,,{\fad(120,120)}on the back of my bedroom\Nwall. And a spiral notebook.
+Dialogue: 0,0:07:52.68,0:07:54.22,L,,0,0,0,,{\fad(120,120)}One of the officers showed me a page
+Dialogue: 0,0:07:54.22,0:07:57.20,L,,0,0,0,,{\fad(120,120)}of that notebook, and I wish\Nhe hadn't. It was my schedule,
+Dialogue: 0,0:07:57.20,0:07:59.32,L,,0,0,0,,{\fad(120,120)}when I left for work, when I came home,
+Dialogue: 0,0:08:00.00,0:08:02.30,L,,0,0,0,,{\fad(120,120)}which nights I did laundry,\Nwhat time my bedroom
+Dialogue: 0,0:08:02.30,0:08:04.82,L,,0,0,0,,{\fad(120,120)}light usually went off. On the last page,
+Dialogue: 0,0:08:05.10,0:08:09.44,L,,0,0,0,,{\fad(120,120)}in very small, neat handwriting,\Nit said, she sleeps very deeply.
+Dialogue: 0,0:08:10.30,0:08:12.82,L,,0,0,0,,{\fad(120,120)}The detective who called\Nme the next week said they
+Dialogue: 0,0:08:12.82,0:08:15.36,L,,0,0,0,,{\fad(120,120)}had a name, a man who'd been evicted from
+Dialogue: 0,0:08:15.36,0:08:18.52,L,,0,0,0,,{\fad(120,120)}a house two streets over the\Nsummer before. They believed
+Dialogue: 0,0:08:18.52,0:08:20.44,L,,0,0,0,,{\fad(120,120)}he'd been living in that crawlspace since
+Dialogue: 0,0:08:20.58,0:08:23.94,L,,0,0,0,,{\fad(120,120)}before I signed my lease,\Nlonger than I had lived there.
+Dialogue: 0,0:08:24.90,0:08:27.08,L,,0,0,0,,{\fad(120,120)}I broke my lease and\Nmoved in with my sister
+Dialogue: 0,0:08:27.06,0:08:29.92,L,,0,0,0,,{\fad(120,120)}for a while. Ruth cried when\NI told her what happened.
+Dialogue: 0,0:08:29.92,0:08:31.82,L,,0,0,0,,{\fad(120,120)}She kept saying she was sorry, that
+Dialogue: 0,0:08:32.40,0:08:34.64,L,,0,0,0,,{\fad(120,120)}she should have known it\Nwasn't me, that she should
+Dialogue: 0,0:08:34.64,0:08:39.36,L,,0,0,0,,{\fad(120,120)}have said something sooner.\NI told her she was the
+Dialogue: 0,0:08:39.36,0:08:45.88,L,,0,0,0,,{\fad(120,120)}They never found him. I checked the news\Nsometimes for his name. Nothing. Ruth still
+Dialogue: 0,0:08:45.88,0:08:48.50,L,,0,0,0,,{\fad(120,120)}sends me a card every\NChristmas. Last spring she
+Dialogue: 0,0:08:48.50,0:08:50.50,L,,0,0,0,,{\fad(120,120)}called me, just to catch up. She told me
+Dialogue: 0,0:08:50.50,0:08:52.76,L,,0,0,0,,{\fad(120,120)}the landlord had fixed up\Nthe apartment, and a new
+Dialogue: 0,0:08:52.76,0:08:54.58,L,,0,0,0,,{\fad(120,120)}girl had moved in upstairs,\Na nursing student.
+Dialogue: 0,0:08:55.00,0:08:57.50,L,,0,0,0,,{\fad(120,120)}She said the girl was sweet\Nand very quiet. She just
+Dialogue: 0,0:08:57.50,0:08:58.80,L,,0,0,0,,{\fad(120,120)}wished she wouldn't pace so much at night.

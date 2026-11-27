@@ -1,0 +1,195 @@
+{
+ "total": 562.18,
+ "cortes_das_partes": [
+  190.433,
+  388.6
+ ],
+ "historias": [
+  {
+   "cartela": "The Note Under the Door",
+   "narracao_comeca": 12.0,
+   "termina": 542.18
+  }
+ ],
+ "blocos": [
+  {
+   "cartela": "The Note Under the Door",
+   "inicio": 7.0
+  },
+  {
+   "plano": "c01",
+   "inicio": 12.0,
+   "fim": 29.5
+  },
+  {
+   "plano": "c02",
+   "inicio": 29.5,
+   "fim": 52.87
+  },
+  {
+   "plano": "c03",
+   "inicio": 52.87,
+   "fim": 69.61
+  },
+  {
+   "plano": "c04",
+   "inicio": 69.61,
+   "fim": 85.31
+  },
+  {
+   "plano": "c05",
+   "inicio": 85.31,
+   "fim": 101.0
+  },
+  {
+   "plano": "c06",
+   "inicio": 101.0,
+   "fim": 131.18
+  },
+  {
+   "plano": "c07",
+   "inicio": 131.18,
+   "fim": 149.59
+  },
+  {
+   "plano": "c08",
+   "inicio": 149.59,
+   "fim": 164.49
+  },
+  {
+   "plano": "c09",
+   "inicio": 164.49,
+   "fim": 179.39
+  },
+  {
+   "plano": "c10",
+   "inicio": 179.39,
+   "fim": 190.85
+  },
+  {
+   "plano": "c11",
+   "inicio": 190.85,
+   "fim": 212.76
+  },
+  {
+   "plano": "c12",
+   "inicio": 212.76,
+   "fim": 242.68
+  },
+  {
+   "plano": "c13",
+   "inicio": 242.68,
+   "fim": 268.08
+  },
+  {
+   "plano": "c14",
+   "inicio": 268.08,
+   "fim": 279.19
+  },
+  {
+   "plano": "c15",
+   "inicio": 279.19,
+   "fim": 285.05
+  },
+  {
+   "plano": "c16",
+   "inicio": 285.05,
+   "fim": 306.45
+  },
+  {
+   "plano": "c17",
+   "inicio": 306.45,
+   "fim": 316.55
+  },
+  {
+   "plano": "c18",
+   "inicio": 316.55,
+   "fim": 326.65
+  },
+  {
+   "plano": "c19",
+   "inicio": 326.65,
+   "fim": 346.13
+  },
+  {
+   "plano": "c20",
+   "inicio": 346.13,
+   "fim": 354.33
+  },
+  {
+   "plano": "c21",
+   "inicio": 354.33,
+   "fim": 358.81
+  },
+  {
+   "plano": "c22",
+   "inicio": 358.81,
+   "fim": 389.01
+  },
+  {
+   "plano": "c23",
+   "inicio": 389.01,
+   "fim": 400.87
+  },
+  {
+   "plano": "c24",
+   "inicio": 400.87,
+   "fim": 412.74
+  },
+  {
+   "plano": "c25",
+   "inicio": 412.74,
+   "fim": 416.82
+  },
+  {
+   "plano": "c26",
+   "inicio": 416.82,
+   "fim": 431.83
+  },
+  {
+   "plano": "c27",
+   "inicio": 431.83,
+   "fim": 446.83
+  },
+  {
+   "plano": "c28",
+   "inicio": 446.83,
+   "fim": 459.79
+  },
+  {
+   "plano": "c29",
+   "inicio": 459.79,
+   "fim": 472.75
+  },
+  {
+   "plano": "c30",
+   "inicio": 472.75,
+   "fim": 490.68
+  },
+  {
+   "plano": "c31",
+   "inicio": 490.68,
+   "fim": 505.01
+  },
+  {
+   "plano": "c32",
+   "inicio": 505.01,
+   "fim": 519.55
+  },
+  {
+   "plano": "c33",
+   "inicio": 519.55,
+   "fim": 525.25
+  },
+  {
+   "plano": "c34",
+   "inicio": 525.25,
+   "fim": 533.72
+  },
+  {
+   "plano": "c35",
+   "inicio": 533.72,
+   "fim": 542.18
+  }
+ ]
+}
