@@ -46,3 +46,10 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 - Volume bem abaixo da voz; ambientes por cena ainda mais baixos. Efeitos aprovados vão para a biblioteca do canal (`sfx/`) e são reaproveitados.
 - **Efeito nunca mais alto que a voz:** com fala junto, no máximo 3 dB abaixo dela (`motor/sfxmix.py`, `TETO_SOBRE_VOZ`).
 - **Short:** abre com ~1 s só de título + impacto; a primeira frase não leva efeito por cima.
+
+## Próximos vídeos (decidido 27/11/2026)
+
+- Vídeo por história, com **9–11 min** (história de 1.800–2.000 palavras), para permitir anúncios no meio (≥ 8 min).
+- Coletânea a cada 2–3 semanas reaproveitando as histórias do mesmo tema (título e miniatura novos).
+- Em espera, prontos para renderizar: `producoes/h01-the-detour` e `producoes/h02-empty-tank` (histórias estendidas, voz, imagens,
+  efeitos, miniaturas e posts já feitos; falta só `python3 -I motor/montar.py producoes/<pasta>`).
