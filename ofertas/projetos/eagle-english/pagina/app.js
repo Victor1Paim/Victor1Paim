@@ -30,7 +30,7 @@
     : `<div class="por"><small>R$</small> ${C.precoAvancadoCheio}</div><div class="unico">pagamento único ou <b>em até 3x no cartão</b></div>`;
   if (C.aulasLiberadasEm) document.getElementById("aulas-nota").textContent = "pronúncia e fala, com exercícios · liberadas a partir de " + C.aulasLiberadasEm;
 
-  // comparação com o combo Big Mac no iFood (R$ 46,90): vale com R$ 29,90 e com R$ 37
+  // comparação com o combo de lanche (R$ 40 a 50; sem citar marca: anúncio da Meta): vale com R$ 29,90 e com R$ 37
   const gp = document.getElementById("g-preco");
   if (gp) gp.textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);
   const vend = document.getElementById("vendedor");
