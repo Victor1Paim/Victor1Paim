@@ -34,11 +34,13 @@ def camadas(post, cenas, template="ugc.html", pasta="ugc_camadas"):
 def main(pasta, cfg="ugc.json"):
     post = Path(pasta).resolve()
     u = json.loads((post / cfg).read_text()); cenas = u["cenas"]
-    vozes = preparar_vozes(post, u, 1.0)
+    vozes = preparar_vozes(post, u, 1.0) if (post / "falas.json").exists() else {}
     cam = camadas(post, cenas, u.get("template", "ugc.html"), "camadas_" + cfg.replace(".json", ""))
     v = post / "video"; X = 0.2
-    falas = [c["fala"] if isinstance(c["fala"], list) else [c["fala"]] for c in cenas]
-    durs = [sum(vozes[f][1] - 0.2 for f in fs) + (X if i < len(cenas) - 1 else 0.4) for i, fs in enumerate(falas)]   # fala já tem ~0,25 s de respiro nas pontas
+    falas = [[] if "fala" not in c else c["fala"] if isinstance(c["fala"], list) else [c["fala"]] for c in cenas]
+    # cena sem fala (vídeo mudo, estilo "só texto"): "dur" em segundos
+    durs = [(c["dur"] if "dur" in c else sum(vozes[f][1] - 0.2 for f in fs)) + (X if i < len(cenas) - 1 else 0.4)
+            for i, (c, fs) in enumerate(zip(cenas, falas))]   # fala já tem ~0,25 s de respiro nas pontas
     clipes = []
     for i, (c, d) in enumerate(zip(cenas, durs)):
         n = int(round(d * FPS)); mov = c.get("mov", "in")
@@ -76,6 +78,9 @@ def main(pasta, cfg="ugc.json"):
             fil.append(f"[{k}:a]aresample={SR},aformat=channel_layouts=mono,volume={u.get('ambiente', 0.25)},afade=t=in:d=0.15,"
                        f"adelay={ms}|{ms}[s{k}]"); k += 1
         ini += durs[i] - X
+    if k == 0:   # vídeo mudo: trilha de silêncio (a música entra no Gerenciador de Anúncios)
+        ent += ["-f", "lavfi", "-t", f"{t:.3f}", "-i", f"anullsrc=r={SR}:cl=mono"]
+        fil.append(f"[{k}:a]anull[s{k}]"); k += 1
     fil.append("".join(f"[s{i}]" for i in range(k)) + f"amix=inputs={k}:normalize=0,apad=whole_dur={t:.3f},"
                f"atrim=0:{t:.3f},loudnorm=I=-14:TP=-1.5:LRA=11,aformat=channel_layouts=stereo[a]")
     final = v / cfg.replace(".json", ".mp4")
@@ -86,7 +91,7 @@ def main(pasta, cfg="ugc.json"):
         c.unlink()
     r = subprocess.run(["ffmpeg", "-nostdin", "-i", str(final), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
     lufs = float(r[r.rindex("I:"):].split()[1])
-    if abs(lufs + 14) > 0.5:   # loudnorm de uma passada fica abaixo da meta em trechos curtos
+    if lufs > -60 and abs(lufs + 14) > 0.5:   # (mudo: pula) loudnorm de uma passada fica abaixo da meta em trechos curtos
         tmp = final.with_name("_g.mp4")
         sh("-i", str(final), "-c:v", "copy", "-af", f"volume={-14 - lufs:.2f}dB,alimiter=limit=0.89:level=false", "-c:a", "aac",
            "-b:a", "192k", "-movflags", "+faststart", str(tmp)); tmp.replace(final)

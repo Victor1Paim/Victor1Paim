@@ -1,0 +1,38 @@
+{
+ "template": "anuncio.html",
+ "cenas": [
+  {
+   "img": "img/q1.png",
+   "dur": 2.8,
+   "texto": "Estudou inglês anos…\ne ainda *não pegou*? 🤔",
+   "mov": "in"
+  },
+  {
+   "img": "img/quiz.png",
+   "dur": 2.8,
+   "texto": "Faça o *teste rápido*:\n6 perguntas, 1 minuto ⏱️",
+   "mov": "in",
+   "ia": false
+  },
+  {
+   "img": "img/q3.png",
+   "dur": 2.8,
+   "texto": "Descubra *por que*\ne o jeito mais fácil\npra você",
+   "mov": "esq"
+  },
+  {
+   "img": "img/tela.png",
+   "dur": 2.8,
+   "texto": "Aula curtinha, *frase pronta*\ne pronúncia escrita",
+   "mov": "in",
+   "ia": false
+  },
+  {
+   "img": "img/fim_quiz.png",
+   "dur": 2.6,
+   "texto": "",
+   "mov": "in",
+   "ia": false
+  }
+ ]
+}
