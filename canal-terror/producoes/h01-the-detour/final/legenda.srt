@@ -1,945 +1,763 @@
 1
-00:00:00,000 --> 00:00:02,660
+00:00:12,000 --> 00:00:14,440
 I'd been driving for
 almost 11 hours when the
 
 2
-00:00:02,660 --> 00:00:04,500
+00:00:14,440 --> 00:00:16,220
 detour signs pushed me off the interstate.
 
 3
-00:00:05,200 --> 00:00:08,000
-The road narrowed to two
-lanes, then the radio
-
-4
-00:00:08,000 --> 00:00:10,360
+00:00:16,960 --> 00:00:21,720
+The road narrowed to two lanes, the radio
 lost its station, and for a long time the
 
-5
-00:00:10,360 --> 00:00:12,140
+4
+00:00:21,720 --> 00:00:23,880
 only light out there
 was my own headlights.
 
-6
-00:00:13,220 --> 00:00:16,860
-Around two in the morning, I saw a gas
+5
+00:00:24,820 --> 00:00:28,540
+Around two in the morning I saw a gas
 station sign glowing over the fields.
 
-7
-00:00:17,560 --> 00:00:22,060
+6
+00:00:29,060 --> 00:00:34,140
 The pumps were on, the store was dark, and
 there was one other car parked by the air
 
-8
-00:00:22,060 --> 00:00:24,860
+7
+00:00:34,140 --> 00:00:37,020
 machine with its engine
 running and nobody inside.
 
+8
+00:00:37,780 --> 00:00:40,100
+This was six years ago, in October.
+
 9
-00:00:25,720 --> 00:00:28,160
-This was in October, about six years ago.
+00:00:40,800 --> 00:00:43,840
+I was 24 and moving back
+home to Missouri after
 
 10
-00:00:28,800 --> 00:00:33,040
-I was 24 and moving back home to Missouri
-after a job in Colorado fell apart.
+00:00:43,840 --> 00:00:46,160
+a job in Colorado fell
+apart, with everything
 
 11
-00:00:34,000 --> 00:00:37,380
-Everything I owned was in the backseat
-of a Corolla with a cracked windshield.
+00:00:46,160 --> 00:00:48,460
+I owned in the backseat of a
+Corolla with a cracked windshield.
 
 12
-00:00:37,940 --> 00:00:40,200
-I'd planned to stop for the
-night in a motel somewhere
+00:00:49,140 --> 00:00:52,240
+I kept telling myself
+one more hour, and by the
 
 13
-00:00:40,200 --> 00:00:42,700
-in western Kansas, but I kept telling
+00:00:52,240 --> 00:00:54,120
+time the detour came up, I was too tired
 
 14
-00:00:42,740 --> 00:00:45,820
-myself one more hour, and
-by the time the detour
+00:00:54,120 --> 00:00:55,260
+to be smart about it.
 
 15
-00:00:45,820 --> 00:00:47,720
-came up, I was too tired to be smart
+00:00:55,960 --> 00:00:58,220
+For a while there was
+a pickup truck ahead of
 
 16
-00:00:47,720 --> 00:00:48,520
-about it.
+00:00:58,220 --> 00:01:00,360
+me, the only other headlights for miles.
 
 17
-00:00:48,840 --> 00:00:51,680
-The last real town I
-passed was a place with
-
-18
-00:00:51,680 --> 00:00:54,240
-one stoplight and a grain elevator lit up
-
-19
-00:00:54,240 --> 00:00:55,040
-like a ship.
-
-20
-00:00:55,520 --> 00:00:57,780
-After that, the map on
-my phone turned into a
-
-21
-00:00:57,780 --> 00:01:00,340
-gray blank with a single blue line through
-
-22
-00:01:00,360 --> 00:01:01,160
-it.
-
-23
-00:01:01,140 --> 00:01:03,360
-When the detour started,
-there was a pickup truck
-
-24
-00:01:03,360 --> 00:01:05,420
-ahead of me for a while, the only other
-
-25
-00:01:05,420 --> 00:01:06,380
-headlights for miles.
-
-26
-00:01:07,400 --> 00:01:10,380
+00:01:00,940 --> 00:01:04,060
 At a crossroads with no
 signs at all, it turned
 
-27
-00:01:10,380 --> 00:01:12,540
+18
+00:01:04,060 --> 00:01:06,400
 onto a dirt road, and its lights went out
 
-28
-00:01:12,540 --> 00:01:15,600
-almost immediately, like it had
-pulled over and shut off the engine.
+19
+00:01:06,400 --> 00:01:07,200
+almost at once.
 
-29
-00:01:16,140 --> 00:01:18,720
-I remember thinking that
-was a strange place to stop.
+20
+00:01:08,060 --> 00:01:10,740
+It didn't park, it didn't
+slow down that I could
 
-30
-00:01:19,220 --> 00:01:22,140
+21
+00:01:11,020 --> 00:01:13,180
+see, the lights just went out, and the
+
+22
+00:01:13,180 --> 00:01:15,000
+dark closed over the
+spot where it had been.
+
+23
+00:01:15,640 --> 00:01:19,160
 I kept going straight, because
 the orange arrows told me to.
 
-31
-00:01:22,860 --> 00:01:25,340
-I pulled up to the pump,
+24
+00:01:19,700 --> 00:01:22,080
+I pulled up to the pump
 farthest from the other car.
 
-32
-00:01:25,960 --> 00:01:29,980
-It was an older station wagon, dark green
-with wood panels on the sides and a bumper
+25
+00:01:22,520 --> 00:01:26,360
+It was an old station wagon, dark
+green with wood panels on the sides.
 
-33
-00:01:29,980 --> 00:01:32,120
-sticker that said, Proud
-Parent of an Honor Student,
+26
+00:01:27,440 --> 00:01:28,980
+Exhaust was rising from it in the cold.
 
-34
-00:01:32,260 --> 00:01:33,500
-with the name of the school scratched
-
-35
-00:01:33,500 --> 00:01:34,300
-off.
-
-36
-00:01:34,400 --> 00:01:36,300
-The exhaust was rising in the cold.
-
-37
-00:01:36,980 --> 00:01:38,680
+27
+00:01:29,600 --> 00:01:31,820
 The headlights were off,
 but the dome light was
 
-38
-00:01:38,680 --> 00:01:40,840
+28
+00:01:31,820 --> 00:01:34,360
 on, and I could see a
 jacket on the passenger
 
-39
-00:01:40,840 --> 00:01:42,760
+29
+00:01:34,360 --> 00:01:36,440
 seat and a fast food bag on the dashboard.
 
-40
-00:01:43,660 --> 00:01:45,780
-I figured whoever it
-belonged to was in the
+30
+00:01:37,840 --> 00:01:39,900
+In the back, there was
+a child's booster seat,
 
-41
-00:01:45,780 --> 00:01:46,700
-bathroom around the side of the building.
+31
+00:01:40,360 --> 00:01:42,460
+and a stuffed rabbit sitting in it, turned
 
-42
-00:01:47,820 --> 00:01:49,280
-Then I noticed the backseat.
+32
+00:01:42,460 --> 00:01:43,780
+around so it faced the rear window.
 
-43
-00:01:49,940 --> 00:01:52,500
-There was a child's booster
-seat behind the driver,
+33
+00:01:44,640 --> 00:01:47,280
+Two small sneakers sat on
+the floor mat underneath,
 
-44
-00:01:53,120 --> 00:01:55,120
-and a stuffed rabbit sitting in it,
+34
+00:01:47,800 --> 00:01:49,740
+side by side, like someone had taken them
 
-45
-00:01:55,300 --> 00:01:57,180
-turned around so it faced the rear window.
+35
+00:01:49,740 --> 00:01:51,400
+off and meant to put them right back on.
 
-46
-00:01:57,840 --> 00:02:03,000
-A pair of small sneakers sat on the floor
-mat underneath, neatly side by side, like
-
-47
-00:02:03,000 --> 00:02:05,760
-someone had taken them off and
-planned to put them right back on.
-
-48
-00:02:06,520 --> 00:02:08,860
-Whoever had been driving
-that car hadn't been alone.
-
-49
-00:02:09,580 --> 00:02:11,100
+36
+00:01:52,000 --> 00:01:53,360
 I filled the tank and waited.
 
-50
-00:02:11,300 --> 00:02:12,440
-I don't know why I waited.
-
-51
-00:02:12,800 --> 00:02:16,760
+37
+00:01:54,060 --> 00:01:58,100
 I think I wanted to see someone walk back
 to that car, just so I could stop thinking
 
-52
-00:02:16,760 --> 00:02:17,560
+38
+00:01:58,100 --> 00:01:58,900
 about it.
 
-53
-00:02:18,100 --> 00:02:18,900
+39
+00:01:59,240 --> 00:02:00,040
 Nobody came.
 
-54
-00:02:19,560 --> 00:02:21,540
-The pump clicked off,
-the screen asked if I
+40
+00:02:00,300 --> 00:02:03,280
+The engine kept idling, steady,
+like it had been running for hours.
 
-55
-00:02:21,540 --> 00:02:23,840
-wanted a receipt, and the whole time that
+41
+00:02:03,940 --> 00:02:06,760
+Then, while I was watching,
+the dome light went off.
 
-56
-00:02:23,840 --> 00:02:27,440
-engine kept idling, steady, like
-it had been running for hours.
+42
+00:02:07,600 --> 00:02:10,700
+I stood there with the nozzle in my
+hand and stared at the dark windows.
 
-57
-00:02:28,420 --> 00:02:29,800
-I didn't go check the bathroom.
+43
+00:02:11,740 --> 00:02:13,260
+A few seconds later, it came back on.
 
-58
-00:02:30,140 --> 00:02:31,720
-I got back in my car and left.
+44
+00:02:14,140 --> 00:02:14,980
+Nobody had opened a door.
 
-59
-00:02:32,860 --> 00:02:35,860
-As I pulled away, I looked in the
-rearview mirror one last time.
+45
+00:02:15,880 --> 00:02:18,900
+I hung up the nozzle, got
+back in my car, and left.
 
-60
-00:02:36,280 --> 00:02:38,400
-The dome light in the wagon was still on.
+46
+00:02:19,640 --> 00:02:22,520
+At the edge of the lot, I looked in
+the rearview mirror one last time.
 
-61
-00:02:38,880 --> 00:02:42,060
-The stuffed rabbit in the
-backseat was facing forward now.
+47
+00:02:23,220 --> 00:02:24,360
+The dome light was still on.
 
-62
-00:02:42,740 --> 00:02:46,640
+48
+00:02:24,720 --> 00:02:27,740
+The stuffed rabbit was facing forward now.
+
+49
+00:02:28,600 --> 00:02:31,920
 About twenty minutes later, the
 detour signs ended at a truck stop.
 
-63
-00:02:47,440 --> 00:02:49,900
-It was the first real building
-I'd seen in a long time.
+50
+00:02:32,560 --> 00:02:34,280
+The first real building I'd seen in hours.
 
-64
-00:02:50,660 --> 00:02:53,040
-A diner on one side, a
-couple of semis parked
+51
+00:02:35,200 --> 00:02:37,420
+The diner, a couple of
+semis parked out back with
 
-65
-00:02:53,040 --> 00:02:55,240
-out back with their running lights on, and
+52
+00:02:37,420 --> 00:02:39,400
+their running lights on, and a sign that
 
-66
-00:02:55,240 --> 00:02:58,980
-a sign that said, Open 24 hours,
-with two of the letters burned out.
+53
+00:02:39,400 --> 00:02:42,420
+said Open 24 hours, with two
+of the letters burned out.
 
-67
-00:03:00,060 --> 00:03:01,940
-I parked near the
-entrance because I needed
+54
+00:02:42,980 --> 00:02:47,200
+I parked by the entrance because I needed
+coffee, and I needed to be around people.
 
-68
-00:03:01,940 --> 00:03:04,180
-coffee, and I needed to sit somewhere with
+55
+00:02:48,220 --> 00:02:51,580
+Inside it was warm and smelled like
+burnt coffee and bacon grease.
 
-69
-00:03:04,180 --> 00:03:05,000
-people for a while.
-
-70
-00:03:06,320 --> 00:03:09,880
-Inside, it was warm and smelled
-like burnt coffee and bacon grease.
-
-71
-00:03:10,460 --> 00:03:12,300
+56
+00:02:51,760 --> 00:02:53,580
 There was a trucker at
 the counter, reading
 
-72
-00:03:12,300 --> 00:03:14,720
-his phone, an older man asleep in a booth
+57
+00:02:53,580 --> 00:02:56,000
+his phone, an old man asleep in a booth by
 
-73
-00:03:14,720 --> 00:03:16,160
-by the window, and one waitress.
+58
+00:02:56,000 --> 00:02:57,320
+the window, and one waitress.
 
-74
-00:03:17,200 --> 00:03:21,880
-Her name tag said D. She looked about fifty,
-and she called me honey before I'd even
+59
+00:02:57,760 --> 00:02:59,000
+Her name tag said D.
 
-75
-00:03:21,880 --> 00:03:22,680
-sat down.
+60
+00:02:59,780 --> 00:03:01,460
+She called me honey
+before I'd even sat down.
 
-76
-00:03:23,120 --> 00:03:25,960
-I took a booth facing
-the door, ordered coffee
+61
+00:03:01,860 --> 00:03:05,300
+I took a booth facing the door and
+ordered coffee and a slice of pie.
 
-77
-00:03:25,960 --> 00:03:27,960
-and a slice of pie, and started looking at
-
-78
-00:03:27,960 --> 00:03:32,280
-the map on my phone, trying to figure
-out how far I was from anything.
-
-79
-00:03:34,040 --> 00:03:35,720
+62
+00:03:06,180 --> 00:03:08,380
 That's when the couple came in.
 
-80
-00:03:36,220 --> 00:03:38,260
-They were young, maybe my age.
+63
+00:03:08,520 --> 00:03:09,500
+They were young.
 
-81
-00:03:39,200 --> 00:03:41,400
-The guy wore a gray
-hoodie, and the girl had
+64
+00:03:10,220 --> 00:03:11,020
+Maybe my age.
 
-82
-00:03:41,400 --> 00:03:43,440
-on a denim jacket that
-was too thin for the
+65
+00:03:11,660 --> 00:03:13,960
+He wore a gray hoodie,
+and she had on a denim
 
-83
-00:03:43,440 --> 00:03:44,240
-weather.
+66
+00:03:13,960 --> 00:03:15,560
+jacket that was too thin for the weather.
 
-84
-00:03:44,020 --> 00:03:46,420
-It had started to rain
-outside, and the shoulders
+67
+00:03:16,480 --> 00:03:19,940
+It had started to rain, and the shoulders
+of both jackets were dark with it.
 
-85
-00:03:46,420 --> 00:03:47,920
-of their jackets were dark with it.
-
-86
-00:03:48,400 --> 00:03:51,840
+68
+00:03:20,560 --> 00:03:24,220
 They were arguing in that low,
 tight way people argue in public.
 
-87
-00:03:52,300 --> 00:03:55,900
-As they walked past my booth, the
-girl said, Every single time, Ray.
+69
+00:03:25,160 --> 00:03:30,100
+As they passed my booth, the girl said,
+every single time, Ray, every single time.
 
-88
-00:03:56,060 --> 00:03:57,240
-Every single time.
-
-89
-00:03:58,040 --> 00:03:58,840
+70
+00:03:31,020 --> 00:03:31,820
 He didn't answer.
 
-90
-00:03:59,460 --> 00:04:01,860
+71
+00:03:32,660 --> 00:03:34,940
 They sat two booths down
-from me, across the
+from me, across the aisle,
 
-91
-00:04:01,860 --> 00:04:04,280
-aisle, and D. went over with menus and two
+72
+00:03:35,660 --> 00:03:37,480
+and D. brought them menus and two waters.
 
-92
-00:04:04,280 --> 00:04:05,340
-waters like it was nothing.
+73
+00:03:38,380 --> 00:03:41,320
+I ate my pie and heard pieces
+of their conversation,
 
-93
-00:04:06,220 --> 00:04:07,900
-I didn't think much about it.
+74
+00:03:41,960 --> 00:03:44,300
+something about a wrong
+turn and whose idea
 
-94
-00:04:08,520 --> 00:04:09,320
-I ate my pie.
+75
+00:03:44,300 --> 00:03:45,420
+it was to leave so late.
 
-95
-00:04:09,900 --> 00:04:12,180
-I heard bits of their
-conversation, something about
+76
+00:03:45,880 --> 00:03:49,660
+At one point, Ray said, we'll
+be fine, we're almost there.
 
-96
-00:04:12,180 --> 00:04:14,540
-a wrong turn and whose idea it had been
-
-97
-00:04:14,540 --> 00:04:15,420
-to leave so late.
-
-98
-00:04:15,940 --> 00:04:18,640
-The girl had a laugh that
-wasn't really a laugh.
-
-99
-00:04:19,440 --> 00:04:21,140
-At one point, Ray said, We'll be fine.
-
-100
-00:04:21,600 --> 00:04:22,400
-We're almost there.
-
-101
-00:04:22,960 --> 00:04:24,140
+77
+00:03:50,520 --> 00:03:51,660
 She didn't say anything back.
 
-102
-00:04:25,340 --> 00:04:27,820
-D. came by to refill my coffee
-and asked where I was headed.
+78
+00:03:52,420 --> 00:03:55,120
+When D. refilled my coffee,
+she asked where I was headed.
 
-103
-00:04:28,400 --> 00:04:31,520
-When I told her Missouri, she nodded
-like she'd heard it a thousand times.
+79
+00:03:55,540 --> 00:03:56,340
+I said Missouri.
 
-104
-00:04:31,880 --> 00:04:34,420
-Then she glanced at the window
-and lowered her voice a little.
+80
+00:03:56,460 --> 00:03:58,500
+She glanced out the window
+and lowered her voice.
 
-105
-00:04:35,120 --> 00:04:38,760
-She said, When you leave, honey, follow
+81
+00:03:59,160 --> 00:04:01,820
+When you leave, honey, follow
 the signs back to the interstate.
 
-106
-00:04:39,300 --> 00:04:42,140
+82
+00:04:02,420 --> 00:04:04,900
 Don't take the old county road, even
-if your phone tells you it's shorter.
+if your phone says it's shorter.
 
-107
-00:04:42,880 --> 00:04:43,680
+83
+00:04:05,580 --> 00:04:06,520
 I asked her why.
 
-108
-00:04:44,200 --> 00:04:46,680
-She just smiled, said
-the road wasn't kept up
+84
+00:04:06,740 --> 00:04:10,160
+She smiled, said that road wasn't
+kept up anymore, and walked away.
 
-109
-00:04:46,680 --> 00:04:48,480
-anymore, and went back behind the counter.
+85
+00:04:10,860 --> 00:04:13,400
+I got up to use the
+restroom, at the end of a
 
-110
-00:04:49,540 --> 00:04:51,400
-After a while, I got up
-to use the restroom.
+86
+00:04:13,400 --> 00:04:15,280
+short hallway past the kitchen, where one
 
-111
-00:04:51,800 --> 00:04:53,980
-It was at the end of a short
-hallway past the kitchen.
+87
+00:04:15,280 --> 00:04:16,320
+of the lights kept flickering.
 
-112
-00:04:54,500 --> 00:04:56,280
-I remember the hallway
-because one of the fluorescent
+88
+00:04:16,320 --> 00:04:19,840
+I was washing my hands when
+I heard her voice through
 
-113
-00:04:56,280 --> 00:04:57,760
-lights was flickering, and there
+89
+00:04:19,840 --> 00:04:22,320
+the wall, from outside, from the parking
 
-114
-00:04:57,760 --> 00:05:01,100
-was a corkboard on the wall with business
-cards and a flyer for a missing dog.
+90
+00:04:22,100 --> 00:04:24,660
+lot, every single time, Ray.
 
-115
-00:05:02,020 --> 00:05:03,840
-I was in there maybe
-three or four minutes.
+91
+00:04:25,300 --> 00:04:28,760
+It was the same tired, angry
+tone and the same words.
 
-116
-00:05:04,060 --> 00:05:06,640
-I washed my hands,
-splashed water on my face,
+92
+00:04:29,540 --> 00:04:31,220
+I turned off the water and listened.
 
-117
-00:05:06,720 --> 00:05:08,840
-and looked at myself in
-the mirror, thinking
+93
+00:04:31,900 --> 00:04:34,260
+A man's voice answered
+her, too low to make out,
 
-118
-00:05:08,840 --> 00:05:10,440
-I really needed to find a bed.
+94
+00:04:34,840 --> 00:04:37,160
+and then a car door shut, then nothing.
 
-119
-00:05:11,120 --> 00:05:15,660
+95
+00:04:37,920 --> 00:04:40,040
+I stood there with my
+wet hands out in front of
+
+96
+00:04:40,040 --> 00:04:42,160
+me, telling myself there was a window open
+
+97
+00:04:42,160 --> 00:04:44,000
+somewhere that sound carries.
+
+98
+00:04:44,680 --> 00:04:49,260
 When I came out and walked back toward my
 booth, the bell over the front door rang.
 
-120
-00:05:16,380 --> 00:05:17,420
+99
+00:04:50,540 --> 00:04:51,340
 It was them.
 
-121
-00:05:17,700 --> 00:05:18,500
-The same couple.
+100
+00:04:52,140 --> 00:04:55,300
+Gray hoodie, thin denim jacket,
+both of them dark with rain.
 
-122
-00:05:19,120 --> 00:05:23,400
-Gray hoodie, thin denim jacket, the
-shoulders of both jackets dark with rain.
-
-123
-00:05:24,140 --> 00:05:26,420
+101
+00:04:55,760 --> 00:04:57,740
 They walked in the same
 way, him a step ahead,
 
-124
-00:05:26,820 --> 00:05:28,460
-her a little behind with her arms crossed.
+102
+00:04:58,060 --> 00:05:00,280
+her behind with her arms
+crossed, and as they
 
-125
-00:05:28,460 --> 00:05:30,700
-And as they passed me, the girl said,
+103
+00:05:00,280 --> 00:05:04,060
+passed me, she said, every single
+time, Ray, every single time.
 
-126
-00:05:30,980 --> 00:05:32,740
-Every single time, Ray.
+104
+00:05:04,880 --> 00:05:07,800
+I stopped in the aisle and looked at
+the booth where they'd been sitting.
 
-127
-00:05:33,060 --> 00:05:34,260
-Every single time.
-
-128
-00:05:35,020 --> 00:05:36,240
-I stopped in the aisle.
-
-129
-00:05:37,120 --> 00:05:39,500
-I looked over at the booth two down
-from mine, where they'd been sitting.
-
-130
-00:05:40,280 --> 00:05:41,080
+105
+00:05:08,040 --> 00:05:08,960
 It was empty.
 
-131
-00:05:41,600 --> 00:05:44,540
+106
+00:05:09,720 --> 00:05:12,500
 No menus, no glasses, no
 wet rings on the table.
 
-132
-00:05:45,040 --> 00:05:47,420
+107
+00:05:12,940 --> 00:05:15,720
 It had been wiped down like
 nobody had used it all night.
 
-133
-00:05:48,180 --> 00:05:49,860
+108
+00:05:16,820 --> 00:05:18,160
 They sat in that same booth.
 
-134
-00:05:50,720 --> 00:05:54,660
-Dee came over with two menus and two waters,
-and she smiled at them, and she said,
+109
+00:05:19,020 --> 00:05:21,020
+Dee came over with two
+menus and two waters,
 
-135
-00:05:55,300 --> 00:05:56,100
-Evening, you two.
+110
+00:05:21,660 --> 00:05:23,680
+smiled at them, and said, evening you two.
 
-136
-00:05:56,460 --> 00:05:57,260
+111
+00:05:24,200 --> 00:05:25,000
 Rough night out there?
 
-137
-00:05:57,840 --> 00:06:00,080
-Exactly how you'd greet
+112
+00:05:25,120 --> 00:05:26,980
+The way you'd greet
 someone who just walked in.
 
-138
-00:06:01,220 --> 00:06:02,840
-I stood there long enough
-that I felt stupid,
+113
+00:05:27,720 --> 00:05:30,720
+I made myself walk past their
+table on the way back to mine.
 
-139
-00:06:03,280 --> 00:06:05,000
-so I made myself walk past their booth on
+114
+00:05:31,480 --> 00:05:33,560
+Up close, I could see
+the rain on her jacket,
 
-140
-00:06:05,000 --> 00:06:05,820
-the way back to mine.
+115
+00:05:34,280 --> 00:05:36,040
+soaked into the denim in exactly the same
 
-141
-00:06:06,640 --> 00:06:08,400
-Up close, I could see the girl's jacket.
+116
+00:05:36,040 --> 00:05:36,840
+shape as before.
 
-142
-00:06:08,980 --> 00:06:11,060
-The rain had soaked into
-the denim in exactly the
-
-143
-00:06:11,060 --> 00:06:13,520
-same shape as before, a dark patch across
-
-144
-00:06:13,520 --> 00:06:15,800
-both shoulders and a long
-streak down one arm.
-
-145
-00:06:17,060 --> 00:06:19,280
+117
+00:05:37,620 --> 00:05:40,260
 Ray had his wrist on the table,
 and his watch caught the light.
 
-146
-00:06:19,680 --> 00:06:21,500
-It was one of those old digital watches.
+118
+00:05:40,260 --> 00:05:42,580
+It was an old digital watch.
 
-147
-00:06:21,860 --> 00:06:25,660
-It read 214, and while I
-watched, it didn't change.
+119
+00:05:43,300 --> 00:05:47,120
+It read 214, and the whole time
+I stood there, it didn't change.
 
-148
-00:06:26,540 --> 00:06:29,580
-I sat down because I didn't
-know what else to do.
+120
+00:05:47,800 --> 00:05:51,140
+I sat down, and I watched
+them have the same
 
-149
-00:06:30,240 --> 00:06:31,240
-My coffee was still there.
+121
+00:05:51,140 --> 00:05:54,120
+conversation, wrong
+turn, leaving too late.
 
-150
-00:06:31,320 --> 00:06:32,300
-My plate was still there.
+122
+00:05:54,680 --> 00:05:57,120
+The trucker never looked
+up from his phone, and
 
-151
-00:06:32,760 --> 00:06:33,760
-I watched them.
+123
+00:05:57,120 --> 00:05:59,060
+the old man by the window never woke up.
 
-152
-00:06:34,300 --> 00:06:36,540
-I kept waiting for one
-of them to look at me,
-
-153
-00:06:36,640 --> 00:06:38,780
-or laugh, or for this to turn into some
-
-154
-00:06:38,780 --> 00:06:39,580
-kind of joke.
-
-155
-00:06:40,520 --> 00:06:41,500
-Ray was rubbing his eyes.
-
-156
-00:06:42,120 --> 00:06:44,200
-The girl was looking out the
-window at the parking lot.
-
-157
-00:06:44,720 --> 00:06:47,000
-They were having the same conversation.
-
-158
-00:06:47,780 --> 00:06:48,580
-Wrong turn.
-
-159
-00:06:48,760 --> 00:06:49,560
-Leaving too late.
-
-160
-00:06:49,740 --> 00:06:51,600
-And then Ray said, We'll be fine.
-
-161
-00:06:51,820 --> 00:06:52,620
-We're almost there.
-
-162
-00:06:53,120 --> 00:06:54,820
-I looked at the trucker at the counter.
-
-163
-00:06:55,560 --> 00:06:57,460
-He hadn't looked up from
-his phone the whole time.
-
-164
-00:06:57,860 --> 00:07:00,240
-The old man in the window
-booth was still asleep.
-
-165
-00:07:01,040 --> 00:07:03,680
+124
+00:05:59,860 --> 00:06:02,100
 Nobody else in that room seemed
 to think anything was wrong.
 
-166
-00:07:04,400 --> 00:07:07,780
-I don't know where the nerve came
-from, but I walked over to their booth.
+125
+00:06:02,820 --> 00:06:05,040
+I still don't know where
+the nerve came from,
 
-167
-00:07:08,780 --> 00:07:10,820
-I stood at the end of
-the table and asked, as
+126
+00:06:05,260 --> 00:06:07,020
+but I walked over and stood at the end of
 
-168
-00:07:10,820 --> 00:07:13,100
-normally as I could, if they'd just gotten
+127
+00:06:07,020 --> 00:06:07,820
+their table.
 
-169
-00:07:13,100 --> 00:07:13,900
-there.
+128
+00:06:07,940 --> 00:06:10,940
+I asked, as normally as I could,
+if they'd just gotten there.
 
-170
-00:07:14,200 --> 00:07:15,140
-The girl didn't look at me.
+129
+00:06:11,820 --> 00:06:13,620
+The girl kept staring
+out at the parking lot.
 
-171
-00:07:15,620 --> 00:07:16,940
-She kept staring at the parking lot.
+130
+00:06:14,340 --> 00:06:15,140
+Ray looked up at me.
 
-172
-00:07:17,980 --> 00:07:21,060
-Ray looked up, and for a second, I thought
-he was going to say something real.
-
-173
-00:07:21,540 --> 00:07:24,480
+131
+00:06:15,700 --> 00:06:18,160
 His eyes were red, like he hadn't
 slept in a very long time.
 
-174
-00:07:25,360 --> 00:07:28,260
-Then he said, very calmly, We'll be fine.
+132
+00:06:18,860 --> 00:06:21,580
+Then he said, very calmly, we'll be fine.
 
-175
-00:07:28,840 --> 00:07:29,640
+133
+00:06:22,040 --> 00:06:22,840
 We're almost there.
 
-176
-00:07:30,060 --> 00:07:32,780
+134
+00:06:23,580 --> 00:06:26,340
 He said it to me, exactly
 the way he'd said it to her.
 
-177
-00:07:33,540 --> 00:07:35,820
+135
+00:06:27,280 --> 00:06:29,460
+Then Dee was beside me
+with the coffee pot.
+
+136
+00:06:30,080 --> 00:06:33,000
+She put her hand on my arm,
+very gently, and walked
+
+137
+00:06:33,000 --> 00:06:34,700
+me back to my booth like I was a little
+
+138
+00:06:34,700 --> 00:06:36,200
+kid who'd wandered off in a store.
+
+139
+00:06:36,760 --> 00:06:38,880
+Don't bother them,
+honey, she said quietly.
+
+140
+00:06:39,040 --> 00:06:40,400
+They never stay long.
+
+141
+00:06:40,580 --> 00:06:42,080
+She filled my cup to the top.
+
+142
+00:06:42,620 --> 00:06:44,740
+I hadn't touched it since
+the last time she filled it.
+
+143
+00:06:45,360 --> 00:06:47,780
 I left a twenty on the
 table and walked out.
 
-178
-00:07:36,180 --> 00:07:37,080
-I didn't wait for change.
+144
+00:06:48,680 --> 00:06:51,560
+Outside the rain had stopped,
+and the parking lot was dry.
 
-179
-00:07:37,500 --> 00:07:40,920
-When I got outside, the rain had
-stopped, and the parking lot was dry.
-
-180
-00:07:41,320 --> 00:07:42,120
+145
+00:06:52,380 --> 00:06:53,180
 Completely dry.
 
-181
-00:07:42,660 --> 00:07:43,460
-No puddles.
+146
+00:06:53,600 --> 00:06:55,680
+No puddles, no drops on my windshield.
 
-182
-00:07:43,700 --> 00:07:44,740
-Nothing wet on my windshield.
+147
+00:06:56,400 --> 00:06:58,760
+I locked myself in my car
+and sat there with the
 
-183
-00:07:46,100 --> 00:07:48,080
-I stood there for a second,
-looking at the ground.
+148
+00:06:58,760 --> 00:07:00,660
+engine running until the sky turned gray,
 
-184
-00:07:48,780 --> 00:07:51,020
-Then I got in my car,
-locked the doors, and sat
+149
+00:07:01,040 --> 00:07:03,180
+and then I followed the
+signs back to the interstate,
 
-185
-00:07:51,020 --> 00:07:52,780
-with the engine running for a long time.
+150
+00:07:03,500 --> 00:07:05,040
+exactly the way Dee told me to.
 
-186
-00:07:54,320 --> 00:07:56,620
-I didn't want to drive past
-that gas station again.
-
-187
-00:07:57,040 --> 00:07:58,880
-I didn't want to go back inside, either.
-
-188
-00:07:59,100 --> 00:08:01,880
-So I just sat there
-until the sky started to
-
-189
-00:08:01,880 --> 00:08:03,880
-turn gray, and then I followed the signs
-
-190
-00:08:03,880 --> 00:08:04,680
-back to the interstate.
-
-191
-00:08:05,360 --> 00:08:08,020
+151
+00:07:05,720 --> 00:07:08,200
 I didn't pass the gas
 station on the way back.
 
-192
-00:08:08,620 --> 00:08:10,600
+152
+00:07:08,500 --> 00:07:10,400
 I took the same road, I'm sure of that.
 
-193
-00:08:10,880 --> 00:08:12,100
-It just wasn't there.
+153
+00:07:10,700 --> 00:07:12,800
+It just wasn't there anymore.
 
-194
-00:08:13,000 --> 00:08:15,980
-I had a dash cam back then,
-one of those cheap ones
-
-195
-00:08:15,980 --> 00:08:17,820
+154
+00:07:13,540 --> 00:07:18,380
+I had a cheap dash cam back then, the kind
 that records over itself every few hours.
 
-196
-00:08:18,720 --> 00:08:21,180
-When I finally got home
-and checked it, most
+155
+00:07:18,840 --> 00:07:21,720
+When I got home and checked it,
+most of that night was gone.
 
-197
-00:08:21,180 --> 00:08:22,500
-of that night had
-already been overwritten.
+156
+00:07:22,300 --> 00:07:27,060
+The only file left starts as I pull into
+the truck stop at 2.14 in the morning.
 
-198
-00:08:23,300 --> 00:08:26,060
-The only file left starts
-as I pull into the truck
-
-199
-00:08:26,060 --> 00:08:27,900
-stop parking lot at 2.14 in the morning.
-
-200
-00:08:28,720 --> 00:08:31,620
+157
+00:07:27,760 --> 00:07:30,900
 I park, the camera keeps
 recording, and about
 
-201
-00:08:31,620 --> 00:08:33,840
+158
+00:07:30,900 --> 00:07:33,300
 a minute later, the dark
 green station wagon
 
-202
-00:08:33,840 --> 00:08:35,800
+159
+00:07:33,300 --> 00:07:35,600
 pulls into the spot right in front of me.
 
-203
-00:08:35,960 --> 00:08:39,120
+160
+00:07:35,880 --> 00:07:39,580
 Engine running, dome
 light on, nobody inside.
 
-204
-00:08:40,160 --> 00:08:42,840
+161
+00:07:40,660 --> 00:07:43,340
 The date on that clip is October 14th.
 
-205
-00:08:43,040 --> 00:08:45,720
+162
+00:07:43,560 --> 00:07:46,200
 The year is the one before
 I ever drove that road.
 
-206
-00:08:46,400 --> 00:08:49,240
+163
+00:07:46,960 --> 00:07:49,740
 I still drive that interstate
 a couple of times a year.
 
-207
-00:08:50,000 --> 00:08:52,280
-If the detour signs are
+164
+00:07:50,100 --> 00:07:52,280
+When the detour signs are
 up, I don't take them.
 
-208
-00:08:52,900 --> 00:08:55,320
-I find the last town
-before the exit, I park
+165
+00:07:52,700 --> 00:07:55,480
+I stop in the last town before
+the exit, park somewhere
 
-209
-00:08:55,320 --> 00:08:57,580
-somewhere well lit, and I sleep in my car
+166
+00:07:55,480 --> 00:07:57,480
+well lit, and sleep in my car until
 
-210
-00:08:57,580 --> 00:08:58,380
-until morning.
+167
+00:07:57,480 --> 00:07:58,280
+morning.
 

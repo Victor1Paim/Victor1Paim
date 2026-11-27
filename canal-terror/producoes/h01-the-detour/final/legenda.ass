@@ -1,0 +1,179 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: L,Inter Medium,44,&H00EDF0F2,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0.3,0,1,2.2,1.2,2,160,160,72,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:12.00,0:00:14.44,L,,0,0,0,,{\fad(120,120)}I'd been driving for\Nalmost 11 hours when the
+Dialogue: 0,0:00:14.44,0:00:16.22,L,,0,0,0,,{\fad(120,120)}detour signs pushed me off the interstate.
+Dialogue: 0,0:00:16.96,0:00:21.72,L,,0,0,0,,{\fad(120,120)}The road narrowed to two lanes, the radio\Nlost its station, and for a long time the
+Dialogue: 0,0:00:21.72,0:00:23.88,L,,0,0,0,,{\fad(120,120)}only light out there\Nwas my own headlights.
+Dialogue: 0,0:00:24.82,0:00:28.54,L,,0,0,0,,{\fad(120,120)}Around two in the morning I saw a gas\Nstation sign glowing over the fields.
+Dialogue: 0,0:00:29.06,0:00:34.14,L,,0,0,0,,{\fad(120,120)}The pumps were on, the store was dark, and\Nthere was one other car parked by the air
+Dialogue: 0,0:00:34.14,0:00:37.02,L,,0,0,0,,{\fad(120,120)}machine with its engine\Nrunning and nobody inside.
+Dialogue: 0,0:00:37.78,0:00:40.10,L,,0,0,0,,{\fad(120,120)}This was six years ago, in October.
+Dialogue: 0,0:00:40.80,0:00:43.84,L,,0,0,0,,{\fad(120,120)}I was 24 and moving back\Nhome to Missouri after
+Dialogue: 0,0:00:43.84,0:00:46.16,L,,0,0,0,,{\fad(120,120)}a job in Colorado fell\Napart, with everything
+Dialogue: 0,0:00:46.16,0:00:48.46,L,,0,0,0,,{\fad(120,120)}I owned in the backseat of a\NCorolla with a cracked windshield.
+Dialogue: 0,0:00:49.14,0:00:52.24,L,,0,0,0,,{\fad(120,120)}I kept telling myself\None more hour, and by the
+Dialogue: 0,0:00:52.24,0:00:54.12,L,,0,0,0,,{\fad(120,120)}time the detour came up, I was too tired
+Dialogue: 0,0:00:54.12,0:00:55.26,L,,0,0,0,,{\fad(120,120)}to be smart about it.
+Dialogue: 0,0:00:55.96,0:00:58.22,L,,0,0,0,,{\fad(120,120)}For a while there was\Na pickup truck ahead of
+Dialogue: 0,0:00:58.22,0:01:00.36,L,,0,0,0,,{\fad(120,120)}me, the only other headlights for miles.
+Dialogue: 0,0:01:00.94,0:01:04.06,L,,0,0,0,,{\fad(120,120)}At a crossroads with no\Nsigns at all, it turned
+Dialogue: 0,0:01:04.06,0:01:06.40,L,,0,0,0,,{\fad(120,120)}onto a dirt road, and its lights went out
+Dialogue: 0,0:01:06.40,0:01:07.20,L,,0,0,0,,{\fad(120,120)}almost at once.
+Dialogue: 0,0:01:08.06,0:01:10.74,L,,0,0,0,,{\fad(120,120)}It didn't park, it didn't\Nslow down that I could
+Dialogue: 0,0:01:11.02,0:01:13.18,L,,0,0,0,,{\fad(120,120)}see, the lights just went out, and the
+Dialogue: 0,0:01:13.18,0:01:15.00,L,,0,0,0,,{\fad(120,120)}dark closed over the\Nspot where it had been.
+Dialogue: 0,0:01:15.64,0:01:19.16,L,,0,0,0,,{\fad(120,120)}I kept going straight, because\Nthe orange arrows told me to.
+Dialogue: 0,0:01:19.70,0:01:22.08,L,,0,0,0,,{\fad(120,120)}I pulled up to the pump\Nfarthest from the other car.
+Dialogue: 0,0:01:22.52,0:01:26.36,L,,0,0,0,,{\fad(120,120)}It was an old station wagon, dark\Ngreen with wood panels on the sides.
+Dialogue: 0,0:01:27.44,0:01:28.98,L,,0,0,0,,{\fad(120,120)}Exhaust was rising from it in the cold.
+Dialogue: 0,0:01:29.60,0:01:31.82,L,,0,0,0,,{\fad(120,120)}The headlights were off,\Nbut the dome light was
+Dialogue: 0,0:01:31.82,0:01:34.36,L,,0,0,0,,{\fad(120,120)}on, and I could see a\Njacket on the passenger
+Dialogue: 0,0:01:34.36,0:01:36.44,L,,0,0,0,,{\fad(120,120)}seat and a fast food bag on the dashboard.
+Dialogue: 0,0:01:37.84,0:01:39.90,L,,0,0,0,,{\fad(120,120)}In the back, there was\Na child's booster seat,
+Dialogue: 0,0:01:40.36,0:01:42.46,L,,0,0,0,,{\fad(120,120)}and a stuffed rabbit sitting in it, turned
+Dialogue: 0,0:01:42.46,0:01:43.78,L,,0,0,0,,{\fad(120,120)}around so it faced the rear window.
+Dialogue: 0,0:01:44.64,0:01:47.28,L,,0,0,0,,{\fad(120,120)}Two small sneakers sat on\Nthe floor mat underneath,
+Dialogue: 0,0:01:47.80,0:01:49.74,L,,0,0,0,,{\fad(120,120)}side by side, like someone had taken them
+Dialogue: 0,0:01:49.74,0:01:51.40,L,,0,0,0,,{\fad(120,120)}off and meant to put them right back on.
+Dialogue: 0,0:01:52.00,0:01:53.36,L,,0,0,0,,{\fad(120,120)}I filled the tank and waited.
+Dialogue: 0,0:01:54.06,0:01:58.10,L,,0,0,0,,{\fad(120,120)}I think I wanted to see someone walk back\Nto that car, just so I could stop thinking
+Dialogue: 0,0:01:58.10,0:01:58.90,L,,0,0,0,,{\fad(120,120)}about it.
+Dialogue: 0,0:01:59.24,0:02:00.04,L,,0,0,0,,{\fad(120,120)}Nobody came.
+Dialogue: 0,0:02:00.30,0:02:03.28,L,,0,0,0,,{\fad(120,120)}The engine kept idling, steady,\Nlike it had been running for hours.
+Dialogue: 0,0:02:03.94,0:02:06.76,L,,0,0,0,,{\fad(120,120)}Then, while I was watching,\Nthe dome light went off.
+Dialogue: 0,0:02:07.60,0:02:10.70,L,,0,0,0,,{\fad(120,120)}I stood there with the nozzle in my\Nhand and stared at the dark windows.
+Dialogue: 0,0:02:11.74,0:02:13.26,L,,0,0,0,,{\fad(120,120)}A few seconds later, it came back on.
+Dialogue: 0,0:02:14.14,0:02:14.98,L,,0,0,0,,{\fad(120,120)}Nobody had opened a door.
+Dialogue: 0,0:02:15.88,0:02:18.90,L,,0,0,0,,{\fad(120,120)}I hung up the nozzle, got\Nback in my car, and left.
+Dialogue: 0,0:02:19.64,0:02:22.52,L,,0,0,0,,{\fad(120,120)}At the edge of the lot, I looked in\Nthe rearview mirror one last time.
+Dialogue: 0,0:02:23.22,0:02:24.36,L,,0,0,0,,{\fad(120,120)}The dome light was still on.
+Dialogue: 0,0:02:24.72,0:02:27.74,L,,0,0,0,,{\fad(120,120)}The stuffed rabbit was facing forward now.
+Dialogue: 0,0:02:28.60,0:02:31.92,L,,0,0,0,,{\fad(120,120)}About twenty minutes later, the\Ndetour signs ended at a truck stop.
+Dialogue: 0,0:02:32.56,0:02:34.28,L,,0,0,0,,{\fad(120,120)}The first real building I'd seen in hours.
+Dialogue: 0,0:02:35.20,0:02:37.42,L,,0,0,0,,{\fad(120,120)}The diner, a couple of\Nsemis parked out back with
+Dialogue: 0,0:02:37.42,0:02:39.40,L,,0,0,0,,{\fad(120,120)}their running lights on, and a sign that
+Dialogue: 0,0:02:39.40,0:02:42.42,L,,0,0,0,,{\fad(120,120)}said Open 24 hours, with two\Nof the letters burned out.
+Dialogue: 0,0:02:42.98,0:02:47.20,L,,0,0,0,,{\fad(120,120)}I parked by the entrance because I needed\Ncoffee, and I needed to be around people.
+Dialogue: 0,0:02:48.22,0:02:51.58,L,,0,0,0,,{\fad(120,120)}Inside it was warm and smelled like\Nburnt coffee and bacon grease.
+Dialogue: 0,0:02:51.76,0:02:53.58,L,,0,0,0,,{\fad(120,120)}There was a trucker at\Nthe counter, reading
+Dialogue: 0,0:02:53.58,0:02:56.00,L,,0,0,0,,{\fad(120,120)}his phone, an old man asleep in a booth by
+Dialogue: 0,0:02:56.00,0:02:57.32,L,,0,0,0,,{\fad(120,120)}the window, and one waitress.
+Dialogue: 0,0:02:57.76,0:02:59.00,L,,0,0,0,,{\fad(120,120)}Her name tag said D.
+Dialogue: 0,0:02:59.78,0:03:01.46,L,,0,0,0,,{\fad(120,120)}She called me honey\Nbefore I'd even sat down.
+Dialogue: 0,0:03:01.86,0:03:05.30,L,,0,0,0,,{\fad(120,120)}I took a booth facing the door and\Nordered coffee and a slice of pie.
+Dialogue: 0,0:03:06.18,0:03:08.38,L,,0,0,0,,{\fad(120,120)}That's when the couple came in.
+Dialogue: 0,0:03:08.52,0:03:09.50,L,,0,0,0,,{\fad(120,120)}They were young.
+Dialogue: 0,0:03:10.22,0:03:11.02,L,,0,0,0,,{\fad(120,120)}Maybe my age.
+Dialogue: 0,0:03:11.66,0:03:13.96,L,,0,0,0,,{\fad(120,120)}He wore a gray hoodie,\Nand she had on a denim
+Dialogue: 0,0:03:13.96,0:03:15.56,L,,0,0,0,,{\fad(120,120)}jacket that was too thin for the weather.
+Dialogue: 0,0:03:16.48,0:03:19.94,L,,0,0,0,,{\fad(120,120)}It had started to rain, and the shoulders\Nof both jackets were dark with it.
+Dialogue: 0,0:03:20.56,0:03:24.22,L,,0,0,0,,{\fad(120,120)}They were arguing in that low,\Ntight way people argue in public.
+Dialogue: 0,0:03:25.16,0:03:30.10,L,,0,0,0,,{\fad(120,120)}As they passed my booth, the girl said,\Nevery single time, Ray, every single time.
+Dialogue: 0,0:03:31.02,0:03:31.82,L,,0,0,0,,{\fad(120,120)}He didn't answer.
+Dialogue: 0,0:03:32.66,0:03:34.94,L,,0,0,0,,{\fad(120,120)}They sat two booths down\Nfrom me, across the aisle,
+Dialogue: 0,0:03:35.66,0:03:37.48,L,,0,0,0,,{\fad(120,120)}and D. brought them menus and two waters.
+Dialogue: 0,0:03:38.38,0:03:41.32,L,,0,0,0,,{\fad(120,120)}I ate my pie and heard pieces\Nof their conversation,
+Dialogue: 0,0:03:41.96,0:03:44.30,L,,0,0,0,,{\fad(120,120)}something about a wrong\Nturn and whose idea
+Dialogue: 0,0:03:44.30,0:03:45.42,L,,0,0,0,,{\fad(120,120)}it was to leave so late.
+Dialogue: 0,0:03:45.88,0:03:49.66,L,,0,0,0,,{\fad(120,120)}At one point, Ray said, we'll\Nbe fine, we're almost there.
+Dialogue: 0,0:03:50.52,0:03:51.66,L,,0,0,0,,{\fad(120,120)}She didn't say anything back.
+Dialogue: 0,0:03:52.42,0:03:55.12,L,,0,0,0,,{\fad(120,120)}When D. refilled my coffee,\Nshe asked where I was headed.
+Dialogue: 0,0:03:55.54,0:03:56.34,L,,0,0,0,,{\fad(120,120)}I said Missouri.
+Dialogue: 0,0:03:56.46,0:03:58.50,L,,0,0,0,,{\fad(120,120)}She glanced out the window\Nand lowered her voice.
+Dialogue: 0,0:03:59.16,0:04:01.82,L,,0,0,0,,{\fad(120,120)}When you leave, honey, follow\Nthe signs back to the interstate.
+Dialogue: 0,0:04:02.42,0:04:04.90,L,,0,0,0,,{\fad(120,120)}Don't take the old county road, even\Nif your phone says it's shorter.
+Dialogue: 0,0:04:05.58,0:04:06.52,L,,0,0,0,,{\fad(120,120)}I asked her why.
+Dialogue: 0,0:04:06.74,0:04:10.16,L,,0,0,0,,{\fad(120,120)}She smiled, said that road wasn't\Nkept up anymore, and walked away.
+Dialogue: 0,0:04:10.86,0:04:13.40,L,,0,0,0,,{\fad(120,120)}I got up to use the\Nrestroom, at the end of a
+Dialogue: 0,0:04:13.40,0:04:15.28,L,,0,0,0,,{\fad(120,120)}short hallway past the kitchen, where one
+Dialogue: 0,0:04:15.28,0:04:16.32,L,,0,0,0,,{\fad(120,120)}of the lights kept flickering.
+Dialogue: 0,0:04:16.32,0:04:19.84,L,,0,0,0,,{\fad(120,120)}I was washing my hands when\NI heard her voice through
+Dialogue: 0,0:04:19.84,0:04:22.32,L,,0,0,0,,{\fad(120,120)}the wall, from outside, from the parking
+Dialogue: 0,0:04:22.10,0:04:24.66,L,,0,0,0,,{\fad(120,120)}lot, every single time, Ray.
+Dialogue: 0,0:04:25.30,0:04:28.76,L,,0,0,0,,{\fad(120,120)}It was the same tired, angry\Ntone and the same words.
+Dialogue: 0,0:04:29.54,0:04:31.22,L,,0,0,0,,{\fad(120,120)}I turned off the water and listened.
+Dialogue: 0,0:04:31.90,0:04:34.26,L,,0,0,0,,{\fad(120,120)}A man's voice answered\Nher, too low to make out,
+Dialogue: 0,0:04:34.84,0:04:37.16,L,,0,0,0,,{\fad(120,120)}and then a car door shut, then nothing.
+Dialogue: 0,0:04:37.92,0:04:40.04,L,,0,0,0,,{\fad(120,120)}I stood there with my\Nwet hands out in front of
+Dialogue: 0,0:04:40.04,0:04:42.16,L,,0,0,0,,{\fad(120,120)}me, telling myself there was a window open
+Dialogue: 0,0:04:42.16,0:04:44.00,L,,0,0,0,,{\fad(120,120)}somewhere that sound carries.
+Dialogue: 0,0:04:44.68,0:04:49.26,L,,0,0,0,,{\fad(120,120)}When I came out and walked back toward my\Nbooth, the bell over the front door rang.
+Dialogue: 0,0:04:50.54,0:04:51.34,L,,0,0,0,,{\fad(120,120)}It was them.
+Dialogue: 0,0:04:52.14,0:04:55.30,L,,0,0,0,,{\fad(120,120)}Gray hoodie, thin denim jacket,\Nboth of them dark with rain.
+Dialogue: 0,0:04:55.76,0:04:57.74,L,,0,0,0,,{\fad(120,120)}They walked in the same\Nway, him a step ahead,
+Dialogue: 0,0:04:58.06,0:05:00.28,L,,0,0,0,,{\fad(120,120)}her behind with her arms\Ncrossed, and as they
+Dialogue: 0,0:05:00.28,0:05:04.06,L,,0,0,0,,{\fad(120,120)}passed me, she said, every single\Ntime, Ray, every single time.
+Dialogue: 0,0:05:04.88,0:05:07.80,L,,0,0,0,,{\fad(120,120)}I stopped in the aisle and looked at\Nthe booth where they'd been sitting.
+Dialogue: 0,0:05:08.04,0:05:08.96,L,,0,0,0,,{\fad(120,120)}It was empty.
+Dialogue: 0,0:05:09.72,0:05:12.50,L,,0,0,0,,{\fad(120,120)}No menus, no glasses, no\Nwet rings on the table.
+Dialogue: 0,0:05:12.94,0:05:15.72,L,,0,0,0,,{\fad(120,120)}It had been wiped down like\Nnobody had used it all night.
+Dialogue: 0,0:05:16.82,0:05:18.16,L,,0,0,0,,{\fad(120,120)}They sat in that same booth.
+Dialogue: 0,0:05:19.02,0:05:21.02,L,,0,0,0,,{\fad(120,120)}Dee came over with two\Nmenus and two waters,
+Dialogue: 0,0:05:21.66,0:05:23.68,L,,0,0,0,,{\fad(120,120)}smiled at them, and said, evening you two.
+Dialogue: 0,0:05:24.20,0:05:25.00,L,,0,0,0,,{\fad(120,120)}Rough night out there?
+Dialogue: 0,0:05:25.12,0:05:26.98,L,,0,0,0,,{\fad(120,120)}The way you'd greet\Nsomeone who just walked in.
+Dialogue: 0,0:05:27.72,0:05:30.72,L,,0,0,0,,{\fad(120,120)}I made myself walk past their\Ntable on the way back to mine.
+Dialogue: 0,0:05:31.48,0:05:33.56,L,,0,0,0,,{\fad(120,120)}Up close, I could see\Nthe rain on her jacket,
+Dialogue: 0,0:05:34.28,0:05:36.04,L,,0,0,0,,{\fad(120,120)}soaked into the denim in exactly the same
+Dialogue: 0,0:05:36.04,0:05:36.84,L,,0,0,0,,{\fad(120,120)}shape as before.
+Dialogue: 0,0:05:37.62,0:05:40.26,L,,0,0,0,,{\fad(120,120)}Ray had his wrist on the table,\Nand his watch caught the light.
+Dialogue: 0,0:05:40.26,0:05:42.58,L,,0,0,0,,{\fad(120,120)}It was an old digital watch.
+Dialogue: 0,0:05:43.30,0:05:47.12,L,,0,0,0,,{\fad(120,120)}It read 214, and the whole time\NI stood there, it didn't change.
+Dialogue: 0,0:05:47.80,0:05:51.14,L,,0,0,0,,{\fad(120,120)}I sat down, and I watched\Nthem have the same
+Dialogue: 0,0:05:51.14,0:05:54.12,L,,0,0,0,,{\fad(120,120)}conversation, wrong\Nturn, leaving too late.
+Dialogue: 0,0:05:54.68,0:05:57.12,L,,0,0,0,,{\fad(120,120)}The trucker never looked\Nup from his phone, and
+Dialogue: 0,0:05:57.12,0:05:59.06,L,,0,0,0,,{\fad(120,120)}the old man by the window never woke up.
+Dialogue: 0,0:05:59.86,0:06:02.10,L,,0,0,0,,{\fad(120,120)}Nobody else in that room seemed\Nto think anything was wrong.
+Dialogue: 0,0:06:02.82,0:06:05.04,L,,0,0,0,,{\fad(120,120)}I still don't know where\Nthe nerve came from,
+Dialogue: 0,0:06:05.26,0:06:07.02,L,,0,0,0,,{\fad(120,120)}but I walked over and stood at the end of
+Dialogue: 0,0:06:07.02,0:06:07.82,L,,0,0,0,,{\fad(120,120)}their table.
+Dialogue: 0,0:06:07.94,0:06:10.94,L,,0,0,0,,{\fad(120,120)}I asked, as normally as I could,\Nif they'd just gotten there.
+Dialogue: 0,0:06:11.82,0:06:13.62,L,,0,0,0,,{\fad(120,120)}The girl kept staring\Nout at the parking lot.
+Dialogue: 0,0:06:14.34,0:06:15.14,L,,0,0,0,,{\fad(120,120)}Ray looked up at me.
+Dialogue: 0,0:06:15.70,0:06:18.16,L,,0,0,0,,{\fad(120,120)}His eyes were red, like he hadn't\Nslept in a very long time.
+Dialogue: 0,0:06:18.86,0:06:21.58,L,,0,0,0,,{\fad(120,120)}Then he said, very calmly, we'll be fine.
+Dialogue: 0,0:06:22.04,0:06:22.84,L,,0,0,0,,{\fad(120,120)}We're almost there.
+Dialogue: 0,0:06:23.58,0:06:26.34,L,,0,0,0,,{\fad(120,120)}He said it to me, exactly\Nthe way he'd said it to her.
+Dialogue: 0,0:06:27.28,0:06:29.46,L,,0,0,0,,{\fad(120,120)}Then Dee was beside me\Nwith the coffee pot.
+Dialogue: 0,0:06:30.08,0:06:33.00,L,,0,0,0,,{\fad(120,120)}She put her hand on my arm,\Nvery gently, and walked
+Dialogue: 0,0:06:33.00,0:06:34.70,L,,0,0,0,,{\fad(120,120)}me back to my booth like I was a little
+Dialogue: 0,0:06:34.70,0:06:36.20,L,,0,0,0,,{\fad(120,120)}kid who'd wandered off in a store.
+Dialogue: 0,0:06:36.76,0:06:38.88,L,,0,0,0,,{\fad(120,120)}Don't bother them,\Nhoney, she said quietly.
+Dialogue: 0,0:06:39.04,0:06:40.40,L,,0,0,0,,{\fad(120,120)}They never stay long.
+Dialogue: 0,0:06:40.58,0:06:42.08,L,,0,0,0,,{\fad(120,120)}She filled my cup to the top.
+Dialogue: 0,0:06:42.62,0:06:44.74,L,,0,0,0,,{\fad(120,120)}I hadn't touched it since\Nthe last time she filled it.
+Dialogue: 0,0:06:45.36,0:06:47.78,L,,0,0,0,,{\fad(120,120)}I left a twenty on the\Ntable and walked out.
+Dialogue: 0,0:06:48.68,0:06:51.56,L,,0,0,0,,{\fad(120,120)}Outside the rain had stopped,\Nand the parking lot was dry.
+Dialogue: 0,0:06:52.38,0:06:53.18,L,,0,0,0,,{\fad(120,120)}Completely dry.
+Dialogue: 0,0:06:53.60,0:06:55.68,L,,0,0,0,,{\fad(120,120)}No puddles, no drops on my windshield.
+Dialogue: 0,0:06:56.40,0:06:58.76,L,,0,0,0,,{\fad(120,120)}I locked myself in my car\Nand sat there with the
+Dialogue: 0,0:06:58.76,0:07:00.66,L,,0,0,0,,{\fad(120,120)}engine running until the sky turned gray,
+Dialogue: 0,0:07:01.04,0:07:03.18,L,,0,0,0,,{\fad(120,120)}and then I followed the\Nsigns back to the interstate,
+Dialogue: 0,0:07:03.50,0:07:05.04,L,,0,0,0,,{\fad(120,120)}exactly the way Dee told me to.
+Dialogue: 0,0:07:05.72,0:07:08.20,L,,0,0,0,,{\fad(120,120)}I didn't pass the gas\Nstation on the way back.
+Dialogue: 0,0:07:08.50,0:07:10.40,L,,0,0,0,,{\fad(120,120)}I took the same road, I'm sure of that.
+Dialogue: 0,0:07:10.70,0:07:12.80,L,,0,0,0,,{\fad(120,120)}It just wasn't there anymore.
+Dialogue: 0,0:07:13.54,0:07:18.38,L,,0,0,0,,{\fad(120,120)}I had a cheap dash cam back then, the kind\Nthat records over itself every few hours.
+Dialogue: 0,0:07:18.84,0:07:21.72,L,,0,0,0,,{\fad(120,120)}When I got home and checked it,\Nmost of that night was gone.
+Dialogue: 0,0:07:22.30,0:07:27.06,L,,0,0,0,,{\fad(120,120)}The only file left starts as I pull into\Nthe truck stop at 2.14 in the morning.
+Dialogue: 0,0:07:27.76,0:07:30.90,L,,0,0,0,,{\fad(120,120)}I park, the camera keeps\Nrecording, and about
+Dialogue: 0,0:07:30.90,0:07:33.30,L,,0,0,0,,{\fad(120,120)}a minute later, the dark\Ngreen station wagon
+Dialogue: 0,0:07:33.30,0:07:35.60,L,,0,0,0,,{\fad(120,120)}pulls into the spot right in front of me.
+Dialogue: 0,0:07:35.88,0:07:39.58,L,,0,0,0,,{\fad(120,120)}Engine running, dome\Nlight on, nobody inside.
+Dialogue: 0,0:07:40.66,0:07:43.34,L,,0,0,0,,{\fad(120,120)}The date on that clip is October 14th.
+Dialogue: 0,0:07:43.56,0:07:46.20,L,,0,0,0,,{\fad(120,120)}The year is the one before\NI ever drove that road.
+Dialogue: 0,0:07:46.96,0:07:49.74,L,,0,0,0,,{\fad(120,120)}I still drive that interstate\Na couple of times a year.
+Dialogue: 0,0:07:50.10,0:07:52.28,L,,0,0,0,,{\fad(120,120)}When the detour signs are\Nup, I don't take them.
+Dialogue: 0,0:07:52.70,0:07:55.48,L,,0,0,0,,{\fad(120,120)}I stop in the last town before\Nthe exit, park somewhere
+Dialogue: 0,0:07:55.48,0:07:57.48,L,,0,0,0,,{\fad(120,120)}well lit, and sleep in my car until
+Dialogue: 0,0:07:57.48,0:07:58.28,L,,0,0,0,,{\fad(120,120)}morning.

@@ -1,0 +1,110 @@
+{
+ "segmentos": [
+  {
+   "texto": "At two in the morning, at a truck stop off a detour, the same couple walked into the diner twice. Same words. Same rain on their jackets."
+  },
+  {
+   "wav": "../h01-the-detour/voz/p13.wav"
+  },
+  {
+   "wav": "../h01-the-detour/voz/p14.wav"
+  },
+  {
+   "wav": "../h01-the-detour/voz/p15.wav"
+  },
+  {
+   "wav": "../h01-the-detour/voz/p16.wav"
+  },
+  {
+   "wav": "../h01-the-detour/voz/p17.wav"
+  },
+  {
+   "texto": "What I found on my dashcam the next morning still doesn't make sense. The full story is on The Quiet Hours."
+  }
+ ],
+ "estilo": "Cinematic still photograph, vertical 9:16 composition, 35mm film, night, muted desaturated colors, low contrast, cold tones with warm diner light, subtle film grain, realistic, no readable text, no logos, no watermark.",
+ "planos": [
+  {
+   "id": "x1",
+   "seg": 0,
+   "p": 0,
+   "prompt": "An old truck stop diner glowing alone at night in the rain, a neon sign with letters burned out, wet empty parking lot."
+  },
+  {
+   "id": "x2",
+   "seg": 1,
+   "p": 1,
+   "prompt": "Extreme close up of a small brass bell above a diner's glass door, swinging as the door opens, rain on the glass, night."
+  },
+  {
+   "id": "x3",
+   "seg": 2,
+   "p": 2,
+   "prompt": "A young couple seen from behind walking down a diner aisle at night, a gray hoodie and a thin denim jacket, both jackets dark with rain on the shoulders, faces not visible."
+  },
+  {
+   "id": "x4",
+   "seg": 3,
+   "p": 3,
+   "prompt": "An empty diner booth wiped perfectly clean under warm light, no glasses, no menus, nothing on the table, vinyl seats, rain on the window."
+  },
+  {
+   "id": "x5",
+   "seg": 4,
+   "p": 4,
+   "prompt": "A middle-aged waitress seen from behind carrying two menus and two glasses of water toward a booth where a young couple sits, warm diner light."
+  },
+  {
+   "id": "x6",
+   "seg": 5,
+   "p": 5,
+   "prompt": "Extreme close up of an old cheap digital watch on a young man's wrist resting on a diner table, the display glowing, rain-darkened sleeve, warm light."
+  },
+  {
+   "id": "x7",
+   "seg": 6,
+   "p": 6,
+   "prompt": "A cheap dashcam mounted on a car windshield at dawn, its tiny screen glowing with grainy footage of an old station wagon, gray morning light."
+  }
+ ],
+ "gancho_tela": "THE SAME COUPLE|WALKED IN TWICE",
+ "cta_tela": "FULL STORY ON|@THEQUIETHOURS.0",
+ "abertura_s": 1.0,
+ "trilha": {
+  "drone": "drone-grave-1",
+  "abertura": "sting-2",
+  "abertura_db": -4,
+  "sting": "",
+  "drone_db": -10
+ },
+ "sfx": {
+  "ambientes": [
+   {
+    "id": "amb-diner-noite",
+    "de": 0,
+    "ate": 5,
+    "db": -20
+   },
+   {
+    "id": "amb-chuva-janela",
+    "de": 0,
+    "ate": 5,
+    "db": -28
+   }
+  ],
+  "efeitos": [
+   {
+    "id": "sino-porta-loja",
+    "frase": "the bell over the front door rang",
+    "db": -6,
+    "fim": true
+   },
+   {
+    "id": "sting-1",
+    "frase": "It was empty",
+    "db": -4,
+    "fim": true
+   }
+  ]
+ }
+}

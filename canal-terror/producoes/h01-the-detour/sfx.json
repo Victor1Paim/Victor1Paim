@@ -9,67 +9,67 @@
   {
    "id": "amb-posto-noite",
    "de": 3,
-   "ate": 7,
+   "ate": 5,
    "db": -24
   },
   {
    "id": "amb-carro-parado-motor",
    "de": 3,
-   "ate": 5,
+   "ate": 4,
    "db": -30
   },
   {
    "id": "amb-truckstop",
-   "de": 8,
-   "ate": 8,
+   "de": 6,
+   "ate": 6,
    "db": -26
   },
   {
    "id": "amb-diner-noite",
-   "de": 9,
-   "ate": 22,
+   "de": 7,
+   "ate": 20,
    "db": -22
   },
   {
    "id": "amb-chuva-janela",
-   "de": 11,
-   "ate": 22,
+   "de": 9,
+   "ate": 20,
    "db": -30
   },
   {
    "id": "amb-fluorescente",
-   "de": 14,
-   "ate": 14,
+   "de": 12,
+   "ate": 12,
    "db": -28
   },
   {
    "id": "amb-truckstop",
-   "de": 23,
-   "ate": 23,
+   "de": 21,
+   "ate": 21,
    "db": -28
   },
   {
    "id": "amb-carro-parado-motor",
-   "de": 23,
-   "ate": 23,
+   "de": 21,
+   "ate": 21,
    "db": -30
   },
   {
    "id": "amb-carro-rodando",
-   "de": 24,
-   "ate": 24,
+   "de": 22,
+   "ate": 22,
    "db": -26
   },
   {
    "id": "amb-casa-silencio",
-   "de": 25,
-   "ate": 26,
+   "de": 23,
+   "ate": 24,
    "db": -30
   },
   {
    "id": "amb-carro-rodando",
-   "de": 27,
-   "ate": 27,
+   "de": 25,
+   "ate": 25,
    "db": -28
   }
  ],
@@ -80,24 +80,32 @@
    "db": -14
   },
   {
-   "id": "bomba-clique",
-   "frase": "The pump clicked off",
-   "db": -10
+   "id": "interruptor",
+   "frase": "the dome light went off",
+   "db": -8,
+   "fim": true
+  },
+  {
+   "id": "interruptor",
+   "frase": "it came back on",
+   "db": -8,
+   "fim": true
   },
   {
    "id": "porta-carro-fecha",
    "frase": "got back in my car and left",
-   "db": -1
+   "db": -12
   },
   {
    "id": "porta-carro-fecha",
-   "frase": "because I needed coffee",
-   "db": -5
+   "frase": "I parked by the entrance",
+   "db": -16
   },
   {
    "id": "sino-porta-loja",
    "frase": "the couple came in",
-   "db": -14
+   "db": -14,
+   "fim": true
   },
   {
    "id": "xicara-mesa",
@@ -107,7 +115,13 @@
   {
    "id": "passos-corredor",
    "frase": "I got up to use the restroom",
-   "db": -12
+   "db": -18
+  },
+  {
+   "id": "porta-carro-fecha",
+   "frase": "and then a car door shut",
+   "db": -10,
+   "fim": true
   },
   {
    "id": "sino-porta-loja",
@@ -116,20 +130,20 @@
    "fim": true
   },
   {
+   "id": "xicara-mesa",
+   "frase": "She filled my cup to the top",
+   "db": -12
+  },
+  {
    "id": "sino-porta-loja",
-   "frase": "walked out",
+   "frase": "on the table and walked out",
    "db": -14,
    "fim": true
   },
   {
    "id": "trava-carro",
-   "frase": "locked the doors",
+   "frase": "I locked myself in my car",
    "db": -10
-  },
-  {
-   "id": "motor-ligando",
-   "frase": "sat with the engine running",
-   "db": -14
   },
   {
    "id": "riser-1",
@@ -139,18 +153,8 @@
   {
    "id": "sting-2",
    "frase": "the one before I ever drove that road",
-   "db": -14,
+   "db": -8,
    "fim": true
-  },
-  {
-   "id": "porta-carro-fecha",
-   "frase": "I kept going straight",
-   "db": -20
-  },
-  {
-   "id": "xicara-mesa",
-   "frase": "refill my coffee",
-   "db": -12
   }
  ]
 }

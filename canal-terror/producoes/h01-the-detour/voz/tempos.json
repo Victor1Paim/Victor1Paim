@@ -2,169 +2,157 @@
  {
   "paragrafo": 0,
   "inicio": 0.0,
-  "fim": 25.151,
-  "palavras": 83
+  "fim": 25.358,
+  "palavras": 82
  },
  {
   "paragrafo": 1,
-  "inicio": 25.953,
-  "fim": 48.406,
-  "palavras": 78
- },
- {
-  "paragrafo": 2,
-  "inicio": 49.208,
-  "fim": 82.415,
-  "palavras": 113
- },
- {
-  "paragrafo": 3,
-  "inicio": 83.217,
-  "fim": 107.028,
-  "palavras": 96
- },
- {
-  "paragrafo": 4,
-  "inicio": 107.83,
-  "fim": 129.094,
-  "palavras": 68
- },
- {
-  "paragrafo": 5,
-  "inicio": 129.896,
-  "fim": 147.84,
+  "inicio": 26.16,
+  "fim": 43.311,
   "palavras": 62
  },
  {
+  "paragrafo": 2,
+  "inicio": 44.113,
+  "fim": 67.264,
+  "palavras": 77
+ },
+ {
+  "paragrafo": 3,
+  "inicio": 68.066,
+  "fim": 99.557,
+  "palavras": 111
+ },
+ {
+  "paragrafo": 4,
+  "inicio": 100.358,
+  "fim": 123.34,
+  "palavras": 78
+ },
+ {
+  "paragrafo": 5,
+  "inicio": 124.142,
+  "fim": 135.84,
+  "palavras": 40
+ },
+ {
   "paragrafo": 6,
-  "inicio": 148.642,
-  "fim": 151.906,
-  "palavras": 14
+  "inicio": 136.642,
+  "fim": 155.415,
+  "palavras": 65
  },
  {
   "paragrafo": 7,
-  "inicio": 152.708,
-  "fim": 162.104,
-  "palavras": 33
+  "inicio": 156.217,
+  "fim": 173.406,
+  "palavras": 64
  },
  {
   "paragrafo": 8,
-  "inicio": 162.906,
-  "fim": 185.453,
-  "palavras": 76
- },
- {
-  "paragrafo": 9,
-  "inicio": 186.255,
-  "fim": 213.236,
-  "palavras": 87
- },
- {
-  "paragrafo": 10,
-  "inicio": 214.038,
-  "fim": 215.811,
+  "inicio": 174.208,
+  "fim": 175.981,
   "palavras": 6
  },
  {
+  "paragrafo": 9,
+  "inicio": 176.783,
+  "fim": 205.877,
+  "palavras": 88
+ },
+ {
+  "paragrafo": 10,
+  "inicio": 206.679,
+  "fim": 219.906,
+  "palavras": 40
+ },
+ {
   "paragrafo": 11,
-  "inicio": 216.613,
-  "fim": 245.726,
-  "palavras": 97
+  "inicio": 220.708,
+  "fim": 238.368,
+  "palavras": 63
  },
  {
   "paragrafo": 12,
-  "inicio": 246.528,
-  "fim": 264.264,
-  "palavras": 57
+  "inicio": 239.17,
+  "fim": 272.302,
+  "palavras": 106
  },
  {
   "paragrafo": 13,
-  "inicio": 265.066,
-  "fim": 288.745,
-  "palavras": 86
- },
- {
-  "paragrafo": 14,
-  "inicio": 289.547,
-  "fim": 310.698,
-  "palavras": 85
- },
- {
-  "paragrafo": 15,
-  "inicio": 311.5,
-  "fim": 315.972,
+  "inicio": 273.104,
+  "fim": 277.575,
   "palavras": 17
  },
  {
-  "paragrafo": 16,
-  "inicio": 316.774,
-  "fim": 334.585,
-  "palavras": 52
- },
- {
-  "paragrafo": 17,
-  "inicio": 335.387,
-  "fim": 347.689,
+  "paragrafo": 14,
+  "inicio": 278.377,
+  "fim": 292.415,
   "palavras": 44
  },
  {
-  "paragrafo": 18,
-  "inicio": 348.491,
-  "fim": 360.283,
+  "paragrafo": 15,
+  "inicio": 293.217,
+  "fim": 303.915,
   "palavras": 39
+ },
+ {
+  "paragrafo": 16,
+  "inicio": 304.717,
+  "fim": 315.208,
+  "palavras": 36
+ },
+ {
+  "paragrafo": 17,
+  "inicio": 316.009,
+  "fim": 335.425,
+  "palavras": 66
+ },
+ {
+  "paragrafo": 18,
+  "inicio": 336.226,
+  "fim": 350.434,
+  "palavras": 45
  },
  {
   "paragrafo": 19,
-  "inicio": 361.085,
-  "fim": 386.047,
-  "palavras": 89
- },
- {
-  "paragrafo": 20,
-  "inicio": 386.849,
-  "fim": 412.642,
+  "inicio": 351.236,
+  "fim": 374.613,
   "palavras": 84
  },
  {
+  "paragrafo": 20,
+  "inicio": 375.415,
+  "fim": 392.906,
+  "palavras": 66
+ },
+ {
   "paragrafo": 21,
-  "inicio": 413.443,
-  "fim": 423.953,
-  "palavras": 39
+  "inicio": 393.708,
+  "fim": 413.311,
+  "palavras": 65
  },
  {
   "paragrafo": 22,
-  "inicio": 424.755,
-  "fim": 453.057,
-  "palavras": 101
+  "inicio": 414.113,
+  "fim": 421.132,
+  "palavras": 24
  },
  {
   "paragrafo": 23,
-  "inicio": 453.858,
-  "fim": 484.972,
-  "palavras": 107
+  "inicio": 421.934,
+  "fim": 448.028,
+  "palavras": 78
  },
  {
   "paragrafo": 24,
-  "inicio": 485.774,
-  "fim": 492.415,
-  "palavras": 23
- },
- {
-  "paragrafo": 25,
-  "inicio": 493.217,
-  "fim": 519.538,
-  "palavras": 85
- },
- {
-  "paragrafo": 26,
-  "inicio": 520.34,
-  "fim": 526.019,
+  "inicio": 448.83,
+  "fim": 454.509,
   "palavras": 19
  },
  {
-  "paragrafo": 27,
-  "inicio": 526.821,
-  "fim": 538.33,
-  "palavras": 42
+  "paragrafo": 25,
+  "inicio": 455.311,
+  "fim": 466.217,
+  "palavras": 41
  }
 ]

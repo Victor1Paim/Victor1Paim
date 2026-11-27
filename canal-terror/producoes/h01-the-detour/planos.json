@@ -34,14 +34,14 @@
    "de": "producoes/piloto/imagens/s03.png"
   },
   {
-   "id": "n01",
-   "p": 2,
-   "prompt": "A tiny rural town at night seen from a car on the highway: one blinking stoplight and a tall grain elevator lit up like a ship, then darkness beyond."
-  },
-  {
    "id": "n02",
    "p": 2,
    "prompt": "Taillights of a pickup truck ahead on a narrow dark road turning off onto a dirt road at an unmarked crossroads, its lights going out, fields all around."
+  },
+  {
+   "id": "n08",
+   "p": 2,
+   "prompt": "An empty unmarked rural crossroads at night lit only by car headlights, a dirt road leading off into total darkness, no vehicle anywhere, dust still hanging in the air."
   },
   {
    "id": "s04",
@@ -55,98 +55,118 @@
   },
   {
    "id": "n03",
-   "p": 4,
+   "p": 3,
    "prompt": "Through the rear window of an old dark green station wagon at night: a child's booster seat with a worn stuffed rabbit sitting in it facing backward, small sneakers on the floor mat, dim dome light."
   },
   {
    "id": "s06",
-   "p": 5,
+   "p": 4,
    "de": "producoes/piloto/imagens/s06.png"
   },
   {
-   "id": "s07",
-   "p": 6,
-   "de": "producoes/piloto/imagens/s07.png"
+   "id": "n09",
+   "p": 4,
+   "prompt": "An old dark green station wagon with wood panel sides at a lonely gas station at night, its dome light OFF, the windows completely black, exhaust still rising from the tailpipe, eerie."
   },
   {
    "id": "n04",
-   "p": 7,
+   "p": 5,
    "prompt": "A car rearview mirror at night reflecting a small rural gas station behind, an old station wagon with its dome light on, getting farther away."
   },
   {
+   "id": "n10",
+   "p": 5,
+   "prompt": "Close view through the rear window of an old station wagon at night, dome light on: a worn stuffed rabbit in a child's booster seat now turned to face forward, looking straight at the camera, unsettling."
+  },
+  {
    "id": "s08",
-   "p": 8,
+   "p": 6,
    "de": "producoes/piloto/imagens/s08.png"
   },
   {
    "id": "s09",
-   "p": 9,
+   "p": 7,
    "de": "producoes/piloto/imagens/s09.png"
   },
   {
-   "id": "s10",
-   "p": 9,
-   "de": "producoes/piloto/imagens/s10.png"
-  },
-  {
    "id": "s11",
-   "p": 10,
+   "p": 8,
    "de": "producoes/piloto/imagens/s11.png"
   },
   {
    "id": "s12",
-   "p": 11,
+   "p": 9,
    "de": "producoes/piloto/imagens/s12.png"
   },
   {
    "id": "s13",
-   "p": 11,
+   "p": 9,
    "de": "producoes/piloto/imagens/s13.png"
   },
   {
-   "id": "s14",
-   "p": 12,
-   "de": "producoes/piloto/imagens/s14.png"
+   "id": "s10",
+   "p": 10,
+   "de": "producoes/piloto/imagens/s10.png"
   },
   {
    "id": "n05",
-   "p": 13,
+   "p": 11,
    "prompt": "A middle-aged waitress's hand refilling a mug of coffee from a glass pot at a diner table at night, rain on the window behind, warm light, face not visible."
   },
   {
+   "id": "s14",
+   "p": 11,
+   "de": "producoes/piloto/imagens/s14.png"
+  },
+  {
    "id": "s15",
-   "p": 14,
+   "p": 12,
    "de": "producoes/piloto/imagens/s15.png"
   },
   {
    "id": "s16",
-   "p": 14,
+   "p": 12,
    "de": "producoes/piloto/imagens/s16.png"
   },
   {
    "id": "s17",
-   "p": 15,
+   "p": 13,
    "de": "producoes/piloto/imagens/s17.png"
   },
   {
    "id": "s12b",
-   "p": 16,
+   "p": 14,
    "reusar": "s12"
   },
   {
    "id": "s18",
-   "p": 17,
+   "p": 15,
    "de": "producoes/piloto/imagens/s18.png"
   },
   {
    "id": "s19",
-   "p": 18,
+   "p": 16,
    "de": "producoes/piloto/imagens/s19.png"
   },
   {
    "id": "n06",
-   "p": 19,
+   "p": 17,
    "prompt": "Close up on a young man's wrist resting on a diner table: an old cheap digital watch showing the time, rain-darkened denim jacket sleeve beside it, warm light."
+  },
+  {
+   "id": "s21",
+   "p": 18,
+   "de": "producoes/piloto/imagens/s21.png"
+  },
+  {
+   "id": "s22",
+   "p": 18,
+   "de": "producoes/piloto/imagens/s22.png"
+  },
+  {
+   "id": "n07",
+   "p": 19,
+   "prompt": "Seen from standing at the end of a diner booth: a young couple seated, the woman staring out the dark window, the man looking up with tired red eyes, faces in soft shadow, unsettling stillness."
   },
   {
    "id": "s20",
@@ -154,54 +174,44 @@
    "de": "producoes/piloto/imagens/s20.png"
   },
   {
-   "id": "s21",
+   "id": "n11",
    "p": 20,
-   "de": "producoes/piloto/imagens/s21.png"
-  },
-  {
-   "id": "s22",
-   "p": 21,
-   "de": "producoes/piloto/imagens/s22.png"
-  },
-  {
-   "id": "n07",
-   "p": 22,
-   "prompt": "Seen from standing at the end of a diner booth: a young couple seated, the woman staring out the dark window, the man looking up with tired red eyes, faces in soft shadow, unsettling stillness."
+   "prompt": "Inside a warm roadside diner at night, a middle-aged waitress's hand resting gently on a young man's arm as she guides him back to his booth, a glass coffee pot in her other hand, faces not visible."
   },
   {
    "id": "s23",
-   "p": 23,
+   "p": 21,
    "de": "producoes/piloto/imagens/s23.png"
   },
   {
    "id": "s24",
-   "p": 23,
+   "p": 21,
    "de": "producoes/piloto/imagens/s24.png"
   },
   {
    "id": "s25",
-   "p": 24,
+   "p": 22,
    "de": "producoes/piloto/imagens/s25.png"
   },
   {
    "id": "s26",
-   "p": 25,
+   "p": 23,
    "de": "producoes/piloto/imagens/s26.png"
   },
   {
    "id": "s27",
-   "p": 25,
+   "p": 23,
    "carimbo": "2019/10/14  02:15:41",
    "de": "producoes/piloto/imagens/s27.png"
   },
   {
    "id": "s28",
-   "p": 26,
+   "p": 24,
    "de": "producoes/piloto/imagens/s28.png"
   },
   {
    "id": "s29",
-   "p": 27,
+   "p": 25,
    "de": "producoes/piloto/imagens/s29.png"
   }
  ]
