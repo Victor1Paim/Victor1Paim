@@ -5,92 +5,157 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#0B1F4B">
-<title>Por que o inglês ainda não pegou? · Eagle English</title>
+<title>Onde você trava no inglês? · Eagle English</title>
 <meta name="description" content="Teste de 1 minuto: descubra o jeito mais fácil de aprender inglês, pra você ou pro seu filho, sem decoreba.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="Por que o inglês ainda não pegou?"><meta property="og:description" content="Teste de 1 minuto: descubra o jeito mais fácil de aprender, sem decoreba."><meta property="og:image" content="https://eagle-viagem.vercel.app/og.jpg">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body class="quiz-body">
 <header class="wrap marca" style="color:#fff"><img class="logo-img" src="img/logo.png" alt="" width="40" height="40"><span style="color:#fff">EAGLE <b>ENGLISH</b></span></header>
 <main class="quiz"><div class="qcard" id="card" aria-live="polite"></div></main>
 
 <script src="config.js?v=4"></script>
+<style>
+.empatia{background:#fff6dc;border-left:4px solid var(--yellow);border-radius:12px;padding:10px 14px;font-size:14px;color:#3a3320;margin:0 0 14px}
+.trava-box{background:var(--navy);color:#fff;border-radius:16px;padding:16px 18px;margin:14px 0}
+.trava-box small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);font-weight:800}
+.trava-box b{display:block;font:800 26px/1.1 "Barlow Condensed",sans-serif;margin:4px 0 6px}
+.trava-box p{margin:0;color:#dfe6f5;font-size:15px}
+.imagine{font-style:italic;color:var(--navy);background:#eef3ff;border-radius:12px;padding:12px 14px;margin:12px 0}
+.oferta-res{border:2px solid var(--red);border-radius:18px;padding:16px;margin-top:16px;background:#fff}
+.oferta-res h3{margin:0 0 4px;color:var(--navy);font:800 26px/1.1 "Barlow Condensed",sans-serif}
+.oferta-res ul{margin:8px 0 10px;padding-left:20px;font-size:14px}
+.oferta-res .pr{font-weight:800;color:var(--navy);font-size:15px;margin-bottom:10px}
+.oferta-res .pr s{color:var(--muted);font-weight:600}
+.analise{text-align:center;padding:30px 0}.analise p{margin:8px 0;color:var(--muted);transition:color .3s}.analise p.ok{color:var(--green)}
+</style>
 <script>
 const PERGUNTAS = [
   { k: "obj", t: "Pra que você quer o inglês?", o: [
-    ["filho", "👩‍👦 Pro meu filho estudar, sem pagar cursinho caro"], ["curso", "😓 Já fiz curso (ou a escola) e não aprendi"],
+    ["filho", "👩‍👦 Pro meu filho aprender, sem pagar cursinho caro"], ["curso", "😓 Já fiz curso (ou a escola) e não aprendi"],
     ["viagem", "✈️ Vou viajar e não quero travar"], ["carreira", "📚 Concurso, prova ou trabalho"], ["vida", "🗣️ Entender e conversar no dia a dia"] ] },
-  { k: "hist", t: "Como foi sua experiência com inglês até hoje?", o: [
+  { k: "hist", t: "Como foi a experiência com inglês até hoje?", o: [
     ["nunca", "Nunca estudei de verdade"], ["escola", "Só o da escola: decorei pra prova e esqueci"],
-    ["caro", "Paguei cursinho caro e aprendi pouco"], ["app", "Usei aplicativo, mas larguei"] ] },
+    ["caro", "Paguei cursinho e senti que só gastei dinheiro"], ["app", "Usei aplicativo, mas larguei"] ] },
   { k: "nivel", t: "Como está o inglês hoje?", o: [
-    ["zero", "Quase nada"], ["palavras", "Entende algumas palavras, mas não fala"],
-    ["trava", "Lê bem, mas trava na hora de falar"], ["viro", "Se vira, mas quer mais segurança"] ] },
-  { k: "trava", t: "O que mais atrapalhou até agora?", o: [
-    ["decoreba", "Muita gramática e decoreba"], ["vergonha", "Vergonha da pronúncia"],
-    ["tempo", "Falta de tempo e constância"], ["frase", "Não saber o que dizer na hora"] ] },
+    ["zero", "Quase nada"], ["palavras", "Entendo algumas palavras, mas não falo"],
+    ["trava", "Leio bem, mas travo na hora de falar"], ["viro", "Me viro, mas quero mais segurança"] ] },
+  { k: "trava", t: "Na hora de falar, o que mais pesa?", o: [
+    ["frase", "A frase não vem: sei o que quero dizer, mas não sai"], ["vergonha", "Vergonha da pronúncia, medo de errar"],
+    ["decoreba", "Muita regra na cabeça e nenhuma frase pronta"], ["tempo", "Começo animado e paro quando a rotina aperta"] ] },
   { k: "tempo", t: "Quanto tempo por dia dá pra treinar?", o: [
     ["5", "5 minutos"], ["15", "15 minutos"], ["30", "30 minutos ou mais"] ] },
-  { k: "precisa", t: "O que faria a diferença pra finalmente aprender?", o: [
-    ["simples", "Uma frase por vez, sem complicação"], ["aulas", "Aulas curtinhas com alguém explicando"],
-    ["pronuncia", "Saber pronunciar sem vergonha"], ["bolso", "Algo que caiba no bolso, sem mensalidade (dá pra parcelar)"] ] },
+  { k: "sonho", t: "Como vai ser quando a frase finalmente sair na hora?", o: [
+    ["orgulho", "😌 Vou sentir orgulho de mim, enfim"], ["livre", "✈️ Viajar sem medo, falando com qualquer pessoa"],
+    ["filho", "🥹 Ver meu filho falando inglês com confiança"], ["carreira", "💼 Mais segurança no trabalho e nas provas"] ] },
 ];
+// mensagem de empatia que aparece na pergunta seguinte (sem números inventados)
+const EMPATIA = {
+  hist: { escola: "Isso é mais comum do que parece: a escola ensina regra pra prova, não frase pra usar.",
+          caro: "Não foi falta de esforço seu. Pagar caro por um método de decoreba frustra qualquer um.",
+          app: "Aplicativo sozinho cansa porque ninguém explica e você não treina falar em voz alta.",
+          nunca: "Ótimo: você começa do jeito certo, sem vícios de decoreba." },
+  trava: { frase: "Essa é a trava mais comum. E tem solução simples: frase pronta, treinada em voz alta.",
+           vergonha: "Vergonha some quando você sabe exatamente como a palavra sai. Isso dá pra resolver.",
+           decoreba: "Regra demais e frase de menos: o problema é o método, não você.",
+           tempo: "Constância vem de pouco por dia. Ninguém precisa de 2 horas pra aprender." },
+};
 const PERFIS = {
   viagem:   { nome: "Viajante", tit: "Dá pra viajar sem travar no inglês.", txt: "Você não precisa ser fluente pra viajar. Precisa saber o que dizer em cada situação, do aeroporto ao jantar, e treinar a fala antes de ir." },
-  filho:    { nome: "Mãe/pai que quer o melhor", tit: "Inglês de verdade pro seu filho, sem pagar cursinho caro.", txt: "As férias são o momento perfeito: aulas curtinhas, frases do dia a dia e pronúncia escrita do jeito que se lê. Ele aprende pra usar, não pra decorar e esquecer depois da prova." },
-  curso:    { nome: "Cansado da decoreba", tit: "O problema não foi você. Foi o método.", txt: "Decorar pra prova faz a gente esquecer logo depois. Aqui é diferente: uma frase de verdade por vez, falada em voz alta, com a pronúncia escrita e aula curtinha." },
+  filho:    { nome: "Mãe/pai que quer o melhor", tit: "Seu filho pode aprender inglês de verdade, sem cursinho caro.", txt: "Aula curtinha, frase do dia a dia e pronúncia escrita do jeito que se lê. Ele aprende pra usar, no ritmo dele, e não pra decorar e esquecer depois da prova." },
+  curso:    { nome: "Cansado da decoreba", tit: "O problema nunca foi você. Foi o método.", txt: "Decorar pra prova faz a gente esquecer logo depois. Aqui é o contrário: uma frase de verdade por vez, falada em voz alta, com a pronúncia escrita e aula curtinha." },
   carreira: { nome: "Construindo a base", tit: "Base sólida, um pouco por dia.", txt: "Pra prova, concurso ou trabalho você precisa de base: vocabulário do dia a dia, os verbos que mais aparecem e a gramática em cards simples. Sem decoreba, no seu ritmo." },
-  vida:     { nome: "Quero conversar", tit: "Dá pra entender e falar no dia a dia.", txt: "Comece pelas frases que você realmente usa, treine a pronúncia em voz alta e vá juntando: em pouco tempo as respostas saem mais fácil." },
+  vida:     { nome: "Quero conversar", tit: "Dá pra entender e falar no dia a dia.", txt: "Comece pelas frases que você realmente usa, treine a pronúncia em voz alta e vá juntando: as respostas começam a sair mais fácil." },
 };
-const DICA = { decoreba: "Troque a decoreba por frases prontas: uma por vez, em voz alta.", vergonha: "Leia a pronúncia escrita do jeito que se fala em português: a vergonha some quando você sabe como sai.",
-  tempo: "Faça pouco, mas todo dia: a constância vale mais que horas no fim de semana.", frase: "Tenha as frases de cada situação organizadas, pra achar em segundos." };
+// onde a pessoa trava + o que destrava (ligado ao que existe no curso)
+const TRAVA = {
+  frase:    ["NA HORA H", "Você sabe o que quer dizer, mas a frase não vem.", "2.100 frases prontas organizadas por situação + aulas que te fazem responder em voz alta."],
+  vergonha: ["NA PRONÚNCIA", "O medo de errar o som te faz ficar quieto.", "Pronúncia escrita do jeito que se lê em português + 100 áudios pra ouvir, repetir e conferir."],
+  decoreba: ["NA DECOREBA", "Muita regra na cabeça e nenhuma frase pronta pra usar.", "Uma frase de verdade por vez, com a gramática só no essencial (em cards de 1 página)."],
+  tempo:    ["NA CONSTÂNCIA", "Você começa com força e para quando a rotina aperta.", "Guia de 21 dias com 15 minutos por dia e aula curtinha: dá pra encaixar em qualquer rotina."],
+};
+const IMAGINA = {
+  orgulho: "Imagina abrir a boca e a frase sair, sem travar. Aquele orgulho de \"eu consegui\".",
+  livre: "Imagina pedir no restaurante, falar no aeroporto e resolver tudo sozinho, sem medo.",
+  filho: "Imagina seu filho falando as primeiras frases em inglês com confiança, e você sabendo que não precisou pagar mensalidade.",
+  carreira: "Imagina chegar na prova ou na reunião com a base que faltava, sem aquele frio na barriga.",
+};
 const r = {}; let i = -1;
+const C = window.EAGLE || {};
 const card = document.getElementById("card");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const utms = () => { const q = new URLSearchParams(); new URLSearchParams(location.search).forEach((v, k) => { if (k.startsWith("utm_")) q.set(k, v); }); return q; };
+
+// Pixel da Meta (config.js → pixelMeta): PageView ao abrir e Lead ao ver o resultado
+if (C.pixelMeta) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init", C.pixelMeta); fbq("track", "PageView");
+}
 
 function perfil() { return PERFIS[r.obj] ? r.obj : "vida"; }
 function abertura() {
   card.innerHTML = `<span class="selo">Teste rápido · 1 minuto</span>
-    <h1 class="disp" style="margin-top:14px">Por que o inglês ainda não "pegou"? 🤔</h1>
-    <p>Responda 6 perguntas rápidas e descubra o jeito mais fácil de aprender, pra você ou pro seu filho, sem decoreba e sem mensalidade.</p>
-    <button class="btn btn-green btn-block" id="go">Começar o teste</button>
+    <h1 class="disp" style="margin-top:14px">Você sabe o que quer dizer… mas a frase <em>não sai</em>? 🤔</h1>
+    <p>Responda 6 perguntas rápidas e descubra <b>onde você trava no inglês</b> e o caminho mais curto pra destravar, pra você ou pro seu filho. Sem decoreba e sem mensalidade.</p>
+    <button class="btn btn-green btn-block" id="go">Descobrir onde eu travo</button>
     <p class="mini"><a href="oferta.html${location.search}">Prefiro ver os planos direto →</a></p>`;
   document.getElementById("go").onclick = () => { i = 0; pergunta(); };
 }
 function pergunta() {
-  const q = PERGUNTAS[i];
+  const q = PERGUNTAS[i], ant = PERGUNTAS[i - 1];
+  const emp = ant && EMPATIA[ant.k] && EMPATIA[ant.k][r[ant.k]];
   card.innerHTML = `<div class="prog"><i style="width:${(i / PERGUNTAS.length) * 100}%"></i></div>
     <div class="passo-q">Pergunta ${i + 1} de ${PERGUNTAS.length}</div>
+    ${emp ? `<div class="empatia">💬 ${esc(emp)}</div>` : ""}
     <h2 class="disp">${esc(q.t)}</h2>
     <div class="opcoes">${q.o.map(([v, t]) => `<button class="op${r[q.k] === v ? " sel" : ""}" data-v="${v}">${esc(t)}</button>`).join("")}</div>
     ${i > 0 ? '<button class="voltar" id="back">← Voltar</button>' : ""}`;
   card.querySelectorAll(".op").forEach(b => b.onclick = () => {
     r[q.k] = b.dataset.v; b.classList.add("sel");
-    setTimeout(() => { i++; i < PERGUNTAS.length ? pergunta() : resultado(); }, 180);
+    setTimeout(() => { i++; i < PERGUNTAS.length ? pergunta() : analise(); }, 180);
   });
   const bk = document.getElementById("back"); if (bk) bk.onclick = () => { i--; pergunta(); };
   card.querySelector(".op").focus({ preventScroll: true });
 }
+function analise() {
+  const passos = ["Lendo suas respostas…", "Encontrando onde você trava…", "Montando seu caminho pra destravar…"];
+  card.innerHTML = `<div class="prog"><i style="width:100%"></i></div><div class="analise">${passos.map(p => `<p>⏳ ${p}</p>`).join("")}</div>`;
+  const ps = card.querySelectorAll(".analise p");
+  ps.forEach((p, k) => setTimeout(() => { p.classList.add("ok"); p.textContent = "✅ " + passos[k].replace("…", ""); }, 600 * (k + 1)));
+  setTimeout(resultado, 600 * passos.length + 400);
+}
 function resultado() {
-  const p = PERFIS[perfil()];
+  const p = PERFIS[perfil()], t = TRAVA[r.trava] || TRAVA.frase;
   const min = r.tempo === "5" ? "5 minutos" : r.tempo === "30" ? "30 minutos" : "15 minutos";
-  const q = new URLSearchParams({ obj: perfil() });
-  new URLSearchParams(location.search).forEach((v, k) => { if (k.startsWith("utm_")) q.set(k, v); });
+  const q = utms(); q.set("obj", perfil());
+  const preco = C.lancamento ? `<s>R$ ${C.precoAvancadoCheio}</s> R$ ${C.precoAvancado}` : `R$ ${C.precoAvancadoCheio}`;
+  let ck = C.checkoutAvancado || ""; if (ck) { const u = new URL(ck); utms().forEach((v, k) => u.searchParams.set(k, v)); ck = u.toString(); }
   card.innerHTML = `<div class="prog"><i style="width:100%"></i></div>
     <span class="res-perfil">Seu perfil: ${p.nome}</span>
+    <div class="trava-box"><small>Onde você trava</small><b>${t[0]}</b><p>${t[1]}</p></div>
     <h2 class="disp">${p.tit}</h2>
     <p>${p.txt}</p>
+    <div class="imagine">${IMAGINA[r.sonho] || IMAGINA.orgulho}</div>
     <ul class="res-lista">
-      <li>${DICA[r.trava] || DICA.frase}</li>
+      <li><b>O que destrava você:</b> ${t[2]}</li>
       <li>Treine <b>${min} por dia</b>, em voz alta.</li>
-      <li>Use material com tradução e <b>pronúncia escrita</b> do jeito que se lê em português.</li>
     </ul>
-    <a class="btn btn-green btn-block" href="oferta.html?${q}">Ver o plano ideal pra mim</a>
+    <div class="oferta-res">
+      <h3>Seu plano: ${esc(C.nomeAvancado || "Eagle Primeira Classe")}</h3>
+      <ul><li>10 aulas gravadas + caderno de exercícios</li><li>2.100 frases com pronúncia escrita</li><li>100 áudios + guia de 21 dias</li></ul>
+      <div class="pr">${preco} · pagamento único ou até 3x no cartão</div>
+      ${ck ? `<a class="btn btn-green btn-block" id="comprar" href="${ck}">Quero destravar meu inglês</a>` : ""}
+      <p class="mini" style="margin-top:10px">Acesso no e-mail na hora · ${C.garantiaDias || 7} dias de garantia</p>
+    </div>
+    <a class="btn btn-ghost btn-block" style="margin-top:12px" href="oferta.html?${q}">Ver tudo que vem no plano</a>
     <button class="voltar" id="refazer">Refazer o teste</button>`;
   document.getElementById("refazer").onclick = () => { for (const k in r) delete r[k]; i = 0; pergunta(); };
+  const cb = document.getElementById("comprar");
+  if (cb) cb.onclick = () => { if (window.fbq) fbq("track", "InitiateCheckout", { value: parseFloat(String(C.lancamento ? C.precoAvancado : C.precoAvancadoCheio).replace(",", ".")), currency: "BRL", content_name: C.nomeAvancado }); };
+  if (window.fbq) fbq("track", "Lead", { content_name: "quiz", content_category: perfil() });
   try { localStorage.setItem("eagle_quiz", JSON.stringify({ ...r, perfil: perfil() })); } catch (e) {}
 }
 abertura();

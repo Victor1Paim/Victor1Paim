@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -38,8 +38,9 @@
 <section class="planos-sec primeira" id="planos">
   <div class="wrap marca marca-escura"><img class="logo-img" src="img/logo.png" alt="" width="40" height="40"><span>EAGLE <b>ENGLISH</b></span></div>
   <div class="wrap">
-    <h1 class="titulo disp">Escolha seu plano</h1>
-    <p class="lead">Pagamento único. Acesso pelo e-mail logo após a compra.</p>
+    <h1 class="titulo disp">Dessa vez o inglês <em>vai sair</em></h1>
+    <p class="lead">Pagamento único, acesso na hora no seu e-mail e 7 dias pra testar sem risco.</p>
+    <div class="res-quiz" id="res-quiz" hidden></div>
     <div class="planos">
       <article class="plano top">
         <span class="tag">RECOMENDADO</span>
@@ -63,6 +64,7 @@
         </ul>
         <div class="picote" aria-hidden="true"></div>
         <div class="preco" id="preco-avancado"></div>
+        <p class="por-dia" id="por-dia"></p>
         <div class="gancho">
           <div class="g-tit"><svg class="ic" aria-hidden="true"><use href="#i-burger"/></svg>Mais barato que um combo de lanche</div>
           <div class="g-cmp">
@@ -142,6 +144,19 @@
   </div>
 </section>
 
+<section class="imagine-sec">
+  <div class="wrap">
+    <h2 class="titulo disp">Imagina <em>daqui a 21 dias</em></h2>
+    <p class="lead">15 minutos por dia, uma frase de verdade por vez.</p>
+    <div class="pub-grid">
+      <div class="pub"><h3>✈️ No aeroporto</h3><p>Você responde o "Where are you staying?" sem gaguejar, e ainda pede um café no caminho.</p></div>
+      <div class="pub"><h3>🥹 Na sala de casa</h3><p>Seu filho solta as primeiras frases em inglês, com a pronúncia certa, e você não pagou mensalidade nenhuma.</p></div>
+      <div class="pub"><h3>😌 Com você mesmo</h3><p>Aquela sensação de "eu não nasci pra isso" dá lugar ao orgulho de ver a frase sair na hora.</p></div>
+      <div class="pub"><h3>💼 No trabalho e na prova</h3><p>Os verbos e as frases que mais aparecem já estão na ponta da língua, sem decoreba.</p></div>
+    </div>
+    <p class="cta-meio"><a class="btn btn-yellow" href="#planos">Quero começar hoje</a></p>
+  </div>
+</section>
 <section class="dores">
   <div class="wrap">
     <h2 class="titulo disp">Já travou <em>no inglês</em>?</h2>
@@ -237,8 +252,8 @@
   <div class="wrap">
     <div class="garantia">
       <div class="sel"><div><b data-c="garantiaDias"></b>DIAS</div></div>
-      <div><h3 style="margin:0 0 6px;color:var(--navy)">Garantia de <span data-c="garantiaDias"></span> dias, risco zero</h3>
-      <p style="margin:0;color:var(--muted)">Se achar que o material não é pra você, é só pedir o reembolso na Kiwify e devolvemos 100% do valor. Sem perguntas.</p></div>
+      <div><h3 style="margin:0 0 6px;color:var(--navy)">Teste por <span data-c="garantiaDias"></span> dias. O risco é todo nosso.</h3>
+      <p style="margin:0;color:var(--muted)">Assista às aulas, use as frases, treine em voz alta. Se não sentir que dessa vez está aprendendo de verdade, é só pedir o reembolso na Kiwify e devolvemos 100% do valor. Sem perguntas.</p></div>
     </div>
   </div>
 </section>
@@ -274,7 +289,8 @@
 
 <section class="final">
   <div class="wrap">
-    <h2 class="titulo disp">Dessa vez o inglês pega. Sem decoreba.</h2>
+    <h2 class="titulo disp">Daqui a 21 dias você pode estar no mesmo lugar… <em>ou falando sem travar</em>.</h2>
+    <p class="lead">O inglês que você sempre quis não precisa de mensalidade cara. Precisa do método certo.</p>
     <div class="bts">
       <a class="btn btn-green btn-block" data-checkout="checkoutAvancado">Quero o <span data-c="nomeAvancado"></span></a>
       <a class="btn btn-ghost btn-block" data-checkout="checkoutSimples">Prefiro o <span data-c="nomeSimples"></span></a>
@@ -292,6 +308,6 @@
 
 <script src="config.js?v=4"></script>
 <script src="config.privado.js?v=1" onerror="window.EAGLE_PRIV={}"></script>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>

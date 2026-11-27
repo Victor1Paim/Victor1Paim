@@ -30,6 +30,17 @@
     : `<div class="por"><small>R$</small> ${C.precoAvancadoCheio}</div><div class="unico">pagamento único ou <b>em até 3x no cartão</b></div>`;
   if (C.aulasLiberadasEm) document.getElementById("aulas-nota").textContent = "pronúncia e fala, com exercícios · liberadas a partir de " + C.aulasLiberadasEm;
 
+  // preço por dia nos 21 dias do guia (conta real, muda sozinha com o preço)
+  const pd = document.getElementById("por-dia");
+  if (pd) { const v = parseFloat(String(C.lancamento ? C.precoAvancado : C.precoAvancadoCheio).replace(",", ".")) / 21;
+    pd.innerHTML = "Menos de <b>R$ " + (Math.ceil(v * 10) / 10).toFixed(2).replace(".", ",") + " por dia</b> nos 21 dias do guia, e o material é seu pra sempre."; }
+  // resultado do quiz (localStorage) no topo dos planos
+  try {
+    const rq = JSON.parse(localStorage.getItem("eagle_quiz") || "null"), rb = document.getElementById("res-quiz");
+    const TV = { frase: "NA HORA H (a frase não vem)", vergonha: "NA PRONÚNCIA (medo de errar)", decoreba: "NA DECOREBA (regra demais, frase de menos)", tempo: "NA CONSTÂNCIA (a rotina aperta)" };
+    if (rq && rb && TV[rq.trava]) { rb.innerHTML = "🎯 <b>Seu resultado:</b> você trava " + TV[rq.trava] + ". O <b>" + (C.nomeAvancado || "") + "</b> foi feito pra destravar exatamente isso."; rb.hidden = false; }
+  } catch (e) {}
+
   // comparação com o combo de lanche (R$ 40 a 50; sem citar marca: anúncio da Meta): vale com R$ 29,90 e com R$ 37
   const gp = document.getElementById("g-preco");
   if (gp) gp.textContent = "R$ " + (C.lancamento ? C.precoAvancado : C.precoAvancadoCheio);

@@ -292,3 +292,9 @@ a { text-underline-offset: 3px; }
 .pub p { margin: 0; color: var(--muted); font-size: 15px; }
 .pub.foco { border-color: var(--red); box-shadow: 4px 4px 0 var(--red); }
 .pub.foco h3 { color: var(--red); }
+
+/* 27/11: página mais vendedora */
+.res-quiz { background: #fff6dc; border: 2px solid var(--yellow); border-radius: 14px; padding: 12px 16px; margin: 0 auto 18px; max-width: 640px; font-size: 15px; color: var(--ink); text-align: center; }
+.por-dia { text-align: center; font-size: 14px; color: var(--muted); margin: 6px 0 12px; }
+.por-dia b { color: var(--navy); }
+.imagine-sec { background: linear-gradient(180deg, #eef3ff, var(--bg)); }
