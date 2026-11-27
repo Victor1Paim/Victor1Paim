@@ -83,4 +83,4 @@ Sem material novo: escolher no Instagram o Reels com mais salvamentos da semana 
 
 ## Regras usadas (para não reprovar)
 Sem promessa de fluência, sem "você é burro/ruim", sem marca de terceiros (página /oferta já sem "Big Mac"), sem depoimento,
-sem preço fixo, pessoas por IA com aviso "Imagens geradas por IA".
+sem preço fixo, pessoas por IA SEM aviso no vídeo: o usuário marca "conteúdo de IA" direto no Gerenciador de Anúncios.
