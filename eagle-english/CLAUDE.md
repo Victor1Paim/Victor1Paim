@@ -366,3 +366,9 @@ O usuário passou uma chave do ElevenLabs (fica SÓ em `<scratchpad>/elevenlabs.
 `VOZ_MOTOR=gemini` força o Gemini. Amostras das candidatas em `assets/vozes_elevenlabs/amostra_*.mp3` (Lucas 7lu3ze7orhWaNeSPowWx,
 Paulo Qrdut83w0Cr152Yb4Xn3, Davi Andrei 2CECaLAGTS5NRGxgbcxr, Beto xNGAXaCH8MaasNuo7Hr7). Custo estimado ~US$ 0,30/1.000 caracteres
 (bem mais caro que o Gemini). Os clipes de CTA (pc_*) continuam com a voz em que foram gerados até o usuário pedir para refazer.
+
+## POSTAGEM MANUAL (27/11/2026, pedido do usuário — manda sobre "AGENDAMENTO NO METRICOOL")
+"Pause as postagens automáticas, apenas me avise e mande o conteúdo no horário para postar manualmente." NÃO agendar mais nada no
+Metricool. Os 4 agendados (27/11 19h, 28/11 9h/12h/19h) viraram RASCUNHO no Metricool (não publicam). Os avisos das 8h50, 11h50 e 17h50
+mandam arquivo + capa + legenda + comentário para o usuário postar à mão no Instagram e no TikTok. A conferência das 19h12 foi desligada.
+Para voltar ao automático, só se o usuário pedir.
