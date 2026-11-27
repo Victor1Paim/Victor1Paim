@@ -55,3 +55,9 @@ Detalhes e valores medidos em [`custos.md`](custos.md).
 - Em espera: `historias/h01-the-detour.md` e `historias/h02-empty-tank.md` (revisão 2, 27/11: mais picos de tensão, ~1.500 palavras,
   ~8:13). As pastas `producoes/h01-*` e `h02-*` têm voz e imagens da versão anterior: na produção, regenerar a voz dos parágrafos
   que mudaram (voz.py já detecta), refazer os planos/efeitos pelo texto novo e reaproveitar as imagens que ainda servem.
+
+## Roteiro (regra das próximas produções, 27/11/2026)
+
+- Toda história nova passa pela skill `humanizer` e ganha **um pico de tensão a cada ~1 min** (um sinal estranho, uma revelação
+  ou uma escalada), cortando ambientação morna. Alterar pontos da história é permitido quando aumenta a tensão.
+- Não mexer no que já foi produzido e entregue (coletânea 01, h03 The Note, Shorts 01 e 02).
