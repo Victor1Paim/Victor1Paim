@@ -1,0 +1,47 @@
+{
+ "vozes": {
+  "pt": "Achird",
+  "en": "Achird"
+ },
+ "modelo": "gemini-3.8-flash-tts",
+ "falas": [
+  {
+   "id": "q1",
+   "lingua": "pt",
+   "texto": "Na rua, lá fora. Em inglês, como se diz: com licença, pra chamar alguém?"
+  },
+  {
+   "id": "r1",
+   "lingua": "en",
+   "texto": "Excuse me.",
+   "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  {
+   "id": "q2",
+   "lingua": "pt",
+   "texto": "Como se diz: opa, desculpa! Quando você esbarra em alguém?"
+  },
+  {
+   "id": "r2",
+   "lingua": "en",
+   "texto": "Oops, sorry!",
+   "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  {
+   "id": "q3",
+   "lingua": "pt",
+   "texto": "Como se diz: onde fica o metrô?"
+  },
+  {
+   "id": "r3",
+   "lingua": "en",
+   "texto": "Where is the subway?",
+   "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  {
+   "id": "cta",
+   "lingua": "pt",
+   "texto": "Quantas você acertou? Comenta aí! E segue o perfil pra mais desafios como esse."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "fundo_video": "maldivas",
+ "fundo_inicio": 17,
+ "repetir": 2,
+ "contagem": 2.5,
+ "rodadas": [
+  {
+   "titulo": "Com licença (pra chamar alguém)",
+   "opcoes": [
+    "A) With license.",
+    "B) Permission, please.",
+    "C) Excuse me."
+   ],
+   "certa": 2,
+   "pron": "ekskiúz mi",
+   "q": "q1",
+   "r": "r1",
+   "en": "Excuse me."
+  },
+  {
+   "titulo": "Opa, desculpa! (esbarrou em alguém)",
+   "opcoes": [
+    "A) Oops, sorry!",
+    "B) Oops, excuse!",
+    "C) Oops, pardon me no!"
+   ],
+   "certa": 0,
+   "pron": "ups, sóri!",
+   "q": "q2",
+   "r": "r2",
+   "en": "Oops, sorry!"
+  },
+  {
+   "titulo": "Onde fica o metrô?",
+   "opcoes": [
+    "A) Where stay the subway?",
+    "B) Where is the subway?",
+    "C) Where the subway is?"
+   ],
+   "certa": 1,
+   "pron": "uér iz dâ sâbuei?",
+   "q": "q3",
+   "r": "r3",
+   "en": "Where is the subway?"
+  }
+ ],
+ "cta": {
+  "fala": "cta",
+  "texto": "Quantas você\nacertou? 👇\n*SEGUE* pra mais!"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "capa": {"foto": "img/capa.png", "texto": "Repita até aprender\no inglês do dia a dia"},
+ "frases": [
+  {"pt": "Prazer em te conhecer.", "en": "Nice to meet you.", "pron": "náis tu mít iú"},
+  {"pt": "E aí?", "en": "What's up?", "pron": "uóts âp?"},
+  {"pt": "Espera um minuto.", "en": "Wait a minute.", "pron": "uêit a mínit"},
+  {"pt": "Cuidado!", "en": "Be careful!", "pron": "bi kérful!"},
+  {"pt": "Tá tarde.", "en": "It's late.", "pron": "its lêit"},
+  {"pt": "Tô ocupado.", "en": "I'm busy.", "pron": "áim bízi"},
+  {"pt": "Tá frio.", "en": "It's cold.", "pron": "its kôuld"},
+  {"pt": "Tá calor!", "en": "It's hot!", "pron": "its rót!"},
+  {"pt": "Tô entediado.", "en": "I'm bored.", "pron": "áim bórd"},
+  {"pt": "Quase lá!", "en": "Almost there!", "pron": "ólmoust dér!"},
+  {"pt": "Minha vez!", "en": "My turn!", "pron": "mái târn!"},
+  {"pt": "Hora do almoço!", "en": "Lunch time!", "pron": "lânch táim!"}
+ ],
+ "cta": {"perfil": "img/perfil.jpg", "fundo": "#0c0f14",
+         "texto": "Inglês do jeito fácil, sem decoreba: aula curtinha e pronúncia escrita 🇺🇸 Link no perfil!"}
+}
