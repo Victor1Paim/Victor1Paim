@@ -27,7 +27,7 @@ Personagem próprio (o do formato ABC), fundo Maldivas (cena nova por bloco), vo
 | 7 | SAY | dizer | Say it again. (Fala de novo.) | What did you say? (O que você disse?) | SAID | She said yes. (Ela disse sim.) |
 | 8 | SEE | ver | See you later! (Até mais!) | I see. (Entendi.) | SAW | I saw the movie. (Eu vi o filme.) |
 | 9 | KNOW | saber / conhecer | I know. (Eu sei.) | Do you know her? (Você conhece ela?) | KNEW | I knew it! (Eu sabia!) |
-| 10 | THINK | pensar / achar | I think so. (Acho que sim.) | Let me think. (Deixa eu pensar.) | THOUGHT | I thought you left. (Achei que você tinha ido.) |
+| 10 | THINK | pensar / achar | I don't think so. (Acho que não.) | Think about it. (Pensa nisso.) | THOUGHT | I thought so! (Foi o que eu pensei!) |
 | 11 | COME | vir | Come here! (Vem cá!) | Can you come? (Você pode vir?) | CAME | He came late. (Ele chegou atrasado.) |
 | 12 | WANT | querer | I want water. (Eu quero água.) | Do you want some? (Quer um pouco?) | WANTED | I wanted to help. (Eu queria ajudar.) |
 | 13 | GIVE | dar | Give me a minute. (Me dá um minuto.) | Give it to me. (Me dá isso.) | GAVE | She gave me a gift. (Ela me deu um presente.) |
