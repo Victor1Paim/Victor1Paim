@@ -1,0 +1,4 @@
+{"quando": "2026-11-28T00:15:04", "etapa": "imagem", "modelo": "gemini-2.5-flash-image", "tokens": {"entrada_texto": 50, "saida_imagem": 1290}, "usd": 0.038715}
+{"quando": "2026-11-28T00:15:08", "etapa": "imagem", "modelo": "gemini-2.5-flash-image", "tokens": {"entrada_texto": 51, "saida_imagem": 1290}, "usd": 0.038715}
+{"quando": "2026-11-28T00:15:13", "etapa": "imagem", "modelo": "gemini-2.5-flash-image", "tokens": {"entrada_texto": 63, "saida_imagem": 1290}, "usd": 0.038719}
+{"quando": "2026-11-28T00:15:18", "etapa": "imagem", "modelo": "gemini-2.5-flash-image", "tokens": {"entrada_texto": 37, "saida_imagem": 1290}, "usd": 0.038711}
